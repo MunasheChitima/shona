@@ -1,0 +1,134 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id            String         @id @default(cuid())
+  email         String         @unique
+  password      String
+  name          String
+  xp            Int            @default(0)
+  streak        Int            @default(0)
+  level         Int            @default(1)
+  hearts        Int            @default(5)
+  lastActive    DateTime       @default(now())
+  createdAt     DateTime       @default(now())
+  progress      UserProgress[]
+  questProgress QuestProgress[]
+  socialConnections SocialConnection[] @relation("UserConnections")
+  connectedTo   SocialConnection[] @relation("ConnectedToUser")
+  learningGoals LearningGoal[]
+  intrinsicMotivation IntrinsicMotivation?
+}
+
+model Lesson {
+  id            String         @id @default(cuid())
+  title         String
+  description   String
+  category      String
+  orderIndex    Int
+  xpReward      Int            @default(10)
+  questId       String?
+  quest         Quest?         @relation(fields: [questId], references: [id])
+  exercises     Exercise[]
+  userProgress  UserProgress[]
+  learningObjectives String[]  // JSON array of learning objectives
+  discoveryElements String[]   // JSON array of exploration prompts
+}
+
+model Quest {
+  id            String         @id @default(cuid())
+  title         String
+  description   String
+  storyNarrative String        // The quest narrative/story
+  category      String
+  orderIndex    Int
+  requiredLevel Int            @default(1)
+  lessons       Lesson[]
+  questProgress QuestProgress[]
+  collaborativeElements String[] // JSON array of social learning features
+  intrinsicRewards String[]    // JSON array of intrinsic motivation elements
+}
+
+model Exercise {
+  id            String   @id @default(cuid())
+  lessonId      String
+  lesson        Lesson   @relation(fields: [lessonId], references: [id])
+  type          String   // multiple_choice, translation, matching, exploration, collaboration
+  question      String
+  correctAnswer String
+  options       String   // JSON string
+  shonaPhrase   String?
+  englishPhrase String?
+  audioText     String?  // Text for TTS
+  points        Int      @default(5)
+  intrinsicFeedback String? // JSON string for intrinsic motivation feedback
+  discoveryHint String?  // Hint for exploration-based learning
+}
+
+model UserProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  lessonId    String
+  completed   Boolean  @default(false)
+  score       Int      @default(0)
+  completedAt DateTime @default(now())
+  intrinsicSatisfaction Int? // 1-10 scale of intrinsic satisfaction
+  user        User     @relation(fields: [userId], references: [id])
+  lesson      Lesson   @relation(fields: [lessonId], references: [id])
+  
+  @@unique([userId, lessonId])
+}
+
+model QuestProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  questId     String
+  completed   Boolean  @default(false)
+  completedAt DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id])
+  quest       Quest    @relation(fields: [questId], references: [id])
+  
+  @@unique([userId, questId])
+}
+
+model SocialConnection {
+  id          String   @id @default(cuid())
+  userId      String
+  connectedUserId String
+  connectionType String // study_buddy, mentor, mentee, peer
+  createdAt   DateTime @default(now())
+  user        User     @relation("UserConnections", fields: [userId], references: [id])
+  connectedTo User     @relation("ConnectedToUser", fields: [connectedUserId], references: [id])
+  
+  @@unique([userId, connectedUserId])
+}
+
+model LearningGoal {
+  id          String   @id @default(cuid())
+  userId      String
+  title       String
+  description String
+  targetDate  DateTime?
+  completed   Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id])
+}
+
+model IntrinsicMotivation {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  autonomy    Int      @default(5) // 1-10 scale
+  competence  Int      @default(5) // 1-10 scale
+  relatedness Int      @default(5) // 1-10 scale
+  lastUpdated DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id])
+}
