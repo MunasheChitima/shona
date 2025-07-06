@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import UserNotifications
 
 struct MainTabView: View {
     @Environment(\.modelContext) private var modelContext
@@ -35,6 +36,12 @@ struct MainTabView: View {
                             Text("Learn")
                         }
                     
+                    FlashcardView()
+                        .tabItem {
+                            Image(systemName: "rectangle.on.rectangle.fill")
+                            Text("Flashcards")
+                        }
+                    
                     ProfileView()
                         .tabItem {
                             Image(systemName: "person.fill")
@@ -60,5 +67,5 @@ struct MainTabView: View {
 
 #Preview {
     MainTabView()
-        .modelContainer(for: [User.self, Lesson.self, Progress.self, Exercise.self], inMemory: true)
+        .modelContainer(for: [User.self, Lesson.self, Progress.self, Exercise.self, Flashcard.self, SRSProgress.self, NotificationPreference.self], inMemory: true)
 } 

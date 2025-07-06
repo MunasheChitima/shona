@@ -27,6 +27,9 @@ model User {
   connectedTo   SocialConnection[] @relation("ConnectedToUser")
   learningGoals LearningGoal[]
   intrinsicMotivation IntrinsicMotivation?
+  flashcards    Flashcard[]
+  srsProgress   SRSProgress[]
+  notificationPreferences NotificationPreference?
 }
 
 model Lesson {
@@ -40,8 +43,9 @@ model Lesson {
   quest         Quest?         @relation(fields: [questId], references: [id])
   exercises     Exercise[]
   userProgress  UserProgress[]
-  learningObjectives String[]  // JSON array of learning objectives
-  discoveryElements String[]   // JSON array of exploration prompts
+  learningObjectives String?  // JSON string of learning objectives
+  discoveryElements String?   // JSON string of exploration prompts
+  flashcards    Flashcard[]
 }
 
 model Quest {
@@ -54,8 +58,8 @@ model Quest {
   requiredLevel Int            @default(1)
   lessons       Lesson[]
   questProgress QuestProgress[]
-  collaborativeElements String[] // JSON array of social learning features
-  intrinsicRewards String[]    // JSON array of intrinsic motivation elements
+  collaborativeElements String? // JSON string of social learning features
+  intrinsicRewards String?    // JSON string of intrinsic motivation elements
 }
 
 model Exercise {
@@ -131,4 +135,77 @@ model IntrinsicMotivation {
   relatedness Int      @default(5) // 1-10 scale
   lastUpdated DateTime @default(now())
   user        User     @relation(fields: [userId], references: [id])
+}
+
+// Flashcard System Models
+model Flashcard {
+  id            String   @id @default(cuid())
+  userId        String
+  lessonId      String?
+  shonaText     String
+  englishText   String
+  audioText     String?
+  pronunciation String?  // IPA or simplified pronunciation
+  difficulty    Float    @default(0.5) // 0.0 to 1.0
+  tags          String? // JSON string of tags
+  context       String?  // Example sentence or context
+  createdAt     DateTime @default(now())
+  lastReviewed  DateTime?
+  user          User     @relation(fields: [userId], references: [id])
+  lesson        Lesson?  @relation(fields: [lessonId], references: [id])
+  srsProgress   SRSProgress[]
+  
+  @@unique([userId, shonaText])
+}
+
+model SRSProgress {
+  id            String   @id @default(cuid())
+  userId        String
+  flashcardId   String
+  easeFactor    Float    @default(2.5) // Supermemo algorithm ease factor
+  interval      Int      @default(1)   // Days until next review
+  repetitions   Int      @default(0)   // Number of successful reviews
+  lastReview    DateTime @default(now())
+  nextReview    DateTime @default(now())
+  quality       Int      @default(3)   // Last review quality (0-5)
+  totalReviews  Int      @default(0)
+  correctStreak Int      @default(0)
+  wrongStreak   Int      @default(0)
+  averageTime   Float    @default(0.0) // Average response time in seconds
+  createdAt     DateTime @default(now())
+  user          User     @relation(fields: [userId], references: [id])
+  flashcard     Flashcard @relation(fields: [flashcardId], references: [id])
+  
+  @@unique([userId, flashcardId])
+}
+
+model NotificationPreference {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  enabledDays       String? // JSON string of days ["monday", "tuesday", etc.]
+  startTime         String   @default("09:00") // "HH:MM" format
+  endTime           String   @default("21:00") // "HH:MM" format
+  maxDailyNotifications Int  @default(5)
+  intervalMinutes   Int      @default(240)    // 4 hours default
+  enabledTypes      String? // JSON string ["review", "new_cards", "streak_reminder"]
+  timezone          String   @default("UTC")
+  deviceTokens      String? // JSON string of device tokens for push notifications
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+  user              User     @relation(fields: [userId], references: [id])
+}
+
+model NotificationLog {
+  id          String   @id @default(cuid())
+  userId      String?
+  type        String   // "review", "new_cards", "streak_reminder", "achievement"
+  title       String
+  body        String
+  data        String?  // JSON string for additional data
+  sentAt      DateTime @default(now())
+  opened      Boolean  @default(false)
+  openedAt    DateTime?
+  deviceToken String?
+  success     Boolean  @default(true)
+  errorMessage String?
 }
