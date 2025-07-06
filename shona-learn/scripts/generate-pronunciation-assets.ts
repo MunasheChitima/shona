@@ -9,7 +9,7 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 // Google API Configuration
-const GOOGLE_API_KEY = 'AIzaSyDMgRTZvaRxNFZQ62oMjQLXpsWF5MmEMEMS'
+const GOOGLE_API_KEY = 'AIzaSyBOGN6xFt_ylRMucqVHYDhsRE5IoMJZXEo'
 const TTS_ENDPOINT = 'https://texttospeech.googleapis.com/v1/text:synthesize'
 
 // Priority words for asset generation
