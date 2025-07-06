@@ -237,16 +237,20 @@ final class PronunciationExercise {
     var syllables: String?
     var tonePattern: String?
     var specialSounds: [PronunciationSound]
+    var complexity: Int
+    var translation: String
     var isCompleted: Bool
     var createdAt: Date
     
-    init(id: String = UUID().uuidString, word: String, phonetic: String, audioFile: String? = nil, difficulty: String = "beginner", category: String = "General") {
+    init(id: String = UUID().uuidString, word: String, phonetic: String, audioFile: String? = nil, difficulty: String = "beginner", category: String = "General", complexity: Int = 1, translation: String = "") {
         self.id = id
         self.word = word
         self.phonetic = phonetic
         self.audioFile = audioFile
         self.difficulty = difficulty
         self.category = category
+        self.complexity = complexity
+        self.translation = translation
         self.tips = []
         self.commonMistakes = []
         self.specialSounds = []
@@ -308,7 +312,7 @@ final class Flashcard {
         self.pronunciationTips = []
         self.category = "General"
         self.createdAt = Date()
-        self.srsProgress = SRSProgress(flashcardId: id, userId: userId)
+        self.srsProgress = nil
     }
 }
 
@@ -400,6 +404,8 @@ struct PronunciationSessionStats {
     var timeSpent: TimeInterval = 0
     var difficultyLevel: String = "beginner"
     var improvementAreas: [String] = []
+    var totalPracticed: Int = 0
+    var masteredWords: Int = 0
 }
 
 // MARK: - Content Data Structures

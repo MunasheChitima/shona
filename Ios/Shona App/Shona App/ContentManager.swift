@@ -363,11 +363,11 @@ class ContentManager {
     
     private func createSamplePronunciationExercises(modelContext: ModelContext) {
         let pronunciationWords = [
-            ("mhoro", "/mʰo.ro/", "mhoro.mp3", "beginner", "Greetings", ["Focus on the aspirated 'mh' sound", "Keep the 'o' sounds pure"], ["Don't pronounce the 'h' separately"], "mho-ro", "Low-High"),
-            ("mbira", "/m̩.bi.ra/", "mbira.mp3", "intermediate", "Music", ["The 'm' is syllabic - it's a full syllable", "Don't add a vowel before 'mbira'"], ["Saying 'em-bira' instead of 'mbira'"], "mbi-ra", "High-Low-High"),
-            ("nzira", "/n̩.zi.ra/", "nzira.mp3", "intermediate", "Directions", ["The 'n' is syllabic", "The 'z' should be clearly voiced"], ["Adding 'en' before the word"], "nzi-ra", "High-Low-High"),
-            ("svika", "/svi.ka/", "svika.mp3", "advanced", "Verbs", ["The 'sv' is a whistled sound", "Purse your lips slightly for the 'sv'"], ["Pronouncing as 'shvika' or separating 's' and 'v'"], "svi-ka", "High-Low"),
-            ("ngoma", "/ŋo.ma/", "ngoma.mp3", "beginner", "Music", ["The 'ng' is one sound, like in 'singer'", "Don't separate the 'n' and 'g'"], ["Saying 'en-goma'"], "ngo-ma", "High-Low")
+            ("mhoro", "/mʰo.ro/", "mhoro.mp3", "beginner", "Greetings", ["Focus on the aspirated 'mh' sound", "Keep the 'o' sounds pure"], ["Don't pronounce the 'h' separately"], "mho-ro", "Low-High", 2, "hello"),
+            ("mbira", "/m̩.bi.ra/", "mbira.mp3", "intermediate", "Music", ["The 'm' is syllabic - it's a full syllable", "Don't add a vowel before 'mbira'"], ["Saying 'em-bira' instead of 'mbira'"], "mbi-ra", "High-Low-High", 6, "thumb piano"),
+            ("nzira", "/n̩.zi.ra/", "nzira.mp3", "intermediate", "Directions", ["The 'n' is syllabic", "The 'z' should be clearly voiced"], ["Adding 'en' before the word"], "nzi-ra", "High-Low-High", 6, "path/way"),
+            ("svika", "/svi.ka/", "svika.mp3", "advanced", "Verbs", ["The 'sv' is a whistled sound", "Purse your lips slightly for the 'sv'"], ["Pronouncing as 'shvika' or separating 's' and 'v'"], "svi-ka", "High-Low", 8, "arrive"),
+            ("ngoma", "/ŋo.ma/", "ngoma.mp3", "beginner", "Music", ["The 'ng' is one sound, like in 'singer'", "Don't separate the 'n' and 'g'"], ["Saying 'en-goma'"], "ngo-ma", "High-Low", 3, "drum")
         ]
         
         for wordData in pronunciationWords {
@@ -376,7 +376,9 @@ class ContentManager {
                 phonetic: wordData.1,
                 audioFile: wordData.2,
                 difficulty: wordData.3,
-                category: wordData.4
+                category: wordData.4,
+                complexity: wordData.9,
+                translation: wordData.10
             )
             
             exercise.tips = wordData.5
