@@ -51,6 +51,13 @@ class ContentSyncService {
   private eventListeners: Map<string, Function[]> = new Map()
   private retryAttempts: Map<string, number> = new Map()
   private maxRetries: number = 3
+  
+  // WebSocket properties
+  private websocket: WebSocket | null = null
+  private websocketConnected: boolean = false
+  private websocketReconnectAttempts: number = 0
+  private maxWebSocketReconnectAttempts: number = 10
+  private websocketHeartbeatInterval: NodeJS.Timeout | null = null
 
   constructor(apiBaseUrl: string, platform: string) {
     this.apiBaseUrl = apiBaseUrl
@@ -110,27 +117,165 @@ class ContentSyncService {
   }
 
   private setupRealTimeUpdates(): void {
-    // WebSocket connection for real-time updates
+    // Enhanced WebSocket connection with sophisticated reconnection
+    this.connectWebSocket()
+  }
+
+  private connectWebSocket(): void {
     try {
-      const wsUrl = this.apiBaseUrl.replace('http', 'ws') + '/sync'
-      const ws = new WebSocket(wsUrl)
+      const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
+      const wsHost = window.location.host
+      const wsUrl = `${wsProtocol}//${wsHost}:8080?platform=${this.platform}&version=${this.localManifest?.version || '0.0.0'}`
       
-      ws.onmessage = (event) => {
+      this.websocket = new WebSocket(wsUrl)
+      this.websocketReconnectAttempts = 0
+      
+      this.websocket.onopen = () => {
+        console.log('WebSocket connected')
+        this.websocketConnected = true
+        this.websocketReconnectAttempts = 0
+        
+        // Subscribe to all content types
+        this.subscribeToContentUpdates(['lessons', 'vocabulary', 'exercises', 'cultural_notes', 'audio'])
+        
+        // Start heartbeat
+        this.startWebSocketHeartbeat()
+        
+        this.emit('websocketConnected', { timestamp: Date.now() })
+      }
+      
+      this.websocket.onmessage = (event) => {
         try {
-          const update = JSON.parse(event.data)
-          this.handleRealTimeUpdate(update)
+          const message = JSON.parse(event.data)
+          this.handleWebSocketMessage(message)
         } catch (error) {
-          console.warn('Invalid real-time update:', error)
+          console.warn('Invalid WebSocket message:', error)
         }
       }
       
-      ws.onclose = () => {
-        // Attempt to reconnect after 30 seconds
-        setTimeout(() => this.setupRealTimeUpdates(), 30000)
-      }
+             this.websocket.onclose = (event: CloseEvent) => {
+         console.log('WebSocket disconnected:', event.code, event.reason)
+         this.websocketConnected = false
+         this.stopWebSocketHeartbeat()
+         
+         // Attempt exponential backoff reconnection
+         if (this.websocketReconnectAttempts < this.maxWebSocketReconnectAttempts) {
+           const delay = Math.min(1000 * Math.pow(2, this.websocketReconnectAttempts), 30000)
+           this.websocketReconnectAttempts++
+           
+           setTimeout(() => {
+             if (!this.websocketConnected) {
+               this.connectWebSocket()
+             }
+           }, delay)
+         }
+         
+         this.emit('websocketDisconnected', { 
+           code: event.code, 
+           reason: event.reason,
+           willReconnect: this.websocketReconnectAttempts < this.maxWebSocketReconnectAttempts
+         })
+       }
+       
+       this.websocket.onerror = (error: Event) => {
+         console.error('WebSocket error:', error)
+         this.emit('websocketError', { error })
+       }
+      
     } catch (error) {
       console.warn('Real-time updates not available:', error)
+      // Fallback to polling if WebSocket fails
+      this.setupPollingFallback()
     }
+  }
+
+  private handleWebSocketMessage(message: any): void {
+    switch (message.type) {
+      case 'content_update':
+        this.handleContentUpdate(message.payload)
+        break
+        
+      case 'sync_status':
+        this.handleSyncStatusUpdate(message.payload)
+        break
+        
+      case 'heartbeat':
+        // Acknowledge heartbeat
+        break
+        
+      case 'error':
+        console.error('WebSocket server error:', message.payload.error)
+        this.emit('websocketError', message.payload)
+        break
+        
+      default:
+        console.warn('Unknown WebSocket message type:', message.type)
+    }
+  }
+
+  private subscribeToContentUpdates(contentTypes: string[]): void {
+    if (!this.websocketConnected || !this.websocket) return
+    
+    contentTypes.forEach(contentType => {
+      this.websocket!.send(JSON.stringify({
+        type: 'subscribe',
+        contentType,
+        timestamp: Date.now()
+      }))
+    })
+  }
+
+  private startWebSocketHeartbeat(): void {
+    this.websocketHeartbeatInterval = setInterval(() => {
+      if (this.websocketConnected && this.websocket) {
+        this.websocket.send(JSON.stringify({
+          type: 'heartbeat',
+          timestamp: Date.now()
+        }))
+      }
+    }, 15000) // Send heartbeat every 15 seconds
+  }
+
+  private stopWebSocketHeartbeat(): void {
+    if (this.websocketHeartbeatInterval) {
+      clearInterval(this.websocketHeartbeatInterval)
+      this.websocketHeartbeatInterval = null
+    }
+  }
+
+  private setupPollingFallback(): void {
+    // Fallback to polling every 2 minutes if WebSocket is unavailable
+    setInterval(() => {
+      if (!this.websocketConnected) {
+        this.checkForUpdates({ backgroundSync: true })
+      }
+    }, 2 * 60 * 1000)
+  }
+
+  private handleContentUpdate(payload: any): void {
+    console.log('Received content update:', payload)
+    
+    // Trigger immediate sync for high priority updates
+    if (payload.priority === 'high') {
+      this.checkForUpdates({ 
+        contentTypes: [payload.contentType],
+        priority: 'high' 
+      })
+    } else {
+      // Queue normal/low priority updates
+      this.queueUpdates([payload.contentType], payload.priority || 'normal')
+    }
+    
+    this.emit('contentUpdated', {
+      contentType: payload.contentType,
+      version: payload.version,
+      priority: payload.priority
+    })
+  }
+
+  private handleSyncStatusUpdate(payload: any): void {
+    console.log('Received sync status update:', payload)
+    this.emit('syncStatusUpdate', payload)
   }
 
   private async handleRealTimeUpdate(update: any): Promise<void> {
