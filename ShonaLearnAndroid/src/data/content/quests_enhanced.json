@@ -1,0 +1,560 @@
+{
+  "quests": [
+    {
+      "id": "quest-5",
+      "title": "The Great Baobab Tree",
+      "activities": [
+        {
+          "type": "story_listening",
+          "title": "The Legend of the First Baobab",
+          "description": "Listen to the ancient story of how the baobab tree came to be",
+          "content": {
+            "shona_text": "Kare kare, muti mukuru wakanga uri mudenga. Mwari akati, 'Buruka uzogara pasi.' Asi muti wakanga usingatende. Saka Mwari akaumisa musoro pasi, midzi ichitarisa kudenga.",
+            "english_text": "Long, long ago, a great tree lived in the heavens. God said, 'Come down and live on earth.' But the tree was not humble. So God planted it upside down, with roots pointing to the sky.",
+            "vocabulary": [
+              {"shona": "kare", "english": "long ago"},
+              {"shona": "muti", "english": "tree"},
+              {"shona": "mukuru", "english": "big/great"},
+              {"shona": "denga", "english": "sky/heaven"},
+              {"shona": "Mwari", "english": "God"},
+              {"shona": "buruka", "english": "come down"},
+              {"shona": "pasi", "english": "down/earth"},
+              {"shona": "midzi", "english": "roots"}
+            ]
+          }
+        },
+        {
+          "type": "interactive_story",
+          "title": "Choose Your Own Adventure",
+          "description": "Make choices in a traditional Shona story",
+          "scenarios": [
+            {
+              "situation": "You find a talking hare by the river",
+              "options": [
+                {"text": "Greet the hare politely", "shona": "Mhoro, tsuro", "outcome": "The hare shares wisdom about patience"},
+                {"text": "Ask the hare for help", "shona": "Tsuro, ndibatsirei", "outcome": "The hare teaches you about community"},
+                {"text": "Ignore the hare", "shona": "Kusataura", "outcome": "The hare reminds you about respect"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "storytelling_practice",
+          "title": "Tell Your Own Story",
+          "description": "Create a short story using Shona vocabulary",
+          "prompts": [
+            "A clever animal teaches a lesson",
+            "A kind person helps their community",
+            "A brave child faces a challenge"
+          ],
+          "vocabulary_bank": [
+            {"shona": "chakafunga", "english": "clever"},
+            {"shona": "mutsa", "english": "kind"},
+            {"shona": "ushingi", "english": "brave"},
+            {"shona": "mufundisi", "english": "teacher"},
+            {"shona": "shakakai", "english": "community"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quest-6",
+      "title": "Harvest Festival Celebration",
+      "activities": [
+        {
+          "type": "festival_planning",
+          "title": "Plan the Harvest Festival",
+          "description": "Help organize the village celebration",
+          "tasks": [
+            {
+              "task": "Choose traditional foods",
+              "options": [
+                {"shona": "sadza", "english": "cornmeal staple", "cultural_note": "The foundation of every Shona meal"},
+                {"shona": "matemba", "english": "dried fish", "cultural_note": "Protein source, often shared"},
+                {"shona": "mufushwa", "english": "dried vegetables", "cultural_note": "Nutritious greens, prepared by women"},
+                {"shona": "dovi", "english": "peanut butter stew", "cultural_note": "Rich, ceremonial dish"}
+              ]
+            },
+            {
+              "task": "Select traditional music",
+              "options": [
+                {"shona": "mbira", "english": "thumb piano", "cultural_note": "Sacred instrument for ceremonies"},
+                {"shona": "hosho", "english": "shakers", "cultural_note": "Accompanies mbira music"},
+                {"shona": "ngoma", "english": "drums", "cultural_note": "Calls the community together"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "recipe_challenge",
+          "title": "Cook Traditional Dishes",
+          "description": "Learn to prepare Shona foods",
+          "recipes": [
+            {
+              "dish": "Sadza",
+              "ingredients": [
+                {"shona": "upfu", "english": "cornmeal"},
+                {"shona": "mvura", "english": "water"},
+                {"shona": "munyu", "english": "salt"}
+              ],
+              "steps": [
+                "Boil water - pisa mvura",
+                "Add cornmeal slowly - wedzera upfu zvishoma",
+                "Stir constantly - sandura nguva dzose",
+                "Cook until thick - bika kusvika zvakakora"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "gratitude_circle",
+          "title": "Express Gratitude",
+          "description": "Share what you're thankful for",
+          "phrases": [
+            {"shona": "Ndinotenda", "english": "I am grateful"},
+            {"shona": "Mwari akatipa", "english": "God has given us"},
+            {"shona": "Tinofara", "english": "We are happy"},
+            {"shona": "Rugare", "english": "Peace"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quest-7",
+      "title": "The Musical Journey",
+      "activities": [
+        {
+          "type": "instrument_discovery",
+          "title": "Sacred Mbira",
+          "description": "Learn about the spiritual thumb piano",
+          "content": {
+            "cultural_significance": "The mbira is not just an instrument—it's a bridge between the living and the ancestors. When played, it calls the spirits to join the community.",
+            "parts": [
+              {"shona": "gaba", "english": "wooden board"},
+              {"shona": "deze", "english": "resonator"},
+              {"shona": "mashapa", "english": "bottle caps (for buzzing)"}
+            ],
+            "playing_techniques": [
+              {"technique": "Thumbs and forefingers", "shona": "zvigunwe zvikuru nezviduku"},
+              {"technique": "Gentle plucking", "shona": "kubvuta zvinyoro"},
+              {"technique": "Listen to the buzzing", "shona": "teerera kurira"}
+            ]
+          }
+        },
+        {
+          "type": "song_learning",
+          "title": "Traditional Songs",
+          "description": "Learn and sing Shona songs",
+          "songs": [
+            {
+              "title": "Nhasi ndirimufaro",
+              "english_title": "Today I am happy",
+              "lyrics": [
+                {"shona": "Nhasi ndirimufaro", "english": "Today I am happy"},
+                {"shona": "Ndinofara naJesu", "english": "I rejoice with Jesus"},
+                {"shona": "Moyo wangu unofara", "english": "My heart is joyful"}
+              ],
+              "tempo": "medium",
+              "emotion": "joyful"
+            },
+            {
+              "title": "Ishe komborera Africa",
+              "english_title": "Lord bless Africa",
+              "lyrics": [
+                {"shona": "Ishe komborera Africa", "english": "Lord bless Africa"},
+                {"shona": "Maruva ayo", "english": "Her flowers"},
+                {"shona": "Inzwa miteuro yedu", "english": "Hear our prayers"}
+              ],
+              "tempo": "slow",
+              "emotion": "reverent"
+            }
+          ]
+        },
+        {
+          "type": "rhythm_game",
+          "title": "Feel the Beat",
+          "description": "Match the rhythm patterns",
+          "patterns": [
+            {"name": "Basic Mbira", "pattern": "ta-ta-ti-ta", "difficulty": "easy"},
+            {"name": "Hosho Shake", "pattern": "shi-ka-shi-ka", "difficulty": "easy"},
+            {"name": "Complex Rhythm", "pattern": "ta-ti-ta-ti-ta", "difficulty": "medium"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quest-8",
+      "title": "The Wisdom Keeper's Challenge",
+      "activities": [
+        {
+          "type": "proverb_puzzle",
+          "title": "Decode the Wisdom",
+          "description": "Solve puzzles hidden in Shona proverbs",
+          "proverbs": [
+            {
+              "shona": "Chara chimwe hachitswanye inda",
+              "english": "One finger cannot crush a louse",
+              "meaning": "Teamwork is essential",
+              "puzzle": "What happens when people work together?",
+              "answer": "They accomplish more than working alone"
+            },
+            {
+              "shona": "Chakafukidza dzimba matenga",
+              "english": "What covers houses is the roof",
+              "meaning": "Leadership protects the community",
+              "puzzle": "Who keeps the community safe?",
+              "answer": "Good leaders"
+            },
+            {
+              "shona": "Kurima mukadzi kurima vaviri",
+              "english": "When a woman farms, two people are farming",
+              "meaning": "Women's work benefits everyone",
+              "puzzle": "Why is women's work so valuable?",
+              "answer": "It supports the whole family"
+            }
+          ]
+        },
+        {
+          "type": "riddle_challenge",
+          "title": "Ancient Riddles",
+          "description": "Solve traditional Shona riddles",
+          "riddles": [
+            {
+              "question": "What has no legs but can travel far?",
+              "shona": "Chii chisina makumbo asi chinofamba kure?",
+              "answer": "News/rumors",
+              "shona_answer": "Mashoko/makuhwa"
+            },
+            {
+              "question": "What grows taller when it sits down?",
+              "shona": "Chii chinokura kana chakagara pasi?",
+              "answer": "Smoke",
+              "shona_answer": "Utsi"
+            },
+            {
+              "question": "What has many children but is never pregnant?",
+              "shona": "Chii chine vana vazhinji asi chisina kumba?",
+              "answer": "A tree",
+              "shona_answer": "Muti"
+            }
+          ]
+        },
+        {
+          "type": "wisdom_creation",
+          "title": "Create Your Own Wisdom",
+          "description": "Make new proverbs based on your experience",
+          "prompts": [
+            "Think about a lesson you learned from making mistakes",
+            "Consider what you know about friendship",
+            "Reflect on what makes a person wise"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quest-9",
+      "title": "The Healing Garden",
+      "activities": [
+        {
+          "type": "plant_identification",
+          "title": "Know Your Medicine",
+          "description": "Learn about traditional healing plants",
+          "plants": [
+            {
+              "shona": "muhacha",
+              "english": "baobab",
+              "uses": ["stomach problems", "vitamin C", "fever"],
+              "preparation": "Soak bark in water",
+              "cultural_note": "The tree of life, provides everything needed"
+            },
+            {
+              "shona": "muzanje",
+              "english": "wild fig",
+              "uses": ["cough", "sore throat", "wounds"],
+              "preparation": "Boil leaves for tea",
+              "cultural_note": "Sacred tree, home to spirits"
+            },
+            {
+              "shona": "muuyu",
+              "english": "bitter apple",
+              "uses": ["cleansing", "skin problems", "purification"],
+              "preparation": "Crush fruit, apply to skin",
+              "cultural_note": "Used in spiritual cleansing"
+            }
+          ]
+        },
+        {
+          "type": "healing_scenarios",
+          "title": "Diagnose and Treat",
+          "description": "Choose appropriate remedies for common ailments",
+          "scenarios": [
+            {
+              "problem": "Child has upset stomach",
+              "options": [
+                {"remedy": "Muhacha bark tea", "effectiveness": "high"},
+                {"remedy": "Muzanje leaf tea", "effectiveness": "low"},
+                {"remedy": "Rest and water", "effectiveness": "medium"}
+              ]
+            },
+            {
+              "problem": "Elder has persistent cough",
+              "options": [
+                {"remedy": "Muzanje leaf steam", "effectiveness": "high"},
+                {"remedy": "Muuyu fruit juice", "effectiveness": "low"},
+                {"remedy": "Honey and warm water", "effectiveness": "medium"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "seasonal_garden",
+          "title": "Plant by Season",
+          "description": "Learn when to plant and harvest",
+          "seasons": [
+            {
+              "season": "Chipukurume (Spring)",
+              "activities": ["Plant seeds", "Clear garden", "Prepare soil"],
+              "plants": ["Muriwo (greens)", "Nyemba (beans)"]
+            },
+            {
+              "season": "Zhizha (Summer)",
+              "activities": ["Water plants", "Weed garden", "Harvest early crops"],
+              "plants": ["Mangoes", "Mazanje (figs)"]
+            },
+            {
+              "season": "Matsutso (Autumn)",
+              "activities": ["Harvest main crops", "Dry medicines", "Store seeds"],
+              "plants": ["Chibage (corn)", "Mapfunde (sorghum)"]
+            },
+            {
+              "season": "Chando (Winter)",
+              "activities": ["Rest garden", "Plan next year", "Use dried medicines"],
+              "plants": ["Rest period", "Indoor plants only"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quest-10",
+      "title": "The Master Craftsperson",
+      "activities": [
+        {
+          "type": "craft_selection",
+          "title": "Choose Your Craft",
+          "description": "Select a traditional craft to master",
+          "crafts": [
+            {
+              "craft": "Pottery",
+              "shona": "Kuumba hari",
+              "tools": ["clay", "water", "fire"],
+              "products": ["pots", "dishes", "storage containers"],
+              "cultural_significance": "Women's tradition, passed down through generations"
+            },
+            {
+              "craft": "Basketry",
+              "shona": "Kuruka tswanda",
+              "tools": ["grass", "reeds", "patience"],
+              "products": ["baskets", "mats", "winnowing trays"],
+              "cultural_significance": "Practical art, used in daily life"
+            },
+            {
+              "craft": "Wood carving",
+              "shona": "Kuveza matanda",
+              "tools": ["wood", "knife", "sandpaper"],
+              "products": ["stools", "spoons", "spiritual objects"],
+              "cultural_significance": "Men's tradition, creates functional and sacred items"
+            }
+          ]
+        },
+        {
+          "type": "technique_learning",
+          "title": "Master the Technique",
+          "description": "Learn step-by-step craft processes",
+          "pottery_steps": [
+            {
+              "step": 1,
+              "action": "Prepare clay",
+              "shona": "Gadzira ivhu",
+              "description": "Mix clay with water until smooth"
+            },
+            {
+              "step": 2,
+              "action": "Shape the pot",
+              "shona": "Umba hari",
+              "description": "Use hands to form the vessel"
+            },
+            {
+              "step": 3,
+              "action": "Let it dry",
+              "shona": "Rega riome",
+              "description": "Allow clay to dry in shade"
+            },
+            {
+              "step": 4,
+              "action": "Fire the pot",
+              "shona": "Pisa hari",
+              "description": "Burn in controlled fire"
+            }
+          ]
+        },
+        {
+          "type": "quality_assessment",
+          "title": "Judge the Craft",
+          "description": "Learn to evaluate craftsmanship",
+          "criteria": [
+            {"aspect": "Functionality", "shona": "Kushandiswa", "weight": 40},
+            {"aspect": "Beauty", "shona": "Runako", "weight": 30},
+            {"aspect": "Durability", "shona": "Kuramba", "weight": 30}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quest-11",
+      "title": "The Dream Interpreter",
+      "activities": [
+        {
+          "type": "dream_symbols",
+          "title": "Understand Dream Language",
+          "description": "Learn common dream symbols and meanings",
+          "symbols": [
+            {
+              "symbol": "Water",
+              "shona": "Mvura",
+              "meanings": ["Life", "Purification", "Change"],
+              "cultural_note": "Water connects us to ancestors"
+            },
+            {
+              "symbol": "Animals",
+              "shona": "Mhuka",
+              "meanings": ["Messages", "Guidance", "Warning"],
+              "cultural_note": "Animals are messengers from spirit world"
+            },
+            {
+              "symbol": "Fire",
+              "shona": "Moto",
+              "meanings": ["Transformation", "Energy", "Cleansing"],
+              "cultural_note": "Fire purifies and transforms"
+            }
+          ]
+        },
+        {
+          "type": "ceremony_participation",
+          "title": "Join the Ceremony",
+          "description": "Participate respectfully in traditional ceremonies",
+          "ceremonies": [
+            {
+              "name": "Kurova guva",
+              "english": "Calling the ancestors",
+              "purpose": "Connect with deceased family members",
+              "your_role": "Observe respectfully, learn the customs"
+            },
+            {
+              "name": "Mukwerera",
+              "english": "Cleansing ceremony",
+              "purpose": "Remove negative influences",
+              "your_role": "Participate if invited, show respect"
+            }
+          ]
+        },
+        {
+          "type": "respectful_dialogue",
+          "title": "Discuss Beliefs",
+          "description": "Have respectful conversations about spirituality",
+          "conversation_starters": [
+            "What role do dreams play in your culture?",
+            "How do you honor your ancestors?",
+            "What brings you spiritual peace?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quest-12",
+      "title": "The Modern Village",
+      "activities": [
+        {
+          "type": "technology_vocabulary",
+          "title": "Modern Words",
+          "description": "Learn contemporary Shona vocabulary",
+          "modern_terms": [
+            {"shona": "runhare", "english": "cell phone"},
+            {"shona": "kompyuta", "english": "computer"},
+            {"shona": "intaneti", "english": "internet"},
+            {"shona": "whatsapp", "english": "WhatsApp"},
+            {"shona": "fekisi", "english": "fax"},
+            {"shona": "imeyiri", "english": "email"}
+          ]
+        },
+        {
+          "type": "cultural_adaptation",
+          "title": "Bridging Old and New",
+          "description": "Explore how traditions adapt to modern life",
+          "examples": [
+            {
+              "tradition": "Sending messages",
+              "old_way": "Messenger on foot",
+              "new_way": "WhatsApp, SMS",
+              "what_stays": "Politeness, respect in communication"
+            },
+            {
+              "tradition": "Family meetings",
+              "old_way": "Gather under tree",
+              "new_way": "Video calls, conference calls",
+              "what_stays": "Respect for elders, consensus building"
+            },
+            {
+              "tradition": "Storytelling",
+              "old_way": "Oral tradition by firelight",
+              "new_way": "Recorded stories, digital sharing",
+              "what_stays": "Moral lessons, cultural values"
+            }
+          ]
+        },
+        {
+          "type": "future_planning",
+          "title": "Vision for Tomorrow",
+          "description": "Discuss hopes and dreams for the future",
+          "discussion_topics": [
+            "How can technology help preserve Shona culture?",
+            "What traditions are most important to maintain?",
+            "How can young people stay connected to their heritage?"
+          ]
+        }
+      ]
+    }
+  ],
+  "gamification_elements": {
+    "achievements": [
+      {"id": "storyteller", "title": "Master Storyteller", "description": "Complete 5 storytelling activities"},
+      {"id": "chef", "title": "Traditional Chef", "description": "Learn 3 traditional recipes"},
+      {"id": "musician", "title": "Village Musician", "description": "Learn 2 traditional songs"},
+      {"id": "wise_one", "title": "Wisdom Keeper", "description": "Solve 10 riddles and proverbs"},
+      {"id": "healer", "title": "Garden Healer", "description": "Identify 5 medicinal plants"},
+      {"id": "craftsperson", "title": "Master Craftsperson", "description": "Complete a craft project"},
+      {"id": "dream_reader", "title": "Dream Interpreter", "description": "Understand 5 dream symbols"},
+      {"id": "bridge_builder", "title": "Culture Bridge", "description": "Connect 3 traditions to modern life"}
+    ],
+    "collaborative_challenges": [
+      {"id": "story_chain", "title": "Community Story Chain", "description": "Create a story together, each person adding one sentence"},
+      {"id": "recipe_exchange", "title": "Recipe Exchange", "description": "Share traditional recipes from your culture"},
+      {"id": "music_circle", "title": "Virtual Music Circle", "description": "Record and share traditional songs"},
+      {"id": "wisdom_collection", "title": "Wisdom Collection", "description": "Gather proverbs from different cultures"},
+      {"id": "healing_garden", "title": "Community Healing Garden", "description": "Share knowledge about medicinal plants"},
+      {"id": "craft_exhibition", "title": "Craft Exhibition", "description": "Display and explain traditional crafts"},
+      {"id": "dream_sharing", "title": "Dream Sharing Circle", "description": "Respectfully discuss dreams and their meanings"},
+      {"id": "future_visioning", "title": "Future Visioning", "description": "Discuss hopes for cultural preservation"}
+    ],
+    "discovery_rewards": [
+      {"type": "cultural_insight", "title": "Cultural Insight", "description": "Discovered a new aspect of Shona culture"},
+      {"type": "language_connection", "title": "Language Connection", "description": "Made a connection between Shona and another language"},
+      {"type": "personal_reflection", "title": "Personal Reflection", "description": "Reflected on your own cultural background"},
+      {"type": "community_connection", "title": "Community Connection", "description": "Connected with another learner"},
+      {"type": "wisdom_moment", "title": "Wisdom Moment", "description": "Gained insight from traditional wisdom"},
+      {"type": "creative_expression", "title": "Creative Expression", "description": "Expressed creativity through language learning"},
+      {"type": "respectful_dialogue", "title": "Respectful Dialogue", "description": "Engaged in respectful cultural exchange"},
+      {"type": "future_thinking", "title": "Future Thinking", "description": "Thought about cultural preservation and adaptation"}
+    ]
+  }
+}
