@@ -175,7 +175,91 @@
         {
           "unitNumber": 2,
           "unitName": "Mhuri Yangu (My Family)",
-          "lessons": []
+          "lessons": [
+            {
+              "lessonNumber": "2A",
+              "title": "Family Members Vocabulary",
+              "goal": "Identify and pronounce core Shona terms for immediate and extended family members.",
+              "vocabulary": ["baba", "amai", "mwana", "vana", "mukoma", "hanzvadzi", "sekuru", "ambuya"],
+              "grammarFocus": "Noun Classes 1/1a (singular humans) with Class 2/2a plurals; respect plurals for elders.",
+              "cultureNotes": [
+                "Titles like Sekuru and Ambuya extend beyond blood relation, showing community respect.",
+                "Using plural prefixes (va-) for elders conveys politeness even when singular."
+              ],
+              "activities": [
+                {"step": "Warm-up", "description": "Flashcard reveal: select correct English meaning after hearing each Shona kinship term."},
+                {"step": "Classify", "description": "Drag nouns into 'Singular' or 'Plural' baskets to visualise noun-class pairs."},
+                {"step": "Family Photo", "description": "Label a family picture aloud; speech recognition checks pronunciation."}
+              ],
+              "assessment": "Picture-matching quiz: choose the correct Shona word for highlighted relative (80% to pass).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'Amai' mean?", "correctAnswer": "Mother", "options": ["Mother", "Father", "Brother", "Grandfather"], "audioText": "ah-MY"},
+                {"type": "translation", "question": "Translate to English: Sekuru", "correctAnswer": "Grandfather / respected older man", "options": [], "audioText": "seh-KOO-roo"},
+                {"type": "matching", "question": "Match the singular to its plural.", "correctAnswer": "mwana-vana", "options": ["mwana-vana", "baba-vababa", "mukoma-vakoma"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "2B",
+              "title": "Possessive Pronouns (-angu / -ako)",
+              "goal": "Use possessive pronouns to describe your family members politely.",
+              "vocabulary": ["baba vangu", "amai vako", "mukoma wangu", "hanzvadzi yako"],
+              "grammarFocus": "Possessive suffixes (-angu, -ako, -edu) agree with noun class; keep va- prefix for respect.",
+              "cultureNotes": [
+                "Over-specifying possession with elders can sound boastful; context often implies 'my'.",
+                "Clapping once before speaking to an elder shows humility."
+              ],
+              "activities": [
+                {"step": "Listen & Repeat", "description": "Hear model sentences with possessives, repeat with voice feedback."},
+                {"step": "Sentence Builder", "description": "Drag correct possessive ending to noun stems (e.g., baba ___)."},
+                {"step": "Info Gap", "description": "Ask AI partner about their family and fill a table using -ako/-angu."}
+              ],
+              "assessment": "Fill-in-the-blank quiz: supply correct possessive suffix (85% to pass).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "How do you say 'my brother' in Shona?", "correctAnswer": "Mukoma wangu", "options": ["Mukoma wangu", "Mukoma wako", "Baba vangu", "Hanzvadzi yedu"], "audioText": "moo-KOH-mah WAH-ngoo"},
+                {"type": "translation", "question": "Translate to Shona: Your mother.", "correctAnswer": "Amai vako", "options": [], "audioText": ""},
+                {"type": "multiple_choice", "question": "Which possessive suffix means 'our'?", "correctAnswer": "-edu", "options": ["-ako", "-angu", "-edu", "-avo"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "2C",
+              "title": "Talking About Ages",
+              "goal": "State ages of family members using numbers 1-20 and structure 'ane ___ makore'.",
+              "vocabulary": ["makore", "ane", "gumi", "gumi nerimwe", "gumi nemashanu", "makumi maviri"],
+              "grammarFocus": "Numbers 1-20; verb 'ane' (has) for age; avoid verb 'to be'.",
+              "cultureNotes": [
+                "Exact age of elders sometimes avoided; approximate or general terms are polite.",
+                "Children proudly state age; opportunity for counting practice." 
+              ],
+              "activities": [
+                {"step": "Number Sprint", "description": "Quick-fire counting with audio 1-20."},
+                {"step": "Info Cards", "description": "Virtual ID cards show digits; say age in Shona sentences."},
+                {"step": "Guess & Reveal", "description": "Guess relative's age from photo then reveal and pronounce correctly."}
+              ],
+              "assessment": "Oral quiz via speech recognition on five random ages (80% to pass).",
+              "exercises": [
+                {"type": "translation", "question": "Translate: She is 13 years old.", "correctAnswer": "Ane gumi nematatu makore.", "options": [], "audioText": ""},
+                {"type": "multiple_choice", "question": "What is 15 in Shona?", "correctAnswer": "gumi nemashanu", "options": ["gumi nerimwe", "gumi nemashanu", "gumi nevaviri", "makumi maviri"], "audioText": ""},
+                {"type": "multiple_choice", "question": "Complete: Baba vangu ___ makore makumi maviri.", "correctAnswer": "vanemakumi maviri", "options": ["anemakumi maviri", "vanemakumi maviri", "tinamakumi maviri", "vakamakumi maviri"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "2D",
+              "title": "Checkpoint – Digital Family Tree",
+              "goal": "Create and narrate a simple digital family tree using correct kinship terms and possessives.",
+              "vocabulary": ["baba", "amai", "mwana", "mukoma", "hanzvadzi", "sekuru", "ambuya", "-angu", "-ako"],
+              "grammarFocus": "Review noun classes 1/2, possessive suffixes, ages with 'ane'.",
+              "cultureNotes": ["Start introductions with elders to show respect; include totem (mutupo) if known."],
+              "activities": [
+                {"step": "Tree Builder", "description": "Drag avatars onto a tree, label with Shona terms and ages."},
+                {"step": "Presentation", "description": "Record 45-second narration; AI flags any incorrect grammar."}
+              ],
+              "assessment": "Score = 80% correct labels + acceptable pronunciation to unlock Unit 3.",
+              "exercises": [
+                {"type": "matching", "question": "Match phrase to English.", "correctAnswer": "Amai vako-Your mother", "options": ["Baba vangu-My father", "Amai vako-Your mother", "Sekuru vake-His grandfather"], "audioText": ""},
+                {"type": "multiple_choice", "question": "Which noun class pair is for people?", "correctAnswer": "1/2", "options": ["3/4", "5/6", "1/2", "7/8"], "audioText": ""}
+              ]
+            }
+          ]
         },
         {
           "unitNumber": 3,
