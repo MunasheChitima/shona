@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import UserNotifications
 
 struct FlashcardView: View {
     @Environment(\.modelContext) private var modelContext
