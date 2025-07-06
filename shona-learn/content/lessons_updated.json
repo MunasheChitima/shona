@@ -354,7 +354,91 @@
         {
           "unitNumber": 2,
           "unitName": "Kuenda Kumusika (Going to the Market)",
-          "lessons": []
+          "lessons": [
+            {
+              "lessonNumber": "2A",
+              "title": "Market Greetings & Item Names",
+              "goal": "Greet vendors politely and name common produce and goods.",
+              "vocabulary": ["musika", "mangwanani", "makadini", "tomatisi", "mbatatisi", "mango", "maputi", "nyama", "huku"],
+              "grammarFocus": "Vendor greetings with plural of respect; question 'Munayo here…?' (Do you have…?).",
+              "cultureNotes": [
+                "Always greet before asking price; vendors appreciate respect.",
+                "Use plural forms (mangwanani, makadini) even when speaking to one vendor." 
+              ],
+              "activities": [
+                {"step": "Warm-up", "description": "Audio flashcards: match produce pictures to Shona names."},
+                {"step": "Dialogue Gap", "description": "Fill missing greeting phrases in sample vendor conversation."},
+                {"step": "Role-Play", "description": "Say hello and ask a virtual vendor if they have selected items."}
+              ],
+              "assessment": "Short recorded dialogue graded for correct greeting and item vocabulary (80%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'mbatatisi' mean?", "correctAnswer": "Potatoes", "options": ["Popcorn", "Potatoes", "Tomatoes", "Chicken"], "audioText": ""},
+                {"type": "translation", "question": "Translate to Shona: Do you have tomatoes?", "correctAnswer": "Munayo here tomatisi?", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match item to English.", "correctAnswer": "maputi-popcorn", "options": ["maputi-popcorn", "nyama-meat", "huku-chicken"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "2B",
+              "title": "Prices & Numbers 11–99",
+              "goal": "Ask for prices and understand numbers up to 99.",
+              "vocabulary": ["mutengo", "imarii", "dhora", "masenthu", "gumi nerimwe", "makumi mashanu", "makumi mapfumbamwe"],
+              "grammarFocus": "Number formation 11–99; structure 'Mari inosvika…' (The price reaches…).",
+              "cultureNotes": [
+                "Prices are quoted in US dollars and RTGS; confirm currency.",
+                "Bargaining involves counter-offers with polite language, not aggressive haggling." 
+              ],
+              "activities": [
+                {"step": "Number Bingo", "description": "Listen to spoken prices, mark numbers on bingo card."},
+                {"step": "Price Tag", "description": "Assign correct number phrases to price labels on items."},
+                {"step": "Ask & Answer", "description": "Pair exercise: one asks 'Imarii _____?' other states price."}
+              ],
+              "assessment": "Price-list quiz: choose correct Shona number for shown digit (85%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "How do you say 45 in Shona?", "correctAnswer": "makumi mana nemashanu", "options": ["makumi mana nemashanu", "makumi matatu", "makumi mashanu", "makumi mana"], "audioText": ""},
+                {"type": "translation", "question": "Translate: It costs 12 dollars.", "correctAnswer": "Inodhura madhora gumi nerimwe nechepiri.", "options": [], "audioText": ""},
+                {"type": "multiple_choice", "question": "What does 'mutengo' mean?", "correctAnswer": "Price", "options": ["Market", "Change", "Price", "Dollar"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "2C",
+              "title": "Bargaining & Polite Requests",
+              "goal": "Negotiate price using polite structures and request quantities.",
+              "vocabulary": ["ndipeiwo", "ndikumbirawo", "dzikisa", "siyana", "chero", "shandisai", "chinhambwe"],
+              "grammarFocus": "Imperative with '-wo' for politeness; verb 'dzikisa' (reduce) in request form 'Mungadzikisewo here mutengo?'.",
+              "cultureNotes": [
+                "Polite tone and small talk often secure better price reductions.",
+                "Handing money with right hand while supporting forearm shows respect." 
+              ],
+              "activities": [
+                {"step": "Phrase Transform", "description": "Convert direct commands into polite bargaining phrases."},
+                {"step": "Negotiation Simulation", "description": "Interactive vendor chat where learner tries to lower price."},
+                {"step": "Quantity Game", "description": "Request 1–5 kilos of items using correct number words."}
+              ],
+              "assessment": "Complete simulation achieving target discount using ≥3 polite phrases.",
+              "exercises": [
+                {"type": "translation", "question": "Translate: Please lower the price a little.", "correctAnswer": "Ndikumbirawo mudzikise mutengo zvishoma.", "options": [], "audioText": ""},
+                {"type": "multiple_choice", "question": "Which phrase politely means 'Give me'?", "correctAnswer": "Ndipeiwo", "options": ["Ndipa", "Ndipeiwo", "Ndikupa", "Dzikisa"], "audioText": ""},
+                {"type": "matching", "question": "Match Shona to English.", "correctAnswer": "siyana-change", "options": ["dzikisa-reduce", "siyana-change", "chero-any"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "2D",
+              "title": "Checkpoint – Market Day",
+              "goal": "Buy three items within budget in timed market simulation using greetings, numbers, and bargaining language.",
+              "vocabulary": [],
+              "grammarFocus": "Comprehensive review of Unit 2 structures.",
+              "cultureNotes": [],
+              "activities": [
+                {"step": "Simulation", "description": "Virtual market with voice/chat; learner must greet, ask price, bargain, pay."},
+                {"step": "Reflection", "description": "AI summary of strengths & corrections."}
+              ],
+              "assessment": "Score ≥85 currency units remaining after purchases & correct language to pass.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What question asks price?", "correctAnswer": "Imarii?", "options": ["Unayo?", "Ndapota?", "Imarii?", "Marii?"], "audioText": ""},
+                {"type": "multiple_choice", "question": "Which suffix softens a request?", "correctAnswer": "-wo", "options": ["-ka", "-wo", "-sa", "-re"], "audioText": ""}
+              ]
+            }
+          ]
         },
         {
           "unitNumber": 3,
