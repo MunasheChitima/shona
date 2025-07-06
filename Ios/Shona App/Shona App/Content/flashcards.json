@@ -1,0 +1,1003 @@
+[
+  {
+    "id": "flashcard_adv_emo_001",
+    "vocabularyId": "adv_emo_001",
+    "shonaText": "ndafara zvikuru",
+    "englishText": "I am very happy",
+    "audioText": "ndafara_zvikuru.mp3",
+    "pronunciation": null,
+    "phonetic": "/ⁿdafara zvikuru/",
+    "tonePattern": "LLLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "joy",
+      "happiness"
+    ],
+    "context": "Ndafara zvikuru kukuonai",
+    "culturalNote": "Used to express genuine happiness, often shared in community celebrations",
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_emo_002",
+    "vocabularyId": "adv_emo_002",
+    "shonaText": "mufaro mukuru",
+    "englishText": "great joy",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/mufaro mukuru/",
+    "tonePattern": "LHLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "joy",
+      "celebration"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_emo_003",
+    "vocabularyId": "adv_emo_003",
+    "shonaText": "kufadzwa",
+    "englishText": "to be pleased/delighted",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/kufaʣwa/",
+    "tonePattern": "LHL",
+    "difficulty": 0.6,
+    "tags": [
+      "joy",
+      "satisfaction"
+    ],
+    "context": "Ndakafadzwa nebasa rako",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_emo_010",
+    "vocabularyId": "adv_emo_010",
+    "shonaText": "kushungurudzika",
+    "englishText": "to be sad/troubled",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/kuʃuŋguruʣika/",
+    "tonePattern": "LHLHL",
+    "difficulty": 0.7,
+    "tags": [
+      "sadness",
+      "distress"
+    ],
+    "context": "Ndiri kushungurudzika nekurasikirwa",
+    "culturalNote": "Often expressed communally; sharing sadness is important in Shona culture",
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_emo_011",
+    "vocabularyId": "adv_emo_011",
+    "shonaText": "shungu",
+    "englishText": "sorrow/grief",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ʃuŋgu/",
+    "tonePattern": "HL",
+    "difficulty": 0.5,
+    "tags": [
+      "sadness",
+      "grief"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_emo_020",
+    "vocabularyId": "adv_emo_020",
+    "shonaText": "kutsamwa",
+    "englishText": "to be angry",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/kutsamwa/",
+    "tonePattern": "LHL",
+    "difficulty": 0.5,
+    "tags": [
+      "anger"
+    ],
+    "context": "Usatsamwe nazvo",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_emo_021",
+    "vocabularyId": "adv_emo_021",
+    "shonaText": "kugumbuka",
+    "englishText": "to be frustrated/annoyed",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/kugumbuka/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "anger",
+      "frustration"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_emo_030",
+    "vocabularyId": "adv_emo_030",
+    "shonaText": "kutya",
+    "englishText": "to fear/be afraid",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/kutja/",
+    "tonePattern": "LH",
+    "difficulty": 0.4,
+    "tags": [
+      "fear"
+    ],
+    "context": "Ndiri kutya kuti zvingakanganisika",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_emo_031",
+    "vocabularyId": "adv_emo_031",
+    "shonaText": "kuvhunduka",
+    "englishText": "to be startled/shocked",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/kuvunduka/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "fear",
+      "surprise"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_emo_040",
+    "vocabularyId": "adv_emo_040",
+    "shonaText": "kushamisika",
+    "englishText": "to be surprised",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/kuʃamisika/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "surprise"
+    ],
+    "context": "Ndakashamisika nekuona iwe pano",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_001",
+    "vocabularyId": "adv_op_001",
+    "shonaText": "ndinofunga kuti",
+    "englishText": "I think that",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdinofuŋga kuti/",
+    "tonePattern": "LLLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "expressing_opinion"
+    ],
+    "context": "Ndinofunga kuti zvakanaka",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_002",
+    "vocabularyId": "adv_op_002",
+    "shonaText": "maonero angu ndeekuti",
+    "englishText": "my view is that",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/maonero aŋgu ⁿdeːkuti/",
+    "tonePattern": "LHLHLLLHL",
+    "difficulty": 0.7,
+    "tags": [
+      "expressing_opinion"
+    ],
+    "context": "Maonero angu ndeekuti tinofanira kuronga",
+    "culturalNote": "More formal way to express opinion, suitable for meetings",
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_003",
+    "vocabularyId": "adv_op_003",
+    "shonaText": "ndinotenda kuti",
+    "englishText": "I believe that",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdinotenda kuti/",
+    "tonePattern": "LLLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "expressing_opinion",
+      "belief"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_004",
+    "vocabularyId": "adv_op_004",
+    "shonaText": "zviri pachena kuti",
+    "englishText": "it's clear that",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/zviri patʃena kuti/",
+    "tonePattern": "LLLHLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "expressing_opinion",
+      "certainty"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_010",
+    "vocabularyId": "adv_op_010",
+    "shonaText": "ndinobvumirana newe",
+    "englishText": "I agree with you",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdinobvumirana newe/",
+    "tonePattern": "LLLLHLH",
+    "difficulty": 0.6,
+    "tags": [
+      "agreement"
+    ],
+    "context": "Ndinobvumirana newe zvachose",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_011",
+    "vocabularyId": "adv_op_011",
+    "shonaText": "zvirinani",
+    "englishText": "that's right/correct",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/zvirinani/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.4,
+    "tags": [
+      "agreement"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_012",
+    "vocabularyId": "adv_op_012",
+    "shonaText": "handina kupikisa",
+    "englishText": "I don't disagree",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/handina kupikisa/",
+    "tonePattern": "LLLLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "agreement",
+      "mild"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_020",
+    "vocabularyId": "adv_op_020",
+    "shonaText": "handifungi kudaro",
+    "englishText": "I don't think so",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/handifuŋgi kudaro/",
+    "tonePattern": "LLLLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "disagreement"
+    ],
+    "context": "Handifungi kudaro, asi ndinoterera",
+    "culturalNote": "Polite way to disagree without direct confrontation",
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_021",
+    "vocabularyId": "adv_op_021",
+    "shonaText": "ndinopikisa",
+    "englishText": "I disagree",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdinopikisa/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "disagreement"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_op_022",
+    "vocabularyId": "adv_op_022",
+    "shonaText": "handizvo zvandinoona",
+    "englishText": "that's not how I see it",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/handizvo zvaⁿdinoːna/",
+    "tonePattern": "LLLLLHL",
+    "difficulty": 0.7,
+    "tags": [
+      "disagreement",
+      "perspective"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_pol_001",
+    "vocabularyId": "adv_pol_001",
+    "shonaText": "ndapota",
+    "englishText": "please",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdapota/",
+    "tonePattern": "LHL",
+    "difficulty": 0.3,
+    "tags": [
+      "requests"
+    ],
+    "context": "Ndapota ndibatsireiwo",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_pol_002",
+    "vocabularyId": "adv_pol_002",
+    "shonaText": "dai maibvuma",
+    "englishText": "if you would allow",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/dai maibvuma/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.7,
+    "tags": [
+      "requests",
+      "formal"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_pol_003",
+    "vocabularyId": "adv_pol_003",
+    "shonaText": "ndinokumbirawo",
+    "englishText": "I kindly request",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdinokumbirawo/",
+    "tonePattern": "LLLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "requests",
+      "formal"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_pol_010",
+    "vocabularyId": "adv_pol_010",
+    "shonaText": "ndinotenda zvikuru",
+    "englishText": "thank you very much",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdinotenda zvikuru/",
+    "tonePattern": "LLLHL",
+    "difficulty": 0.4,
+    "tags": [
+      "gratitude"
+    ],
+    "context": "Ndinotenda zvikuru nebatsiro yenyu",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_pol_011",
+    "vocabularyId": "adv_pol_011",
+    "shonaText": "ndatenda hangu",
+    "englishText": "I really appreciate it",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdatenda haŋgu/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "gratitude",
+      "informal"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_pol_020",
+    "vocabularyId": "adv_pol_020",
+    "shonaText": "ndine urombo",
+    "englishText": "I'm sorry",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdine urombo/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.4,
+    "tags": [
+      "apologies"
+    ],
+    "context": "Ndine urombo zvikuru",
+    "culturalNote": "Standard apology, can be intensified with 'zvikuru' or 'chaizvo'",
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_pol_021",
+    "vocabularyId": "adv_pol_021",
+    "shonaText": "ndikanganwa",
+    "englishText": "I forgot/made a mistake",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdikaŋganwa/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "apologies",
+      "admission"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_pol_022",
+    "vocabularyId": "adv_pol_022",
+    "shonaText": "musandipa mhosva",
+    "englishText": "please don't blame me",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/musandipa m̥osva/",
+    "tonePattern": "LLLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "apologies",
+      "defense"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_001",
+    "vocabularyId": "adv_dis_001",
+    "shonaText": "pakutanga",
+    "englishText": "firstly/at first",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/pakutaŋga/",
+    "tonePattern": "LHL",
+    "difficulty": 0.5,
+    "tags": [
+      "sequencing"
+    ],
+    "context": "Pakutanga, tinofanira kunzwisisa",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_002",
+    "vocabularyId": "adv_dis_002",
+    "shonaText": "mushure mezvo",
+    "englishText": "after that/then",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/muʃure mezvo/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "sequencing"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_003",
+    "vocabularyId": "adv_dis_003",
+    "shonaText": "pakupedzisira",
+    "englishText": "finally/lastly",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/pakupeʣisira/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "sequencing"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_010",
+    "vocabularyId": "adv_dis_010",
+    "shonaText": "asi",
+    "englishText": "but",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/asi/",
+    "tonePattern": "LH",
+    "difficulty": 0.3,
+    "tags": [
+      "contrast"
+    ],
+    "context": "Ndinoda, asi handikwanisi",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_011",
+    "vocabularyId": "adv_dis_011",
+    "shonaText": "zvisinei nazvo",
+    "englishText": "nevertheless/regardless",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/zvisinej nazvo/",
+    "tonePattern": "LLLLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "contrast",
+      "concession"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_012",
+    "vocabularyId": "adv_dis_012",
+    "shonaText": "kunyangwe zvakadaro",
+    "englishText": "even so/however",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/kuɲaŋgwe zvakadaro/",
+    "tonePattern": "LHLLLHL",
+    "difficulty": 0.7,
+    "tags": [
+      "contrast"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_020",
+    "vocabularyId": "adv_dis_020",
+    "shonaText": "uyezve",
+    "englishText": "also/and also",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ujezve/",
+    "tonePattern": "LHL",
+    "difficulty": 0.5,
+    "tags": [
+      "addition"
+    ],
+    "context": "Uyezve, tinofanira kufunga nezvezvi",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_021",
+    "vocabularyId": "adv_dis_021",
+    "shonaText": "pamusoro pezvo",
+    "englishText": "furthermore/moreover",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/pamusoro pezvo/",
+    "tonePattern": "LHLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "addition",
+      "emphasis"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_030",
+    "vocabularyId": "adv_dis_030",
+    "shonaText": "ndiko kuti",
+    "englishText": "that is to say",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdiko kuti/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "explanation"
+    ],
+    "context": "Hazvishande, ndiko kuti, hazvibatsiri",
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_dis_031",
+    "vocabularyId": "adv_dis_031",
+    "shonaText": "nemamwe mazwi",
+    "englishText": "in other words",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/nemamwe mazwi/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "explanation",
+      "paraphrase"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_hes_001",
+    "vocabularyId": "adv_hes_001",
+    "shonaText": "regai ndifunge",
+    "englishText": "let me think",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/regaj ⁿdifuŋge/",
+    "tonePattern": "LLHL",
+    "difficulty": 0.5,
+    "tags": [
+      "thinking"
+    ],
+    "context": "Regai ndifunge... ah, ndinorangarira",
+    "culturalNote": "Polite way to buy time while thinking",
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_hes_002",
+    "vocabularyId": "adv_hes_002",
+    "shonaText": "handinyatsoziva",
+    "englishText": "I'm not quite sure",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/handiɲatsoziva/",
+    "tonePattern": "LLLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "uncertainty"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_hes_003",
+    "vocabularyId": "adv_hes_003",
+    "shonaText": "pamwe",
+    "englishText": "maybe/perhaps",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/pamwe/",
+    "tonePattern": "HL",
+    "difficulty": 0.4,
+    "tags": [
+      "possibility"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_hes_004",
+    "vocabularyId": "adv_hes_004",
+    "shonaText": "zvimwe",
+    "englishText": "possibly",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/zvimwe/",
+    "tonePattern": "HL",
+    "difficulty": 0.5,
+    "tags": [
+      "possibility"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_hes_005",
+    "vocabularyId": "adv_hes_005",
+    "shonaText": "ndinofungidzira kuti",
+    "englishText": "I suppose that",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ⁿdinofuŋgiʣira kuti/",
+    "tonePattern": "LLLLHL",
+    "difficulty": 0.6,
+    "tags": [
+      "speculation"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_int_001",
+    "vocabularyId": "adv_int_001",
+    "shonaText": "maiwe!",
+    "englishText": "oh my!",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/majwe/",
+    "tonePattern": "LH",
+    "difficulty": 0.3,
+    "tags": [
+      "surprise"
+    ],
+    "context": "Maiwe! Handina kuziva kuti uri pano",
+    "culturalNote": "Common exclamation of surprise, can express both positive and negative surprise",
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_int_002",
+    "vocabularyId": "adv_int_002",
+    "shonaText": "haiwa!",
+    "englishText": "wow!/really!",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/hajwa/",
+    "tonePattern": "LH",
+    "difficulty": 0.3,
+    "tags": [
+      "surprise",
+      "disbelief"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_int_003",
+    "vocabularyId": "adv_int_003",
+    "shonaText": "ehe!",
+    "englishText": "oh!/I see!",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ehe/",
+    "tonePattern": "LH",
+    "difficulty": 0.3,
+    "tags": [
+      "realization"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_int_010",
+    "vocabularyId": "adv_int_010",
+    "shonaText": "hongu",
+    "englishText": "yes",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/hoŋgu/",
+    "tonePattern": "HL",
+    "difficulty": 0.2,
+    "tags": [
+      "agreement"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_int_011",
+    "vocabularyId": "adv_int_011",
+    "shonaText": "ehe",
+    "englishText": "yeah/yep",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/ehe/",
+    "tonePattern": "LH",
+    "difficulty": 0.3,
+    "tags": [
+      "agreement",
+      "informal"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  },
+  {
+    "id": "flashcard_adv_int_020",
+    "vocabularyId": "adv_int_020",
+    "shonaText": "aaah!",
+    "englishText": "ouch!",
+    "audioText": null,
+    "pronunciation": null,
+    "phonetic": "/aːː/",
+    "tonePattern": "HL",
+    "difficulty": 0.2,
+    "tags": [
+      "pain"
+    ],
+    "context": null,
+    "culturalNote": null,
+    "complexity": null,
+    "specialSounds": null,
+    "pronunciationTips": [],
+    "category": "Advanced Conversational"
+  }
+]

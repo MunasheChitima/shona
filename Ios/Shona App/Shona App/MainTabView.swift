@@ -36,9 +36,21 @@ struct MainTabView: View {
                             Text("Learn")
                         }
                     
+                    PronunciationView()
+                        .tabItem {
+                            Image(systemName: "mic.fill")
+                            Text("Pronunciation")
+                        }
+                    
+                    QuestView()
+                        .tabItem {
+                            Image(systemName: "map.fill")
+                            Text("Quests")
+                        }
+                    
                     FlashcardView()
                         .tabItem {
-                            Image(systemName: "rectangle.on.rectangle.fill")
+                            Image(systemName: "rectangle.stack.fill")
                             Text("Flashcards")
                         }
                     
@@ -48,7 +60,7 @@ struct MainTabView: View {
                             Text("Profile")
                         }
                 }
-                .accentColor(.green)
+                .accentColor(.blue)
             }
         }
         .onAppear {

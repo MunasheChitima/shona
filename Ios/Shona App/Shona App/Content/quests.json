@@ -1,0 +1,53 @@
+[
+  {
+    "id": "quest_1",
+    "title": "Communication Journey",
+    "description": "Master communication through interactive lessons",
+    "storyNarrative": "Embark on a journey to master the art of Shona communication, connecting with the heart of Zimbabwean culture.",
+    "category": "Communication",
+    "orderIndex": 1,
+    "requiredLevel": 1,
+    "lessons": [
+      "lesson_1",
+      "lesson_2",
+      "lesson_3",
+      "lesson_4",
+      "lesson_5"
+    ],
+    "collaborativeElements": "{\"peerLearning\":true,\"groupChallenges\":true,\"socialSharing\":true}",
+    "intrinsicRewards": "{\"autonomy\":\"Self-paced learning\",\"competence\":\"Skill mastery\",\"relatedness\":\"Cultural connection\"}"
+  },
+  {
+    "id": "quest_2",
+    "title": "Environment Journey",
+    "description": "Master environment through interactive lessons",
+    "storyNarrative": "Connect with the natural world through Shona expressions, understanding weather and seasons.",
+    "category": "Environment",
+    "orderIndex": 2,
+    "requiredLevel": 2,
+    "lessons": [
+      "lesson_6",
+      "lesson_7",
+      "lesson_8",
+      "lesson_9",
+      "lesson_10"
+    ],
+    "collaborativeElements": "{\"peerLearning\":true,\"groupChallenges\":true,\"socialSharing\":true}",
+    "intrinsicRewards": "{\"autonomy\":\"Self-paced learning\",\"competence\":\"Skill mastery\",\"relatedness\":\"Cultural connection\"}"
+  },
+  {
+    "id": "quest_3",
+    "title": "Grammar Journey",
+    "description": "Master grammar through interactive lessons",
+    "storyNarrative": "Master the structural foundations of Shona, building strong linguistic foundations.",
+    "category": "Grammar",
+    "orderIndex": 3,
+    "requiredLevel": 3,
+    "lessons": [
+      "lesson_11",
+      "lesson_12"
+    ],
+    "collaborativeElements": "{\"peerLearning\":true,\"groupChallenges\":true,\"socialSharing\":true}",
+    "intrinsicRewards": "{\"autonomy\":\"Self-paced learning\",\"competence\":\"Skill mastery\",\"relatedness\":\"Cultural connection\"}"
+  }
+]
