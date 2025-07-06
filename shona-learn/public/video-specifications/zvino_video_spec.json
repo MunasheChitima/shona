@@ -1,0 +1,51 @@
+{
+  "word": "zvino",
+  "english": "now",
+  "phonetic_analysis": {
+    "tokens": [
+      "zv",
+      "i",
+      "n",
+      "o"
+    ],
+    "syllables": [
+      "zvi",
+      "no"
+    ],
+    "complexity": 8,
+    "special_features": [
+      {
+        "token": "zv",
+        "type": "Voiced Whistled Sibilant",
+        "ipa": "zwhistling",
+        "instructions": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.",
+        "category": "whistled",
+        "antiPatterns": [
+          "DO NOT pronounce as 'z' + 'v'."
+        ]
+      }
+    ]
+  },
+  "video_specifications": {
+    "model": "veo-2.0-generate-001",
+    "duration": "8 seconds",
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "audio": "Generated with clear pronunciation",
+    "focus": "Close-up mouth and lip movements"
+  },
+  "veo_prompt": "Create a professional educational video showing clear pronunciation of the Shona word \"zvino\" meaning \"now\". The word has 2 syllables: zvi-no. Focus on these special Shona sounds: \"zv\" with lips rounded and protruded for whistled sound. Show a close-up view of mouth and lips clearly pronouncing each syllable slowly and distinctly. Use professional lighting, clean background, educational style. The speaker should articulate clearly for language learning purposes.",
+  "educational_elements": [
+    "Clear syllable breakdown",
+    "Emphasis on special Shona sounds",
+    "Slow, distinct pronunciation",
+    "Visual mouth positioning",
+    "Professional educational style"
+  ],
+  "integration_notes": [
+    "Perfect for language learning apps",
+    "Combines Mudzidzisi AI analysis with Veo generation",
+    "Provides both visual and audio learning",
+    "Scalable for entire vocabulary"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "project": "Shona Pronunciation Videos with Veo",
+  "generated_at": "2025-07-06T15:24:52.350Z",
+  "total_words": 4,
+  "model": "veo-2.0-generate-001",
+  "integration": "Mudzidzisi AI + Google Veo",
+  "words": [
+    {
+      "word": "bhazi",
+      "complexity": 7,
+      "special_sounds": [
+        {
+          "token": "bh",
+          "type": "breathy"
+        }
+      ]
+    },
+    {
+      "word": "svika",
+      "complexity": 8,
+      "special_sounds": [
+        {
+          "token": "sv",
+          "type": "whistled"
+        }
+      ]
+    },
+    {
+      "word": "zvino",
+      "complexity": 8,
+      "special_sounds": [
+        {
+          "token": "zv",
+          "type": "whistled"
+        }
+      ]
+    },
+    {
+      "word": "mbira",
+      "complexity": 6,
+      "special_sounds": [
+        {
+          "token": "mb",
+          "type": "prenasalized"
+        }
+      ]
+    }
+  ],
+  "technical_requirements": {
+    "api_key": "Required: Google Cloud/Gemini API access",
+    "model_access": "Veo video generation capabilities",
+    "storage": "Cloud storage for generated videos",
+    "processing": "Real-time phonetic analysis"
+  },
+  "educational_impact": [
+    "High-quality pronunciation videos",
+    "Automated generation from text",
+    "Specialized Shona linguistic features",
+    "Scalable to entire vocabulary",
+    "Integration-ready for learning apps"
+  ]
+}
