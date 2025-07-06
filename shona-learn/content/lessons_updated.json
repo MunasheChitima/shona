@@ -523,7 +523,82 @@
         {
           "unitNumber": 4,
           "unitName": "Zvido Zvangu (My Hobbies)",
-          "lessons": []
+          "lessons": [
+            {
+              "lessonNumber": "4A",
+              "title": "Hobby Vocabulary & Preferences",
+              "goal": "State hobbies you like and dislike using affirmative and negative forms of 'kuda'.",
+              "vocabulary": ["kuverenga", "kutamba bhora", "kuteerera mimhanzi", "kupenda", "kubika", "kufamba", "handidi"],
+              "grammarFocus": "Verb 'kuda' (to want/like) vs negative form with prefix 'ha-' and final vowel '-i': 'Handidi kuverenga'.",
+              "cultureNotes": ["Football (bhora) and music (mimhanzi) are popular free-time activities across Zimbabwe.","Saying you dislike something is softer if followed by 'zvangu' (for me)."],
+              "activities": [
+                {"step": "Flashcards", "description": "Hear hobby verb phrases, choose matching image."},
+                {"step": "Like/Dislike", "description": "Swipe right/left on hobby cards; app forms sentence: 'Ndinoda ___' or 'Handidi ___'."},
+                {"step": "Peer Chat", "description": "AI asks 'Unoda kutamba bhora here?' learner answers using positive or negative."}
+              ],
+              "assessment": "Quiz: choose correct negative/positive form for 6 hobbies (80%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Translate: 'Handidi kubika.'", "correctAnswer": "I don't like cooking.", "options": ["I like cooking.", "I don't like cooking.", "I want to cook.", "I will cook."], "audioText": ""},
+                {"type": "translation", "question": "Translate to Shona: I like reading.", "correctAnswer": "Ndinoda kuverenga.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match Shona hobby to English.", "correctAnswer": "kuteerera mimhanzi-listening to music", "options": ["kutamba bhora-playing football", "kuteerera mimhanzi-listening to music", "kufamba-walking"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "4B",
+              "title": "Frequency & Routine",
+              "goal": "Describe how often you do hobbies using frequency adverbs.",
+              "vocabulary": ["kazhinji", "nguva dzese", "zvishoma", "kare kare", "Jumapiri", "Chishanu"],
+              "grammarFocus": "Placement of adverbs of frequency before verb clause: 'Kazhinji ndinotamba bhora.'",
+              "cultureNotes": ["Weekend names (Mugovera/Saturday, Svondo/Sunday) used for planning community sports.","Shona often omits subject pronoun when frequency adverb is present."],
+              "activities": [
+                {"step": "Ordering", "description": "Arrange scrambled words to form correct frequency sentence."},
+                {"step": "Calendar Talk", "description": "Drag hobby icons onto week planner and describe routine aloud."},
+                {"step": "Survey", "description": "Answer AI questions about how often you do each hobby."}
+              ],
+              "assessment": "Write/record three sentences each with different frequency adverb (80%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Which word means 'often'?", "correctAnswer": "kazhinji", "options": ["nguva dzese", "kazhinji", "zvishoma", "kare kare"], "audioText": ""},
+                {"type": "translation", "question": "Translate: I rarely play football.", "correctAnswer": "Zvishoma ndinotamba bhora.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match Shona day to English.", "correctAnswer": "Jumapiri-Sunday", "options": ["Chishanu-Friday", "Jumapiri-Sunday", "Muvhuro-Monday"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "4C",
+              "title": "Inviting Friends – Polite Invitations",
+              "goal": "Invite someone to join your hobby politely using 'Ungada here…' and inclusive imperative 'ngati…'.",
+              "vocabulary": ["Ungada here", "ngatimbo", "kuuya", "kutamba", "kuenda", "kunzwa mimhanzi"],
+              "grammarFocus": "Polite invitation question with 'Ungada here…?' and inclusive imperative 'Ngatimbo…'.",
+              "cultureNotes": ["Friends often soften invitations with food offer: 'Ngatimboenda kunwa maheu'."],
+              "activities": [
+                {"step": "Dialogue Fill", "description": "Insert correct invitation phrase into dialogue."},
+                {"step": "Role-play", "description": "Invite AI friend to two hobbies; accept or decline politely."},
+                {"step": "Transform", "description": "Change statements into invitations using ngati-."}
+              ],
+              "assessment": "Recorded role-play scored for correct invitation forms.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Choose inclusive imperative meaning 'Let's go play'.", "correctAnswer": "Ngatimboenda kunotamba", "options": ["Enda kutamba", "Ngatimboenda kunotamba", "Ndichatamba", "Tichatamba"], "audioText": ""},
+                {"type": "translation", "question": "Translate: Would you like to listen to music?", "correctAnswer": "Ungada here kuteerera mimhanzi?", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match phrase to function.", "correctAnswer": "Ungada here-Polite invitation", "options": ["ngati- inclusive imperative", "Ungada here-Polite invitation", "kuuya-to come"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "4D",
+              "title": "Checkpoint – Hobby Schedule",
+              "goal": "Create a weekly hobby schedule and invite a friend for one activity.",
+              "vocabulary": [],
+              "grammarFocus": "Review likes/dislikes, frequency adverbs, invitations.",
+              "cultureNotes": [],
+              "activities": [
+                {"step": "Schedule Builder", "description": "Drag hobby icons onto week grid, record description."},
+                {"step": "Invitation Challenge", "description": "Send AI friend an invitation using correct structures."}
+              ],
+              "assessment": "Rubric: 5 correct sentences + successful invitation (80%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Which adverb means 'always'?", "correctAnswer": "nguva dzese", "options": ["kazhinji", "nguva dzese", "zvishoma", "kare kare"], "audioText": ""},
+                {"type": "multiple_choice", "question": "Translate 'Ngatimboverenga mangwana'.", "correctAnswer": "Let's read tomorrow", "options": ["We will read tomorrow", "Let's read tomorrow", "Do you like reading tomorrow?", "Reading tomorrow is good"], "audioText": ""}
+              ]
+            }
+          ]
         }
       ]
     },
