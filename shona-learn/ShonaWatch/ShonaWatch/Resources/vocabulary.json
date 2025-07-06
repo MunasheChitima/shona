@@ -1,0 +1,349 @@
+{
+  "flashcards": [
+    {
+      "id": "shona-001",
+      "shonaText": "mhoro",
+      "englishText": "hello (informal)",
+      "pronunciation": "mho-ro",
+      "phonetic": "/mʰoro/",
+      "tonePattern": "HL",
+      "category": "Greetings",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Casual greeting used between friends and equals",
+      "usageNotes": "Used in informal situations",
+      "examples": [
+        {
+          "id": "ex-001",
+          "shona": "Mhoro shamwari!",
+          "english": "Hello friend!",
+          "context": "greeting friends",
+          "register": "informal"
+        }
+      ],
+      "tags": ["greetings", "informal", "friends"]
+    },
+    {
+      "id": "shona-002",
+      "shonaText": "mhoroi",
+      "englishText": "hello (formal)",
+      "pronunciation": "mho-ro-i",
+      "phonetic": "/mʰoroj/",
+      "tonePattern": "HLH",
+      "category": "Greetings",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Respectful greeting used with elders and strangers",
+      "usageNotes": "Shows respect and is used in formal situations",
+      "examples": [
+        {
+          "id": "ex-002",
+          "shona": "Mhoroi ambuya!",
+          "english": "Hello grandmother!",
+          "context": "greeting elders",
+          "register": "formal"
+        }
+      ],
+      "tags": ["greetings", "formal", "respect"]
+    },
+    {
+      "id": "shona-003",
+      "shonaText": "baba",
+      "englishText": "father",
+      "pronunciation": "ba-ba",
+      "phonetic": "/baba/",
+      "tonePattern": "HL",
+      "category": "Family",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Father is highly respected in Shona culture",
+      "usageNotes": "Used to address one's father or refer to him",
+      "examples": [
+        {
+          "id": "ex-003",
+          "shona": "Baba vangu vari kuenda kubasa.",
+          "english": "My father is going to work.",
+          "context": "talking about family",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["family", "male", "parent"]
+    },
+    {
+      "id": "shona-004",
+      "shonaText": "amai",
+      "englishText": "mother",
+      "pronunciation": "a-mai",
+      "phonetic": "/amai/",
+      "tonePattern": "HL",
+      "category": "Family",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Mother is the heart of the Shona family",
+      "usageNotes": "Used to address one's mother or refer to her",
+      "examples": [
+        {
+          "id": "ex-004",
+          "shona": "Amai vangu vanobika zvakanaka.",
+          "english": "My mother cooks well.",
+          "context": "praising mother",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["family", "female", "parent"]
+    },
+    {
+      "id": "shona-005",
+      "shonaText": "motsi",
+      "englishText": "one",
+      "pronunciation": "mo-tsi",
+      "phonetic": "/motsi/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Basic counting is essential for daily life",
+      "usageNotes": "Used for counting and quantities",
+      "examples": [
+        {
+          "id": "ex-005",
+          "shona": "Ndine motsi chete.",
+          "english": "I have only one.",
+          "context": "counting items",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["numbers", "counting", "basic"]
+    },
+    {
+      "id": "shona-006",
+      "shonaText": "piri",
+      "englishText": "two",
+      "pronunciation": "pi-ri",
+      "phonetic": "/piri/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Two is important in Shona - pairs and duality",
+      "usageNotes": "Used for counting and expressing pairs",
+      "examples": [
+        {
+          "id": "ex-006",
+          "shona": "Ndine vana vaviri.",
+          "english": "I have two children.",
+          "context": "family size",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["numbers", "counting", "pairs"]
+    },
+    {
+      "id": "shona-007",
+      "shonaText": "tatu",
+      "englishText": "three",
+      "pronunciation": "ta-tu",
+      "phonetic": "/tatu/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Three is considered a complete number in many contexts",
+      "usageNotes": "Used for counting and quantities",
+      "examples": [
+        {
+          "id": "ex-007",
+          "shona": "Ndinoda matatu.",
+          "english": "I want three.",
+          "context": "requesting quantity",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["numbers", "counting", "basic"]
+    },
+    {
+      "id": "shona-008",
+      "shonaText": "tsvuku",
+      "englishText": "red",
+      "pronunciation": "tsvu-ku",
+      "phonetic": "/tsvuku/",
+      "tonePattern": "HL",
+      "category": "Colors",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Red is significant in Shona culture and ceremonies",
+      "usageNotes": "Used to describe objects and clothing",
+      "examples": [
+        {
+          "id": "ex-008",
+          "shona": "Tomato tsvuku.",
+          "english": "Red tomato.",
+          "context": "describing food",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["colors", "descriptive", "adjective"]
+    },
+    {
+      "id": "shona-009",
+      "shonaText": "chena",
+      "englishText": "white",
+      "pronunciation": "che-na",
+      "phonetic": "/tʃena/",
+      "tonePattern": "HL",
+      "category": "Colors",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "White represents purity and peace in Shona culture",
+      "usageNotes": "Used to describe objects and clothing",
+      "examples": [
+        {
+          "id": "ex-009",
+          "shona": "Hembe chena.",
+          "english": "White shirt.",
+          "context": "describing clothing",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["colors", "descriptive", "adjective"]
+    },
+    {
+      "id": "shona-010",
+      "shonaText": "sadza",
+      "englishText": "thick porridge (staple food)",
+      "pronunciation": "sa-dza",
+      "phonetic": "/sadza/",
+      "tonePattern": "HL",
+      "category": "Food",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Sadza is the staple food of Zimbabwe, central to every meal",
+      "usageNotes": "The most important food in Shona culture",
+      "examples": [
+        {
+          "id": "ex-010",
+          "shona": "Ndinoda sadza nemurivo.",
+          "english": "I want sadza with vegetables.",
+          "context": "ordering food",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["food", "staple", "culture"]
+    },
+    {
+      "id": "shona-011",
+      "shonaText": "kombi",
+      "englishText": "minibus taxi",
+      "pronunciation": "kom-bi",
+      "phonetic": "/kombi/",
+      "tonePattern": "HL",
+      "category": "Urban Life",
+      "difficulty": 2.0,
+      "level": "A2",
+      "culturalNotes": "Main form of public transport in Zimbabwe",
+      "usageNotes": "Used for city transportation",
+      "examples": [
+        {
+          "id": "ex-011",
+          "shona": "Ndinoenda kubasa nekombi.",
+          "english": "I go to work by kombi.",
+          "context": "daily commute",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["transport", "urban", "daily"]
+    },
+    {
+      "id": "shona-012",
+      "shonaText": "WhatsApp",
+      "englishText": "WhatsApp",
+      "pronunciation": "WhatsApp",
+      "phonetic": "/wɒtsæp/",
+      "tonePattern": "HL",
+      "category": "Social Media",
+      "difficulty": 2.0,
+      "level": "A2",
+      "culturalNotes": "Most popular messaging app in Zimbabwe",
+      "usageNotes": "Used for daily communication",
+      "examples": [
+        {
+          "id": "ex-012",
+          "shona": "Nditumire paWhatsApp.",
+          "english": "Send me on WhatsApp.",
+          "context": "exchanging contacts",
+          "register": "informal"
+        }
+      ],
+      "tags": ["technology", "communication", "modern"]
+    },
+    {
+      "id": "shona-013",
+      "shonaText": "mwana",
+      "englishText": "child",
+      "pronunciation": "mwa-na",
+      "phonetic": "/mwana/",
+      "tonePattern": "HL",
+      "category": "Family",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Children are treasured in Shona culture",
+      "usageNotes": "Used to refer to any child",
+      "examples": [
+        {
+          "id": "ex-013",
+          "shona": "Mwana mudiki.",
+          "english": "Small child.",
+          "context": "describing child",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["family", "children", "basic"]
+    },
+    {
+      "id": "shona-014",
+      "shonaText": "mukoma",
+      "englishText": "older brother",
+      "pronunciation": "mu-ko-ma",
+      "phonetic": "/mukoma/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Older siblings are respected in Shona culture",
+      "usageNotes": "Used to address or refer to older brother",
+      "examples": [
+        {
+          "id": "ex-014",
+          "shona": "Mukoma wangu ari kubasa.",
+          "english": "My older brother is at work.",
+          "context": "talking about family",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["family", "male", "hierarchy"]
+    },
+    {
+      "id": "shona-015",
+      "shonaText": "hanzvadzi",
+      "englishText": "sister",
+      "pronunciation": "han-zva-dzi",
+      "phonetic": "/hanzvadzi/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Sisters have special bonds in Shona families",
+      "usageNotes": "Used to address or refer to sister",
+      "examples": [
+        {
+          "id": "ex-015",
+          "shona": "Hanzvadzi yangu inofara.",
+          "english": "My sister is happy.",
+          "context": "describing sister",
+          "register": "neutral"
+        }
+      ],
+      "tags": ["family", "female", "sibling"]
+    }
+  ]
+}
