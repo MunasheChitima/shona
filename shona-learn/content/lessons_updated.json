@@ -175,279 +175,17 @@
         {
           "unitNumber": 2,
           "unitName": "Mhuri Yangu (My Family)",
-          "lessons": [
-            {
-              "lessonNumber": "2A",
-              "title": "Family Members Vocabulary",
-              "goal": "Identify and pronounce core Shona terms for immediate and extended family members.",
-              "vocabulary": ["baba", "amai", "mwana", "vana", "mukoma", "hanzvadzi", "sekuru", "ambuya"],
-              "grammarFocus": "Introduction to Noun Classes 1/1a (singular human) and 2/2a (plural human). Singular prefix 'mu-/ø', plural 'va-/ø'.",
-              "cultureNotes": [
-                "In Shona culture, titles like Sekuru (grandfather/older man) and Ambuya (grandmother/older woman) extend beyond blood relations to show respect to elders.",
-                "Kinship terms are frequently used as honorifics even for non-family members, stressing community bonds."
-              ],
-              "activities": [
-                {"step": "Warm-up", "description": "Flashcard reveal: learners guess the English for each family member word after hearing audio."},
-                {"step": "Classification", "description": "Drag words into 'Singular' or 'Plural' baskets to visualize noun class pairings."},
-                {"step": "Role-Play", "description": "Show a picture of a family; learner labels each person aloud using correct Shona term."}
-              ],
-              "assessment": "Picture selection quiz: choose the correct Shona word when shown an image of a family member.",
-              "exercises": [
-                {"type": "multiple_choice", "question": "What does 'Amai' mean?", "correctAnswer": "Mother", "options": ["Mother", "Father", "Brother", "Grandfather"], "audioText": "ah-MY"},
-                {"type": "translation", "question": "Translate to English: Sekuru", "correctAnswer": "Grandfather / respected older man", "options": [], "audioText": "seh-KOO-roo"},
-                {"type": "matching", "question": "Match the singular form to its plural.", "correctAnswer": "mwana-vana", "options": ["baba-vababa", "mukoma-vakoma", "mwana-vana"], "audioText": ""}
-              ]
-            },
-            {
-              "lessonNumber": "2B",
-              "title": "Possessive Pronouns (-angu / -ako)",
-              "goal": "Use possessive pronouns to describe one's own and others' family members.",
-              "vocabulary": ["baba vangu", "amai vako", "mukoma wangu", "hanzvadzi yako"],
-              "grammarFocus": "Possessive suffixes agree with noun class: -angu (my), -ako (your, sg.), -edu (our) for Class 1 nouns (prefix va- in plural).",
-              "cultureNotes": [
-                "Saying 'Baba vangu' (my father) still uses plural prefix 'va-' on the noun to show respect, even though referring to one person.",
-                "Ownership is implicit; avoid overusing possessives with elders to maintain humility."
-              ],
-              "activities": [
-                {"step": "Warm-up", "description": "Listen & repeat: sample sentences with possessives."},
-                {"step": "Sentence Builder", "description": "Drag the correct possessive ending onto noun stems (e.g., baba ___)."},
-                {"step": "Info Gap", "description": "Learner asks virtual partner about their family and fills table using -ako / -angu."}
-              ],
-              "assessment": "Fill-in-the-blank quiz: supply correct possessive ending for given noun.",
-              "exercises": [
-                {"type": "multiple_choice", "question": "How do you say 'my brother' in Shona?", "correctAnswer": "Mukoma wangu", "options": ["Mukoma wangu", "Mukoma wako", "Baba vangu", "Hanzvadzi yedu"], "audioText": "moo-KOH-mah WAH-ngoo"},
-                {"type": "translation", "question": "Translate to Shona: Your mother.", "correctAnswer": "Amai vako", "options": [], "audioText": "ah-MY vah-KOH"},
-                {"type": "multiple_choice", "question": "Which possessive suffix means 'our'?", "correctAnswer": "-edu", "options": ["-ako", "-angu", "-edu", "-avo"], "audioText": "eh-DOO"}
-              ]
-            },
-            {
-              "lessonNumber": "2C",
-              "title": "Talking About Ages",
-              "goal": "State ages of family members using numbers 1-20 and the structure 'ane ___ makore'.",
-              "vocabulary": ["makore", "ane", "gumi", "gumi nerimwe", "gumi nevaviri"],
-              "grammarFocus": "Numbers 1-20; verb form 'ane' (he/she has) from root -va with possessive of age 'makore'.",
-              "cultureNotes": [
-                "In everyday speech, Shona uses 'kuva nemakore' (to have years) instead of 'to be' a certain age.",
-                "Elders' exact ages may be avoided; approximate expressions show respect."
-              ],
-              "activities": [
-                {"step": "Number Chain", "description": "Quickfire counting game 1-20 with audio."},
-                {"step": "Info Cards", "description": "Learner receives virtual family cards with ages in digits; must state each age aloud in Shona sentences."},
-                {"step": "Guess & Check", "description": "The app shows a picture; learner guesses age then reveals correct answer with audio."}
-              ],
-              "assessment": "Oral quiz: say the age displayed; automatic speech recognition scores pronunciation and accuracy.",
-              "exercises": [
-                {"type": "translation", "question": "Translate to English: Ane gumi nematatu makore.", "correctAnswer": "He/She is thirteen years old.", "options": [], "audioText": "ah-NEH goo-MEE neh-mah-TAH-too mah-KOH-reh"},
-                {"type": "multiple_choice", "question": "What is 15 in Shona?", "correctAnswer": "Gumi nerimwe nechepiri", "options": ["Gumi nerimwe", "Gumi nevashanu", "Gumi nemashanu", "Gumi nerimwe nechepiri"], "audioText": ""},
-                {"type": "multiple_choice", "question": "Complete the sentence: Baba vangu ___ makore.", "correctAnswer": "vanemakumi mana", "options": ["ane", "vanemakumi mana", "tine", "unay"], "audioText": ""}
-              ]
-            },
-            {
-              "lessonNumber": "2D",
-              "title": "Checkpoint: Digital Family Tree",
-              "goal": "Create and present a simple digital family tree using learned vocabulary and grammar.",
-              "vocabulary": ["baba", "amai", "mwana", "mukoma", "hanzvadzi", "sekuru", "ambuya", "-angu", "-ako"],
-              "grammarFocus": "Review of noun classes 1/2 and possessive structures.",
-              "cultureNotes": [
-                "Family lineage (mutupo) is crucial in Shona identity; learners are encouraged to ask about totems respectfully.",
-                "Presenting elders first in a family introduction shows respect."
-              ],
-              "activities": [
-                {"step": "Builder", "description": "Drag-and-drop avatars onto a tree diagram, label each with correct Shona term and possessive."},
-                {"step": "Presentation", "description": "Learner records 45-second narration of their tree; AI provides feedback."}
-              ],
-              "assessment": "Score combines correct labels (80%) and oral narration clarity (20%). Must reach 85% to unlock next unit.",
-              "exercises": [
-                {"type": "matching", "question": "Match the phrase to who it describes.", "correctAnswer": "Amai vako-Your mother", "options": ["Baba vangu-My father", "Amai vako-Your mother", "Sekuru vake-His grandfather"], "audioText": ""},
-                {"type": "multiple_choice", "question": "Which noun class pair is used for people?", "correctAnswer": "1/2", "options": ["3/4", "7/8", "1/2", "5/6"], "audioText": ""}
-              ]
-            }
-          ]
+          "lessons": []
         },
         {
           "unitNumber": 3,
           "unitName": "Zvekudya (Food)",
-          "lessons": [
-            {
-              "lessonNumber": "3A",
-              "title": "Staple Foods",
-              "goal": "Name core Zimbabwean foods and express likes using the verb 'kuda'.",
-              "vocabulary": ["sadza", "muriwo", "nyama", "chingwa", "mukaka", "mvura", "banana", "apuro"],
-              "grammarFocus": "Present habitual tense marker -no- with subject prefixes (ndino-, unono-, ano-) and verb 'kuda' for preferences.",
-              "cultureNotes": [
-                "Sadza is the staple dish eaten with hands; learners discover etiquette of hand washing before meals.",
-                "Vegetables (muriwo) often accompany sadza; meat (nyama) is a treat."
-              ],
-              "activities": [
-                {"step": "Warm-up", "description": "Audio flashcards: hear food word, select correct picture."},
-                {"step": "Preference Poll", "description": "Learner taps thumbs-up or down for foods; app forms sentences like 'Unoda sadza?'."},
-                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndinoda ____' statements."}
-              ],
-              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
-              "exercises": [
-                {"type": "multiple_choice", "question": "What does 'sadza' refer to?", "correctAnswer": "Maize meal staple", "options": ["Maize meal staple", "Vegetables", "Meat", "Bread"], "audioText": "SAHD-zah"},
-                {"type": "translation", "question": "Translate to Shona: I like meat.", "correctAnswer": "Ndinoda nyama.", "options": [], "audioText": "n-dee-NOH-dah NYAH-ma"},
-                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__noda chingwa' for 'you (singular) like bread'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
-              ]
-            },
-            {
-              "lessonNumber": "3B",
-              "title": "At the Market",
-              "goal": "Ask for prices and count money when shopping for food items.",
-              "vocabulary": ["musika", "mutengo", "imarii?", "ndapota", "tomatisi", "mbatatisi", "maputi", "mango"],
-              "grammarFocus": "Question word 'imarii?' (how much) and number review 1-10; polite request particle '-wo' as in 'ndipeiwo'.",
-              "cultureNotes": [
-                "Bargaining is normal; greet the vendor before asking for price.",
-                "Use small US dollar bills or RTGS; vendors appreciate exact change."
-              ],
-              "activities": [
-                {"step": "Dialogue Listen", "description": "Interactive audio of buyer & vendor; learner fills missing price words."},
-                {"step": "Price Tag Game", "description": "Match spoken price to the correct digit card."},
-                {"step": "Role-Play", "description": "Choose items in virtual stall, ask 'Imarii?' and respond appropriately."}
-              ],
-              "assessment": "Scenario-based quiz: purchase three items within a budget using correct phrases.",
-              "exercises": [
-                {"type": "translation", "question": "Translate to English: Ndapota, ndipeiwo maputi.", "correctAnswer": "Please, give me popcorn.", "options": [], "audioText": "nda-POH-tah ndee-PEH-ee-woh mah-POO-tee"},
-                {"type": "multiple_choice", "question": "What does 'imarii?' mean?", "correctAnswer": "How much is it?", "options": ["Where is it?", "How much is it?", "What is this?", "Can I have?"], "audioText": "ee-MAH-ree"},
-                {"type": "multiple_choice", "question": "Choose the correct Shona for 'five dollars'.", "correctAnswer": "Mari yemadhora mashanu", "options": ["Mari yemadhora matatu", "Mari yemadhora mashanu", "Mari yemadhora maviri", "Mari yemadhora gumi"], "audioText": ""}
-              ]
-            },
-            {
-              "lessonNumber": "3C",
-              "title": "Polite Requests",
-              "goal": "Use polite request forms when asking for food or drink.",
-              "vocabulary": ["ndikumbirawo", "ndipeiwo", "ndinoda", "muriwo", "mvura", "chakudya"],
-              "grammarFocus": "Particle '-wo' to soften requests; imperative plural for respect when speaking to a server.",
-              "cultureNotes": [
-                "Adding '-wo' and greeting first conveys politeness; avoid commanding tone.",
-                "Right hand is used to receive food or money; support right forearm with left when respectful."
-              ],
-              "activities": [
-                {"step": "Warm-up", "description": "Repeat-after-me polite request phrases."},
-                {"step": "Transformation", "description": "Convert direct commands into polite forms using '-wo'."},
-                {"step": "Café Simulation", "description": "Select correct polite phrase for each ordering scenario."}
-              ],
-              "assessment": "Multiple-choice questions on polite vs direct forms; audio pronunciation check.",
-              "exercises": [
-                {"type": "multiple_choice", "question": "Which phrase is most polite when asking for water?", "correctAnswer": "Ndikumbirawo mvura.", "options": ["Ndipa mvura.", "Mvura.", "Ndikumbirawo mvura.", "Ndinoda mvura."], "audioText": "ndeekoom-BEE-rah-woh mm-VOO-rah"},
-                {"type": "translation", "question": "Translate to Shona: Please give me vegetables.", "correctAnswer": "Ndipeiwo muriwo, ndapota.", "options": [], "audioText": ""},
-                {"type": "matching", "question": "Match Shona request to its English meaning.", "correctAnswer": "Ndinoda chingwa-I would like bread", "options": ["Ndinoda chingwa-I would like bread", "Ndikumbirawo nyama-May I have meat please", "Ndipeiwo mvura-Please give me water"], "audioText": ""}
-              ]
-            },
-            {
-              "lessonNumber": "3D",
-              "title": "Restaurant Role-play",
-              "goal": "Order a meal politely and respond to questions from the waiter.",
-              "vocabulary": ["kudya", "kunwa", "risiti", "mari", "ndatenda", "tapota"],
-              "grammarFocus": "Future tense 'ndichatora' (I will take) and question 'munoda chii?' (what would you like?), consolidation of polite forms.",
-              "cultureNotes": [
-                "Tip is not obligatory but appreciated in urban restaurants.",
-                "Always thank the server with 'Ndatenda' after receiving service."
-              ],
-              "activities": [
-                {"step": "Scenario", "description": "Timed ordering game: select starter, main, drink using voice recognition."},
-                {"step": "Comprehension", "description": "Listen to waiter questions and choose correct answer."}
-              ],
-              "assessment": "Pass score 80% on ordering simulation to unlock next unit.",
-              "exercises": [
-                {"type": "multiple_choice", "question": "What does the waiter ask with 'Munoda chii?'", "correctAnswer": "What would you like?", "options": ["How are you?", "What would you like?", "Where are you from?", "How much is it?"], "audioText": "moo-NO-dah CHEE-ee"},
-                {"type": "translation", "question": "Translate to Shona: Thank you for the food.", "correctAnswer": "Ndatenda zvekudya.", "options": [], "audioText": ""},
-                {"type": "matching", "question": "Match phrase to function.", "correctAnswer": "Risiti-Receipt", "options": ["Risiti-Receipt", "Tapota-Please", "Mari-Money"], "audioText": ""}
-              ]
-            }
-          ]
+          "lessons": []
         },
         {
           "unitNumber": 4,
           "unitName": "Ndiri Kupi? (Where Am I?)",
-          "lessons": [
-            {
-              "lessonNumber": "4A",
-              "title": "Places in Town",
-              "goal": "Identify common places and use locative prefixes pa-, ku-, mu- to say where you are.",
-              "vocabulary": ["chikoro", "kumba", "musika", "chipatara", "bhazi rekuenda", "bhawa", "kereke", "hofisi"],
-              "grammarFocus": "Locative noun classes: 16 pa- (at/on), 17 ku- (to/from, general), 18 mu- (inside). Question word 'kupi?'.",
-              "cultureNotes": [
-                "Using the correct locative prefix communicates subtle meaning differences (inside vs at).",
-                "When talking about a city, speakers often prefix 'ku' (e.g., KuHarare) to show origin or destination."
-              ],
-              "activities": [
-                {"step": "Warm-up", "description": "Picture flash: match place images to Shona words."},
-                {"step": "Locative Swap", "description": "Drag the correct prefix (pa-, ku-, mu-) onto place names based on context sentences."},
-                {"step": "Mini Dialogue", "description": "Learner answers 'Uri kupi?' with different locative forms."}
-              ],
-              "assessment": "Multiple-choice quiz on choosing correct locative prefix for a sentence.",
-              "exercises": [
-                {"type": "multiple_choice", "question": "Which locative prefix means 'inside'?", "correctAnswer": "mu-", "options": ["pa-", "ku-", "mu-", "va-"], "audioText": ""},
-                {"type": "translation", "question": "Translate: I am at the market.", "correctAnswer": "Ndiri paMusika.", "options": [], "audioText": ""},
-                {"type": "multiple_choice", "question": "Uri ___chipatara: choose the correct locative prefix for 'inside the hospital'.", "correctAnswer": "mu", "options": ["pa", "ku", "mu", "va"], "audioText": ""}
-              ]
-            },
-            {
-              "lessonNumber": "4B",
-              "title": "Asking Directions",
-              "goal": "Politely ask for and understand simple directions.",
-              "vocabulary": ["enda", "tendeuka", "kurudyi", "kuruboshwe", "mberi", "shure", "pedyo ne", "kuchirira"],
-              "grammarFocus": "Imperative forms of movement verbs; polite question 'Ndingafambe sei ku…?' (How do I get to ...?).",
-              "cultureNotes": [
-                "Always greet ('Makadini?') before asking for directions.",
-                "Clapping lightly once signals gratitude after receiving directions."
-              ],
-              "activities": [
-                {"step": "Dialogue Listen", "description": "Audio of pedestrian asking directions; highlight imperative verbs."},
-                {"step": "Arrow Match", "description": "Match Shona direction words to arrow icons."},
-                {"step": "Prompted Q&A", "description": "Learner records question asking for directions to given place; AI evaluates politeness and structure."}
-              ],
-              "assessment": "Fill-in-the-blank sentences with correct direction verbs and adverbs.",
-              "exercises": [
-                {"type": "multiple_choice", "question": "What does 'kurudyi' mean?", "correctAnswer": "To the right", "options": ["Straight ahead", "To the left", "To the right", "Behind"], "audioText": "koo-roo-JEE"},
-                {"type": "translation", "question": "Translate to English: Tendeuka kuruboshwe.", "correctAnswer": "Turn left.", "options": [], "audioText": "ten-DEH-oo-kah koo-roo-BOSH-weh"},
-                {"type": "matching", "question": "Match Shona phrase to English.", "correctAnswer": "Pedyo ne-Next to", "options": ["Pedyo ne-Next to", "Mberi-Straight ahead", "Shure-Behind"], "audioText": ""}
-              ]
-            },
-            {
-              "lessonNumber": "4C",
-              "title": "Following Directions",
-              "goal": "Navigate a simple map using spoken Shona directions.",
-              "vocabulary": ["vira", "bvira", "wobva", "wasvika", "kumberi", "kuseri", "pakona"],
-              "grammarFocus": "Sequence connector 'wobva' (then) and adverbs of position (kumberi, kuseri).",
-              "cultureNotes": [
-                "Directions may reference landmarks such as trees or shops instead of street names.",
-                "Users gesture with whole hand instead of one finger when pointing directions politely."
-              ],
-              "activities": [
-                {"step": "Map Quest", "description": "On-screen map; learner listens to directions and drags avatar along path."},
-                {"step": "Direction Dictation", "description": "Type key words you hear (e.g., 'vira') after audio plays."},
-                {"step": "Sequencing", "description": "Order scrambled direction steps into logical route."}
-              ],
-              "assessment": "Reach correct destination on interactive map within three attempts.",
-              "exercises": [
-                {"type": "translation", "question": "Translate to Shona: Then you arrive at the church.", "correctAnswer": "Wobva wasvika paKereke.", "options": [], "audioText": ""},
-                {"type": "multiple_choice", "question": "Which word signals sequence 'then'?", "correctAnswer": "wobva", "options": ["vira", "wobva", "pakona", "bvira"], "audioText": ""},
-                {"type": "multiple_choice", "question": "'Kuseri' refers to which position?", "correctAnswer": "Behind", "options": ["In front", "Behind", "Next to", "On top"], "audioText": ""}
-              ]
-            },
-            {
-              "lessonNumber": "4D",
-              "title": "Checkpoint: Treasure Hunt",
-              "goal": "Use location and direction language in a timed treasure hunt scenario.",
-              "vocabulary": ["pa-", "ku-", "mu-", "kurudyi", "kuruboshwe", "mberi", "shure"],
-              "grammarFocus": "Combined use of locative prefixes and imperative verbs for directions.",
-              "cultureNotes": [
-                "Zimbabwean directions often use cardinal points with landmarks; learners experience authentic style in game.",
-                "Express gratitude 'Ndatenda' after reaching destination with someone's help."
-              ],
-              "activities": [
-                {"step": "Treasure Hunt", "description": "Navigate city map to collect three items using textual and audio clues."},
-                {"step": "Speed Challenge", "description": "Rapid-fire locative prefix selection drill."}
-              ],
-              "assessment": "Score 85% on treasure hunt path accuracy and prefix drill to pass unit.",
-              "exercises": [
-                {"type": "matching", "question": "Match prefix to context.", "correctAnswer": "mu-Inside", "options": ["pa-At", "ku-To/From", "mu-Inside"], "audioText": ""},
-                {"type": "multiple_choice", "question": "Which command means 'Go straight ahead'?", "correctAnswer": "Enda mberi", "options": ["Tendeuka kurudyi", "Enda mberi", "Vira shure", "Mira pano"], "audioText": "EN-dah mm-BEH-ree"}
-              ]
-            }
-          ]
+          "lessons": []
         }
       ]
     },
@@ -462,93 +200,87 @@
           "lessons": [
             {
               "lessonNumber": "1A",
-              "title": "Morning Routine Verbs",
-              "goal": "Describe daily morning actions using recent past and habitual present.",
-              "vocabulary": ["kumuka", "kugeza", "kupfeka", "kudya", "kuenda kubasa"],
-              "grammarFocus": "Contrast habitual -no- vs recent past -a- (e.g., Ndakamuka).",
-              "cultureNotes": [
-                "Shona language reflects the rhythm and pace of daily life in Zimbabwe.",
-                "The use of recent past and habitual present verbs helps learners describe daily routines."
-              ],
+              "title": "This Morning – Recent Past",
+              "goal": "Narrate morning activities that happened today using the recent-past marker -a-.",
+              "vocabulary": ["kumuka", "kugeza", "kupfeka", "kudzikisa mubhedha", "kudya kwemangwanani"],
+              "grammarFocus": "Recent past tense (-a-) vs habitual (-no-): Ndakamuka vs Ndinomuka.",
+              "cultureNotes": ["Shona distinguishes between actions that happened today (recent past) and yesterday (remote past)."],
               "activities": [
-                {"step": "Warm-up", "description": "Audio flashcards: hear verb, select correct picture."},
-                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndakamuka ___' statements."},
-                {"step": "Role-Play", "description": "Pair practice: describe a morning routine using recent past and habitual present verbs."}
+                {"step": "Warm-up", "description": "Picture sequence – drag verbs to match a cartoon of morning routine."},
+                {"step": "Substitution", "description": "Swap subject prefixes to practise person + -a- forms."},
+                {"step": "Mini-Diary", "description": "Learner records three sentences about their morning in recent past."}
               ],
-              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
+              "assessment": "Auto-graded spoken diary must use at least two correct -a- verbs.",
               "exercises": [
-                {"type": "multiple_choice", "question": "What does 'kumuka' mean?", "correctAnswer": "Wake up", "options": ["Wake up", "Go to sleep", "Eat breakfast", "Go to work"], "audioText": "koo-MOO-kah"},
-                {"type": "translation", "question": "Translate to Shona: I eat breakfast.", "correctAnswer": "Ndakamuka apuro.", "options": [], "audioText": "n-dee-kah-AP-roo"},
-                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__kumuka' for 'you (singular) wake up'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
+                {"type": "multiple_choice", "question": "Select the recent-past form for 'I washed' (kugeza).", "correctAnswer": "Ndageza", "options": ["Ndageza", "Ndinogeza", "Ndakageza", "Ndagadza"], "audioText": ""},
+                {"type": "translation", "question": "Translate to Shona: I got dressed.", "correctAnswer": "Ndakapfeka.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match verb to meaning.", "correctAnswer": "kudya kwemangwanani-breakfast", "options": ["kumuka-wake up", "kudya kwemangwanani-breakfast", "kugeza-wash"], "audioText": ""}
               ]
             },
             {
               "lessonNumber": "1B",
-              "title": "Afternoon Routine Verbs",
-              "goal": "Describe daily afternoon actions using recent past and habitual present.",
-              "vocabulary": ["kugeza", "kupfeka", "kudya", "kuenda kubasa", "kumuka"],
-              "grammarFocus": "Contrast habitual -no- vs recent past -a- (e.g., Ndakamuka).",
-              "cultureNotes": [
-                "Shona language reflects the rhythm and pace of daily life in Zimbabwe.",
-                "The use of recent past and habitual present verbs helps learners describe daily routines."
-              ],
+              "title": "Yesterday – Remote Past",
+              "goal": "Contrast yesterday's events using the remote-past marker -ka-.",
+              "vocabulary": ["-ka- marker", "ndakabika", "ndakafamba", "ndakashanda", "ndakadzidza"],
+              "grammarFocus": "Remote past (-ka-) for actions before today; time adverbs nezuro (yesterday).",
+              "cultureNotes": ["Learners appreciate the nuanced time frame encoded in Shona past tenses."],
               "activities": [
-                {"step": "Warm-up", "description": "Audio flashcards: hear verb, select correct picture."},
-                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndakamuka ___' statements."},
-                {"step": "Role-Play", "description": "Pair practice: describe an afternoon routine using recent past and habitual present verbs."}
+                {"step": "Timeline", "description": "Place sentences on timeline."}
               ],
-              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
-              "exercises": [
-                {"type": "multiple_choice", "question": "What does 'kugeza' mean?", "correctAnswer": "Eat lunch", "options": ["Wake up", "Eat lunch", "Go to sleep", "Go to work"], "audioText": "koo-GEH-zah"},
-                {"type": "translation", "question": "Translate to Shona: I eat lunch.", "correctAnswer": "Ndakamuka apuro.", "options": [], "audioText": "n-dee-kah-AP-roo"},
-                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__kugeza' for 'you (singular) eat lunch'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
-              ]
+              "assessment": "",
+              "exercises": []
             },
             {
               "lessonNumber": "1C",
-              "title": "Evening Routine Verbs",
-              "goal": "Describe daily evening actions using recent past and habitual present.",
-              "vocabulary": ["kupfeka", "kudya", "kuenda kubasa", "kumuka", "kugeza"],
-              "grammarFocus": "Contrast habitual -no- vs recent past -a- (e.g., Ndakamuka).",
-              "cultureNotes": [
-                "Shona language reflects the rhythm and pace of daily life in Zimbabwe.",
-                "The use of recent past and habitual present verbs helps learners describe daily routines."
-              ],
+              "title": "Connecting Events – Sequence Words",
+              "goal": "Use connectors wobva (then) and pakati (while) to chain events.",
+              "vocabulary": ["wobva", "pakati", "zvadaro", "mushure mezvo"],
+              "grammarFocus": "Subordinate clauses and sequencing connectors.",
+              "cultureNotes": ["Storytelling in Shona relies heavily on connectors to maintain flow."],
               "activities": [
-                {"step": "Warm-up", "description": "Audio flashcards: hear verb, select correct picture."},
-                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndakamuka ___' statements."},
-                {"step": "Role-Play", "description": "Pair practice: describe an evening routine using recent past and habitual present verbs."}
+                {"step": "Scramble", "description": "Order mixed sentences into a coherent paragraph."},
+                {"step": "Story Cubes", "description": "Roll icons, compose a 4-sentence story using at least two connectors."}
               ],
-              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
+              "assessment": "Short written story graded for connector accuracy.",
               "exercises": [
-                {"type": "multiple_choice", "question": "What does 'kupfeka' mean?", "correctAnswer": "Go to sleep", "options": ["Wake up", "Eat lunch", "Go to sleep", "Go to work"], "audioText": "koo-PEH-kah"},
-                {"type": "translation", "question": "Translate to Shona: I go to sleep.", "correctAnswer": "Ndakamuka apuro.", "options": [], "audioText": "n-dee-kah-AP-roo"},
-                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__kupfeka' for 'you (singular) go to sleep'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
+                {"type": "multiple_choice", "question": "Which connector means 'then'?", "correctAnswer": "wobva", "options": ["pakati", "wobva", "mushure mezvo", "kuti"], "audioText": ""},
+                {"type": "translation", "question": "Translate: After that I went to work.", "correctAnswer": "Mushure mezvo ndakaenda kubasa.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match connector to usage.", "correctAnswer": "pakati-while", "options": ["pakati-while", "zvadaro-then", "mushure mezvo-after that"], "audioText": ""}
               ]
             },
             {
               "lessonNumber": "1D",
-              "title": "Evening Routine Verbs",
-              "goal": "Describe daily evening actions using recent past and habitual present.",
-              "vocabulary": ["kudya", "kuenda kubasa", "kumuka", "kugeza", "kupfeka"],
-              "grammarFocus": "Contrast habitual -no- vs recent past -a- (e.g., Ndakamuka).",
-              "cultureNotes": [
-                "Shona language reflects the rhythm and pace of daily life in Zimbabwe.",
-                "The use of recent past and habitual present verbs helps learners describe daily routines."
-              ],
+              "title": "Checkpoint – Audio Diary",
+              "goal": "Record a 60-second diary contrasting today vs yesterday.",
+              "vocabulary": [],
+              "grammarFocus": "Assessment of recent vs remote past and connectors.",
+              "cultureNotes": [],
               "activities": [
-                {"step": "Warm-up", "description": "Audio flashcards: hear verb, select correct picture."},
-                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndakamuka ___' statements."},
-                {"step": "Role-Play", "description": "Pair practice: describe an evening routine using recent past and habitual present verbs."}
+                {"step": "Diary Recording", "description": "Learner speaks; AI transcribes and highlights tense errors."},
+                {"step": "Self-Review", "description": "Replay annotated transcript and correct mistakes."}
               ],
-              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
+              "assessment": "Must hit 80% tense accuracy to pass.",
               "exercises": [
-                {"type": "multiple_choice", "question": "What does 'kudya' mean?", "correctAnswer": "Eat dinner", "options": ["Wake up", "Eat lunch", "Eat dinner", "Go to work"], "audioText": "koo-DAH-yah"},
-                {"type": "translation", "question": "Translate to Shona: I eat dinner.", "correctAnswer": "Ndakamuka apuro.", "options": [], "audioText": "n-dee-kah-AP-roo"},
-                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__kudya' for 'you (singular) eat dinner'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
+                {"type": "multiple_choice", "question": "Which tense describes something that happened this morning?", "correctAnswer": "Recent past (-a-)", "options": ["Habitual", "Recent past (-a-)", "Remote past (-ka-)", "Future"], "audioText": ""},
+                {"type": "multiple_choice", "question": "Which word best links two actions in sequence?", "correctAnswer": "wobva", "options": ["pakati", "wobva", "asi", "nekuti"], "audioText": ""}
               ]
             }
           ]
+        },
+        {
+          "unitNumber": 2,
+          "unitName": "Kuenda Kumusika (Going to the Market)",
+          "lessons": []
+        },
+        {
+          "unitNumber": 3,
+          "unitName": "Mamiriro Ekunze (Weather)",
+          "lessons": []
+        },
+        {
+          "unitNumber": 4,
+          "unitName": "Zvido Zvangu (My Hobbies)",
+          "lessons": []
         }
       ]
     },
