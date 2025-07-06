@@ -1,0 +1,22 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: mangwanani
+Syllables: ma | ngwa | na | ni
+
+Character Mapping:
+m    → [m]  (Nasal)
+a    → [a]  (Pure Vowel)
+ng   → [ŋɡ]  (Prenasalized Stop)
+w    → [w]  (Glide)
+a    → [a]  (Pure Vowel)
+n    → [n]  (Nasal)
+a    → [a]  (Pure Vowel)
+n    → [n]  (Nasal)
+i    → [i]  (Pure Vowel)
+
+Pronunciation Flow:
+1. ma
+2. ngwa
+3. na
+4. ni

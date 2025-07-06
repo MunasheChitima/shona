@@ -1,0 +1,111 @@
+{
+  "basicInfo": {
+    "word": "ndatenda",
+    "english": "thank you",
+    "category": "Courtesy",
+    "difficulty": "intermediate",
+    "culturalNote": "essential courtesy"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "nd",
+      "a",
+      "t",
+      "e",
+      "nd",
+      "a"
+    ],
+    "syllables": [
+      "nda",
+      "te",
+      "nda"
+    ],
+    "complexity": 10,
+    "vowelHiatus": false,
+    "specialSounds": [
+      {
+        "token": "nd",
+        "type": "prenasalized",
+        "description": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable."
+      },
+      {
+        "token": "nd",
+        "type": "prenasalized",
+        "description": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable."
+      }
+    ]
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: nda - te - nda",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: nd, nd",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"ndatenda\" into syllables and practice each one",
+      "content": [
+        "nda",
+        "te",
+        "nda"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": [
+        {
+          "token": "nd",
+          "type": "Prenasalized Stop",
+          "ipa": "nd",
+          "instructions": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.",
+          "category": "prenasalized",
+          "antiPatterns": [
+            "The nasal sound is very short, almost part of the 'd'."
+          ]
+        },
+        {
+          "token": "nd",
+          "type": "Prenasalized Stop",
+          "ipa": "nd",
+          "instructions": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.",
+          "category": "prenasalized",
+          "antiPatterns": [
+            "The nasal sound is very short, almost part of the 'd'."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "ndatenda means \"thank you\"",
+        "Practice saying: \"This is ndatenda\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"ndatenda\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "ndatenda",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "nda",
+        "te",
+        "nda"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

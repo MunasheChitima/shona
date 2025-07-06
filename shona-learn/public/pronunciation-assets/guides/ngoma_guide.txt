@@ -1,0 +1,25 @@
+PHONETIC GUIDE FOR "NGOMA"
+========================================
+
+SYLLABLES: ngo - ma
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [ng] → [ŋɡ]
+   Type: Prenasalized Stop
+   Instruction: A prenasalized hard 'g' consonant, not a full separate vowel sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'ng' in the English word 'sing'. It is 'ng' as in 'finger'.
+
+2. [o] → [o]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'oh' as in 'so'. No 'w' glide.
+   ⚠️  WARNING: DO NOT add a 'w' sound at the end as in the English 'go'.
+
+3. [m] → [m]
+   Type: Nasal
+   Instruction: Standard English 'm' sound.
+
+4. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+

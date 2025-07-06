@@ -1,0 +1,25 @@
+PHONETIC GUIDE FOR "ZVINO"
+========================================
+
+SYLLABLES: zvi - no
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [zv] → [zwhistling]
+   Type: Voiced Whistled Sibilant
+   Instruction: KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.
+   ⚠️  WARNING: DO NOT pronounce as 'z' + 'v'.
+
+2. [i] → [i]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ee' as in 'see'.
+   ⚠️  WARNING: DO NOT pronounce like the 'i' in 'sit'.
+
+3. [n] → [n]
+   Type: Nasal
+   Instruction: Standard English 'n' sound.
+
+4. [o] → [o]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'oh' as in 'so'. No 'w' glide.
+   ⚠️  WARNING: DO NOT add a 'w' sound at the end as in the English 'go'.
+

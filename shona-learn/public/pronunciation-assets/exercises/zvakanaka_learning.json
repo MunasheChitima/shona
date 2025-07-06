@@ -1,0 +1,101 @@
+{
+  "basicInfo": {
+    "word": "zvakanaka",
+    "english": "fine/good",
+    "category": "Responses",
+    "difficulty": "intermediate",
+    "culturalNote": "common response"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "zv",
+      "a",
+      "k",
+      "a",
+      "n",
+      "a",
+      "k",
+      "a"
+    ],
+    "syllables": [
+      "zva",
+      "ka",
+      "na",
+      "ka"
+    ],
+    "complexity": 12,
+    "vowelHiatus": false,
+    "specialSounds": [
+      {
+        "token": "zv",
+        "type": "whistled",
+        "description": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding."
+      }
+    ]
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: zva - ka - na - ka",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: zv",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"zvakanaka\" into syllables and practice each one",
+      "content": [
+        "zva",
+        "ka",
+        "na",
+        "ka"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": [
+        {
+          "token": "zv",
+          "type": "Voiced Whistled Sibilant",
+          "ipa": "zwhistling",
+          "instructions": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.",
+          "category": "whistled",
+          "antiPatterns": [
+            "DO NOT pronounce as 'z' + 'v'."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "zvakanaka means \"fine/good\"",
+        "Practice saying: \"This is zvakanaka\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"zvakanaka\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "zwhistlingakanaka",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "zva",
+        "ka",
+        "na",
+        "ka"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

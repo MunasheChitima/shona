@@ -1,0 +1,19 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: manheru
+Syllables: ma | nhe | ru
+
+Character Mapping:
+m    → [m]  (Nasal)
+a    → [a]  (Pure Vowel)
+n    → [n]  (Nasal)
+h    → [h]  (Voiceless Fricative)
+e    → [e]  (Pure Vowel)
+r    → [r]  (Liquid)
+u    → [u]  (Pure Vowel)
+
+Pronunciation Flow:
+1. ma
+2. nhe
+3. ru

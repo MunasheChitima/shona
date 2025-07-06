@@ -1,0 +1,17 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("zvakanaka"));
+
+FOR FESTIVAL TTS:
+echo "zvakanaka" | festival --tts
+
+FOR ESPEAK:
+espeak "zvakanaka" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"[zv=WHISTLED] a k a n a k a"
+
+DETAILED ARTICULATION NOTES:
+• zv: KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.

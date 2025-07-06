@@ -1,0 +1,32 @@
+PHONETIC GUIDE FOR "KUUDZA"
+========================================
+
+SYLLABLES: ku - u - dza
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [k] → [k]
+   Type: Voiceless Stop
+   Instruction: Standard English 'k' sound.
+
+2. [u] → [u]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'oo' as in 'doom'.
+   ⚠️  WARNING: DO NOT pronounce like the 'u' in 'cup'.
+
+3. [u] → [u]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'oo' as in 'doom'.
+   ⚠️  WARNING: DO NOT pronounce like the 'u' in 'cup'.
+
+4. [dz] → [dz]
+   Type: Voiced Affricate
+   Instruction: The sound at the end of the English word 'rods'.
+   ⚠️  WARNING: DO NOT pronounce as two separate sounds.
+
+5. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+🔸 SPECIAL FEATURE: Vowel hiatus detected - consecutive vowels form separate syllables
+

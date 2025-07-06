@@ -1,0 +1,91 @@
+{
+  "basicInfo": {
+    "word": "mbira",
+    "english": "thumb piano",
+    "category": "Music",
+    "difficulty": "intermediate",
+    "culturalNote": "traditional instrument"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "mb",
+      "i",
+      "r",
+      "a"
+    ],
+    "syllables": [
+      "mbi",
+      "ra"
+    ],
+    "complexity": 6,
+    "vowelHiatus": false,
+    "specialSounds": [
+      {
+        "token": "mb",
+        "type": "prenasalized",
+        "description": "A very brief nasal airflow immediately precedes the 'b' stop within the same syllable."
+      }
+    ]
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: mbi - ra",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: mb",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"mbira\" into syllables and practice each one",
+      "content": [
+        "mbi",
+        "ra"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": [
+        {
+          "token": "mb",
+          "type": "Prenasalized Stop",
+          "ipa": "mb",
+          "instructions": "A very brief nasal airflow immediately precedes the 'b' stop within the same syllable.",
+          "category": "prenasalized",
+          "antiPatterns": [
+            "The nasal sound is very short, almost part of the 'b'."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "mbira means \"thumb piano\"",
+        "Practice saying: \"This is mbira\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"mbira\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "mbira",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "mbi",
+        "ra"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

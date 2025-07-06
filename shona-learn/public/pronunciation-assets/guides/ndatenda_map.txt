@@ -1,0 +1,18 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: ndatenda
+Syllables: nda | te | nda
+
+Character Mapping:
+nd   → [nd]  (Prenasalized Stop)
+a    → [a]  (Pure Vowel)
+t    → [t]  (Voiceless Stop)
+e    → [e]  (Pure Vowel)
+nd   → [nd]  (Prenasalized Stop)
+a    → [a]  (Pure Vowel)
+
+Pronunciation Flow:
+1. nda
+2. te
+3. nda

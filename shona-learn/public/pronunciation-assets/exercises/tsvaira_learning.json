@@ -1,0 +1,78 @@
+{
+  "basicInfo": {
+    "word": "tsvaira",
+    "english": "drive",
+    "category": "Action",
+    "difficulty": "advanced",
+    "culturalNote": "complex trigraph"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "tsv",
+      "a",
+      "i",
+      "r",
+      "a"
+    ],
+    "syllables": [
+      "tsva",
+      "i",
+      "ra"
+    ],
+    "complexity": 12,
+    "vowelHiatus": true,
+    "specialSounds": []
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: tsva - i - ra",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: None",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"tsvaira\" into syllables and practice each one",
+      "content": [
+        "tsva",
+        "i",
+        "ra"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": []
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "tsvaira means \"drive\"",
+        "Practice saying: \"This is tsvaira\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"tsvaira\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "tswhistlingaira",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "tsva",
+        "i",
+        "ra"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

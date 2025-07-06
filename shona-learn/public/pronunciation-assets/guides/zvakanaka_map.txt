@@ -1,0 +1,21 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: zvakanaka
+Syllables: zva | ka | na | ka
+
+Character Mapping:
+zv   → [zwhistling]  (Voiced Whistled Sibilant)
+a    → [a]  (Pure Vowel)
+k    → [k]  (Voiceless Stop)
+a    → [a]  (Pure Vowel)
+n    → [n]  (Nasal)
+a    → [a]  (Pure Vowel)
+k    → [k]  (Voiceless Stop)
+a    → [a]  (Pure Vowel)
+
+Pronunciation Flow:
+1. zva
+2. ka
+3. na
+4. ka

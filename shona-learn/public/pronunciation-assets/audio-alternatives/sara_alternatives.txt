@@ -1,0 +1,16 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("sara"));
+
+FOR FESTIVAL TTS:
+echo "sara" | festival --tts
+
+FOR ESPEAK:
+espeak "sara" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"s a r a"
+
+DETAILED ARTICULATION NOTES:

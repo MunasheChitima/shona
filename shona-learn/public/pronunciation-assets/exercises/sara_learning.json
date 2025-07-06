@@ -1,0 +1,74 @@
+{
+  "basicInfo": {
+    "word": "sara",
+    "english": "remain",
+    "category": "Action",
+    "difficulty": "beginner",
+    "culturalNote": "farewell context"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "s",
+      "a",
+      "r",
+      "a"
+    ],
+    "syllables": [
+      "sa",
+      "ra"
+    ],
+    "complexity": 4,
+    "vowelHiatus": false,
+    "specialSounds": []
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: sa - ra",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: None",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"sara\" into syllables and practice each one",
+      "content": [
+        "sa",
+        "ra"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": []
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "sara means \"remain\"",
+        "Practice saying: \"This is sara\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"sara\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "sara",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "sa",
+        "ra"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("masikati"));
+
+FOR FESTIVAL TTS:
+echo "masikati" | festival --tts
+
+FOR ESPEAK:
+espeak "masikati" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"m a s i k a t i"
+
+DETAILED ARTICULATION NOTES:

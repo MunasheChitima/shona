@@ -1,0 +1,24 @@
+PHONETIC GUIDE FOR "SARA"
+========================================
+
+SYLLABLES: sa - ra
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [s] → [s]
+   Type: Voiceless Fricative
+   Instruction: Standard English 's' sound.
+
+2. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+3. [r] → [r]
+   Type: Liquid
+   Instruction: Standard English 'r' sound.
+
+4. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+

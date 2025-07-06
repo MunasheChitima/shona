@@ -1,0 +1,21 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: masikati
+Syllables: ma | si | ka | ti
+
+Character Mapping:
+m    → [m]  (Nasal)
+a    → [a]  (Pure Vowel)
+s    → [s]  (Voiceless Fricative)
+i    → [i]  (Pure Vowel)
+k    → [k]  (Voiceless Stop)
+a    → [a]  (Pure Vowel)
+t    → [t]  (Voiceless Stop)
+i    → [i]  (Pure Vowel)
+
+Pronunciation Flow:
+1. ma
+2. si
+3. ka
+4. ti

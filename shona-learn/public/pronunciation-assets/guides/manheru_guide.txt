@@ -1,0 +1,37 @@
+PHONETIC GUIDE FOR "MANHERU"
+========================================
+
+SYLLABLES: ma - nhe - ru
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [m] → [m]
+   Type: Nasal
+   Instruction: Standard English 'm' sound.
+
+2. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+3. [n] → [n]
+   Type: Nasal
+   Instruction: Standard English 'n' sound.
+
+4. [h] → [h]
+   Type: Voiceless Fricative
+   Instruction: Standard English 'h' sound.
+
+5. [e] → [e]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'eh' as in 'bed'. No 'y' glide.
+   ⚠️  WARNING: DO NOT pronounce like the 'ee' in 'see'.
+
+6. [r] → [r]
+   Type: Liquid
+   Instruction: Standard English 'r' sound.
+
+7. [u] → [u]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'oo' as in 'doom'.
+   ⚠️  WARNING: DO NOT pronounce like the 'u' in 'cup'.
+

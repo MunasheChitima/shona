@@ -1,0 +1,49 @@
+PHONETIC GUIDE FOR "PAMUSOROI"
+========================================
+
+SYLLABLES: pa - mu - so - ro - i
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [p] → [p]
+   Type: Voiceless Stop
+   Instruction: Standard English 'p' sound.
+
+2. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+3. [m] → [m]
+   Type: Nasal
+   Instruction: Standard English 'm' sound.
+
+4. [u] → [u]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'oo' as in 'doom'.
+   ⚠️  WARNING: DO NOT pronounce like the 'u' in 'cup'.
+
+5. [s] → [s]
+   Type: Voiceless Fricative
+   Instruction: Standard English 's' sound.
+
+6. [o] → [o]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'oh' as in 'so'. No 'w' glide.
+   ⚠️  WARNING: DO NOT add a 'w' sound at the end as in the English 'go'.
+
+7. [r] → [r]
+   Type: Liquid
+   Instruction: Standard English 'r' sound.
+
+8. [o] → [o]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'oh' as in 'so'. No 'w' glide.
+   ⚠️  WARNING: DO NOT add a 'w' sound at the end as in the English 'go'.
+
+9. [i] → [i]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ee' as in 'see'.
+   ⚠️  WARNING: DO NOT pronounce like the 'i' in 'sit'.
+
+🔸 SPECIAL FEATURE: Vowel hiatus detected - consecutive vowels form separate syllables
+

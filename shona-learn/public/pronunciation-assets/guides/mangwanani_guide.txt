@@ -1,0 +1,47 @@
+PHONETIC GUIDE FOR "MANGWANANI"
+========================================
+
+SYLLABLES: ma - ngwa - na - ni
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [m] → [m]
+   Type: Nasal
+   Instruction: Standard English 'm' sound.
+
+2. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+3. [ng] → [ŋɡ]
+   Type: Prenasalized Stop
+   Instruction: A prenasalized hard 'g' consonant, not a full separate vowel sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'ng' in the English word 'sing'. It is 'ng' as in 'finger'.
+
+4. [w] → [w]
+   Type: Glide
+   Instruction: Standard English 'w' sound.
+
+5. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+6. [n] → [n]
+   Type: Nasal
+   Instruction: Standard English 'n' sound.
+
+7. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+8. [n] → [n]
+   Type: Nasal
+   Instruction: Standard English 'n' sound.
+
+9. [i] → [i]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ee' as in 'see'.
+   ⚠️  WARNING: DO NOT pronounce like the 'i' in 'sit'.
+

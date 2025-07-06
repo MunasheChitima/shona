@@ -1,0 +1,91 @@
+{
+  "basicInfo": {
+    "word": "ndimi",
+    "english": "you (plural)",
+    "category": "Pronouns",
+    "difficulty": "beginner",
+    "culturalNote": "respectful address"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "nd",
+      "i",
+      "m",
+      "i"
+    ],
+    "syllables": [
+      "ndi",
+      "mi"
+    ],
+    "complexity": 6,
+    "vowelHiatus": false,
+    "specialSounds": [
+      {
+        "token": "nd",
+        "type": "prenasalized",
+        "description": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable."
+      }
+    ]
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: ndi - mi",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: nd",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"ndimi\" into syllables and practice each one",
+      "content": [
+        "ndi",
+        "mi"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": [
+        {
+          "token": "nd",
+          "type": "Prenasalized Stop",
+          "ipa": "nd",
+          "instructions": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.",
+          "category": "prenasalized",
+          "antiPatterns": [
+            "The nasal sound is very short, almost part of the 'd'."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "ndimi means \"you (plural)\"",
+        "Practice saying: \"This is ndimi\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"ndimi\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "ndimi",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "ndi",
+        "mi"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+PHONETIC GUIDE FOR "MBIRA"
+========================================
+
+SYLLABLES: mbi - ra
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [mb] → [mb]
+   Type: Prenasalized Stop
+   Instruction: A very brief nasal airflow immediately precedes the 'b' stop within the same syllable.
+   ⚠️  WARNING: The nasal sound is very short, almost part of the 'b'.
+
+2. [i] → [i]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ee' as in 'see'.
+   ⚠️  WARNING: DO NOT pronounce like the 'i' in 'sit'.
+
+3. [r] → [r]
+   Type: Liquid
+   Instruction: Standard English 'r' sound.
+
+4. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+

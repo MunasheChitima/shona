@@ -1,0 +1,84 @@
+{
+  "basicInfo": {
+    "word": "masikati",
+    "english": "good afternoon",
+    "category": "Greetings",
+    "difficulty": "beginner",
+    "culturalNote": "daily greeting"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "m",
+      "a",
+      "s",
+      "i",
+      "k",
+      "a",
+      "t",
+      "i"
+    ],
+    "syllables": [
+      "ma",
+      "si",
+      "ka",
+      "ti"
+    ],
+    "complexity": 8,
+    "vowelHiatus": false,
+    "specialSounds": []
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: ma - si - ka - ti",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: None",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"masikati\" into syllables and practice each one",
+      "content": [
+        "ma",
+        "si",
+        "ka",
+        "ti"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": []
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "masikati means \"good afternoon\"",
+        "Practice saying: \"This is masikati\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"masikati\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "masikati",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "ma",
+        "si",
+        "ka",
+        "ti"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

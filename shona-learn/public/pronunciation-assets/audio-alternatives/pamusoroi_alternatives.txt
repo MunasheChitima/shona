@@ -1,0 +1,16 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("pamusoroi"));
+
+FOR FESTIVAL TTS:
+echo "pamusoroi" | festival --tts
+
+FOR ESPEAK:
+espeak "pamusoroi" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"p a m u s o r o i"
+
+DETAILED ARTICULATION NOTES:

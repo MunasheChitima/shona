@@ -1,0 +1,17 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: tsvaira
+Syllables: tsva | i | ra
+
+Character Mapping:
+tsv  → [tswhistling]  (Whistled Affricate)
+a    → [a]  (Pure Vowel)
+i    → [i]  (Pure Vowel)
+r    → [r]  (Liquid)
+a    → [a]  (Pure Vowel)
+
+Pronunciation Flow:
+1. tsva
+2. i
+3. ra

@@ -1,0 +1,17 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("ndimi"));
+
+FOR FESTIVAL TTS:
+echo "ndimi" | festival --tts
+
+FOR ESPEAK:
+espeak "ndimi" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"[nd=PRENASALIZED] i m i"
+
+DETAILED ARTICULATION NOTES:
+• nd: A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.

@@ -1,0 +1,17 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("mangwanani"));
+
+FOR FESTIVAL TTS:
+echo "mangwanani" | festival --tts
+
+FOR ESPEAK:
+espeak "mangwanani" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"m a [ng=PRENASALIZED] w a n a n i"
+
+DETAILED ARTICULATION NOTES:
+• ng: A prenasalized hard 'g' consonant, not a full separate vowel sound.

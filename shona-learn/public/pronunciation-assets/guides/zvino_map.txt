@@ -1,0 +1,15 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: zvino
+Syllables: zvi | no
+
+Character Mapping:
+zv   → [zwhistling]  (Voiced Whistled Sibilant)
+i    → [i]  (Pure Vowel)
+n    → [n]  (Nasal)
+o    → [o]  (Pure Vowel)
+
+Pronunciation Flow:
+1. zvi
+2. no
