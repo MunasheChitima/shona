@@ -1,0 +1,32 @@
+{
+  "word": "svika",
+  "english": "arrive",
+  "approach": "Sound Wave",
+  "prompt": "Create an animated sound wave visualization for the Shona pronunciation of \"svika\" (arrive). Show 2 distinct wave segments for syllables: svi-ka. Special wave patterns: high-frequency spikes for \"sv\" (whistled sound). Use vibrant colors that change with the sound intensity. Clean, dark background with glowing wave effects. Style: modern data visualization, educational, scientifically accurate.",
+  "operation_name": "models/veo-2.0-generate-001/operations/vp5yfh1ww7ph",
+  "phonetic_analysis": {
+    "tokens": [
+      "sv",
+      "i",
+      "k",
+      "a"
+    ],
+    "syllables": [
+      "svi",
+      "ka"
+    ],
+    "special_sounds": [
+      {
+        "token": "sv",
+        "type": "whistled"
+      }
+    ]
+  },
+  "safety_approach": {
+    "no_human_faces": true,
+    "abstract_visualization": true,
+    "educational_focus": true,
+    "child_safe": true
+  },
+  "generated_at": "2025-07-06T15:56:34.727Z"
+}

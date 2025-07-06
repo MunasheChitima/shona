@@ -1,0 +1,32 @@
+{
+  "word": "bhazi",
+  "english": "bus",
+  "approach": "Abstract Geometric",
+  "prompt": "Create an abstract animated visualization for the Shona word \"bhazi\" meaning \"bus\". Show 2 colorful geometric shapes representing the syllables: bha-zi. When showing \"bh\", add gentle smoke or mist effects to represent the breathy sound. Use bright, educational colors on a clean background. Each syllable should pulse or glow as it's pronounced. Create smooth transitions between syllables. Style: educational animation, abstract geometric design, suitable for language learning apps.",
+  "operation_name": "models/veo-2.0-generate-001/operations/jokg6cjfyae1",
+  "phonetic_analysis": {
+    "tokens": [
+      "bh",
+      "a",
+      "z",
+      "i"
+    ],
+    "syllables": [
+      "bha",
+      "zi"
+    ],
+    "special_sounds": [
+      {
+        "token": "bh",
+        "type": "breathy"
+      }
+    ]
+  },
+  "safety_approach": {
+    "no_human_faces": true,
+    "abstract_visualization": true,
+    "educational_focus": true,
+    "child_safe": true
+  },
+  "generated_at": "2025-07-06T15:56:23.678Z"
+}
