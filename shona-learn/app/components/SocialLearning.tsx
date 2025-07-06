@@ -108,7 +108,7 @@ export default function SocialLearning() {
     {
       id: '2',
       title: 'Help a Fellow Learner',
-      description: 'Support someone who is struggling with a concept you've mastered',
+      description: "Support someone who is struggling with a concept you have mastered",
       participants: 18,
       endDate: '2024-01-20',
       isParticipating: false,
@@ -117,7 +117,7 @@ export default function SocialLearning() {
     {
       id: '3',
       title: 'Create a Shona Story',
-      description: 'Write a short story using the vocabulary you've learned',
+      description: 'Write a short story using the vocabulary you have learned',
       participants: 12,
       endDate: '2024-01-25',
       isParticipating: false,
