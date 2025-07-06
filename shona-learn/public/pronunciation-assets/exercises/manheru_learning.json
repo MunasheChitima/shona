@@ -1,0 +1,80 @@
+{
+  "basicInfo": {
+    "word": "manheru",
+    "english": "good evening",
+    "category": "Greetings",
+    "difficulty": "beginner",
+    "culturalNote": "evening greeting"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "m",
+      "a",
+      "n",
+      "h",
+      "e",
+      "r",
+      "u"
+    ],
+    "syllables": [
+      "ma",
+      "nhe",
+      "ru"
+    ],
+    "complexity": 7,
+    "vowelHiatus": false,
+    "specialSounds": []
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: ma - nhe - ru",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: None",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"manheru\" into syllables and practice each one",
+      "content": [
+        "ma",
+        "nhe",
+        "ru"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": []
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "manheru means \"good evening\"",
+        "Practice saying: \"This is manheru\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"manheru\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "manheru",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "ma",
+        "nhe",
+        "ru"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

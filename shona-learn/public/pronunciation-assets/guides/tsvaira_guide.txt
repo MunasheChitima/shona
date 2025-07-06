@@ -1,0 +1,32 @@
+PHONETIC GUIDE FOR "TSVAIRA"
+========================================
+
+SYLLABLES: tsva - i - ra
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [tsv] → [tswhistling]
+   Type: Whistled Affricate
+   Instruction: KEYWORD: WHISTLED AFFRICATE. A ts sound combined with the whistled sv sibilant.
+   ⚠️  WARNING: A single complex sound, not ts followed by v.
+
+2. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+3. [i] → [i]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ee' as in 'see'.
+   ⚠️  WARNING: DO NOT pronounce like the 'i' in 'sit'.
+
+4. [r] → [r]
+   Type: Liquid
+   Instruction: Standard English 'r' sound.
+
+5. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+🔸 SPECIAL FEATURE: Vowel hiatus detected - consecutive vowels form separate syllables
+

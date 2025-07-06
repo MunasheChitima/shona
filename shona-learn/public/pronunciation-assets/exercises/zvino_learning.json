@@ -1,0 +1,91 @@
+{
+  "basicInfo": {
+    "word": "zvino",
+    "english": "now",
+    "category": "Time",
+    "difficulty": "intermediate",
+    "culturalNote": "temporal expression"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "zv",
+      "i",
+      "n",
+      "o"
+    ],
+    "syllables": [
+      "zvi",
+      "no"
+    ],
+    "complexity": 8,
+    "vowelHiatus": false,
+    "specialSounds": [
+      {
+        "token": "zv",
+        "type": "whistled",
+        "description": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding."
+      }
+    ]
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: zvi - no",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: zv",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"zvino\" into syllables and practice each one",
+      "content": [
+        "zvi",
+        "no"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": [
+        {
+          "token": "zv",
+          "type": "Voiced Whistled Sibilant",
+          "ipa": "zwhistling",
+          "instructions": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.",
+          "category": "whistled",
+          "antiPatterns": [
+            "DO NOT pronounce as 'z' + 'v'."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "zvino means \"now\"",
+        "Practice saying: \"This is zvino\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"zvino\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "zwhistlingino",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "zvi",
+        "no"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: kuudza
+Syllables: ku | u | dza
+
+Character Mapping:
+k    → [k]  (Voiceless Stop)
+u    → [u]  (Pure Vowel)
+u    → [u]  (Pure Vowel)
+dz   → [dz]  (Voiced Affricate)
+a    → [a]  (Pure Vowel)
+
+Pronunciation Flow:
+1. ku
+2. u
+3. dza

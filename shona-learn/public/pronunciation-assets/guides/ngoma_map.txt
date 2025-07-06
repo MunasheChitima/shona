@@ -1,0 +1,15 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: ngoma
+Syllables: ngo | ma
+
+Character Mapping:
+ng   → [ŋɡ]  (Prenasalized Stop)
+o    → [o]  (Pure Vowel)
+m    → [m]  (Nasal)
+a    → [a]  (Pure Vowel)
+
+Pronunciation Flow:
+1. ngo
+2. ma

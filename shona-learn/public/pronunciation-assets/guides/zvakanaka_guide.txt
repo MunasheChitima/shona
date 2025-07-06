@@ -1,0 +1,43 @@
+PHONETIC GUIDE FOR "ZVAKANAKA"
+========================================
+
+SYLLABLES: zva - ka - na - ka
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [zv] → [zwhistling]
+   Type: Voiced Whistled Sibilant
+   Instruction: KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.
+   ⚠️  WARNING: DO NOT pronounce as 'z' + 'v'.
+
+2. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+3. [k] → [k]
+   Type: Voiceless Stop
+   Instruction: Standard English 'k' sound.
+
+4. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+5. [n] → [n]
+   Type: Nasal
+   Instruction: Standard English 'n' sound.
+
+6. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+7. [k] → [k]
+   Type: Voiceless Stop
+   Instruction: Standard English 'k' sound.
+
+8. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+

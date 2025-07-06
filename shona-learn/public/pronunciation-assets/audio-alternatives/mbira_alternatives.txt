@@ -1,0 +1,17 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("mbira"));
+
+FOR FESTIVAL TTS:
+echo "mbira" | festival --tts
+
+FOR ESPEAK:
+espeak "mbira" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"[mb=PRENASALIZED] i r a"
+
+DETAILED ARTICULATION NOTES:
+• mb: A very brief nasal airflow immediately precedes the 'b' stop within the same syllable.

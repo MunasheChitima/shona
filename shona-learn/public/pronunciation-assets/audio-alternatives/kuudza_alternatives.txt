@@ -1,0 +1,16 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("kuudza"));
+
+FOR FESTIVAL TTS:
+echo "kuudza" | festival --tts
+
+FOR ESPEAK:
+espeak "kuudza" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"k u u dz a"
+
+DETAILED ARTICULATION NOTES:

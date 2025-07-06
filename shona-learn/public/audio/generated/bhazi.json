@@ -1,0 +1,144 @@
+{
+  "word": "bhazi",
+  "english": "bus",
+  "category": "Transport",
+  "phonetic_analysis": {
+    "tokens": [
+      "bh",
+      "a",
+      "z",
+      "i"
+    ],
+    "syllables": [
+      "bha",
+      "zi"
+    ],
+    "vowel_hiatus": false,
+    "phonetic_profile": [
+      {
+        "token": "bh",
+        "type": "Breathy-Voiced Plosive",
+        "ipa": "bʱ",
+        "instructions": "KEYWORD: AUDIBLE SIGH. An English 'b' sound with a simultaneous, audible release of air. The 'h' is a feature, not a separate sound.",
+        "category": "breathy",
+        "antiPatterns": [
+          "DO NOT pronounce as 'b' followed by 'h' (e.g., 'ab-hor'). It is one single, airy sound."
+        ]
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "z",
+        "type": "Voiced Fricative",
+        "ipa": "z",
+        "instructions": "Standard English 'z' sound.",
+        "category": "fricative",
+        "antiPatterns": []
+      },
+      {
+        "token": "i",
+        "type": "Pure Vowel",
+        "ipa": "i",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      }
+    ],
+    "complexity": 7
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'bhazi'. Pronunciation must be phonetically precise.\n\nSyllabification is: bha-zi.\n\nThe token 'bh' is a breathy-voiced plosive [bʱ]. KEYWORD: AUDIBLE SIGH. An English 'b' sound with a simultaneous, audible release of air. The 'h' is a feature, not a separate sound.\nCritical: DO NOT pronounce as 'b' followed by 'h' (e.g., 'ab-hor'). It is one single, airy sound.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nThe token 'z' is a voiced fricative [z]. Standard English 'z' sound.\n\nThe token 'i' is a pure vowel [i]. Pronounce as 'ee' as in 'see'.\nCritical: DO NOT pronounce like the 'i' in 'sit'.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'bhazi'.\n\nThe word is pronounced in 2 distinct syllables: bha-zi.\n\nFor the breathy-voiced 'bh', show a standard plosive mouth shape, but the model should visually suggest a release of air, perhaps with a slight relaxation of the cheeks, concurrent with the sound.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \nFor 'z' [z], show standard articulation for this voiced fricative.\nFor the vowel 'i', the mouth shape must be pure and static, matching the [i] sound without gliding. 'i' is a wide smile, \n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "bh",
+        "ipa": "bʱ",
+        "category": "breathy",
+        "type": "Breathy-Voiced Plosive",
+        "instructions": "KEYWORD: AUDIBLE SIGH. An English 'b' sound with a simultaneous, audible release of air. The 'h' is a feature, not a separate sound.",
+        "anti_patterns": [
+          "DO NOT pronounce as 'b' followed by 'h' (e.g., 'ab-hor'). It is one single, airy sound."
+        ]
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "z",
+        "ipa": "z",
+        "category": "fricative",
+        "type": "Voiced Fricative",
+        "instructions": "Standard English 'z' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "i",
+        "ipa": "i",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 0,
+      "breathy_consonants": 1,
+      "prenasalized_consonants": 0,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Intermediate",
+    "practice_focus": [
+      "bh"
+    ],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.851Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "bhazi.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}

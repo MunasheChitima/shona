@@ -1,0 +1,16 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("tsvaira"));
+
+FOR FESTIVAL TTS:
+echo "tsvaira" | festival --tts
+
+FOR ESPEAK:
+espeak "tsvaira" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"tsv a i r a"
+
+DETAILED ARTICULATION NOTES:

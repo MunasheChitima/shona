@@ -1,0 +1,222 @@
+{
+  "word": "zvakanaka",
+  "english": "fine/good",
+  "category": "Responses",
+  "phonetic_analysis": {
+    "tokens": [
+      "zv",
+      "a",
+      "k",
+      "a",
+      "n",
+      "a",
+      "k",
+      "a"
+    ],
+    "syllables": [
+      "zva",
+      "ka",
+      "na",
+      "ka"
+    ],
+    "vowel_hiatus": false,
+    "phonetic_profile": [
+      {
+        "token": "zv",
+        "type": "Voiced Whistled Sibilant",
+        "ipa": "zwhistling",
+        "instructions": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.",
+        "category": "whistled",
+        "antiPatterns": [
+          "DO NOT pronounce as 'z' + 'v'."
+        ]
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "k",
+        "type": "Voiceless Stop",
+        "ipa": "k",
+        "instructions": "Standard English 'k' sound.",
+        "category": "stop",
+        "antiPatterns": []
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "n",
+        "type": "Nasal",
+        "ipa": "n",
+        "instructions": "Standard English 'n' sound.",
+        "category": "nasal",
+        "antiPatterns": []
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "k",
+        "type": "Voiceless Stop",
+        "ipa": "k",
+        "instructions": "Standard English 'k' sound.",
+        "category": "stop",
+        "antiPatterns": []
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "complexity": 12
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'zvakanaka'. Pronunciation must be phonetically precise.\n\nSyllabification is: zva-ka-na-ka.\n\nThe token 'zv' is a voiced whistled sibilant [zwhistling]. KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.\nCritical: DO NOT pronounce as 'z' + 'v'.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nThe token 'k' is a voiceless stop [k]. Standard English 'k' sound.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nThe token 'n' is a nasal [n]. Standard English 'n' sound.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nThe token 'k' is a voiceless stop [k]. Standard English 'k' sound.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'zvakanaka'.\n\nThe word is pronounced in 4 distinct syllables: zva-ka-na-ka.\n\nCRITICAL: For the whistled sibilant 'zv', the lips must be slightly rounded and protruded. The lower lip should visibly rise towards the upper teeth. This specific posture is key. Generate a secondary video from a profile (side) view to clearly show this lip posture.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \nFor 'k' [k], show standard articulation for this voiceless stop.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \nFor 'n' [n], show standard articulation for this nasal.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \nFor 'k' [k], show standard articulation for this voiceless stop.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "zv",
+        "ipa": "zwhistling",
+        "category": "whistled",
+        "type": "Voiced Whistled Sibilant",
+        "instructions": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.",
+        "anti_patterns": [
+          "DO NOT pronounce as 'z' + 'v'."
+        ]
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "k",
+        "ipa": "k",
+        "category": "stop",
+        "type": "Voiceless Stop",
+        "instructions": "Standard English 'k' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "n",
+        "ipa": "n",
+        "category": "nasal",
+        "type": "Nasal",
+        "instructions": "Standard English 'n' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "k",
+        "ipa": "k",
+        "category": "stop",
+        "type": "Voiceless Stop",
+        "instructions": "Standard English 'k' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 1,
+      "breathy_consonants": 0,
+      "prenasalized_consonants": 0,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Advanced",
+    "practice_focus": [
+      "zv"
+    ],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.864Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "zvakanaka.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}

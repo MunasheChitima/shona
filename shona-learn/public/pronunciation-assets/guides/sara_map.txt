@@ -1,0 +1,15 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: sara
+Syllables: sa | ra
+
+Character Mapping:
+s    → [s]  (Voiceless Fricative)
+a    → [a]  (Pure Vowel)
+r    → [r]  (Liquid)
+a    → [a]  (Pure Vowel)
+
+Pronunciation Flow:
+1. sa
+2. ra

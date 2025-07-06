@@ -1,0 +1,25 @@
+PHONETIC GUIDE FOR "BHAZI"
+========================================
+
+SYLLABLES: bha - zi
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [bh] → [bʱ]
+   Type: Breathy-Voiced Plosive
+   Instruction: KEYWORD: AUDIBLE SIGH. An English 'b' sound with a simultaneous, audible release of air. The 'h' is a feature, not a separate sound.
+   ⚠️  WARNING: DO NOT pronounce as 'b' followed by 'h' (e.g., 'ab-hor'). It is one single, airy sound.
+
+2. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+3. [z] → [z]
+   Type: Voiced Fricative
+   Instruction: Standard English 'z' sound.
+
+4. [i] → [i]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ee' as in 'see'.
+   ⚠️  WARNING: DO NOT pronounce like the 'i' in 'sit'.
+

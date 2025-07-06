@@ -1,0 +1,25 @@
+PHONETIC GUIDE FOR "SVIKA"
+========================================
+
+SYLLABLES: svi - ka
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [sv] → [swhistling]
+   Type: Voiceless Whistled Sibilant
+   Instruction: KEYWORD: WHISTLED SIBILANT. A unique high-frequency 's' sound. Visually, lips are slightly rounded/protruded.
+   ⚠️  WARNING: DO NOT produce a recreational whistle. It is a sibilant friction sound. DO NOT pronounce as 's' + 'v'.
+
+2. [i] → [i]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ee' as in 'see'.
+   ⚠️  WARNING: DO NOT pronounce like the 'i' in 'sit'.
+
+3. [k] → [k]
+   Type: Voiceless Stop
+   Instruction: Standard English 'k' sound.
+
+4. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+

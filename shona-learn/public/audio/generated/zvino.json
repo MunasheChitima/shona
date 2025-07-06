@@ -1,0 +1,144 @@
+{
+  "word": "zvino",
+  "english": "now",
+  "category": "Time",
+  "phonetic_analysis": {
+    "tokens": [
+      "zv",
+      "i",
+      "n",
+      "o"
+    ],
+    "syllables": [
+      "zvi",
+      "no"
+    ],
+    "vowel_hiatus": false,
+    "phonetic_profile": [
+      {
+        "token": "zv",
+        "type": "Voiced Whistled Sibilant",
+        "ipa": "zwhistling",
+        "instructions": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.",
+        "category": "whistled",
+        "antiPatterns": [
+          "DO NOT pronounce as 'z' + 'v'."
+        ]
+      },
+      {
+        "token": "i",
+        "type": "Pure Vowel",
+        "ipa": "i",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      },
+      {
+        "token": "n",
+        "type": "Nasal",
+        "ipa": "n",
+        "instructions": "Standard English 'n' sound.",
+        "category": "nasal",
+        "antiPatterns": []
+      },
+      {
+        "token": "o",
+        "type": "Pure Vowel",
+        "ipa": "o",
+        "instructions": "Pronounce as 'oh' as in 'so'. No 'w' glide.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT add a 'w' sound at the end as in the English 'go'."
+        ]
+      }
+    ],
+    "complexity": 8
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'zvino'. Pronunciation must be phonetically precise.\n\nSyllabification is: zvi-no.\n\nThe token 'zv' is a voiced whistled sibilant [zwhistling]. KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.\nCritical: DO NOT pronounce as 'z' + 'v'.\n\nThe token 'i' is a pure vowel [i]. Pronounce as 'ee' as in 'see'.\nCritical: DO NOT pronounce like the 'i' in 'sit'.\n\nThe token 'n' is a nasal [n]. Standard English 'n' sound.\n\nThe token 'o' is a pure vowel [o]. Pronounce as 'oh' as in 'so'. No 'w' glide.\nCritical: DO NOT add a 'w' sound at the end as in the English 'go'.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'zvino'.\n\nThe word is pronounced in 2 distinct syllables: zvi-no.\n\nCRITICAL: For the whistled sibilant 'zv', the lips must be slightly rounded and protruded. The lower lip should visibly rise towards the upper teeth. This specific posture is key. Generate a secondary video from a profile (side) view to clearly show this lip posture.\nFor the vowel 'i', the mouth shape must be pure and static, matching the [i] sound without gliding. 'i' is a wide smile, \nFor 'n' [n], show standard articulation for this nasal.\nFor the vowel 'o', the mouth shape must be pure and static, matching the [o] sound without gliding. \n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "zv",
+        "ipa": "zwhistling",
+        "category": "whistled",
+        "type": "Voiced Whistled Sibilant",
+        "instructions": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.",
+        "anti_patterns": [
+          "DO NOT pronounce as 'z' + 'v'."
+        ]
+      },
+      {
+        "token": "i",
+        "ipa": "i",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      },
+      {
+        "token": "n",
+        "ipa": "n",
+        "category": "nasal",
+        "type": "Nasal",
+        "instructions": "Standard English 'n' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "o",
+        "ipa": "o",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'oh' as in 'so'. No 'w' glide.",
+        "anti_patterns": [
+          "DO NOT add a 'w' sound at the end as in the English 'go'."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 1,
+      "breathy_consonants": 0,
+      "prenasalized_consonants": 0,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Intermediate",
+    "practice_focus": [
+      "zv"
+    ],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.854Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "zvino.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}

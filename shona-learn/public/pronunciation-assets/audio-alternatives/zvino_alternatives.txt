@@ -1,0 +1,17 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("zvino"));
+
+FOR FESTIVAL TTS:
+echo "zvino" | festival --tts
+
+FOR ESPEAK:
+espeak "zvino" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"[zv=WHISTLED] i n o"
+
+DETAILED ARTICULATION NOTES:
+• zv: KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding.

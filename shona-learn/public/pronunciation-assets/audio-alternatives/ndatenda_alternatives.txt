@@ -1,0 +1,18 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("ndatenda"));
+
+FOR FESTIVAL TTS:
+echo "ndatenda" | festival --tts
+
+FOR ESPEAK:
+espeak "ndatenda" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"[nd=PRENASALIZED] a t e [nd=PRENASALIZED] a"
+
+DETAILED ARTICULATION NOTES:
+• nd: A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.
+• nd: A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.

@@ -181,7 +181,22 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
               {currentExercise.shonaPhrase && (
                 <div className="bg-white rounded-xl p-4 mb-4 border border-blue-200">
                   <p className="text-sm text-gray-500 mb-1">Shona</p>
-                  <p className="text-xl font-bold text-gray-800">{currentExercise.shonaPhrase}</p>
+                  <p className="text-xl font-bold text-gray-800 mb-2">{currentExercise.shonaPhrase}</p>
+                  {currentExercise.audioText && (
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-sm text-gray-500 mb-1">Pronunciation</p>
+                        <p className="text-lg font-mono text-blue-600">{currentExercise.audioText}</p>
+                      </div>
+                      <button
+                        onClick={() => playAudio(currentExercise.shonaPhrase)}
+                        className="flex items-center justify-center w-10 h-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-colors"
+                        title="Listen to pronunciation"
+                      >
+                        <FaVolumeUp className="text-sm" />
+                      </button>
+                    </div>
+                  )}
                 </div>
               )}
               
@@ -189,6 +204,12 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
                 <div className="bg-white rounded-xl p-4 border border-blue-200">
                   <p className="text-sm text-gray-500 mb-1">English</p>
                   <p className="text-xl font-bold text-gray-800">{currentExercise.englishPhrase}</p>
+                  {currentExercise.shonaPhrase && currentExercise.audioText && (
+                    <div className="mt-3 pt-3 border-t border-gray-200">
+                      <p className="text-sm text-gray-500 mb-1">Shona Pronunciation</p>
+                      <p className="text-lg font-mono text-blue-600">{currentExercise.audioText}</p>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

@@ -1,0 +1,17 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("svika"));
+
+FOR FESTIVAL TTS:
+echo "svika" | festival --tts
+
+FOR ESPEAK:
+espeak "svika" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"[sv=WHISTLED] i k a"
+
+DETAILED ARTICULATION NOTES:
+• sv: KEYWORD: WHISTLED SIBILANT. A unique high-frequency 's' sound. Visually, lips are slightly rounded/protruded.

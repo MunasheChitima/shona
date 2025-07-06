@@ -1,0 +1,51 @@
+{
+  "word": "mbira",
+  "english": "thumb piano",
+  "phonetic_analysis": {
+    "tokens": [
+      "mb",
+      "i",
+      "r",
+      "a"
+    ],
+    "syllables": [
+      "mbi",
+      "ra"
+    ],
+    "complexity": 6,
+    "special_features": [
+      {
+        "token": "mb",
+        "type": "Prenasalized Stop",
+        "ipa": "mb",
+        "instructions": "A very brief nasal airflow immediately precedes the 'b' stop within the same syllable.",
+        "category": "prenasalized",
+        "antiPatterns": [
+          "The nasal sound is very short, almost part of the 'b'."
+        ]
+      }
+    ]
+  },
+  "video_specifications": {
+    "model": "veo-2.0-generate-001",
+    "duration": "8 seconds",
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "audio": "Generated with clear pronunciation",
+    "focus": "Close-up mouth and lip movements"
+  },
+  "veo_prompt": "Create a professional educational video showing clear pronunciation of the Shona word \"mbira\" meaning \"thumb piano\". The word has 2 syllables: mbi-ra. Focus on these special Shona sounds: \"mb\" with nasal airflow before consonant. Show a close-up view of mouth and lips clearly pronouncing each syllable slowly and distinctly. Use professional lighting, clean background, educational style. The speaker should articulate clearly for language learning purposes.",
+  "educational_elements": [
+    "Clear syllable breakdown",
+    "Emphasis on special Shona sounds",
+    "Slow, distinct pronunciation",
+    "Visual mouth positioning",
+    "Professional educational style"
+  ],
+  "integration_notes": [
+    "Perfect for language learning apps",
+    "Combines Mudzidzisi AI analysis with Veo generation",
+    "Provides both visual and audio learning",
+    "Scalable for entire vocabulary"
+  ]
+}

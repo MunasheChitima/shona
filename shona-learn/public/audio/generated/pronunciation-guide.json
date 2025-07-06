@@ -1,0 +1,15 @@
+{
+  "title": "Shona Pronunciation Guide",
+  "generated_at": "2025-07-06T15:13:35.174Z",
+  "total_words": 15,
+  "successful_generations": 0,
+  "failed_generations": 15,
+  "words": [],
+  "phoneme_usage": {},
+  "complexity_distribution": {
+    "Low (1-5)": 0,
+    "Medium (6-10)": 0,
+    "High (11-15)": 0,
+    "Very High (16+)": 0
+  }
+}

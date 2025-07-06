@@ -1,0 +1,91 @@
+{
+  "basicInfo": {
+    "word": "bhazi",
+    "english": "bus",
+    "category": "Transport",
+    "difficulty": "intermediate",
+    "culturalNote": "breathy consonant example"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "bh",
+      "a",
+      "z",
+      "i"
+    ],
+    "syllables": [
+      "bha",
+      "zi"
+    ],
+    "complexity": 7,
+    "vowelHiatus": false,
+    "specialSounds": [
+      {
+        "token": "bh",
+        "type": "breathy",
+        "description": "KEYWORD: AUDIBLE SIGH. An English 'b' sound with a simultaneous, audible release of air. The 'h' is a feature, not a separate sound."
+      }
+    ]
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: bha - zi",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: bh",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"bhazi\" into syllables and practice each one",
+      "content": [
+        "bha",
+        "zi"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": [
+        {
+          "token": "bh",
+          "type": "Breathy-Voiced Plosive",
+          "ipa": "bʱ",
+          "instructions": "KEYWORD: AUDIBLE SIGH. An English 'b' sound with a simultaneous, audible release of air. The 'h' is a feature, not a separate sound.",
+          "category": "breathy",
+          "antiPatterns": [
+            "DO NOT pronounce as 'b' followed by 'h' (e.g., 'ab-hor'). It is one single, airy sound."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "bhazi means \"bus\"",
+        "Practice saying: \"This is bhazi\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"bhazi\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "bʱazi",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "bha",
+        "zi"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

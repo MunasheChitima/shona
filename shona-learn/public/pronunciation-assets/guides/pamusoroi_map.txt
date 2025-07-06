@@ -1,0 +1,23 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: pamusoroi
+Syllables: pa | mu | so | ro | i
+
+Character Mapping:
+p    → [p]  (Voiceless Stop)
+a    → [a]  (Pure Vowel)
+m    → [m]  (Nasal)
+u    → [u]  (Pure Vowel)
+s    → [s]  (Voiceless Fricative)
+o    → [o]  (Pure Vowel)
+r    → [r]  (Liquid)
+o    → [o]  (Pure Vowel)
+i    → [i]  (Pure Vowel)
+
+Pronunciation Flow:
+1. pa
+2. mu
+3. so
+4. ro
+5. i

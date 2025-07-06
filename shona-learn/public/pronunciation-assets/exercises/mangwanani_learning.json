@@ -1,0 +1,102 @@
+{
+  "basicInfo": {
+    "word": "mangwanani",
+    "english": "good morning",
+    "category": "Greetings",
+    "difficulty": "intermediate",
+    "culturalNote": "formal greeting"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "m",
+      "a",
+      "ng",
+      "w",
+      "a",
+      "n",
+      "a",
+      "n",
+      "i"
+    ],
+    "syllables": [
+      "ma",
+      "ngwa",
+      "na",
+      "ni"
+    ],
+    "complexity": 11,
+    "vowelHiatus": false,
+    "specialSounds": [
+      {
+        "token": "ng",
+        "type": "prenasalized",
+        "description": "A prenasalized hard 'g' consonant, not a full separate vowel sound."
+      }
+    ]
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: ma - ngwa - na - ni",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: ng",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"mangwanani\" into syllables and practice each one",
+      "content": [
+        "ma",
+        "ngwa",
+        "na",
+        "ni"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": [
+        {
+          "token": "ng",
+          "type": "Prenasalized Stop",
+          "ipa": "ŋɡ",
+          "instructions": "A prenasalized hard 'g' consonant, not a full separate vowel sound.",
+          "category": "prenasalized",
+          "antiPatterns": [
+            "DO NOT pronounce like the 'ng' in the English word 'sing'. It is 'ng' as in 'finger'."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "mangwanani means \"good morning\"",
+        "Practice saying: \"This is mangwanani\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"mangwanani\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "maŋɡwanani",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "ma",
+        "ngwa",
+        "na",
+        "ni"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

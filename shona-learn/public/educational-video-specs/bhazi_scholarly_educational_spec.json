@@ -1,0 +1,40 @@
+{
+  "word": "bhazi",
+  "english": "bus",
+  "approach": "Scholarly Research",
+  "model": "veo-2.0-generate-001",
+  "prompt": "Academic linguistics research video: scholarly documentation of Shona language pronunciation methodology. Research focus: systematic phonetic analysis of word \"bhazi\" (bus). Scholarly methodology: syllable structure analysis showing bha-zi segmentation. Academic setting: university linguistics department research documentation. Research approach: scientific pronunciation methodology for language preservation. Scholarly presentation style: educational research, academic documentation, university setting.",
+  "operation_name": "models/veo-2.0-generate-001/operations/fglm18k96r2s",
+  "phonetic_analysis": {
+    "tokens": [
+      "bh",
+      "a",
+      "z",
+      "i"
+    ],
+    "syllables": [
+      "bha",
+      "zi"
+    ],
+    "complexity": 7,
+    "special_sounds": [
+      {
+        "token": "bh",
+        "type": "breathy",
+        "ipa": "bʱ"
+      }
+    ]
+  },
+  "educational_strategy": {
+    "context": "Academic/scholarly research",
+    "safety_approach": "Educational content focus",
+    "target_audience": "Academic researchers and language learners",
+    "content_type": "Educational documentation"
+  },
+  "generation_parameters": {
+    "person_generation": "allow_adult",
+    "negative_prompt": "casual, informal, non-academic, entertainment",
+    "academic_focus": true
+  },
+  "generated_at": "2025-07-06T16:06:15.006Z"
+}

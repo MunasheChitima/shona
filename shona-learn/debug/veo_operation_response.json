@@ -1,0 +1,14 @@
+{
+  "name": "models/veo-2.0-generate-001/operations/6nm82lwsin3n",
+  "done": true,
+  "response": {
+    "@type": "type.googleapis.com/google.ai.generativelanguage.v1beta.PredictLongRunningResponse",
+    "generateVideoResponse": {
+      "raiMediaFilteredCount": 2,
+      "raiMediaFilteredReasons": [
+        "1 videos were filtered out because they violated Gemini API's usage guidelines. You will not be charged for blocked videos. Try rephrasing the prompt. If you think this was an error, send feedback.",
+        "1 videos were filtered out because they violated Gemini API's usage guidelines. You will not be charged for blocked videos. Try rephrasing the prompt. If you think this was an error, send feedback."
+      ]
+    }
+  }
+}

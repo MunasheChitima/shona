@@ -1,0 +1,15 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: svika
+Syllables: svi | ka
+
+Character Mapping:
+sv   → [swhistling]  (Voiceless Whistled Sibilant)
+i    → [i]  (Pure Vowel)
+k    → [k]  (Voiceless Stop)
+a    → [a]  (Pure Vowel)
+
+Pronunciation Flow:
+1. svi
+2. ka

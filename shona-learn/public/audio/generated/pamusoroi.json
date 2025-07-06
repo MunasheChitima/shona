@@ -1,0 +1,238 @@
+{
+  "word": "pamusoroi",
+  "english": "excuse me",
+  "category": "Courtesy",
+  "phonetic_analysis": {
+    "tokens": [
+      "p",
+      "a",
+      "m",
+      "u",
+      "s",
+      "o",
+      "r",
+      "o",
+      "i"
+    ],
+    "syllables": [
+      "pa",
+      "mu",
+      "so",
+      "ro",
+      "i"
+    ],
+    "vowel_hiatus": true,
+    "phonetic_profile": [
+      {
+        "token": "p",
+        "type": "Voiceless Stop",
+        "ipa": "p",
+        "instructions": "Standard English 'p' sound.",
+        "category": "stop",
+        "antiPatterns": []
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "m",
+        "type": "Nasal",
+        "ipa": "m",
+        "instructions": "Standard English 'm' sound.",
+        "category": "nasal",
+        "antiPatterns": []
+      },
+      {
+        "token": "u",
+        "type": "Pure Vowel",
+        "ipa": "u",
+        "instructions": "Pronounce as 'oo' as in 'doom'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'u' in 'cup'."
+        ]
+      },
+      {
+        "token": "s",
+        "type": "Voiceless Fricative",
+        "ipa": "s",
+        "instructions": "Standard English 's' sound.",
+        "category": "fricative",
+        "antiPatterns": []
+      },
+      {
+        "token": "o",
+        "type": "Pure Vowel",
+        "ipa": "o",
+        "instructions": "Pronounce as 'oh' as in 'so'. No 'w' glide.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT add a 'w' sound at the end as in the English 'go'."
+        ]
+      },
+      {
+        "token": "r",
+        "type": "Liquid",
+        "ipa": "r",
+        "instructions": "Standard English 'r' sound.",
+        "category": "liquid",
+        "antiPatterns": []
+      },
+      {
+        "token": "o",
+        "type": "Pure Vowel",
+        "ipa": "o",
+        "instructions": "Pronounce as 'oh' as in 'so'. No 'w' glide.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT add a 'w' sound at the end as in the English 'go'."
+        ]
+      },
+      {
+        "token": "i",
+        "type": "Pure Vowel",
+        "ipa": "i",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      }
+    ],
+    "complexity": 11
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'pamusoroi'. Pronunciation must be phonetically precise.\n\nSyllabification is: pa-mu-so-ro-i.\n\nThe token 'p' is a voiceless stop [p]. Standard English 'p' sound.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nThe token 'm' is a nasal [m]. Standard English 'm' sound.\n\nThe token 'u' is a pure vowel [u]. Pronounce as 'oo' as in 'doom'.\nCritical: DO NOT pronounce like the 'u' in 'cup'.\n\nThe token 's' is a voiceless fricative [s]. Standard English 's' sound.\n\nThe token 'o' is a pure vowel [o]. Pronounce as 'oh' as in 'so'. No 'w' glide.\nCritical: DO NOT add a 'w' sound at the end as in the English 'go'.\n\nThe token 'r' is a liquid [r]. Standard English 'r' sound.\n\nThe token 'o' is a pure vowel [o]. Pronounce as 'oh' as in 'so'. No 'w' glide.\nCritical: DO NOT add a 'w' sound at the end as in the English 'go'.\n\nThe token 'i' is a pure vowel [i]. Pronounce as 'ee' as in 'see'.\nCritical: DO NOT pronounce like the 'i' in 'sit'.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\nVOWEL_HIATUS detected: When consecutive vowels appear, they belong to separate syllables and must each be pronounced fully without blending.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'pamusoroi'.\n\nThe word is pronounced in 5 distinct syllables: pa-mu-so-ro-i.\n\nFor 'p' [p], show standard articulation for this voiceless stop.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \nFor 'm' [m], show standard articulation for this nasal.\nFor the vowel 'u', the mouth shape must be pure and static, matching the [u] sound without gliding. 'u' is tightly rounded lips.\nFor 's' [s], show standard articulation for this voiceless fricative.\nFor the vowel 'o', the mouth shape must be pure and static, matching the [o] sound without gliding. \nFor 'r' [r], show standard articulation for this liquid.\nFor the vowel 'o', the mouth shape must be pure and static, matching the [o] sound without gliding. \nFor the vowel 'i', the mouth shape must be pure and static, matching the [i] sound without gliding. 'i' is a wide smile, \n\nWhen Vowel Hiatus occurs, the video must show a clear and distinct re-articulation. The mouth should fully form the first vowel shape, relax slightly, and then fully form the second vowel shape. Do not blend these movements.\n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "p",
+        "ipa": "p",
+        "category": "stop",
+        "type": "Voiceless Stop",
+        "instructions": "Standard English 'p' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "m",
+        "ipa": "m",
+        "category": "nasal",
+        "type": "Nasal",
+        "instructions": "Standard English 'm' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "u",
+        "ipa": "u",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'oo' as in 'doom'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'u' in 'cup'."
+        ]
+      },
+      {
+        "token": "s",
+        "ipa": "s",
+        "category": "fricative",
+        "type": "Voiceless Fricative",
+        "instructions": "Standard English 's' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "o",
+        "ipa": "o",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'oh' as in 'so'. No 'w' glide.",
+        "anti_patterns": [
+          "DO NOT add a 'w' sound at the end as in the English 'go'."
+        ]
+      },
+      {
+        "token": "r",
+        "ipa": "r",
+        "category": "liquid",
+        "type": "Liquid",
+        "instructions": "Standard English 'r' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "o",
+        "ipa": "o",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'oh' as in 'so'. No 'w' glide.",
+        "anti_patterns": [
+          "DO NOT add a 'w' sound at the end as in the English 'go'."
+        ]
+      },
+      {
+        "token": "i",
+        "ipa": "i",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 0,
+      "breathy_consonants": 0,
+      "prenasalized_consonants": 0,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Advanced",
+    "practice_focus": [],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.866Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "pamusoroi.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "word": "ndimi",
+  "english": "you (plural)",
+  "category": "Pronouns",
+  "phonetic_analysis": {
+    "tokens": [
+      "nd",
+      "i",
+      "m",
+      "i"
+    ],
+    "syllables": [
+      "ndi",
+      "mi"
+    ],
+    "vowel_hiatus": false,
+    "phonetic_profile": [
+      {
+        "token": "nd",
+        "type": "Prenasalized Stop",
+        "ipa": "nd",
+        "instructions": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.",
+        "category": "prenasalized",
+        "antiPatterns": [
+          "The nasal sound is very short, almost part of the 'd'."
+        ]
+      },
+      {
+        "token": "i",
+        "type": "Pure Vowel",
+        "ipa": "i",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      },
+      {
+        "token": "m",
+        "type": "Nasal",
+        "ipa": "m",
+        "instructions": "Standard English 'm' sound.",
+        "category": "nasal",
+        "antiPatterns": []
+      },
+      {
+        "token": "i",
+        "type": "Pure Vowel",
+        "ipa": "i",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      }
+    ],
+    "complexity": 6
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'ndimi'. Pronunciation must be phonetically precise.\n\nSyllabification is: ndi-mi.\n\nThe token 'nd' is a prenasalized stop [nd]. A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.\nCritical: The nasal sound is very short, almost part of the 'd'.\n\nThe token 'i' is a pure vowel [i]. Pronounce as 'ee' as in 'see'.\nCritical: DO NOT pronounce like the 'i' in 'sit'.\n\nThe token 'm' is a nasal [m]. Standard English 'm' sound.\n\nThe token 'i' is a pure vowel [i]. Pronounce as 'ee' as in 'see'.\nCritical: DO NOT pronounce like the 'i' in 'sit'.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'ndimi'.\n\nThe word is pronounced in 2 distinct syllables: ndi-mi.\n\nFor 'nd' [nd], show standard articulation for this prenasalized stop.\nFor the vowel 'i', the mouth shape must be pure and static, matching the [i] sound without gliding. 'i' is a wide smile, \nFor 'm' [m], show standard articulation for this nasal.\nFor the vowel 'i', the mouth shape must be pure and static, matching the [i] sound without gliding. 'i' is a wide smile, \n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "nd",
+        "ipa": "nd",
+        "category": "prenasalized",
+        "type": "Prenasalized Stop",
+        "instructions": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.",
+        "anti_patterns": [
+          "The nasal sound is very short, almost part of the 'd'."
+        ]
+      },
+      {
+        "token": "i",
+        "ipa": "i",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      },
+      {
+        "token": "m",
+        "ipa": "m",
+        "category": "nasal",
+        "type": "Nasal",
+        "instructions": "Standard English 'm' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "i",
+        "ipa": "i",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 0,
+      "breathy_consonants": 0,
+      "prenasalized_consonants": 1,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Beginner",
+    "practice_focus": [
+      "nd"
+    ],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.860Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "ndimi.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}

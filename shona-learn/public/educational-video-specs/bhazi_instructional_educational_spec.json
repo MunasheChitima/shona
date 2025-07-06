@@ -1,0 +1,40 @@
+{
+  "word": "bhazi",
+  "english": "bus",
+  "approach": "Instructional Design",
+  "model": "veo-2.0-generate-001",
+  "prompt": "Instructional design video: language learning methodology demonstration. Educational objective: proper pronunciation technique for \"bhazi\" (bus). Instructional approach: systematic breakdown of bha-zi pronunciation pattern. Pedagogical style: educational methodology, instructional design, academic learning framework. Professional educational production with academic standards.",
+  "operation_name": "models/veo-2.0-generate-001/operations/kuqbtfoyzqlv",
+  "phonetic_analysis": {
+    "tokens": [
+      "bh",
+      "a",
+      "z",
+      "i"
+    ],
+    "syllables": [
+      "bha",
+      "zi"
+    ],
+    "complexity": 7,
+    "special_sounds": [
+      {
+        "token": "bh",
+        "type": "breathy",
+        "ipa": "bʱ"
+      }
+    ]
+  },
+  "educational_strategy": {
+    "context": "Academic/scholarly research",
+    "safety_approach": "Educational content focus",
+    "target_audience": "Academic researchers and language learners",
+    "content_type": "Educational documentation"
+  },
+  "generation_parameters": {
+    "person_generation": "allow_adult",
+    "negative_prompt": "casual, informal, non-academic, entertainment",
+    "academic_focus": true
+  },
+  "generated_at": "2025-07-06T16:06:21.507Z"
+}

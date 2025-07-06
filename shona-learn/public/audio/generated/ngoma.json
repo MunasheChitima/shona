@@ -1,0 +1,144 @@
+{
+  "word": "ngoma",
+  "english": "drum",
+  "category": "Music",
+  "phonetic_analysis": {
+    "tokens": [
+      "ng",
+      "o",
+      "m",
+      "a"
+    ],
+    "syllables": [
+      "ngo",
+      "ma"
+    ],
+    "vowel_hiatus": false,
+    "phonetic_profile": [
+      {
+        "token": "ng",
+        "type": "Prenasalized Stop",
+        "ipa": "ŋɡ",
+        "instructions": "A prenasalized hard 'g' consonant, not a full separate vowel sound.",
+        "category": "prenasalized",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'ng' in the English word 'sing'. It is 'ng' as in 'finger'."
+        ]
+      },
+      {
+        "token": "o",
+        "type": "Pure Vowel",
+        "ipa": "o",
+        "instructions": "Pronounce as 'oh' as in 'so'. No 'w' glide.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT add a 'w' sound at the end as in the English 'go'."
+        ]
+      },
+      {
+        "token": "m",
+        "type": "Nasal",
+        "ipa": "m",
+        "instructions": "Standard English 'm' sound.",
+        "category": "nasal",
+        "antiPatterns": []
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "complexity": 6
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'ngoma'. Pronunciation must be phonetically precise.\n\nSyllabification is: ngo-ma.\n\nThe token 'ng' is a prenasalized stop [ŋɡ]. A prenasalized hard 'g' consonant, not a full separate vowel sound.\nCritical: DO NOT pronounce like the 'ng' in the English word 'sing'. It is 'ng' as in 'finger'.\n\nThe token 'o' is a pure vowel [o]. Pronounce as 'oh' as in 'so'. No 'w' glide.\nCritical: DO NOT add a 'w' sound at the end as in the English 'go'.\n\nThe token 'm' is a nasal [m]. Standard English 'm' sound.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'ngoma'.\n\nThe word is pronounced in 2 distinct syllables: ngo-ma.\n\nFor 'ng' [ŋɡ], show standard articulation for this prenasalized stop.\nFor the vowel 'o', the mouth shape must be pure and static, matching the [o] sound without gliding. \nFor 'm' [m], show standard articulation for this nasal.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "ng",
+        "ipa": "ŋɡ",
+        "category": "prenasalized",
+        "type": "Prenasalized Stop",
+        "instructions": "A prenasalized hard 'g' consonant, not a full separate vowel sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'ng' in the English word 'sing'. It is 'ng' as in 'finger'."
+        ]
+      },
+      {
+        "token": "o",
+        "ipa": "o",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'oh' as in 'so'. No 'w' glide.",
+        "anti_patterns": [
+          "DO NOT add a 'w' sound at the end as in the English 'go'."
+        ]
+      },
+      {
+        "token": "m",
+        "ipa": "m",
+        "category": "nasal",
+        "type": "Nasal",
+        "instructions": "Standard English 'm' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 0,
+      "breathy_consonants": 0,
+      "prenasalized_consonants": 1,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Beginner",
+    "practice_focus": [
+      "ng"
+    ],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.862Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "ngoma.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}

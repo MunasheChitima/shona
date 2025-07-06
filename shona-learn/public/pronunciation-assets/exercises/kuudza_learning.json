@@ -1,0 +1,78 @@
+{
+  "basicInfo": {
+    "word": "kuudza",
+    "english": "to tell",
+    "category": "Communication",
+    "difficulty": "intermediate",
+    "culturalNote": "vowel hiatus example"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "k",
+      "u",
+      "u",
+      "dz",
+      "a"
+    ],
+    "syllables": [
+      "ku",
+      "u",
+      "dza"
+    ],
+    "complexity": 7,
+    "vowelHiatus": true,
+    "specialSounds": []
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: ku - u - dza",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: None",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"kuudza\" into syllables and practice each one",
+      "content": [
+        "ku",
+        "u",
+        "dza"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": []
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "kuudza means \"to tell\"",
+        "Practice saying: \"This is kuudza\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"kuudza\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "kuudza",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "ku",
+        "u",
+        "dza"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

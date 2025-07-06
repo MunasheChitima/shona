@@ -1,0 +1,15 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: ndimi
+Syllables: ndi | mi
+
+Character Mapping:
+nd   → [nd]  (Prenasalized Stop)
+i    → [i]  (Pure Vowel)
+m    → [m]  (Nasal)
+i    → [i]  (Pure Vowel)
+
+Pronunciation Flow:
+1. ndi
+2. mi

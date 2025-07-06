@@ -1,0 +1,32 @@
+{
+  "word": "bhazi",
+  "english": "bus",
+  "approach": "Text Animation",
+  "prompt": "Create an animated text visualization showing the Shona word \"bhazi\" (bus). Display the word breaking into syllables: bha - zi. Each syllable appears one by one with a gentle bounce animation. Use large, clear typography with educational colors. Background should be clean and professional. Add subtle particle effects around the text as each syllable appears. Style: educational motion graphics, clean typography, language learning focused.",
+  "operation_name": "models/veo-2.0-generate-001/operations/2bw78momp20b",
+  "phonetic_analysis": {
+    "tokens": [
+      "bh",
+      "a",
+      "z",
+      "i"
+    ],
+    "syllables": [
+      "bha",
+      "zi"
+    ],
+    "special_sounds": [
+      {
+        "token": "bh",
+        "type": "breathy"
+      }
+    ]
+  },
+  "safety_approach": {
+    "no_human_faces": true,
+    "abstract_visualization": true,
+    "educational_focus": true,
+    "child_safe": true
+  },
+  "generated_at": "2025-07-06T15:56:25.947Z"
+}

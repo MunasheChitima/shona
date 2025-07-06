@@ -1,0 +1,91 @@
+{
+  "basicInfo": {
+    "word": "svika",
+    "english": "arrive",
+    "category": "Movement",
+    "difficulty": "intermediate",
+    "culturalNote": "whistled sibilant example"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "sv",
+      "i",
+      "k",
+      "a"
+    ],
+    "syllables": [
+      "svi",
+      "ka"
+    ],
+    "complexity": 8,
+    "vowelHiatus": false,
+    "specialSounds": [
+      {
+        "token": "sv",
+        "type": "whistled",
+        "description": "KEYWORD: WHISTLED SIBILANT. A unique high-frequency 's' sound. Visually, lips are slightly rounded/protruded."
+      }
+    ]
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: svi - ka",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: sv",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"svika\" into syllables and practice each one",
+      "content": [
+        "svi",
+        "ka"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": [
+        {
+          "token": "sv",
+          "type": "Voiceless Whistled Sibilant",
+          "ipa": "swhistling",
+          "instructions": "KEYWORD: WHISTLED SIBILANT. A unique high-frequency 's' sound. Visually, lips are slightly rounded/protruded.",
+          "category": "whistled",
+          "antiPatterns": [
+            "DO NOT produce a recreational whistle. It is a sibilant friction sound. DO NOT pronounce as 's' + 'v'."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "svika means \"arrive\"",
+        "Practice saying: \"This is svika\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"svika\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "swhistlingika",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "svi",
+        "ka"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

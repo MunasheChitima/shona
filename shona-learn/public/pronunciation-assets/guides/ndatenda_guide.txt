@@ -1,0 +1,35 @@
+PHONETIC GUIDE FOR "NDATENDA"
+========================================
+
+SYLLABLES: nda - te - nda
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [nd] → [nd]
+   Type: Prenasalized Stop
+   Instruction: A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.
+   ⚠️  WARNING: The nasal sound is very short, almost part of the 'd'.
+
+2. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+
+3. [t] → [t]
+   Type: Voiceless Stop
+   Instruction: Standard English 't' sound.
+
+4. [e] → [e]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'eh' as in 'bed'. No 'y' glide.
+   ⚠️  WARNING: DO NOT pronounce like the 'ee' in 'see'.
+
+5. [nd] → [nd]
+   Type: Prenasalized Stop
+   Instruction: A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.
+   ⚠️  WARNING: The nasal sound is very short, almost part of the 'd'.
+
+6. [a] → [a]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ah' as in 'father'. Short, pure, static sound.
+   ⚠️  WARNING: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.
+

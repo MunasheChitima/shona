@@ -1,0 +1,17 @@
+ALTERNATIVE AUDIO GENERATION STRATEGIES
+=============================================
+
+FOR WEB SPEECH API:
+navigator.speechSynthesis.speak(new SpeechSynthesisUtterance("ngoma"));
+
+FOR FESTIVAL TTS:
+echo "ngoma" | festival --tts
+
+FOR ESPEAK:
+espeak "ngoma" -s 150 -p 50
+
+PHONETIC SPELLING FOR MANUAL RECORDING:
+"[ng=PRENASALIZED] o m a"
+
+DETAILED ARTICULATION NOTES:
+• ng: A prenasalized hard 'g' consonant, not a full separate vowel sound.

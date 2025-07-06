@@ -1,0 +1,88 @@
+{
+  "basicInfo": {
+    "word": "pamusoroi",
+    "english": "excuse me",
+    "category": "Courtesy",
+    "difficulty": "advanced",
+    "culturalNote": "polite expression"
+  },
+  "phoneticAnalysis": {
+    "tokens": [
+      "p",
+      "a",
+      "m",
+      "u",
+      "s",
+      "o",
+      "r",
+      "o",
+      "i"
+    ],
+    "syllables": [
+      "pa",
+      "mu",
+      "so",
+      "ro",
+      "i"
+    ],
+    "complexity": 11,
+    "vowelHiatus": true,
+    "specialSounds": []
+  },
+  "learningSteps": [
+    "1. Study the syllable breakdown: pa - mu - so - ro - i",
+    "2. Practice each phoneme individually",
+    "3. Focus on special sounds: None",
+    "4. Combine syllables slowly",
+    "5. Practice at normal speed"
+  ],
+  "practiceExercises": [
+    {
+      "type": "syllable_practice",
+      "instruction": "Break down \"pamusoroi\" into syllables and practice each one",
+      "content": [
+        "pa",
+        "mu",
+        "so",
+        "ro",
+        "i"
+      ]
+    },
+    {
+      "type": "phoneme_focus",
+      "instruction": "Focus on challenging sounds",
+      "content": []
+    },
+    {
+      "type": "context_practice",
+      "instruction": "Use in sentences",
+      "content": [
+        "pamusoroi means \"excuse me\"",
+        "Practice saying: \"This is pamusoroi\""
+      ]
+    }
+  ],
+  "audioAlternatives": [
+    {
+      "method": "web_speech_api",
+      "code": "speechSynthesis.speak(new SpeechSynthesisUtterance(\"pamusoroi\"));",
+      "note": "Works in modern browsers"
+    },
+    {
+      "method": "phonetic_recording",
+      "phonetic": "pamusoroi",
+      "note": "For manual recording reference"
+    },
+    {
+      "method": "syllable_audio",
+      "syllables": [
+        "pa",
+        "mu",
+        "so",
+        "ro",
+        "i"
+      ],
+      "note": "Record each syllable separately then combine"
+    }
+  ]
+}

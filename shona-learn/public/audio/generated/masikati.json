@@ -1,0 +1,216 @@
+{
+  "word": "masikati",
+  "english": "good afternoon",
+  "category": "Greetings",
+  "phonetic_analysis": {
+    "tokens": [
+      "m",
+      "a",
+      "s",
+      "i",
+      "k",
+      "a",
+      "t",
+      "i"
+    ],
+    "syllables": [
+      "ma",
+      "si",
+      "ka",
+      "ti"
+    ],
+    "vowel_hiatus": false,
+    "phonetic_profile": [
+      {
+        "token": "m",
+        "type": "Nasal",
+        "ipa": "m",
+        "instructions": "Standard English 'm' sound.",
+        "category": "nasal",
+        "antiPatterns": []
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "s",
+        "type": "Voiceless Fricative",
+        "ipa": "s",
+        "instructions": "Standard English 's' sound.",
+        "category": "fricative",
+        "antiPatterns": []
+      },
+      {
+        "token": "i",
+        "type": "Pure Vowel",
+        "ipa": "i",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      },
+      {
+        "token": "k",
+        "type": "Voiceless Stop",
+        "ipa": "k",
+        "instructions": "Standard English 'k' sound.",
+        "category": "stop",
+        "antiPatterns": []
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "t",
+        "type": "Voiceless Stop",
+        "ipa": "t",
+        "instructions": "Standard English 't' sound.",
+        "category": "stop",
+        "antiPatterns": []
+      },
+      {
+        "token": "i",
+        "type": "Pure Vowel",
+        "ipa": "i",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      }
+    ],
+    "complexity": 8
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'masikati'. Pronunciation must be phonetically precise.\n\nSyllabification is: ma-si-ka-ti.\n\nThe token 'm' is a nasal [m]. Standard English 'm' sound.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nThe token 's' is a voiceless fricative [s]. Standard English 's' sound.\n\nThe token 'i' is a pure vowel [i]. Pronounce as 'ee' as in 'see'.\nCritical: DO NOT pronounce like the 'i' in 'sit'.\n\nThe token 'k' is a voiceless stop [k]. Standard English 'k' sound.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nThe token 't' is a voiceless stop [t]. Standard English 't' sound.\n\nThe token 'i' is a pure vowel [i]. Pronounce as 'ee' as in 'see'.\nCritical: DO NOT pronounce like the 'i' in 'sit'.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'masikati'.\n\nThe word is pronounced in 4 distinct syllables: ma-si-ka-ti.\n\nFor 'm' [m], show standard articulation for this nasal.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \nFor 's' [s], show standard articulation for this voiceless fricative.\nFor the vowel 'i', the mouth shape must be pure and static, matching the [i] sound without gliding. 'i' is a wide smile, \nFor 'k' [k], show standard articulation for this voiceless stop.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \nFor 't' [t], show standard articulation for this voiceless stop.\nFor the vowel 'i', the mouth shape must be pure and static, matching the [i] sound without gliding. 'i' is a wide smile, \n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "m",
+        "ipa": "m",
+        "category": "nasal",
+        "type": "Nasal",
+        "instructions": "Standard English 'm' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "s",
+        "ipa": "s",
+        "category": "fricative",
+        "type": "Voiceless Fricative",
+        "instructions": "Standard English 's' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "i",
+        "ipa": "i",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      },
+      {
+        "token": "k",
+        "ipa": "k",
+        "category": "stop",
+        "type": "Voiceless Stop",
+        "instructions": "Standard English 'k' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "t",
+        "ipa": "t",
+        "category": "stop",
+        "type": "Voiceless Stop",
+        "instructions": "Standard English 't' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "i",
+        "ipa": "i",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 0,
+      "breathy_consonants": 0,
+      "prenasalized_consonants": 0,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Intermediate",
+    "practice_focus": [],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.849Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "masikati.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}

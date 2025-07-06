@@ -1,0 +1,25 @@
+PHONETIC GUIDE FOR "NDIMI"
+========================================
+
+SYLLABLES: ndi - mi
+
+PHONEME-BY-PHONEME BREAKDOWN:
+1. [nd] → [nd]
+   Type: Prenasalized Stop
+   Instruction: A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.
+   ⚠️  WARNING: The nasal sound is very short, almost part of the 'd'.
+
+2. [i] → [i]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ee' as in 'see'.
+   ⚠️  WARNING: DO NOT pronounce like the 'i' in 'sit'.
+
+3. [m] → [m]
+   Type: Nasal
+   Instruction: Standard English 'm' sound.
+
+4. [i] → [i]
+   Type: Pure Vowel
+   Instruction: Pronounce as 'ee' as in 'see'.
+   ⚠️  WARNING: DO NOT pronounce like the 'i' in 'sit'.
+

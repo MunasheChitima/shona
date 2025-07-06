@@ -1,0 +1,188 @@
+{
+  "word": "ndatenda",
+  "english": "thank you",
+  "category": "Courtesy",
+  "phonetic_analysis": {
+    "tokens": [
+      "nd",
+      "a",
+      "t",
+      "e",
+      "nd",
+      "a"
+    ],
+    "syllables": [
+      "nda",
+      "te",
+      "nda"
+    ],
+    "vowel_hiatus": false,
+    "phonetic_profile": [
+      {
+        "token": "nd",
+        "type": "Prenasalized Stop",
+        "ipa": "nd",
+        "instructions": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.",
+        "category": "prenasalized",
+        "antiPatterns": [
+          "The nasal sound is very short, almost part of the 'd'."
+        ]
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "t",
+        "type": "Voiceless Stop",
+        "ipa": "t",
+        "instructions": "Standard English 't' sound.",
+        "category": "stop",
+        "antiPatterns": []
+      },
+      {
+        "token": "e",
+        "type": "Pure Vowel",
+        "ipa": "e",
+        "instructions": "Pronounce as 'eh' as in 'bed'. No 'y' glide.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'ee' in 'see'."
+        ]
+      },
+      {
+        "token": "nd",
+        "type": "Prenasalized Stop",
+        "ipa": "nd",
+        "instructions": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.",
+        "category": "prenasalized",
+        "antiPatterns": [
+          "The nasal sound is very short, almost part of the 'd'."
+        ]
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "complexity": 10
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'ndatenda'. Pronunciation must be phonetically precise.\n\nSyllabification is: nda-te-nda.\n\nThe token 'nd' is a prenasalized stop [nd]. A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.\nCritical: The nasal sound is very short, almost part of the 'd'.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nThe token 't' is a voiceless stop [t]. Standard English 't' sound.\n\nThe token 'e' is a pure vowel [e]. Pronounce as 'eh' as in 'bed'. No 'y' glide.\nCritical: DO NOT pronounce like the 'ee' in 'see'.\n\nThe token 'nd' is a prenasalized stop [nd]. A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.\nCritical: The nasal sound is very short, almost part of the 'd'.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'ndatenda'.\n\nThe word is pronounced in 3 distinct syllables: nda-te-nda.\n\nFor 'nd' [nd], show standard articulation for this prenasalized stop.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \nFor 't' [t], show standard articulation for this voiceless stop.\nFor the vowel 'e', the mouth shape must be pure and static, matching the [e] sound without gliding. \nFor 'nd' [nd], show standard articulation for this prenasalized stop.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "nd",
+        "ipa": "nd",
+        "category": "prenasalized",
+        "type": "Prenasalized Stop",
+        "instructions": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.",
+        "anti_patterns": [
+          "The nasal sound is very short, almost part of the 'd'."
+        ]
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "t",
+        "ipa": "t",
+        "category": "stop",
+        "type": "Voiceless Stop",
+        "instructions": "Standard English 't' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "e",
+        "ipa": "e",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'eh' as in 'bed'. No 'y' glide.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'ee' in 'see'."
+        ]
+      },
+      {
+        "token": "nd",
+        "ipa": "nd",
+        "category": "prenasalized",
+        "type": "Prenasalized Stop",
+        "instructions": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable.",
+        "anti_patterns": [
+          "The nasal sound is very short, almost part of the 'd'."
+        ]
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 0,
+      "breathy_consonants": 0,
+      "prenasalized_consonants": 2,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Intermediate",
+    "practice_focus": [
+      "nd",
+      "nd"
+    ],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.863Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "ndatenda.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}

@@ -1,0 +1,15 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: bhazi
+Syllables: bha | zi
+
+Character Mapping:
+bh   → [bʱ]  (Breathy-Voiced Plosive)
+a    → [a]  (Pure Vowel)
+z    → [z]  (Voiced Fricative)
+i    → [i]  (Pure Vowel)
+
+Pronunciation Flow:
+1. bha
+2. zi

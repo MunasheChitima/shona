@@ -1,0 +1,32 @@
+{
+  "word": "svika",
+  "english": "arrive",
+  "approach": "Abstract Geometric",
+  "prompt": "Create an abstract animated visualization for the Shona word \"svika\" meaning \"arrive\". Show 2 colorful geometric shapes representing the syllables: svi-ka. When showing \"sv\", add sparkles and flowing particles to represent the whistled sound. Use bright, educational colors on a clean background. Each syllable should pulse or glow as it's pronounced. Create smooth transitions between syllables. Style: educational animation, abstract geometric design, suitable for language learning apps.",
+  "operation_name": "models/veo-2.0-generate-001/operations/r0xxwr5aub1x",
+  "phonetic_analysis": {
+    "tokens": [
+      "sv",
+      "i",
+      "k",
+      "a"
+    ],
+    "syllables": [
+      "svi",
+      "ka"
+    ],
+    "special_sounds": [
+      {
+        "token": "sv",
+        "type": "whistled"
+      }
+    ]
+  },
+  "safety_approach": {
+    "no_human_faces": true,
+    "abstract_visualization": true,
+    "educational_focus": true,
+    "child_safe": true
+  },
+  "generated_at": "2025-07-06T15:56:30.409Z"
+}

@@ -1,0 +1,15 @@
+VISUAL PRONUNCIATION MAP
+==============================
+
+Word: mbira
+Syllables: mbi | ra
+
+Character Mapping:
+mb   → [mb]  (Prenasalized Stop)
+i    → [i]  (Pure Vowel)
+r    → [r]  (Liquid)
+a    → [a]  (Pure Vowel)
+
+Pronunciation Flow:
+1. mbi
+2. ra
