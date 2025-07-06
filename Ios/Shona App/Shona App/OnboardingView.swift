@@ -10,200 +10,195 @@ import SwiftData
 
 struct OnboardingView: View {
     @Environment(\.modelContext) private var modelContext
-    @Binding var isFirstLaunch: Bool
-    @State private var name = ""
-    @State private var email = ""
-    @State private var currentStep = 0
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+    @AppStorage("username") private var username = ""
+    @AppStorage("userId") private var userId = ""
     
-    private let steps = [
-        OnboardingStep(
-            title: "Welcome to Shona Learning! 🇿🇼",
-            subtitle: "Discover the beautiful language of Zimbabwe",
-            image: "flag.zimbabwe",
-            description: "Learn Shona through interactive lessons, games, and voice practice."
-        ),
-        OnboardingStep(
-            title: "Interactive Learning",
-            subtitle: "Fun and engaging lessons",
-            image: "brain.head.profile",
-            description: "Master Shona with multiple choice questions, translations, and pronunciation practice."
-        ),
-        OnboardingStep(
-            title: "Track Your Progress",
-            subtitle: "Watch your skills grow",
-            image: "chart.line.uptrend.xyaxis",
-            description: "Earn XP, unlock achievements, and see your Shona proficiency improve over time."
-        )
-    ]
+    @State private var name = ""
+    @State private var currentPage = 0
+    @State private var contentManager: ContentManager?
+    @State private var isLoadingContent = false
+    @State private var loadError: String?
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 0) {
-                // Progress indicator
-                HStack {
-                    ForEach(0..<steps.count, id: \.self) { index in
-                        Rectangle()
-                            .fill(index <= currentStep ? Color.green : Color.gray.opacity(0.3))
-                            .frame(height: 4)
-                            .animation(.easeInOut(duration: 0.3), value: currentStep)
+        if isLoadingContent {
+            ContentLoadingView(contentManager: contentManager!)
+                .navigationBarHidden(true)
+        } else {
+            VStack {
+                TabView(selection: $currentPage) {
+                    // Welcome Page
+                    VStack(spacing: 30) {
+                        Image(systemName: "globe.africa")
+                            .font(.system(size: 100))
+                            .foregroundColor(.blue)
+                        
+                        Text("Mauya - Welcome!")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        
+                        Text("Let's begin your journey into the beautiful Shona language")
+                            .font(.headline)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
                     }
-                }
-                .padding(.horizontal)
-                .padding(.top)
-                
-                // Content
-                TabView(selection: $currentStep) {
-                    ForEach(0..<steps.count, id: \.self) { index in
-                        OnboardingStepView(step: steps[index])
-                            .tag(index)
+                    .tag(0)
+                    
+                    // Name Input Page
+                    VStack(spacing: 30) {
+                        Text("Zita rako ndiani?")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        
+                        Text("What is your name?")
+                            .font(.headline)
+                            .foregroundColor(.secondary)
+                        
+                        TextField("Enter your name", text: $name)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding(.horizontal, 40)
+                            .autocapitalization(.words)
                     }
-                }
-                #if os(iOS)
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-                #endif
-                .animation(.easeInOut(duration: 0.3), value: currentStep)
-                
-                // Bottom section
-                VStack(spacing: 20) {
-                    if currentStep == steps.count - 1 {
-                        // User setup form
-                        VStack(spacing: 16) {
-                            TextField("Your Name", text: $name)
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .padding(.horizontal)
+                    .tag(1)
+                    
+                    // Features Page
+                    VStack(spacing: 30) {
+                        Text("What You'll Learn")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        
+                        VStack(alignment: .leading, spacing: 20) {
+                            FeatureRow(icon: "bubble.left.and.bubble.right", 
+                                      title: "Greetings & Conversations",
+                                      description: "Master daily communication")
                             
-                            TextField("Email (optional)", text: $email)
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .padding(.horizontal)
-                                #if os(iOS)
-                                .keyboardType(.emailAddress)
-                                #endif
+                            FeatureRow(icon: "mic", 
+                                      title: "Perfect Pronunciation",
+                                      description: "AI-powered voice coaching")
+                            
+                            FeatureRow(icon: "sparkles", 
+                                      title: "Cultural Immersion",
+                                      description: "Understand traditions and customs")
+                            
+                            FeatureRow(icon: "trophy", 
+                                      title: "Interactive Quests",
+                                      description: "Learn through engaging stories")
                         }
+                        .padding(.horizontal)
+                    }
+                    .tag(2)
+                    
+                    // Ready Page
+                    VStack(spacing: 30) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.system(size: 100))
+                            .foregroundColor(.green)
+                        
+                        Text("Takagadzirira!")
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                        
+                        Text("You're ready to start learning")
+                            .font(.headline)
+                            .foregroundColor(.secondary)
+                        
+                        if let error = loadError {
+                            Text(error)
+                                .font(.caption)
+                                .foregroundColor(.red)
+                                .multilineTextAlignment(.center)
+                                .padding()
+                        }
+                    }
+                    .tag(3)
+                }
+                .tabViewStyle(PageTabViewStyle())
+                
+                // Navigation Buttons
+                HStack {
+                    if currentPage > 0 {
+                        Button("Back") {
+                            withAnimation {
+                                currentPage -= 1
+                            }
+                        }
+                        .padding()
                     }
                     
-                    // Navigation buttons
-                    HStack {
-                        if currentStep > 0 {
-                            Button("Back") {
-                                withAnimation {
-                                    currentStep -= 1
-                                }
+                    Spacer()
+                    
+                    Button(currentPage == 3 ? "Start Learning" : "Next") {
+                        if currentPage < 3 {
+                            withAnimation {
+                                currentPage += 1
                             }
-                            .buttonStyle(SecondaryButtonStyle())
-                        }
-                        
-                        Spacer()
-                        
-                        if currentStep < steps.count - 1 {
-                            Button("Next") {
-                                withAnimation {
-                                    currentStep += 1
-                                }
-                            }
-                            .buttonStyle(PrimaryButtonStyle())
                         } else {
-                            Button("Get Started") {
-                                createUser()
-                            }
-                            .buttonStyle(PrimaryButtonStyle())
-                            .disabled(name.isEmpty)
+                            completeOnboarding()
                         }
                     }
-                    .padding(.horizontal)
+                    .padding()
+                    .disabled(currentPage == 1 && name.isEmpty)
                 }
-                .padding(.bottom, 50)
+                .padding(.horizontal)
             }
-            #if os(iOS)
-            .navigationBarHidden(true)
-            #else
-            .toolbar(.hidden, for: .navigationBar)
-            #endif
         }
     }
     
-    private func createUser() {
-        let user = User(name: name, email: email.isEmpty ? "user@shona.app" : email)
+    private func completeOnboarding() {
+        // Save user data
+        username = name
+        userId = UUID().uuidString
+        
+        // Create user
+        let user = User(id: userId, name: username)
         modelContext.insert(user)
         
-        // Create rich content using ContentManager
-        ContentManager.shared.createSampleContent(modelContext: modelContext, userId: user.id)
+        // Initialize ContentManager and load content
+        contentManager = ContentManager(modelContext: modelContext)
+        isLoadingContent = true
         
-        withAnimation {
-            isFirstLaunch = false
+        Task {
+            await contentManager?.loadAllContent()
+            
+            // After content is loaded, complete onboarding
+            await MainActor.run {
+                isLoadingContent = false
+                if contentManager?.error == nil {
+                    hasCompletedOnboarding = true
+                } else {
+                    loadError = contentManager?.error
+                }
+            }
         }
     }
 }
 
-struct OnboardingStep {
+struct FeatureRow: View {
+    let icon: String
     let title: String
-    let subtitle: String
-    let image: String
     let description: String
-}
-
-struct OnboardingStepView: View {
-    let step: OnboardingStep
     
     var body: some View {
-        VStack(spacing: 30) {
-            Spacer()
+        HStack(spacing: 15) {
+            Image(systemName: icon)
+                .font(.largeTitle)
+                .foregroundColor(.blue)
+                .frame(width: 50)
             
-            Image(systemName: step.image)
-                .font(.system(size: 80))
-                .foregroundColor(.green)
-            
-            VStack(spacing: 16) {
-                Text(step.title)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                
-                Text(step.subtitle)
-                    .font(.title2)
+            VStack(alignment: .leading, spacing: 4) {
+                Text(title)
+                    .font(.headline)
+                Text(description)
+                    .font(.caption)
                     .foregroundColor(.secondary)
-                
-                Text(step.description)
-                    .font(.body)
-                    .foregroundColor(.secondary)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 40)
             }
             
             Spacer()
         }
-        .padding()
-    }
-}
-
-struct PrimaryButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .font(.headline)
-            .foregroundColor(.white)
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(Color.green)
-            .cornerRadius(12)
-            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
-            .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
-    }
-}
-
-struct SecondaryButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .font(.headline)
-            .foregroundColor(.green)
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(Color.green.opacity(0.1))
-            .cornerRadius(12)
-            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
-            .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
     }
 }
 
 #Preview {
-    OnboardingView(isFirstLaunch: .constant(true))
-        .modelContainer(for: [User.self, Lesson.self, Progress.self, Exercise.self], inMemory: true)
+    OnboardingView()
+        .modelContainer(for: [User.self, Lesson.self, VocabularyItem.self])
 } 

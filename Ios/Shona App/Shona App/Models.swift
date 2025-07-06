@@ -40,33 +40,36 @@ final class Lesson {
     var lessonDescription: String
     var category: String
     var orderIndex: Int
-    var level: String
+    var difficulty: String
     var xpReward: Int
-    var estimatedDuration: Int
     var isCompleted: Bool
-    var culturalContext: String?
+    var culturalContext: String
     var learningObjectives: [String]
-    var discoveryElements: [String]
-    var culturalNotes: [String]
+    var vocabularyItems: [VocabularyItem]
     var exercises: [Exercise]
-    var vocabulary: [VocabularyItem]
-    var questId: String?
     
-    init(id: String = UUID().uuidString, title: String, description: String, category: String, orderIndex: Int, level: String = "beginner", xpReward: Int = 50, estimatedDuration: Int = 15) {
+    init(id: String = UUID().uuidString, 
+         title: String, 
+         description: String, 
+         category: String, 
+         orderIndex: Int, 
+         difficulty: String = "Easy", 
+         xpReward: Int = 50, 
+         culturalContext: String = "",
+         learningObjectives: [String] = [],
+         vocabularyItems: [VocabularyItem] = []) {
         self.id = id
         self.title = title
         self.lessonDescription = description
         self.category = category
         self.orderIndex = orderIndex
-        self.level = level
+        self.difficulty = difficulty
         self.xpReward = xpReward
-        self.estimatedDuration = estimatedDuration
         self.isCompleted = false
-        self.learningObjectives = []
-        self.discoveryElements = []
-        self.culturalNotes = []
+        self.culturalContext = culturalContext
+        self.learningObjectives = learningObjectives
+        self.vocabularyItems = vocabularyItems
         self.exercises = []
-        self.vocabulary = []
     }
 }
 
@@ -80,25 +83,30 @@ final class Exercise {
     var shonaPhrase: String?
     var englishPhrase: String?
     var audioText: String?
-    var voiceContent: String? // JSON string for voice exercises
-    var voiceType: String? // pronunciation, conversation, etc.
     var culturalNote: String?
     var points: Int
-    var difficulty: String
-    var tags: [String]
-    var category: String
     var isCompleted: Bool
     
-    init(id: String = UUID().uuidString, type: String, question: String, correctAnswer: String, options: [String] = [], points: Int = 10) {
+    init(id: String = UUID().uuidString, 
+         type: String, 
+         question: String, 
+         correctAnswer: String, 
+         options: [String] = [], 
+         points: Int = 10,
+         shonaPhrase: String? = nil,
+         englishPhrase: String? = nil,
+         audioText: String? = nil,
+         culturalNote: String? = nil) {
         self.id = id
         self.type = type
         self.question = question
         self.correctAnswer = correctAnswer
         self.options = options
         self.points = points
-        self.difficulty = "beginner"
-        self.tags = []
-        self.category = "General"
+        self.shonaPhrase = shonaPhrase
+        self.englishPhrase = englishPhrase
+        self.audioText = audioText
+        self.culturalNote = culturalNote
         self.isCompleted = false
     }
 }
@@ -108,26 +116,35 @@ final class VocabularyItem {
     var id: String
     var shona: String
     var english: String
+    var phonetic: String
     var audioFile: String?
-    var usage: String?
-    var example: String?
     var category: String
-    var level: String
-    var pronunciation: String?
-    var phonetic: String?
-    var tonePattern: String?
-    var culturalNote: String?
+    var difficulty: String
+    var tonePattern: String
+    var usageNotes: String?
+    var culturalNotes: String?
     var createdAt: Date
     
-    init(id: String = UUID().uuidString, shona: String, english: String, audioFile: String? = nil, usage: String? = nil, example: String? = nil, category: String = "General", level: String = "beginner") {
+    init(id: String = UUID().uuidString, 
+         shona: String, 
+         english: String, 
+         phonetic: String = "", 
+         audioFile: String? = nil, 
+         category: String = "General", 
+         difficulty: String = "Beginner",
+         tonePattern: String = "",
+         usageNotes: String? = nil,
+         culturalNotes: String? = nil) {
         self.id = id
         self.shona = shona
         self.english = english
+        self.phonetic = phonetic
         self.audioFile = audioFile
-        self.usage = usage
-        self.example = example
         self.category = category
-        self.level = level
+        self.difficulty = difficulty
+        self.tonePattern = tonePattern
+        self.usageNotes = usageNotes
+        self.culturalNotes = culturalNotes
         self.createdAt = Date()
     }
 }
@@ -156,26 +173,37 @@ final class Progress {
 final class Quest {
     var id: String
     var title: String
-    var description: String
+    var questDescription: String
     var storyNarrative: String
     var category: String
     var orderIndex: Int
     var requiredLevel: Int
-    var collaborativeElements: String? // JSON string
-    var intrinsicRewards: String? // JSON string
+    var xpReward: Int
+    var isUnlocked: Bool
     var activities: [QuestActivity]
     var isCompleted: Bool
     var createdAt: Date
     
-    init(id: String = UUID().uuidString, title: String, description: String, storyNarrative: String = "", category: String, orderIndex: Int, requiredLevel: Int = 1) {
+    init(id: String = UUID().uuidString, 
+         title: String, 
+         description: String, 
+         storyNarrative: String = "", 
+         category: String, 
+         orderIndex: Int, 
+         requiredLevel: Int = 1,
+         xpReward: Int = 50,
+         isUnlocked: Bool = false,
+         activities: [QuestActivity] = []) {
         self.id = id
         self.title = title
-        self.description = description
+        self.questDescription = description
         self.storyNarrative = storyNarrative
         self.category = category
         self.orderIndex = orderIndex
         self.requiredLevel = requiredLevel
-        self.activities = []
+        self.xpReward = xpReward
+        self.isUnlocked = isUnlocked
+        self.activities = activities
         self.isCompleted = false
         self.createdAt = Date()
     }
@@ -184,21 +212,29 @@ final class Quest {
 @Model
 final class QuestActivity {
     var id: String
-    var type: String
     var title: String
-    var description: String
-    var content: String // JSON string for activity content
+    var activityDescription: String
+    var type: String
+    var requiredScore: Int
+    var xpReward: Int
+    var culturalInsight: String?
     var isCompleted: Bool
-    var questId: String
     
-    init(id: String = UUID().uuidString, type: String, title: String, description: String, content: String = "{}", questId: String) {
+    init(id: String = UUID().uuidString, 
+         title: String, 
+         description: String, 
+         type: String,
+         requiredScore: Int = 80,
+         xpReward: Int = 10,
+         culturalInsight: String? = nil) {
         self.id = id
-        self.type = type
         self.title = title
-        self.description = description
-        self.content = content
+        self.activityDescription = description
+        self.type = type
+        self.requiredScore = requiredScore
+        self.xpReward = xpReward
+        self.culturalInsight = culturalInsight
         self.isCompleted = false
-        self.questId = questId
     }
 }
 
@@ -229,31 +265,42 @@ final class PronunciationExercise {
     var id: String
     var word: String
     var phonetic: String
-    var audioFile: String?
-    var difficulty: String
-    var category: String
-    var tips: [String]
-    var commonMistakes: [String]
-    var syllables: String?
-    var tonePattern: String?
-    var specialSounds: [PronunciationSound]
+    var syllables: String
+    var tonePattern: String
+    var audioFile: String
     var complexity: Int
+    var specialSounds: [String]
+    var pronunciationTips: [String]
+    var learningLevel: String
+    var category: String
     var translation: String
     var isCompleted: Bool
     var createdAt: Date
     
-    init(id: String = UUID().uuidString, word: String, phonetic: String, audioFile: String? = nil, difficulty: String = "beginner", category: String = "General", complexity: Int = 1, translation: String = "") {
+    init(id: String = UUID().uuidString, 
+         word: String, 
+         phonetic: String, 
+         syllables: String = "",
+         tonePattern: String = "",
+         audioFile: String = "", 
+         complexity: Int = 1,
+         specialSounds: [String] = [],
+         pronunciationTips: [String] = [],
+         learningLevel: String = "Beginner",
+         category: String = "General", 
+         translation: String = "") {
         self.id = id
         self.word = word
         self.phonetic = phonetic
+        self.syllables = syllables
+        self.tonePattern = tonePattern
         self.audioFile = audioFile
-        self.difficulty = difficulty
-        self.category = category
         self.complexity = complexity
+        self.specialSounds = specialSounds
+        self.pronunciationTips = pronunciationTips
+        self.learningLevel = learningLevel
+        self.category = category
         self.translation = translation
-        self.tips = []
-        self.commonMistakes = []
-        self.specialSounds = []
         self.isCompleted = false
         self.createdAt = Date()
     }
@@ -279,40 +326,48 @@ final class PronunciationSound {
 @Model
 final class Flashcard {
     var id: String
-    var userId: String
-    var lessonId: String?
-    var vocabularyId: String?
-    var shonaText: String
-    var englishText: String
-    var audioText: String?
-    var pronunciation: String?
-    var phonetic: String?
-    var syllables: String?
-    var tonePattern: String?
-    var difficulty: Double
-    var tags: [String]
-    var context: String?
-    var culturalNote: String?
-    var complexity: Int?
-    var specialSounds: String? // JSON string
-    var pronunciationTips: [String]
     var category: String
-    var createdAt: Date
+    var front: String
+    var back: String
+    var difficulty: String
+    var tags: [String]
+    var mnemonic: String?
+    var usageExample: String?
+    var culturalNote: String?
+    var audioFile: String?
     var lastReviewed: Date?
-    var srsProgress: SRSProgress?
+    var nextReviewDate: Date
+    var repetitionCount: Int
+    var easeFactor: Double
     
-    init(id: String = UUID().uuidString, userId: String, shonaText: String, englishText: String, difficulty: Double = 0.5, lessonId: String? = nil) {
+    init(id: String = UUID().uuidString,
+         category: String,
+         front: String,
+         back: String,
+         difficulty: String = "Beginner",
+         tags: [String] = [],
+         mnemonic: String? = nil,
+         usageExample: String? = nil,
+         culturalNote: String? = nil,
+         audioFile: String? = nil,
+         lastReviewed: Date? = nil,
+         nextReviewDate: Date = Date(),
+         repetitionCount: Int = 0,
+         easeFactor: Double = 2.5) {
         self.id = id
-        self.userId = userId
-        self.lessonId = lessonId
-        self.shonaText = shonaText
-        self.englishText = englishText
+        self.category = category
+        self.front = front
+        self.back = back
         self.difficulty = difficulty
-        self.tags = []
-        self.pronunciationTips = []
-        self.category = "General"
-        self.createdAt = Date()
-        self.srsProgress = nil
+        self.tags = tags
+        self.mnemonic = mnemonic
+        self.usageExample = usageExample
+        self.culturalNote = culturalNote
+        self.audioFile = audioFile
+        self.lastReviewed = lastReviewed
+        self.nextReviewDate = nextReviewDate
+        self.repetitionCount = repetitionCount
+        self.easeFactor = easeFactor
     }
 }
 

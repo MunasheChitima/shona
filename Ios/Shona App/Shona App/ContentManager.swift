@@ -7,407 +7,511 @@
 
 import Foundation
 import SwiftData
+import SwiftUI
 
-class ContentManager {
-    static let shared = ContentManager()
+// MARK: - JSON Decodable Models
+struct LessonJSON: Decodable {
+    let id: String
+    let title: String
+    let description: String
+    let category: String
+    let orderIndex: Int
+    let difficulty: String
+    let xpReward: Int
+    let culturalContext: String?
+    let learningObjectives: String?
+    let discoveryElements: String?
+    let exercises: [ExerciseJSON]
+}
+
+struct ExerciseJSON: Decodable {
+    let id: String
+    let type: String
+    let question: String
+    let correctAnswer: String?
+    let options: [String]
+    let shonaPhrase: String?
+    let englishPhrase: String?
+    let audioText: String?
+    let voiceContent: String?
+    let voiceType: String?
+    let culturalNote: String?
+    let points: Int
+    let difficulty: String
+    let tags: [String]
+    let category: String
+}
+
+struct VocabularyJSON: Decodable {
+    let id: String
+    let shona: String
+    let english: String
+    let category: String
+    let subcategories: [String]
+    let level: String
+    let difficulty: Int
+    let frequency: String
+    let register: String
+    let dialect: String
+    let tones: String?
+    let ipa: String?
+    let pronunciation: String?
+    let morphology: String?
+    let culturalNotes: String?
+    let usageNotes: String?
+    let collocations: [String]
+    let synonyms: [String]
+    let antonyms: [String]
+    let examples: String?
+    let audioFile: String?
+    let complexity: Int?
+    let specialSounds: String?
+    let pronunciationTips: [String]
+    let learningLevel: String
+}
+
+struct QuestJSON: Decodable {
+    let id: String
+    let title: String
+    let description: String
+    let storyNarrative: String
+    let category: String
+    let orderIndex: Int
+    let requiredLevel: Int
+    let lessons: [String]
+    let collaborativeElements: String?
+    let intrinsicRewards: String?
+}
+
+struct PronunciationExerciseJSON: Decodable {
+    let id: String
+    let word: String
+    let phonetic: String
+    let syllables: String
+    let tonePattern: String
+    let audioFile: String
+    let complexity: Int
+    let specialSounds: String?
+    let pronunciationTips: [String]
+    let learningLevel: String
+    let category: String
+    let translation: String
+}
+
+struct FlashcardJSON: Decodable {
+    let id: String
+    let category: String
+    let front: String
+    let back: String
+    let difficulty: String
+    let tags: [String]
+    let mnemonic: String?
+    let usageExample: String?
+    let culturalNote: String?
+    let audioFile: String?
+}
+
+// MARK: - ContentManager
+@MainActor
+class ContentManager: ObservableObject {
+    @Published var isLoading = false
+    @Published var error: String?
+    @Published var loadProgress: Double = 0.0
     
-    private init() {}
+    private let modelContext: ModelContext
     
-    // MARK: - Sample Content Creation
-    
-    func createSampleContent(modelContext: ModelContext, userId: String) {
-        // Create sample lessons
-        createSampleLessons(modelContext: modelContext, userId: userId)
-        
-        // Create sample quests
-        createSampleQuests(modelContext: modelContext, userId: userId)
-        
-        // Create sample pronunciation exercises
-        createSamplePronunciationExercises(modelContext: modelContext)
-        
-        // Save context
-        try? modelContext.save()
+    init(modelContext: ModelContext) {
+        self.modelContext = modelContext
     }
     
-    private func createSampleLessons(modelContext: ModelContext, userId: String) {
-        let sampleLessons = [
-            (
-                id: "lesson-1",
-                title: "Mhoro, Shamwari! - Hello, Friend!",
-                description: "Learn basic greetings and how to introduce yourself in Shona culture",
-                category: "Cultural Immersion",
-                orderIndex: 1,
-                level: "beginner",
-                xpReward: 50,
-                duration: 15,
-                objectives: [
-                    "Master basic Shona greetings (mhoro, mhoroi, hesi)",
-                    "Understand the cultural importance of respectful greetings",
-                    "Practice proper pronunciation with audio feedback",
-                    "Learn to introduce yourself with confidence"
-                ],
-                discoveries: [
-                    "Explore different times of day greetings",
-                    "Discover the difference between formal and informal greetings",
-                    "Learn about the plural of respect in Shona culture"
-                ],
-                cultural: [
-                    "In Shona culture, greetings are sacred and show respect",
-                    "Always use plural forms when addressing elders or strangers",
-                    "The greeting 'mhoroi' shows more respect than 'mhoro'"
-                ],
-                vocabulary: [
-                    ("mhoro", "hello (informal)", "mhoro.mp3", "Used with friends and people your age", "Mhoro, shamwari!"),
-                    ("mhoroi", "hello (formal)", "mhoroi.mp3", "Used with elders, strangers, or to show respect", "Mhoroi, mai!"),
-                    ("shamwari", "friend", "shamwari.mp3", "Common term for friend", "Shamwari yangu"),
-                    ("makadii", "how are you (formal)", "makadii.mp3", "Respectful way to ask how someone is", "Makadii, baba?"),
-                    ("wakadii", "how are you (informal)", "wakadii.mp3", "Casual way to ask how someone is", "Wakadii, shamwari?")
-                ]
-            ),
-            (
-                id: "lesson-2",
-                title: "Ini Ndinonzi - My Name Is",
-                description: "Learn to introduce yourself and exchange names in Shona",
-                category: "Cultural Immersion",
-                orderIndex: 2,
-                level: "beginner",
-                xpReward: 50,
-                duration: 15,
-                objectives: [
-                    "Learn to state your name in Shona",
-                    "Ask for someone's name politely",
-                    "Practice numbers 1-10 for counting and market use",
-                    "Understand basic sentence structure"
-                ],
-                discoveries: [
-                    "Explore how names carry meaning in Shona culture",
-                    "Discover the importance of knowing someone's name",
-                    "Learn about traditional Shona naming practices"
-                ],
-                cultural: [
-                    "Names in Shona culture often have deep meaning",
-                    "It's polite to ask for someone's name after greeting",
-                    "Numbers are essential for market interactions"
-                ],
-                vocabulary: [
-                    ("zita", "name", "zita.mp3", "Word for name", "Zita rangu ndinonzi John"),
-                    ("ini ndinonzi", "my name is", "ini_ndinonzi.mp3", "How to introduce yourself", "Ini ndinonzi Maria"),
-                    ("munonzi ani", "what is your name (formal)", "munonzi_ani.mp3", "Respectful way to ask someone's name", "Munonzi ani, mai?"),
-                    ("motsi", "one", "motsi.mp3", "Number 1", "Motsi chete"),
-                    ("piri", "two", "piri.mp3", "Number 2", "Mapiri")
-                ]
-            ),
-            (
-                id: "lesson-3",
-                title: "Mhuri Yangu - My Family",
-                description: "Learn family vocabulary and understand Shona family structure",
-                category: "Family & Relationships",
-                orderIndex: 3,
-                level: "beginner",
-                xpReward: 60,
-                duration: 20,
-                objectives: [
-                    "Master family member vocabulary",
-                    "Understand the Shona extended family system",
-                    "Learn possessive pronouns (-angu, -ako)",
-                    "Practice noun classes for people (1/2)"
-                ],
-                discoveries: [
-                    "Explore the importance of extended family in Shona culture",
-                    "Discover different roles within the family structure",
-                    "Learn about respect for elders"
-                ],
-                cultural: [
-                    "Family is central to Shona identity and culture",
-                    "Extended family members are considered as close as immediate family",
-                    "Respect for elders is fundamental to Shona values"
-                ],
-                vocabulary: [
-                    ("mhuri", "family", "mhuri.mp3", "Word for family", "Mhuri yangu"),
-                    ("baba", "father", "baba.mp3", "Word for father, also used as respectful address", "Baba vangu"),
-                    ("amai", "mother", "amai.mp3", "Word for mother, also used as respectful address", "Amai vangu"),
-                    ("mwana", "child", "mwana.mp3", "Word for child", "Mwana wangu"),
-                    ("mukoma", "older brother", "mukoma.mp3", "Respectful term for older brother", "Mukoma wangu")
-                ]
-            ),
-            (
-                id: "lesson-4",
-                title: "Kumusika - At the Market",
-                description: "Learn market vocabulary, colors, and basic negotiation phrases",
-                category: "Practical Communication",
-                orderIndex: 4,
-                level: "intermediate",
-                xpReward: 75,
-                duration: 25,
-                objectives: [
-                    "Master market vocabulary and transactions",
-                    "Learn color words and descriptions",
-                    "Practice numbers 1-10 in practical contexts",
-                    "Understand basic negotiation phrases"
-                ],
-                discoveries: [
-                    "Explore traditional Shona markets and their importance",
-                    "Discover local foods and traditional crafts",
-                    "Learn about bargaining as a social interaction"
-                ],
-                cultural: [
-                    "Markets are social centers, not just commercial spaces",
-                    "Bargaining is expected and shows engagement",
-                    "Respect for vendors and their goods is important"
-                ],
-                vocabulary: [
-                    ("musika", "market", "musika.mp3", "Word for market", "Ndinoenda kumusika"),
-                    ("mari", "money", "mari.mp3", "Word for money", "Ndine mari"),
-                    ("imarii", "how much", "imarii.mp3", "Question to ask price", "Imarii ichi?"),
-                    ("tsvuku", "red", "tsvuku.mp3", "Color red", "Chitsvuku"),
-                    ("chena", "white", "chena.mp3", "Color white", "Chichena")
-                ]
-            ),
-            (
-                id: "lesson-5",
-                title: "Mazwi Emutauro - Sounds of Language",
-                description: "Master Shona pronunciation and tone patterns",
-                category: "Pronunciation Mastery",
-                orderIndex: 5,
-                level: "intermediate",
-                xpReward: 80,
-                duration: 30,
-                objectives: [
-                    "Master Shona vowel sounds (a, e, i, o, u)",
-                    "Practice tone patterns and their meanings",
-                    "Learn prenasalized consonants (mb, nd, ng, nz)",
-                    "Develop authentic pronunciation habits"
-                ],
-                discoveries: [
-                    "Explore the musical nature of Shona language",
-                    "Discover how tones change word meanings",
-                    "Learn about regional pronunciation variations"
-                ],
-                cultural: [
-                    "Shona is a tonal language with high and low tones",
-                    "Proper pronunciation shows respect for the language",
-                    "Each region may have slight pronunciation differences"
-                ],
-                vocabulary: [
-                    ("mazwi", "words", "mazwi.mp3", "Word for words", "Mazwi makuru"),
-                    ("mutauro", "language", "mutauro.mp3", "Word for language", "Mutauro wechiShona"),
-                    ("mbira", "traditional instrument", "mbira.mp3", "Traditional Shona instrument", "Ndiri kuridza mbira"),
-                    ("nzira", "path/way", "nzira.mp3", "Word for path or way", "Nzira yakanaka"),
-                    ("ngoma", "drum", "ngoma.mp3", "Traditional drum", "Ngoma inorira")
-                ]
-            )
-        ]
+    func loadAllContent() async {
+        isLoading = true
+        error = nil
+        loadProgress = 0.0
         
-        for lessonData in sampleLessons {
+        do {
+            // Clear existing data first
+            try await clearExistingData()
+            loadProgress = 0.1
+            
+            // Load content in sequence
+            try await loadVocabulary()
+            loadProgress = 0.3
+            
+            try await loadLessons()
+            loadProgress = 0.5
+            
+            try await loadQuests()
+            loadProgress = 0.7
+            
+            try await loadPronunciationExercises()
+            loadProgress = 0.85
+            
+            try await loadFlashcards()
+            loadProgress = 1.0
+            
+            // Save all changes
+            try modelContext.save()
+            
+            print("✅ Successfully loaded all content")
+        } catch {
+            self.error = "Failed to load content: \(error.localizedDescription)"
+            print("❌ Content loading error: \(error)")
+        }
+        
+        isLoading = false
+    }
+    
+    private func clearExistingData() async throws {
+        // Delete all existing data
+        let lessonDescriptor = FetchDescriptor<Lesson>()
+        let lessons = try modelContext.fetch(lessonDescriptor)
+        for lesson in lessons {
+            modelContext.delete(lesson)
+        }
+        
+        let vocabDescriptor = FetchDescriptor<VocabularyItem>()
+        let vocabItems = try modelContext.fetch(vocabDescriptor)
+        for item in vocabItems {
+            modelContext.delete(item)
+        }
+        
+        let questDescriptor = FetchDescriptor<Quest>()
+        let quests = try modelContext.fetch(questDescriptor)
+        for quest in quests {
+            modelContext.delete(quest)
+        }
+        
+        let pronunciationDescriptor = FetchDescriptor<PronunciationExercise>()
+        let pronunciationExercises = try modelContext.fetch(pronunciationDescriptor)
+        for exercise in pronunciationExercises {
+            modelContext.delete(exercise)
+        }
+        
+        let flashcardDescriptor = FetchDescriptor<Flashcard>()
+        let flashcards = try modelContext.fetch(flashcardDescriptor)
+        for flashcard in flashcards {
+            modelContext.delete(flashcard)
+        }
+        
+        try modelContext.save()
+    }
+    
+    private func loadVocabulary() async throws {
+        guard let url = Bundle.main.url(forResource: "vocabulary", withExtension: "json", subdirectory: "Content") else {
+            throw ContentError.fileNotFound("vocabulary.json")
+        }
+        
+        let data = try Data(contentsOf: url)
+        let vocabItems = try JSONDecoder().decode([VocabularyJSON].self, from: data)
+        
+        for item in vocabItems {
+            let vocabItem = VocabularyItem(
+                id: item.id,
+                shona: item.shona,
+                english: item.english,
+                phonetic: item.ipa ?? "",
+                audioFile: item.audioFile,
+                category: item.category,
+                difficulty: item.learningLevel,
+                tonePattern: item.tones ?? "",
+                usageNotes: item.usageNotes,
+                culturalNotes: item.culturalNotes
+            )
+            modelContext.insert(vocabItem)
+        }
+        
+        print("✅ Loaded \(vocabItems.count) vocabulary items")
+    }
+    
+    private func loadLessons() async throws {
+        guard let url = Bundle.main.url(forResource: "lessons", withExtension: "json", subdirectory: "Content") else {
+            throw ContentError.fileNotFound("lessons.json")
+        }
+        
+        let data = try Data(contentsOf: url)
+        let lessonsJSON = try JSONDecoder().decode([LessonJSON].self, from: data)
+        
+        // Fetch vocabulary items to associate with lessons
+        let vocabDescriptor = FetchDescriptor<VocabularyItem>()
+        let allVocabulary = try modelContext.fetch(vocabDescriptor)
+        let vocabByCategory = Dictionary(grouping: allVocabulary) { $0.category }
+        
+        for lessonData in lessonsJSON {
             let lesson = Lesson(
                 id: lessonData.id,
                 title: lessonData.title,
                 description: lessonData.description,
                 category: lessonData.category,
                 orderIndex: lessonData.orderIndex,
-                level: lessonData.level,
+                difficulty: lessonData.difficulty,
                 xpReward: lessonData.xpReward,
-                estimatedDuration: lessonData.duration
+                culturalContext: lessonData.culturalContext ?? "",
+                learningObjectives: parseLearningObjectives(lessonData.learningObjectives),
+                vocabularyItems: []
             )
             
-            lesson.learningObjectives = lessonData.objectives
-            lesson.discoveryElements = lessonData.discoveries
-            lesson.culturalNotes = lessonData.cultural
-            
-            // Add vocabulary
-            for vocabData in lessonData.vocabulary {
-                let vocab = VocabularyItem(
-                    shona: vocabData.0,
-                    english: vocabData.1,
-                    audioFile: vocabData.2,
-                    usage: vocabData.3,
-                    example: vocabData.4,
-                    category: lessonData.category,
-                    level: lessonData.level
-                )
-                lesson.vocabulary.append(vocab)
-                modelContext.insert(vocab)
+            // Add relevant vocabulary items based on category
+            if let categoryVocab = vocabByCategory[lessonData.category] {
+                lesson.vocabularyItems = Array(categoryVocab.prefix(10)) // Add first 10 items
             }
             
-            // Add some sample exercises
-            for i in 1...3 {
+            // Convert exercises
+            for exerciseData in lessonData.exercises {
                 let exercise = Exercise(
-                    type: "multiple_choice",
-                    question: "What does '\(lessonData.vocabulary[min(i-1, lessonData.vocabulary.count-1)].0)' mean?",
-                    correctAnswer: lessonData.vocabulary[min(i-1, lessonData.vocabulary.count-1)].1,
-                    options: [
-                        lessonData.vocabulary[min(i-1, lessonData.vocabulary.count-1)].1,
-                        "incorrect option 1",
-                        "incorrect option 2",
-                        "incorrect option 3"
-                    ],
-                    points: 10
+                    id: exerciseData.id,
+                    type: exerciseData.type,
+                    question: exerciseData.question,
+                    correctAnswer: exerciseData.correctAnswer ?? "",
+                    options: exerciseData.options,
+                    points: exerciseData.points,
+                    shonaPhrase: exerciseData.shonaPhrase,
+                    englishPhrase: exerciseData.englishPhrase,
+                    audioText: exerciseData.audioText,
+                    culturalNote: exerciseData.culturalNote
                 )
-                exercise.difficulty = lessonData.level
-                exercise.category = lessonData.category
                 lesson.exercises.append(exercise)
-                modelContext.insert(exercise)
             }
             
             modelContext.insert(lesson)
-            
-            // Create progress entry for user
-            let progress = Progress(userId: userId, lessonId: lesson.id)
-            modelContext.insert(progress)
         }
+        
+        print("✅ Loaded \(lessonsJSON.count) lessons")
     }
     
-    private func createSampleQuests(modelContext: ModelContext, userId: String) {
-        let sampleQuests = [
-            (
-                id: "quest-1",
-                title: "The Village Greeter",
-                description: "Learn to greet people properly in Shona culture",
-                category: "Cultural Immersion",
-                orderIndex: 1,
-                requiredLevel: 1,
-                activities: [
-                    ("greeting_practice", "Practice Greetings", "Learn formal and informal greetings"),
-                    ("cultural_lesson", "Understand Respect", "Learn about showing respect through language"),
-                    ("conversation_practice", "Real Conversations", "Practice greeting different people")
-                ]
-            ),
-            (
-                id: "quest-2",
-                title: "Family Storyteller",
-                description: "Master family vocabulary and relationships",
-                category: "Family & Relationships",
-                orderIndex: 2,
-                requiredLevel: 2,
-                activities: [
-                    ("family_tree", "Build Family Tree", "Create your family tree in Shona"),
-                    ("story_telling", "Tell Family Stories", "Share stories about your family"),
-                    ("cultural_roles", "Understand Family Roles", "Learn traditional family structures")
-                ]
-            ),
-            (
-                id: "quest-3",
-                title: "Market Navigator",
-                description: "Navigate traditional markets with confidence",
-                category: "Practical Communication",
-                orderIndex: 3,
-                requiredLevel: 3,
-                activities: [
-                    ("market_vocabulary", "Learn Market Terms", "Master buying and selling vocabulary"),
-                    ("bargaining_practice", "Practice Bargaining", "Learn respectful negotiation"),
-                    ("cultural_exchange", "Market Culture", "Understand markets as social spaces")
-                ]
-            ),
-            (
-                id: "quest-4",
-                title: "Sound Master",
-                description: "Perfect your Shona pronunciation",
-                category: "Pronunciation Mastery",
-                orderIndex: 4,
-                requiredLevel: 4,
-                activities: [
-                    ("tone_practice", "Master Tones", "Practice high and low tones"),
-                    ("sound_practice", "Special Sounds", "Master whistled and breathy consonants"),
-                    ("rhythm_practice", "Natural Rhythm", "Develop natural speech rhythm")
-                ]
-            ),
-            (
-                id: "quest-5",
-                title: "The Great Baobab Tree",
-                description: "Explore traditional stories and wisdom",
-                category: "Cultural Heritage",
-                orderIndex: 5,
-                requiredLevel: 5,
-                activities: [
-                    ("story_listening", "Ancient Stories", "Listen to traditional tales"),
-                    ("wisdom_learning", "Learn Proverbs", "Understand Shona wisdom"),
-                    ("story_telling", "Tell Your Story", "Create your own traditional story")
-                ]
-            )
-        ]
+    private func loadQuests() async throws {
+        guard let url = Bundle.main.url(forResource: "quests", withExtension: "json", subdirectory: "Content") else {
+            throw ContentError.fileNotFound("quests.json")
+        }
         
-        for questData in sampleQuests {
+        let data = try Data(contentsOf: url)
+        let questsJSON = try JSONDecoder().decode([QuestJSON].self, from: data)
+        
+        // Fetch lessons to associate with quests
+        let lessonDescriptor = FetchDescriptor<Lesson>()
+        let allLessons = try modelContext.fetch(lessonDescriptor)
+        let lessonsById = Dictionary(uniqueKeysWithValues: allLessons.map { ($0.id, $0) })
+        
+        for questData in questsJSON {
             let quest = Quest(
                 id: questData.id,
                 title: questData.title,
                 description: questData.description,
-                storyNarrative: "Embark on a journey to master \(questData.title.lowercased())",
+                storyNarrative: questData.storyNarrative,
                 category: questData.category,
                 orderIndex: questData.orderIndex,
-                requiredLevel: questData.requiredLevel
+                requiredLevel: questData.requiredLevel,
+                xpReward: 50, // Default XP reward
+                isUnlocked: questData.requiredLevel == 1,
+                activities: []
             )
             
-            // Add activities
-            for activityData in questData.activities {
-                let activity = QuestActivity(
-                    type: activityData.0,
-                    title: activityData.1,
-                    description: activityData.2,
-                    questId: quest.id
-                )
-                quest.activities.append(activity)
-                modelContext.insert(activity)
+            // Create activities from lesson references
+            for (index, lessonId) in questData.lessons.enumerated() {
+                if let lesson = lessonsById[lessonId] {
+                    let activity = QuestActivity(
+                        id: "\(questData.id)_activity_\(index)",
+                        title: lesson.title,
+                        description: lesson.description,
+                        type: "lesson",
+                        requiredScore: 80,
+                        xpReward: 10,
+                        culturalInsight: lesson.culturalContext
+                    )
+                    quest.activities.append(activity)
+                }
             }
             
             modelContext.insert(quest)
-            
-            // Create quest progress for user
-            let questProgress = QuestProgress(
-                userId: userId,
-                questId: quest.id,
-                totalActivities: quest.activities.count
-            )
-            modelContext.insert(questProgress)
         }
+        
+        print("✅ Loaded \(questsJSON.count) quests")
     }
     
-    private func createSamplePronunciationExercises(modelContext: ModelContext) {
-        let pronunciationWords = [
-            ("mhoro", "/mʰo.ro/", "mhoro.mp3", "beginner", "Greetings", ["Focus on the aspirated 'mh' sound", "Keep the 'o' sounds pure"], ["Don't pronounce the 'h' separately"], "mho-ro", "Low-High", 2, "hello"),
-            ("mbira", "/m̩.bi.ra/", "mbira.mp3", "intermediate", "Music", ["The 'm' is syllabic - it's a full syllable", "Don't add a vowel before 'mbira'"], ["Saying 'em-bira' instead of 'mbira'"], "mbi-ra", "High-Low-High", 6, "thumb piano"),
-            ("nzira", "/n̩.zi.ra/", "nzira.mp3", "intermediate", "Directions", ["The 'n' is syllabic", "The 'z' should be clearly voiced"], ["Adding 'en' before the word"], "nzi-ra", "High-Low-High", 6, "path/way"),
-            ("svika", "/svi.ka/", "svika.mp3", "advanced", "Verbs", ["The 'sv' is a whistled sound", "Purse your lips slightly for the 'sv'"], ["Pronouncing as 'shvika' or separating 's' and 'v'"], "svi-ka", "High-Low", 8, "arrive"),
-            ("ngoma", "/ŋo.ma/", "ngoma.mp3", "beginner", "Music", ["The 'ng' is one sound, like in 'singer'", "Don't separate the 'n' and 'g'"], ["Saying 'en-goma'"], "ngo-ma", "High-Low", 3, "drum")
-        ]
+    private func loadPronunciationExercises() async throws {
+        guard let url = Bundle.main.url(forResource: "pronunciation-exercises", withExtension: "json", subdirectory: "Content") else {
+            throw ContentError.fileNotFound("pronunciation-exercises.json")
+        }
         
-        for wordData in pronunciationWords {
+        let data = try Data(contentsOf: url)
+        let exercisesJSON = try JSONDecoder().decode([PronunciationExerciseJSON].self, from: data)
+        
+        for exerciseData in exercisesJSON {
             let exercise = PronunciationExercise(
-                word: wordData.0,
-                phonetic: wordData.1,
-                audioFile: wordData.2,
-                difficulty: wordData.3,
-                category: wordData.4,
-                complexity: wordData.9,
-                translation: wordData.10
+                id: exerciseData.id,
+                word: exerciseData.word,
+                phonetic: exerciseData.phonetic,
+                syllables: exerciseData.syllables,
+                tonePattern: exerciseData.tonePattern,
+                audioFile: exerciseData.audioFile,
+                complexity: exerciseData.complexity,
+                specialSounds: parseSpecialSounds(exerciseData.specialSounds),
+                pronunciationTips: exerciseData.pronunciationTips,
+                learningLevel: exerciseData.learningLevel,
+                category: exerciseData.category,
+                translation: exerciseData.translation
             )
-            
-            exercise.tips = wordData.5
-            exercise.commonMistakes = wordData.6
-            exercise.syllables = wordData.7
-            exercise.tonePattern = wordData.8
-            
-            // Add special sounds for complex words
-            if wordData.0 == "mbira" {
-                let sound = PronunciationSound(
-                    token: "mb",
-                    type: "prenasalized",
-                    description: "Syllabic nasal followed by voiced stop",
-                    exerciseId: exercise.id
-                )
-                exercise.specialSounds.append(sound)
-                modelContext.insert(sound)
-            } else if wordData.0 == "svika" {
-                let sound = PronunciationSound(
-                    token: "sv",
-                    type: "whistled",
-                    description: "Whistled fricative - purse lips slightly",
-                    exerciseId: exercise.id
-                )
-                exercise.specialSounds.append(sound)
-                modelContext.insert(sound)
-            }
-            
             modelContext.insert(exercise)
+        }
+        
+        print("✅ Loaded \(exercisesJSON.count) pronunciation exercises")
+    }
+    
+    private func loadFlashcards() async throws {
+        guard let url = Bundle.main.url(forResource: "flashcards", withExtension: "json", subdirectory: "Content") else {
+            // If flashcards.json doesn't exist, create from vocabulary
+            try await createFlashcardsFromVocabulary()
+            return
+        }
+        
+        let data = try Data(contentsOf: url)
+        let flashcardsJSON = try JSONDecoder().decode([FlashcardJSON].self, from: data)
+        
+        for cardData in flashcardsJSON {
+            let flashcard = Flashcard(
+                id: cardData.id,
+                category: cardData.category,
+                front: cardData.front,
+                back: cardData.back,
+                difficulty: cardData.difficulty,
+                tags: cardData.tags,
+                mnemonic: cardData.mnemonic,
+                usageExample: cardData.usageExample,
+                culturalNote: cardData.culturalNote,
+                audioFile: cardData.audioFile,
+                lastReviewed: nil,
+                nextReviewDate: Date(),
+                repetitionCount: 0,
+                easeFactor: 2.5
+            )
+            modelContext.insert(flashcard)
+        }
+        
+        print("✅ Loaded \(flashcardsJSON.count) flashcards")
+    }
+    
+    private func createFlashcardsFromVocabulary() async throws {
+        let vocabDescriptor = FetchDescriptor<VocabularyItem>()
+        let vocabulary = try modelContext.fetch(vocabDescriptor)
+        
+        for (index, item) in vocabulary.prefix(100).enumerated() { // Create flashcards for first 100 vocab items
+            let flashcard = Flashcard(
+                id: "flashcard_\(index)",
+                category: item.category,
+                front: item.shona,
+                back: item.english,
+                difficulty: item.difficulty,
+                tags: [],
+                mnemonic: nil,
+                usageExample: item.usageNotes,
+                culturalNote: item.culturalNotes,
+                audioFile: item.audioFile,
+                lastReviewed: nil,
+                nextReviewDate: Date(),
+                repetitionCount: 0,
+                easeFactor: 2.5
+            )
+            modelContext.insert(flashcard)
+        }
+        
+        print("✅ Created \(vocabulary.prefix(100).count) flashcards from vocabulary")
+    }
+    
+    // MARK: - Helper Methods
+    private func parseLearningObjectives(_ objectivesString: String?) -> [String] {
+        guard let objectives = objectivesString else { return [] }
+        
+        // Try to parse as JSON array first
+        if let data = objectives.data(using: .utf8),
+           let array = try? JSONDecoder().decode([String].self, from: data) {
+            return array
+        }
+        
+        // Otherwise split by common delimiters
+        return objectives
+            .split(separator: ";")
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
+    }
+    
+    private func parseSpecialSounds(_ soundsString: String?) -> [String] {
+        guard let sounds = soundsString else { return [] }
+        
+        // Try to parse as JSON array
+        if let data = sounds.data(using: .utf8),
+           let array = try? JSONDecoder().decode([[String: String]].self, from: data) {
+            return array.compactMap { $0["token"] }
+        }
+        
+        return []
+    }
+}
+
+// MARK: - Error Types
+enum ContentError: LocalizedError {
+    case fileNotFound(String)
+    case decodingError(String)
+    case savingError(String)
+    
+    var errorDescription: String? {
+        switch self {
+        case .fileNotFound(let filename):
+            return "Could not find file: \(filename)"
+        case .decodingError(let message):
+            return "Failed to decode content: \(message)"
+        case .savingError(let message):
+            return "Failed to save content: \(message)"
+        }
+    }
+}
+
+// MARK: - Loading View
+struct ContentLoadingView: View {
+    @ObservedObject var contentManager: ContentManager
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            ProgressView(value: contentManager.loadProgress) {
+                Text("Loading Content...")
+                    .font(.headline)
+            }
+            .progressViewStyle(LinearProgressViewStyle())
+            .padding(.horizontal)
+            
+            if let error = contentManager.error {
+                VStack {
+                    Image(systemName: "exclamationmark.triangle")
+                        .font(.largeTitle)
+                        .foregroundColor(.red)
+                    Text(error)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .multilineTextAlignment(.center)
+                }
+                .padding()
+            } else {
+                Text(getLoadingMessage())
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
+        }
+        .padding()
+    }
+    
+    private func getLoadingMessage() -> String {
+        switch contentManager.loadProgress {
+        case 0..<0.3:
+            return "Loading vocabulary..."
+        case 0.3..<0.5:
+            return "Loading lessons..."
+        case 0.5..<0.7:
+            return "Loading quests..."
+        case 0.7..<0.85:
+            return "Loading pronunciation exercises..."
+        case 0.85..<1.0:
+            return "Loading flashcards..."
+        default:
+            return "Almost ready..."
         }
     }
 }
