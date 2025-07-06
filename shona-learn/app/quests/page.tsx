@@ -143,6 +143,14 @@ export default function Quests() {
                       {quest.category === 'Family & Relationships' && <FaUsers className="text-white text-2xl" />}
                       {quest.category === 'Practical Communication' && <FaCompass className="text-white text-2xl" />}
                       {quest.category === 'Pronunciation Mastery' && <FaLightbulb className="text-white text-2xl" />}
+                      {quest.category === 'Food & Culture' && <FaHeart className="text-white text-2xl" />}
+                      {quest.category === 'Music & Arts' && <FaStar className="text-white text-2xl" />}
+                      {quest.category === 'Nature & Wildlife' && <FaCompass className="text-white text-2xl" />}
+                      {quest.category === 'Traditional Crafts' && <FaLightbulb className="text-white text-2xl" />}
+                      {quest.category === 'Modern Life' && <FaBookOpen className="text-white text-2xl" />}
+                      {quest.category === 'Ceremonies & Celebrations' && <FaStar className="text-white text-2xl" />}
+                      {quest.category === 'History & Legends' && <FaMap className="text-white text-2xl" />}
+                      {quest.category === 'Advanced Fluency' && <FaUsers className="text-white text-2xl" />}
                     </div>
                   </div>
 
