@@ -134,7 +134,9 @@ struct LearnView: View {
                 .padding()
             }
             .navigationTitle("Learn")
+            #if os(iOS)
             .navigationBarTitleDisplayMode(.large)
+            #endif
             .sheet(isPresented: $showingExercise) {
                 if let lesson = selectedLesson {
                     ExerciseView(lesson: lesson)

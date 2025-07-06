@@ -149,7 +149,9 @@ struct ExerciseView: View {
                 Spacer()
             }
             .navigationTitle("Exercise")
+            #if os(iOS)
             .navigationBarTitleDisplayMode(.inline)
+            #endif
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Close") {
