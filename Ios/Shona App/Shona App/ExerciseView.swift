@@ -339,6 +339,31 @@ struct CompletionView: View {
     }
 }
 
+struct PrimaryButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(12)
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+    }
+}
+
+struct SecondaryButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding()
+            .background(Color.clear)
+            .foregroundColor(.blue)
+            .overlay(
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(Color.blue, lineWidth: 2)
+            )
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+    }
+}
+
 #Preview {
     ExerciseView(lesson: Lesson(title: "Test Lesson", description: "Test", category: "Basics", orderIndex: 1))
         .modelContainer(for: [User.self, Lesson.self, Progress.self, Exercise.self], inMemory: true)

@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 import AVFoundation
+import Speech
 
 struct PronunciationView: View {
     @Environment(\.modelContext) private var modelContext
@@ -83,9 +84,9 @@ struct PronunciationView: View {
                     
                     // Stats Cards
                     HStack(spacing: 15) {
-                        StatCard(title: "Accuracy", value: "\(Int(sessionStats.averageAccuracy))%", color: .green)
-                        StatCard(title: "Practiced", value: "\(sessionStats.totalPracticed)", color: .blue)
-                        StatCard(title: "Mastered", value: "\(sessionStats.masteredWords)", color: .orange)
+                        PronunciationStatCard(title: "Accuracy", value: "\(Int(sessionStats.averageAccuracy))%", color: .green)
+                        PronunciationStatCard(title: "Practiced", value: "\(sessionStats.totalPracticed)", color: .blue)
+                        PronunciationStatCard(title: "Mastered", value: "\(sessionStats.masteredWords)", color: .orange)
                     }
                 }
                 .padding()
@@ -207,9 +208,11 @@ struct PronunciationView: View {
                                         .font(.body)
                                         .foregroundColor(.secondary)
                                     
-                                    Text("Syllables: \(exercise.syllables)")
-                                        .font(.body)
-                                        .foregroundColor(.secondary)
+                                    if let syllables = exercise.syllables {
+                                        Text("Syllables: \(syllables)")
+                                            .font(.body)
+                                            .foregroundColor(.secondary)
+                                    }
                                 }
                                 .padding(.leading, 20)
                             }
@@ -232,10 +235,16 @@ struct PronunciationView: View {
                             
                             if showTonePattern {
                                 VStack(alignment: .leading, spacing: 8) {
-                                    Text(exercise.tonePattern)
-                                        .font(.title2)
-                                        .fontWeight(.bold)
-                                        .foregroundColor(.orange)
+                                    if let tonePattern = exercise.tonePattern {
+                                        Text(tonePattern)
+                                            .font(.title2)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.orange)
+                                    } else {
+                                        Text("No tone pattern available")
+                                            .font(.body)
+                                            .foregroundColor(.secondary)
+                                    }
                                     
                                     Text("H = High tone, L = Low tone")
                                         .font(.caption)
@@ -245,11 +254,8 @@ struct PronunciationView: View {
                             }
                         }
                         
-                        // Special Sounds
-                        if let specialSoundsJSON = exercise.specialSounds,
-                           let specialSoundsData = specialSoundsJSON.data(using: .utf8),
-                           let specialSounds = try? JSONDecoder().decode([SpecialSound].self, from: specialSoundsData),
-                           !specialSounds.isEmpty {
+                                // Special Sounds
+        if !exercise.specialSounds.isEmpty {
                             
                             VStack(alignment: .leading, spacing: 12) {
                                 Button(action: { showSpecialSounds.toggle() }) {
@@ -267,7 +273,7 @@ struct PronunciationView: View {
                                 
                                 if showSpecialSounds {
                                     VStack(alignment: .leading, spacing: 8) {
-                                        ForEach(specialSounds, id: \.token) { sound in
+                                        ForEach(exercise.specialSounds, id: \.token) { sound in
                                             VStack(alignment: .leading, spacing: 4) {
                                                 Text("\(sound.token) - \(sound.type)")
                                                     .font(.body)
@@ -495,7 +501,7 @@ struct PronunciationView: View {
 
 // MARK: - Supporting Views
 
-struct StatCard: View {
+struct PronunciationStatCard: View {
     let title: String
     let value: String
     let color: Color
@@ -589,7 +595,7 @@ struct PronunciationExerciseCard: View {
                     .foregroundColor(.blue)
                     .cornerRadius(6)
                 
-                Text(exercise.learningLevel)
+                Text(exercise.difficulty)
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
@@ -602,15 +608,6 @@ struct PronunciationExerciseCard: View {
 }
 
 // MARK: - Data Structures
-
-struct PronunciationSessionStats {
-    var totalPracticed: Int = 0
-    var masteredWords: Int = 0
-    var averageAccuracy: Double = 0.0
-    var sessionTime: TimeInterval = 0
-}
-
-import Speech
 
 extension PronunciationView {
     private func requestSpeechRecognitionPermission() {

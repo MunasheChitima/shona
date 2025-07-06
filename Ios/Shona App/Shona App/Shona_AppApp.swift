@@ -10,12 +10,22 @@ import SwiftData
 
 @main
 struct Shona_AppApp: App {
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             User.self,
             Lesson.self,
+            Exercise.self,
+            VocabularyItem.self,
             Progress.self,
-            Exercise.self
+            Quest.self,
+            QuestActivity.self,
+            QuestProgress.self,
+            PronunciationExercise.self,
+            PronunciationSound.self,
+            Flashcard.self,
+            SRSProgress.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -28,7 +38,11 @@ struct Shona_AppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            if hasCompletedOnboarding {
+                ContentView()
+            } else {
+                OnboardingView()
+            }
         }
         .modelContainer(sharedModelContainer)
     }
