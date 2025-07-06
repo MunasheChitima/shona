@@ -455,7 +455,102 @@
       "levelNumber": 2,
       "levelName": "The Explorer",
       "cefr": "B1",
-      "units": []
+      "units": [
+        {
+          "unitNumber": 1,
+          "unitName": "Zuva Rangu (My Day)",
+          "lessons": [
+            {
+              "lessonNumber": "1A",
+              "title": "Morning Routine Verbs",
+              "goal": "Describe daily morning actions using recent past and habitual present.",
+              "vocabulary": ["kumuka", "kugeza", "kupfeka", "kudya", "kuenda kubasa"],
+              "grammarFocus": "Contrast habitual -no- vs recent past -a- (e.g., Ndakamuka).",
+              "cultureNotes": [
+                "Shona language reflects the rhythm and pace of daily life in Zimbabwe.",
+                "The use of recent past and habitual present verbs helps learners describe daily routines."
+              ],
+              "activities": [
+                {"step": "Warm-up", "description": "Audio flashcards: hear verb, select correct picture."},
+                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndakamuka ___' statements."},
+                {"step": "Role-Play", "description": "Pair practice: describe a morning routine using recent past and habitual present verbs."}
+              ],
+              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'kumuka' mean?", "correctAnswer": "Wake up", "options": ["Wake up", "Go to sleep", "Eat breakfast", "Go to work"], "audioText": "koo-MOO-kah"},
+                {"type": "translation", "question": "Translate to Shona: I eat breakfast.", "correctAnswer": "Ndakamuka apuro.", "options": [], "audioText": "n-dee-kah-AP-roo"},
+                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__kumuka' for 'you (singular) wake up'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "1B",
+              "title": "Afternoon Routine Verbs",
+              "goal": "Describe daily afternoon actions using recent past and habitual present.",
+              "vocabulary": ["kugeza", "kupfeka", "kudya", "kuenda kubasa", "kumuka"],
+              "grammarFocus": "Contrast habitual -no- vs recent past -a- (e.g., Ndakamuka).",
+              "cultureNotes": [
+                "Shona language reflects the rhythm and pace of daily life in Zimbabwe.",
+                "The use of recent past and habitual present verbs helps learners describe daily routines."
+              ],
+              "activities": [
+                {"step": "Warm-up", "description": "Audio flashcards: hear verb, select correct picture."},
+                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndakamuka ___' statements."},
+                {"step": "Role-Play", "description": "Pair practice: describe an afternoon routine using recent past and habitual present verbs."}
+              ],
+              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'kugeza' mean?", "correctAnswer": "Eat lunch", "options": ["Wake up", "Eat lunch", "Go to sleep", "Go to work"], "audioText": "koo-GEH-zah"},
+                {"type": "translation", "question": "Translate to Shona: I eat lunch.", "correctAnswer": "Ndakamuka apuro.", "options": [], "audioText": "n-dee-kah-AP-roo"},
+                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__kugeza' for 'you (singular) eat lunch'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "1C",
+              "title": "Evening Routine Verbs",
+              "goal": "Describe daily evening actions using recent past and habitual present.",
+              "vocabulary": ["kupfeka", "kudya", "kuenda kubasa", "kumuka", "kugeza"],
+              "grammarFocus": "Contrast habitual -no- vs recent past -a- (e.g., Ndakamuka).",
+              "cultureNotes": [
+                "Shona language reflects the rhythm and pace of daily life in Zimbabwe.",
+                "The use of recent past and habitual present verbs helps learners describe daily routines."
+              ],
+              "activities": [
+                {"step": "Warm-up", "description": "Audio flashcards: hear verb, select correct picture."},
+                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndakamuka ___' statements."},
+                {"step": "Role-Play", "description": "Pair practice: describe an evening routine using recent past and habitual present verbs."}
+              ],
+              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'kupfeka' mean?", "correctAnswer": "Go to sleep", "options": ["Wake up", "Eat lunch", "Go to sleep", "Go to work"], "audioText": "koo-PEH-kah"},
+                {"type": "translation", "question": "Translate to Shona: I go to sleep.", "correctAnswer": "Ndakamuka apuro.", "options": [], "audioText": "n-dee-kah-AP-roo"},
+                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__kupfeka' for 'you (singular) go to sleep'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "1D",
+              "title": "Evening Routine Verbs",
+              "goal": "Describe daily evening actions using recent past and habitual present.",
+              "vocabulary": ["kudya", "kuenda kubasa", "kumuka", "kugeza", "kupfeka"],
+              "grammarFocus": "Contrast habitual -no- vs recent past -a- (e.g., Ndakamuka).",
+              "cultureNotes": [
+                "Shona language reflects the rhythm and pace of daily life in Zimbabwe.",
+                "The use of recent past and habitual present verbs helps learners describe daily routines."
+              ],
+              "activities": [
+                {"step": "Warm-up", "description": "Audio flashcards: hear verb, select correct picture."},
+                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndakamuka ___' statements."},
+                {"step": "Role-Play", "description": "Pair practice: describe an evening routine using recent past and habitual present verbs."}
+              ],
+              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'kudya' mean?", "correctAnswer": "Eat dinner", "options": ["Wake up", "Eat lunch", "Eat dinner", "Go to work"], "audioText": "koo-DAH-yah"},
+                {"type": "translation", "question": "Translate to Shona: I eat dinner.", "correctAnswer": "Ndakamuka apuro.", "options": [], "audioText": "n-dee-kah-AP-roo"},
+                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__kudya' for 'you (singular) eat dinner'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "levelNumber": 3,
