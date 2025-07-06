@@ -1,0 +1,164 @@
+{
+  "word": "kuudza",
+  "english": "to tell",
+  "category": "Communication",
+  "phonetic_analysis": {
+    "tokens": [
+      "k",
+      "u",
+      "u",
+      "dz",
+      "a"
+    ],
+    "syllables": [
+      "ku",
+      "u",
+      "dza"
+    ],
+    "vowel_hiatus": true,
+    "phonetic_profile": [
+      {
+        "token": "k",
+        "type": "Voiceless Stop",
+        "ipa": "k",
+        "instructions": "Standard English 'k' sound.",
+        "category": "stop",
+        "antiPatterns": []
+      },
+      {
+        "token": "u",
+        "type": "Pure Vowel",
+        "ipa": "u",
+        "instructions": "Pronounce as 'oo' as in 'doom'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'u' in 'cup'."
+        ]
+      },
+      {
+        "token": "u",
+        "type": "Pure Vowel",
+        "ipa": "u",
+        "instructions": "Pronounce as 'oo' as in 'doom'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'u' in 'cup'."
+        ]
+      },
+      {
+        "token": "dz",
+        "type": "Voiced Affricate",
+        "ipa": "dz",
+        "instructions": "The sound at the end of the English word 'rods'.",
+        "category": "affricate",
+        "antiPatterns": [
+          "DO NOT pronounce as two separate sounds."
+        ]
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "complexity": 7
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'kuudza'. Pronunciation must be phonetically precise.\n\nSyllabification is: ku-u-dza.\n\nThe token 'k' is a voiceless stop [k]. Standard English 'k' sound.\n\nThe token 'u' is a pure vowel [u]. Pronounce as 'oo' as in 'doom'.\nCritical: DO NOT pronounce like the 'u' in 'cup'.\n\nThe token 'u' is a pure vowel [u]. Pronounce as 'oo' as in 'doom'.\nCritical: DO NOT pronounce like the 'u' in 'cup'.\n\nThe token 'dz' is a voiced affricate [dz]. The sound at the end of the English word 'rods'.\nCritical: DO NOT pronounce as two separate sounds.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\nVOWEL_HIATUS detected: When consecutive vowels appear, they belong to separate syllables and must each be pronounced fully without blending.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'kuudza'.\n\nThe word is pronounced in 3 distinct syllables: ku-u-dza.\n\nFor 'k' [k], show standard articulation for this voiceless stop.\nFor the vowel 'u', the mouth shape must be pure and static, matching the [u] sound without gliding. 'u' is tightly rounded lips.\nFor the vowel 'u', the mouth shape must be pure and static, matching the [u] sound without gliding. 'u' is tightly rounded lips.\nFor 'dz' [dz], show standard articulation for this voiced affricate.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \n\nWhen Vowel Hiatus occurs, the video must show a clear and distinct re-articulation. The mouth should fully form the first vowel shape, relax slightly, and then fully form the second vowel shape. Do not blend these movements.\n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "k",
+        "ipa": "k",
+        "category": "stop",
+        "type": "Voiceless Stop",
+        "instructions": "Standard English 'k' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "u",
+        "ipa": "u",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'oo' as in 'doom'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'u' in 'cup'."
+        ]
+      },
+      {
+        "token": "u",
+        "ipa": "u",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'oo' as in 'doom'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'u' in 'cup'."
+        ]
+      },
+      {
+        "token": "dz",
+        "ipa": "dz",
+        "category": "affricate",
+        "type": "Voiced Affricate",
+        "instructions": "The sound at the end of the English word 'rods'.",
+        "anti_patterns": [
+          "DO NOT pronounce as two separate sounds."
+        ]
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 0,
+      "breathy_consonants": 0,
+      "prenasalized_consonants": 0,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Intermediate",
+    "practice_focus": [],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.857Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "kuudza.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}

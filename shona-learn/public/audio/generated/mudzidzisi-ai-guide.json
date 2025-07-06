@@ -1,0 +1,1290 @@
+{
+  "title": "Mudzidzisi AI - Shona Pronunciation Guide",
+  "subtitle": "Complete Phonetic Analysis and Pronunciation Assets",
+  "generated_at": "2025-07-06T15:11:24.869Z",
+  "system_info": {
+    "ai_agent": "Mudzidzisi AI",
+    "version": "1.0.0",
+    "phonetic_engine": "Advanced Shona Orthographic Parser",
+    "total_phonemes": 40,
+    "specialized_sounds": [
+      "tsv",
+      "dzv",
+      "sv",
+      "zv",
+      "bh",
+      "dh",
+      "mb",
+      "nd",
+      "ng",
+      "nz"
+    ]
+  },
+  "generation_statistics": {
+    "total_words": 15,
+    "successful_generations": 15,
+    "failed_generations": 0,
+    "success_rate": "100.0%"
+  },
+  "pronunciation_catalog": [
+    {
+      "word": "mangwanani",
+      "english": "good morning",
+      "category": "Greetings",
+      "audio_file": "mangwanani.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "m",
+          "a",
+          "ng",
+          "w",
+          "a",
+          "n",
+          "a",
+          "n",
+          "i"
+        ],
+        "syllables": [
+          "ma",
+          "ngwa",
+          "na",
+          "ni"
+        ],
+        "complexity_score": 9,
+        "vowel_hiatus": false
+      },
+      "special_features": [
+        {
+          "token": "ng",
+          "type": "prenasalized",
+          "ipa": "ŋɡ",
+          "phoneme_type": "Prenasalized Stop"
+        }
+      ],
+      "pronunciation_details": [
+        {
+          "token": "m",
+          "ipa": "m",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'm' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "ng",
+          "ipa": "ŋɡ",
+          "category": "prenasalized",
+          "phoneme_type": "Prenasalized Stop",
+          "learning_notes": "A prenasalized hard 'g' consonant, not a full separate vowel sound."
+        },
+        {
+          "token": "w",
+          "ipa": "w",
+          "category": "glide",
+          "phoneme_type": "Glide",
+          "learning_notes": "Standard English 'w' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "n",
+          "ipa": "n",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'n' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "n",
+          "ipa": "n",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'n' sound."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        }
+      ]
+    },
+    {
+      "word": "masikati",
+      "english": "good afternoon",
+      "category": "Greetings",
+      "audio_file": "masikati.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "m",
+          "a",
+          "s",
+          "i",
+          "k",
+          "a",
+          "t",
+          "i"
+        ],
+        "syllables": [
+          "ma",
+          "si",
+          "ka",
+          "ti"
+        ],
+        "complexity_score": 8,
+        "vowel_hiatus": false
+      },
+      "special_features": [],
+      "pronunciation_details": [
+        {
+          "token": "m",
+          "ipa": "m",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'm' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "s",
+          "ipa": "s",
+          "category": "fricative",
+          "phoneme_type": "Voiceless Fricative",
+          "learning_notes": "Standard English 's' sound."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        },
+        {
+          "token": "k",
+          "ipa": "k",
+          "category": "stop",
+          "phoneme_type": "Voiceless Stop",
+          "learning_notes": "Standard English 'k' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "t",
+          "ipa": "t",
+          "category": "stop",
+          "phoneme_type": "Voiceless Stop",
+          "learning_notes": "Standard English 't' sound."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        }
+      ]
+    },
+    {
+      "word": "manheru",
+      "english": "good evening",
+      "category": "Greetings",
+      "audio_file": "manheru.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "m",
+          "a",
+          "n",
+          "h",
+          "e",
+          "r",
+          "u"
+        ],
+        "syllables": [
+          "ma",
+          "nhe",
+          "ru"
+        ],
+        "complexity_score": 7,
+        "vowel_hiatus": false
+      },
+      "special_features": [],
+      "pronunciation_details": [
+        {
+          "token": "m",
+          "ipa": "m",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'm' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "n",
+          "ipa": "n",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'n' sound."
+        },
+        {
+          "token": "h",
+          "ipa": "h",
+          "category": "fricative",
+          "phoneme_type": "Voiceless Fricative",
+          "learning_notes": "Standard English 'h' sound."
+        },
+        {
+          "token": "e",
+          "ipa": "e",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'eh' as in 'bed'. No 'y' glide."
+        },
+        {
+          "token": "r",
+          "ipa": "r",
+          "category": "liquid",
+          "phoneme_type": "Liquid",
+          "learning_notes": "Standard English 'r' sound."
+        },
+        {
+          "token": "u",
+          "ipa": "u",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'oo' as in 'doom'."
+        }
+      ]
+    },
+    {
+      "word": "bhazi",
+      "english": "bus",
+      "category": "Transport",
+      "audio_file": "bhazi.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "bh",
+          "a",
+          "z",
+          "i"
+        ],
+        "syllables": [
+          "bha",
+          "zi"
+        ],
+        "complexity_score": 4,
+        "vowel_hiatus": false
+      },
+      "special_features": [
+        {
+          "token": "bh",
+          "type": "breathy",
+          "ipa": "bʱ",
+          "phoneme_type": "Breathy-Voiced Plosive"
+        }
+      ],
+      "pronunciation_details": [
+        {
+          "token": "bh",
+          "ipa": "bʱ",
+          "category": "breathy",
+          "phoneme_type": "Breathy-Voiced Plosive",
+          "learning_notes": "KEYWORD: AUDIBLE SIGH. An English 'b' sound with a simultaneous, audible release of air. The 'h' is a feature, not a separate sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "z",
+          "ipa": "z",
+          "category": "fricative",
+          "phoneme_type": "Voiced Fricative",
+          "learning_notes": "Standard English 'z' sound."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        }
+      ]
+    },
+    {
+      "word": "svika",
+      "english": "arrive",
+      "category": "Movement",
+      "audio_file": "svika.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "sv",
+          "i",
+          "k",
+          "a"
+        ],
+        "syllables": [
+          "svi",
+          "ka"
+        ],
+        "complexity_score": 4,
+        "vowel_hiatus": false
+      },
+      "special_features": [
+        {
+          "token": "sv",
+          "type": "whistled",
+          "ipa": "swhistling",
+          "phoneme_type": "Voiceless Whistled Sibilant"
+        }
+      ],
+      "pronunciation_details": [
+        {
+          "token": "sv",
+          "ipa": "swhistling",
+          "category": "whistled",
+          "phoneme_type": "Voiceless Whistled Sibilant",
+          "learning_notes": "KEYWORD: WHISTLED SIBILANT. A unique high-frequency 's' sound. Visually, lips are slightly rounded/protruded."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        },
+        {
+          "token": "k",
+          "ipa": "k",
+          "category": "stop",
+          "phoneme_type": "Voiceless Stop",
+          "learning_notes": "Standard English 'k' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        }
+      ]
+    },
+    {
+      "word": "zvino",
+      "english": "now",
+      "category": "Time",
+      "audio_file": "zvino.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "zv",
+          "i",
+          "n",
+          "o"
+        ],
+        "syllables": [
+          "zvi",
+          "no"
+        ],
+        "complexity_score": 4,
+        "vowel_hiatus": false
+      },
+      "special_features": [
+        {
+          "token": "zv",
+          "type": "whistled",
+          "ipa": "zwhistling",
+          "phoneme_type": "Voiced Whistled Sibilant"
+        }
+      ],
+      "pronunciation_details": [
+        {
+          "token": "zv",
+          "ipa": "zwhistling",
+          "category": "whistled",
+          "phoneme_type": "Voiced Whistled Sibilant",
+          "learning_notes": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        },
+        {
+          "token": "n",
+          "ipa": "n",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'n' sound."
+        },
+        {
+          "token": "o",
+          "ipa": "o",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'oh' as in 'so'. No 'w' glide."
+        }
+      ]
+    },
+    {
+      "word": "tsvaira",
+      "english": "drive",
+      "category": "Action",
+      "audio_file": "tsvaira.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "tsv",
+          "a",
+          "i",
+          "r",
+          "a"
+        ],
+        "syllables": [
+          "tsva",
+          "i",
+          "ra"
+        ],
+        "complexity_score": 5,
+        "vowel_hiatus": true
+      },
+      "special_features": [],
+      "pronunciation_details": [
+        {
+          "token": "tsv",
+          "ipa": "tswhistling",
+          "category": "whistled-affricate",
+          "phoneme_type": "Whistled Affricate",
+          "learning_notes": "KEYWORD: WHISTLED AFFRICATE. A ts sound combined with the whistled sv sibilant."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        },
+        {
+          "token": "r",
+          "ipa": "r",
+          "category": "liquid",
+          "phoneme_type": "Liquid",
+          "learning_notes": "Standard English 'r' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        }
+      ]
+    },
+    {
+      "word": "kuudza",
+      "english": "to tell",
+      "category": "Communication",
+      "audio_file": "kuudza.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "k",
+          "u",
+          "u",
+          "dz",
+          "a"
+        ],
+        "syllables": [
+          "ku",
+          "u",
+          "dza"
+        ],
+        "complexity_score": 5,
+        "vowel_hiatus": true
+      },
+      "special_features": [],
+      "pronunciation_details": [
+        {
+          "token": "k",
+          "ipa": "k",
+          "category": "stop",
+          "phoneme_type": "Voiceless Stop",
+          "learning_notes": "Standard English 'k' sound."
+        },
+        {
+          "token": "u",
+          "ipa": "u",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'oo' as in 'doom'."
+        },
+        {
+          "token": "u",
+          "ipa": "u",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'oo' as in 'doom'."
+        },
+        {
+          "token": "dz",
+          "ipa": "dz",
+          "category": "affricate",
+          "phoneme_type": "Voiced Affricate",
+          "learning_notes": "The sound at the end of the English word 'rods'."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        }
+      ]
+    },
+    {
+      "word": "mbira",
+      "english": "thumb piano",
+      "category": "Music",
+      "audio_file": "mbira.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "mb",
+          "i",
+          "r",
+          "a"
+        ],
+        "syllables": [
+          "mbi",
+          "ra"
+        ],
+        "complexity_score": 4,
+        "vowel_hiatus": false
+      },
+      "special_features": [
+        {
+          "token": "mb",
+          "type": "prenasalized",
+          "ipa": "mb",
+          "phoneme_type": "Prenasalized Stop"
+        }
+      ],
+      "pronunciation_details": [
+        {
+          "token": "mb",
+          "ipa": "mb",
+          "category": "prenasalized",
+          "phoneme_type": "Prenasalized Stop",
+          "learning_notes": "A very brief nasal airflow immediately precedes the 'b' stop within the same syllable."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        },
+        {
+          "token": "r",
+          "ipa": "r",
+          "category": "liquid",
+          "phoneme_type": "Liquid",
+          "learning_notes": "Standard English 'r' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        }
+      ]
+    },
+    {
+      "word": "ndimi",
+      "english": "you (plural)",
+      "category": "Pronouns",
+      "audio_file": "ndimi.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "nd",
+          "i",
+          "m",
+          "i"
+        ],
+        "syllables": [
+          "ndi",
+          "mi"
+        ],
+        "complexity_score": 4,
+        "vowel_hiatus": false
+      },
+      "special_features": [
+        {
+          "token": "nd",
+          "type": "prenasalized",
+          "ipa": "nd",
+          "phoneme_type": "Prenasalized Stop"
+        }
+      ],
+      "pronunciation_details": [
+        {
+          "token": "nd",
+          "ipa": "nd",
+          "category": "prenasalized",
+          "phoneme_type": "Prenasalized Stop",
+          "learning_notes": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        },
+        {
+          "token": "m",
+          "ipa": "m",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'm' sound."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        }
+      ]
+    },
+    {
+      "word": "ngoma",
+      "english": "drum",
+      "category": "Music",
+      "audio_file": "ngoma.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "ng",
+          "o",
+          "m",
+          "a"
+        ],
+        "syllables": [
+          "ngo",
+          "ma"
+        ],
+        "complexity_score": 4,
+        "vowel_hiatus": false
+      },
+      "special_features": [
+        {
+          "token": "ng",
+          "type": "prenasalized",
+          "ipa": "ŋɡ",
+          "phoneme_type": "Prenasalized Stop"
+        }
+      ],
+      "pronunciation_details": [
+        {
+          "token": "ng",
+          "ipa": "ŋɡ",
+          "category": "prenasalized",
+          "phoneme_type": "Prenasalized Stop",
+          "learning_notes": "A prenasalized hard 'g' consonant, not a full separate vowel sound."
+        },
+        {
+          "token": "o",
+          "ipa": "o",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'oh' as in 'so'. No 'w' glide."
+        },
+        {
+          "token": "m",
+          "ipa": "m",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'm' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        }
+      ]
+    },
+    {
+      "word": "ndatenda",
+      "english": "thank you",
+      "category": "Courtesy",
+      "audio_file": "ndatenda.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "nd",
+          "a",
+          "t",
+          "e",
+          "nd",
+          "a"
+        ],
+        "syllables": [
+          "nda",
+          "te",
+          "nda"
+        ],
+        "complexity_score": 6,
+        "vowel_hiatus": false
+      },
+      "special_features": [
+        {
+          "token": "nd",
+          "type": "prenasalized",
+          "ipa": "nd",
+          "phoneme_type": "Prenasalized Stop"
+        },
+        {
+          "token": "nd",
+          "type": "prenasalized",
+          "ipa": "nd",
+          "phoneme_type": "Prenasalized Stop"
+        }
+      ],
+      "pronunciation_details": [
+        {
+          "token": "nd",
+          "ipa": "nd",
+          "category": "prenasalized",
+          "phoneme_type": "Prenasalized Stop",
+          "learning_notes": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "t",
+          "ipa": "t",
+          "category": "stop",
+          "phoneme_type": "Voiceless Stop",
+          "learning_notes": "Standard English 't' sound."
+        },
+        {
+          "token": "e",
+          "ipa": "e",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'eh' as in 'bed'. No 'y' glide."
+        },
+        {
+          "token": "nd",
+          "ipa": "nd",
+          "category": "prenasalized",
+          "phoneme_type": "Prenasalized Stop",
+          "learning_notes": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        }
+      ]
+    },
+    {
+      "word": "zvakanaka",
+      "english": "fine/good",
+      "category": "Responses",
+      "audio_file": "zvakanaka.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "zv",
+          "a",
+          "k",
+          "a",
+          "n",
+          "a",
+          "k",
+          "a"
+        ],
+        "syllables": [
+          "zva",
+          "ka",
+          "na",
+          "ka"
+        ],
+        "complexity_score": 8,
+        "vowel_hiatus": false
+      },
+      "special_features": [
+        {
+          "token": "zv",
+          "type": "whistled",
+          "ipa": "zwhistling",
+          "phoneme_type": "Voiced Whistled Sibilant"
+        }
+      ],
+      "pronunciation_details": [
+        {
+          "token": "zv",
+          "ipa": "zwhistling",
+          "category": "whistled",
+          "phoneme_type": "Voiced Whistled Sibilant",
+          "learning_notes": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "k",
+          "ipa": "k",
+          "category": "stop",
+          "phoneme_type": "Voiceless Stop",
+          "learning_notes": "Standard English 'k' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "n",
+          "ipa": "n",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'n' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "k",
+          "ipa": "k",
+          "category": "stop",
+          "phoneme_type": "Voiceless Stop",
+          "learning_notes": "Standard English 'k' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        }
+      ]
+    },
+    {
+      "word": "pamusoroi",
+      "english": "excuse me",
+      "category": "Courtesy",
+      "audio_file": "pamusoroi.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "p",
+          "a",
+          "m",
+          "u",
+          "s",
+          "o",
+          "r",
+          "o",
+          "i"
+        ],
+        "syllables": [
+          "pa",
+          "mu",
+          "so",
+          "ro",
+          "i"
+        ],
+        "complexity_score": 9,
+        "vowel_hiatus": true
+      },
+      "special_features": [],
+      "pronunciation_details": [
+        {
+          "token": "p",
+          "ipa": "p",
+          "category": "stop",
+          "phoneme_type": "Voiceless Stop",
+          "learning_notes": "Standard English 'p' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "m",
+          "ipa": "m",
+          "category": "nasal",
+          "phoneme_type": "Nasal",
+          "learning_notes": "Standard English 'm' sound."
+        },
+        {
+          "token": "u",
+          "ipa": "u",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'oo' as in 'doom'."
+        },
+        {
+          "token": "s",
+          "ipa": "s",
+          "category": "fricative",
+          "phoneme_type": "Voiceless Fricative",
+          "learning_notes": "Standard English 's' sound."
+        },
+        {
+          "token": "o",
+          "ipa": "o",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'oh' as in 'so'. No 'w' glide."
+        },
+        {
+          "token": "r",
+          "ipa": "r",
+          "category": "liquid",
+          "phoneme_type": "Liquid",
+          "learning_notes": "Standard English 'r' sound."
+        },
+        {
+          "token": "o",
+          "ipa": "o",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'oh' as in 'so'. No 'w' glide."
+        },
+        {
+          "token": "i",
+          "ipa": "i",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ee' as in 'see'."
+        }
+      ]
+    },
+    {
+      "word": "sara",
+      "english": "remain",
+      "category": "Action",
+      "audio_file": "sara.wav",
+      "phonetic_breakdown": {
+        "tokens": [
+          "s",
+          "a",
+          "r",
+          "a"
+        ],
+        "syllables": [
+          "sa",
+          "ra"
+        ],
+        "complexity_score": 4,
+        "vowel_hiatus": false
+      },
+      "special_features": [],
+      "pronunciation_details": [
+        {
+          "token": "s",
+          "ipa": "s",
+          "category": "fricative",
+          "phoneme_type": "Voiceless Fricative",
+          "learning_notes": "Standard English 's' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        },
+        {
+          "token": "r",
+          "ipa": "r",
+          "category": "liquid",
+          "phoneme_type": "Liquid",
+          "learning_notes": "Standard English 'r' sound."
+        },
+        {
+          "token": "a",
+          "ipa": "a",
+          "category": "vowel",
+          "phoneme_type": "Pure Vowel",
+          "learning_notes": "Pronounce as 'ah' as in 'father'. Short, pure, static sound."
+        }
+      ]
+    }
+  ],
+  "phoneme_analysis": {
+    "usage_frequency": {
+      "a": 22,
+      "i": 11,
+      "m": 6,
+      "n": 5,
+      "k": 5,
+      "r": 5,
+      "u": 4,
+      "o": 4,
+      "s": 3,
+      "nd": 3,
+      "ng": 2,
+      "t": 2,
+      "e": 2,
+      "zv": 2,
+      "w": 1,
+      "h": 1,
+      "bh": 1,
+      "z": 1,
+      "sv": 1,
+      "tsv": 1,
+      "dz": 1,
+      "mb": 1,
+      "p": 1
+    },
+    "complexity_distribution": {
+      "Beginner (1-6)": 10,
+      "Intermediate (7-10)": 5,
+      "Advanced (11-15)": 0,
+      "Expert (16+)": 0
+    },
+    "special_sound_frequency": {
+      "Whistled Sibilants": 3,
+      "Breathy Consonants": 1,
+      "Prenasalized Consonants": 6,
+      "Implosive Consonants": 0
+    },
+    "learning_progression": {
+      "recommended_order": [
+        {
+          "word": "bhazi",
+          "complexity": 4,
+          "special_sounds": [
+            "bh"
+          ]
+        },
+        {
+          "word": "svika",
+          "complexity": 4,
+          "special_sounds": [
+            "sv"
+          ]
+        },
+        {
+          "word": "zvino",
+          "complexity": 4,
+          "special_sounds": [
+            "zv"
+          ]
+        },
+        {
+          "word": "mbira",
+          "complexity": 4,
+          "special_sounds": [
+            "mb"
+          ]
+        },
+        {
+          "word": "ndimi",
+          "complexity": 4,
+          "special_sounds": [
+            "nd"
+          ]
+        },
+        {
+          "word": "ngoma",
+          "complexity": 4,
+          "special_sounds": [
+            "ng"
+          ]
+        },
+        {
+          "word": "sara",
+          "complexity": 4,
+          "special_sounds": []
+        },
+        {
+          "word": "tsvaira",
+          "complexity": 5,
+          "special_sounds": []
+        },
+        {
+          "word": "kuudza",
+          "complexity": 5,
+          "special_sounds": []
+        },
+        {
+          "word": "ndatenda",
+          "complexity": 6,
+          "special_sounds": [
+            "nd",
+            "nd"
+          ]
+        },
+        {
+          "word": "manheru",
+          "complexity": 7,
+          "special_sounds": []
+        },
+        {
+          "word": "masikati",
+          "complexity": 8,
+          "special_sounds": []
+        },
+        {
+          "word": "zvakanaka",
+          "complexity": 8,
+          "special_sounds": [
+            "zv"
+          ]
+        },
+        {
+          "word": "mangwanani",
+          "complexity": 9,
+          "special_sounds": [
+            "ng"
+          ]
+        },
+        {
+          "word": "pamusoroi",
+          "complexity": 9,
+          "special_sounds": []
+        }
+      ],
+      "learning_milestones": [
+        {
+          "level": "Foundation",
+          "words": [
+            "bhazi",
+            "svika",
+            "zvino",
+            "mbira",
+            "ndimi",
+            "ngoma",
+            "sara",
+            "tsvaira",
+            "kuudza",
+            "ndatenda"
+          ]
+        },
+        {
+          "level": "Development",
+          "words": [
+            "manheru",
+            "masikati",
+            "zvakanaka",
+            "mangwanani",
+            "pamusoroi"
+          ]
+        },
+        {
+          "level": "Mastery",
+          "words": []
+        }
+      ]
+    }
+  },
+  "pedagogical_insights": {
+    "beginner_words": [
+      "bhazi",
+      "svika",
+      "zvino",
+      "mbira",
+      "ndimi",
+      "ngoma",
+      "sara",
+      "tsvaira",
+      "kuudza",
+      "ndatenda"
+    ],
+    "intermediate_words": [
+      "manheru",
+      "masikati",
+      "zvakanaka",
+      "mangwanani",
+      "pamusoroi"
+    ],
+    "advanced_words": [],
+    "challenging_sounds": [
+      "tsv",
+      "dzv",
+      "sv",
+      "zv",
+      "bh",
+      "dh",
+      "mb",
+      "nd",
+      "ng"
+    ],
+    "pronunciation_focus_areas": [
+      "Whistled sibilants (sv, zv)",
+      "Breathy consonants (bh, dh)",
+      "Prenasalized consonants (mb, nd, ng)",
+      "Trigraph clusters (tsv, dzv)"
+    ]
+  },
+  "ai_prompt_examples": {
+    "audio_tts_sample": "Sample TTS Prompt: \"bhazi\" - Generated specialized audio instruction with phonetic guidance",
+    "video_synthesis_sample": "Sample Video Prompt: \"bhazi\" - Generated mouth position and articulation guidance",
+    "complexity_scoring": "Automatic difficulty assessment based on phonetic complexity and special sound combinations"
+  }
+}

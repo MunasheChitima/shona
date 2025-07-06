@@ -1,0 +1,164 @@
+{
+  "word": "tsvaira",
+  "english": "drive",
+  "category": "Action",
+  "phonetic_analysis": {
+    "tokens": [
+      "tsv",
+      "a",
+      "i",
+      "r",
+      "a"
+    ],
+    "syllables": [
+      "tsva",
+      "i",
+      "ra"
+    ],
+    "vowel_hiatus": true,
+    "phonetic_profile": [
+      {
+        "token": "tsv",
+        "type": "Whistled Affricate",
+        "ipa": "tswhistling",
+        "instructions": "KEYWORD: WHISTLED AFFRICATE. A ts sound combined with the whistled sv sibilant.",
+        "category": "whistled-affricate",
+        "antiPatterns": [
+          "A single complex sound, not ts followed by v."
+        ]
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "i",
+        "type": "Pure Vowel",
+        "ipa": "i",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      },
+      {
+        "token": "r",
+        "type": "Liquid",
+        "ipa": "r",
+        "instructions": "Standard English 'r' sound.",
+        "category": "liquid",
+        "antiPatterns": []
+      },
+      {
+        "token": "a",
+        "type": "Pure Vowel",
+        "ipa": "a",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "category": "vowel",
+        "antiPatterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "complexity": 12
+  },
+  "ai_generated_prompts": {
+    "audio_tts_prompt": "Generate a high-fidelity audio file for the Shona word 'tsvaira'. Pronunciation must be phonetically precise.\n\nSyllabification is: tsva-i-ra.\n\nThe token 'tsv' is a whistled affricate [tswhistling]. KEYWORD: WHISTLED AFFRICATE. A ts sound combined with the whistled sv sibilant.\nCritical: A single complex sound, not ts followed by v.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nThe token 'i' is a pure vowel [i]. Pronounce as 'ee' as in 'see'.\nCritical: DO NOT pronounce like the 'i' in 'sit'.\n\nThe token 'r' is a liquid [r]. Standard English 'r' sound.\n\nThe token 'a' is a pure vowel [a]. Pronounce as 'ah' as in 'father'. Short, pure, static sound.\nCritical: DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding.\n\nApply the global rule of EVEN_STRESS to all syllables. All syllables should have relatively equal stress and timing.\nVOWEL_HIATUS detected: When consecutive vowels appear, they belong to separate syllables and must each be pronounced fully without blending.\n",
+    "video_synthesis_prompt": "Generate a video of a neutral, front-facing human head pronouncing the Shona word 'tsvaira'.\n\nThe word is pronounced in 3 distinct syllables: tsva-i-ra.\n\nCRITICAL: For the whistled sibilant 'tsv', the lips must be slightly rounded and protruded. The lower lip should visibly rise towards the upper teeth. This specific posture is key. Generate a secondary video from a profile (side) view to clearly show this lip posture.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \nFor the vowel 'i', the mouth shape must be pure and static, matching the [i] sound without gliding. 'i' is a wide smile, \nFor 'r' [r], show standard articulation for this liquid.\nFor the vowel 'a', the mouth shape must be pure and static, matching the [a] sound without gliding. 'a' is a wide open mouth, \n\nWhen Vowel Hiatus occurs, the video must show a clear and distinct re-articulation. The mouth should fully form the first vowel shape, relax slightly, and then fully form the second vowel shape. Do not blend these movements.\n\nThe overall delivery must be rhythmically even, with equal time and emphasis on each syllable. Avoid any exaggerated facial expressions not related to articulation.",
+    "audio_specifications": {
+      "audioSpecs": {
+        "format": "wav",
+        "sampleRate": 44100,
+        "bitDepth": 16
+      }
+    },
+    "video_specifications": {
+      "videoSpecs": {
+        "resolution": "1080p",
+        "fps": 30,
+        "format": "mp4",
+        "viewTypes": [
+          "front",
+          "profile"
+        ]
+      }
+    }
+  },
+  "detailed_pronunciation_guide": {
+    "phonemes": [
+      {
+        "token": "tsv",
+        "ipa": "tswhistling",
+        "category": "whistled-affricate",
+        "type": "Whistled Affricate",
+        "instructions": "KEYWORD: WHISTLED AFFRICATE. A ts sound combined with the whistled sv sibilant.",
+        "anti_patterns": [
+          "A single complex sound, not ts followed by v."
+        ]
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      },
+      {
+        "token": "i",
+        "ipa": "i",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ee' as in 'see'.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'i' in 'sit'."
+        ]
+      },
+      {
+        "token": "r",
+        "ipa": "r",
+        "category": "liquid",
+        "type": "Liquid",
+        "instructions": "Standard English 'r' sound.",
+        "anti_patterns": []
+      },
+      {
+        "token": "a",
+        "ipa": "a",
+        "category": "vowel",
+        "type": "Pure Vowel",
+        "instructions": "Pronounce as 'ah' as in 'father'. Short, pure, static sound.",
+        "anti_patterns": [
+          "DO NOT pronounce like the 'a' in 'cat' or 'make'. No gliding."
+        ]
+      }
+    ],
+    "difficulty_indicators": {
+      "whistled_sibilants": 0,
+      "breathy_consonants": 0,
+      "prenasalized_consonants": 0,
+      "implosive_consonants": 0
+    }
+  },
+  "pedagogical_metadata": {
+    "learning_sequence": "Advanced",
+    "practice_focus": [],
+    "pronunciation_tips": []
+  },
+  "generated_at": "2025-07-06T15:11:24.856Z",
+  "mudzidzisi_ai_version": "1.0.0",
+  "file_info": {
+    "audio_file": "tsvaira.wav",
+    "audio_type": "mock_demonstration",
+    "format": "WAV",
+    "sample_rate": "44.1kHz (demonstration)"
+  }
+}
