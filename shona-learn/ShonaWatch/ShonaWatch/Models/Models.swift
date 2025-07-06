@@ -139,7 +139,7 @@ struct UserSettings: Codable {
         self.reviewReminderTime = Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: Date()) ?? Date()
         self.maxNewCardsPerDay = 10
         self.maxReviewsPerDay = 50
-        self.selectedCategories = ["General", "Greetings", "Family", "Numbers"]
+        self.selectedCategories = ["Greetings", "Family", "Numbers", "Food", "Colors"]
         self.difficultyLevel = "Beginner"
     }
 }
