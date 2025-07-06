@@ -15,7 +15,15 @@ struct Shona_AppApp: App {
             User.self,
             Lesson.self,
             Progress.self,
-            Exercise.self
+            Exercise.self,
+            VocabularyItem.self,
+            Quest.self,
+            QuestActivity.self,
+            QuestProgress.self,
+            PronunciationExercise.self,
+            PronunciationSound.self,
+            Flashcard.self,
+            SRSProgress.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 

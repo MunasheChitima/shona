@@ -125,25 +125,11 @@ struct OnboardingView: View {
         let user = User(name: name, email: email.isEmpty ? "user@shona.app" : email)
         modelContext.insert(user)
         
-        // Create sample lessons
-        createSampleLessons()
+        // Create rich content using ContentManager
+        ContentManager.shared.createSampleContent(modelContext: modelContext, userId: user.id)
         
         withAnimation {
             isFirstLaunch = false
-        }
-    }
-    
-    private func createSampleLessons() {
-        let lessons = [
-            Lesson(title: "Greetings & Basics", description: "Learn essential Shona greetings", category: "Basics", orderIndex: 1),
-            Lesson(title: "Numbers 1-10", description: "Count from 1 to 10 in Shona", category: "Numbers", orderIndex: 2),
-            Lesson(title: "Family Members", description: "Learn family vocabulary", category: "Family", orderIndex: 3),
-            Lesson(title: "Common Verbs", description: "Essential action words", category: "Verbs", orderIndex: 4),
-            Lesson(title: "Colors", description: "Learn Shona colors", category: "Colors", orderIndex: 5)
-        ]
-        
-        for lesson in lessons {
-            modelContext.insert(lesson)
         }
     }
 }
