@@ -4,79 +4,157 @@
       "id": "shona-001",
       "shonaText": "mhoro",
       "englishText": "hello (informal)",
-      "pronunciation": "mho-ro",
-      "phonetic": "/mʰoro/",
-      "tonePattern": "HL",
+      "pronunciation": "m̄hō-rō (m as in 'hmm', rolled r)",
+      "phonetic": "/m̥oɾo/",
+      "tonePattern": "H-L",
+      "audioGuide": "Start with breathy 'm' sound, high tone on 'mho', drop to low on 'ro'",
       "category": "Greetings",
       "difficulty": 1.0,
       "level": "A1",
-      "culturalNotes": "Casual greeting used between friends and equals",
-      "usageNotes": "Used in informal situations",
+      "culturalNotes": "Mhoro embodies Ubuntu - the Shona philosophy of interconnectedness. Used between peers, it acknowledges shared humanity. Never use with elders as it shows disrespect. In urban areas, younger generations may use it more freely, but traditional contexts demand careful attention to age and status.",
+      "usageNotes": "Morning: combine with 'mangwanani'. With friends only. Add 'shamwari' (friend) for warmth. Body language matters - slight bow shows respect even in informal greetings.",
+      "etymology": "From proto-Bantu greeting roots, related to acknowledgment of presence",
       "examples": [
         {
-          "id": "ex-001",
-          "shona": "Mhoro shamwari!",
-          "english": "Hello friend!",
-          "context": "greeting friends",
-          "register": "neutral"
+          "id": "ex-001-1",
+          "shona": "Mhoro shamwari wangu!",
+          "english": "Hello my friend!",
+          "context": "Meeting a close friend",
+          "culturalNote": "Adding 'wangu' (my) shows affection"
+        },
+        {
+          "id": "ex-001-2",
+          "shona": "Mhoro, wanga uripi?",
+          "english": "Hello, where have you been?",
+          "context": "Greeting after absence",
+          "culturalNote": "Shows you noticed their absence - caring is important"
+        },
+        {
+          "id": "ex-001-3",
+          "shona": "Ah, mhoro wangu!",
+          "english": "Ah, hello there!",
+          "context": "Surprised but happy greeting",
+          "culturalNote": "'Ah' expresses pleasant surprise"
         }
       ],
-      "tags": [
-        "hello",
-        "(informal)"
-      ]
+      "commonMistakes": [
+        "Using with elders - deeply offensive",
+        "Too loud - modest volume shows respect",
+        "No eye contact - brief eye contact then look down shows proper etiquette"
+      ],
+      "relatedWords": ["mhoroi", "hallo", "hesi"],
+      "tags": ["essential", "daily", "informal", "peers"]
     },
     {
       "id": "shona-002",
       "shonaText": "mhoroi",
-      "englishText": "hello (formal)",
-      "pronunciation": "mho-ro-i",
-      "phonetic": "/mʰoroj/",
-      "tonePattern": "HLH",
+      "englishText": "hello (formal/respectful)",
+      "pronunciation": "m̄hō-rō-ī (final 'i' raises respect)",
+      "phonetic": "/m̥oɾoi/",
+      "tonePattern": "H-L-H",
+      "audioGuide": "Same as mhoro but add high-toned 'i' at end, slightly longer pause between syllables",
       "category": "Greetings",
       "difficulty": 1.5,
       "level": "A1",
-      "culturalNotes": "Respectful greeting used with elders and strangers",
-      "usageNotes": "Shows respect and is used in formal situations",
+      "culturalNotes": "The 'i' suffix transforms casual into respectful - a linguistic bow. Essential for elders, in-laws, strangers, and formal settings. In traditional courts (dare), using 'mhoro' instead of 'mhoroi' to a chief could result in fines. Shows you understand hunhu/ubuntu - proper cultural behavior.",
+      "usageNotes": "ALWAYS with: elders, in-laws, first meetings, formal settings, anyone deserving respect. Can add titles: 'Mhoroi sekuru' (grandfather), 'Mhoroi ambuya' (grandmother). Volume should be moderate - too loud seems aggressive, too soft seems fearful.",
+      "etymology": "Mhoro + respectful suffix '-i', common Bantu pattern for formality",
       "examples": [
         {
-          "id": "ex-002",
-          "shona": "Mhoroi ambuya!",
-          "english": "Hello grandmother!",
-          "context": "greeting elders",
-          "register": "neutral"
+          "id": "ex-002-1",
+          "shona": "Mhoroi ambuya, makadii?",
+          "english": "Hello grandmother, how are you?",
+          "context": "Greeting elderly woman",
+          "culturalNote": "Always follow formal greeting with wellbeing inquiry"
+        },
+        {
+          "id": "ex-002-2",
+          "shona": "Mhoroi baba vemukadzi wangu.",
+          "english": "Hello father of my wife.",
+          "context": "Greeting father-in-law",
+          "culturalNote": "In-laws require highest respect level"
+        },
+        {
+          "id": "ex-002-3",
+          "shona": "Mhoroi vana vadiki.",
+          "english": "Hello young people.",
+          "context": "Elder greeting youth group",
+          "culturalNote": "Even addressing youth, elders may use formal tone"
+        },
+        {
+          "id": "ex-002-4",
+          "shona": "Mhoroi henyu mhuri yose.",
+          "english": "Hello to all the family.",
+          "context": "Greeting entire household",
+          "culturalNote": "'Henyu' makes it plural and inclusive"
         }
       ],
-      "tags": [
-        "hello",
-        "(formal)"
-      ]
+      "commonMistakes": [
+        "Rushing - respectful greetings need time",
+        "Standing while elder sits - kneel or bend",
+        "Extending hand first - wait for elder to initiate handshake"
+      ],
+      "relatedWords": ["mhoro", "mangwanani", "masikati", "manheru"],
+      "tags": ["essential", "formal", "respectful", "elders"]
     },
     {
       "id": "shona-003",
       "shonaText": "mangwanani",
       "englishText": "good morning",
-      "pronunciation": "man-gwa-na-ni",
-      "phonetic": "/maŋɡwanani/",
-      "tonePattern": "LLHL",
+      "pronunciation": "mā-ngwā-nā-nī (gentle on 'ngw' sound)",
+      "phonetic": "/maŋɡʷanani/",
+      "tonePattern": "L-L-H-L",
+      "audioGuide": "Soft 'm', 'ngw' as single sound unit, stress on 'na', final 'ni' drops",
       "category": "Greetings",
       "difficulty": 2.0,
       "level": "A1",
-      "culturalNotes": "Traditional morning greeting showing respect for the day",
-      "usageNotes": "Used from sunrise until around 10 AM",
+      "culturalNotes": "Morning greetings acknowledge the gift of waking up - not taken for granted in traditional worldview. The response 'Mangwanani, marara sei?' (How did you sleep?) shows care for the person's wellbeing through the vulnerable night hours. Bad dreams might be discussed as they're considered significant.",
+      "usageNotes": "Use from first light until sun is clearly risen (around 10am). Earlier = more respectful. First person awake greets others as they wake. In rural areas, often shouted across homesteads to check neighbors are well.",
+      "etymology": "From 'manga' (early) + 'wanani' (good/well), literally 'the early time is good'",
       "examples": [
         {
-          "id": "ex-003",
-          "shona": "Mangwanani amai!",
-          "english": "Good morning mother!",
-          "context": "morning greeting",
-          "register": "neutral"
+          "id": "ex-003-1",
+          "shona": "Mangwanani amai, marara sei?",
+          "english": "Good morning mother, how did you sleep?",
+          "context": "Child greeting mother",
+          "culturalNote": "Sleep inquiry shows concern for wellbeing"
+        },
+        {
+          "id": "ex-003-2",
+          "shona": "Mangwanani, tasimuka tega tega.",
+          "english": "Good morning, we have woken up well.",
+          "context": "Response indicating good health",
+          "culturalNote": "'Tega tega' emphasizes individual wellness"
+        },
+        {
+          "id": "ex-003-3",
+          "shona": "Nhai mangwanani henyu!",
+          "english": "Oh good morning everyone!",
+          "context": "Entering room with multiple people",
+          "culturalNote": "'Nhai' expresses warm surprise"
+        },
+        {
+          "id": "ex-003-4",
+          "shona": "Mangwanani nemhuri yose.",
+          "english": "Good morning to the whole family.",
+          "context": "Inclusive morning greeting",
+          "culturalNote": "Shows you acknowledge everyone present"
+        },
+        {
+          "id": "ex-003-5",
+          "shona": "Mangwanani, hope dzamuka.",
+          "english": "Good morning, hope you woke well.",
+          "context": "Casual morning greeting",
+          "culturalNote": "'Hope' is modern addition showing care"
         }
       ],
-      "tags": [
-        "good",
-        "morning"
-      ]
+      "commonMistakes": [
+        "Using after 10am - switch to 'masikati'",
+        "Not inquiring about sleep - seems uncaring",
+        "Too cheerful if someone responds they slept poorly"
+      ],
+      "relatedWords": ["marara sei", "mhoroi", "masikati", "kumuka"],
+      "tags": ["essential", "morning", "daily", "time-specific"]
     },
     {
       "id": "shona-004",
