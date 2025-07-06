@@ -850,7 +850,224 @@
       "levelNumber": 4,
       "levelName": "The Orator",
       "cefr": "C1",
-      "units": []
+      "units": [
+        {
+          "unitNumber": 1,
+          "unitName": "Tsumo Nemadimikira (Proverbs & Idioms)",
+          "lessons": [
+            {
+              "lessonNumber": "1A",
+              "title": "Foundational Proverbs",
+              "goal": "Explain meaning of five high-frequency proverbs and use each in context.",
+              "vocabulary": ["Nzou hairemerwi nenyanga dzayo", "Rume rimwe harikombi churu", "Gudo guru peta muswe", "Kuseva kwemvura hunge une makumbo"],
+              "grammarFocus": "Metaphoric noun class agreement and ellipsis in proverbs.",
+              "cultureNotes": ["Proverbs encode societal values such as self-reliance and teamwork."],
+              "activities": [
+                {"step": "Match", "description": "Pair Shona proverb with English paraphrase."},
+                {"step": "Scenario", "description": "Choose best proverb to advise given situation."},
+                {"step": "Pronounce", "description": "Record proverb; AI checks tone and rhythm."}
+              ],
+              "assessment": "5-item scenario matching – 80% to pass.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Which proverb teaches teamwork?", "correctAnswer": "Rume rimwe harikombi churu", "options": ["Nzou hairemerwi nenyanga dzayo", "Rume rimwe harikombi churu", "Gudo guru peta muswe"], "audioText": ""},
+                {"type": "translation", "question": "Translate: 'Nzou hairemerwi nenyanga dzayo'.", "correctAnswer": "An elephant is not burdened by its tusks.", "options": [], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "1B",
+              "title": "Idiomatic Expressions",
+              "goal": "Interpret and use idioms relating to feelings and daily life.",
+              "vocabulary": ["kurova bembera", "kutsva musoro", "kudzungaira", "kupfeka gapa"],
+              "grammarFocus": "Idiomatic verb phrases vs literal meaning.",
+              "cultureNotes": ["Idioms add colour; literal translation often misleading."],
+              "activities": [
+                {"step": "Drag", "description": "Match idiom to figurative meaning."},
+                {"step": "Rewrite", "description": "Replace literal sentence with idiom equivalent."}
+              ],
+              "assessment": "Short paragraph where learner inserts two idioms (AI rubric).",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "1C",
+              "title": "Composing with Proverbs",
+              "goal": "Integrate proverbs naturally into a thank-you speech.",
+              "vocabulary": [],
+              "grammarFocus": "Register and tonal adjustment when embedding proverbs.",
+              "cultureNotes": [],
+              "activities": [
+                {"step": "Speech Outline", "description": "Insert selected proverbs into template."}
+              ],
+              "assessment": "Record 60-second speech containing ≥2 correct proverbs.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "1D",
+              "title": "Checkpoint – Proverbs Quiz",
+              "goal": "Score 85% on proverb meaning & usage quiz.",
+              "vocabulary": [],
+              "grammarFocus": "Comprehensive review.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Final multiple-choice + short answer.",
+              "exercises": []
+            }
+          ]
+        },
+        {
+          "unitNumber": 2,
+          "unitName": "Kupenengura Zvinyorwa (Analyzing Texts)",
+          "lessons": [
+            {
+              "lessonNumber": "2A",
+              "title": "Literary Devices",
+              "goal": "Identify metaphor, simile, and personification in short passage.",
+              "vocabulary": ["faniyori", "senge", "semuenzaniso", "kupenyu"],
+              "grammarFocus": "Marker 'senge' for simile; nominalisation of verbs.",
+              "cultureNotes": [],
+              "activities": [
+                {"step": "Highlight", "description": "Mark device type in sample paragraph."}
+              ],
+              "assessment": "Device classification quiz.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "2B",
+              "title": "Opinion Writing",
+              "goal": "Draft 120-word opinion paragraph with thesis + support.",
+              "vocabulary": ["maonero", "chikonzero", "kuita sekuti"],
+              "grammarFocus": "Subjunctive mood for opinion 'zvichida'.",
+              "cultureNotes": [],
+              "activities": [
+                {"step": "Outline", "description": "Complete scaffold with connector words."}
+              ],
+              "assessment": "AI evaluates cohesion 80%.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "2C",
+              "title": "Critical Reading",
+              "goal": "Answer inference questions about authentic editorial.",
+              "vocabulary": [],
+              "grammarFocus": "Inferential question words 'sei', 'chii chinoratidza'.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "5 Q comprehension test.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "2D",
+              "title": "Checkpoint – Text Analysis Essay",
+              "goal": "Write 250-word analysis of provided text (score 80%).",
+              "vocabulary": [],
+              "grammarFocus": "Review literary devices, opinion structure.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Essay rubric.",
+              "exercises": []
+            }
+          ]
+        },
+        {
+          "unitNumber": 3,
+          "unitName": "Hurukuro Yakadzama (In-depth Discussion)",
+          "lessons": [
+            {
+              "lessonNumber": "3A",
+              "title": "Debate Phrases",
+              "goal": "Use discourse markers to agree and disagree politely.",
+              "vocabulary": ["Ndinoona sekuti", "Handibvumi", "zvisinei", "pamusoro pezvo"],
+              "grammarFocus": "Subjunctive & concessive phrases.",
+              "cultureNotes": ["Polite disagreement avoids direct 'kwete' preferring softeners."],
+              "activities": [],
+              "assessment": "Marker gap-fill quiz.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "3B",
+              "title": "Podcast Comprehension",
+              "goal": "Summarise arguments from 5-minute debate podcast.",
+              "vocabulary": [],
+              "grammarFocus": "Reported speech.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Note-taking score.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "3C",
+              "title": "Formal Debate",
+              "goal": "Participate in timed debate on social topic using appropriate register.",
+              "vocabulary": [],
+              "grammarFocus": "Debate structure introduction, rebuttal, conclusion.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "AI/peer rubric.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "3D",
+              "title": "Checkpoint – Live Debate",
+              "goal": "Score 80% on debate performance criteria.",
+              "vocabulary": [],
+              "grammarFocus": "Comprehensive review.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Final debate session.",
+              "exercises": []
+            }
+          ]
+        },
+        {
+          "unitNumber": 4,
+          "unitName": "The Shonaverse (Capstone)",
+          "lessons": [
+            {
+              "lessonNumber": "4A",
+              "title": "Connecting with Community",
+              "goal": "Plan engagement with Shona online groups and media.",
+              "vocabulary": ["blog", "svondo", "nzvimbo", "nharaunda"],
+              "grammarFocus": "Future plans with 'ndichabva' etc.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Activity plan submission.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "4B",
+              "title": "Portfolio Building",
+              "goal": "Curate evidence of language use outside class.",
+              "vocabulary": [],
+              "grammarFocus": "N/A",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Portfolio rubric.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "4C",
+              "title": "Reflection Essay",
+              "goal": "Write 300-word reflection on learning journey.",
+              "vocabulary": [],
+              "grammarFocus": "Complex connectors and rhetorical devices.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Essay score.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "4D",
+              "title": "Final Oral Exam",
+              "goal": "30-minute oral proficiency interview reaching C1 benchmark.",
+              "vocabulary": [],
+              "grammarFocus": "Global proficiency.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "OPI-style rating.",
+              "exercises": []
+            }
+          ]
+        }
+      ]
     }
   ]
 }
