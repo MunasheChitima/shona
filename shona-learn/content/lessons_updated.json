@@ -443,7 +443,82 @@
         {
           "unitNumber": 3,
           "unitName": "Mamiriro Ekunze (Weather)",
-          "lessons": []
+          "lessons": [
+            {
+              "lessonNumber": "3A",
+              "title": "Weather Vocabulary & Describing Today",
+              "goal": "Describe current weather conditions using present habitual tense.",
+              "vocabulary": ["zuva", "mvura", "chando", "kupisa", "kutonhora", "mhepo", "makore", "dutu"],
+              "grammarFocus": "Present habitual with subject prefixes (iri, vari) plus adjective stems (kupisa – hot). Structure: 'Zuva riri kupisa'.",
+              "cultureNotes": ["Traditional farmers observe sky colour and wind to predict rain."],
+              "activities": [
+                {"step": "Flashcards", "description": "Match weather icons to Shona words."},
+                {"step": "Sentence Match", "description": "Drag adjective to complete sentences like 'Makore ari ___'."},
+                {"step": "Weather Report", "description": "Record two sentences about today's weather; AI checks correctness."}
+              ],
+              "assessment": "Multiple-choice quiz on vocab & correct adjective agreement (80%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What is 'mvura' in English?", "correctAnswer": "Rain", "options": ["Sun", "Rain", "Wind", "Cloud"], "audioText": ""},
+                {"type": "translation", "question": "Translate to Shona: It is windy.", "correctAnswer": "Mhepo iri kuvhuvhuta.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match Shona to English.", "correctAnswer": "dutu-storm", "options": ["dutu-storm", "kupisa-hot", "kutonhora-cold"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "3B",
+              "title": "Forecasting – Future Tense",
+              "goal": "Talk about tomorrow's weather using future marker -cha-.",
+              "vocabulary": ["mangwana", "ichanaya", "ichapisa", "ichatonhora", "ichadoka"],
+              "grammarFocus": "Future tense subject prefix + -cha- (ichanaya – it will rain). Time adverb 'mangwana'.",
+              "cultureNotes": ["Zimbabwe's rainy season (Mwaka Wemvura) affects travel plans – learners connect language to culture."],
+              "activities": [
+                {"step": "Audio Forecast", "description": "Listen to forecast, tick icons that match future conditions."},
+                {"step": "Sentence Build", "description": "Assemble future sentences from jumbled words."},
+                {"step": "Plan It", "description": "State two things you'll do tomorrow based on forecast."}
+              ],
+              "assessment": "Fill-in blanks with correct -cha- forms (85%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Which form means 'it will be hot'?", "correctAnswer": "ichapisa", "options": ["ichatonhora", "ichanaya", "ichapisa", "ichadoka"], "audioText": ""},
+                {"type": "translation", "question": "Translate: Tomorrow it will rain.", "correctAnswer": "Mangwana ichanaya mvura.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match forecast word to English.", "correctAnswer": "ichatonhora-it will be cold", "options": ["ichatonhora-it will be cold", "ichadoka-it will be dark", "ichanaya-it will rain"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "3C",
+              "title": "Making Plans – Conditionals",
+              "goal": "Use 'kana' (if) to make plans dependent on weather.",
+              "vocabulary": ["kana", "ndichienda", "ndinogara", "kutamba", "kunze"],
+              "grammarFocus": "Conditional clause with kana + future / habitual: 'Kana kuchinaya, ndichagara kumba'.",
+              "cultureNotes": ["Families plan outings around afternoon thunderstorms; conditionals common in daily talk."],
+              "activities": [
+                {"step": "Conditional Match", "description": "Connect halves of 'if' sentences correctly."},
+                {"step": "Plan Wheel", "description": "Spin weather wheel, state plan using kana."},
+                {"step": "Dialogue", "description": "Chat with AI friend arranging picnic/weather contingency."}
+              ],
+              "assessment": "Write two correct conditional sentences (reviewed by AI).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Which word introduces an 'if' clause?", "correctAnswer": "kana", "options": ["asi", "kana", "kuti", "ne"], "audioText": ""},
+                {"type": "translation", "question": "Translate: If it is hot, we will swim.", "correctAnswer": "Kana kuchipisa, tichashambira.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match clause to result.", "correctAnswer": "Kana kuchinaya-stay home", "options": ["Kana kuchipisa-go outside", "Kana kuchinaya-stay home", "Kana kutonhora-wear jacket"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "3D",
+              "title": "Checkpoint – Weekly Forecast Project",
+              "goal": "Create a 3-day weather forecast and corresponding activity plan.",
+              "vocabulary": [],
+              "grammarFocus": "Review future tense & conditionals.",
+              "cultureNotes": [],
+              "activities": [
+                {"step": "Forecast Builder", "description": "Drag icons onto calendar, record spoken forecast."},
+                {"step": "Activity Match", "description": "Assign suitable activities for each forecast using kana structures."}
+              ],
+              "assessment": "Rubric: 3 correct future sentences + 3 correct conditional sentences (80%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Which tense uses '-cha-'?", "correctAnswer": "Future", "options": ["Habitual", "Recent Past", "Future", "Remote Past"], "audioText": ""},
+                {"type": "multiple_choice", "question": "Translate 'kana kuchipisa'", "correctAnswer": "if it is hot", "options": ["when it rained", "if it is hot", "after it rains", "because it is hot"], "audioText": ""}
+              ]
+            }
+          ]
         },
         {
           "unitNumber": 4,
