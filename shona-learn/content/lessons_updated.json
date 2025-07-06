@@ -606,7 +606,245 @@
       "levelNumber": 3,
       "levelName": "The Communicator",
       "cefr": "B2",
-      "units": []
+      "units": [
+        {
+          "unitNumber": 1,
+          "unitName": "Nhau Dzezuva (News of the Day)",
+          "lessons": [
+            {
+              "lessonNumber": "1A",
+              "title": "Headline Vocabulary",
+              "goal": "Recognise key news topic words and identify headline gist.",
+              "vocabulary": ["mutemo", "hupfumi", "sarudzo", "mitengo", "mhirizhonga", "zvematongerwo enyika"],
+              "grammarFocus": "Nominal compounds in headlines; omission of subject prefixes.",
+              "cultureNotes": ["Shona newspapers often use high-frequency compounds and omit verbs for brevity.","Understanding headline structure aids quick comprehension."],
+              "activities": [
+                {"step": "Match", "description": "Link headline words to definition cards."},
+                {"step": "Cloze", "description": "Insert missing headline word in short news lines."},
+                {"step": "Quick Scan", "description": "Find given topic in scrambled headlines within 30 s."}
+              ],
+              "assessment": "10 headline-word multiple-choice quiz (80%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'hupfumi' relate to?", "correctAnswer": "Economy", "options": ["Health", "Economy", "Weather", "Crime"], "audioText": ""},
+                {"type": "translation", "question": "Translate: 'Mitengo yaderera'.", "correctAnswer": "Prices have fallen.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match Shona term to English.", "correctAnswer": "sarudzo-election", "options": ["sarudzo-election", "mhirizhonga-violence", "mutemo-law"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "1B",
+              "title": "Listening – Short Radio Bulletin",
+              "goal": "Extract main ideas from 60-second Shona radio news clip.",
+              "vocabulary": ["pamusoro pe", "maererano na", "vanhu vashanu", "kufa", "kusungwa"],
+              "grammarFocus": "Reported speech marker 'maererano na…' and numbers >4.",
+              "cultureNotes": ["VOA Shona and ZBC give concise hourly bulletins useful for learners."],
+              "activities": [
+                {"step": "First Pass", "description": "Listen once, choose broad topic (multiple-choice)."},
+                {"step": "Detail", "description": "Listen again, fill numeric details (e.g., number injured)."},
+                {"step": "True/False", "description": "Mark 5 statements after final listen."}
+              ],
+              "assessment": "Must answer 4/5 true-false correctly.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'maererano na' introduce?", "correctAnswer": "According to", "options": ["In contrast to", "According to", "Despite", "Because of"], "audioText": ""},
+                {"type": "translation", "question": "Translate: 'Vanhu vashanu vakasungwa'.", "correctAnswer": "Five people were arrested.", "options": [], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "1C",
+              "title": "Summarising News",
+              "goal": "Verbally summarise a short article using sequencing connectors.",
+              "vocabulary": ["pakutanga", "zvadaro", "mushure mezvo"],
+              "grammarFocus": "Past narrative tenses mix and connector sequencing.",
+              "cultureNotes": [],
+              "activities": [
+                {"step": "Connector Match", "description": "Order connector flashcards."},
+                {"step": "Guided Summary", "description": "Fill template then record spoken summary."}
+              ],
+              "assessment": "AI rubric on 3 connectors + main facts (80%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Which connector means 'firstly'?", "correctAnswer": "pakutanga", "options": ["zvadaro", "pakutanga", "mushure mezvo"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "1D",
+              "title": "Checkpoint – Record Your News Recap",
+              "goal": "Record a 90-second recap of chosen Shona news story.",
+              "vocabulary": [],
+              "grammarFocus": "Assess headline vocab & sequencing.",
+              "cultureNotes": [],
+              "activities": [
+                {"step": "Research", "description": "Pick latest VOA Shona clip."},
+                {"step": "Record", "description": "Summarise with at least 3 connectors."}
+              ],
+              "assessment": "Human/AI combined score 80% to pass.",
+              "exercises": []
+            }
+          ]
+        },
+        {
+          "unitNumber": 2,
+          "unitName": "Tsika Nemagariro (Culture & Traditions)",
+          "lessons": [
+            {
+              "lessonNumber": "2A",
+              "title": "Respectful Address & Honorifics",
+              "goal": "Use kinship terms as honorifics in social dialogue.",
+              "vocabulary": ["Sekuru", "Ambuya", "Mudhara", "Mai", "Va- (prefix)"],
+              "grammarFocus": "Vocative forms and prefix Va- for politeness.",
+              "cultureNotes": ["Honorifics maintain social harmony; misuse can offend."],
+              "activities": [
+                {"step": "Scenario", "description": "Choose correct title when greeting different ages."},
+                {"step": "Dialogue Rewrite", "description": "Insert titles into informal dialogue to make polite."}
+              ],
+              "assessment": "8-item title selection quiz (90%).",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Appropriate title for elderly man?", "correctAnswer": "Sekuru", "options": ["Mukoma", "Sekuru", "Shamwari"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "2B",
+              "title": "Unhu/Ubuntu Expressions",
+              "goal": "Understand and use proverbs that reflect the value of community.",
+              "vocabulary": ["Chara chimwe hachitswanyi inda", "Kushandira pamwe", "rubatsiro"],
+              "grammarFocus": "Proverb structure; negative prefix 'ha-' in moral statements.",
+              "cultureNotes": ["Collectivism is core; proverbs teach cooperation."],
+              "activities": [
+                {"step": "Proverb Match", "description": "Match proverb halves."},
+                {"step": "Meaning Discussion", "description": "Choose best English paraphrase."}
+              ],
+              "assessment": "Explain one proverb in English (AI rubric).",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "2C",
+              "title": "Ceremony Vocabulary",
+              "goal": "Discuss weddings & lobola using appropriate terms.",
+              "vocabulary": ["lobola", "roora", "muroora", "mapere", "kuperekedza"],
+              "grammarFocus": "Class 1 loanwords; plural forms.",
+              "cultureNotes": ["Lobola negotiation steps and respectful language."],
+              "activities": [
+                {"step": "Storyboard", "description": "Arrange images of ceremony steps with correct terms."}
+              ],
+              "assessment": "5-item vocabulary quiz.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "2D",
+              "title": "Checkpoint – Cultural Etiquette Quiz",
+              "goal": "Score 85% on etiquette scenarios.",
+              "vocabulary": [],
+              "grammarFocus": "Review honorifics & proverbs.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Scenario-based multiple choice.",
+              "exercises": []
+            }
+          ]
+        },
+        {
+          "unitNumber": 3,
+          "unitName": "Ngano (Story Time)",
+          "lessons": [
+            {
+              "lessonNumber": "3A",
+              "title": "Folktale Vocabulary",
+              "goal": "Learn key story words (king, forest, trickster).",
+              "vocabulary": ["mambo", "sango", "tsuro", "gudo", "chishamiso"],
+              "grammarFocus": "Class 9/10 animal nouns and agreement.",
+              "cultureNotes": ["Animals in ngano carry moral qualities – tsuro (hare) clever, gudo (baboon) greedy."],
+              "activities": [
+                {"step": "Image Match", "description": "Match word to picture."}
+              ],
+              "assessment": "10 vocab matching.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "3B",
+              "title": "Listening – Short Ngano",
+              "goal": "Comprehend 2-minute folktale and answer comprehension questions.",
+              "vocabulary": [],
+              "grammarFocus": "Narrative remote past -ka- forms.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "5 comprehension Qs.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "3C",
+              "title": "Retelling the Story",
+              "goal": "Retell folktale using connectors and dialogue markers.",
+              "vocabulary": ["akati", "akabva", "zvadaro"],
+              "grammarFocus": "Dialogue verb 'akati' (said).",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "AI evaluates 100-word retell.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "3D",
+              "title": "Checkpoint – Record Your Ngano",
+              "goal": "Create and record short original folktale.",
+              "vocabulary": [],
+              "grammarFocus": "Narrative past.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Peer/AI rubric.",
+              "exercises": []
+            }
+          ]
+        },
+        {
+          "unitNumber": 4,
+          "unitName": "Dialect Spotlight",
+          "lessons": [
+            {
+              "lessonNumber": "4A",
+              "title": "Manyika vs Standard – Vocabulary Differences",
+              "goal": "Recognise 10 common Manyika words differing from Standard Shona.",
+              "vocabulary": ["zhara/nzara", "zhira/nzira", "mwanangu/wanangu"],
+              "grammarFocus": "Sound shifts zh/nz, vowel drop.",
+              "cultureNotes": ["Dialects show regional identity – respect speaker preference."],
+              "activities": [
+                {"step": "Table", "description": "Match dialect word columns."}
+              ],
+              "assessment": "Quick match quiz.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "4B",
+              "title": "Listening – Korekore Speaker",
+              "goal": "Identify dialect markers in audio clip.",
+              "vocabulary": [],
+              "grammarFocus": "Retroflex sounds.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Dialect identification quiz.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "4C",
+              "title": "Code-Switch Practice",
+              "goal": "Rephrase sentence from standard to Manyika dialect.",
+              "vocabulary": [],
+              "grammarFocus": "Sound substitution rules.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "AI auto-check substitutions.",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "4D",
+              "title": "Checkpoint – Dialect Quiz",
+              "goal": "Score 80% on dialect recognition & vocab differences.",
+              "vocabulary": [],
+              "grammarFocus": "Review.",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "Final quiz.",
+              "exercises": []
+            }
+          ]
+        }
+      ]
     },
     {
       "levelNumber": 4,
