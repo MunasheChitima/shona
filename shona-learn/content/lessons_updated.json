@@ -360,7 +360,94 @@
         {
           "unitNumber": 4,
           "unitName": "Ndiri Kupi? (Where Am I?)",
-          "lessons": []
+          "lessons": [
+            {
+              "lessonNumber": "4A",
+              "title": "Places in Town",
+              "goal": "Identify common places and use locative prefixes pa-, ku-, mu- to say where you are.",
+              "vocabulary": ["chikoro", "kumba", "musika", "chipatara", "bhazi rekuenda", "bhawa", "kereke", "hofisi"],
+              "grammarFocus": "Locative noun classes: 16 pa- (at/on), 17 ku- (to/from, general), 18 mu- (inside). Question word 'kupi?'.",
+              "cultureNotes": [
+                "Using the correct locative prefix communicates subtle meaning differences (inside vs at).",
+                "When talking about a city, speakers often prefix 'ku' (e.g., KuHarare) to show origin or destination."
+              ],
+              "activities": [
+                {"step": "Warm-up", "description": "Picture flash: match place images to Shona words."},
+                {"step": "Locative Swap", "description": "Drag the correct prefix (pa-, ku-, mu-) onto place names based on context sentences."},
+                {"step": "Mini Dialogue", "description": "Learner answers 'Uri kupi?' with different locative forms."}
+              ],
+              "assessment": "Multiple-choice quiz on choosing correct locative prefix for a sentence.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Which locative prefix means 'inside'?", "correctAnswer": "mu-", "options": ["pa-", "ku-", "mu-", "va-"], "audioText": ""},
+                {"type": "translation", "question": "Translate: I am at the market.", "correctAnswer": "Ndiri paMusika.", "options": [], "audioText": ""},
+                {"type": "multiple_choice", "question": "Uri ___chipatara: choose the correct locative prefix for 'inside the hospital'.", "correctAnswer": "mu", "options": ["pa", "ku", "mu", "va"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "4B",
+              "title": "Asking Directions",
+              "goal": "Politely ask for and understand simple directions.",
+              "vocabulary": ["enda", "tendeuka", "kurudyi", "kuruboshwe", "mberi", "shure", "pedyo ne", "kuchirira"],
+              "grammarFocus": "Imperative forms of movement verbs; polite question 'Ndingafambe sei ku…?' (How do I get to ...?).",
+              "cultureNotes": [
+                "Always greet ('Makadini?') before asking for directions.",
+                "Clapping lightly once signals gratitude after receiving directions."
+              ],
+              "activities": [
+                {"step": "Dialogue Listen", "description": "Audio of pedestrian asking directions; highlight imperative verbs."},
+                {"step": "Arrow Match", "description": "Match Shona direction words to arrow icons."},
+                {"step": "Prompted Q&A", "description": "Learner records question asking for directions to given place; AI evaluates politeness and structure."}
+              ],
+              "assessment": "Fill-in-the-blank sentences with correct direction verbs and adverbs.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'kurudyi' mean?", "correctAnswer": "To the right", "options": ["Straight ahead", "To the left", "To the right", "Behind"], "audioText": "koo-roo-JEE"},
+                {"type": "translation", "question": "Translate to English: Tendeuka kuruboshwe.", "correctAnswer": "Turn left.", "options": [], "audioText": "ten-DEH-oo-kah koo-roo-BOSH-weh"},
+                {"type": "matching", "question": "Match Shona phrase to English.", "correctAnswer": "Pedyo ne-Next to", "options": ["Pedyo ne-Next to", "Mberi-Straight ahead", "Shure-Behind"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "4C",
+              "title": "Following Directions",
+              "goal": "Navigate a simple map using spoken Shona directions.",
+              "vocabulary": ["vira", "bvira", "wobva", "wasvika", "kumberi", "kuseri", "pakona"],
+              "grammarFocus": "Sequence connector 'wobva' (then) and adverbs of position (kumberi, kuseri).",
+              "cultureNotes": [
+                "Directions may reference landmarks such as trees or shops instead of street names.",
+                "Users gesture with whole hand instead of one finger when pointing directions politely."
+              ],
+              "activities": [
+                {"step": "Map Quest", "description": "On-screen map; learner listens to directions and drags avatar along path."},
+                {"step": "Direction Dictation", "description": "Type key words you hear (e.g., 'vira') after audio plays."},
+                {"step": "Sequencing", "description": "Order scrambled direction steps into logical route."}
+              ],
+              "assessment": "Reach correct destination on interactive map within three attempts.",
+              "exercises": [
+                {"type": "translation", "question": "Translate to Shona: Then you arrive at the church.", "correctAnswer": "Wobva wasvika paKereke.", "options": [], "audioText": ""},
+                {"type": "multiple_choice", "question": "Which word signals sequence 'then'?", "correctAnswer": "wobva", "options": ["vira", "wobva", "pakona", "bvira"], "audioText": ""},
+                {"type": "multiple_choice", "question": "'Kuseri' refers to which position?", "correctAnswer": "Behind", "options": ["In front", "Behind", "Next to", "On top"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "4D",
+              "title": "Checkpoint: Treasure Hunt",
+              "goal": "Use location and direction language in a timed treasure hunt scenario.",
+              "vocabulary": ["pa-", "ku-", "mu-", "kurudyi", "kuruboshwe", "mberi", "shure"],
+              "grammarFocus": "Combined use of locative prefixes and imperative verbs for directions.",
+              "cultureNotes": [
+                "Zimbabwean directions often use cardinal points with landmarks; learners experience authentic style in game.",
+                "Express gratitude 'Ndatenda' after reaching destination with someone's help."
+              ],
+              "activities": [
+                {"step": "Treasure Hunt", "description": "Navigate city map to collect three items using textual and audio clues."},
+                {"step": "Speed Challenge", "description": "Rapid-fire locative prefix selection drill."}
+              ],
+              "assessment": "Score 85% on treasure hunt path accuracy and prefix drill to pass unit.",
+              "exercises": [
+                {"type": "matching", "question": "Match prefix to context.", "correctAnswer": "mu-Inside", "options": ["pa-At", "ku-To/From", "mu-Inside"], "audioText": ""},
+                {"type": "multiple_choice", "question": "Which command means 'Go straight ahead'?", "correctAnswer": "Enda mberi", "options": ["Tendeuka kurudyi", "Enda mberi", "Vira shure", "Mira pano"], "audioText": "EN-dah mm-BEH-ree"}
+              ]
+            }
+          ]
         }
       ]
     },
