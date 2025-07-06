@@ -1,0 +1,40 @@
+{
+  "word": "bhazi",
+  "english": "bus",
+  "approach": "Educational Documentary",
+  "model": "veo-2.0-generate-001",
+  "prompt": "Educational documentary: preserving Shona language pronunciation heritage. Documentary focus: traditional pronunciation of \"bhazi\" meaning \"bus\". Cultural preservation: demonstrating proper syllable pronunciation bha-zi. Documentary style: cultural education, language heritage preservation, academic research. Educational approach: respectful cultural documentation for academic purposes.",
+  "operation_name": "models/veo-2.0-generate-001/operations/es50aqnkbt6u",
+  "phonetic_analysis": {
+    "tokens": [
+      "bh",
+      "a",
+      "z",
+      "i"
+    ],
+    "syllables": [
+      "bha",
+      "zi"
+    ],
+    "complexity": 7,
+    "special_sounds": [
+      {
+        "token": "bh",
+        "type": "breathy",
+        "ipa": "bʱ"
+      }
+    ]
+  },
+  "educational_strategy": {
+    "context": "Academic/scholarly research",
+    "safety_approach": "Educational content focus",
+    "target_audience": "Academic researchers and language learners",
+    "content_type": "Educational documentation"
+  },
+  "generation_parameters": {
+    "person_generation": "allow_adult",
+    "negative_prompt": "casual, informal, non-academic, entertainment",
+    "academic_focus": true
+  },
+  "generated_at": "2025-07-06T16:06:18.274Z"
+}
