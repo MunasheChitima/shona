@@ -1,8 +1,12 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { FaTimes, FaVolumeUp, FaHeart, FaStar, FaTrophy, FaArrowRight } from 'react-icons/fa'
+import { FaTimes, FaVolumeUp, FaHeart, FaStar, FaTrophy, FaArrowRight, FaGlobeAfrica } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import VoiceExercise from './voice/VoiceExercise'
+import PronunciationText from './shared/PronunciationText'
+import CulturalContext from './shared/CulturalContext'
+import { exerciseGeneratorService, type Exercise } from '@/lib/services/ExerciseGeneratorService'
+import { audioService } from '@/lib/services/AudioService'
 
 interface ExerciseModalProps {
   lesson: any
@@ -11,34 +15,57 @@ interface ExerciseModalProps {
 }
 
 export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseModalProps) {
-  const [exercises, setExercises] = useState<any[]>([])
+  const [exercises, setExercises] = useState<Exercise[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState('')
   const [showFeedback, setShowFeedback] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [score, setScore] = useState(0)
-  const [hearts, setHearts] = useState(5)
+  const [hearts, setHearts] = useState(3)
+  const [showCulturalContext, setShowCulturalContext] = useState(false)
 
   useEffect(() => {
-    fetchExercises()
-  }, [])
+    generateExercises()
+  }, [lesson])
 
-  const fetchExercises = async () => {
-    const res = await fetch(`/api/exercises/${lesson.id}`, {
-      headers: {
-        'Authorization': `Bearer ${localStorage.getItem('token')}`
-      }
-    })
-    if (res.ok) {
-      const data = await res.json()
-      setExercises(data)
+  const generateExercises = () => {
+    try {
+      const generatedExercises = exerciseGeneratorService.generateExercisesForLesson(lesson)
+      setExercises(generatedExercises)
+    } catch (error) {
+      console.warn('Failed to generate exercises, using fallback:', error)
+      // Fallback to API or manual exercises
+      fetchExercises()
     }
   }
 
-  const playAudio = (text: string) => {
-    const utterance = new SpeechSynthesisUtterance(text)
-    utterance.rate = 0.8
-    speechSynthesis.speak(utterance)
+  const fetchExercises = async () => {
+    try {
+      const res = await fetch(`/api/exercises/${lesson.id}`, {
+        headers: {
+          'Authorization': `Bearer ${localStorage.getItem('token')}`
+        }
+      })
+      if (res.ok) {
+        const data = await res.json()
+        setExercises(data)
+      }
+    } catch (error) {
+      console.warn('Failed to fetch exercises:', error)
+      setExercises([])
+    }
+  }
+
+  const playAudio = async (audioFile?: string, fallbackText?: string) => {
+    try {
+      if (audioFile) {
+        await audioService.playWord(audioFile, fallbackText)
+      } else if (fallbackText) {
+        await audioService.playPhrase(fallbackText, { rate: 0.8 })
+      }
+    } catch (error) {
+      console.warn('Audio playback failed:', error)
+    }
   }
 
   const handleAnswer = (answer: string | number) => {
@@ -82,10 +109,18 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
     }
   }
 
-  if (exercises.length === 0) return null
+  if (exercises.length === 0) {
+    return (
+      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+        <div className="bg-white rounded-3xl p-8 text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+          <p>Generating exercises...</p>
+        </div>
+      </div>
+    )
+  }
   
   const currentExercise = exercises[currentIndex]
-  const options = JSON.parse(currentExercise.options || '[]')
   const progress = ((currentIndex + 1) / exercises.length) * 100
 
   return (
@@ -94,34 +129,39 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
         initial={{ scale: 0.9, opacity: 0, y: 50 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.9, opacity: 0, y: 50 }}
-        className="bg-white/95 backdrop-blur-sm rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-white/20"
+        className="bg-white/95 backdrop-blur-sm rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-white/20"
         data-testid="exercise-content"
       >
         <div className="p-8">
           {/* Header */}
           <div className="flex justify-between items-center mb-8">
-            <motion.button 
-              onClick={onClose} 
-              className="text-gray-500 hover:text-gray-700 p-2 rounded-full hover:bg-gray-100 transition-colors" 
-              data-testid="close-modal"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaTimes className="text-2xl" />
-            </motion.button>
+            <div className="flex items-center space-x-4">
+              <motion.button 
+                onClick={onClose}
+                className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaTimes className="text-gray-600" />
+              </motion.button>
+              
+              <h1 className="text-2xl font-bold text-gray-800">{lesson.title}</h1>
+            </div>
             
             <div className="flex items-center space-x-4">
               {/* Hearts */}
-              <div className="flex items-center space-x-1 bg-red-50 rounded-full px-3 py-2">
-                {[...Array(5)].map((_, i) => (
+              <div className="flex items-center space-x-1">
+                {[...Array(3)].map((_, i) => (
                   <motion.div
                     key={i}
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ delay: i * 0.1 }}
+                    animate={{ 
+                      scale: hearts > i ? 1 : 0.5,
+                      opacity: hearts > i ? 1 : 0.3 
+                    }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <FaHeart
-                      className={`text-xl ${i < hearts ? 'text-red-500' : 'text-gray-300'}`}
+                    <FaHeart 
+                      className={`text-xl ${hearts > i ? 'text-red-500' : 'text-gray-300'}`}
                     />
                   </motion.div>
                 ))}
@@ -166,115 +206,135 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 border border-blue-100">
               <h2 className="text-2xl font-bold mb-4 text-gray-800">{currentExercise.question}</h2>
               
-              {currentExercise.audioText && (
-                <motion.button
-                  onClick={() => playAudio(currentExercise.shonaPhrase || currentExercise.audioText)}
-                  className="flex items-center space-x-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-3 rounded-xl mb-4 shadow-medium"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <FaVolumeUp className="text-xl" />
-                  <span className="font-semibold">🔊 Listen to Pronunciation</span>
-                </motion.button>
-              )}
-              
-              {currentExercise.shonaPhrase && (
-                <div className="bg-white rounded-xl p-4 mb-4 border border-blue-200">
-                  <p className="text-sm text-gray-500 mb-1">Shona</p>
-                  <p className="text-xl font-bold text-gray-800 mb-2">{currentExercise.shonaPhrase}</p>
-                  {currentExercise.audioText && (
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-sm text-gray-500 mb-1">Pronunciation</p>
-                        <p className="text-lg font-mono text-blue-600">{currentExercise.audioText}</p>
-                      </div>
-                      <button
-                        onClick={() => playAudio(currentExercise.shonaPhrase)}
-                        className="flex items-center justify-center w-10 h-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-colors"
-                        title="Listen to pronunciation"
+              {/* Audio and Pronunciation Section */}
+              {(currentExercise.audioFile || currentExercise.audioText) && (
+                <div className="mb-6">
+                  {currentExercise.type === 'pronunciation' ? (
+                    <PronunciationText
+                      word={currentExercise.audioText || currentExercise.correctAnswer}
+                      pronunciation={currentExercise.pronunciation || ''}
+                      phonetic={currentExercise.phonetic}
+                      audioFile={currentExercise.audioFile}
+                      size="large"
+                      showDetails={true}
+                    />
+                  ) : (
+                    <div className="flex items-center space-x-4">
+                      <motion.button
+                        onClick={() => playAudio(currentExercise.audioFile, currentExercise.audioText)}
+                        className="flex items-center space-x-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-3 rounded-xl shadow-medium"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                       >
-                        <FaVolumeUp className="text-sm" />
-                      </button>
+                        <FaVolumeUp />
+                        <span>Listen</span>
+                      </motion.button>
+                      
+                      {currentExercise.pronunciation && (
+                        <div className="bg-blue-50 border border-blue-200 rounded-lg px-4 py-2">
+                          <div className="text-xs text-blue-600 font-medium uppercase tracking-wide mb-1">
+                            Pronunciation
+                          </div>
+                          <div className="text-blue-800 font-medium">
+                            {currentExercise.pronunciation}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
               )}
-              
-              {currentExercise.englishPhrase && currentExercise.type !== 'translation' && (
-                <div className="bg-white rounded-xl p-4 border border-blue-200">
-                  <p className="text-sm text-gray-500 mb-1">English</p>
-                  <p className="text-xl font-bold text-gray-800">{currentExercise.englishPhrase}</p>
-                  {currentExercise.shonaPhrase && currentExercise.audioText && (
-                    <div className="mt-3 pt-3 border-t border-gray-200">
-                      <p className="text-sm text-gray-500 mb-1">Shona Pronunciation</p>
-                      <p className="text-lg font-mono text-blue-600">{currentExercise.audioText}</p>
-                    </div>
-                  )}
+
+              {/* Cultural Context Hint */}
+              {currentExercise.type === 'cultural_context' && currentExercise.culturalExplanation && (
+                <div className="mb-4">
+                  <button
+                    onClick={() => setShowCulturalContext(!showCulturalContext)}
+                    className="flex items-center space-x-2 text-orange-600 hover:text-orange-800 transition-colors"
+                  >
+                    <FaGlobeAfrica />
+                    <span className="text-sm font-medium">
+                      {showCulturalContext ? 'Hide' : 'Show'} Cultural Context
+                    </span>
+                  </button>
+                  
+                  <AnimatePresence>
+                    {showCulturalContext && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="mt-3"
+                      >
+                        <CulturalContext
+                          culturalNotes={[currentExercise.culturalExplanation]}
+                          variant="compact"
+                          expanded={true}
+                        />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )}
+
+              {/* Hint */}
+              {currentExercise.hint && (
+                <div className="mb-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-yellow-600">💡</span>
+                    <span className="text-sm font-medium text-yellow-800">Hint</span>
+                  </div>
+                  <p className="text-sm text-yellow-700 mt-1">{currentExercise.hint}</p>
                 </div>
               )}
             </div>
           </motion.div>
           
-          {/* Answer Options */}
-          <div className="space-y-4">
-            {currentExercise.type === 'voice' ? (
-              <VoiceExercise
-                exercise={{
-                  id: currentExercise.id,
-                  type: currentExercise.voiceType || 'pronunciation',
-                  content: JSON.parse(currentExercise.voiceContent || '{}')
-                }}
-                onComplete={(score) => handleAnswer(score)}
-              />
-            ) : currentExercise.type === 'translation' ? (
-              <div className="space-y-4">
-                <input
-                  type="text"
-                  className="w-full p-4 border-2 border-gray-200 rounded-xl text-lg focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-200 transition-all"
-                  placeholder="Type your answer here..."
-                  onKeyPress={(e) => {
-                    if (e.key === 'Enter' && e.currentTarget.value) {
-                      handleAnswer(e.currentTarget.value)
-                    }
-                  }}
-                  disabled={showFeedback}
-                />
-                <motion.button
-                  className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-8 rounded-xl shadow-medium"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={() => {
-                    const input = document.querySelector('input') as HTMLInputElement
-                    if (input?.value) {
-                      handleAnswer(input.value)
-                    }
-                  }}
-                  disabled={showFeedback}
-                >
-                  Submit Answer
-                </motion.button>
-              </div>
-            ) : (
-              options.map((option: string, index: number) => (
+                     {/* Exercise Content */}
+           {currentExercise.type === 'pronunciation' ? (
+             <VoiceExercise
+               exercise={{
+                 id: currentExercise.id,
+                 type: 'pronunciation',
+                 content: {
+                   words: [{
+                     shona: currentExercise.correctAnswer,
+                     english: currentExercise.audioText || 'Practice this word',
+                     phonetic: currentExercise.phonetic || '',
+                     tonePattern: currentExercise.pronunciation || ''
+                   }]
+                 }
+               }}
+               onComplete={(score) => handleAnswer(score)}
+             />
+           ) : (
+            /* Answer Options */
+            <div className="grid gap-4 mb-8">
+              {currentExercise.options?.map((option, index) => (
                 <motion.button
                   key={index}
-                  whileHover={{ scale: 1.02, y: -2 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={() => handleAnswer(option)}
+                  onClick={() => !showFeedback && handleAnswer(option)}
                   disabled={showFeedback}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.3 }}
                   data-testid="answer-option"
                   className={`
-                    w-full p-6 rounded-xl text-left text-lg font-medium transition-all shadow-soft
-                    ${showFeedback && option === currentExercise.correctAnswer
-                      ? 'bg-gradient-to-r from-green-100 to-green-200 border-2 border-green-500 text-green-700 shadow-medium'
-                      : showFeedback && option === selectedAnswer && !isCorrect
-                      ? 'bg-gradient-to-r from-red-100 to-red-200 border-2 border-red-500 text-red-700 shadow-medium'
-                      : 'bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-gray-300 text-gray-700 hover:shadow-medium'
+                    relative p-4 text-left rounded-xl border-2 transition-all duration-300
+                    ${showFeedback 
+                      ? option === currentExercise.correctAnswer
+                        ? 'bg-green-100 border-green-500 text-green-800'
+                        : option === selectedAnswer && !isCorrect
+                        ? 'bg-red-100 border-red-500 text-red-800'
+                        : 'bg-gray-100 border-gray-300 text-gray-600'
+                      : 'bg-white border-gray-300 hover:border-blue-400 hover:bg-blue-50 text-gray-800'
                     }
                   `}
                 >
-                  <div className="flex items-center justify-between">
-                    <span>{option}</span>
+                  <span className="text-lg font-medium">{option}</span>
+                  
+                  {/* Answer indicators */}
+                  <div className="absolute top-4 right-4">
                     {showFeedback && option === currentExercise.correctAnswer && (
                       <motion.div
                         initial={{ scale: 0, rotate: -180 }}
@@ -295,9 +355,9 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
                     )}
                   </div>
                 </motion.button>
-              ))
-            )}
-          </div>
+              ))}
+            </div>
+          )}
           
           {/* Feedback */}
           <AnimatePresence>
@@ -321,6 +381,13 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
                       <p className="text-red-600 mt-1">
                         Correct answer: <span className="font-bold">{currentExercise.correctAnswer}</span>
                       </p>
+                    )}
+                    
+                    {/* Cultural explanation for cultural context exercises */}
+                    {currentExercise.type === 'cultural_context' && currentExercise.culturalExplanation && isCorrect && (
+                      <div className="mt-3 p-3 bg-white bg-opacity-60 rounded-lg">
+                        <p className="text-sm text-green-700">{currentExercise.culturalExplanation}</p>
+                      </div>
                     )}
                   </div>
                 </div>
