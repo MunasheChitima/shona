@@ -1,0 +1,558 @@
+{
+  "level_info": {
+    "level": 2,
+    "title": "Kukura (The Explorer)",
+    "subtitle": "The Contender - CEFR B1",
+    "description": "Build narrative and descriptive skills with expanded vocabulary",
+    "duration": "4 months",
+    "target_vocabulary": "3,000-5,000 words",
+    "cultural_theme": "Deeper Ubuntu understanding - community responsibilities and stories"
+  },
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Zuva Rangu (My Day)",
+      "description": "Master daily routines and time expressions",
+      "cultural_focus": "Daily life rhythms in Shona culture",
+      "grammar_focus": "Past tenses (recent vs remote), narrative construction",
+      "vocabulary_target": 300,
+      "lessons": [
+        {
+          "lesson_number": 49,
+          "title": "Mangwanani angu (My Morning)",
+          "objectives": [
+            "Learn detailed morning routine vocabulary",
+            "Practice recent past tense (-a-)",
+            "Master time sequencing"
+          ],
+          "vocabulary": [
+            {"shona": "kumuka", "english": "to wake up", "phonetic": "koo-MOO-kah", "audio": "kumuka.mp3"},
+            {"shona": "kuzvamura", "english": "to stretch", "phonetic": "koo-zvah-MOO-rah", "audio": "kuzvamura.mp3"},
+            {"shona": "kushamba maziso", "english": "to wash face", "phonetic": "koo-SHAHM-bah mah-ZEE-soh", "audio": "kushamba_maziso.mp3"},
+            {"shona": "kutsva mazino", "english": "to brush teeth", "phonetic": "koo-TSVAH mah-ZEE-noh", "audio": "kutsva_mazino.mp3"},
+            {"shona": "kupfekedza", "english": "to get dressed", "phonetic": "koo-pfeh-KEH-dzah", "audio": "kupfekedza.mp3"},
+            {"shona": "kumira bota", "english": "to drink porridge", "phonetic": "koo-MEE-rah BOH-tah", "audio": "kumira_bota.mp3"}
+          ],
+          "grammar_focus": [
+            "Recent past tense marker -a-",
+            "Narrative sequencing with 'ndakatanga' (I started)",
+            "Time expressions: 'mangwanani makusasa' (early morning)"
+          ],
+          "cultural_notes": [
+            "Traditional wake-up time follows sunrise",
+            "Morning greeting ritual importance",
+            "Bota (porridge) is traditional breakfast"
+          ],
+          "exercises": [
+            {
+              "type": "narrative_construction",
+              "title": "Tell Your Morning Story",
+              "description": "Create a narrative about your morning routine",
+              "content": "Use recent past tense to describe morning activities"
+            },
+            {
+              "type": "sequence_ordering",
+              "title": "Morning Routine Order",
+              "description": "Put morning activities in logical order",
+              "content": "Arrange activities chronologically with time markers"
+            }
+          ]
+        },
+        {
+          "lesson_number": 50,
+          "title": "Basa repakati nezuva (Work During the Day)",
+          "objectives": [
+            "Learn work and activity vocabulary",
+            "Practice ongoing action expressions",
+            "Master midday routine descriptions"
+          ],
+          "vocabulary": [
+            {"shona": "kubasa", "english": "at work", "phonetic": "koo-BAH-sah", "audio": "kubasa.mp3"},
+            {"shona": "kushanda nesimba", "english": "to work hard", "phonetic": "koo-SHAHN-dah neh-SEEM-bah", "audio": "kushanda_nesimba.mp3"},
+            {"shona": "kurima", "english": "to farm", "phonetic": "koo-REE-mah", "audio": "kurima.mp3"},
+            {"shona": "kurimu", "english": "farming", "phonetic": "koo-REE-moo", "audio": "kurimu.mp3"},
+            {"shona": "kuzorora", "english": "to rest", "phonetic": "koo-zoh-ROH-rah", "audio": "kuzorora.mp3"},
+            {"shona": "kudya masikati", "english": "to eat lunch", "phonetic": "KOO-dyah mah-see-KAH-tee", "audio": "kudya_masikati.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "work_description",
+              "title": "Describe Your Work Day",
+              "description": "Practice describing work activities",
+              "content": "Use continuous and habitual tenses"
+            },
+            {
+              "type": "workplace_scenarios",
+              "title": "At the Workplace",
+              "description": "Role-play workplace interactions",
+              "content": "Practice work-related conversations"
+            }
+          ]
+        },
+        {
+          "lesson_number": 51,
+          "title": "Madekwana (Evening)",
+          "objectives": [
+            "Learn evening routine vocabulary",
+            "Practice wind-down activities",
+            "Master evening time expressions"
+          ],
+          "vocabulary": [
+            {"shona": "madekwana", "english": "evening", "phonetic": "mah-deh-KWAH-nah", "audio": "madekwana.mp3"},
+            {"shona": "kudzoka pamba", "english": "to return home", "phonetic": "koo-DZOH-kah PAHM-bah", "audio": "kudzoka_pamba.mp3"},
+            {"shona": "kusangana nemhuri", "english": "to meet with family", "phonetic": "koo-sahn-GAH-nah neh-mm-HOO-ree", "audio": "kusangana_nemhuri.mp3"},
+            {"shona": "kudya manheru", "english": "to eat dinner", "phonetic": "KOO-dyah mah-NEH-roo", "audio": "kudya_manheru.mp3"},
+            {"shona": "kutaura nezuva", "english": "to talk about the day", "phonetic": "koo-TOW-rah neh-ZOO-vah", "audio": "kutaura_nezuva.mp3"},
+            {"shona": "kuenda kurara", "english": "to go to sleep", "phonetic": "koo-EHN-dah koo-RAH-rah", "audio": "kuenda_kurara.mp3"}
+          ],
+          "cultural_notes": [
+            "Evening is family gathering time",
+            "Stories and news are shared",
+            "Children help with evening chores"
+          ],
+          "exercises": [
+            {
+              "type": "evening_storytelling",
+              "title": "Evening Family Time",
+              "description": "Practice family evening interactions",
+              "content": "Role-play family evening conversations"
+            },
+            {
+              "type": "daily_reflection",
+              "title": "Reflect on the Day",
+              "description": "Practice talking about daily experiences",
+              "content": "Share daily experiences using past tense"
+            }
+          ]
+        },
+        {
+          "lesson_number": 52,
+          "title": "Nezuro (Yesterday)",
+          "objectives": [
+            "Master remote past tense (-ka-)",
+            "Practice yesterday's events narration",
+            "Learn past time markers"
+          ],
+          "vocabulary": [
+            {"shona": "nezuro", "english": "yesterday", "phonetic": "neh-ZOO-roh", "audio": "nezuro.mp3"},
+            {"shona": "nezuro mangwanani", "english": "yesterday morning", "phonetic": "neh-ZOO-roh mah-ngwah-NAH-nee", "audio": "nezuro_mangwanani.mp3"},
+            {"shona": "ndakaenda", "english": "I went", "phonetic": "ndah-kah-EHN-dah", "audio": "ndakaenda.mp3"},
+            {"shona": "ndakaona", "english": "I saw", "phonetic": "ndah-kah-OH-nah", "audio": "ndakaona.mp3"},
+            {"shona": "ndakataura", "english": "I spoke", "phonetic": "ndah-kah-TOW-rah", "audio": "ndakataura.mp3"},
+            {"shona": "ndakadya", "english": "I ate", "phonetic": "ndah-kah-DYAH", "audio": "ndakadya.mp3"}
+          ],
+          "grammar_focus": [
+            "Remote past tense marker -ka-",
+            "Distinction between recent (-a-) and remote (-ka-) past",
+            "Narrative time markers and sequencing"
+          ],
+          "exercises": [
+            {
+              "type": "yesterday_narrative",
+              "title": "What Did You Do Yesterday?",
+              "description": "Create detailed narratives about yesterday",
+              "content": "Use remote past tense consistently"
+            },
+            {
+              "type": "past_tense_distinction",
+              "title": "Recent vs Remote Past",
+              "description": "Practice choosing appropriate past tense",
+              "content": "Choose between -a- and -ka- based on context"
+            }
+          ]
+        },
+        {
+          "lesson_number": 53,
+          "title": "Vhiki yapfuura (Last Week)",
+          "objectives": [
+            "Extend past narration to longer periods",
+            "Practice week-based storytelling",
+            "Master extended time references"
+          ],
+          "vocabulary": [
+            {"shona": "vhiki yapfuura", "english": "last week", "phonetic": "VEE-kee yah-PFOO-rah", "audio": "vhiki_yapfuura.mp3"},
+            {"shona": "chakafukidza", "english": "what happened", "phonetic": "chah-kah-foo-KEE-dzah", "audio": "chakafukidza.mp3"},
+            {"shona": "panguva iyoyo", "english": "at that time", "phonetic": "pah-n-GOO-vah ee-YOH-yoh", "audio": "panguva_iyoyo.mp3"},
+            {"shona": "ndakagarisa", "english": "I spent (time)", "phonetic": "ndah-kah-gah-REE-sah", "audio": "ndakagarisa.mp3"},
+            {"shona": "zvakanga zviri", "english": "it was", "phonetic": "zvah-kahn-gah ZVEE-ree", "audio": "zvakanga_zviri.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "weekly_recap",
+              "title": "Last Week's Highlights",
+              "description": "Summarize last week's important events",
+              "content": "Create coherent weekly narrative"
+            },
+            {
+              "type": "time_expansion",
+              "title": "Extended Time Stories",
+              "description": "Practice longer time period narratives",
+              "content": "Tell stories spanning multiple days"
+            }
+          ]
+        },
+        {
+          "lesson_number": 54,
+          "title": "Rondedzero yeZuva (Daily Journal)",
+          "objectives": [
+            "Learn journal and diary vocabulary",
+            "Practice reflective writing/speaking",
+            "Master personal narrative style"
+          ],
+          "vocabulary": [
+            {"shona": "rondedzero", "english": "story/account", "phonetic": "rohn-deh-DZEH-roh", "audio": "rondedzero.mp3"},
+            {"shona": "kunyora", "english": "to write", "phonetic": "koo-NYOH-rah", "audio": "kunyora.mp3"},
+            {"shona": "mafungiro", "english": "thoughts", "phonetic": "mah-foon-GEE-roh", "audio": "mafungiro.mp3"},
+            {"shona": "zvinoitika", "english": "what happens", "phonetic": "zvee-noh-EE-tee-kah", "audio": "zvinoitika.mp3"},
+            {"shona": "kunzwa", "english": "to feel", "phonetic": "koon-ZWAH", "audio": "kunzwa.mp3"},
+            {"shona": "pfungwa dzangu", "english": "my thoughts", "phonetic": "PFOON-gwah DZAHN-goo", "audio": "pfungwa_dzangu.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "daily_journaling",
+              "title": "Write Your Daily Journal",
+              "description": "Create personal daily journal entries",
+              "content": "Write reflective daily accounts"
+            },
+            {
+              "type": "emotion_expression",
+              "title": "Express Your Feelings",
+              "description": "Practice emotional vocabulary",
+              "content": "Describe feelings about daily events"
+            }
+          ]
+        },
+        {
+          "lesson_number": 55,
+          "title": "Kurondedzera (Storytelling)",
+          "objectives": [
+            "Master narrative storytelling techniques",
+            "Practice engaging story structure",
+            "Learn storytelling vocabulary"
+          ],
+          "vocabulary": [
+            {"shona": "kurondedzera", "english": "to tell a story", "phonetic": "koo-rohn-deh-DZEH-rah", "audio": "kurondedzera.mp3"},
+            {"shona": "pakutanga", "english": "at the beginning", "phonetic": "pah-koo-TAHN-gah", "audio": "pakutanga.mp3"},
+            {"shona": "pakazopfuurira", "english": "then it continued", "phonetic": "pah-kah-zoh-pfoo-EE-rah", "audio": "pakazopfuurira.mp3"},
+            {"shona": "pakupedzisira", "english": "at the end", "phonetic": "pah-koo-peh-dzee-SEE-rah", "audio": "pakupedzisira.mp3"},
+            {"shona": "chakaiitika", "english": "what happened", "phonetic": "chah-kah-EE-tee-kah", "audio": "chakaiitika.mp3"}
+          ],
+          "cultural_notes": [
+            "Storytelling is important in Shona culture",
+            "Stories often have moral lessons",
+            "Elders are the traditional storytellers"
+          ],
+          "exercises": [
+            {
+              "type": "story_creation",
+              "title": "Create Your Story",
+              "description": "Practice structured storytelling",
+              "content": "Create complete stories with beginning, middle, end"
+            },
+            {
+              "type": "story_retelling",
+              "title": "Retell a Story",
+              "description": "Practice retelling familiar stories",
+              "content": "Retell stories using proper narrative structure"
+            }
+          ]
+        },
+        {
+          "lesson_number": 56,
+          "title": "Ongororo yeZuva Rangu (My Day Review)",
+          "objectives": [
+            "Review all daily routine vocabulary",
+            "Practice complete day narration",
+            "Master past tense usage"
+          ],
+          "review_topics": [
+            "Daily routine vocabulary from morning to night",
+            "Past tense forms and time distinctions",
+            "Narrative construction and storytelling",
+            "Cultural aspects of daily life in Shona communities"
+          ],
+          "exercises": [
+            {
+              "type": "comprehensive_day_review",
+              "title": "Daily Life Mastery Check",
+              "description": "Complete assessment of daily life vocabulary",
+              "content": "Mixed exercises covering all daily topics"
+            },
+            {
+              "type": "life_story_presentation",
+              "title": "Tell Your Life Story",
+              "description": "Create extended personal narrative",
+              "content": "Use all narrative skills for personal story"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Kutenda Musika (Going to Market)",
+      "description": "Learn market vocabulary and transactional language",
+      "cultural_focus": "Market culture and community economics",
+      "grammar_focus": "Conditional statements, negotiation language, quantities",
+      "vocabulary_target": 350,
+      "lessons": [
+        {
+          "lesson_number": 57,
+          "title": "Kuenda kuMusika (Going to the Market)",
+          "objectives": [
+            "Learn market preparation vocabulary",
+            "Practice planning market trips",
+            "Master pre-market expressions"
+          ],
+          "vocabulary": [
+            {"shona": "kuenda kumusika", "english": "going to market", "phonetic": "koo-EHN-dah koo-moo-SEE-kah", "audio": "kuenda_kumusika.mp3"},
+            {"shona": "goko", "english": "basket", "phonetic": "GOH-koh", "audio": "goko.mp3"},
+            {"shona": "tsamba", "english": "bag", "phonetic": "TSAHM-bah", "audio": "tsamba.mp3"},
+            {"shona": "mari yekutenga", "english": "money for buying", "phonetic": "MAH-ree yeh-koo-TEH-ngah", "audio": "mari_yekutenga.mp3"},
+            {"shona": "rondedzero yezvinhu", "english": "shopping list", "phonetic": "rohn-deh-DZEH-roh yeh-ZVEE-noo", "audio": "rondedzero_yezvinhu.mp3"},
+            {"shona": "kunze kwemba", "english": "outside the house", "phonetic": "KOON-zeh KWEHM-bah", "audio": "kunze_kwemba.mp3"}
+          ],
+          "cultural_notes": [
+            "Market day is a social event",
+            "People dress well for market",
+            "Markets are held on specific days"
+          ],
+          "exercises": [
+            {
+              "type": "market_preparation",
+              "title": "Prepare for Market",
+              "description": "Practice market preparation activities",
+              "content": "Plan and prepare for market trip"
+            },
+            {
+              "type": "shopping_list",
+              "title": "Make a Shopping List",
+              "description": "Create shopping lists in Shona",
+              "content": "List needed items with quantities"
+            }
+          ]
+        },
+        {
+          "lesson_number": 58,
+          "title": "Mumusika (At the Market)",
+          "objectives": [
+            "Learn market environment vocabulary",
+            "Practice market navigation",
+            "Master market interaction basics"
+          ],
+          "vocabulary": [
+            {"shona": "vatengesi", "english": "sellers", "phonetic": "vah-teh-ngeh-SEE", "audio": "vatengesi.mp3"},
+            {"shona": "vatengi", "english": "buyers", "phonetic": "vah-TEH-ngee", "audio": "vatengi.mp3"},
+            {"shona": "mitsara", "english": "stalls/rows", "phonetic": "mee-TSAH-rah", "audio": "mitsara.mp3"},
+            {"shona": "dzimba dzemari", "english": "shops", "phonetic": "DZEEM-bah dzeh-MAH-ree", "audio": "dzimba_dzemari.mp3"},
+            {"shona": "ruzhinji", "english": "crowd", "phonetic": "roo-ZHEEN-jee", "audio": "ruzhinji.mp3"},
+            {"shona": "kuferefeta", "english": "to browse", "phonetic": "koo-feh-reh-FEH-tah", "audio": "kuferefeta.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "market_navigation",
+              "title": "Navigate the Market",
+              "description": "Practice moving around market",
+              "content": "Use direction and location vocabulary"
+            },
+            {
+              "type": "market_observation",
+              "title": "Describe the Market",
+              "description": "Practice describing market scenes",
+              "content": "Describe what you see at the market"
+            }
+          ]
+        },
+        {
+          "lesson_number": 59,
+          "title": "Kutengesa (Selling)",
+          "objectives": [
+            "Learn selling vocabulary and techniques",
+            "Practice seller's perspective",
+            "Master sales interaction language"
+          ],
+          "vocabulary": [
+            {"shona": "kutengesa", "english": "to sell", "phonetic": "koo-teh-ngeh-SAH", "audio": "kutengesa.mp3"},
+            {"shona": "kudanidzira", "english": "to call out/advertise", "phonetic": "koo-dah-nee-DZEE-rah", "audio": "kudanidzira.mp3"},
+            {"shona": "mutengo wangu", "english": "my price", "phonetic": "moo-TEH-ngoh WAHN-goo", "audio": "mutengo_wangu.mp3"},
+            {"shona": "zvakamira sei", "english": "how much is it", "phonetic": "zvah-kah-MEE-rah SEH-ee", "audio": "zvakamira_sei.mp3"},
+            {"shona": "zvinonaka", "english": "it's good quality", "phonetic": "zvee-noh-NAH-kah", "audio": "zvinonaka.mp3"},
+            {"shona": "kubvuma", "english": "to agree", "phonetic": "koo-BVOO-mah", "audio": "kubvuma.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "sales_practice",
+              "title": "Practice Selling",
+              "description": "Role-play as market seller",
+              "content": "Sell products using persuasive language"
+            },
+            {
+              "type": "price_presentation",
+              "title": "Present Your Prices",
+              "description": "Practice announcing prices and quality",
+              "content": "Attract customers with price calls"
+            }
+          ]
+        },
+        {
+          "lesson_number": 60,
+          "title": "Kutenga (Buying)",
+          "objectives": [
+            "Learn buying vocabulary and strategies",
+            "Practice buyer's perspective",
+            "Master purchasing interactions"
+          ],
+          "vocabulary": [
+            {"shona": "kutenga", "english": "to buy", "phonetic": "koo-TEH-ngah", "audio": "kutenga.mp3"},
+            {"shona": "kubvunza mutengo", "english": "to ask the price", "phonetic": "koo-BVOON-zah moo-TEH-ngoh", "audio": "kubvunza_mutengo.mp3"},
+            {"shona": "ndinoda", "english": "I want", "phonetic": "ndee-NOH-dah", "audio": "ndinoda.mp3"},
+            {"shona": "ndingawana here", "english": "can I get", "phonetic": "ndee-ngah-WAH-nah HEH-reh", "audio": "ndingawana_here.mp3"},
+            {"shona": "mungandipa", "english": "can you give me", "phonetic": "moon-gahn-DEE-pah", "audio": "mungandipa.mp3"},
+            {"shona": "ndinokubhadhara", "english": "I will pay you", "phonetic": "ndee-noh-koo-bah-DHAH-rah", "audio": "ndinokubhadhara.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "buying_practice",
+              "title": "Practice Buying",
+              "description": "Role-play as market buyer",
+              "content": "Buy products using polite requests"
+            },
+            {
+              "type": "product_inquiry",
+              "title": "Ask About Products",
+              "description": "Practice inquiring about goods",
+              "content": "Ask questions about quality and price"
+            }
+          ]
+        },
+        {
+          "lesson_number": 61,
+          "title": "Kukakavara (Bargaining)",
+          "objectives": [
+            "Learn bargaining vocabulary and techniques",
+            "Practice negotiation strategies",
+            "Master price negotiation language"
+          ],
+          "vocabulary": [
+            {"shona": "kukakavara", "english": "to bargain", "phonetic": "koo-kah-kah-VAH-rah", "audio": "kukakavara.mp3"},
+            {"shona": "kuderera", "english": "to reduce/lower", "phonetic": "koo-deh-REH-rah", "audio": "kuderera.mp3"},
+            {"shona": "mukana", "english": "opportunity/chance", "phonetic": "moo-KAH-nah", "audio": "mukana.mp3"},
+            {"shona": "ndingapa", "english": "I can give", "phonetic": "ndee-n-GAH-pah", "audio": "ndingapa.mp3"},
+            {"shona": "mari yangu", "english": "my money", "phonetic": "MAH-ree YAHN-goo", "audio": "mari_yangu.mp3"},
+            {"shona": "zvakakwana", "english": "it's enough", "phonetic": "zvah-kah-KWAH-nah", "audio": "zvakakwana.mp3"}
+          ],
+          "cultural_notes": [
+            "Bargaining is expected in traditional markets",
+            "It's a social interaction, not just economic",
+            "Respect and politeness are important"
+          ],
+          "exercises": [
+            {
+              "type": "bargaining_simulation",
+              "title": "Practice Bargaining",
+              "description": "Simulate real bargaining scenarios",
+              "content": "Negotiate prices respectfully"
+            },
+            {
+              "type": "negotiation_strategies",
+              "title": "Negotiation Techniques",
+              "description": "Learn effective negotiation approaches",
+              "content": "Practice different bargaining strategies"
+            }
+          ]
+        },
+        {
+          "lesson_number": 62,
+          "title": "Kubhadhara (Paying)",
+          "objectives": [
+            "Learn payment vocabulary",
+            "Practice transaction completion",
+            "Master money exchange language"
+          ],
+          "vocabulary": [
+            {"shona": "kubhadhara", "english": "to pay", "phonetic": "koo-bah-DHAH-rah", "audio": "kubhadhara.mp3"},
+            {"shona": "chinjisa", "english": "change (money)", "phonetic": "cheen-JEE-sah", "audio": "chinjisa.mp3"},
+            {"shona": "nguva yekubhadhara", "english": "time to pay", "phonetic": "n-GOO-vah yeh-koo-bah-DHAH-rah", "audio": "nguva_yekubhadhara.mp3"},
+            {"shona": "mari zvachose", "english": "exact money", "phonetic": "MAH-ree ZVAH-choh-seh", "audio": "mari_zvachose.mp3"},
+            {"shona": "kugamuchira", "english": "to receive", "phonetic": "koo-gah-moo-CHEE-rah", "audio": "kugamuchira.mp3"},
+            {"shona": "raibka", "english": "receipt", "phonetic": "rah-EE-bee-kah", "audio": "raibka.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "payment_practice",
+              "title": "Complete the Purchase",
+              "description": "Practice payment transactions",
+              "content": "Handle money exchange correctly"
+            },
+            {
+              "type": "change_calculation",
+              "title": "Calculate Change",
+              "description": "Practice money calculations",
+              "content": "Calculate correct change amounts"
+            }
+          ]
+        },
+        {
+          "lesson_number": 63,
+          "title": "Kudzoka Pamba (Returning Home)",
+          "objectives": [
+            "Learn post-market vocabulary",
+            "Practice returning home expressions",
+            "Master market trip conclusion"
+          ],
+          "vocabulary": [
+            {"shona": "kudzoka pamba", "english": "returning home", "phonetic": "koo-DZOH-kah PAHM-bah", "audio": "kudzoka_pamba.mp3"},
+            {"shona": "kuisa zvinhu", "english": "to put things away", "phonetic": "koo-EE-sah ZVEE-noo", "audio": "kuisa_zvinhu.mp3"},
+            {"shona": "kurondedzera", "english": "to tell about", "phonetic": "koo-rohn-deh-DZEH-rah", "audio": "kurondedzera.mp3"},
+            {"shona": "zvakaenda sei", "english": "how did it go", "phonetic": "zvah-kah-EHN-dah SEH-ee", "audio": "zvakaenda_sei.mp3"},
+            {"shona": "ndakanaka", "english": "it went well", "phonetic": "ndah-kah-NAH-kah", "audio": "ndakanaka.mp3"},
+            {"shona": "zvakatinetsera", "english": "it was tiring", "phonetic": "zvah-kah-tee-neh-TSEH-rah", "audio": "zvakatinetsera.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "trip_reflection",
+              "title": "Reflect on Market Trip",
+              "description": "Practice discussing market experience",
+              "content": "Share market trip experiences"
+            },
+            {
+              "type": "goods_organization",
+              "title": "Organize Your Purchases",
+              "description": "Practice organizing bought items",
+              "content": "Describe how to store market goods"
+            }
+          ]
+        },
+        {
+          "lesson_number": 64,
+          "title": "Ongororo yeMusika (Market Review)",
+          "objectives": [
+            "Review all market vocabulary",
+            "Practice complete market scenarios",
+            "Master transactional language"
+          ],
+          "review_topics": [
+            "Market preparation and navigation",
+            "Buying, selling, and bargaining language",
+            "Payment and transaction completion",
+            "Cultural aspects of market interactions"
+          ],
+          "exercises": [
+            {
+              "type": "comprehensive_market_review",
+              "title": "Market Mastery Check",
+              "description": "Complete assessment of market vocabulary",
+              "content": "Mixed exercises covering all market topics"
+            },
+            {
+              "type": "market_simulation",
+              "title": "Complete Market Experience",
+              "description": "Simulate full market day experience",
+              "content": "Role-play complete market interactions"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

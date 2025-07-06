@@ -1,0 +1,60 @@
+{
+  "curriculum_overview": {
+    "title": "Shona Language Learning Curriculum",
+    "description": "A comprehensive 4-level curriculum from beginner to advanced conversational fluency",
+    "pedagogical_approach": "Communicative Language Teaching (CLT) + Task-Based Language Learning (TBLL) + Gamification",
+    "target_audience": "Ages 5 to Adult",
+    "dual_pathways": {
+      "sarura_kids": "Play-based learning for ages 5-12",
+      "shona_pro": "Structured learning for ages 13+"
+    },
+    "cultural_integration": "Unhu/Ubuntu principles woven throughout",
+    "total_levels": 4,
+    "estimated_completion": "12-18 months"
+  },
+  "level_structure": {
+    "level_1": {
+      "title": "Tsvarudzo (The Foundation)",
+      "subtitle": "The Survivor - CEFR A1/A2",
+      "duration": "3 months",
+      "objective": "Achieve 'Survival Shona' with 1,000-1,500 high-frequency words",
+      "units": 6,
+      "lessons_per_unit": 8,
+      "total_lessons": 48
+    },
+    "level_2": {
+      "title": "Kukura (The Explorer)",
+      "subtitle": "The Contender - CEFR B1",
+      "duration": "4 months", 
+      "objective": "Build narrative and descriptive skills with 3,000-5,000 word vocabulary",
+      "units": 6,
+      "lessons_per_unit": 10,
+      "total_lessons": 60
+    },
+    "level_3": {
+      "title": "Kutaura (The Communicator)",
+      "subtitle": "The Conversationalist - CEFR B2",
+      "duration": "5 months",
+      "objective": "Engage with authentic materials and communicate with nuance",
+      "units": 6,
+      "lessons_per_unit": 12,
+      "total_lessons": 72
+    },
+    "level_4": {
+      "title": "Uchenjeri (The Orator)",
+      "subtitle": "The Master - CEFR C1",
+      "duration": "6 months",
+      "objective": "Achieve effective operational proficiency with cultural mastery",
+      "units": 6,
+      "lessons_per_unit": 14,
+      "total_lessons": 84
+    }
+  },
+  "assessment_framework": {
+    "continuous_assessment": true,
+    "milestone_tests": "Every 2 units",
+    "cultural_competency": "Integrated throughout",
+    "pronunciation_focus": "Tonal accuracy tracking",
+    "conversation_practice": "Mandatory from Level 2"
+  }
+}

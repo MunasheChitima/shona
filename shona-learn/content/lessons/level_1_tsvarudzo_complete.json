@@ -1,0 +1,811 @@
+{
+  "level_info": {
+    "level": 1,
+    "title": "Tsvarudzo (The Foundation)",
+    "subtitle": "The Survivor - CEFR A1/A2",
+    "description": "Build foundational vocabulary and basic communication skills",
+    "duration": "3 months",
+    "target_vocabulary": "1,000-1,500 words",
+    "cultural_theme": "Ubuntu/Unhu basics - respect and community"
+  },
+  "remaining_units": [
+    {
+      "unit_number": 4,
+      "title": "Mazuva neNguva (Days and Time)",
+      "description": "Learn time expressions and daily schedules",
+      "cultural_focus": "Shona concepts of time and daily rhythms",
+      "grammar_focus": "Time expressions, present tense, daily routines",
+      "vocabulary_target": 200,
+      "lessons": [
+        {
+          "lesson_number": 25,
+          "title": "Mazuva evhiki (Days of the Week)",
+          "objectives": [
+            "Learn days of the week in Shona",
+            "Practice time-related vocabulary",
+            "Master weekly schedule expressions"
+          ],
+          "vocabulary": [
+            {"shona": "vhiki", "english": "week", "phonetic": "VEE-kee", "audio": "vhiki.mp3"},
+            {"shona": "Svondo", "english": "Sunday", "phonetic": "SVOHN-doh", "audio": "svondo.mp3"},
+            {"shona": "Muvhuro", "english": "Monday", "phonetic": "moo-VOO-roh", "audio": "muvhuro.mp3"},
+            {"shona": "Chipiri", "english": "Tuesday", "phonetic": "chee-PEE-ree", "audio": "chipiri.mp3"},
+            {"shona": "Chitatu", "english": "Wednesday", "phonetic": "chee-TAH-too", "audio": "chitatu.mp3"},
+            {"shona": "China", "english": "Thursday", "phonetic": "chee-NAH", "audio": "china.mp3"},
+            {"shona": "Chishanu", "english": "Friday", "phonetic": "chee-SHAH-noo", "audio": "chishanu.mp3"},
+            {"shona": "Mugovera", "english": "Saturday", "phonetic": "moo-goh-VEH-rah", "audio": "mugovera.mp3"}
+          ],
+          "cultural_notes": [
+            "Sunday is traditionally a rest day",
+            "Many people attend church on Sundays",
+            "Saturday is often market day"
+          ],
+          "exercises": [
+            {
+              "type": "day_sequencing",
+              "title": "Order the Days",
+              "description": "Put days of the week in correct order",
+              "content": "Drag and drop days in sequence"
+            },
+            {
+              "type": "weekly_schedule",
+              "title": "My Weekly Schedule",
+              "description": "Create a simple weekly schedule",
+              "content": "Match activities to appropriate days"
+            }
+          ]
+        },
+        {
+          "lesson_number": 26,
+          "title": "Nguva (Time)",
+          "objectives": [
+            "Learn basic time expressions",
+            "Practice asking and telling time",
+            "Master time-related phrases"
+          ],
+          "vocabulary": [
+            {"shona": "nguva", "english": "time", "phonetic": "n-GOO-vah", "audio": "nguva.mp3"},
+            {"shona": "awa", "english": "hour", "phonetic": "AH-wah", "audio": "awa.mp3"},
+            {"shona": "miniti", "english": "minute", "phonetic": "mee-NEE-tee", "audio": "miniti.mp3"},
+            {"shona": "mangwanani", "english": "morning", "phonetic": "mah-ngwah-NAH-nee", "audio": "mangwanani.mp3"},
+            {"shona": "masikati", "english": "afternoon", "phonetic": "mah-see-KAH-tee", "audio": "masikati.mp3"},
+            {"shona": "manheru", "english": "evening", "phonetic": "mah-NEH-roo", "audio": "manheru.mp3"},
+            {"shona": "usiku", "english": "night", "phonetic": "oo-SEE-koo", "audio": "usiku.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "time_telling",
+              "title": "What Time Is It?",
+              "description": "Practice telling time in Shona",
+              "content": "Match clock faces to Shona time expressions"
+            },
+            {
+              "type": "time_of_day",
+              "title": "Times of Day",
+              "description": "Match activities to appropriate times",
+              "content": "Drag activities to correct time periods"
+            }
+          ]
+        },
+        {
+          "lesson_number": 27,
+          "title": "Basa reZuva (Daily Work)",
+          "objectives": [
+            "Learn daily routine vocabulary",
+            "Practice describing daily activities",
+            "Master routine expressions"
+          ],
+          "vocabulary": [
+            {"shona": "kumuka", "english": "to wake up", "phonetic": "koo-MOO-kah", "audio": "kumuka.mp3"},
+            {"shona": "kushamba", "english": "to wash", "phonetic": "koo-SHAHM-bah", "audio": "kushamba.mp3"},
+            {"shona": "kudya", "english": "to eat", "phonetic": "KOO-dyah", "audio": "kudya.mp3"},
+            {"shona": "kuenda", "english": "to go", "phonetic": "koo-EHN-dah", "audio": "kuenda.mp3"},
+            {"shona": "kubasa", "english": "to work", "phonetic": "koo-BAH-sah", "audio": "kubasa.mp3"},
+            {"shona": "kudzoka", "english": "to return", "phonetic": "koo-DZOH-kah", "audio": "kudzoka.mp3"},
+            {"shona": "kurara", "english": "to sleep", "phonetic": "koo-RAH-rah", "audio": "kurara.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "daily_routine",
+              "title": "My Daily Routine",
+              "description": "Describe daily activities in sequence",
+              "content": "Order daily activities chronologically"
+            },
+            {
+              "type": "routine_description",
+              "title": "What Do You Do?",
+              "description": "Practice describing daily routines",
+              "content": "Match actions to times of day"
+            }
+          ]
+        },
+        {
+          "lesson_number": 28,
+          "title": "Mwedzi neGore (Months and Year)",
+          "objectives": [
+            "Learn months of the year",
+            "Practice year-related vocabulary",
+            "Master calendar expressions"
+          ],
+          "vocabulary": [
+            {"shona": "mwedzi", "english": "month", "phonetic": "MWEH-dzee", "audio": "mwedzi.mp3"},
+            {"shona": "gore", "english": "year", "phonetic": "GOH-reh", "audio": "gore.mp3"},
+            {"shona": "Ndira", "english": "January", "phonetic": "n-DEE-rah", "audio": "ndira.mp3"},
+            {"shona": "Kukadzi", "english": "February", "phonetic": "koo-KAH-dzee", "audio": "kukadzi.mp3"},
+            {"shona": "Kurume", "english": "March", "phonetic": "koo-ROO-meh", "audio": "kurume.mp3"},
+            {"shona": "Kubvumbi", "english": "April", "phonetic": "koo-BVOOM-bee", "audio": "kubvumbi.mp3"},
+            {"shona": "Chivabvu", "english": "May", "phonetic": "chee-VAHB-voo", "audio": "chivabvu.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "month_seasons",
+              "title": "Months and Seasons",
+              "description": "Match months to seasons in Zimbabwe",
+              "content": "Connect months with weather patterns"
+            },
+            {
+              "type": "birthday_practice",
+              "title": "When Is Your Birthday?",
+              "description": "Practice stating birth months",
+              "content": "Express birthday months in Shona"
+            }
+          ]
+        },
+        {
+          "lesson_number": 29,
+          "title": "Mwedzi inoenda (The Year Goes By)",
+          "objectives": [
+            "Complete the months of the year",
+            "Learn seasonal vocabulary",
+            "Master year-round expressions"
+          ],
+          "vocabulary": [
+            {"shona": "Chikumi", "english": "June", "phonetic": "chee-KOO-mee", "audio": "chikumi.mp3"},
+            {"shona": "Chikunguru", "english": "July", "phonetic": "chee-koon-GOO-roo", "audio": "chikunguru.mp3"},
+            {"shona": "Nyamavhuvhu", "english": "August", "phonetic": "nyah-mah-VOO-voo", "audio": "nyamavhuvhu.mp3"},
+            {"shona": "Gunyana", "english": "September", "phonetic": "goo-NYAH-nah", "audio": "gunyana.mp3"},
+            {"shona": "Gumiguru", "english": "October", "phonetic": "goo-mee-GOO-roo", "audio": "gumiguru.mp3"},
+            {"shona": "Mbudzi", "english": "November", "phonetic": "mm-BOO-dzee", "audio": "mbudzi.mp3"},
+            {"shona": "Zvita", "english": "December", "phonetic": "ZVEE-tah", "audio": "zvita.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "year_cycle",
+              "title": "The Year Cycle",
+              "description": "Complete understanding of all months",
+              "content": "Fill in missing months in sequence"
+            },
+            {
+              "type": "seasonal_activities",
+              "title": "What Happens When?",
+              "description": "Match activities to appropriate months",
+              "content": "Connect seasonal activities to months"
+            }
+          ]
+        },
+        {
+          "lesson_number": 30,
+          "title": "Nhasi, Nezuro, Mangwana (Today, Yesterday, Tomorrow)",
+          "objectives": [
+            "Learn time reference words",
+            "Practice past and future expressions",
+            "Master temporal vocabulary"
+          ],
+          "vocabulary": [
+            {"shona": "nhasi", "english": "today", "phonetic": "n-HAH-see", "audio": "nhasi.mp3"},
+            {"shona": "nezuro", "english": "yesterday", "phonetic": "neh-ZOO-roh", "audio": "nezuro.mp3"},
+            {"shona": "mangwana", "english": "tomorrow", "phonetic": "mah-ngwah-NAH", "audio": "mangwana.mp3"},
+            {"shona": "zvino", "english": "now", "phonetic": "ZVEE-noh", "audio": "zvino.mp3"},
+            {"shona": "nguva ino", "english": "this time", "phonetic": "n-GOO-vah EE-noh", "audio": "nguva_ino.mp3"},
+            {"shona": "nguva yakapfuura", "english": "past time", "phonetic": "n-GOO-vah yah-kah-PFOO-rah", "audio": "nguva_yakapfuura.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "time_reference",
+              "title": "When Did It Happen?",
+              "description": "Practice using time reference words",
+              "content": "Choose correct time words for events"
+            },
+            {
+              "type": "planning_practice",
+              "title": "Making Plans",
+              "description": "Practice talking about future plans",
+              "content": "Use 'mangwana' in planning sentences"
+            }
+          ]
+        },
+        {
+          "lesson_number": 31,
+          "title": "Kubvunza Nguva (Asking About Time)",
+          "objectives": [
+            "Learn to ask time-related questions",
+            "Practice time question formation",
+            "Master temporal question words"
+          ],
+          "vocabulary": [
+            {"shona": "rini", "english": "when", "phonetic": "REE-nee", "audio": "rini.mp3"},
+            {"shona": "nguva yakadiini", "english": "what time", "phonetic": "n-GOO-vah yah-kah-DEE-nee", "audio": "nguva_yakadiini.mp3"},
+            {"shona": "zuva ripi", "english": "which day", "phonetic": "ZOO-vah REE-pee", "audio": "zuva_ripi.mp3"},
+            {"shona": "mwedzi upi", "english": "which month", "phonetic": "MWEH-dzee OO-pee", "audio": "mwedzi_upi.mp3"},
+            {"shona": "makore mangani", "english": "how many years", "phonetic": "mah-KOH-reh mah-n-GAH-nee", "audio": "makore_mangani.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "time_questions",
+              "title": "Ask About Time",
+              "description": "Practice forming time questions",
+              "content": "Create questions using time words"
+            },
+            {
+              "type": "schedule_inquiry",
+              "title": "When Is It?",
+              "description": "Practice asking about schedules",
+              "content": "Role-play asking about appointments"
+            }
+          ]
+        },
+        {
+          "lesson_number": 32,
+          "title": "Ongororo yeNguva (Time Review)",
+          "objectives": [
+            "Review all time-related vocabulary",
+            "Practice complete time expressions",
+            "Master temporal communication"
+          ],
+          "review_topics": [
+            "Days of the week and months",
+            "Time expressions and daily routines",
+            "Time questions and temporal references",
+            "Cultural aspects of time in Shona society"
+          ],
+          "exercises": [
+            {
+              "type": "comprehensive_time_review",
+              "title": "Time Mastery Check",
+              "description": "Complete assessment of time vocabulary",
+              "content": "Mixed exercises covering all time topics"
+            },
+            {
+              "type": "daily_schedule",
+              "title": "Plan Your Week",
+              "description": "Create and present a weekly schedule",
+              "content": "Use all time vocabulary in context"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 5,
+      "title": "Nzvimbo (Places)",
+      "description": "Learn location vocabulary and directions",
+      "cultural_focus": "Important places in Shona communities",
+      "grammar_focus": "Locative expressions, direction words, 'to be' in places",
+      "vocabulary_target": 200,
+      "lessons": [
+        {
+          "lesson_number": 33,
+          "title": "Mumusha (In the Village)",
+          "objectives": [
+            "Learn village and community vocabulary",
+            "Practice location expressions",
+            "Master community place names"
+          ],
+          "vocabulary": [
+            {"shona": "musha", "english": "village/home", "phonetic": "MOO-shah", "audio": "musha.mp3"},
+            {"shona": "imba", "english": "house", "phonetic": "EEM-bah", "audio": "imba.mp3"},
+            {"shona": "dare", "english": "court/meeting place", "phonetic": "DAH-reh", "audio": "dare.mp3"},
+            {"shona": "chirindi", "english": "well", "phonetic": "chee-REEN-dee", "audio": "chirindi.mp3"},
+            {"shona": "munda", "english": "field", "phonetic": "MOON-dah", "audio": "munda.mp3"},
+            {"shona": "nzira", "english": "path/road", "phonetic": "n-ZEE-rah", "audio": "nzira.mp3"}
+          ],
+          "cultural_notes": [
+            "The village is the center of traditional life",
+            "The dare is where important decisions are made",
+            "Extended families often live in the same village"
+          ],
+          "exercises": [
+            {
+              "type": "village_map",
+              "title": "Village Layout",
+              "description": "Identify parts of a traditional village",
+              "content": "Label village components correctly"
+            },
+            {
+              "type": "location_practice",
+              "title": "Where Is It?",
+              "description": "Practice describing village locations",
+              "content": "Use location words with village places"
+            }
+          ]
+        },
+        {
+          "lesson_number": 34,
+          "title": "Muguta (In the City)",
+          "objectives": [
+            "Learn city and urban vocabulary",
+            "Practice modern place names",
+            "Master urban location expressions"
+          ],
+          "vocabulary": [
+            {"shona": "guta", "english": "city", "phonetic": "GOO-tah", "audio": "guta.mp3"},
+            {"shona": "chitoro", "english": "shop/store", "phonetic": "chee-TOH-roh", "audio": "chitoro.mp3"},
+            {"shona": "bhanga", "english": "bank", "phonetic": "BAHN-gah", "audio": "bhanga.mp3"},
+            {"shona": "chipatara", "english": "hospital", "phonetic": "chee-pah-TAH-rah", "audio": "chipatara.mp3"},
+            {"shona": "chikoro", "english": "school", "phonetic": "chee-KOH-roh", "audio": "chikoro.mp3"},
+            {"shona": "positi", "english": "post office", "phonetic": "poh-SEE-tee", "audio": "positi.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "city_navigation",
+              "title": "Find Your Way",
+              "description": "Navigate using city vocabulary",
+              "content": "Match destinations to descriptions"
+            },
+            {
+              "type": "urban_services",
+              "title": "City Services",
+              "description": "Learn about urban facilities",
+              "content": "Connect services to their locations"
+            }
+          ]
+        },
+        {
+          "lesson_number": 35,
+          "title": "Kwenda (Going Places)",
+          "objectives": [
+            "Learn direction and movement words",
+            "Practice giving and following directions",
+            "Master movement expressions"
+          ],
+          "vocabulary": [
+            {"shona": "kuenda", "english": "to go", "phonetic": "koo-EHN-dah", "audio": "kuenda.mp3"},
+            {"shona": "kuuya", "english": "to come", "phonetic": "koo-OO-yah", "audio": "kuuya.mp3"},
+            {"shona": "kuruboshwe", "english": "to the left", "phonetic": "koo-roo-BOHSH-weh", "audio": "kuruboshwe.mp3"},
+            {"shona": "kurudyi", "english": "to the right", "phonetic": "koo-roo-DYEE", "audio": "kurudyi.mp3"},
+            {"shona": "mberi", "english": "forward", "phonetic": "mm-BEH-ree", "audio": "mberi.mp3"},
+            {"shona": "shure", "english": "behind", "phonetic": "SHOO-reh", "audio": "shure.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "direction_following",
+              "title": "Follow Directions",
+              "description": "Practice following spoken directions",
+              "content": "Navigate using direction words"
+            },
+            {
+              "type": "direction_giving",
+              "title": "Give Directions",
+              "description": "Practice giving clear directions",
+              "content": "Help others find their way"
+            }
+          ]
+        },
+        {
+          "lesson_number": 36,
+          "title": "Kupi? (Where?)",
+          "objectives": [
+            "Learn to ask about locations",
+            "Practice location questions",
+            "Master place question words"
+          ],
+          "vocabulary": [
+            {"shona": "kupi", "english": "where", "phonetic": "KOO-pee", "audio": "kupi.mp3"},
+            {"shona": "ndiri kupi", "english": "where am I", "phonetic": "n-DEE-ree KOO-pee", "audio": "ndiri_kupi.mp3"},
+            {"shona": "uri kupi", "english": "where are you", "phonetic": "OO-ree KOO-pee", "audio": "uri_kupi.mp3"},
+            {"shona": "kure here", "english": "is it far", "phonetic": "KOO-reh HEH-reh", "audio": "kure_here.mp3"},
+            {"shona": "pedyo here", "english": "is it near", "phonetic": "PEH-dyoh HEH-reh", "audio": "pedyo_here.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "location_questions",
+              "title": "Where Are You?",
+              "description": "Practice asking about locations",
+              "content": "Form questions using location words"
+            },
+            {
+              "type": "distance_inquiry",
+              "title": "How Far Is It?",
+              "description": "Practice asking about distances",
+              "content": "Use distance expressions in questions"
+            }
+          ]
+        },
+        {
+          "lesson_number": 37,
+          "title": "Nzvimbo Dzakakoshesa (Important Places)",
+          "objectives": [
+            "Learn about culturally significant places",
+            "Practice place names in Zimbabwe",
+            "Master important location vocabulary"
+          ],
+          "vocabulary": [
+            {"shona": "Zimbabwe", "english": "Zimbabwe", "phonetic": "zee-BAHM-bweh", "audio": "zimbabwe.mp3"},
+            {"shona": "Harare", "english": "Harare", "phonetic": "hah-RAH-reh", "audio": "harare.mp3"},
+            {"shona": "Bulawayo", "english": "Bulawayo", "phonetic": "boo-lah-WAH-yoh", "audio": "bulawayo.mp3"},
+            {"shona": "Great Zimbabwe", "english": "Great Zimbabwe", "phonetic": "greh-aht zee-BAHM-bweh", "audio": "great_zimbabwe.mp3"},
+            {"shona": "Mufakose", "english": "Victoria Falls", "phonetic": "moo-fah-KOH-seh", "audio": "mufakose.mp3"},
+            {"shona": "gomo", "english": "mountain", "phonetic": "GOH-moh", "audio": "gomo.mp3"}
+          ],
+          "cultural_notes": [
+            "Great Zimbabwe is a source of national pride",
+            "Victoria Falls is called 'Mosi-oa-Tunya' (the smoke that thunders)",
+            "Different regions have different dialects"
+          ],
+          "exercises": [
+            {
+              "type": "zimbabwe_geography",
+              "title": "Know Your Country",
+              "description": "Learn about Zimbabwe's important places",
+              "content": "Match places to their descriptions"
+            },
+            {
+              "type": "cultural_significance",
+              "title": "Why Is It Important?",
+              "description": "Learn the cultural importance of places",
+              "content": "Connect places to their cultural value"
+            }
+          ]
+        },
+        {
+          "lesson_number": 38,
+          "title": "Kufamba (Traveling)",
+          "objectives": [
+            "Learn travel vocabulary",
+            "Practice transportation terms",
+            "Master travel expressions"
+          ],
+          "vocabulary": [
+            {"shona": "kufamba", "english": "to travel", "phonetic": "koo-FAHM-bah", "audio": "kufamba.mp3"},
+            {"shona": "bhazi", "english": "bus", "phonetic": "BAH-zee", "audio": "bhazi.mp3"},
+            {"shona": "mota", "english": "car", "phonetic": "MOH-tah", "audio": "mota.mp3"},
+            {"shona": "chitima", "english": "train", "phonetic": "chee-TEE-mah", "audio": "chitima.mp3"},
+            {"shona": "ndege", "english": "airplane", "phonetic": "n-DEH-geh", "audio": "ndege.mp3"},
+            {"shona": "tsoka", "english": "on foot", "phonetic": "TSOH-kah", "audio": "tsoka.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "transportation_choice",
+              "title": "How Will You Travel?",
+              "description": "Choose appropriate transportation",
+              "content": "Match journeys to transportation methods"
+            },
+            {
+              "type": "travel_planning",
+              "title": "Plan Your Trip",
+              "description": "Practice planning travel",
+              "content": "Use travel vocabulary in planning"
+            }
+          ]
+        },
+        {
+          "lesson_number": 39,
+          "title": "Pamba (At Home)",
+          "objectives": [
+            "Learn home and house vocabulary",
+            "Practice rooms and furniture words",
+            "Master home expressions"
+          ],
+          "vocabulary": [
+            {"shona": "pamba", "english": "at home", "phonetic": "PAHM-bah", "audio": "pamba.mp3"},
+            {"shona": "mukamuri", "english": "in the room", "phonetic": "moo-kah-MOO-ree", "audio": "mukamuri.mp3"},
+            {"shona": "kicheni", "english": "kitchen", "phonetic": "kee-CHEH-nee", "audio": "kicheni.mp3"},
+            {"shona": "bhafhuru", "english": "bathroom", "phonetic": "bah-VOO-roo", "audio": "bhafhuru.mp3"},
+            {"shona": "sitting room", "english": "living room", "phonetic": "see-teen room", "audio": "sitting_room.mp3"},
+            {"shona": "sleeping room", "english": "bedroom", "phonetic": "slee-peen room", "audio": "sleeping_room.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "house_tour",
+              "title": "Tour the House",
+              "description": "Practice describing home rooms",
+              "content": "Guide someone through a house"
+            },
+            {
+              "type": "home_activities",
+              "title": "What Happens Where?",
+              "description": "Match activities to appropriate rooms",
+              "content": "Connect activities to room locations"
+            }
+          ]
+        },
+        {
+          "lesson_number": 40,
+          "title": "Ongororo yeNzvimbo (Places Review)",
+          "objectives": [
+            "Review all place-related vocabulary",
+            "Practice complete location descriptions",
+            "Master spatial communication"
+          ],
+          "review_topics": [
+            "Village and city vocabulary",
+            "Directions and movement expressions",
+            "Location questions and transportation",
+            "Home and important places"
+          ],
+          "exercises": [
+            {
+              "type": "comprehensive_places_review",
+              "title": "Places Mastery Check",
+              "description": "Complete assessment of place vocabulary",
+              "content": "Mixed exercises covering all place topics"
+            },
+            {
+              "type": "location_presentation",
+              "title": "Describe Your Community",
+              "description": "Present your home area using place vocabulary",
+              "content": "Complete description of familiar places"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 6,
+      "title": "Uwandu (Numbers and Counting)",
+      "description": "Learn numbers and basic mathematics",
+      "cultural_focus": "Traditional counting systems and market mathematics",
+      "grammar_focus": "Number agreement, quantity expressions, basic math",
+      "vocabulary_target": 150,
+      "lessons": [
+        {
+          "lesson_number": 41,
+          "title": "Nhamba 1-10 (Numbers 1-10)",
+          "objectives": [
+            "Learn numbers 1-10 in Shona",
+            "Practice counting and number recognition",
+            "Master basic number pronunciation"
+          ],
+          "vocabulary": [
+            {"shona": "motsi", "english": "one", "phonetic": "MOH-tsee", "audio": "motsi.mp3"},
+            {"shona": "piri", "english": "two", "phonetic": "PEE-ree", "audio": "piri.mp3"},
+            {"shona": "tatu", "english": "three", "phonetic": "TAH-too", "audio": "tatu.mp3"},
+            {"shona": "china", "english": "four", "phonetic": "chee-NAH", "audio": "china.mp3"},
+            {"shona": "shanu", "english": "five", "phonetic": "SHAH-noo", "audio": "shanu.mp3"},
+            {"shona": "tanhatu", "english": "six", "phonetic": "tahn-HAH-too", "audio": "tanhatu.mp3"},
+            {"shona": "nomwe", "english": "seven", "phonetic": "NOHM-weh", "audio": "nomwe.mp3"},
+            {"shona": "sere", "english": "eight", "phonetic": "SEH-reh", "audio": "sere.mp3"},
+            {"shona": "pfumbamwe", "english": "nine", "phonetic": "pfoom-BAHM-weh", "audio": "pfumbamwe.mp3"},
+            {"shona": "gumi", "english": "ten", "phonetic": "GOO-mee", "audio": "gumi.mp3"}
+          ],
+          "cultural_notes": [
+            "Traditional counting was used in livestock",
+            "Numbers are essential for market transactions",
+            "Some numbers have cultural significance"
+          ],
+          "exercises": [
+            {
+              "type": "number_recognition",
+              "title": "Count the Objects",
+              "description": "Practice number recognition",
+              "content": "Count objects and say numbers in Shona"
+            },
+            {
+              "type": "number_sequencing",
+              "title": "Number Order",
+              "description": "Practice number sequences",
+              "content": "Put numbers in correct order"
+            }
+          ]
+        },
+        {
+          "lesson_number": 42,
+          "title": "Nhamba 11-20 (Numbers 11-20)",
+          "objectives": [
+            "Learn numbers 11-20 in Shona",
+            "Practice teen number formation",
+            "Master number patterns"
+          ],
+          "vocabulary": [
+            {"shona": "gumi nemotsi", "english": "eleven", "phonetic": "GOO-mee neh-MOH-tsee", "audio": "gumi_nemotsi.mp3"},
+            {"shona": "gumi nepiri", "english": "twelve", "phonetic": "GOO-mee neh-PEE-ree", "audio": "gumi_nepiri.mp3"},
+            {"shona": "gumi netatu", "english": "thirteen", "phonetic": "GOO-mee neh-TAH-too", "audio": "gumi_netatu.mp3"},
+            {"shona": "gumi nechina", "english": "fourteen", "phonetic": "GOO-mee neh-chee-NAH", "audio": "gumi_nechina.mp3"},
+            {"shona": "gumi neshanu", "english": "fifteen", "phonetic": "GOO-mee neh-SHAH-noo", "audio": "gumi_neshanu.mp3"},
+            {"shona": "makumi maviri", "english": "twenty", "phonetic": "mah-KOO-mee mah-VEE-ree", "audio": "makumi_maviri.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "teen_numbers",
+              "title": "Teen Number Practice",
+              "description": "Practice numbers 11-20",
+              "content": "Complete number sequences"
+            },
+            {
+              "type": "number_patterns",
+              "title": "Number Patterns",
+              "description": "Understand number formation patterns",
+              "content": "Identify patterns in teen numbers"
+            }
+          ]
+        },
+        {
+          "lesson_number": 43,
+          "title": "Makumi (Tens)",
+          "objectives": [
+            "Learn multiples of ten",
+            "Practice larger number formation",
+            "Master ten-based counting"
+          ],
+          "vocabulary": [
+            {"shona": "makumi", "english": "tens", "phonetic": "mah-KOO-mee", "audio": "makumi.mp3"},
+            {"shona": "makumi matatu", "english": "thirty", "phonetic": "mah-KOO-mee mah-TAH-too", "audio": "makumi_matatu.mp3"},
+            {"shona": "makumi mana", "english": "forty", "phonetic": "mah-KOO-mee mah-NAH", "audio": "makumi_mana.mp3"},
+            {"shona": "makumi mashanu", "english": "fifty", "phonetic": "mah-KOO-mee mah-SHAH-noo", "audio": "makumi_mashanu.mp3"},
+            {"shona": "makumi matanhatu", "english": "sixty", "phonetic": "mah-KOO-mee mah-tahn-HAH-too", "audio": "makumi_matanhatu.mp3"},
+            {"shona": "makumi manomwe", "english": "seventy", "phonetic": "mah-KOO-mee mah-NOHM-weh", "audio": "makumi_manomwe.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "tens_practice",
+              "title": "Count by Tens",
+              "description": "Practice counting by tens",
+              "content": "Skip count by tens to 100"
+            },
+            {
+              "type": "number_building",
+              "title": "Build Large Numbers",
+              "description": "Create numbers using tens",
+              "content": "Combine tens and ones"
+            }
+          ]
+        },
+        {
+          "lesson_number": 44,
+          "title": "Zana (Hundred)",
+          "objectives": [
+            "Learn hundreds and larger numbers",
+            "Practice large number formation",
+            "Master hundred-based counting"
+          ],
+          "vocabulary": [
+            {"shona": "zana", "english": "hundred", "phonetic": "ZAH-nah", "audio": "zana.mp3"},
+            {"shona": "mazana", "english": "hundreds", "phonetic": "mah-ZAH-nah", "audio": "mazana.mp3"},
+            {"shona": "mazana maviri", "english": "two hundred", "phonetic": "mah-ZAH-nah mah-VEE-ree", "audio": "mazana_maviri.mp3"},
+            {"shona": "chiuru", "english": "thousand", "phonetic": "chee-OO-roo", "audio": "chiuru.mp3"},
+            {"shona": "miriyoni", "english": "million", "phonetic": "mee-ree-YOH-nee", "audio": "miriyoni.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "large_numbers",
+              "title": "Large Number Practice",
+              "description": "Practice with hundreds and thousands",
+              "content": "Read and write large numbers"
+            },
+            {
+              "type": "number_comprehension",
+              "title": "Number Understanding",
+              "description": "Understand large number concepts",
+              "content": "Match numbers to written forms"
+            }
+          ]
+        },
+        {
+          "lesson_number": 45,
+          "title": "Kubvunza Uwandu (Asking About Quantity)",
+          "objectives": [
+            "Learn quantity question words",
+            "Practice asking about amounts",
+            "Master quantity expressions"
+          ],
+          "vocabulary": [
+            {"shona": "mangani", "english": "how many", "phonetic": "mah-n-GAH-nee", "audio": "mangani.mp3"},
+            {"shona": "mune mangani", "english": "how many are there", "phonetic": "moo-neh mah-n-GAH-nee", "audio": "mune_mangani.mp3"},
+            {"shona": "zvakawanda", "english": "many", "phonetic": "zvah-kah-WAHN-dah", "audio": "zvakawanda.mp3"},
+            {"shona": "zvishoma", "english": "few", "phonetic": "zvee-SHOH-mah", "audio": "zvishoma.mp3"},
+            {"shona": "zvakakwana", "english": "enough", "phonetic": "zvah-kah-KWAH-nah", "audio": "zvakakwana.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "quantity_questions",
+              "title": "How Many?",
+              "description": "Practice asking about quantities",
+              "content": "Form questions about amounts"
+            },
+            {
+              "type": "quantity_description",
+              "title": "Describe Amounts",
+              "description": "Practice describing quantities",
+              "content": "Use quantity words in descriptions"
+            }
+          ]
+        },
+        {
+          "lesson_number": 46,
+          "title": "Mumusika (At the Market)",
+          "objectives": [
+            "Learn market vocabulary with numbers",
+            "Practice buying and selling",
+            "Master market mathematics"
+          ],
+          "vocabulary": [
+            {"shona": "musika", "english": "market", "phonetic": "moo-SEE-kah", "audio": "musika.mp3"},
+            {"shona": "mutengi", "english": "buyer", "phonetic": "moo-TEH-ngee", "audio": "mutengi.mp3"},
+            {"shona": "mutengesi", "english": "seller", "phonetic": "moo-teh-ngeh-SEE", "audio": "mutengesi.mp3"},
+            {"shona": "mari", "english": "money", "phonetic": "MAH-ree", "audio": "mari.mp3"},
+            {"shona": "mutengo", "english": "price", "phonetic": "moo-TEH-ngoh", "audio": "mutengo.mp3"},
+            {"shona": "chinjisa", "english": "change", "phonetic": "cheen-JEE-sah", "audio": "chinjisa.mp3"}
+          ],
+          "cultural_notes": [
+            "Markets are social gathering places",
+            "Bargaining is common and expected",
+            "Prices may vary by relationship"
+          ],
+          "exercises": [
+            {
+              "type": "market_transactions",
+              "title": "Buy and Sell",
+              "description": "Practice market transactions",
+              "content": "Role-play buying and selling"
+            },
+            {
+              "type": "price_negotiation",
+              "title": "Bargaining Practice",
+              "description": "Practice negotiating prices",
+              "content": "Use numbers in price discussions"
+            }
+          ]
+        },
+        {
+          "lesson_number": 47,
+          "title": "Kuwerenga (Mathematics)",
+          "objectives": [
+            "Learn basic math vocabulary",
+            "Practice mathematical operations",
+            "Master calculation expressions"
+          ],
+          "vocabulary": [
+            {"shona": "kuwerenga", "english": "to count/calculate", "phonetic": "koo-weh-REH-ngah", "audio": "kuwerenga.mp3"},
+            {"shona": "kuwedzera", "english": "to add", "phonetic": "koo-weh-DZEH-rah", "audio": "kuwedzera.mp3"},
+            {"shona": "kubvisa", "english": "to subtract", "phonetic": "koo-BVEE-sah", "audio": "kubvisa.mp3"},
+            {"shona": "kupeta", "english": "to multiply", "phonetic": "koo-PEH-tah", "audio": "kupeta.mp3"},
+            {"shona": "kukamura", "english": "to divide", "phonetic": "koo-kah-MOO-rah", "audio": "kukamura.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "basic_math",
+              "title": "Simple Calculations",
+              "description": "Practice basic math operations",
+              "content": "Solve simple math problems"
+            },
+            {
+              "type": "math_word_problems",
+              "title": "Word Problems",
+              "description": "Solve math problems in context",
+              "content": "Apply math to real situations"
+            }
+          ]
+        },
+        {
+          "lesson_number": 48,
+          "title": "Ongororo yeUwandu (Numbers Review)",
+          "objectives": [
+            "Review all number vocabulary",
+            "Practice complete number usage",
+            "Master numerical communication"
+          ],
+          "review_topics": [
+            "Numbers 1-100 and beyond",
+            "Quantity questions and descriptions",
+            "Market mathematics and transactions",
+            "Basic mathematical operations"
+          ],
+          "exercises": [
+            {
+              "type": "comprehensive_numbers_review",
+              "title": "Numbers Mastery Check",
+              "description": "Complete assessment of number knowledge",
+              "content": "Mixed exercises covering all number topics"
+            },
+            {
+              "type": "practical_math",
+              "title": "Real-Life Math",
+              "description": "Apply numbers to practical situations",
+              "content": "Use numbers in daily life scenarios"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

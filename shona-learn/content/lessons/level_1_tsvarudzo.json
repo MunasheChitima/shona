@@ -1,0 +1,855 @@
+{
+  "level_info": {
+    "level": 1,
+    "title": "Tsvarudzo (The Foundation)",
+    "subtitle": "The Survivor - CEFR A1/A2",
+    "description": "Build foundational vocabulary and basic communication skills",
+    "duration": "3 months",
+    "target_vocabulary": "1,000-1,500 words",
+    "cultural_theme": "Ubuntu/Unhu basics - respect and community"
+  },
+  "units": [
+    {
+      "unit_number": 1,
+      "title": "Mhoro, Shamwari! (Hello, Friend!)",
+      "description": "Master essential greetings and basic introductions",
+      "cultural_focus": "Respect in greetings - the foundation of Unhu",
+      "grammar_focus": "Formal vs informal address, plural of respect",
+      "vocabulary_target": 150,
+      "lessons": [
+        {
+          "lesson_number": 1,
+          "title": "Kwaziso (Greetings)",
+          "objectives": [
+            "Learn basic greetings: mhoro, hesi, mangwanani",
+            "Understand formal vs informal greetings",
+            "Practice correct pronunciation of greetings"
+          ],
+          "vocabulary": [
+            {"shona": "mhoro", "english": "hello (informal)", "phonetic": "mm-HOH-roh", "audio": "mhoro.mp3"},
+            {"shona": "mhoroi", "english": "hello (formal)", "phonetic": "mm-HOH-roh-ee", "audio": "mhoroi.mp3"},
+            {"shona": "hesi", "english": "hi (very informal)", "phonetic": "HEH-see", "audio": "hesi.mp3"},
+            {"shona": "mangwanani", "english": "good morning", "phonetic": "mah-ngwah-NAH-nee", "audio": "mangwanani.mp3"},
+            {"shona": "masikati", "english": "good afternoon", "phonetic": "mah-see-KAH-tee", "audio": "masikati.mp3"},
+            {"shona": "manheru", "english": "good evening", "phonetic": "mah-NEH-roo", "audio": "manheru.mp3"}
+          ],
+          "cultural_notes": [
+            "Always greet elders with formal greetings (mhoroi)",
+            "Use plural forms when showing respect",
+            "Greetings are essential - never skip them"
+          ],
+          "exercises": [
+            {
+              "type": "pronunciation",
+              "title": "Greeting Sound Practice",
+              "description": "Practice pronouncing greetings with correct tones",
+              "content": "Shadow native speaker audio for each greeting"
+            },
+            {
+              "type": "matching",
+              "title": "Time of Day Match",
+              "description": "Match greetings to appropriate times",
+              "content": "Drag mangwanani to morning scene, masikati to afternoon, etc."
+            },
+            {
+              "type": "role_play",
+              "title": "Meeting Someone New",
+              "description": "Practice greeting a new person appropriately",
+              "content": "Choose formal vs informal based on age/status shown"
+            }
+          ]
+        },
+        {
+          "lesson_number": 2,
+          "title": "Makadii? (How Are You?)",
+          "objectives": [
+            "Learn to ask and respond to 'How are you?'",
+            "Master the difference between wakadii and makadii",
+            "Practice basic conversational flow"
+          ],
+          "vocabulary": [
+            {"shona": "makadii", "english": "how are you? (formal)", "phonetic": "mah-KAH-dee", "audio": "makadii.mp3"},
+            {"shona": "wakadii", "english": "how are you? (informal)", "phonetic": "wah-KAH-dee", "audio": "wakadii.mp3"},
+            {"shona": "ndiripo", "english": "I'm fine/here", "phonetic": "ndee-REE-poh", "audio": "ndiripo.mp3"},
+            {"shona": "ndiripoko", "english": "I'm fine indeed", "phonetic": "ndee-REE-poh-koh", "audio": "ndiripoko.mp3"},
+            {"shona": "ndinokutendai", "english": "thank you (formal)", "phonetic": "ndee-noh-koo-TEN-dah-ee", "audio": "ndinokutendai.mp3"},
+            {"shona": "ndatenda", "english": "thank you", "phonetic": "ndah-TEN-dah", "audio": "ndatenda.mp3"}
+          ],
+          "cultural_notes": [
+            "Always ask about someone's wellbeing",
+            "Use makadii for elders and formal situations",
+            "Proper response shows you value the relationship"
+          ],
+          "exercises": [
+            {
+              "type": "dialogue_practice",
+              "title": "Greeting Conversation",
+              "description": "Practice full greeting exchange",
+              "content": "A: Mhoroi, makadii? B: Ndiripoko, makadii? A: Ndiripoko, ndatenda"
+            },
+            {
+              "type": "context_choice",
+              "title": "Formal or Informal?",
+              "description": "Choose correct greeting based on context",
+              "content": "Show scenarios: meeting teacher, greeting friend, etc."
+            }
+          ]
+        },
+        {
+          "lesson_number": 3,
+          "title": "Ndini... (I am...)",
+          "objectives": [
+            "Learn basic self-introduction",
+            "Master personal pronouns",
+            "Practice stating your name and basic info"
+          ],
+          "vocabulary": [
+            {"shona": "ndini", "english": "I am", "phonetic": "ndee-nee", "audio": "ndini.mp3"},
+            {"shona": "zita", "english": "name", "phonetic": "ZEE-tah", "audio": "zita.mp3"},
+            {"shona": "zita rangu", "english": "my name", "phonetic": "ZEE-tah RAHN-goo", "audio": "zita_rangu.mp3"},
+            {"shona": "ndino", "english": "I am/do", "phonetic": "ndee-noh", "audio": "ndino.mp3"},
+            {"shona": "kubva", "english": "from", "phonetic": "koo-BVAH", "audio": "kubva.mp3"},
+            {"shona": "kupi", "english": "where", "phonetic": "KOO-pee", "audio": "kupi.mp3"}
+          ],
+          "grammar_focus": [
+            "Personal pronouns: ndini, iwe, iye",
+            "Possessive pronouns: rangu, rako, rake",
+            "Basic sentence structure: Subject + Verb + Object"
+          ],
+          "exercises": [
+            {
+              "type": "fill_in_blank",
+              "title": "Complete Your Introduction",
+              "description": "Fill in blanks for personal introduction",
+              "content": "Ndini ___. Zita rangu ___ ___."
+            },
+            {
+              "type": "recording",
+              "title": "Introduce Yourself",
+              "description": "Record a 30-second self-introduction",
+              "content": "State name, where you're from, and greeting"
+            }
+          ]
+        },
+        {
+          "lesson_number": 4,
+          "title": "Zvanzi? (What's Your Name?)",
+          "objectives": [
+            "Learn to ask someone's name",
+            "Practice question formation",
+            "Master basic question words"
+          ],
+          "vocabulary": [
+            {"shona": "zvanzi", "english": "what is it called?", "phonetic": "ZVAHN-zee", "audio": "zvanzi.mp3"},
+            {"shona": "zita rako", "english": "your name", "phonetic": "ZEE-tah RAH-koh", "audio": "zita_rako.mp3"},
+            {"shona": "unobva kupi", "english": "where do you come from", "phonetic": "oo-noh-BVAH koo-pee", "audio": "unobva_kupi.mp3"},
+            {"shona": "ndino", "english": "I come from", "phonetic": "ndee-noh", "audio": "ndino.mp3"},
+            {"shona": "here", "english": "question particle", "phonetic": "HEH-reh", "audio": "here.mp3"}
+          ],
+          "grammar_focus": [
+            "Question formation with kupi",
+            "Question particle 'here?'",
+            "Basic question-answer patterns"
+          ],
+          "exercises": [
+            {
+              "type": "question_formation",
+              "title": "Ask Questions",
+              "description": "Form questions using question words",
+              "content": "Transform statements into questions"
+            },
+            {
+              "type": "conversation_practice",
+              "title": "Getting to Know You",
+              "description": "Practice asking and answering personal questions",
+              "content": "Structured dialogue practice"
+            }
+          ]
+        },
+        {
+          "lesson_number": 5,
+          "title": "Kunzwisisa (Understanding)",
+          "objectives": [
+            "Learn phrases for when you don't understand",
+            "Master polite ways to ask for repetition",
+            "Practice basic communication strategies"
+          ],
+          "vocabulary": [
+            {"shona": "handizwisisi", "english": "I don't understand", "phonetic": "hahn-dee-ZWEE-see-see", "audio": "handizwisisi.mp3"},
+            {"shona": "dzokorai", "english": "please repeat", "phonetic": "dzoh-koh-RAH-ee", "audio": "dzokorai.mp3"},
+            {"shona": "zviri nani", "english": "it's okay", "phonetic": "zvee-ree NAH-nee", "audio": "zviri_nani.mp3"},
+            {"shona": "ndinokutendai", "english": "thank you", "phonetic": "ndee-noh-koo-TEN-dah-ee", "audio": "ndinokutendai.mp3"},
+            {"shona": "hapana", "english": "it's nothing/you're welcome", "phonetic": "hah-PAH-nah", "audio": "hapana.mp3"}
+          ],
+          "cultural_notes": [
+            "It's okay to not understand - be honest",
+            "Always thank someone for their patience",
+            "Use polite forms when asking for help"
+          ],
+          "exercises": [
+            {
+              "type": "scenario_practice",
+              "title": "When You Don't Understand",
+              "description": "Practice appropriate responses",
+              "content": "Audio clips where you must respond appropriately"
+            },
+            {
+              "type": "politeness_practice",
+              "title": "Polite Requests",
+              "description": "Practice making polite requests for help",
+              "content": "Choose most appropriate polite form"
+            }
+          ]
+        },
+        {
+          "lesson_number": 6,
+          "title": "Chisarai Zvakanaka (Goodbye)",
+          "objectives": [
+            "Learn various ways to say goodbye",
+            "Understand when to use different farewells",
+            "Practice complete conversations with greetings and farewells"
+          ],
+          "vocabulary": [
+            {"shona": "chisarai", "english": "goodbye (formal)", "phonetic": "chee-SAH-rah-ee", "audio": "chisarai.mp3"},
+            {"shona": "chisarai zvakanaka", "english": "goodbye well", "phonetic": "chee-SAH-rah-ee zvah-kah-NAH-kah", "audio": "chisarai_zvakanaka.mp3"},
+            {"shona": "tizonanana", "english": "see you later", "phonetic": "tee-zoh-nah-NAH-nah", "audio": "tizonanana.mp3"},
+            {"shona": "fambai zvakanaka", "english": "go well", "phonetic": "fahm-BAH-ee zvah-kah-NAH-kah", "audio": "fambai_zvakanaka.mp3"},
+            {"shona": "garai zvakanaka", "english": "stay well", "phonetic": "gah-RAH-ee zvah-kah-NAH-kah", "audio": "garai_zvakanaka.mp3"}
+          ],
+          "cultural_notes": [
+            "Choose farewell based on who is leaving",
+            "Say 'fambai zvakanaka' to those leaving",
+            "Say 'garai zvakanaka' to those staying"
+          ],
+          "exercises": [
+            {
+              "type": "farewell_choice",
+              "title": "Appropriate Farewells",
+              "description": "Choose correct farewell for each situation",
+              "content": "Scenarios showing who is leaving/staying"
+            },
+            {
+              "type": "complete_conversation",
+              "title": "Full Conversation Practice",
+              "description": "Practice complete greeting to farewell",
+              "content": "Role-play with virtual characters"
+            }
+          ]
+        },
+        {
+          "lesson_number": 7,
+          "title": "Kudzidza Mazwi (Learning Words)",
+          "objectives": [
+            "Learn basic learning vocabulary",
+            "Practice asking for word meanings",
+            "Master classroom/learning expressions"
+          ],
+          "vocabulary": [
+            {"shona": "shoko", "english": "word", "phonetic": "SHOH-koh", "audio": "shoko.mp3"},
+            {"shona": "rurimi", "english": "language", "phonetic": "roo-REE-mee", "audio": "rurimi.mp3"},
+            {"shona": "chishona", "english": "Shona language", "phonetic": "chee-SHOH-nah", "audio": "chishona.mp3"},
+            {"shona": "kudzidza", "english": "to learn", "phonetic": "koo-DZEE-dzah", "audio": "kudzidza.mp3"},
+            {"shona": "kunyora", "english": "to write", "phonetic": "koo-NYOH-rah", "audio": "kunyora.mp3"},
+            {"shona": "kuverenga", "english": "to read", "phonetic": "koo-veh-REH-ngah", "audio": "kuverenga.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "vocabulary_building",
+              "title": "Learning Words",
+              "description": "Practice learning and using new vocabulary",
+              "content": "Interactive vocabulary games"
+            },
+            {
+              "type": "meta_learning",
+              "title": "How to Learn",
+              "description": "Learn phrases for learning process",
+              "content": "Practice asking for help with vocabulary"
+            }
+          ]
+        },
+        {
+          "lesson_number": 8,
+          "title": "Ongororo (Review)",
+          "objectives": [
+            "Review all Unit 1 vocabulary and structures",
+            "Practice complete conversations",
+            "Assess progress and identify areas for improvement"
+          ],
+          "review_topics": [
+            "All greeting forms and appropriate usage",
+            "Self-introduction and asking about others",
+            "Polite expressions and communication strategies",
+            "Farewell expressions and cultural appropriateness"
+          ],
+          "exercises": [
+            {
+              "type": "comprehensive_review",
+              "title": "Unit 1 Mastery Check",
+              "description": "Complete assessment of Unit 1 skills",
+              "content": "Mixed exercise types covering all topics"
+            },
+            {
+              "type": "conversation_test",
+              "title": "Real Conversation Practice",
+              "description": "Simulate real conversations using Unit 1 skills",
+              "content": "Multiple conversation scenarios"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 2,
+      "title": "Mhuri Yangu (My Family)",
+      "description": "Learn family vocabulary and possessive structures",
+      "cultural_focus": "Ubuntu in family relationships - extended family importance",
+      "grammar_focus": "Possessive pronouns, noun classes 1/2, respectful terms",
+      "vocabulary_target": 200,
+      "lessons": [
+        {
+          "lesson_number": 9,
+          "title": "Vafambi (Family Members)",
+          "objectives": [
+            "Learn immediate family vocabulary",
+            "Master basic possessive pronouns",
+            "Practice family introductions"
+          ],
+          "vocabulary": [
+            {"shona": "mhuri", "english": "family", "phonetic": "mm-HOO-ree", "audio": "mhuri.mp3"},
+            {"shona": "baba", "english": "father", "phonetic": "BAH-bah", "audio": "baba.mp3"},
+            {"shona": "amai", "english": "mother", "phonetic": "ah-MAH-ee", "audio": "amai.mp3"},
+            {"shona": "mwana", "english": "child", "phonetic": "MWAH-nah", "audio": "mwana.mp3"},
+            {"shona": "mukoma", "english": "older brother", "phonetic": "moo-KOH-mah", "audio": "mukoma.mp3"},
+            {"shona": "hanzvadzi", "english": "sister", "phonetic": "hahn-ZVAH-dzee", "audio": "hanzvadzi.mp3"},
+            {"shona": "muzukuru", "english": "grandchild", "phonetic": "moo-zoo-KOO-roo", "audio": "muzukuru.mp3"}
+          ],
+          "cultural_notes": [
+            "Extended family is very important in Shona culture",
+            "Respect for elders is paramount",
+            "Use proper titles for family members"
+          ],
+          "grammar_focus": [
+            "Possessive pronouns: yangu, yako, yake",
+            "Noun classes for people: Class 1 (mu-) singular, Class 2 (va-) plural",
+            "Agreement between noun and possessive"
+          ],
+          "exercises": [
+            {
+              "type": "family_tree",
+              "title": "Build Your Family Tree",
+              "description": "Create family tree using Shona terms",
+              "content": "Drag and drop family members with correct possessives"
+            },
+            {
+              "type": "possessive_practice",
+              "title": "My Family, Your Family",
+              "description": "Practice possessive pronouns with family terms",
+              "content": "Transform sentences between different possessives"
+            }
+          ]
+        },
+        {
+          "lesson_number": 10,
+          "title": "Vana (Children)",
+          "objectives": [
+            "Learn terms for children of different ages",
+            "Practice talking about siblings",
+            "Master age-related vocabulary"
+          ],
+          "vocabulary": [
+            {"shona": "mwana", "english": "child", "phonetic": "MWAH-nah", "audio": "mwana.mp3"},
+            {"shona": "vana", "english": "children", "phonetic": "VAH-nah", "audio": "vana.mp3"},
+            {"shona": "mwana mudiki", "english": "small child", "phonetic": "MWAH-nah moo-DEE-kee", "audio": "mwana_mudiki.mp3"},
+            {"shona": "jaya", "english": "young man", "phonetic": "JAH-yah", "audio": "jaya.mp3"},
+            {"shona": "musikana", "english": "girl", "phonetic": "moo-see-KAH-nah", "audio": "musikana.mp3"},
+            {"shona": "mukomana", "english": "boy", "phonetic": "moo-koh-MAH-nah", "audio": "mukomana.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "age_description",
+              "title": "Describing Family Members",
+              "description": "Practice describing family members by age",
+              "content": "Match descriptions to appropriate family members"
+            },
+            {
+              "type": "sibling_talk",
+              "title": "Talking About Siblings",
+              "description": "Practice discussing brothers and sisters",
+              "content": "Role-play conversations about siblings"
+            }
+          ]
+        },
+        {
+          "lesson_number": 11,
+          "title": "Vakuru (Elders)",
+          "objectives": [
+            "Learn respectful terms for elders",
+            "Practice using honorific forms",
+            "Understand cultural importance of elders"
+          ],
+          "vocabulary": [
+            {"shona": "sekuru", "english": "grandfather/elderly man", "phonetic": "seh-KOO-roo", "audio": "sekuru.mp3"},
+            {"shona": "ambuya", "english": "grandmother/elderly woman", "phonetic": "ahm-BOO-yah", "audio": "ambuya.mp3"},
+            {"shona": "mudhara", "english": "old man (respectful)", "phonetic": "moo-DHAH-rah", "audio": "mudhara.mp3"},
+            {"shona": "mai", "english": "mother (respectful)", "phonetic": "MAH-ee", "audio": "mai.mp3"},
+            {"shona": "tete", "english": "aunt (paternal)", "phonetic": "TEH-teh", "audio": "tete.mp3"},
+            {"shona": "babamunini", "english": "uncle (paternal)", "phonetic": "bah-bah-moo-NEE-nee", "audio": "babamunini.mp3"}
+          ],
+          "cultural_notes": [
+            "Always show respect to elders",
+            "Use proper titles when addressing elders",
+            "Elders are sources of wisdom and guidance"
+          ],
+          "exercises": [
+            {
+              "type": "respect_practice",
+              "title": "Showing Respect",
+              "description": "Practice respectful address of elders",
+              "content": "Choose appropriate respectful forms"
+            },
+            {
+              "type": "extended_family",
+              "title": "Extended Family Relations",
+              "description": "Learn about extended family structure",
+              "content": "Match family relationships with their roles"
+            }
+          ]
+        },
+        {
+          "lesson_number": 12,
+          "title": "Kugara (Living Together)",
+          "objectives": [
+            "Learn about living arrangements",
+            "Practice describing who lives where",
+            "Master location expressions with family"
+          ],
+          "vocabulary": [
+            {"shona": "kugara", "english": "to live/stay", "phonetic": "koo-GAH-rah", "audio": "kugara.mp3"},
+            {"shona": "pamba", "english": "at home", "phonetic": "PAHM-bah", "audio": "pamba.mp3"},
+            {"shona": "imba", "english": "house", "phonetic": "EEM-bah", "audio": "imba.mp3"},
+            {"shona": "pamwe", "english": "together", "phonetic": "PAHM-weh", "audio": "pamwe.mp3"},
+            {"shona": "kure", "english": "far", "phonetic": "KOO-reh", "audio": "kure.mp3"},
+            {"shona": "pedyo", "english": "near", "phonetic": "PEH-dyoh", "audio": "pedyo.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "living_situations",
+              "title": "Who Lives Where?",
+              "description": "Practice describing living arrangements",
+              "content": "Match family members with their living situations"
+            },
+            {
+              "type": "location_practice",
+              "title": "Near and Far",
+              "description": "Practice location expressions",
+              "content": "Describe where family members live"
+            }
+          ]
+        },
+        {
+          "lesson_number": 13,
+          "title": "Basa reMhuri (Family Work)",
+          "objectives": [
+            "Learn about family responsibilities",
+            "Practice talking about work and roles",
+            "Master basic action verbs"
+          ],
+          "vocabulary": [
+            {"shona": "basa", "english": "work", "phonetic": "BAH-sah", "audio": "basa.mp3"},
+            {"shona": "kurima", "english": "to farm", "phonetic": "koo-REE-mah", "audio": "kurima.mp3"},
+            {"shona": "kubika", "english": "to cook", "phonetic": "koo-BEE-kah", "audio": "kubika.mp3"},
+            {"shona": "kuchenesa", "english": "to clean", "phonetic": "koo-cheh-NEH-sah", "audio": "kuchenesa.mp3"},
+            {"shona": "kuchengeta", "english": "to look after", "phonetic": "koo-cheh-ngeh-tah", "audio": "kuchengeta.mp3"},
+            {"shona": "kubatsira", "english": "to help", "phonetic": "koo-bah-TSEE-rah", "audio": "kubatsira.mp3"}
+          ],
+          "cultural_notes": [
+            "Everyone in family has responsibilities",
+            "Children help with household tasks",
+            "Work is shared among family members"
+          ],
+          "exercises": [
+            {
+              "type": "family_roles",
+              "title": "Family Responsibilities",
+              "description": "Match family members with their typical roles",
+              "content": "Drag family members to appropriate work activities"
+            },
+            {
+              "type": "helping_practice",
+              "title": "Helping at Home",
+              "description": "Practice talking about helping family",
+              "content": "Create sentences about helping family members"
+            }
+          ]
+        },
+        {
+          "lesson_number": 14,
+          "title": "Kuitana (Calling Family)",
+          "objectives": [
+            "Learn how to call family members",
+            "Practice proper names and titles",
+            "Master the vocative case"
+          ],
+          "vocabulary": [
+            {"shona": "kuitana", "english": "to call", "phonetic": "koo-ee-TAH-nah", "audio": "kuitana.mp3"},
+            {"shona": "uya", "english": "come", "phonetic": "OO-yah", "audio": "uya.mp3"},
+            {"shona": "uyai", "english": "come (plural/formal)", "phonetic": "oo-YAH-ee", "audio": "uyai.mp3"},
+            {"shona": "kuno", "english": "here", "phonetic": "KOO-noh", "audio": "kuno.mp3"},
+            {"shona": "kuko", "english": "there", "phonetic": "KOO-koh", "audio": "kuko.mp3"},
+            {"shona": "iwe", "english": "you (calling)", "phonetic": "EE-weh", "audio": "iwe.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "calling_practice",
+              "title": "Calling Family Members",
+              "description": "Practice appropriate ways to call family",
+              "content": "Choose correct form for calling different family members"
+            },
+            {
+              "type": "politeness_levels",
+              "title": "Formal vs Informal Calling",
+              "description": "Practice different levels of politeness",
+              "content": "Match calling forms to appropriate family members"
+            }
+          ]
+        },
+        {
+          "lesson_number": 15,
+          "title": "Rudo rweMhuri (Family Love)",
+          "objectives": [
+            "Learn expressions of love and care",
+            "Practice emotional vocabulary",
+            "Master family bonding expressions"
+          ],
+          "vocabulary": [
+            {"shona": "rudo", "english": "love", "phonetic": "ROO-doh", "audio": "rudo.mp3"},
+            {"shona": "kuda", "english": "to love", "phonetic": "KOO-dah", "audio": "kuda.mp3"},
+            {"shona": "kuchenjerera", "english": "to care for", "phonetic": "koo-cheh-njeh-REH-rah", "audio": "kuchenjerera.mp3"},
+            {"shona": "kufara", "english": "to be happy", "phonetic": "koo-FAH-rah", "audio": "kufara.mp3"},
+            {"shona": "kutenda", "english": "to thank", "phonetic": "koo-TEN-dah", "audio": "kutenda.mp3"},
+            {"shona": "kufadza", "english": "to make happy", "phonetic": "koo-FAH-dzah", "audio": "kufadza.mp3"}
+          ],
+          "cultural_notes": [
+            "Expressing love and care is important in families",
+            "Showing gratitude strengthens family bonds",
+            "Emotional expressions vary by relationship"
+          ],
+          "exercises": [
+            {
+              "type": "emotional_expression",
+              "title": "Expressing Love and Care",
+              "description": "Practice expressing feelings to family",
+              "content": "Choose appropriate emotional expressions"
+            },
+            {
+              "type": "gratitude_practice",
+              "title": "Showing Gratitude",
+              "description": "Practice thanking family members",
+              "content": "Create sentences showing gratitude to family"
+            }
+          ]
+        },
+        {
+          "lesson_number": 16,
+          "title": "Ongororo yeMhuri (Family Review)",
+          "objectives": [
+            "Review all family vocabulary and structures",
+            "Practice complete family descriptions",
+            "Assess mastery of possessive pronouns"
+          ],
+          "review_topics": [
+            "All family member terms and their plurals",
+            "Possessive pronouns and noun class agreement",
+            "Respectful address forms for different family members",
+            "Family activities and responsibilities"
+          ],
+          "exercises": [
+            {
+              "type": "comprehensive_family_review",
+              "title": "Family Mastery Check",
+              "description": "Complete assessment of family vocabulary",
+              "content": "Mixed exercises covering all family topics"
+            },
+            {
+              "type": "family_presentation",
+              "title": "Present Your Family",
+              "description": "Give a complete presentation about your family",
+              "content": "Structured presentation with all family vocabulary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit_number": 3,
+      "title": "Zvekudya (Food and Drink)",
+      "description": "Learn food vocabulary and expressing preferences",
+      "cultural_focus": "Shona food culture and sharing meals",
+      "grammar_focus": "Expressing wants and needs, quantities, simple present tense",
+      "vocabulary_target": 250,
+      "lessons": [
+        {
+          "lesson_number": 17,
+          "title": "Chakafukidza (Staple Foods)",
+          "objectives": [
+            "Learn basic Shona staple foods",
+            "Practice food vocabulary",
+            "Master pronunciation of food terms"
+          ],
+          "vocabulary": [
+            {"shona": "chakafukidza", "english": "staple food", "phonetic": "chah-kah-foo-KEE-dzah", "audio": "chakafukidza.mp3"},
+            {"shona": "sadza", "english": "thick porridge (main staple)", "phonetic": "SAH-dzah", "audio": "sadza.mp3"},
+            {"shona": "bota", "english": "thin porridge", "phonetic": "BOH-tah", "audio": "bota.mp3"},
+            {"shona": "chibage", "english": "maize/corn", "phonetic": "chee-BAH-geh", "audio": "chibage.mp3"},
+            {"shona": "mapfunde", "english": "sorghum", "phonetic": "mah-PFOON-deh", "audio": "mapfunde.mp3"},
+            {"shona": "rukweza", "english": "millet", "phonetic": "roo-KWEH-zah", "audio": "rukweza.mp3"}
+          ],
+          "cultural_notes": [
+            "Sadza is the most important food in Shona culture",
+            "Meals are typically shared with family",
+            "Food is blessed before eating"
+          ],
+          "exercises": [
+            {
+              "type": "food_identification",
+              "title": "Name That Food",
+              "description": "Identify staple foods by picture",
+              "content": "Match pictures to Shona food names"
+            },
+            {
+              "type": "pronunciation_drill",
+              "title": "Food Pronunciation",
+              "description": "Practice correct pronunciation of food terms",
+              "content": "Repeat after native speaker audio"
+            }
+          ]
+        },
+        {
+          "lesson_number": 18,
+          "title": "Mriwo (Vegetables)",
+          "objectives": [
+            "Learn common vegetable names",
+            "Practice plant vocabulary",
+            "Master basic nutrition terms"
+          ],
+          "vocabulary": [
+            {"shona": "mriwo", "english": "vegetables", "phonetic": "mm-REE-woh", "audio": "mriwo.mp3"},
+            {"shona": "muriwo", "english": "vegetable (singular)", "phonetic": "moo-REE-woh", "audio": "muriwo.mp3"},
+            {"shona": "choumoellier", "english": "cabbage", "phonetic": "choh-moh-EH-lee-ehr", "audio": "choumoellier.mp3"},
+            {"shona": "tsunga", "english": "traditional greens", "phonetic": "TSOON-gah", "audio": "tsunga.mp3"},
+            {"shona": "derere", "english": "okra", "phonetic": "deh-REH-reh", "audio": "derere.mp3"},
+            {"shona": "mutamba", "english": "sweet potato leaves", "phonetic": "moo-TAHM-bah", "audio": "mutamba.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "vegetable_sorting",
+              "title": "Sort the Vegetables",
+              "description": "Categorize vegetables by type",
+              "content": "Drag vegetables to appropriate categories"
+            },
+            {
+              "type": "nutrition_talk",
+              "title": "Healthy Eating",
+              "description": "Practice talking about nutritious foods",
+              "content": "Match foods to health benefits"
+            }
+          ]
+        },
+        {
+          "lesson_number": 19,
+          "title": "Nyama (Meat)",
+          "objectives": [
+            "Learn meat and protein vocabulary",
+            "Practice animal names",
+            "Master protein source terms"
+          ],
+          "vocabulary": [
+            {"shona": "nyama", "english": "meat", "phonetic": "NYAH-mah", "audio": "nyama.mp3"},
+            {"shona": "nyama yemombe", "english": "beef", "phonetic": "NYAH-mah yeh-MOHM-beh", "audio": "nyama_yemombe.mp3"},
+            {"shona": "nyama yehuku", "english": "chicken", "phonetic": "NYAH-mah yeh-HOO-koo", "audio": "nyama_yehuku.mp3"},
+            {"shona": "hove", "english": "fish", "phonetic": "HOH-veh", "audio": "hove.mp3"},
+            {"shona": "mazai", "english": "eggs", "phonetic": "mah-ZAH-ee", "audio": "mazai.mp3"},
+            {"shona": "mukaka", "english": "milk", "phonetic": "moo-KAH-kah", "audio": "mukaka.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "protein_matching",
+              "title": "Match Proteins to Sources",
+              "description": "Connect meat types to their animal sources",
+              "content": "Visual matching game"
+            },
+            {
+              "type": "meal_planning",
+              "title": "Plan a Balanced Meal",
+              "description": "Create meals with appropriate protein",
+              "content": "Drag and drop meal components"
+            }
+          ]
+        },
+        {
+          "lesson_number": 20,
+          "title": "Michero (Fruits)",
+          "objectives": [
+            "Learn fruit vocabulary",
+            "Practice sweet food terms",
+            "Master fruit descriptions"
+          ],
+          "vocabulary": [
+            {"shona": "michero", "english": "fruits", "phonetic": "mee-CHEH-roh", "audio": "michero.mp3"},
+            {"shona": "muchero", "english": "fruit (singular)", "phonetic": "moo-CHEH-roh", "audio": "muchero.mp3"},
+            {"shona": "banana", "english": "banana", "phonetic": "bah-NAH-nah", "audio": "banana.mp3"},
+            {"shona": "maranjisi", "english": "oranges", "phonetic": "mah-rahn-JEE-see", "audio": "maranjisi.mp3"},
+            {"shona": "maapuro", "english": "apples", "phonetic": "mah-AH-poo-roh", "audio": "maapuro.mp3"},
+            {"shona": "mango", "english": "mango", "phonetic": "MAHN-goh", "audio": "mango.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "fruit_seasons",
+              "title": "When Do Fruits Grow?",
+              "description": "Learn about fruit seasons",
+              "content": "Match fruits to their growing seasons"
+            },
+            {
+              "type": "taste_description",
+              "title": "Describe the Taste",
+              "description": "Practice describing fruit flavors",
+              "content": "Match fruits to taste descriptions"
+            }
+          ]
+        },
+        {
+          "lesson_number": 21,
+          "title": "Zvimwe Zvekudya (Other Foods)",
+          "objectives": [
+            "Learn miscellaneous food vocabulary",
+            "Practice cooking terms",
+            "Master food preparation words"
+          ],
+          "vocabulary": [
+            {"shona": "mafuta", "english": "oil/fat", "phonetic": "mah-FOO-tah", "audio": "mafuta.mp3"},
+            {"shona": "munyu", "english": "salt", "phonetic": "MOON-yoo", "audio": "munyu.mp3"},
+            {"shona": "shuga", "english": "sugar", "phonetic": "SHOO-gah", "audio": "shuga.mp3"},
+            {"shona": "dovi", "english": "peanut butter", "phonetic": "DOH-vee", "audio": "dovi.mp3"},
+            {"shona": "chingwa", "english": "bread", "phonetic": "CHEEN-gwah", "audio": "chingwa.mp3"},
+            {"shona": "muto", "english": "soup", "phonetic": "MOO-toh", "audio": "muto.mp3"}
+          ],
+          "exercises": [
+            {
+              "type": "cooking_ingredients",
+              "title": "What's in the Recipe?",
+              "description": "Identify ingredients in Shona dishes",
+              "content": "Match recipes to required ingredients"
+            },
+            {
+              "type": "food_preparation",
+              "title": "How to Prepare",
+              "description": "Learn basic cooking terminology",
+              "content": "Match cooking methods to foods"
+            }
+          ]
+        },
+        {
+          "lesson_number": 22,
+          "title": "Kuda Kudya (Wanting Food)",
+          "objectives": [
+            "Learn to express food preferences",
+            "Practice the verb 'kuda' (to want)",
+            "Master food request phrases"
+          ],
+          "vocabulary": [
+            {"shona": "kuda", "english": "to want", "phonetic": "KOO-dah", "audio": "kuda.mp3"},
+            {"shona": "ndinoda", "english": "I want", "phonetic": "ndee-NOH-dah", "audio": "ndinoda.mp3"},
+            {"shona": "unoda", "english": "you want", "phonetic": "oo-NOH-dah", "audio": "unoda.mp3"},
+            {"shona": "handidi", "english": "I don't want", "phonetic": "hahn-DEE-dee", "audio": "handidi.mp3"},
+            {"shona": "chii", "english": "what", "phonetic": "CHEE-ee", "audio": "chii.mp3"},
+            {"shona": "unoda chii", "english": "what do you want", "phonetic": "oo-NOH-dah CHEE-ee", "audio": "unoda_chii.mp3"}
+          ],
+          "grammar_focus": [
+            "Present tense of 'kuda' (to want)",
+            "Negative forms: handidi, haudidi",
+            "Question formation with 'chii'"
+          ],
+          "exercises": [
+            {
+              "type": "preference_expression",
+              "title": "Express Your Preferences",
+              "description": "Practice saying what foods you want",
+              "content": "Choose foods and express preferences"
+            },
+            {
+              "type": "food_ordering",
+              "title": "Order Food",
+              "description": "Practice ordering food politely",
+              "content": "Role-play ordering in a restaurant"
+            }
+          ]
+        },
+        {
+          "lesson_number": 23,
+          "title": "Munzvimbo Yekudyira (At the Restaurant)",
+          "objectives": [
+            "Learn restaurant vocabulary",
+            "Practice ordering food",
+            "Master polite food requests"
+          ],
+          "vocabulary": [
+            {"shona": "restaraundi", "english": "restaurant", "phonetic": "reh-stah-RAHN-dee", "audio": "restaraundi.mp3"},
+            {"shona": "menyu", "english": "menu", "phonetic": "MEH-nyoo", "audio": "menyu.mp3"},
+            {"shona": "kudya", "english": "food/to eat", "phonetic": "KOO-dyah", "audio": "kudya.mp3"},
+            {"shona": "kunwa", "english": "to drink", "phonetic": "KOON-wah", "audio": "kunwa.mp3"},
+            {"shona": "kubhadhara", "english": "to pay", "phonetic": "koo-bah-DHAH-rah", "audio": "kubhadhara.mp3"},
+            {"shona": "mari", "english": "money", "phonetic": "MAH-ree", "audio": "mari.mp3"}
+          ],
+          "cultural_notes": [
+            "Be polite when ordering food",
+            "It's customary to thank the server",
+            "Sharing food is common in Shona culture"
+          ],
+          "exercises": [
+            {
+              "type": "restaurant_dialogue",
+              "title": "Restaurant Conversation",
+              "description": "Practice complete restaurant interaction",
+              "content": "Role-play with waiter and customer"
+            },
+            {
+              "type": "menu_reading",
+              "title": "Read the Menu",
+              "description": "Practice reading and understanding menus",
+              "content": "Identify foods and prices on menu"
+            }
+          ]
+        },
+        {
+          "lesson_number": 24,
+          "title": "Ongororo yeZvekudya (Food Review)",
+          "objectives": [
+            "Review all food vocabulary",
+            "Practice complete food conversations",
+            "Assess food preference expressions"
+          ],
+          "review_topics": [
+            "All food categories and specific items",
+            "Expressing food preferences and dislikes",
+            "Restaurant vocabulary and ordering",
+            "Cultural aspects of Shona food"
+          ],
+          "exercises": [
+            {
+              "type": "comprehensive_food_review",
+              "title": "Food Mastery Check",
+              "description": "Complete assessment of food vocabulary",
+              "content": "Mixed exercises covering all food topics"
+            },
+            {
+              "type": "cooking_demonstration",
+              "title": "Describe a Recipe",
+              "description": "Explain how to prepare a Shona dish",
+              "content": "Step-by-step recipe explanation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
