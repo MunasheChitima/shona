@@ -267,7 +267,95 @@
         {
           "unitNumber": 3,
           "unitName": "Zvekudya (Food)",
-          "lessons": []
+          "lessons": [
+            {
+              "lessonNumber": "3A",
+              "title": "Staple Foods",
+              "goal": "Name core Zimbabwean foods and express likes using the verb 'kuda'.",
+              "vocabulary": ["sadza", "muriwo", "nyama", "chingwa", "mukaka", "mvura", "banana", "apuro"],
+              "grammarFocus": "Present habitual tense marker -no- with subject prefixes (ndino-, unono-, ano-) and verb 'kuda' for preferences.",
+              "cultureNotes": [
+                "Sadza is the staple dish eaten with hands; learners discover etiquette of hand washing before meals.",
+                "Vegetables (muriwo) often accompany sadza; meat (nyama) is a treat."
+              ],
+              "activities": [
+                {"step": "Warm-up", "description": "Audio flashcards: hear food word, select correct picture."},
+                {"step": "Preference Poll", "description": "Learner taps thumbs-up or down for foods; app forms sentences like 'Unoda sadza?'."},
+                {"step": "Sentence Builder", "description": "Drag subject/verb/object tiles to build 'Ndinoda ____' statements."}
+              ],
+              "assessment": "Multiple-choice and translation quiz on vocabulary and 'kuda' sentences.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does 'sadza' refer to?", "correctAnswer": "Maize meal staple", "options": ["Maize meal staple", "Vegetables", "Meat", "Bread"], "audioText": "SAHD-zah"},
+                {"type": "translation", "question": "Translate to Shona: I like meat.", "correctAnswer": "Ndinoda nyama.", "options": [], "audioText": "n-dee-NOH-dah NYAH-ma"},
+                {"type": "multiple_choice", "question": "Which pronoun prefix completes '__noda chingwa' for 'you (singular) like bread'?", "correctAnswer": "U", "options": ["Ndi", "U", "Ti", "Va"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "3B",
+              "title": "At the Market",
+              "goal": "Ask for prices and count money when shopping for food items.",
+              "vocabulary": ["musika", "mutengo", "imarii?", "ndapota", "tomatisi", "mbatatisi", "maputi", "mango"],
+              "grammarFocus": "Question word 'imarii?' (how much) and number review 1-10; polite request particle '-wo' as in 'ndipeiwo'.",
+              "cultureNotes": [
+                "Bargaining is normal; greet the vendor before asking for price.",
+                "Use small US dollar bills or RTGS; vendors appreciate exact change."
+              ],
+              "activities": [
+                {"step": "Dialogue Listen", "description": "Interactive audio of buyer & vendor; learner fills missing price words."},
+                {"step": "Price Tag Game", "description": "Match spoken price to the correct digit card."},
+                {"step": "Role-Play", "description": "Choose items in virtual stall, ask 'Imarii?' and respond appropriately."}
+              ],
+              "assessment": "Scenario-based quiz: purchase three items within a budget using correct phrases.",
+              "exercises": [
+                {"type": "translation", "question": "Translate to English: Ndapota, ndipeiwo maputi.", "correctAnswer": "Please, give me popcorn.", "options": [], "audioText": "nda-POH-tah ndee-PEH-ee-woh mah-POO-tee"},
+                {"type": "multiple_choice", "question": "What does 'imarii?' mean?", "correctAnswer": "How much is it?", "options": ["Where is it?", "How much is it?", "What is this?", "Can I have?"], "audioText": "ee-MAH-ree"},
+                {"type": "multiple_choice", "question": "Choose the correct Shona for 'five dollars'.", "correctAnswer": "Mari yemadhora mashanu", "options": ["Mari yemadhora matatu", "Mari yemadhora mashanu", "Mari yemadhora maviri", "Mari yemadhora gumi"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "3C",
+              "title": "Polite Requests",
+              "goal": "Use polite request forms when asking for food or drink.",
+              "vocabulary": ["ndikumbirawo", "ndipeiwo", "ndinoda", "muriwo", "mvura", "chakudya"],
+              "grammarFocus": "Particle '-wo' to soften requests; imperative plural for respect when speaking to a server.",
+              "cultureNotes": [
+                "Adding '-wo' and greeting first conveys politeness; avoid commanding tone.",
+                "Right hand is used to receive food or money; support right forearm with left when respectful."
+              ],
+              "activities": [
+                {"step": "Warm-up", "description": "Repeat-after-me polite request phrases."},
+                {"step": "Transformation", "description": "Convert direct commands into polite forms using '-wo'."},
+                {"step": "Café Simulation", "description": "Select correct polite phrase for each ordering scenario."}
+              ],
+              "assessment": "Multiple-choice questions on polite vs direct forms; audio pronunciation check.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "Which phrase is most polite when asking for water?", "correctAnswer": "Ndikumbirawo mvura.", "options": ["Ndipa mvura.", "Mvura.", "Ndikumbirawo mvura.", "Ndinoda mvura."], "audioText": "ndeekoom-BEE-rah-woh mm-VOO-rah"},
+                {"type": "translation", "question": "Translate to Shona: Please give me vegetables.", "correctAnswer": "Ndipeiwo muriwo, ndapota.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match Shona request to its English meaning.", "correctAnswer": "Ndinoda chingwa-I would like bread", "options": ["Ndinoda chingwa-I would like bread", "Ndikumbirawo nyama-May I have meat please", "Ndipeiwo mvura-Please give me water"], "audioText": ""}
+              ]
+            },
+            {
+              "lessonNumber": "3D",
+              "title": "Restaurant Role-play",
+              "goal": "Order a meal politely and respond to questions from the waiter.",
+              "vocabulary": ["kudya", "kunwa", "risiti", "mari", "ndatenda", "tapota"],
+              "grammarFocus": "Future tense 'ndichatora' (I will take) and question 'munoda chii?' (what would you like?), consolidation of polite forms.",
+              "cultureNotes": [
+                "Tip is not obligatory but appreciated in urban restaurants.",
+                "Always thank the server with 'Ndatenda' after receiving service."
+              ],
+              "activities": [
+                {"step": "Scenario", "description": "Timed ordering game: select starter, main, drink using voice recognition."},
+                {"step": "Comprehension", "description": "Listen to waiter questions and choose correct answer."}
+              ],
+              "assessment": "Pass score 80% on ordering simulation to unlock next unit.",
+              "exercises": [
+                {"type": "multiple_choice", "question": "What does the waiter ask with 'Munoda chii?'", "correctAnswer": "What would you like?", "options": ["How are you?", "What would you like?", "Where are you from?", "How much is it?"], "audioText": "moo-NO-dah CHEE-ee"},
+                {"type": "translation", "question": "Translate to Shona: Thank you for the food.", "correctAnswer": "Ndatenda zvekudya.", "options": [], "audioText": ""},
+                {"type": "matching", "question": "Match phrase to function.", "correctAnswer": "Risiti-Receipt", "options": ["Risiti-Receipt", "Tapota-Please", "Mari-Money"], "audioText": ""}
+              ]
+            }
+          ]
         },
         {
           "unitNumber": 4,
