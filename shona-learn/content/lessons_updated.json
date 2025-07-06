@@ -1,0 +1,132 @@
+{
+  "levels": [
+    {
+      "levelNumber": 1,
+      "levelName": "The Foundation",
+      "cefr": "A1-A2",
+      "units": [
+        {
+          "unitNumber": 1,
+          "unitName": "Mhoro, Shamwari! (Hello, Friend!)",
+          "lessons": [
+            {
+              "lessonNumber": "1A",
+              "title": "First Greetings",
+              "goal": "Politely greet an adult stranger and respond to \"How are you?\"",
+              "vocabulary": ["mhoro", "mhoroi", "makadii?", "ndiripo", "zvanzi?"],
+              "grammarFocus": "Singular vs plural of respect (-i suffix)",
+              "cultureNotes": [
+                "Importance of first greetings and response etiquette in Shona culture",
+                "Accompanying clapping when greeting elders"
+              ],
+              "activities": [
+                {
+                  "step": "Warm-up",
+                  "description": "Mimic-the-audio chant: Learners repeat recorded greetings after native speaker."
+                },
+                {
+                  "step": "Main Task",
+                  "description": "Dialogue scramble – arrange shuffled greeting phrases in correct order."
+                },
+                {
+                  "step": "Role-Play",
+                  "description": "Pair practice: introduce yourself to a virtual character using proper greeting formality."
+                }
+              ],
+              "assessment": "Learner records a 30-second self-introduction. Automatic speech evaluation checks for correct greeting form and pronunciation.",
+              "exercises": [
+                {
+                  "type": "multiple_choice",
+                  "question": "What does 'Mhoro' mean?",
+                  "correctAnswer": "Hello (informal)",
+                  "options": ["Good morning", "Hello (informal)", "Thank you", "Good evening"],
+                  "audioText": "mho-ro"
+                },
+                {
+                  "type": "multiple_choice",
+                  "question": "Which greeting is appropriate for addressing an elder?",
+                  "correctAnswer": "Mhoroi",
+                  "options": ["Mhoro", "Mhoroi", "Wakadii", "Sarai zvakanaka"],
+                  "audioText": "mho-ro-ee"
+                },
+                {
+                  "type": "translation",
+                  "question": "Translate to English: Makadii?",
+                  "correctAnswer": "How are you?",
+                  "options": [],
+                  "audioText": "ma-ka-dee"
+                }
+              ]
+            },
+            {
+              "lessonNumber": "1B",
+              "title": "Introducing Yourself",
+              "goal": "State your name and where you are from.",
+              "vocabulary": [],
+              "grammarFocus": "Subject prefixes –ndi (I)",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "1C",
+              "title": "Farewells & Small Talk",
+              "goal": "End a conversation politely.",
+              "vocabulary": [],
+              "grammarFocus": "",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "",
+              "exercises": []
+            },
+            {
+              "lessonNumber": "1D",
+              "title": "Checkpoint Challenge: Café Line-up",
+              "goal": "Review greetings in a simulated scenario.",
+              "vocabulary": [],
+              "grammarFocus": "",
+              "cultureNotes": [],
+              "activities": [],
+              "assessment": "",
+              "exercises": []
+            }
+          ]
+        },
+        {
+          "unitNumber": 2,
+          "unitName": "Mhuri Yangu (My Family)",
+          "lessons": []
+        },
+        {
+          "unitNumber": 3,
+          "unitName": "Zvekudya (Food)",
+          "lessons": []
+        },
+        {
+          "unitNumber": 4,
+          "unitName": "Ndiri Kupi? (Where Am I?)",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "levelNumber": 2,
+      "levelName": "The Explorer",
+      "cefr": "B1",
+      "units": []
+    },
+    {
+      "levelNumber": 3,
+      "levelName": "The Communicator",
+      "cefr": "B2",
+      "units": []
+    },
+    {
+      "levelNumber": 4,
+      "levelName": "The Orator",
+      "cefr": "C1",
+      "units": []
+    }
+  ]
+}

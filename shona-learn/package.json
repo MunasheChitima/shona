@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "seed": "tsx prisma/seed.ts",
+    "seed:lessons": "node scripts/seed-all-content.js",
     "test": "jest",
     "test:e2e": "jest __tests__/e2e.test.ts"
   },
