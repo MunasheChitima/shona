@@ -1,0 +1,3628 @@
+{
+  "flashcards": [
+    {
+      "id": "shona-001",
+      "shonaText": "mhoro",
+      "englishText": "hello (informal)",
+      "pronunciation": "m̄hō-rō (m as in 'hmm', rolled r)",
+      "phonetic": "/m̥oɾo/",
+      "tonePattern": "H-L",
+      "audioGuide": "Start with breathy 'm' sound, high tone on 'mho', drop to low on 'ro'",
+      "category": "Greetings",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Mhoro embodies Ubuntu - the Shona philosophy of interconnectedness. Used between peers, it acknowledges shared humanity. Never use with elders as it shows disrespect. In urban areas, younger generations may use it more freely, but traditional contexts demand careful attention to age and status.",
+      "usageNotes": "Morning: combine with 'mangwanani'. With friends only. Add 'shamwari' (friend) for warmth. Body language matters - slight bow shows respect even in informal greetings.",
+      "etymology": "From proto-Bantu greeting roots, related to acknowledgment of presence",
+      "examples": [
+        {
+          "id": "ex-001-1",
+          "shona": "Mhoro shamwari wangu!",
+          "english": "Hello my friend!",
+          "context": "Meeting a close friend",
+          "culturalNote": "Adding 'wangu' (my) shows affection"
+        },
+        {
+          "id": "ex-001-2",
+          "shona": "Mhoro, wanga uripi?",
+          "english": "Hello, where have you been?",
+          "context": "Greeting after absence",
+          "culturalNote": "Shows you noticed their absence - caring is important"
+        },
+        {
+          "id": "ex-001-3",
+          "shona": "Ah, mhoro wangu!",
+          "english": "Ah, hello there!",
+          "context": "Surprised but happy greeting",
+          "culturalNote": "'Ah' expresses pleasant surprise"
+        }
+      ],
+      "commonMistakes": [
+        "Using with elders - deeply offensive",
+        "Too loud - modest volume shows respect",
+        "No eye contact - brief eye contact then look down shows proper etiquette"
+      ],
+      "relatedWords": ["mhoroi", "hallo", "hesi"],
+      "tags": ["essential", "daily", "informal", "peers"]
+    },
+    {
+      "id": "shona-002",
+      "shonaText": "mhoroi",
+      "englishText": "hello (formal/respectful)",
+      "pronunciation": "m̄hō-rō-ī (final 'i' raises respect)",
+      "phonetic": "/m̥oɾoi/",
+      "tonePattern": "H-L-H",
+      "audioGuide": "Same as mhoro but add high-toned 'i' at end, slightly longer pause between syllables",
+      "category": "Greetings",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "The 'i' suffix transforms casual into respectful - a linguistic bow. Essential for elders, in-laws, strangers, and formal settings. In traditional courts (dare), using 'mhoro' instead of 'mhoroi' to a chief could result in fines. Shows you understand hunhu/ubuntu - proper cultural behavior.",
+      "usageNotes": "ALWAYS with: elders, in-laws, first meetings, formal settings, anyone deserving respect. Can add titles: 'Mhoroi sekuru' (grandfather), 'Mhoroi ambuya' (grandmother). Volume should be moderate - too loud seems aggressive, too soft seems fearful.",
+      "etymology": "Mhoro + respectful suffix '-i', common Bantu pattern for formality",
+      "examples": [
+        {
+          "id": "ex-002-1",
+          "shona": "Mhoroi ambuya, makadii?",
+          "english": "Hello grandmother, how are you?",
+          "context": "Greeting elderly woman",
+          "culturalNote": "Always follow formal greeting with wellbeing inquiry"
+        },
+        {
+          "id": "ex-002-2",
+          "shona": "Mhoroi baba vemukadzi wangu.",
+          "english": "Hello father of my wife.",
+          "context": "Greeting father-in-law",
+          "culturalNote": "In-laws require highest respect level"
+        },
+        {
+          "id": "ex-002-3",
+          "shona": "Mhoroi vana vadiki.",
+          "english": "Hello young people.",
+          "context": "Elder greeting youth group",
+          "culturalNote": "Even addressing youth, elders may use formal tone"
+        },
+        {
+          "id": "ex-002-4",
+          "shona": "Mhoroi henyu mhuri yose.",
+          "english": "Hello to all the family.",
+          "context": "Greeting entire household",
+          "culturalNote": "'Henyu' makes it plural and inclusive"
+        }
+      ],
+      "commonMistakes": [
+        "Rushing - respectful greetings need time",
+        "Standing while elder sits - kneel or bend",
+        "Extending hand first - wait for elder to initiate handshake"
+      ],
+      "relatedWords": ["mhoro", "mangwanani", "masikati", "manheru"],
+      "tags": ["essential", "formal", "respectful", "elders"]
+    },
+    {
+      "id": "shona-003",
+      "shonaText": "mangwanani",
+      "englishText": "good morning",
+      "pronunciation": "mā-ngwā-nā-nī (gentle on 'ngw' sound)",
+      "phonetic": "/maŋɡʷanani/",
+      "tonePattern": "L-L-H-L",
+      "audioGuide": "Soft 'm', 'ngw' as single sound unit, stress on 'na', final 'ni' drops",
+      "category": "Greetings",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Morning greetings acknowledge the gift of waking up - not taken for granted in traditional worldview. The response 'Mangwanani, marara sei?' (How did you sleep?) shows care for the person's wellbeing through the vulnerable night hours. Bad dreams might be discussed as they're considered significant.",
+      "usageNotes": "Use from first light until sun is clearly risen (around 10am). Earlier = more respectful. First person awake greets others as they wake. In rural areas, often shouted across homesteads to check neighbors are well.",
+      "etymology": "From 'manga' (early) + 'wanani' (good/well), literally 'the early time is good'",
+      "examples": [
+        {
+          "id": "ex-003-1",
+          "shona": "Mangwanani amai, marara sei?",
+          "english": "Good morning mother, how did you sleep?",
+          "context": "Child greeting mother",
+          "culturalNote": "Sleep inquiry shows concern for wellbeing"
+        },
+        {
+          "id": "ex-003-2",
+          "shona": "Mangwanani, tasimuka tega tega.",
+          "english": "Good morning, we have woken up well.",
+          "context": "Response indicating good health",
+          "culturalNote": "'Tega tega' emphasizes individual wellness"
+        },
+        {
+          "id": "ex-003-3",
+          "shona": "Nhai mangwanani henyu!",
+          "english": "Oh good morning everyone!",
+          "context": "Entering room with multiple people",
+          "culturalNote": "'Nhai' expresses warm surprise"
+        },
+        {
+          "id": "ex-003-4",
+          "shona": "Mangwanani nemhuri yose.",
+          "english": "Good morning to the whole family.",
+          "context": "Inclusive morning greeting",
+          "culturalNote": "Shows you acknowledge everyone present"
+        },
+        {
+          "id": "ex-003-5",
+          "shona": "Mangwanani, hope dzamuka.",
+          "english": "Good morning, hope you woke well.",
+          "context": "Casual morning greeting",
+          "culturalNote": "'Hope' is modern addition showing care"
+        }
+      ],
+      "commonMistakes": [
+        "Using after 10am - switch to 'masikati'",
+        "Not inquiring about sleep - seems uncaring",
+        "Too cheerful if someone responds they slept poorly"
+      ],
+      "relatedWords": ["marara sei", "mhoroi", "masikati", "kumuka"],
+      "tags": ["essential", "morning", "daily", "time-specific"]
+    },
+    {
+      "id": "shona-004",
+      "shonaText": "masikati",
+      "englishText": "good afternoon",
+      "pronunciation": "ma-si-ka-ti",
+      "phonetic": "/masikati/",
+      "tonePattern": "LLHL",
+      "category": "Greetings",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Afternoon greeting acknowledging the sun's position",
+      "usageNotes": "Used from around noon to evening",
+      "examples": [
+        {
+          "id": "ex-004",
+          "shona": "Masikati baba.",
+          "english": "Good afternoon father.",
+          "context": "afternoon greeting",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "good",
+        "afternoon"
+      ]
+    },
+    {
+      "id": "shona-005",
+      "shonaText": "manheru",
+      "englishText": "good evening",
+      "pronunciation": "man-he-ru",
+      "phonetic": "/manheru/",
+      "tonePattern": "LHL",
+      "category": "Greetings",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Evening greeting as darkness approaches",
+      "usageNotes": "Used from sunset onwards",
+      "examples": [
+        {
+          "id": "ex-005",
+          "shona": "Manheru mukoma.",
+          "english": "Good evening big brother.",
+          "context": "evening greeting",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "good",
+        "evening"
+      ]
+    },
+    {
+      "id": "shona-006",
+      "shonaText": "usiku hwakanaka",
+      "englishText": "good night",
+      "pronunciation": "u-si-ku hwa-ka-na-ka",
+      "phonetic": "/usiku ʰwakanaka/",
+      "tonePattern": "LLLLLHL",
+      "category": "Greetings",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Night blessing wishing peaceful sleep",
+      "usageNotes": "Said when going to bed or parting late at night",
+      "examples": [
+        {
+          "id": "ex-006",
+          "shona": "Usiku hwakanaka vana.",
+          "english": "Good night children.",
+          "context": "bedtime",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "good",
+        "night"
+      ]
+    },
+    {
+      "id": "shona-007",
+      "shonaText": "chisarai",
+      "englishText": "stay well (farewell)",
+      "pronunciation": "chi-sa-rai",
+      "phonetic": "/tʃisaraj/",
+      "tonePattern": "LHL",
+      "category": "Greetings",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Traditional farewell wishing good health",
+      "usageNotes": "Said when leaving someone who is staying",
+      "examples": [
+        {
+          "id": "ex-007",
+          "shona": "Chisarai henyu.",
+          "english": "Stay well (plural).",
+          "context": "saying goodbye",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "stay",
+        "well",
+        "(farewell)"
+      ]
+    },
+    {
+      "id": "shona-008",
+      "shonaText": "fambai zvakanaka",
+      "englishText": "go well (farewell)",
+      "pronunciation": "fam-bai zva-ka-na-ka",
+      "phonetic": "/fambaj zvakanaka/",
+      "tonePattern": "HLLLLHL",
+      "category": "Greetings",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Traditional farewell wishing safe journey",
+      "usageNotes": "Said to someone who is leaving",
+      "examples": [
+        {
+          "id": "ex-008",
+          "shona": "Fambai zvakanaka shamwari.",
+          "english": "Go well friend.",
+          "context": "saying goodbye",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "go",
+        "well",
+        "(farewell)"
+      ]
+    },
+    {
+      "id": "shona-009",
+      "shonaText": "tatenda",
+      "englishText": "thank you",
+      "pronunciation": "ta-ten-da",
+      "phonetic": "/tatenda/",
+      "tonePattern": "LHL",
+      "category": "Greetings",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Expression of gratitude central to Shona politeness",
+      "usageNotes": "Used to express thanks for any favor or kindness",
+      "examples": [
+        {
+          "id": "ex-009",
+          "shona": "Tatenda zvikuru.",
+          "english": "Thank you very much.",
+          "context": "expressing gratitude",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "thank",
+        "you"
+      ]
+    },
+    {
+      "id": "shona-010",
+      "shonaText": "pamusoroi",
+      "englishText": "excuse me/sorry",
+      "pronunciation": "pa-mu-so-roi",
+      "phonetic": "/pamusoroj/",
+      "tonePattern": "LLHL",
+      "category": "Greetings",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Polite way to apologize or get attention",
+      "usageNotes": "Used when apologizing or asking to pass by",
+      "examples": [
+        {
+          "id": "ex-010",
+          "shona": "Pamusoroi, ndinoda kupfuura.",
+          "english": "Excuse me, I want to pass.",
+          "context": "being polite",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "excuse",
+        "me/sorry"
+      ]
+    },
+    {
+      "id": "shona-011",
+      "shonaText": "makadii",
+      "englishText": "how are you?",
+      "pronunciation": "ma-ka-dii",
+      "phonetic": "/makadiː/",
+      "tonePattern": "LLH",
+      "category": "Greetings",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Standard way to inquire about someone's wellbeing",
+      "usageNotes": "Asked after greetings to show genuine concern",
+      "examples": [
+        {
+          "id": "ex-011",
+          "shona": "Mhoroi, makadii?",
+          "english": "Hello, how are you?",
+          "context": "checking wellbeing",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "how",
+        "are",
+        "you?"
+      ]
+    },
+    {
+      "id": "shona-012",
+      "shonaText": "ndiripo",
+      "englishText": "I am fine/here",
+      "pronunciation": "ndi-ri-po",
+      "phonetic": "/ndiripo/",
+      "tonePattern": "LHL",
+      "category": "Greetings",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Standard positive response to 'how are you'",
+      "usageNotes": "Response indicating you are well and present",
+      "examples": [
+        {
+          "id": "ex-012",
+          "shona": "Ndiripo, makadii imi?",
+          "english": "I am fine, how are you?",
+          "context": "responding to greeting",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "I",
+        "am",
+        "fine/here"
+      ]
+    },
+    {
+      "id": "shona-013",
+      "shonaText": "tiri pamwe",
+      "englishText": "we are together",
+      "pronunciation": "ti-ri pam-we",
+      "phonetic": "/tiri pamwe/",
+      "tonePattern": "LLHL",
+      "category": "Greetings",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Expression of unity and solidarity",
+      "usageNotes": "Used to show support and togetherness",
+      "examples": [
+        {
+          "id": "ex-013",
+          "shona": "Tiri pamwe mukoma.",
+          "english": "We are together brother.",
+          "context": "showing support",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "we",
+        "are",
+        "together"
+      ]
+    },
+    {
+      "id": "shona-014",
+      "shonaText": "zvakanaka",
+      "englishText": "it's good/well",
+      "pronunciation": "zva-ka-na-ka",
+      "phonetic": "/zvakanaka/",
+      "tonePattern": "LLHL",
+      "category": "Greetings",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Positive affirmation used in many contexts",
+      "usageNotes": "Used to agree or say something is good",
+      "examples": [
+        {
+          "id": "ex-014",
+          "shona": "Zvakanaka chaizvo.",
+          "english": "It's very good.",
+          "context": "agreeing",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "it's",
+        "good/well"
+      ]
+    },
+    {
+      "id": "shona-015",
+      "shonaText": "kwete",
+      "englishText": "no",
+      "pronunciation": "kwe-te",
+      "phonetic": "/kwete/",
+      "tonePattern": "HL",
+      "category": "Greetings",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Polite way to refuse or disagree",
+      "usageNotes": "Used to say no or decline something",
+      "examples": [
+        {
+          "id": "ex-015",
+          "shona": "Kwete, handidi.",
+          "english": "No, I don't want.",
+          "context": "declining",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "no"
+      ]
+    },
+    {
+      "id": "shona-016",
+      "shonaText": "baba",
+      "englishText": "father",
+      "pronunciation": "ba-ba",
+      "phonetic": "/baba/",
+      "tonePattern": "HL",
+      "category": "Family",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Father is highly respected in Shona culture",
+      "usageNotes": "Used to address one's father or refer to him",
+      "examples": [
+        {
+          "id": "ex-016",
+          "shona": "Baba vangu vari kubasa.",
+          "english": "My father is at work.",
+          "context": "talking about family",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "father"
+      ]
+    },
+    {
+      "id": "shona-017",
+      "shonaText": "amai",
+      "englishText": "mother",
+      "pronunciation": "a-mai",
+      "phonetic": "/amai/",
+      "tonePattern": "HL",
+      "category": "Family",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Mother is the heart of the Shona family",
+      "usageNotes": "Used to address one's mother or refer to her",
+      "examples": [
+        {
+          "id": "ex-017",
+          "shona": "Amai vangu vanobika zvakanaka.",
+          "english": "My mother cooks well.",
+          "context": "praising mother",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "mother"
+      ]
+    },
+    {
+      "id": "shona-018",
+      "shonaText": "mwana",
+      "englishText": "child",
+      "pronunciation": "mwa-na",
+      "phonetic": "/mwana/",
+      "tonePattern": "HL",
+      "category": "Family",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Children are treasured in Shona culture",
+      "usageNotes": "Used to refer to any child",
+      "examples": [
+        {
+          "id": "ex-018",
+          "shona": "Mwana mudiki.",
+          "english": "Small child.",
+          "context": "describing child",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "child"
+      ]
+    },
+    {
+      "id": "shona-019",
+      "shonaText": "mukoma",
+      "englishText": "older brother",
+      "pronunciation": "mu-ko-ma",
+      "phonetic": "/mukoma/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Older siblings are respected in Shona culture",
+      "usageNotes": "Used to address or refer to older brother",
+      "examples": [
+        {
+          "id": "ex-019",
+          "shona": "Mukoma wangu ari kubasa.",
+          "english": "My older brother is at work.",
+          "context": "talking about family",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "older",
+        "brother"
+      ]
+    },
+    {
+      "id": "shona-020",
+      "shonaText": "hanzvadzi",
+      "englishText": "sister",
+      "pronunciation": "han-zva-dzi",
+      "phonetic": "/hanzvadzi/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Sisters have special bonds in Shona families",
+      "usageNotes": "Used to address or refer to sister",
+      "examples": [
+        {
+          "id": "ex-020",
+          "shona": "Hanzvadzi yangu inofara.",
+          "english": "My sister is happy.",
+          "context": "describing sister",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "sister"
+      ]
+    },
+    {
+      "id": "shona-021",
+      "shonaText": "sekuru",
+      "englishText": "grandfather",
+      "pronunciation": "se-ku-ru",
+      "phonetic": "/sekuru/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Grandfathers are revered as family wisdom keepers",
+      "usageNotes": "Term of great respect for grandfather",
+      "examples": [
+        {
+          "id": "ex-021",
+          "shona": "Sekuru vangu vanodzidzisa.",
+          "english": "My grandfather teaches.",
+          "context": "honoring grandfather",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "grandfather"
+      ]
+    },
+    {
+      "id": "shona-022",
+      "shonaText": "ambuya",
+      "englishText": "grandmother",
+      "pronunciation": "am-bu-ya",
+      "phonetic": "/ambuya/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Grandmothers are cherished family matriarchs",
+      "usageNotes": "Term of great respect for grandmother",
+      "examples": [
+        {
+          "id": "ex-022",
+          "shona": "Ambuya vangu vanondida.",
+          "english": "My grandmother loves me.",
+          "context": "showing affection",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "grandmother"
+      ]
+    },
+    {
+      "id": "shona-023",
+      "shonaText": "mudzimai",
+      "englishText": "wife",
+      "pronunciation": "mu-dzi-mai",
+      "phonetic": "/mudzimai/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Wife holds important position in Shona family structure",
+      "usageNotes": "Respectful term for married woman",
+      "examples": [
+        {
+          "id": "ex-023",
+          "shona": "Mudzimai wangu anobika.",
+          "english": "My wife cooks.",
+          "context": "talking about spouse",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "wife"
+      ]
+    },
+    {
+      "id": "shona-024",
+      "shonaText": "murume",
+      "englishText": "husband",
+      "pronunciation": "mu-ru-me",
+      "phonetic": "/murume/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Husband traditionally heads the household",
+      "usageNotes": "Respectful term for married man",
+      "examples": [
+        {
+          "id": "ex-024",
+          "shona": "Murume wangu ari kubasa.",
+          "english": "My husband is at work.",
+          "context": "talking about spouse",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "husband"
+      ]
+    },
+    {
+      "id": "shona-025",
+      "shonaText": "sahwira",
+      "englishText": "best friend",
+      "pronunciation": "sa-hwi-ra",
+      "phonetic": "/sahwira/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Sacred friendship bond in Shona culture",
+      "usageNotes": "Very close friendship, almost like family",
+      "examples": [
+        {
+          "id": "ex-025",
+          "shona": "Sahwira wangu akauya.",
+          "english": "My best friend came.",
+          "context": "close friendship",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "best",
+        "friend"
+      ]
+    },
+    {
+      "id": "shona-026",
+      "shonaText": "shamwari",
+      "englishText": "friend",
+      "pronunciation": "sham-wa-ri",
+      "phonetic": "/ʃamwari/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Friendship is highly valued in Shona society",
+      "usageNotes": "Common term for friend",
+      "examples": [
+        {
+          "id": "ex-026",
+          "shona": "Shamwari yangu yakanaka.",
+          "english": "My friend is good.",
+          "context": "describing friend",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "friend"
+      ]
+    },
+    {
+      "id": "shona-027",
+      "shonaText": "mudiwa",
+      "englishText": "loved one/darling",
+      "pronunciation": "mu-di-wa",
+      "phonetic": "/mudiwa/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 2.0,
+      "level": "A2",
+      "culturalNotes": "Term of endearment for loved ones",
+      "usageNotes": "Used for romantic partners or dear friends",
+      "examples": [
+        {
+          "id": "ex-027",
+          "shona": "Mudiwa wangu, uya kuno.",
+          "english": "My darling, come here.",
+          "context": "expressing love",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "loved",
+        "one/darling"
+      ]
+    },
+    {
+      "id": "shona-028",
+      "shonaText": "muzukuru",
+      "englishText": "grandchild",
+      "pronunciation": "mu-zu-ku-ru",
+      "phonetic": "/muzukuru/",
+      "tonePattern": "LLHL",
+      "category": "Family",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Grandchildren bring great joy to Shona families",
+      "usageNotes": "Term for grandchild, gender neutral",
+      "examples": [
+        {
+          "id": "ex-028",
+          "shona": "Muzukuru wangu mudiki.",
+          "english": "My grandchild is small.",
+          "context": "family generation",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "grandchild"
+      ]
+    },
+    {
+      "id": "shona-029",
+      "shonaText": "babamukuru",
+      "englishText": "father's older brother",
+      "pronunciation": "ba-ba-mu-ku-ru",
+      "phonetic": "/babamukuru/",
+      "tonePattern": "HLLHL",
+      "category": "Family",
+      "difficulty": 4.0,
+      "level": "B1",
+      "culturalNotes": "Important uncle in traditional Shona family hierarchy",
+      "usageNotes": "Father's older brother, position of authority",
+      "examples": [
+        {
+          "id": "ex-029",
+          "shona": "Babamukuru vari kuuya.",
+          "english": "Uncle (father's older brother) is coming.",
+          "context": "extended family",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "father's",
+        "older",
+        "brother"
+      ]
+    },
+    {
+      "id": "shona-030",
+      "shonaText": "mainini",
+      "englishText": "mother's younger sister",
+      "pronunciation": "mai-ni-ni",
+      "phonetic": "/majnini/",
+      "tonePattern": "HLL",
+      "category": "Family",
+      "difficulty": 3.5,
+      "level": "B1",
+      "culturalNotes": "Close aunt relationship in Shona families",
+      "usageNotes": "Mother's younger sister, often like second mother",
+      "examples": [
+        {
+          "id": "ex-030",
+          "shona": "Mainini vangu vanondida.",
+          "english": "My aunt (mother's younger sister) loves me.",
+          "context": "extended family",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "mother's",
+        "younger",
+        "sister"
+      ]
+    },
+    {
+      "id": "shona-031",
+      "shonaText": "tezvara",
+      "englishText": "father-in-law",
+      "pronunciation": "te-zva-ra",
+      "phonetic": "/tezvara/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 3.5,
+      "level": "B1",
+      "culturalNotes": "Important relationship requiring great respect",
+      "usageNotes": "Father of one's spouse, formal relationship",
+      "examples": [
+        {
+          "id": "ex-031",
+          "shona": "Tezvara wangu mukuru.",
+          "english": "My father-in-law is respected.",
+          "context": "in-law relationships",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "father-in-law"
+      ]
+    },
+    {
+      "id": "shona-032",
+      "shonaText": "amainini",
+      "englishText": "mother-in-law",
+      "pronunciation": "a-mai-ni-ni",
+      "phonetic": "/amajnini/",
+      "tonePattern": "LHLL",
+      "category": "Family",
+      "difficulty": 3.5,
+      "level": "B1",
+      "culturalNotes": "Mother-in-law relationship with special customs",
+      "usageNotes": "Mother of one's spouse",
+      "examples": [
+        {
+          "id": "ex-032",
+          "shona": "Amainini vangu vakanaka.",
+          "english": "My mother-in-law is good.",
+          "context": "in-law relationships",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "mother-in-law"
+      ]
+    },
+    {
+      "id": "shona-033",
+      "shonaText": "mukuwasha",
+      "englishText": "son-in-law",
+      "pronunciation": "mu-ku-wa-sha",
+      "phonetic": "/mukuwaʃa/",
+      "tonePattern": "LLHL",
+      "category": "Family",
+      "difficulty": 3.5,
+      "level": "B1",
+      "culturalNotes": "Important family member through marriage",
+      "usageNotes": "Daughter's husband",
+      "examples": [
+        {
+          "id": "ex-033",
+          "shona": "Mukuwasha wangu anoshanda.",
+          "english": "My son-in-law works.",
+          "context": "family through marriage",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "son-in-law"
+      ]
+    },
+    {
+      "id": "shona-034",
+      "shonaText": "muroora",
+      "englishText": "daughter-in-law",
+      "pronunciation": "mu-roo-ra",
+      "phonetic": "/muroːra/",
+      "tonePattern": "LHL",
+      "category": "Family",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Daughter-in-law joins husband's family",
+      "usageNotes": "Son's wife, becomes part of husband's family",
+      "examples": [
+        {
+          "id": "ex-034",
+          "shona": "Muroora wangu anobika zvakanaka.",
+          "english": "My daughter-in-law cooks well.",
+          "context": "family through marriage",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "daughter-in-law"
+      ]
+    },
+    {
+      "id": "shona-035",
+      "shonaText": "mwana wembadzi",
+      "englishText": "nephew/niece",
+      "pronunciation": "mwa-na wem-ba-dzi",
+      "phonetic": "/mwana wembadzi/",
+      "tonePattern": "HLLHL",
+      "category": "Family",
+      "difficulty": 4.0,
+      "level": "B1",
+      "culturalNotes": "Sister's children have special place in family",
+      "usageNotes": "Sister's child, important family relationship",
+      "examples": [
+        {
+          "id": "ex-035",
+          "shona": "Mwana wembadzi wangu anofara.",
+          "english": "My nephew/niece is happy.",
+          "context": "extended family",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "nephew/niece"
+      ]
+    },
+    {
+      "id": "shona-036",
+      "shonaText": "motsi",
+      "englishText": "one",
+      "pronunciation": "mo-tsi",
+      "phonetic": "/motsi/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Basic counting is essential for daily life",
+      "usageNotes": "Used for counting and quantities",
+      "examples": [
+        {
+          "id": "ex-036",
+          "shona": "Ndine motsi chete.",
+          "english": "I have only one.",
+          "context": "counting items",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "one"
+      ]
+    },
+    {
+      "id": "shona-037",
+      "shonaText": "piri",
+      "englishText": "two",
+      "pronunciation": "pi-ri",
+      "phonetic": "/piri/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Two is important in Shona - pairs and duality",
+      "usageNotes": "Used for counting and expressing pairs",
+      "examples": [
+        {
+          "id": "ex-037",
+          "shona": "Ndine vana vaviri.",
+          "english": "I have two children.",
+          "context": "family size",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "two"
+      ]
+    },
+    {
+      "id": "shona-038",
+      "shonaText": "tatu",
+      "englishText": "three",
+      "pronunciation": "ta-tu",
+      "phonetic": "/tatu/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Three is considered a complete number in many contexts",
+      "usageNotes": "Used for counting and quantities",
+      "examples": [
+        {
+          "id": "ex-038",
+          "shona": "Ndinoda matatu.",
+          "english": "I want three.",
+          "context": "requesting quantity",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "three"
+      ]
+    },
+    {
+      "id": "shona-039",
+      "shonaText": "ina",
+      "englishText": "four",
+      "pronunciation": "i-na",
+      "phonetic": "/ina/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Four represents stability and completeness",
+      "usageNotes": "Used for counting",
+      "examples": [
+        {
+          "id": "ex-039",
+          "shona": "Tine mwedzi mina.",
+          "english": "We have four months.",
+          "context": "time periods",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "four"
+      ]
+    },
+    {
+      "id": "shona-040",
+      "shonaText": "shanu",
+      "englishText": "five",
+      "pronunciation": "sha-nu",
+      "phonetic": "/ʃanu/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Five represents a hand - important in counting",
+      "usageNotes": "Used for counting, often with hand gestures",
+      "examples": [
+        {
+          "id": "ex-040",
+          "shona": "Ndakawana mashanu.",
+          "english": "I got five.",
+          "context": "counting money",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "five"
+      ]
+    },
+    {
+      "id": "shona-041",
+      "shonaText": "tanhatu",
+      "englishText": "six",
+      "pronunciation": "tan-ha-tu",
+      "phonetic": "/tanhatu/",
+      "tonePattern": "LHL",
+      "category": "Numbers",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Numbers above five use different patterns",
+      "usageNotes": "Used for counting larger quantities",
+      "examples": [
+        {
+          "id": "ex-041",
+          "shona": "Dziva tanhatu.",
+          "english": "Six eggs.",
+          "context": "shopping",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "six"
+      ]
+    },
+    {
+      "id": "shona-042",
+      "shonaText": "nomwe",
+      "englishText": "seven",
+      "pronunciation": "nom-we",
+      "phonetic": "/nomwe/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Seven often appears in traditional stories",
+      "usageNotes": "Used for counting",
+      "examples": [
+        {
+          "id": "ex-042",
+          "shona": "Mazuva nomwe.",
+          "english": "Seven days.",
+          "context": "time reference",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "seven"
+      ]
+    },
+    {
+      "id": "shona-043",
+      "shonaText": "sere",
+      "englishText": "eight",
+      "pronunciation": "se-re",
+      "phonetic": "/sere/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Eight is considered a lucky number",
+      "usageNotes": "Used for counting",
+      "examples": [
+        {
+          "id": "ex-043",
+          "shona": "Masere pamwedzi.",
+          "english": "Eight per month.",
+          "context": "scheduling",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "eight"
+      ]
+    },
+    {
+      "id": "shona-044",
+      "shonaText": "pfumbamwe",
+      "englishText": "nine",
+      "pronunciation": "pfum-bam-we",
+      "phonetic": "/pfumbamwe/",
+      "tonePattern": "LHL",
+      "category": "Numbers",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Nine is close to completion (ten)",
+      "usageNotes": "Used for counting",
+      "examples": [
+        {
+          "id": "ex-044",
+          "shona": "Pfumbamwe chete.",
+          "english": "Only nine.",
+          "context": "almost complete",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "nine"
+      ]
+    },
+    {
+      "id": "shona-045",
+      "shonaText": "gumi",
+      "englishText": "ten",
+      "pronunciation": "gu-mi",
+      "phonetic": "/ɡumi/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Ten represents completion and wholeness",
+      "usageNotes": "Base number for larger counting",
+      "examples": [
+        {
+          "id": "ex-045",
+          "shona": "Gumi rinopera.",
+          "english": "Ten is complete.",
+          "context": "finishing counting",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "ten"
+      ]
+    },
+    {
+      "id": "shona-046",
+      "shonaText": "zuva",
+      "englishText": "day/sun",
+      "pronunciation": "zu-va",
+      "phonetic": "/zuva/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Sun is central to Shona timekeeping and culture",
+      "usageNotes": "Used for day or sun",
+      "examples": [
+        {
+          "id": "ex-046",
+          "shona": "Zuva riri kushaina.",
+          "english": "The sun is shining.",
+          "context": "weather/time",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "day/sun"
+      ]
+    },
+    {
+      "id": "shona-047",
+      "shonaText": "svondo",
+      "englishText": "week",
+      "pronunciation": "svon-do",
+      "phonetic": "/svondo/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Traditional week cycle important for planning",
+      "usageNotes": "Used for week periods",
+      "examples": [
+        {
+          "id": "ex-047",
+          "shona": "Svondo rino.",
+          "english": "This week.",
+          "context": "time planning",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "week"
+      ]
+    },
+    {
+      "id": "shona-048",
+      "shonaText": "mwedzi",
+      "englishText": "month/moon",
+      "pronunciation": "mwe-dzi",
+      "phonetic": "/mwedzi/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Moon cycles traditionally marked months",
+      "usageNotes": "Used for month or moon",
+      "examples": [
+        {
+          "id": "ex-048",
+          "shona": "Mwedzi uno.",
+          "english": "This month.",
+          "context": "calendar time",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "month/moon"
+      ]
+    },
+    {
+      "id": "shona-049",
+      "shonaText": "gore",
+      "englishText": "year",
+      "pronunciation": "go-re",
+      "phonetic": "/ɡore/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Year cycle important for agricultural planning",
+      "usageNotes": "Used for yearly periods",
+      "examples": [
+        {
+          "id": "ex-049",
+          "shona": "Gore rino.",
+          "english": "This year.",
+          "context": "annual planning",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "year"
+      ]
+    },
+    {
+      "id": "shona-050",
+      "shonaText": "nguva",
+      "englishText": "time",
+      "pronunciation": "ngu-va",
+      "phonetic": "/ŋɡuva/",
+      "tonePattern": "HL",
+      "category": "Numbers",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Time is viewed differently in Shona culture - more flexible",
+      "usageNotes": "General term for time",
+      "examples": [
+        {
+          "id": "ex-050",
+          "shona": "Nguva yakasvika.",
+          "english": "The time has come.",
+          "context": "timing",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "time"
+      ]
+    },
+    {
+      "id": "shona-051",
+      "shonaText": "sadza",
+      "englishText": "thick porridge (staple food)",
+      "pronunciation": "sa-dza",
+      "phonetic": "/sadza/",
+      "tonePattern": "HL",
+      "category": "Food",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Sadza is the staple food of Zimbabwe, central to every meal",
+      "usageNotes": "The most important food in Shona culture",
+      "examples": [
+        {
+          "id": "ex-051",
+          "shona": "Ndinoda sadza nemurivo.",
+          "english": "I want sadza with vegetables.",
+          "context": "ordering food",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "thick",
+        "porridge",
+        "(staple"
+      ]
+    },
+    {
+      "id": "shona-052",
+      "shonaText": "nyama",
+      "englishText": "meat",
+      "pronunciation": "nya-ma",
+      "phonetic": "/ɲama/",
+      "tonePattern": "HL",
+      "category": "Food",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Meat is prized and often reserved for special occasions",
+      "usageNotes": "General term for any meat",
+      "examples": [
+        {
+          "id": "ex-052",
+          "shona": "Nyama yakabikwa zvakanaka.",
+          "english": "The meat is cooked well.",
+          "context": "meal appreciation",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "meat"
+      ]
+    },
+    {
+      "id": "shona-053",
+      "shonaText": "murivo",
+      "englishText": "vegetables",
+      "pronunciation": "mu-ri-vo",
+      "phonetic": "/murivo/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Vegetables are essential part of healthy Shona diet",
+      "usageNotes": "Collective term for vegetables",
+      "examples": [
+        {
+          "id": "ex-053",
+          "shona": "Murivo wakafamba.",
+          "english": "The vegetables are finished.",
+          "context": "meal planning",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "vegetables"
+      ]
+    },
+    {
+      "id": "shona-054",
+      "shonaText": "dovi",
+      "englishText": "peanut butter stew",
+      "pronunciation": "do-vi",
+      "phonetic": "/dovi/",
+      "tonePattern": "HL",
+      "category": "Food",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Traditional peanut-based dish, rich and nutritious",
+      "usageNotes": "Popular traditional dish",
+      "examples": [
+        {
+          "id": "ex-054",
+          "shona": "Dovi rakanaka.",
+          "english": "The peanut stew is good.",
+          "context": "traditional food",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "peanut",
+        "butter",
+        "stew"
+      ]
+    },
+    {
+      "id": "shona-055",
+      "shonaText": "mupunga",
+      "englishText": "rice",
+      "pronunciation": "mu-pun-ga",
+      "phonetic": "/mupuŋɡa/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Rice is increasingly popular modern food",
+      "usageNotes": "Common alternative to sadza",
+      "examples": [
+        {
+          "id": "ex-055",
+          "shona": "Mupunga wakabikwa.",
+          "english": "The rice is cooked.",
+          "context": "modern meals",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "rice"
+      ]
+    },
+    {
+      "id": "shona-056",
+      "shonaText": "mazanje",
+      "englishText": "sweet potatoes",
+      "pronunciation": "ma-zan-je",
+      "phonetic": "/mazanje/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Traditional crop, especially important during drought",
+      "usageNotes": "Nutritious root vegetable",
+      "examples": [
+        {
+          "id": "ex-056",
+          "shona": "Mazanje akasvika.",
+          "english": "The sweet potatoes are ready.",
+          "context": "harvest time",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "sweet",
+        "potatoes"
+      ]
+    },
+    {
+      "id": "shona-057",
+      "shonaText": "rukweza",
+      "englishText": "pumpkin",
+      "pronunciation": "ru-kwe-za",
+      "phonetic": "/rukweza/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Pumpkin leaves and fruit both eaten",
+      "usageNotes": "Versatile vegetable",
+      "examples": [
+        {
+          "id": "ex-057",
+          "shona": "Rukweza rwakakura.",
+          "english": "The pumpkin has grown big.",
+          "context": "garden produce",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "pumpkin"
+      ]
+    },
+    {
+      "id": "shona-058",
+      "shonaText": "manhanga",
+      "englishText": "pumpkin leaves",
+      "pronunciation": "man-han-ga",
+      "phonetic": "/manhaŋɡa/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Nutritious greens, popular vegetable",
+      "usageNotes": "Common green vegetable",
+      "examples": [
+        {
+          "id": "ex-058",
+          "shona": "Manhanga anodhura.",
+          "english": "Pumpkin leaves are expensive.",
+          "context": "market shopping",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "pumpkin",
+        "leaves"
+      ]
+    },
+    {
+      "id": "shona-059",
+      "shonaText": "mufushwa",
+      "englishText": "dried vegetables",
+      "pronunciation": "mu-fush-wa",
+      "phonetic": "/mufuʃwa/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Traditional preservation method for vegetables",
+      "usageNotes": "Preserved food for dry season",
+      "examples": [
+        {
+          "id": "ex-059",
+          "shona": "Mufushwa wavakwa.",
+          "english": "The dried vegetables are stored.",
+          "context": "food preservation",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "dried",
+        "vegetables"
+      ]
+    },
+    {
+      "id": "shona-060",
+      "shonaText": "mukaka",
+      "englishText": "milk",
+      "pronunciation": "mu-ka-ka",
+      "phonetic": "/mukaka/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Fresh milk from cows, important nutrition source",
+      "usageNotes": "Daily drink, especially for children",
+      "examples": [
+        {
+          "id": "ex-060",
+          "shona": "Mukaka wakafudza.",
+          "english": "The milk is warm.",
+          "context": "breakfast",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "milk"
+      ]
+    },
+    {
+      "id": "shona-061",
+      "shonaText": "mvura",
+      "englishText": "water",
+      "pronunciation": "mvu-ra",
+      "phonetic": "/mvura/",
+      "tonePattern": "HL",
+      "category": "Food",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Water is precious, especially during dry season",
+      "usageNotes": "Essential for life",
+      "examples": [
+        {
+          "id": "ex-061",
+          "shona": "Mvura yakanaka.",
+          "english": "The water is good.",
+          "context": "basic need",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "water"
+      ]
+    },
+    {
+      "id": "shona-062",
+      "shonaText": "doro",
+      "englishText": "beer (traditional)",
+      "pronunciation": "do-ro",
+      "phonetic": "/doro/",
+      "tonePattern": "HL",
+      "category": "Food",
+      "difficulty": 2.0,
+      "level": "A2",
+      "culturalNotes": "Traditional beer important in ceremonies",
+      "usageNotes": "Ceremonial and social drink",
+      "examples": [
+        {
+          "id": "ex-062",
+          "shona": "Doro rakabikwa.",
+          "english": "The traditional beer is brewed.",
+          "context": "cultural ceremony",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "beer",
+        "(traditional)"
+      ]
+    },
+    {
+      "id": "shona-063",
+      "shonaText": "maheu",
+      "englishText": "traditional drink",
+      "pronunciation": "ma-heu",
+      "phonetic": "/maheu/",
+      "tonePattern": "HL",
+      "category": "Food",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Fermented drink, nutritious and refreshing",
+      "usageNotes": "Popular non-alcoholic drink",
+      "examples": [
+        {
+          "id": "ex-063",
+          "shona": "Maheu akanaka.",
+          "english": "The maheu is good.",
+          "context": "traditional beverage",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "traditional",
+        "drink"
+      ]
+    },
+    {
+      "id": "shona-064",
+      "shonaText": "chikafu",
+      "englishText": "food",
+      "pronunciation": "chi-ka-fu",
+      "phonetic": "/tʃikafu/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "General term for food, sharing is important",
+      "usageNotes": "General word for food",
+      "examples": [
+        {
+          "id": "ex-064",
+          "shona": "Chikafu chakakwana.",
+          "english": "The food is enough.",
+          "context": "meal sharing",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "food"
+      ]
+    },
+    {
+      "id": "shona-065",
+      "shonaText": "mudumbu",
+      "englishText": "stomach",
+      "pronunciation": "mu-dum-bu",
+      "phonetic": "/mudumbu/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Reference to hunger and satisfaction",
+      "usageNotes": "Body part, also hunger reference",
+      "examples": [
+        {
+          "id": "ex-065",
+          "shona": "Mudumbu wangu wazara.",
+          "english": "My stomach is full.",
+          "context": "after eating",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "stomach"
+      ]
+    },
+    {
+      "id": "shona-066",
+      "shonaText": "nzara",
+      "englishText": "hunger",
+      "pronunciation": "nza-ra",
+      "phonetic": "/nzara/",
+      "tonePattern": "HL",
+      "category": "Food",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Hunger is serious concern, sharing food is valued",
+      "usageNotes": "Feeling of hunger",
+      "examples": [
+        {
+          "id": "ex-066",
+          "shona": "Ndine nzara.",
+          "english": "I am hungry.",
+          "context": "before eating",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "hunger"
+      ]
+    },
+    {
+      "id": "shona-067",
+      "shonaText": "kukwasha",
+      "englishText": "to be satisfied (with food)",
+      "pronunciation": "ku-kwa-sha",
+      "phonetic": "/kukwaʃa/",
+      "tonePattern": "LHL",
+      "category": "Food",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Being satisfied with food is blessing",
+      "usageNotes": "Feeling full after eating",
+      "examples": [
+        {
+          "id": "ex-067",
+          "shona": "Ndakwasha nesadza.",
+          "english": "I am satisfied with sadza.",
+          "context": "after good meal",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "to",
+        "be",
+        "satisfied"
+      ]
+    },
+    {
+      "id": "shona-068",
+      "shonaText": "basa",
+      "englishText": "work/job",
+      "pronunciation": "ba-sa",
+      "phonetic": "/basa/",
+      "tonePattern": "HL",
+      "category": "Food",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Work is highly valued in Shona culture",
+      "usageNotes": "General term for work or job",
+      "examples": [
+        {
+          "id": "ex-068",
+          "shona": "Ndinoenda kubasa.",
+          "english": "I am going to work.",
+          "context": "daily routine",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "work/job"
+      ]
+    },
+    {
+      "id": "shona-069",
+      "shonaText": "tsvuku",
+      "englishText": "red",
+      "pronunciation": "tsvu-ku",
+      "phonetic": "/tsvuku/",
+      "tonePattern": "HL",
+      "category": "Colors",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Red is significant in Shona culture and ceremonies",
+      "usageNotes": "Used to describe objects and clothing",
+      "examples": [
+        {
+          "id": "ex-069",
+          "shona": "Tomato tsvuku.",
+          "english": "Red tomato.",
+          "context": "describing food",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "red"
+      ]
+    },
+    {
+      "id": "shona-070",
+      "shonaText": "chena",
+      "englishText": "white",
+      "pronunciation": "che-na",
+      "phonetic": "/tʃena/",
+      "tonePattern": "HL",
+      "category": "Colors",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "White represents purity and peace in Shona culture",
+      "usageNotes": "Used to describe objects and clothing",
+      "examples": [
+        {
+          "id": "ex-070",
+          "shona": "Hembe chena.",
+          "english": "White shirt.",
+          "context": "describing clothing",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "white"
+      ]
+    },
+    {
+      "id": "shona-071",
+      "shonaText": "dema",
+      "englishText": "black",
+      "pronunciation": "de-ma",
+      "phonetic": "/dema/",
+      "tonePattern": "HL",
+      "category": "Colors",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Black has various meanings in Shona culture",
+      "usageNotes": "Used to describe dark colors",
+      "examples": [
+        {
+          "id": "ex-071",
+          "shona": "Mombe dema.",
+          "english": "Black cow.",
+          "context": "describing animals",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "black"
+      ]
+    },
+    {
+      "id": "shona-072",
+      "shonaText": "girini",
+      "englishText": "green",
+      "pronunciation": "gi-ri-ni",
+      "phonetic": "/ɡirini/",
+      "tonePattern": "LHL",
+      "category": "Colors",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Green represents nature and growth",
+      "usageNotes": "Color of plants and nature",
+      "examples": [
+        {
+          "id": "ex-072",
+          "shona": "Miti girini.",
+          "english": "Green trees.",
+          "context": "describing nature",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "green"
+      ]
+    },
+    {
+      "id": "shona-073",
+      "shonaText": "bhuruu",
+      "englishText": "blue",
+      "pronunciation": "bhu-ruu",
+      "phonetic": "/bʰuruː/",
+      "tonePattern": "HL",
+      "category": "Colors",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Blue like the sky and water",
+      "usageNotes": "Color description",
+      "examples": [
+        {
+          "id": "ex-073",
+          "shona": "Denga ribhuruu.",
+          "english": "Blue sky.",
+          "context": "describing weather",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "blue"
+      ]
+    },
+    {
+      "id": "shona-074",
+      "shonaText": "yero",
+      "englishText": "yellow",
+      "pronunciation": "ye-ro",
+      "phonetic": "/jero/",
+      "tonePattern": "HL",
+      "category": "Colors",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Yellow like the sun and maize",
+      "usageNotes": "Bright color description",
+      "examples": [
+        {
+          "id": "ex-074",
+          "shona": "Zuva riyero.",
+          "english": "Yellow sun.",
+          "context": "bright colors",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "yellow"
+      ]
+    },
+    {
+      "id": "shona-075",
+      "shonaText": "pinki",
+      "englishText": "pink",
+      "pronunciation": "pin-ki",
+      "phonetic": "/pinki/",
+      "tonePattern": "HL",
+      "category": "Colors",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Modern color name from English",
+      "usageNotes": "Light red color",
+      "examples": [
+        {
+          "id": "ex-075",
+          "shona": "Ruva ripinki.",
+          "english": "Pink flower.",
+          "context": "describing flowers",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "pink"
+      ]
+    },
+    {
+      "id": "shona-076",
+      "shonaText": "oranji",
+      "englishText": "orange",
+      "pronunciation": "o-ran-ji",
+      "phonetic": "/oranji/",
+      "tonePattern": "LHL",
+      "category": "Colors",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Color of sunset and fire",
+      "usageNotes": "Warm color description",
+      "examples": [
+        {
+          "id": "ex-076",
+          "shona": "Moto wakaratidza oranji.",
+          "english": "The fire showed orange.",
+          "context": "describing fire",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "orange"
+      ]
+    },
+    {
+      "id": "shona-077",
+      "shonaText": "chipururu",
+      "englishText": "purple",
+      "pronunciation": "chi-pu-ru-ru",
+      "phonetic": "/tʃipururu/",
+      "tonePattern": "LLHL",
+      "category": "Colors",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Color associated with royalty",
+      "usageNotes": "Deep color description",
+      "examples": [
+        {
+          "id": "ex-077",
+          "shona": "Chipururu chakafadza.",
+          "english": "Purple is beautiful.",
+          "context": "describing beauty",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "purple"
+      ]
+    },
+    {
+      "id": "shona-078",
+      "shonaText": "gure",
+      "englishText": "gray",
+      "pronunciation": "gu-re",
+      "phonetic": "/ɡure/",
+      "tonePattern": "HL",
+      "category": "Colors",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Color of clouds and stones",
+      "usageNotes": "Neutral color",
+      "examples": [
+        {
+          "id": "ex-078",
+          "shona": "Matombo gure.",
+          "english": "Gray stones.",
+          "context": "describing objects",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "gray"
+      ]
+    },
+    {
+      "id": "shona-079",
+      "shonaText": "mhuka",
+      "englishText": "animal",
+      "pronunciation": "mhu-ka",
+      "phonetic": "/mʰuka/",
+      "tonePattern": "HL",
+      "category": "Animals",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Animals are important in Shona culture and tradition",
+      "usageNotes": "General term for any animal",
+      "examples": [
+        {
+          "id": "ex-079",
+          "shona": "Mhuka dziri musango.",
+          "english": "Animals are in the forest.",
+          "context": "wildlife",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "animal"
+      ]
+    },
+    {
+      "id": "shona-080",
+      "shonaText": "mombe",
+      "englishText": "cow/cattle",
+      "pronunciation": "mom-be",
+      "phonetic": "/mombe/",
+      "tonePattern": "HL",
+      "category": "Animals",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Cattle are wealth and status symbols in Shona culture",
+      "usageNotes": "Important livestock",
+      "examples": [
+        {
+          "id": "ex-080",
+          "shona": "Mombe yangu yakanaka.",
+          "english": "My cow is good.",
+          "context": "farming",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "cow/cattle"
+      ]
+    },
+    {
+      "id": "shona-081",
+      "shonaText": "ngombe",
+      "englishText": "bull",
+      "pronunciation": "ngom-be",
+      "phonetic": "/ŋɡombe/",
+      "tonePattern": "HL",
+      "category": "Animals",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Bulls are prized for strength and breeding",
+      "usageNotes": "Male cattle",
+      "examples": [
+        {
+          "id": "ex-081",
+          "shona": "Ngombe ine simba.",
+          "english": "The bull has strength.",
+          "context": "livestock",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "bull"
+      ]
+    },
+    {
+      "id": "shona-082",
+      "shonaText": "hwai",
+      "englishText": "goat",
+      "pronunciation": "hwai",
+      "phonetic": "/ʰwaj/",
+      "tonePattern": "H",
+      "category": "Animals",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Goats are important for meat and milk",
+      "usageNotes": "Common livestock",
+      "examples": [
+        {
+          "id": "ex-082",
+          "shona": "Hwai inodya uswa.",
+          "english": "The goat eats grass.",
+          "context": "farm animals",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "goat"
+      ]
+    },
+    {
+      "id": "shona-083",
+      "shonaText": "nguruve",
+      "englishText": "pig",
+      "pronunciation": "ngu-ru-ve",
+      "phonetic": "/ŋɡuruve/",
+      "tonePattern": "LHL",
+      "category": "Animals",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Pigs provide meat and are valuable livestock",
+      "usageNotes": "Farm animal",
+      "examples": [
+        {
+          "id": "ex-083",
+          "shona": "Nguruve yakakura.",
+          "english": "The pig is big.",
+          "context": "farming",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "pig"
+      ]
+    },
+    {
+      "id": "shona-084",
+      "shonaText": "shiri",
+      "englishText": "bird",
+      "pronunciation": "shi-ri",
+      "phonetic": "/ʃiri/",
+      "tonePattern": "HL",
+      "category": "Animals",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Birds are seen as messengers and omens",
+      "usageNotes": "Flying animals",
+      "examples": [
+        {
+          "id": "ex-084",
+          "shona": "Shiri inombira.",
+          "english": "The bird is singing.",
+          "context": "nature sounds",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "bird"
+      ]
+    },
+    {
+      "id": "shona-085",
+      "shonaText": "huku",
+      "englishText": "chicken",
+      "pronunciation": "hu-ku",
+      "phonetic": "/huku/",
+      "tonePattern": "HL",
+      "category": "Animals",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Chickens provide eggs and meat for families",
+      "usageNotes": "Common poultry",
+      "examples": [
+        {
+          "id": "ex-085",
+          "shona": "Huku dzangu dzakawanda.",
+          "english": "My chickens are many.",
+          "context": "poultry keeping",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "chicken"
+      ]
+    },
+    {
+      "id": "shona-086",
+      "shonaText": "imbwa",
+      "englishText": "dog",
+      "pronunciation": "im-bwa",
+      "phonetic": "/imbwa/",
+      "tonePattern": "HL",
+      "category": "Animals",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Dogs are guards and companions",
+      "usageNotes": "Domestic animal",
+      "examples": [
+        {
+          "id": "ex-086",
+          "shona": "Imbwa yangu yakanaka.",
+          "english": "My dog is good.",
+          "context": "pets",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "dog"
+      ]
+    },
+    {
+      "id": "shona-087",
+      "shonaText": "katsi",
+      "englishText": "cat",
+      "pronunciation": "ka-tsi",
+      "phonetic": "/katsi/",
+      "tonePattern": "HL",
+      "category": "Animals",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Cats are kept to control rodents",
+      "usageNotes": "Domestic animal",
+      "examples": [
+        {
+          "id": "ex-087",
+          "shona": "Katsi inobata makonzo.",
+          "english": "The cat catches mice.",
+          "context": "household",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "cat"
+      ]
+    },
+    {
+      "id": "shona-088",
+      "shonaText": "shumba",
+      "englishText": "lion",
+      "pronunciation": "shum-ba",
+      "phonetic": "/ʃumba/",
+      "tonePattern": "HL",
+      "category": "Animals",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Lion is powerful symbol in Shona culture",
+      "usageNotes": "Wild animal",
+      "examples": [
+        {
+          "id": "ex-088",
+          "shona": "Shumba ishe yesango.",
+          "english": "The lion is king of the forest.",
+          "context": "wildlife",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "lion"
+      ]
+    },
+    {
+      "id": "shona-089",
+      "shonaText": "nzou",
+      "englishText": "elephant",
+      "pronunciation": "nzou",
+      "phonetic": "/nzou/",
+      "tonePattern": "H",
+      "category": "Animals",
+      "difficulty": 2.0,
+      "level": "A2",
+      "culturalNotes": "Elephants are revered for wisdom and memory",
+      "usageNotes": "Large wild animal",
+      "examples": [
+        {
+          "id": "ex-089",
+          "shona": "Nzou inokura.",
+          "english": "The elephant is big.",
+          "context": "wildlife",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "elephant"
+      ]
+    },
+    {
+      "id": "shona-090",
+      "shonaText": "mbizi",
+      "englishText": "zebra",
+      "pronunciation": "mbi-zi",
+      "phonetic": "/mbizi/",
+      "tonePattern": "HL",
+      "category": "Animals",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Zebras are native African animals",
+      "usageNotes": "Wild animal",
+      "examples": [
+        {
+          "id": "ex-090",
+          "shona": "Mbizi dzemitsetse.",
+          "english": "Striped zebras.",
+          "context": "wildlife",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "zebra"
+      ]
+    },
+    {
+      "id": "shona-091",
+      "shonaText": "kombi",
+      "englishText": "minibus taxi",
+      "pronunciation": "kom-bi",
+      "phonetic": "/kombi/",
+      "tonePattern": "HL",
+      "category": "Transportation",
+      "difficulty": 2.0,
+      "level": "A2",
+      "culturalNotes": "Main form of public transport in Zimbabwe",
+      "usageNotes": "Used for city transportation",
+      "examples": [
+        {
+          "id": "ex-091",
+          "shona": "Ndinoenda kubasa nekombi.",
+          "english": "I go to work by kombi.",
+          "context": "daily commute",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "minibus",
+        "taxi"
+      ]
+    },
+    {
+      "id": "shona-092",
+      "shonaText": "motokari",
+      "englishText": "car",
+      "pronunciation": "mo-to-ka-ri",
+      "phonetic": "/motokari/",
+      "tonePattern": "LLHL",
+      "category": "Transportation",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Cars represent mobility and status",
+      "usageNotes": "Personal vehicle",
+      "examples": [
+        {
+          "id": "ex-092",
+          "shona": "Motokari yangu yakanaka.",
+          "english": "My car is good.",
+          "context": "personal transport",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "car"
+      ]
+    },
+    {
+      "id": "shona-093",
+      "shonaText": "bhazi",
+      "englishText": "bus",
+      "pronunciation": "bha-zi",
+      "phonetic": "/bʰazi/",
+      "tonePattern": "HL",
+      "category": "Transportation",
+      "difficulty": 2.0,
+      "level": "A2",
+      "culturalNotes": "Buses connect cities and towns",
+      "usageNotes": "Long distance transport",
+      "examples": [
+        {
+          "id": "ex-093",
+          "shona": "Bhazi rinoenda kuHarare.",
+          "english": "The bus goes to Harare.",
+          "context": "intercity travel",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "bus"
+      ]
+    },
+    {
+      "id": "shona-094",
+      "shonaText": "bhasikoro",
+      "englishText": "bicycle",
+      "pronunciation": "bha-si-ko-ro",
+      "phonetic": "/bʰasikoro/",
+      "tonePattern": "LLHL",
+      "category": "Transportation",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Bicycles are common rural transport",
+      "usageNotes": "Personal vehicle",
+      "examples": [
+        {
+          "id": "ex-094",
+          "shona": "Bhasikoro yangu yakavhuna.",
+          "english": "My bicycle is broken.",
+          "context": "rural transport",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "bicycle"
+      ]
+    },
+    {
+      "id": "shona-095",
+      "shonaText": "chitima",
+      "englishText": "train",
+      "pronunciation": "chi-ti-ma",
+      "phonetic": "/tʃitima/",
+      "tonePattern": "LHL",
+      "category": "Transportation",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Trains connect major cities",
+      "usageNotes": "Rail transport",
+      "examples": [
+        {
+          "id": "ex-095",
+          "shona": "Chitima chinoenda kuBulawayo.",
+          "english": "The train goes to Bulawayo.",
+          "context": "long distance",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "train"
+      ]
+    },
+    {
+      "id": "shona-096",
+      "shonaText": "ndege",
+      "englishText": "airplane",
+      "pronunciation": "nde-ge",
+      "phonetic": "/ndeɡe/",
+      "tonePattern": "HL",
+      "category": "Transportation",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Airplanes for international travel",
+      "usageNotes": "Air transport",
+      "examples": [
+        {
+          "id": "ex-096",
+          "shona": "Ndege inobhuruka.",
+          "english": "The airplane flies.",
+          "context": "air travel",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "airplane"
+      ]
+    },
+    {
+      "id": "shona-097",
+      "shonaText": "pfumo",
+      "englishText": "motorcycle",
+      "pronunciation": "pfu-mo",
+      "phonetic": "/pfumo/",
+      "tonePattern": "HL",
+      "category": "Transportation",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Motorcycles increasingly popular transport",
+      "usageNotes": "Two-wheel vehicle",
+      "examples": [
+        {
+          "id": "ex-097",
+          "shona": "Pfumo inomhanya.",
+          "english": "The motorcycle is fast.",
+          "context": "quick transport",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "motorcycle"
+      ]
+    },
+    {
+      "id": "shona-098",
+      "shonaText": "mugwagwa",
+      "englishText": "road",
+      "pronunciation": "mu-gwa-gwa",
+      "phonetic": "/muɡwaɡwa/",
+      "tonePattern": "LHL",
+      "category": "Transportation",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Roads connect communities",
+      "usageNotes": "Transport infrastructure",
+      "examples": [
+        {
+          "id": "ex-098",
+          "shona": "Mugwagwa wakanaka.",
+          "english": "The road is good.",
+          "context": "travel conditions",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "road"
+      ]
+    },
+    {
+      "id": "shona-099",
+      "shonaText": "chiteshi",
+      "englishText": "station",
+      "pronunciation": "chi-te-shi",
+      "phonetic": "/tʃiteʃi/",
+      "tonePattern": "LHL",
+      "category": "Transportation",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Stations are transport hubs",
+      "usageNotes": "Transport terminal",
+      "examples": [
+        {
+          "id": "ex-099",
+          "shona": "Chiteshi chiri kure.",
+          "english": "The station is far.",
+          "context": "travel planning",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "station"
+      ]
+    },
+    {
+      "id": "shona-100",
+      "shonaText": "rukendo",
+      "englishText": "journey/trip",
+      "pronunciation": "ru-ken-do",
+      "phonetic": "/rukendo/",
+      "tonePattern": "LHL",
+      "category": "Transportation",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Journeys connect people and places",
+      "usageNotes": "Travel experience",
+      "examples": [
+        {
+          "id": "ex-100",
+          "shona": "Rukendo rurefu.",
+          "english": "Long journey.",
+          "context": "travel planning",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "journey/trip"
+      ]
+    },
+    {
+      "id": "shona-101",
+      "shonaText": "basa",
+      "englishText": "work/job",
+      "pronunciation": "ba-sa",
+      "phonetic": "/basa/",
+      "tonePattern": "HL",
+      "category": "Work",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Work is highly valued in Shona culture",
+      "usageNotes": "General term for work or job",
+      "examples": [
+        {
+          "id": "ex-101",
+          "shona": "Ndinoenda kubasa.",
+          "english": "I am going to work.",
+          "context": "daily routine",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "work/job"
+      ]
+    },
+    {
+      "id": "shona-102",
+      "shonaText": "mudzidzisi",
+      "englishText": "teacher",
+      "pronunciation": "mu-dzi-dzi-si",
+      "phonetic": "/mudzidzisi/",
+      "tonePattern": "LLHL",
+      "category": "Work",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Teachers are highly respected in community",
+      "usageNotes": "Education profession",
+      "examples": [
+        {
+          "id": "ex-102",
+          "shona": "Mudzidzisi wangu anondifundisa.",
+          "english": "My teacher teaches me.",
+          "context": "school",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "teacher"
+      ]
+    },
+    {
+      "id": "shona-103",
+      "shonaText": "chiremba",
+      "englishText": "doctor",
+      "pronunciation": "chi-rem-ba",
+      "phonetic": "/tʃiremba/",
+      "tonePattern": "LHL",
+      "category": "Work",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Doctors heal and are respected healers",
+      "usageNotes": "Medical profession",
+      "examples": [
+        {
+          "id": "ex-103",
+          "shona": "Chiremba chinorapa.",
+          "english": "The doctor heals.",
+          "context": "healthcare",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "doctor"
+      ]
+    },
+    {
+      "id": "shona-104",
+      "shonaText": "mukoti",
+      "englishText": "lawyer",
+      "pronunciation": "mu-ko-ti",
+      "phonetic": "/mukoti/",
+      "tonePattern": "LHL",
+      "category": "Work",
+      "difficulty": 3.0,
+      "level": "B1",
+      "culturalNotes": "Lawyers handle legal matters",
+      "usageNotes": "Legal profession",
+      "examples": [
+        {
+          "id": "ex-104",
+          "shona": "Mukoti anoziva mutemo.",
+          "english": "The lawyer knows the law.",
+          "context": "legal issues",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "lawyer"
+      ]
+    },
+    {
+      "id": "shona-105",
+      "shonaText": "mutengi",
+      "englishText": "seller/vendor",
+      "pronunciation": "mu-ten-gi",
+      "phonetic": "/muteŋɡi/",
+      "tonePattern": "LHL",
+      "category": "Work",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Sellers are important in market economy",
+      "usageNotes": "Commerce profession",
+      "examples": [
+        {
+          "id": "ex-105",
+          "shona": "Mutengi anotengesa michero.",
+          "english": "The seller sells fruits.",
+          "context": "market",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "seller/vendor"
+      ]
+    },
+    {
+      "id": "shona-106",
+      "shonaText": "muoni",
+      "englishText": "nurse",
+      "pronunciation": "mu-o-ni",
+      "phonetic": "/muoni/",
+      "tonePattern": "LHL",
+      "category": "Work",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Nurses care for the sick",
+      "usageNotes": "Healthcare profession",
+      "examples": [
+        {
+          "id": "ex-106",
+          "shona": "Muoni anochengeta varwere.",
+          "english": "The nurse cares for patients.",
+          "context": "hospital",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "nurse"
+      ]
+    },
+    {
+      "id": "shona-107",
+      "shonaText": "muvaki",
+      "englishText": "builder",
+      "pronunciation": "mu-va-ki",
+      "phonetic": "/muvaki/",
+      "tonePattern": "LHL",
+      "category": "Work",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Builders create homes and structures",
+      "usageNotes": "Construction profession",
+      "examples": [
+        {
+          "id": "ex-107",
+          "shona": "Muvaki anovaka dzimba.",
+          "english": "The builder builds houses.",
+          "context": "construction",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "builder"
+      ]
+    },
+    {
+      "id": "shona-108",
+      "shonaText": "murimi",
+      "englishText": "farmer",
+      "pronunciation": "mu-ri-mi",
+      "phonetic": "/murimi/",
+      "tonePattern": "LHL",
+      "category": "Work",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Farming is backbone of Shona society",
+      "usageNotes": "Agricultural profession",
+      "examples": [
+        {
+          "id": "ex-108",
+          "shona": "Murimi anodyara chibage.",
+          "english": "The farmer plants maize.",
+          "context": "agriculture",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "farmer"
+      ]
+    },
+    {
+      "id": "shona-109",
+      "shonaText": "chikoro",
+      "englishText": "school",
+      "pronunciation": "chi-ko-ro",
+      "phonetic": "/tʃikoro/",
+      "tonePattern": "LHL",
+      "category": "Work",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Education is highly valued for progress",
+      "usageNotes": "Learning institution",
+      "examples": [
+        {
+          "id": "ex-109",
+          "shona": "Chikoro chakavhurwa.",
+          "english": "The school is open.",
+          "context": "education",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "school"
+      ]
+    },
+    {
+      "id": "shona-110",
+      "shonaText": "bhuku",
+      "englishText": "book",
+      "pronunciation": "bhu-ku",
+      "phonetic": "/bʰuku/",
+      "tonePattern": "HL",
+      "category": "Work",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Books contain knowledge and wisdom",
+      "usageNotes": "Learning material",
+      "examples": [
+        {
+          "id": "ex-110",
+          "shona": "Bhuku rangu riri pano.",
+          "english": "My book is here.",
+          "context": "studying",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "book"
+      ]
+    },
+    {
+      "id": "shona-111",
+      "shonaText": "pepa",
+      "englishText": "paper",
+      "pronunciation": "pe-pa",
+      "phonetic": "/pepa/",
+      "tonePattern": "HL",
+      "category": "Work",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Paper for writing and communication",
+      "usageNotes": "Writing material",
+      "examples": [
+        {
+          "id": "ex-111",
+          "shona": "Pepa rakachena.",
+          "english": "White paper.",
+          "context": "writing",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "paper"
+      ]
+    },
+    {
+      "id": "shona-112",
+      "shonaText": "peni",
+      "englishText": "pen",
+      "pronunciation": "pe-ni",
+      "phonetic": "/peni/",
+      "tonePattern": "HL",
+      "category": "Work",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Writing implements for education",
+      "usageNotes": "Writing tool",
+      "examples": [
+        {
+          "id": "ex-112",
+          "shona": "Peni yangu yakaperera.",
+          "english": "My pen is finished.",
+          "context": "writing",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "pen"
+      ]
+    },
+    {
+      "id": "shona-113",
+      "shonaText": "musoro",
+      "englishText": "head",
+      "pronunciation": "mu-so-ro",
+      "phonetic": "/musoro/",
+      "tonePattern": "LHL",
+      "category": "Body",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Head is seat of wisdom and thought",
+      "usageNotes": "Important body part",
+      "examples": [
+        {
+          "id": "ex-113",
+          "shona": "Musoro wangu unorwadza.",
+          "english": "My head hurts.",
+          "context": "health",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "head"
+      ]
+    },
+    {
+      "id": "shona-114",
+      "shonaText": "maziso",
+      "englishText": "eyes",
+      "pronunciation": "ma-zi-so",
+      "phonetic": "/maziso/",
+      "tonePattern": "LHL",
+      "category": "Body",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Eyes see truth and beauty",
+      "usageNotes": "Organs of sight",
+      "examples": [
+        {
+          "id": "ex-114",
+          "shona": "Maziso angu anona.",
+          "english": "My eyes are good.",
+          "context": "vision",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "eyes"
+      ]
+    },
+    {
+      "id": "shona-115",
+      "shonaText": "muromo",
+      "englishText": "mouth",
+      "pronunciation": "mu-ro-mo",
+      "phonetic": "/muromo/",
+      "tonePattern": "LHL",
+      "category": "Body",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Mouth speaks truth and eats food",
+      "usageNotes": "For speaking and eating",
+      "examples": [
+        {
+          "id": "ex-115",
+          "shona": "Muromo wangu wakaoma.",
+          "english": "My mouth is dry.",
+          "context": "thirst",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "mouth"
+      ]
+    },
+    {
+      "id": "shona-116",
+      "shonaText": "manzeve",
+      "englishText": "ears",
+      "pronunciation": "man-ze-ve",
+      "phonetic": "/manzeve/",
+      "tonePattern": "LHL",
+      "category": "Body",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Ears listen to wisdom and music",
+      "usageNotes": "Organs of hearing",
+      "examples": [
+        {
+          "id": "ex-116",
+          "shona": "Manzeve angu anonzwa.",
+          "english": "My ears hear.",
+          "context": "listening",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "ears"
+      ]
+    },
+    {
+      "id": "shona-117",
+      "shonaText": "ruoko",
+      "englishText": "hand/arm",
+      "pronunciation": "ruo-ko",
+      "phonetic": "/ruoko/",
+      "tonePattern": "HL",
+      "category": "Body",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Hands do work and show respect",
+      "usageNotes": "For working and greeting",
+      "examples": [
+        {
+          "id": "ex-117",
+          "shona": "Ruoko rwangu rwakakuvara.",
+          "english": "My hand is injured.",
+          "context": "injury",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "hand/arm"
+      ]
+    },
+    {
+      "id": "shona-118",
+      "shonaText": "gumbo",
+      "englishText": "leg/foot",
+      "pronunciation": "gum-bo",
+      "phonetic": "/ɡumbo/",
+      "tonePattern": "HL",
+      "category": "Body",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Legs carry us on our journey",
+      "usageNotes": "For walking and running",
+      "examples": [
+        {
+          "id": "ex-118",
+          "shona": "Gumbo rangu rinorwadza.",
+          "english": "My leg hurts.",
+          "context": "pain",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "leg/foot"
+      ]
+    },
+    {
+      "id": "shona-119",
+      "shonaText": "dumbu",
+      "englishText": "stomach",
+      "pronunciation": "dum-bu",
+      "phonetic": "/dumbu/",
+      "tonePattern": "HL",
+      "category": "Body",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Stomach needs food to be strong",
+      "usageNotes": "Digestive organ",
+      "examples": [
+        {
+          "id": "ex-119",
+          "shona": "Dumbu rangu rine nzara.",
+          "english": "My stomach is hungry.",
+          "context": "hunger",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "stomach"
+      ]
+    },
+    {
+      "id": "shona-120",
+      "shonaText": "moyo",
+      "englishText": "heart",
+      "pronunciation": "mo-yo",
+      "phonetic": "/mojo/",
+      "tonePattern": "HL",
+      "category": "Body",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Heart is center of emotion and life",
+      "usageNotes": "Organ of emotion",
+      "examples": [
+        {
+          "id": "ex-120",
+          "shona": "Moyo wangu wafara.",
+          "english": "My heart is happy.",
+          "context": "emotion",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "heart"
+      ]
+    },
+    {
+      "id": "shona-121",
+      "shonaText": "bvudzi",
+      "englishText": "hair",
+      "pronunciation": "bvu-dzi",
+      "phonetic": "/bvudzi/",
+      "tonePattern": "HL",
+      "category": "Body",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Hair is part of personal appearance",
+      "usageNotes": "Head covering",
+      "examples": [
+        {
+          "id": "ex-121",
+          "shona": "Bvudzi rangu rakareba.",
+          "english": "My hair is long.",
+          "context": "appearance",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "hair"
+      ]
+    },
+    {
+      "id": "shona-122",
+      "shonaText": "zino",
+      "englishText": "tooth",
+      "pronunciation": "zi-no",
+      "phonetic": "/zino/",
+      "tonePattern": "HL",
+      "category": "Body",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Teeth are important for eating and smiling",
+      "usageNotes": "For chewing",
+      "examples": [
+        {
+          "id": "ex-122",
+          "shona": "Zino rangu rinorwadza.",
+          "english": "My tooth hurts.",
+          "context": "dental pain",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "tooth"
+      ]
+    },
+    {
+      "id": "shona-123",
+      "shonaText": "zuva",
+      "englishText": "sun/day",
+      "pronunciation": "zu-va",
+      "phonetic": "/zuva/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Sun gives life and marks time",
+      "usageNotes": "Celestial body and time unit",
+      "examples": [
+        {
+          "id": "ex-123",
+          "shona": "Zuva riri kushaina.",
+          "english": "The sun is shining.",
+          "context": "weather",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "sun/day"
+      ]
+    },
+    {
+      "id": "shona-124",
+      "shonaText": "mwedzi",
+      "englishText": "moon/month",
+      "pronunciation": "mwe-dzi",
+      "phonetic": "/mwedzi/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Moon guides nights and months",
+      "usageNotes": "Celestial body and time unit",
+      "examples": [
+        {
+          "id": "ex-124",
+          "shona": "Mwedzi unopenya.",
+          "english": "The moon is bright.",
+          "context": "night",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "moon/month"
+      ]
+    },
+    {
+      "id": "shona-125",
+      "shonaText": "mvura",
+      "englishText": "water/rain",
+      "pronunciation": "mvu-ra",
+      "phonetic": "/mvura/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 1.0,
+      "level": "A1",
+      "culturalNotes": "Water is life, rain is blessing",
+      "usageNotes": "Essential liquid",
+      "examples": [
+        {
+          "id": "ex-125",
+          "shona": "Mvura iri kunaya.",
+          "english": "It is raining.",
+          "context": "weather",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "water/rain"
+      ]
+    },
+    {
+      "id": "shona-126",
+      "shonaText": "moto",
+      "englishText": "fire",
+      "pronunciation": "mo-to",
+      "phonetic": "/moto/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 1.5,
+      "level": "A1",
+      "culturalNotes": "Fire provides warmth and cooking",
+      "usageNotes": "Source of heat and light",
+      "examples": [
+        {
+          "id": "ex-126",
+          "shona": "Moto unopisa.",
+          "english": "The fire is hot.",
+          "context": "warmth",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "id": "shona-127",
+      "shonaText": "miti",
+      "englishText": "trees",
+      "pronunciation": "mi-ti",
+      "phonetic": "/miti/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Trees provide shade and wood",
+      "usageNotes": "Large plants",
+      "examples": [
+        {
+          "id": "ex-127",
+          "shona": "Miti mikuru.",
+          "english": "Big trees.",
+          "context": "forest",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "trees"
+      ]
+    },
+    {
+      "id": "shona-128",
+      "shonaText": "sango",
+      "englishText": "forest",
+      "pronunciation": "san-go",
+      "phonetic": "/saŋɡo/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Forest is home to spirits and animals",
+      "usageNotes": "Dense tree area",
+      "examples": [
+        {
+          "id": "ex-128",
+          "shona": "Sango riri kure.",
+          "english": "The forest is far.",
+          "context": "wilderness",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "forest"
+      ]
+    },
+    {
+      "id": "shona-129",
+      "shonaText": "gomo",
+      "englishText": "mountain/hill",
+      "pronunciation": "go-mo",
+      "phonetic": "/ɡomo/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Mountains are sacred places",
+      "usageNotes": "High land formation",
+      "examples": [
+        {
+          "id": "ex-129",
+          "shona": "Gomo rakakwirira.",
+          "english": "The mountain is high.",
+          "context": "landscape",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "mountain/hill"
+      ]
+    },
+    {
+      "id": "shona-130",
+      "shonaText": "rwizi",
+      "englishText": "river",
+      "pronunciation": "rwi-zi",
+      "phonetic": "/rwizi/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Rivers provide water and transport",
+      "usageNotes": "Flowing water body",
+      "examples": [
+        {
+          "id": "ex-130",
+          "shona": "Rwizi ruri kuyerera.",
+          "english": "The river is flowing.",
+          "context": "water source",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "river"
+      ]
+    },
+    {
+      "id": "shona-131",
+      "shonaText": "denga",
+      "englishText": "sky",
+      "pronunciation": "den-ga",
+      "phonetic": "/deŋɡa/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Sky is home of ancestors and spirits",
+      "usageNotes": "Space above earth",
+      "examples": [
+        {
+          "id": "ex-131",
+          "shona": "Denga ribhuruu.",
+          "english": "The sky is blue.",
+          "context": "weather",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "sky"
+      ]
+    },
+    {
+      "id": "shona-132",
+      "shonaText": "ivhu",
+      "englishText": "soil/earth",
+      "pronunciation": "i-vhu",
+      "phonetic": "/ivʰu/",
+      "tonePattern": "HL",
+      "category": "Nature",
+      "difficulty": 2.0,
+      "level": "A1",
+      "culturalNotes": "Soil feeds crops and holds ancestors",
+      "usageNotes": "Ground covering",
+      "examples": [
+        {
+          "id": "ex-132",
+          "shona": "Ivhu rakanaka.",
+          "english": "The soil is good.",
+          "context": "farming",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "soil/earth"
+      ]
+    },
+    {
+      "id": "shona-133",
+      "shonaText": "utano",
+      "englishText": "health",
+      "pronunciation": "u-ta-no",
+      "phonetic": "/utano/",
+      "tonePattern": "LHL",
+      "category": "Health",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Health is most precious gift",
+      "usageNotes": "State of wellbeing",
+      "examples": [
+        {
+          "id": "ex-133",
+          "shona": "Utano hwangu hwakanaka.",
+          "english": "My health is good.",
+          "context": "wellbeing",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "health"
+      ]
+    },
+    {
+      "id": "shona-134",
+      "shonaText": "kurwara",
+      "englishText": "to be sick",
+      "pronunciation": "ku-rwa-ra",
+      "phonetic": "/kurwara/",
+      "tonePattern": "LHL",
+      "category": "Health",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Sickness affects whole community",
+      "usageNotes": "State of illness",
+      "examples": [
+        {
+          "id": "ex-134",
+          "shona": "Ndinorwara nezasi.",
+          "english": "I am sick with flu.",
+          "context": "illness",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "to",
+        "be",
+        "sick"
+      ]
+    },
+    {
+      "id": "shona-135",
+      "shonaText": "kurapa",
+      "englishText": "to heal/cure",
+      "pronunciation": "ku-ra-pa",
+      "phonetic": "/kurapa/",
+      "tonePattern": "LHL",
+      "category": "Health",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Healing is sacred gift",
+      "usageNotes": "To make well",
+      "examples": [
+        {
+          "id": "ex-135",
+          "shona": "Chiremba chinorapa.",
+          "english": "The doctor heals.",
+          "context": "medical care",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "to",
+        "heal/cure"
+      ]
+    },
+    {
+      "id": "shona-136",
+      "shonaText": "mishonga",
+      "englishText": "medicine",
+      "pronunciation": "mi-shon-ga",
+      "phonetic": "/miʃoŋɡa/",
+      "tonePattern": "LHL",
+      "category": "Health",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Traditional and modern medicine both valued",
+      "usageNotes": "Healing substances",
+      "examples": [
+        {
+          "id": "ex-136",
+          "shona": "Mishonga inopa.",
+          "english": "The medicine helps.",
+          "context": "treatment",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "medicine"
+      ]
+    },
+    {
+      "id": "shona-137",
+      "shonaText": "kurwadziwa",
+      "englishText": "to feel pain",
+      "pronunciation": "ku-rwa-dzi-wa",
+      "phonetic": "/kurwadziwa/",
+      "tonePattern": "LLHL",
+      "category": "Health",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Pain is signal of body's needs",
+      "usageNotes": "To experience pain",
+      "examples": [
+        {
+          "id": "ex-137",
+          "shona": "Ndinorwadziwa nemusoro.",
+          "english": "I feel pain in my head.",
+          "context": "headache",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "to",
+        "feel",
+        "pain"
+      ]
+    },
+    {
+      "id": "shona-138",
+      "shonaText": "chipatara",
+      "englishText": "hospital",
+      "pronunciation": "chi-pa-ta-ra",
+      "phonetic": "/tʃipatara/",
+      "tonePattern": "LLHL",
+      "category": "Health",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Hospitals provide modern healing",
+      "usageNotes": "Medical facility",
+      "examples": [
+        {
+          "id": "ex-138",
+          "shona": "Chipatara chiri pedyo.",
+          "english": "The hospital is near.",
+          "context": "healthcare",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "hospital"
+      ]
+    },
+    {
+      "id": "shona-139",
+      "shonaText": "kurukidza",
+      "englishText": "to cough",
+      "pronunciation": "ku-ru-ki-dza",
+      "phonetic": "/kurukidza/",
+      "tonePattern": "LLHL",
+      "category": "Health",
+      "difficulty": 3.0,
+      "level": "A2",
+      "culturalNotes": "Coughing shows respiratory illness",
+      "usageNotes": "Throat/lung sound",
+      "examples": [
+        {
+          "id": "ex-139",
+          "shona": "Ndinorukidza usiku.",
+          "english": "I cough at night.",
+          "context": "illness symptoms",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "to",
+        "cough"
+      ]
+    },
+    {
+      "id": "shona-140",
+      "shonaText": "kupona",
+      "englishText": "to recover/get well",
+      "pronunciation": "ku-po-na",
+      "phonetic": "/kupona/",
+      "tonePattern": "LHL",
+      "category": "Health",
+      "difficulty": 2.5,
+      "level": "A2",
+      "culturalNotes": "Recovery brings joy to family",
+      "usageNotes": "To become healthy",
+      "examples": [
+        {
+          "id": "ex-140",
+          "shona": "Ndichapona nekukurumidza.",
+          "english": "I will recover quickly.",
+          "context": "healing",
+          "register": "neutral"
+        }
+      ],
+      "tags": [
+        "to",
+        "recover/get",
+        "well"
+      ]
+    }
+  ]
+}
