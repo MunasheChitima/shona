@@ -1,97 +1,249 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Shona Learn Android App
 
-# Getting Started
+A comprehensive Android application for learning the Shona language, featuring interactive lessons, pronunciation practice, flashcards, and gamified learning experiences.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Features
 
-## Step 1: Start Metro
+### 🎯 Core Learning Features
+- **Interactive Lessons**: Structured lessons with vocabulary, grammar, and cultural insights
+- **Pronunciation Practice**: Advanced speech recognition and feedback for Shona pronunciation
+- **Flashcards System**: Spaced repetition algorithm for effective vocabulary retention
+- **Quests & Challenges**: Gamified learning experiences with achievements and rewards
+- **Progress Tracking**: Detailed analytics of learning progress and performance
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+### 🗣️ Pronunciation & Audio
+- Text-to-speech for Shona words and phrases
+- Voice recognition for pronunciation assessment
+- Phonetic transcriptions with tone patterns
+- Audio feedback and scoring system
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+### 📱 Mobile Experience
+- Beautiful, intuitive interface designed for mobile learning
+- Offline functionality with local SQLite database
+- Progress synchronization across devices
+- Adaptive difficulty based on user performance
 
-```sh
-# Using npm
-npm start
+### 🎮 Gamification
+- XP points and level progression
+- Daily streaks and learning goals
+- Achievement badges and rewards
+- Social learning features
 
-# OR using Yarn
-yarn start
+## Technology Stack
+
+- **Framework**: React Native 0.80.1
+- **Language**: TypeScript
+- **Database**: SQLite (react-native-sqlite-2)
+- **Navigation**: React Navigation v6
+- **Audio**: react-native-sound, react-native-tts
+- **Voice**: @react-native-community/voice
+- **UI**: React Native Paper, react-native-vector-icons
+- **State Management**: Local state with AsyncStorage
+- **Animations**: react-native-reanimated, react-native-linear-gradient
+
+## Prerequisites
+
+- Node.js 18 or higher
+- React Native development environment
+- Android Studio and Android SDK
+- Java Development Kit (JDK) 8 or higher
+
+## Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd ShonaLearnAndroid
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Android Setup**
+   ```bash
+   cd android
+   ./gradlew clean
+   cd ..
+   ```
+
+4. **Link native dependencies** (if needed)
+   ```bash
+   npx react-native link
+   ```
+
+## Running the App
+
+### Development Mode
+
+1. **Start Metro bundler**
+   ```bash
+   npm start
+   ```
+
+2. **Run on Android**
+   ```bash
+   npm run android
+   ```
+
+### Production Build
+
+```bash
+cd android
+./gradlew assembleRelease
 ```
 
-## Step 2: Build and run your app
+## Project Structure
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```
+ShonaLearnAndroid/
+├── src/
+│   ├── components/          # Reusable UI components
+│   ├── screens/            # Screen components
+│   ├── services/           # Business logic and APIs
+│   │   ├── database.ts     # SQLite database service
+│   │   └── audio.ts        # Audio and voice services
+│   ├── types/              # TypeScript type definitions
+│   ├── utils/              # Utility functions
+│   ├── data/               # Static content and data
+│   └── assets/             # Images, audio files, etc.
+├── android/                # Android-specific code
+├── App.tsx                 # Main application component
+└── index.js               # Entry point
 ```
 
-### iOS
+## Key Components
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+### Database Service (`src/services/database.ts`)
+- SQLite database management
+- User progress tracking
+- Lesson and vocabulary storage
+- Flashcard spaced repetition
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### Audio Service (`src/services/audio.ts`)
+- Text-to-speech functionality
+- Voice recognition and pronunciation assessment
+- Audio file playback
+- Speech feedback algorithms
 
-```sh
-bundle install
+### Navigation Structure
+- **Tab Navigation**: Home, Learn, Pronunciation, Quests, Flashcards, Profile
+- **Stack Navigation**: Lessons, Exercises, detailed views
+- **Onboarding**: First-time user experience
+
+## Content Structure
+
+The app includes rich educational content:
+
+- **Lessons**: Progressive Shona language lessons with cultural context
+- **Vocabulary**: Comprehensive word lists with phonetic transcriptions
+- **Exercises**: Interactive learning activities
+- **Quests**: Structured learning challenges
+- **Cultural Notes**: Background information about Zimbabwean culture
+
+## Features in Detail
+
+### Pronunciation Engine
+The app includes a sophisticated pronunciation assessment system:
+- Real-time speech recognition
+- Phonetic similarity scoring
+- Visual feedback and improvement suggestions
+- Tone pattern recognition for Shona language
+
+### Spaced Repetition System
+Flashcards use scientifically-proven spaced repetition:
+- Adaptive scheduling based on performance
+- Difficulty adjustment
+- Long-term retention optimization
+
+### Progress Analytics
+Comprehensive tracking system:
+- Learning streaks and goals
+- Performance analytics
+- Time spent learning
+- Vocabulary mastery levels
+
+## Development
+
+### Adding New Screens
+1. Create screen component in `src/screens/`
+2. Add to navigation in `App.tsx`
+3. Update types in `src/types/index.ts`
+
+### Adding New Content
+1. Update JSON files in `src/data/content/`
+2. Run database migration if needed
+3. Update database service methods
+
+### Testing
+```bash
+npm test
 ```
 
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
+### Debugging
+```bash
+npm run android -- --variant=debug
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## Troubleshooting
 
-```sh
-# Using npm
-npm run ios
+### Common Issues
 
-# OR using Yarn
-yarn ios
-```
+1. **Metro bundler issues**
+   ```bash
+   npm start -- --reset-cache
+   ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+2. **Android build issues**
+   ```bash
+   cd android
+   ./gradlew clean
+   cd ..
+   npm run android
+   ```
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+3. **Audio/Voice permissions**
+   - Ensure microphone permissions are granted
+   - Check audio focus settings
 
-## Step 3: Modify your app
+4. **Database issues**
+   - Clear app data and reinstall
+   - Check SQLite initialization
 
-Now that you have successfully run the app, let's make changes!
+## Performance Optimization
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+- Lazy loading of lesson content
+- Image optimization and caching
+- Audio file compression
+- Database query optimization
+- Memory leak prevention
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## Contributing
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes with descriptive messages
+4. Submit a pull request
 
-## Congratulations! :tada:
+## License
 
-You've successfully run and modified your React Native App. :partying_face:
+This project is licensed under the MIT License.
 
-### Now what?
+## Acknowledgments
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+- Shona language content adapted from educational resources
+- Cultural insights from Zimbabwean language experts
+- Pronunciation guides based on linguistic research
+- Educational methodology from language learning research
 
-# Troubleshooting
+## Support
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+For support and questions:
+- Create an issue on GitHub
+- Check the troubleshooting section
+- Review the documentation
 
-# Learn More
+---
 
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+**Mhoro! Welcome to Shona language learning! 🇿🇼**
