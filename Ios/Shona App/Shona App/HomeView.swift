@@ -116,7 +116,9 @@ struct HomeView: View {
                 .padding()
             }
             .navigationTitle("Home")
+            #if os(iOS)
             .navigationBarTitleDisplayMode(.large)
+            #endif
         }
     }
     

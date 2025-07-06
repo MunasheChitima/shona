@@ -58,7 +58,9 @@ struct OnboardingView: View {
                             .tag(index)
                     }
                 }
+                #if os(iOS)
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                #endif
                 .animation(.easeInOut(duration: 0.3), value: currentStep)
                 
                 // Bottom section
@@ -73,7 +75,9 @@ struct OnboardingView: View {
                             TextField("Email (optional)", text: $email)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .padding(.horizontal)
+                                #if os(iOS)
                                 .keyboardType(.emailAddress)
+                                #endif
                         }
                     }
                     
@@ -109,7 +113,11 @@ struct OnboardingView: View {
                 }
                 .padding(.bottom, 50)
             }
+            #if os(iOS)
             .navigationBarHidden(true)
+            #else
+            .toolbar(.hidden, for: .navigationBar)
+            #endif
         }
     }
     
