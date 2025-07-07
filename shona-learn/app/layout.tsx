@@ -1,8 +1,19 @@
 import './styles/globals.css'
-import { Inter } from 'next/font/google'
+import './styles/zimbabwean-theme.css'
+import { Ubuntu, Nunito } from 'next/font/google'
 import VoiceNavigationWrapper from './components/VoiceNavigationWrapper'
 
-const inter = Inter({ subsets: ['latin'] })
+const ubuntu = Ubuntu({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
+  variable: '--font-ubuntu'
+})
+
+const nunito = Nunito({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-nunito'
+})
 
 export const metadata = {
   title: 'Learn Shona - Interactive Language Learning',
@@ -15,9 +26,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+    <html lang="en" className={`${ubuntu.variable} ${nunito.variable}`}>
+      <body className="font-ubuntu bg-gradient-sunrise min-h-screen">
+        <div className="min-h-screen">
           {children}
           <VoiceNavigationWrapper />
         </div>

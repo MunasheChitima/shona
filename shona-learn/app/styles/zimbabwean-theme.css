@@ -1,0 +1,490 @@
+/* Zimbabwean Cultural Theme */
+/* Inspired by Great Zimbabwe, traditional patterns, and natural landscapes */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Zimbabwean Flag Colors */
+  --zw-green: #009639;      /* Emerald green - agriculture, growth */
+  --zw-gold: #FFD700;       /* Gold - mineral wealth, sunshine */
+  --zw-red: #DA121A;        /* Red - struggle, strength */
+  --zw-black: #000000;      /* Black - heritage, people */
+  --zw-white: #FFFFFF;      /* White - peace, unity */
+  
+  /* Natural Landscape Colors */
+  --kopje-brown: #8B4513;   /* Granite kopjes */
+  --baobab-grey: #A0522D;   /* Ancient baobab trees */
+  --savanna-gold: #DAA520;  /* Golden grasslands */
+  --river-blue: #4682B4;    /* Zambezi river */
+  --sunset-orange: #FF8C69; /* African sunset */
+  --dawn-pink: #FFB6C1;     /* Dawn sky */
+  
+  /* Cultural Depth Colors */
+  --pottery-terracotta: #CD853F;
+  --fabric-indigo: #4B0082;
+  --beadwork-coral: #FF7F50;
+  --stone-grey: #708090;
+  --earth-brown: #8B4513;
+  
+  /* Modern Accessibility Colors */
+  --text-primary: #2D3748;
+  --text-secondary: #4A5568;
+  --text-light: #718096;
+  --surface-white: #FFFFFF;
+  --surface-light: #F7FAFC;
+  --surface-medium: #EDF2F7;
+  
+  /* Great Zimbabwe Patterns */
+  --pattern-chevron: repeating-linear-gradient(
+    45deg,
+    var(--zw-gold) 0px,
+    var(--zw-gold) 10px,
+    var(--zw-green) 10px,
+    var(--zw-green) 20px
+  );
+  
+  --pattern-checkerboard: conic-gradient(
+    var(--zw-gold) 0deg 90deg,
+    var(--zw-green) 90deg 180deg,
+    var(--zw-gold) 180deg 270deg,
+    var(--zw-green) 270deg 360deg
+  );
+  
+  --pattern-waves: radial-gradient(
+    circle at 50% 100%,
+    var(--river-blue) 0%,
+    transparent 70%
+  );
+  
+  /* African Gradients */
+  --gradient-sunrise: linear-gradient(
+    135deg,
+    var(--dawn-pink) 0%,
+    var(--sunset-orange) 30%,
+    var(--zw-gold) 60%,
+    var(--zw-green) 100%
+  );
+  
+  --gradient-sunset: linear-gradient(
+    225deg,
+    var(--zw-red) 0%,
+    var(--sunset-orange) 40%,
+    var(--zw-gold) 80%,
+    var(--kopje-brown) 100%
+  );
+  
+  --gradient-savanna: linear-gradient(
+    90deg,
+    var(--zw-green) 0%,
+    var(--savanna-gold) 50%,
+    var(--sunset-orange) 100%
+  );
+  
+  --gradient-river: linear-gradient(
+    180deg,
+    var(--river-blue) 0%,
+    var(--zw-green) 100%
+  );
+  
+  /* Shadows with African warmth */
+  --shadow-zimbabwe: 0 10px 40px rgba(218, 18, 26, 0.1);
+  --shadow-kopje: 0 8px 32px rgba(139, 69, 19, 0.15);
+  --shadow-baobab: 0 12px 48px rgba(160, 82, 45, 0.12);
+  --shadow-gentle: 0 4px 16px rgba(0, 150, 57, 0.08);
+}
+
+/* Typography with African character */
+.font-ubuntu {
+  font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Traditional Pattern Classes */
+.pattern-chevron {
+  background: var(--pattern-chevron);
+  background-size: 28px 28px;
+}
+
+.pattern-checkerboard {
+  background: var(--pattern-checkerboard);
+  background-size: 20px 20px;
+}
+
+.pattern-waves {
+  background: var(--pattern-waves);
+  background-size: 60px 30px;
+  background-repeat: repeat-x;
+}
+
+.pattern-zimbabwe-bird {
+  background-image: 
+    radial-gradient(circle at 20% 20%, var(--zw-gold) 2px, transparent 2px),
+    radial-gradient(circle at 80% 80%, var(--zw-green) 1px, transparent 1px),
+    radial-gradient(circle at 40% 60%, var(--zw-red) 1.5px, transparent 1.5px);
+  background-size: 40px 40px, 60px 60px, 80px 80px;
+}
+
+/* Cultural Gradient Backgrounds */
+.bg-gradient-sunrise {
+  background: var(--gradient-sunrise);
+}
+
+.bg-gradient-sunset {
+  background: var(--gradient-sunset);
+}
+
+.bg-gradient-savanna {
+  background: var(--gradient-savanna);
+}
+
+.bg-gradient-river {
+  background: var(--gradient-river);
+}
+
+/* Cultural Animation Classes */
+@keyframes mbira-shimmer {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+  25% { 
+    transform: scale(1.05) rotate(1deg);
+    filter: brightness(1.1);
+  }
+  75% { 
+    transform: scale(0.95) rotate(-1deg);
+    filter: brightness(0.9);
+  }
+}
+
+@keyframes baobab-sway {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  33% { transform: translateX(2px) rotate(0.5deg); }
+  66% { transform: translateX(-2px) rotate(-0.5deg); }
+}
+
+@keyframes bird-flight {
+  0% { 
+    transform: translateX(-100px) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% { 
+    opacity: 1;
+    transform: translateX(0) translateY(-10px) rotate(5deg);
+  }
+  80% { 
+    opacity: 1;
+    transform: translateX(100px) translateY(-20px) rotate(-5deg);
+  }
+  100% { 
+    transform: translateX(200px) translateY(-30px) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+@keyframes water-ripple {
+  0% { 
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% { 
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes african-pulse {
+  0%, 100% { 
+    box-shadow: 0 0 0 0 rgba(0, 150, 57, 0.7);
+  }
+  70% { 
+    box-shadow: 0 0 0 20px rgba(0, 150, 57, 0);
+  }
+}
+
+@keyframes sunrise-glow {
+  0% { 
+    background-position: -200% center;
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% { 
+    background-position: 200% center;
+    filter: brightness(1);
+  }
+}
+
+/* Animation Utility Classes */
+.animate-mbira {
+  animation: mbira-shimmer 2s ease-in-out infinite;
+}
+
+.animate-baobab {
+  animation: baobab-sway 4s ease-in-out infinite;
+}
+
+.animate-bird-flight {
+  animation: bird-flight 4s ease-in-out;
+}
+
+.animate-water-ripple {
+  animation: water-ripple 1s ease-out;
+}
+
+.animate-african-pulse {
+  animation: african-pulse 2s infinite;
+}
+
+.animate-sunrise {
+  background: var(--gradient-sunrise);
+  background-size: 200% 100%;
+  animation: sunrise-glow 3s ease-in-out infinite;
+}
+
+/* Cultural Component Styles */
+.shona-button {
+  background: linear-gradient(135deg, var(--zw-green), var(--zw-gold));
+  border: 2px solid var(--zw-gold);
+  color: var(--zw-white);
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-zimbabwe);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.shona-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.shona-button:hover::before {
+  left: 100%;
+}
+
+.shona-button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: var(--shadow-kopje);
+  background: linear-gradient(135deg, var(--zw-gold), var(--zw-green));
+}
+
+.cultural-card {
+  background: var(--surface-white);
+  border: 1px solid rgba(0, 150, 57, 0.1);
+  border-radius: 16px;
+  box-shadow: var(--shadow-gentle);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.cultural-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-savanna);
+}
+
+.cultural-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-zimbabwe);
+}
+
+.progress-baobab {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.progress-baobab .trunk {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  background: var(--baobab-grey);
+  border-radius: 10px 10px 0 0;
+  transition: height 0.8s ease-out;
+}
+
+.progress-baobab .branches {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 40px;
+  background: radial-gradient(circle, var(--zw-green) 30%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+.progress-baobab.growing .branches {
+  opacity: 1;
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+  .animate-mbira,
+  .animate-baobab,
+  .animate-bird-flight,
+  .animate-water-ripple,
+  .animate-african-pulse,
+  .animate-sunrise {
+    animation: none;
+  }
+  
+  .shona-button:hover,
+  .cultural-card:hover {
+    transform: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --zw-green: #004d1a;
+    --zw-gold: #b8860b;
+    --text-primary: #000000;
+    --text-secondary: #000000;
+  }
+  
+  .shona-button {
+    border-width: 3px;
+  }
+  
+  .cultural-card {
+    border-width: 2px;
+    border-color: var(--zw-green);
+  }
+}
+
+/* Touch-Friendly Sizing */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Focus Management */
+.focus-zimbabwe:focus {
+  outline: 3px solid var(--zw-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Cultural Loading States */
+.loading-mbira {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.loading-mbira::before,
+.loading-mbira::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--zw-gold);
+  border-radius: 50%;
+  animation: mbira-keys 1.2s ease-in-out infinite;
+}
+
+.loading-mbira::before {
+  left: 8px;
+  animation-delay: 0s;
+}
+
+.loading-mbira::after {
+  left: 26px;
+  animation-delay: 0.6s;
+}
+
+@keyframes mbira-keys {
+  0%, 100% { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% { 
+    transform: translateY(-20px);
+    opacity: 0.7;
+  }
+}
+
+/* Responsive Typography with Cultural Character */
+.text-shona-xl {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.text-shona-lg {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.text-shona-base {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  line-height: 1.6;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .shona-button {
+    padding: 14px 28px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  .cultural-card {
+    margin: 8px;
+    border-radius: 12px;
+  }
+  
+  .progress-baobab {
+    width: 80px;
+    height: 100px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-white: #1a202c;
+    --surface-light: #2d3748;
+    --surface-medium: #4a5568;
+    --text-primary: #f7fafc;
+    --text-secondary: #e2e8f0;
+    --text-light: #cbd5e0;
+  }
+  
+  .cultural-card {
+    background: var(--surface-light);
+    border-color: rgba(255, 215, 0, 0.2);
+  }
+  
+  .shona-button {
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.2);
+  }
+}
