@@ -9,11 +9,20 @@
     "lint": "next lint",
     "seed": "tsx prisma/seed.ts",
     "test": "jest",
-    "test:e2e": "jest __tests__/e2e.test.ts"
+    "test:e2e": "jest __tests__/e2e.test.ts",
+    "analyze": "ANALYZE=true npm run build",
+    "build:analyze": "npm run analyze",
+    "lighthouse": "npm run build && npm start & sleep 5 && lighthouse http://localhost:3000 --output json --output html --view",
+    "perf:audit": "npm run build && npm start & sleep 5 && lighthouse http://localhost:3000 --only-categories=performance --output json --output html",
+    "bundle:analyze": "npx @next/bundle-analyzer",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "db:reset": "prisma migrate reset --force && npm run seed"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "@prisma/client": "^6.11.1",
+    "@types/react-window": "^1.8.8",
     "bcryptjs": "^3.0.2",
     "framer-motion": "^12.23.0",
     "jsonwebtoken": "^9.0.2",
@@ -27,11 +36,13 @@
     "react-icons": "^5.5.0",
     "react-mic": "^12.4.6",
     "react-speech-kit": "^3.0.1",
+    "react-window": "^1.8.11",
     "recharts": "^3.0.2",
     "waveform-react": "^0.2.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@next/bundle-analyzer": "^15.3.5",
     "@tailwindcss/postcss": "^4",
     "@types/bcryptjs": "^2.4.6",
     "@types/jest": "^30.0.0",
@@ -40,14 +51,17 @@
     "@types/puppeteer": "^5.4.7",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-window": "^1.8.8",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
     "jest": "^30.0.4",
+    "lighthouse": "^12.2.1",
     "puppeteer": "^24.11.2",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.3",
-    "typescript": "^5"
+    "typescript": "^5",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }

@@ -30,6 +30,10 @@ model User {
   flashcards    Flashcard[]
   srsProgress   SRSProgress[]
   notificationPreferences NotificationPreference?
+
+  @@index([email])
+  @@index([xp])
+  @@index([lastActive])
 }
 
 model Lesson {
@@ -46,6 +50,10 @@ model Lesson {
   learningObjectives String?  // JSON string of learning objectives
   discoveryElements String?   // JSON string of exploration prompts
   flashcards    Flashcard[]
+
+  @@index([category])
+  @@index([orderIndex])
+  @@index([questId])
 }
 
 model Quest {
@@ -60,6 +68,10 @@ model Quest {
   questProgress QuestProgress[]
   collaborativeElements String? // JSON string of social learning features
   intrinsicRewards String?    // JSON string of intrinsic motivation elements
+
+  @@index([category])
+  @@index([orderIndex])
+  @@index([requiredLevel])
 }
 
 model Exercise {
@@ -76,6 +88,9 @@ model Exercise {
   points        Int      @default(5)
   intrinsicFeedback String? // JSON string for intrinsic motivation feedback
   discoveryHint String?  // Hint for exploration-based learning
+
+  @@index([lessonId])
+  @@index([type])
 }
 
 model UserProgress {
@@ -90,6 +105,9 @@ model UserProgress {
   lesson      Lesson   @relation(fields: [lessonId], references: [id])
   
   @@unique([userId, lessonId])
+  @@index([userId])
+  @@index([completed])
+  @@index([completedAt])
 }
 
 model QuestProgress {
@@ -102,6 +120,8 @@ model QuestProgress {
   quest       Quest    @relation(fields: [questId], references: [id])
   
   @@unique([userId, questId])
+  @@index([userId])
+  @@index([completed])
 }
 
 model SocialConnection {
@@ -114,6 +134,8 @@ model SocialConnection {
   connectedTo User     @relation("ConnectedToUser", fields: [connectedUserId], references: [id])
   
   @@unique([userId, connectedUserId])
+  @@index([userId])
+  @@index([connectionType])
 }
 
 model LearningGoal {
@@ -125,6 +147,9 @@ model LearningGoal {
   completed   Boolean  @default(false)
   createdAt   DateTime @default(now())
   user        User     @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([completed])
 }
 
 model IntrinsicMotivation {
@@ -156,6 +181,12 @@ model Flashcard {
   srsProgress   SRSProgress[]
   
   @@unique([userId, shonaText])
+  @@index([userId])
+  @@index([lessonId])
+  @@index([difficulty])
+  @@index([tags])
+  @@index([createdAt])
+  @@index([lastReviewed])
 }
 
 model SRSProgress {
@@ -177,6 +208,9 @@ model SRSProgress {
   flashcard     Flashcard @relation(fields: [flashcardId], references: [id])
   
   @@unique([userId, flashcardId])
+  @@index([userId])
+  @@index([nextReview])
+  @@index([lastReview])
 }
 
 model NotificationPreference {
@@ -208,4 +242,8 @@ model NotificationLog {
   deviceToken String?
   success     Boolean  @default(true)
   errorMessage String?
+
+  @@index([userId])
+  @@index([sentAt])
+  @@index([type])
 }
