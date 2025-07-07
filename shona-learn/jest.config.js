@@ -1,10 +1,49 @@
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  testMatch: ['**/__tests__/**/*.test.ts'],
+const nextJest = require('next/jest')
+
+const createJestConfig = nextJest({
+  // Provide the path to your Next.js app to load next.config.js and .env files
+  dir: './',
+})
+
+// Add any custom config to be passed to Jest
+const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  testTimeout: 30000,
+  testEnvironment: 'jsdom',
   moduleNameMapping: {
-    '^@/(.*)$': '<rootDir>/$1',
+    '^@/components/(.*)$': '<rootDir>/app/components/$1',
+    '^@/lib/(.*)$': '<rootDir>/lib/$1',
+    '^@/app/(.*)$': '<rootDir>/app/$1',
+    '^@/content/(.*)$': '<rootDir>/content/$1',
   },
-}; 
+  testMatch: [
+    '<rootDir>/__tests__/**/*.test.{js,jsx,ts,tsx}',
+    '<rootDir>/**/__tests__/**/*.test.{js,jsx,ts,tsx}',
+  ],
+  collectCoverageFrom: [
+    'app/**/*.{js,jsx,ts,tsx}',
+    'lib/**/*.{js,jsx,ts,tsx}',
+    '!app/**/*.d.ts',
+    '!app/**/layout.tsx',
+    '!app/**/loading.tsx',
+    '!app/**/not-found.tsx',
+    '!app/**/error.tsx',
+  ],
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80,
+    },
+  },
+  testTimeout: 10000,
+  transform: {
+    '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
+  },
+  transformIgnorePatterns: [
+    'node_modules/(?!(.*\\.mjs$|react-speech-kit|react-mic))',
+  ],
+}
+
+// createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
+module.exports = createJestConfig(customJestConfig) 
