@@ -1,0 +1,377 @@
+{
+  "enhancedVocabulary": {
+    "description": "Enhanced cultural content for key vocabulary items demonstrating the comprehensive framework",
+    "version": "1.0",
+    
+    "familyTerms": {
+      "babamukuru": {
+        "shona": "babamukuru",
+        "english": "father's older brother/uncle",
+        "category": "family",
+        "cultural": {
+          "significance": "Central figure in extended family hierarchy, holds authority over nephews and acts as family disciplinarian and wisdom keeper. More than just 'uncle' - he's a second father with real decision-making power.",
+          "usage_context": "Used in formal family settings, when seeking permission or guidance, and in all family ceremonies. Never use casual address.",
+          "respect_level": "formal",
+          "regional_notes": {
+            "zezuru": "Standard usage across central Zimbabwe",
+            "karanga": "May use 'babomukuru' in some areas",
+            "manyika": "Similar usage with slight tonal variations",
+            "variations": ["babamkuru", "babamukuru wangu"]
+          },
+          "generational_notes": {
+            "elders": "Absolute respect and obedience expected",
+            "adults": "Consultation required for major family decisions",
+            "youth": "Must seek permission through parents first",
+            "modern_usage": "Role maintained even in urban/diaspora settings"
+          },
+          "related_customs": [
+            "Family meetings and decision-making",
+            "Bride price negotiations (kuraguza)",
+            "Disciplinary discussions",
+            "Inheritance matters",
+            "Marriage approval processes"
+          ],
+          "taboos": "Never contradict directly, never use informal address, never bypass his authority in family matters",
+          "diaspora_notes": "Role often adapted but respect maintained - may help with cultural guidance for diaspora children",
+          "proverbs": [
+            {
+              "shona": "Babamukuru ndiye mukuru wemhuri",
+              "english": "Babamukuru is the head of the family",
+              "meaning": "Recognizes his authority and responsibility in extended family structure"
+            }
+          ],
+          "historical_context": "Traditional role dates to pre-colonial family governance systems where extended families operated as economic and social units"
+        }
+      },
+      
+      "tete": {
+        "shona": "tete",
+        "english": "father's sister/paternal aunt",
+        "category": "family",
+        "cultural": {
+          "significance": "Special mediator role between father and children, cultural teacher for girls, marriage counselor and family peacemaker. She has unique authority to speak freely to her brothers about family matters.",
+          "usage_context": "Family counseling, marriage guidance, cultural education, conflict resolution within families",
+          "respect_level": "formal",
+          "regional_notes": {
+            "zezuru": "Standard usage",
+            "karanga": "Sometimes 'tetekuru' for older paternal aunts",
+            "manyika": "Similar with tonal variations",
+            "variations": ["tete mukuru", "tete mudiki"]
+          },
+          "generational_notes": {
+            "elders": "Revered for wisdom and mediation skills",
+            "adults": "Sought for marriage and family advice",
+            "youth": "Cultural mentor, especially for girls approaching marriage",
+            "modern_usage": "Role as cultural educator increasingly important in urban settings"
+          },
+          "related_customs": [
+            "Marriage counseling and guidance",
+            "Cultural education for nieces",
+            "Family conflict mediation",
+            "Traditional cooking and craft teaching",
+            "Childbirth support and advice"
+          ],
+          "taboos": "Never ignore her advice in marriage matters, never exclude from family discussions about her brother's children",
+          "diaspora_notes": "Often maintains connection with diaspora families to provide cultural guidance and identity maintenance",
+          "proverbs": [
+            {
+              "shona": "Tete ndiye ani wemhuri",
+              "english": "Tete is the one who knows the family",
+              "meaning": "Acknowledges her role as family historian and cultural keeper"
+            }
+          ],
+          "historical_context": "Traditional role recognizes women's special position in patrilineal society - able to speak truth to power within family"
+        }
+      },
+      
+      "muzukuru": {
+        "shona": "muzukuru", 
+        "english": "grandchild/nephew/niece",
+        "category": "family",
+        "cultural": {
+          "significance": "Represents family continuity and hope for the future. Grandchildren have special reciprocal relationship with grandparents - provider of care in exchange for wisdom and inheritance.",
+          "usage_context": "Used by grandparents and their siblings to address grandchildren, emphasizes the special bond and responsibilities",
+          "respect_level": "casual",
+          "regional_notes": {
+            "zezuru": "Standard usage across relationships",
+            "karanga": "May include additional respect terms",
+            "manyika": "Similar usage patterns",
+            "variations": ["mzukuru wangu", "vazukuru"]
+          },
+          "generational_notes": {
+            "elders": "Term of endearment representing family legacy",
+            "adults": "Reminds of obligations to extended family children",
+            "youth": "Understanding of reciprocal family obligations",
+            "modern_usage": "Important for maintaining extended family bonds in nuclear family settings"
+          },
+          "related_customs": [
+            "Grandparent wisdom transmission",
+            "Inheritance expectations and responsibilities",
+            "Elder care obligations",
+            "Cultural knowledge passing",
+            "Family name continuation"
+          ],
+          "taboos": "Muzukuru must never disrespect grandparents, must provide care in old age",
+          "diaspora_notes": "Relationship maintained through technology and visits - critical for cultural transmission in diaspora",
+          "proverbs": [
+            {
+              "shona": "Muzukuru ndiye muridzi wemidzimu",
+              "english": "The grandchild is the inheritor of the ancestors",
+              "meaning": "Grandchildren carry forward family traditions and ancestral connections"
+            }
+          ],
+          "historical_context": "Traditional African family structure where grandchildren were often raised by grandparents, creating special bonds"
+        }
+      }
+    },
+    
+    "ceremonialTerms": {
+      "bira": {
+        "shona": "bira",
+        "english": "ancestral ceremony/spirit possession ceremony",
+        "category": "ceremony",
+        "cultural": {
+          "significance": "Sacred ceremony where ancestors communicate with the living through spirit mediums (svikiro). Central to Shona spirituality and community healing.",
+          "usage_context": "Only used in sacred contexts - planning ceremonies, discussing spiritual matters, referring to ancestral communication",
+          "respect_level": "sacred",
+          "regional_notes": {
+            "zezuru": "Standard ceremonial term",
+            "karanga": "Sometimes 'kurova bira'",
+            "manyika": "Similar usage with local variations",
+            "variations": ["bira guru", "bira diki"]
+          },
+          "generational_notes": {
+            "elders": "Keepers of ceremonial knowledge and protocols",
+            "adults": "Responsible for organizing and funding ceremonies",
+            "youth": "Observers and learners - limited participation",
+            "modern_usage": "Adapted in urban areas but core spiritual meaning maintained"
+          },
+          "related_customs": [
+            "Spirit medium consultations",
+            "Community healing and guidance",
+            "Ancestral communication",
+            "Mbira music and dancing",
+            "Traditional beer brewing (doro)"
+          ],
+          "taboos": "Non-family members need invitation and permission, certain behaviors prohibited during ceremony, respect for spiritual protocols essential",
+          "diaspora_notes": "Adapted ceremonies held in diaspora communities, often combined with family reunions",
+          "proverbs": [
+            {
+              "shona": "Kubira vanhu, kubira mweya",
+              "english": "To brew for people, to brew for the spirit",
+              "meaning": "Ceremonies serve both community and spiritual purposes"
+            }
+          ],
+          "historical_context": "Ancient Shona spiritual practice, predates colonial contact, represents unbroken chain of ancestral connection"
+        }
+      },
+      
+      "kurova guva": {
+        "shona": "kurova guva",
+        "english": "grave ceremony/memorial ceremony",
+        "category": "ceremony", 
+        "cultural": {
+          "significance": "Ceremony to bring deceased person's spirit home to join family ancestors. Transforms the dead into protective ancestors (mudzimu).",
+          "usage_context": "Only used when discussing memorial ceremonies, usually held one year after death",
+          "respect_level": "sacred",
+          "regional_notes": {
+            "zezuru": "Standard ceremonial terminology",
+            "karanga": "May use 'kurova' with local variations",
+            "manyika": "Similar protocols and terminology",
+            "variations": ["kurova guva guru", "kurova guva remukuru"]
+          },
+          "generational_notes": {
+            "elders": "Lead and oversee ceremonial protocols",
+            "adults": "Organize and fund the ceremony",
+            "youth": "Participate as family members but follow elder guidance",
+            "modern_usage": "Maintained even by urban and Christian families"
+          },
+          "related_customs": [
+            "Selection of heir (mugari nhaka)",
+            "Distribution of deceased belongings", 
+            "Family reconciliation and healing",
+            "Ancestral spirit installation",
+            "Community witness and support"
+          ],
+          "taboos": "Cannot be rushed - proper timing essential, family conflicts must be resolved first, specific protocols must be followed",
+          "diaspora_notes": "Sometimes held in home countries or adapted for diaspora circumstances with elder guidance",
+          "proverbs": [
+            {
+              "shona": "Guva rinovakwa nevene varo",
+              "english": "A grave is built by its own people",
+              "meaning": "Family is responsible for proper memorial ceremonies"
+            }
+          ],
+          "historical_context": "Ancient ceremony ensuring deceased joins ancestors and continues protecting family"
+        }
+      },
+      
+      "roora": {
+        "shona": "roora", 
+        "english": "bride price/dowry",
+        "category": "ceremony",
+        "cultural": {
+          "significance": "Traditional marriage ceremony involving payment from groom's family to bride's family. Symbolizes respect, commitment, and joining of two families - not 'buying' a wife.",
+          "usage_context": "Marriage negotiations, family planning discussions, cultural education about marriage customs",
+          "respect_level": "formal", 
+          "regional_notes": {
+            "zezuru": "Standard term and practice",
+            "karanga": "Similar customs with regional variations",
+            "manyika": "Local variations in ceremonies and amounts",
+            "variations": ["kuraguza", "pfuma yemukadzi"]
+          },
+          "generational_notes": {
+            "elders": "Negotiators and ceremony leaders",
+            "adults": "Primary participants in arrangements and payments",
+            "youth": "Learning about marriage customs and expectations",
+            "modern_usage": "Adapted but maintained - amounts and items may change"
+          },
+          "related_customs": [
+            "Family negotiations (kuraguza)",
+            "Traditional marriage ceremonies",
+            "Family relationship building",
+            "Respect demonstration",
+            "Cultural continuity"
+          ],
+          "taboos": "Cannot be forced or rushed, must be culturally appropriate, families must agree on terms",
+          "diaspora_notes": "Adapted for diaspora circumstances - may be symbolic or modified based on local contexts",
+          "proverbs": [
+            {
+              "shona": "Roora harirambi, rounganidza mhuri",
+              "english": "Bride price doesn't refuse, it brings families together",
+              "meaning": "Purpose is family unity, not financial transaction"
+            }
+          ],
+          "historical_context": "Traditional practice ensuring family alliance and woman's security - evolved but maintains cultural significance"
+        }
+      }
+    },
+    
+    "valuesWisdom": {
+      "hunhu": {
+        "shona": "hunhu",
+        "english": "humanness/ubuntu/moral character",
+        "category": "values",
+        "cultural": {
+          "significance": "Core philosophy of Shona culture - 'I am because we are.' Encompasses compassion, respect, community consciousness, and moral behavior.",
+          "usage_context": "Teaching moral lessons, community discussions, evaluating character, resolving conflicts",
+          "respect_level": "formal",
+          "regional_notes": {
+            "zezuru": "Standard philosophical term",
+            "karanga": "Sometimes 'ubuntu' used interchangeably",
+            "manyika": "Core concept across all Shona groups",
+            "variations": ["hunhu hwakafanira", "hunhu hwakanaka"]
+          },
+          "generational_notes": {
+            "elders": "Primary teachers and exemplars of hunhu",
+            "adults": "Expected to embody and teach hunhu",
+            "youth": "Learning and developing hunhu through guidance",
+            "modern_usage": "Foundation for modern leadership and business ethics"
+          },
+          "related_customs": [
+            "Community decision-making",
+            "Conflict resolution processes",
+            "Child education and discipline",
+            "Community support systems",
+            "Traditional governance"
+          ],
+          "taboos": "Behavior without hunhu is strongly disapproved - selfishness, disrespect, harming community",
+          "diaspora_notes": "Fundamental identity marker maintained in diaspora - guides parenting and community building",
+          "proverbs": [
+            {
+              "shona": "Hunhu ukuru hwemunhu",
+              "english": "Character is the greatness of a person",
+              "meaning": "True worth comes from moral character, not material wealth"
+            },
+            {
+              "shona": "Munhu munhu nekuda kwevanhu",
+              "english": "A person is a person because of other people",
+              "meaning": "Individual identity and worth comes through community relationships"
+            }
+          ],
+          "historical_context": "Ancient African philosophy that guided pre-colonial societies and continues to influence modern African ethics"
+        }
+      },
+      
+      "kuvimbika": {
+        "shona": "kuvimbika",
+        "english": "trustworthiness/reliability",
+        "category": "values",
+        "cultural": {
+          "significance": "Essential virtue for community membership. Trust forms the foundation of all relationships - family, business, community leadership.",
+          "usage_context": "Character assessment, leadership selection, marriage suitability, business partnerships",
+          "respect_level": "formal",
+          "regional_notes": {
+            "zezuru": "Standard virtue terminology",
+            "karanga": "Core value across regions",
+            "manyika": "Similar emphasis and usage",
+            "variations": ["mukavimbika", "kusavimbika"]
+          },
+          "generational_notes": {
+            "elders": "Demonstrated through years of consistent behavior",
+            "adults": "Expected in all community and family responsibilities",
+            "youth": "Developed through small responsibilities and community observation",
+            "modern_usage": "Critical for professional and personal success in modern Zimbabwe"
+          },
+          "related_customs": [
+            "Community lending and saving groups",
+            "Family responsibility assignments",
+            "Traditional governance roles",
+            "Marriage partner evaluation",
+            "Business relationship building"
+          ],
+          "taboos": "Breaking trust brings community shame and exclusion, unreliable people lose social standing",
+          "diaspora_notes": "Maintains community bonds in diaspora - trusted individuals become community leaders",
+          "proverbs": [
+            {
+              "shona": "Mukavimbika anokwanisa kupfuura musina zvake",
+              "english": "A trustworthy person can surpass one who has possessions",
+              "meaning": "Trustworthiness is more valuable than material wealth"
+            }
+          ],
+          "historical_context": "Trust essential for survival in traditional communities without formal institutions"
+        }
+      },
+      
+      "chimurenga": {
+        "shona": "chimurenga", 
+        "english": "liberation struggle/resistance",
+        "category": "liberation",
+        "cultural": {
+          "significance": "Resistance against oppression, specifically the liberation wars (First 1896-1897, Second 1966-1980). Represents courage, sacrifice, and fight for freedom.",
+          "usage_context": "Historical discussions, patriotic contexts, resistance to injustice, cultural pride",
+          "respect_level": "formal",
+          "regional_notes": {
+            "zezuru": "Historical term from resistance history",
+            "karanga": "Associated with Nehanda and other heroes",
+            "manyika": "Regional liberation history connections",
+            "variations": ["chimurenga chekutanga", "chimurenga chechipiri"]
+          },
+          "generational_notes": {
+            "elders": "May have direct experience or family connection to liberation",
+            "adults": "Taught liberation history and values",
+            "youth": "Learning heritage and values of resistance",
+            "modern_usage": "Applied to contemporary struggles for justice and rights"
+          },
+          "related_customs": [
+            "Heroes Day commemorations",
+            "Liberation history education",
+            "Patriotic music and literature",
+            "Memorial ceremonies for liberation heroes",
+            "Cultural pride expression"
+          ],
+          "taboos": "Must not trivialize liberation sacrifices, must respect liberation heroes",
+          "diaspora_notes": "Connects diaspora to homeland history and identity, source of cultural pride",
+          "proverbs": [
+            {
+              "shona": "Rusununguko rwakawirwa neropa",
+              "english": "Independence was paid for with blood",
+              "meaning": "Freedom came through sacrifice and must be protected"
+            }
+          ],
+          "historical_context": "Two major liberation wars against colonialism - 1896-1897 First Chimurenga, 1966-1980 Second Chimurenga leading to independence"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "culturalSensitivityGuidelines": {
+    "version": "1.0",
+    "description": "Comprehensive guidelines for respectful cultural content development and implementation",
+    
+    "sacredKnowledgeBoundaries": {
+      "principles": [
+        "Some knowledge is not for public sharing",
+        "Respect initiation-only knowledge",
+        "Sacred ceremonies require elder permission",
+        "Spiritual matters need careful approach",
+        "Traditional healing knowledge has restrictions",
+        "Ancestral communication protocols are sacred"
+      ],
+      
+      "contentMarkers": {
+        "sacred": {
+          "definition": "Requires elder guidance and permission",
+          "examples": ["bira ceremonies", "spirit medium practices", "ancestral communication"],
+          "approach": "Provide general understanding with clear boundaries about participation"
+        },
+        "restricted": {
+          "definition": "Initiation knowledge only",
+          "examples": ["Certain ritual details", "Sacred praise names", "Healing ceremonies"],
+          "approach": "Acknowledge existence but respect knowledge boundaries"
+        },
+        "sensitive": {
+          "definition": "Approach with cultural caution",
+          "examples": ["Family conflicts", "Traditional healing", "Personal spiritual matters"],
+          "approach": "Provide cultural context while respecting privacy"
+        },
+        "forbidden": {
+          "definition": "Not appropriate for outsiders",
+          "examples": ["Secret society knowledge", "Gender-specific initiation details"],
+          "approach": "Do not include in educational content"
+        }
+      },
+      
+      "implementationGuidelines": [
+        "Always indicate when content requires elder guidance",
+        "Provide warnings about participation boundaries",
+        "Include respectful acknowledgment of knowledge limits",
+        "Connect learners with appropriate cultural mentors",
+        "Regular review with cultural advisors"
+      ]
+    },
+    
+    "respectProtocols": {
+      "elders": {
+        "language_requirements": "Always use formal language register",
+        "behavior_expectations": "Show deference through body language and tone",
+        "interaction_protocols": "Wait to be addressed, seek permission before speaking",
+        "gift_giving": "Understand appropriate gifts and timing",
+        "photography": "Always ask permission before photographing elders"
+      },
+      
+      "in_laws": {
+        "avoidance_customs": "Certain in-law relationships have interaction restrictions",
+        "respect_terms": "Specific address terms required for different in-law relationships",
+        "ceremony_roles": "In-laws have specific roles in family ceremonies",
+        "conflict_resolution": "Special protocols for handling in-law disagreements"
+      },
+      
+      "spirits_ancestors": {
+        "respectful_acknowledgment": "Traditional beliefs require respectful treatment",
+        "language_use": "Specific vocabulary for spiritual matters",
+        "ceremony_protocols": "Understanding when and how spiritual matters are discussed",
+        "modern_adaptation": "How traditional beliefs coexist with modern life"
+      },
+      
+      "ceremonies": {
+        "participation_levels": "Different levels of participation based on relationship to family",
+        "appropriate_behavior": "Understanding when to speak, when to observe, when to participate",
+        "gift_obligations": "Traditional gift-giving expectations for different ceremonies",
+        "dress_codes": "Appropriate attire for different types of ceremonies"
+      }
+    },
+    
+    "regionalSensitivity": {
+      "dialectRespect": {
+        "principle": "All regional variations are valid and valued",
+        "approach": "Present Standard Shona while acknowledging regional richness",
+        "implementation": [
+          "Include regional variation notes where appropriate",
+          "Avoid privileging one dialect over others",
+          "Present variations as cultural richness, not deviations",
+          "Connect regional differences to cultural history"
+        ]
+      },
+      
+      "urbanRuralDynamics": {
+        "urban_adaptations": "How Shona culture adapts in urban settings",
+        "rural_traditions": "Traditional practices maintained in rural areas", 
+        "bridge_building": "Helping learners navigate both contexts",
+        "respectful_presentation": "Avoid urban bias or rural stereotypes"
+      },
+      
+      "modernTraditionalBalance": {
+        "evolution_respect": "Culture naturally evolves and adapts",
+        "continuity_values": "Core values that persist across changes",
+        "generational_differences": "Understanding different generational perspectives",
+        "diaspora_adaptations": "How culture adapts in diaspora communities"
+      }
+    },
+    
+    "implementationStrategies": {
+      "contentDevelopment": {
+        "research_phase": [
+          "Consult multiple sources and regions",
+          "Include elder perspectives",
+          "Review academic and community sources",
+          "Validate with cultural practitioners"
+        ],
+        "content_creation": [
+          "Layer information from general to specific",
+          "Include cultural context for all vocabulary",
+          "Mark sensitivity levels clearly",
+          "Provide learning pathways with appropriate progression"
+        ],
+        "review_process": [
+          "Cultural advisory board review",
+          "Community feedback integration",
+          "Academic validation",
+          "Regular updates based on user feedback"
+        ]
+      },
+      
+      "userGuidance": {
+        "orientation": [
+          "Introduce cultural learning philosophy",
+          "Explain respect protocols clearly",
+          "Set expectations about cultural boundaries",
+          "Connect learners with cultural mentors"
+        ],
+        "progressive_disclosure": [
+          "Start with basic respect protocols",
+          "Gradually introduce more complex cultural concepts",
+          "Provide clear guidance at each level",
+          "Include self-assessment tools"
+        ],
+        "community_connection": [
+          "Facilitate connections with Shona communities",
+          "Provide guidance on cultural events",
+          "Support respectful community participation",
+          "Encourage long-term cultural relationships"
+        ]
+      }
+    },
+    
+    "communityConsultationRecommendations": {
+      "elderAdvisoryBoard": {
+        "composition": [
+          "Respected elders from different Shona regions",
+          "Traditional leaders and cultural practitioners",
+          "Academic experts in Shona culture and language",
+          "Diaspora community leaders",
+          "Gender balance and diverse perspectives"
+        ],
+        "responsibilities": [
+          "Review cultural content for accuracy and appropriateness",
+          "Provide guidance on sacred knowledge boundaries",
+          "Advise on cultural sensitivity issues",
+          "Help connect learners with appropriate mentors",
+          "Regular review of app content and user feedback"
+        ],
+        "meeting_schedule": "Quarterly reviews with ad-hoc consultations as needed",
+        "compensation": "Appropriate recognition and compensation for elder knowledge"
+      },
+      
+      "diasporaInput": {
+        "focus_groups": [
+          "First-generation diaspora maintaining culture",
+          "Second-generation learning heritage",
+          "Third-generation reconnecting with culture",
+          "Mixed families navigating cultural identity"
+        ],
+        "research_areas": [
+          "Cultural maintenance challenges in diaspora",
+          "Intergenerational transmission difficulties",
+          "Modern adaptations and innovations",
+          "Technology use for cultural connection"
+        ],
+        "implementation": [
+          "Regular diaspora community surveys",
+          "User testing with diaspora learners",
+          "Feedback integration into content development",
+          "Success story documentation and sharing"
+        ]
+      },
+      
+      "academicValidation": {
+        "partnerships": [
+          "Universities with Shona studies programs",
+          "Anthropology and linguistics departments",
+          "Cultural preservation organizations",
+          "Educational technology researchers"
+        ],
+        "validation_areas": [
+          "Anthropological accuracy of cultural content",
+          "Linguistic precision and dialect representation",
+          "Historical context accuracy",
+          "Educational effectiveness of cultural integration"
+        ],
+        "ongoing_collaboration": [
+          "Research partnerships on cultural learning",
+          "Academic publication of methodology and results",
+          "Student research projects using the platform",
+          "Conference presentations on cultural language learning"
+        ]
+      },
+      
+      "communityFeedbackSystems": {
+        "feedback_channels": [
+          "In-app cultural sensitivity reporting",
+          "Community forum for cultural discussions",
+          "Regular user surveys on cultural content",
+          "Direct connection to cultural advisors"
+        ],
+        "response_protocols": [
+          "Rapid response to cultural sensitivity concerns",
+          "Transparent communication about content changes",
+          "Community involvement in content improvements",
+          "Regular updates on cultural enhancement progress"
+        ]
+      }
+    },
+    
+    "qualityAssurance": {
+      "contentStandards": [
+        "All cultural content reviewed by cultural advisors",
+        "Sources documented and verifiable",
+        "Regional variations acknowledged appropriately",
+        "Sacred knowledge boundaries clearly marked",
+        "User guidance provided for all cultural concepts"
+      ],
+      
+      "ongoingMaintenance": [
+        "Regular review cycles with cultural advisors",
+        "User feedback integration processes",
+        "Content updates based on community input",
+        "Technology updates to support cultural features",
+        "Expansion based on user needs and cultural advisor guidance"
+      ],
+      
+      "successMetrics": [
+        "User cultural competency assessment scores",
+        "Community feedback on cultural appropriateness",
+        "Elder advisor satisfaction with content accuracy",
+        "Diaspora learner cultural connection outcomes",
+        "Long-term cultural engagement and community participation"
+      ]
+    }
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "culturalAssessmentTools": {
+    "version": "1.0",
+    "description": "Comprehensive assessment tools for cultural competency in Shona language learning",
+    
+    "culturalAppropriatenessScenarios": {
+      "beginner_level": [
+        {
+          "id": "scenario_001",
+          "situation": "You're meeting your Zimbabwean friend's grandmother for the first time at a family gathering",
+          "options": [
+            "Greet her with 'Mhoro ambuya' and shake hands",
+            "Greet her with 'Mhoroi ambuya' and show respect with slight bow",
+            "Wave and say 'Hello grandmother' in English"
+          ],
+          "correct": 1,
+          "explanation": "Elders require formal respect. 'Mhoroi' is formal, 'ambuya' shows you know her status, and respectful body language demonstrates hunhu.",
+          "cultural_lesson": "Age demands respect in Shona culture. Language register changes with social hierarchy."
+        },
+        {
+          "id": "scenario_002", 
+          "situation": "At a traditional market, you want to buy vegetables from an elderly vendor",
+          "options": [
+            "Point at what you want and ask 'How much?'",
+            "Greet first: 'Mhoroi amai, makadii?' then ask about vegetables",
+            "Just pick up items and wait for the price"
+          ],
+          "correct": 1,
+          "explanation": "Greetings must come before business. 'Amai' shows respect, and asking about wellbeing demonstrates ubuntu.",
+          "cultural_lesson": "Relationships before transactions. Markets are social spaces, not just commercial."
+        },
+        {
+          "id": "scenario_003",
+          "situation": "Your Shona friend's young brother speaks to you in informal Shona",
+          "options": [
+            "Respond in formal Shona to show respect for the family",
+            "Use informal Shona since he's younger",
+            "Switch to English"
+          ],
+          "correct": 1,
+          "explanation": "As a guest and adult, maintain respectful language even with younger people. Shows you understand family respect.",
+          "cultural_lesson": "Guest status requires extra cultural sensitivity and respect demonstration."
+        }
+      ],
+      
+      "intermediate_level": [
+        {
+          "id": "scenario_101",
+          "situation": "You're invited to a family meeting where babamukuru will discuss an important family matter",
+          "options": [
+            "Sit anywhere and participate actively in the discussion",
+            "Wait to be shown where to sit and speak only when asked",
+            "Sit with the women and observe quietly"
+          ],
+          "correct": 1,
+          "explanation": "Family meetings have protocols. Seating arrangements matter, and babamukuru leads. Respect hierarchy by waiting for invitation to speak.",
+          "cultural_lesson": "Extended family has formal governance structures. Observe before participating."
+        },
+        {
+          "id": "scenario_102",
+          "situation": "At a community celebration, traditional music starts and people begin dancing",
+          "options": [
+            "Jump in and dance with everyone immediately",
+            "Watch and learn the steps, then join in respectfully",
+            "Stay seated to avoid making mistakes"
+          ],
+          "correct": 1,
+          "explanation": "Cultural participation is welcomed but should be respectful. Learning shows respect; avoiding participation might seem unfriendly.",
+          "cultural_lesson": "Community celebrations are inclusive but require cultural sensitivity."
+        },
+        {
+          "id": "scenario_103",
+          "situation": "A family mentions they're planning a kurova guva ceremony and asks if you'd like to attend",
+          "options": [
+            "Accept immediately - it sounds interesting",
+            "Ask respectfully about your role and what's appropriate for you as a non-family member",
+            "Decline because it's too sacred for outsiders"
+          ],
+          "correct": 1,
+          "explanation": "Sacred ceremonies welcome respectful interest, but protocols must be followed. Asking shows respect for the ceremony's significance.",
+          "cultural_lesson": "Sacred events can include outsiders when approached with proper respect and guidance."
+        }
+      ],
+      
+      "advanced_level": [
+        {
+          "id": "scenario_201",
+          "situation": "During a bira ceremony, the svikiro (spirit medium) begins speaking. People respond with ululation and clapping",
+          "options": [
+            "Join in the ululation and clapping",
+            "Stand respectfully but don't participate in responses",
+            "Take photos to document the ceremony"
+          ],
+          "correct": 1,
+          "explanation": "As an invited guest, respectful participation is appropriate. Photos without permission would be disrespectful to the sacred nature.",
+          "cultural_lesson": "Sacred ceremonies have participation protocols. Respect is shown through appropriate involvement."
+        },
+        {
+          "id": "scenario_202",
+          "situation": "A family asks you to contribute to a roora (bride price) discussion as a family friend",
+          "options": [
+            "Offer your opinion about appropriate amounts",
+            "Listen respectfully and only speak if directly asked for input",
+            "Suggest modern alternatives to traditional practices"
+          ],
+          "correct": 1,
+          "explanation": "Marriage negotiations are family matters. Friends may be honored to observe but should not presume to guide family decisions.",
+          "cultural_lesson": "Some cultural practices require insider knowledge. Friendship means respectful support, not intervention."
+        }
+      ]
+    },
+    
+    "respectProtocolQuiz": {
+      "family_hierarchy": [
+        {
+          "question": "Arrange these family members in order of respect hierarchy:",
+          "options": ["mwana", "baba", "sekuru", "mukoma"],
+          "correct_order": ["sekuru", "baba", "mukoma", "mwana"],
+          "explanation": "Grandfather (sekuru) highest, then father (baba), older brother (mukoma), then child (mwana)"
+        },
+        {
+          "question": "Who would typically speak first in a family meeting?",
+          "options": ["The person who called the meeting", "The oldest male", "The head of household", "Anyone can start"],
+          "correct": 1,
+          "explanation": "Age and wisdom are respected. Oldest male (often sekuru or babamukuru) typically opens formal family discussions."
+        }
+      ],
+      
+      "language_register": [
+        {
+          "question": "When addressing someone's grandmother, you should use:",
+          "options": ["mhoro", "mhoroi", "hello", "ndeipi"],
+          "correct": 1,
+          "explanation": "'Mhoroi' is formal register required for elders. 'Mhoro' is casual and would be disrespectful."
+        },
+        {
+          "question": "The plural form 'henyu' is used to:",
+          "options": ["Address multiple people only", "Show respect even to one person", "Speak to children", "Formal written communication"],
+          "correct": 1,
+          "explanation": "Plural forms show respect in Shona. Can address one elder as 'henyu' to demonstrate respect."
+        }
+      ],
+      
+      "ceremonial_boundaries": [
+        {
+          "question": "Before participating in a traditional ceremony, you should:",
+          "options": ["Read about it online", "Ask the family elder for guidance", "Watch YouTube videos", "Just follow others"],
+          "correct": 1,
+          "explanation": "Sacred ceremonies require elder guidance. Each ceremony has specific protocols that must be learned from knowledgeable insiders."
+        },
+        {
+          "question": "If you don't understand something during a ceremony:",
+          "options": ["Ask questions immediately", "Wait until after to ask respectfully", "Google it later", "Guess based on others' actions"],
+          "correct": 1,
+          "explanation": "Ceremonies maintain sacred focus. Questions should wait unless it's essential for respectful participation."
+        }
+      ]
+    },
+    
+    "contextSelectionExercises": {
+      "formal_vs_informal": [
+        {
+          "context": "Speaking to your friend's mother",
+          "word_options": ["mhoro", "mhoroi"],
+          "correct": "mhoroi",
+          "explanation": "Mother-in-law or friend's mother requires formal respect register"
+        },
+        {
+          "context": "Greeting your age-mate friend",
+          "word_options": ["mhoro", "mhoroi"],
+          "correct": "mhoro",
+          "explanation": "Peers use informal register to show friendship and equality"
+        }
+      ],
+      
+      "regional_variations": [
+        {
+          "context": "In Harare (Zezuru area), morning greeting is:",
+          "word_options": ["mangwanani", "mangwanani henyu", "mhoro"],
+          "correct": "mangwanani",
+          "explanation": "Standard Shona based on Zezuru dialect uses this form"
+        }
+      ],
+      
+      "sacred_vs_secular": [
+        {
+          "context": "Discussing a community meeting",
+          "word_options": ["dare", "sangano"],
+          "correct": "sangano",
+          "explanation": "'Dare' implies traditional court with spiritual elements; 'sangano' is secular meeting"
+        }
+      ]
+    },
+    
+    "rolePlayPreparations": {
+      "family_introduction": {
+        "title": "Meeting the Extended Family",
+        "scenario": "You're bringing your partner to meet their extended family for the first time",
+        "preparation_steps": [
+          "Learn family hierarchy and who to greet first",
+          "Practice formal greetings with proper respect levels",
+          "Understand gift-giving customs",
+          "Know appropriate topics for conversation",
+          "Learn how to show interest in family history respectfully"
+        ],
+        "key_vocabulary": ["babamukuru", "tete", "sekuru", "ambuya", "mhoroi"],
+        "cultural_objectives": [
+          "Demonstrate respect for family hierarchy",
+          "Show understanding of hunhu/ubuntu principles",
+          "Navigate gift-giving appropriately",
+          "Engage in culturally appropriate conversation"
+        ],
+        "assessment_criteria": [
+          "Uses correct greeting forms for each family member",
+          "Shows appropriate respect through body language",
+          "Engages family members according to cultural protocols",
+          "Demonstrates interest in family without overstepping boundaries"
+        ]
+      },
+      
+      "community_event": {
+        "title": "Participating in Community Celebration",
+        "scenario": "Independence Day celebration in a Zimbabwean community",
+        "preparation_steps": [
+          "Learn about Independence Day significance",
+          "Understand appropriate dress and behavior",
+          "Practice patriotic vocabulary and songs",
+          "Know how to participate respectfully in activities",
+          "Understand community hierarchy and protocols"
+        ],
+        "key_vocabulary": ["chimurenga", "rusununguko", "nyika", "vanhu", "mafaro"],
+        "cultural_objectives": [
+          "Show respect for liberation history",
+          "Participate appropriately in community activities",
+          "Demonstrate understanding of national pride",
+          "Connect with community members respectfully"
+        ]
+      },
+      
+      "traditional_ceremony": {
+        "title": "Observing Traditional Ceremony",
+        "scenario": "Invited to observe a kurova guva ceremony",
+        "preparation_steps": [
+          "Understand the ceremony's spiritual significance",
+          "Learn appropriate dress and behavior",
+          "Know when to participate and when to observe",
+          "Practice respectful interaction with family members",
+          "Understand boundaries around sacred knowledge"
+        ],
+        "key_vocabulary": ["kurova guva", "mudzimu", "midzimu", "svikiro", "kuita"],
+        "cultural_objectives": [
+          "Show deep respect for sacred ceremony",
+          "Demonstrate understanding of spiritual boundaries",
+          "Support family appropriately during sacred time",
+          "Learn from ceremony while respecting its sacred nature"
+        ],
+        "special_considerations": [
+          "Some aspects may not be for public discussion",
+          "Photography may be restricted or forbidden",
+          "Participation levels vary by family decision",
+          "Spiritual aspects require respectful acknowledgment"
+        ]
+      }
+    },
+    
+    "culturalCompetencyAssessment": {
+      "beginner_assessment": {
+        "title": "Cultural Awareness Certification",
+        "requirements": [
+          "Pass greeting protocol scenarios (80%)",
+          "Demonstrate understanding of hunhu principles",
+          "Show appropriate respect levels in conversation",
+          "Recognize family hierarchy basics"
+        ],
+        "practical_demonstration": [
+          "Role-play family introduction",
+          "Navigate market interaction respectfully",
+          "Show understanding of formal vs informal contexts"
+        ]
+      },
+      
+      "intermediate_assessment": {
+        "title": "Social Navigation Certification", 
+        "requirements": [
+          "Navigate complex family situations appropriately",
+          "Understand community meeting protocols",
+          "Demonstrate cultural food knowledge",
+          "Show awareness of regional variations"
+        ],
+        "practical_demonstration": [
+          "Participate in family meeting simulation",
+          "Navigate community celebration appropriately",
+          "Show understanding of traditional practices"
+        ]
+      },
+      
+      "advanced_assessment": {
+        "title": "Ceremony Participation Readiness",
+        "requirements": [
+          "Understand sacred vs public knowledge boundaries",
+          "Demonstrate appropriate ceremonial behavior",
+          "Show deep respect for spiritual practices",
+          "Navigate complex cultural scenarios"
+        ],
+        "practical_demonstration": [
+          "Observer role in ceremony simulation",
+          "Cultural sensitivity scenario navigation",
+          "Appropriate boundary recognition"
+        ],
+        "prerequisites": [
+          "Elder approval or recommendation",
+          "Cultural mentor relationship",
+          "Demonstrated long-term cultural respect"
+        ]
+      }
+    }
+  }
+}

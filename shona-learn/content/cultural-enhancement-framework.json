@@ -1,0 +1,353 @@
+{
+  "culturalEnhancementFramework": {
+    "version": "1.0",
+    "scope": "480 vocabulary items comprehensive cultural integration",
+    "approach": "Respectful diaspora-focused cultural learning",
+    
+    "culturalFieldsStructure": {
+      "description": "Enhanced structure for each vocabulary item's cultural field",
+      "requiredFields": {
+        "cultural": {
+          "significance": {
+            "type": "string",
+            "description": "Deep cultural meaning and importance",
+            "examples": ["Central to family hierarchy", "Sacred to ancestral communication", "Symbol of liberation struggle"]
+          },
+          "usage_context": {
+            "type": "string", 
+            "description": "When, where, and how the word is used",
+            "examples": ["Used only with elders", "Formal ceremonies only", "Daily family interactions"]
+          },
+          "respect_level": {
+            "type": "enum",
+            "values": ["casual", "formal", "sacred", "taboo"],
+            "description": "Level of cultural respect required"
+          },
+          "regional_notes": {
+            "type": "object",
+            "properties": {
+              "zezuru": "string",
+              "karanga": "string", 
+              "manyika": "string",
+              "korekore": "string",
+              "variations": "array"
+            }
+          },
+          "generational_notes": {
+            "type": "object",
+            "properties": {
+              "elders": "string",
+              "adults": "string",
+              "youth": "string", 
+              "modern_usage": "string"
+            }
+          },
+          "related_customs": {
+            "type": "array",
+            "items": "string",
+            "description": "Associated customs, rituals, or practices"
+          },
+          "taboos": {
+            "type": "string",
+            "description": "What to avoid or be careful about"
+          },
+          "diaspora_notes": {
+            "type": "string",
+            "description": "How word is used/adapted in diaspora communities"
+          },
+          "proverbs": {
+            "type": "array",
+            "items": {
+              "shona": "string",
+              "english": "string",
+              "meaning": "string"
+            }
+          },
+          "historical_context": {
+            "type": "string",
+            "description": "Historical significance if applicable"
+          }
+        }
+      }
+    },
+
+    "culturalCompetencyLevels": {
+      "beginner": {
+        "name": "Cultural Awareness",
+        "description": "Basic respect protocols and greetings",
+        "skills": [
+          "Proper greeting protocols",
+          "Basic family respect terms", 
+          "Understanding hunhu/ubuntu principles",
+          "Recognizing formal vs informal language"
+        ],
+        "vocabulary_focus": ["greetings", "family_basic", "respect_terms", "daily_interactions"],
+        "assessment_criteria": [
+          "Can greet appropriately by context",
+          "Uses correct respect levels",
+          "Recognizes cultural sensitivity"
+        ]
+      },
+      "intermediate": {
+        "name": "Social Navigation", 
+        "description": "Community participation and social understanding",
+        "skills": [
+          "Family hierarchy navigation",
+          "Community meeting participation",
+          "Traditional food culture",
+          "Regional variation awareness"
+        ],
+        "vocabulary_focus": ["extended_family", "community_roles", "traditional_practices", "regional_terms"],
+        "assessment_criteria": [
+          "Navigates family relationships correctly",
+          "Participates appropriately in community settings",
+          "Understands cultural context of interactions"
+        ]
+      },
+      "advanced": {
+        "name": "Ceremony Participation",
+        "description": "Traditional ceremony understanding with boundaries",
+        "skills": [
+          "Ceremonial language comprehension",
+          "Traditional music and dance context",
+          "Ancestor veneration basics",
+          "Sacred vs public knowledge distinction"
+        ],
+        "vocabulary_focus": ["ceremonial_terms", "spiritual_concepts", "traditional_music", "sacred_practices"],
+        "assessment_criteria": [
+          "Respects ceremonial boundaries",
+          "Understands sacred language register",
+          "Recognizes appropriate participation levels"
+        ],
+        "warnings": [
+          "Some knowledge requires elder guidance",
+          "Respect initiation-only knowledge boundaries",
+          "Seek permission before ceremonial participation"
+        ]
+      },
+      "expert": {
+        "name": "Cultural Ambassador",
+        "description": "Deep cultural understanding and teaching ability",
+        "skills": [
+          "Teaching cultural concepts to others",
+          "Regional variation expertise", 
+          "Historical context mastery",
+          "Diaspora adaptation understanding"
+        ],
+        "vocabulary_focus": ["complete_vocabulary", "historical_terms", "philosophical_concepts", "modern_adaptations"],
+        "assessment_criteria": [
+          "Can explain cultural concepts to others",
+          "Bridges traditional and modern contexts",
+          "Facilitates cross-cultural understanding"
+        ]
+      }
+    },
+
+    "culturalLearningPaths": {
+      "meeting_the_family": {
+        "title": "Meeting the Family",
+        "description": "Progressive family interaction skills",
+        "stages": [
+          {
+            "level": "basic_introductions",
+            "vocabulary": ["baba", "amai", "mwana", "mhoroi", "mhoro"],
+            "cultural_focus": "Basic family respect and greetings",
+            "scenarios": ["First meeting with parents", "Greeting children appropriately"]
+          },
+          {
+            "level": "extended_family",
+            "vocabulary": ["babamukuru", "tete", "sekuru", "ambuya", "muzukuru"],
+            "cultural_focus": "Family hierarchy and extended relationships",
+            "scenarios": ["Family gatherings", "Understanding obligations and respect"]
+          },
+          {
+            "level": "family_ceremonies",
+            "vocabulary": ["roora", "kuraguza", "kucheka ukama"],
+            "cultural_focus": "Family ceremonial participation",
+            "scenarios": ["Wedding discussions", "Family ritual observation"]
+          }
+        ]
+      },
+      "community_participation": {
+        "title": "Community Participation",
+        "description": "Engaging with Shona communities",
+        "stages": [
+          {
+            "level": "market_interactions",
+            "vocabulary": ["musika", "kutenga", "kutengesera", "mitengo"],
+            "cultural_focus": "Market culture and bargaining etiquette",
+            "scenarios": ["Shopping at traditional markets", "Building vendor relationships"]
+          },
+          {
+            "level": "community_meetings",
+            "vocabulary": ["dare", "mukuru", "sangano", "kuronga"],
+            "cultural_focus": "Community decision-making processes",
+            "scenarios": ["Village meetings", "Community problem-solving"]
+          },
+          {
+            "level": "celebrations",
+            "vocabulary": ["mutambo", "mafaro", "mukombrero", "kusangana"],
+            "cultural_focus": "Community celebrations and festivals",
+            "scenarios": ["Independence Day", "Harvest celebrations", "Community achievements"]
+          }
+        ]
+      },
+      "traditional_ceremonies": {
+        "title": "Traditional Ceremonies (Guided)",
+        "description": "Understanding ceremonial contexts with proper boundaries",
+        "boundary_notice": "This path requires elder guidance and permission",
+        "stages": [
+          {
+            "level": "observation_only",
+            "vocabulary": ["bira", "svikiro", "midzimu", "mbira"],
+            "cultural_focus": "Understanding ceremonial elements as observer",
+            "scenarios": ["Respectful observation", "Understanding spiritual significance"],
+            "restrictions": ["No participation without permission", "Follow elder guidance"]
+          },
+          {
+            "level": "basic_participation",
+            "vocabulary": ["kurova guva", "kukumbira", "kumira", "runyararo"],
+            "cultural_focus": "Limited participation in appropriate ceremonies",
+            "scenarios": ["Memorial services", "Family blessings"],
+            "requirements": ["Elder approval", "Cultural mentor present"]
+          }
+        ]
+      },
+      "modern_zimbabwe": {
+        "title": "Modern Zimbabwe Context",
+        "description": "Contemporary Shona culture and adaptations",
+        "stages": [
+          {
+            "level": "urban_culture",
+            "vocabulary": ["guta", "magitare", "computer", "internet"],
+            "cultural_focus": "Urban Shona culture and modern adaptations",
+            "scenarios": ["City life navigation", "Technology integration"]
+          },
+          {
+            "level": "global_connections", 
+            "vocabulary": ["diaspora", "kuenda kunze", "kugara kunze", "hukama"],
+            "cultural_focus": "Diaspora connections and global Shona identity",
+            "scenarios": ["Maintaining culture abroad", "Cross-cultural connections"]
+          }
+        ]
+      }
+    },
+
+    "culturalSensitivityGuidelines": {
+      "sacred_boundaries": {
+        "principles": [
+          "Some knowledge is not for public sharing",
+          "Respect initiation-only knowledge",
+          "Sacred ceremonies require elder permission",
+          "Spiritual matters need careful approach"
+        ],
+        "markers": {
+          "sacred": "Requires elder guidance",
+          "restricted": "Initiation knowledge only", 
+          "sensitive": "Approach with caution",
+          "forbidden": "Not for outsiders"
+        }
+      },
+      "respect_protocols": {
+        "elders": "Always use formal language and show deference",
+        "in_laws": "Specific respect customs and avoidance patterns",
+        "spirits": "Traditional beliefs require respectful acknowledgment",
+        "ceremonies": "Follow proper protocols or observe respectfully"
+      },
+      "regional_sensitivity": {
+        "urban_rural": "Different usage patterns and contexts",
+        "dialect_respect": "All regional variations are valid and valued",
+        "modern_traditional": "Both perspectives deserve respect"
+      }
+    },
+
+    "assessmentTools": {
+      "cultural_appropriateness_scenarios": {
+        "description": "Scenarios testing cultural sensitivity",
+        "example_scenarios": [
+          {
+            "situation": "Meeting your partner's grandmother for the first time",
+            "options": ["Use mhoro", "Use mhoroi", "Use formal praise names"],
+            "correct": "Use mhoroi",
+            "explanation": "Elders require formal respect through language"
+          },
+          {
+            "situation": "Invited to a bira ceremony",
+            "options": ["Participate immediately", "Ask elder for guidance", "Observe from distance"],
+            "correct": "Ask elder for guidance", 
+            "explanation": "Sacred ceremonies require permission and guidance"
+          }
+        ]
+      },
+      "respect_protocol_quiz": {
+        "description": "Testing understanding of respect hierarchies",
+        "question_types": [
+          "Family hierarchy ordering",
+          "Appropriate language register selection",
+          "Greeting protocol sequences",
+          "Ceremonial participation boundaries"
+        ]
+      },
+      "context_selection_exercises": {
+        "description": "Choosing appropriate words for different contexts",
+        "exercise_types": [
+          "Formal vs informal situations",
+          "Regional variation selection",
+          "Generational appropriate usage",
+          "Sacred vs secular contexts"
+        ]
+      },
+      "role_play_preparations": {
+        "description": "Practice scenarios for real-world application",
+        "scenarios": [
+          "Family introduction meetings",
+          "Community event participation",
+          "Traditional ceremony observation",
+          "Diaspora cultural maintenance"
+        ]
+      }
+    },
+
+    "multimediaContent": {
+      "cultural_context_images": {
+        "guidelines": "Respectful representation of cultural practices",
+        "categories": [
+          "Family structures and interactions",
+          "Traditional foods and preparation",
+          "Ceremonial objects (public knowledge only)",
+          "Community gathering spaces",
+          "Traditional clothing and adornment"
+        ]
+      },
+      "traditional_music_connections": {
+        "instruments": ["mbira", "hosho", "ngoma", "chipendani"],
+        "genres": ["traditional", "chimurenga", "sungura", "contemporary"],
+        "cultural_links": "Connect vocabulary to musical traditions"
+      },
+      "proverb_explanations": {
+        "format": "Shona proverb → English translation → Deep meaning → Modern application",
+        "categories": ["wisdom", "family", "community", "nature", "values"]
+      },
+      "historical_timelines": {
+        "periods": ["Pre-colonial", "Colonial", "Liberation", "Independence", "Modern"],
+        "vocabulary_connections": "Link words to historical contexts"
+      }
+    },
+
+    "communityConsultation": {
+      "elder_advisory_board": {
+        "purpose": "Review cultural content for accuracy and appropriateness",
+        "composition": "Respected elders from different regions and backgrounds",
+        "review_process": "Regular review of cultural enhancements and boundaries"
+      },
+      "diaspora_input": {
+        "purpose": "Ensure content serves diaspora learning needs",
+        "focus_areas": ["Cultural maintenance abroad", "Intergenerational transmission", "Modern adaptations"]
+      },
+      "academic_validation": {
+        "purpose": "Scholarly review of cultural and linguistic accuracy",
+        "areas": ["Anthropological accuracy", "Linguistic precision", "Historical context"]
+      }
+    }
+  }
+}
