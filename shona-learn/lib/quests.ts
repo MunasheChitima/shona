@@ -135,12 +135,46 @@ export const quests: Quest[] = [
     lessons: ["lesson-6", "lesson-7", "lesson-8"]
   },
   {
+    id: "quest-history",
+    title: "Journey Through Zimbabwe's Past",
+    description: "Explore the rich history of Zimbabwe from ancient kingdoms to modern independence",
+    storyNarrative: "Travel through time to discover the great civilizations that shaped Zimbabwe, meet legendary heroes who fought for freedom, and understand how the past influences the present. Your journey will take you from the stone walls of Great Zimbabwe to the celebration of independence.",
+    category: "Zimbabwean History",
+    orderIndex: 5,
+    requiredLevel: 2,
+    learningObjectives: [
+      "Understand the significance of Great Zimbabwe",
+      "Learn about pre-colonial kingdoms and rulers",
+      "Explore the liberation struggle and independence",
+      "Discover Zimbabwe's cultural heritage"
+    ],
+    discoveryElements: [
+      "Explore archaeological findings at Great Zimbabwe",
+      "Discover untold stories of liberation heroes",
+      "Learn about Zimbabwe's contributions to African civilization",
+      "Understand the continuity between ancient and modern Zimbabwe"
+    ],
+    collaborativeElements: [
+      "Share family stories about Zimbabwe's history",
+      "Interview elders about their memories of independence",
+      "Create a timeline of Zimbabwe's history with classmates",
+      "Visit historical sites virtually or in person with others"
+    ],
+    intrinsicRewards: [
+      "Deep connection to Zimbabwean identity and heritage",
+      "Understanding of how history shapes the present",
+      "Pride in Zimbabwe's resistance and achievements",
+      "Knowledge to share Zimbabwe's story with the world"
+    ],
+    lessons: ["history-lesson-1", "history-lesson-2", "history-lesson-3", "history-lesson-4", "history-lesson-5", "history-lesson-6"]
+  },
+  {
     id: "quest-5",
     title: "The Great Baobab Tree",
     description: "Discover ancient Shona stories and legends while learning storytelling vocabulary",
     storyNarrative: "Under the ancient baobab tree, the village storyteller shares traditional tales. You'll learn the art of Shona storytelling while building your vocabulary through captivating legends of ancestors, spirits, and wisdom.",
     category: "Cultural Heritage",
-    orderIndex: 5,
+    orderIndex: 6,
     requiredLevel: 5,
     learningObjectives: [
       "Learn storytelling vocabulary and phrases",

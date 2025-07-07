@@ -143,6 +143,7 @@ export default function Quests() {
                       {quest.category === 'Family & Relationships' && <FaUsers className="text-white text-2xl" />}
                       {quest.category === 'Practical Communication' && <FaCompass className="text-white text-2xl" />}
                       {quest.category === 'Pronunciation Mastery' && <FaLightbulb className="text-white text-2xl" />}
+                      {quest.category === 'Zimbabwean History' && <FaBookOpen className="text-white text-2xl" />}
                     </div>
                   </div>
 

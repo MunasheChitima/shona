@@ -1,0 +1,360 @@
+{
+  "exercises": [
+    {
+      "id": "hist-ex-1-1",
+      "lessonId": "history-lesson-1",
+      "type": "multiple_choice",
+      "title": "The Meaning of Zimbabwe",
+      "question": "What does 'Dzimbahwe' mean in Shona?",
+      "difficulty": "beginner",
+      "points": 15,
+      "correctAnswer": "House of stone",
+      "options": [
+        "House of stone",
+        "Great kingdom",
+        "Ancient city",
+        "Sacred place"
+      ],
+      "intrinsicFeedback": {
+        "success": "Excellent! You understand the deep meaning behind our nation's name!",
+        "encouragement": "The name connects us to our ancient architectural heritage"
+      },
+      "culturalContext": "Great Zimbabwe gave its name to the modern nation"
+    },
+    {
+      "id": "hist-ex-1-2",
+      "lessonId": "history-lesson-1",
+      "type": "cultural_scenario",
+      "title": "Visiting Great Zimbabwe",
+      "question": "You're visiting the Great Zimbabwe monument. What symbol would you expect to see that appears on Zimbabwe's flag?",
+      "difficulty": "intermediate",
+      "points": 20,
+      "scenario": "You're standing at the entrance to Great Zimbabwe, looking at the ancient stone walls that have stood for centuries.",
+      "correctAnswer": "The Zimbabwe Bird (Hungwe)",
+      "options": [
+        "The Zimbabwe Bird (Hungwe)",
+        "A lion symbol",
+        "A stone tower",
+        "An eagle"
+      ],
+      "explanation": "The Zimbabwe Bird, found at Great Zimbabwe, is our national symbol",
+      "intrinsicFeedback": {
+        "success": "Perfect! You recognize the connection between our ancient heritage and modern symbols!",
+        "encouragement": "The Zimbabwe Bird connects past and present"
+      },
+      "culturalContext": "Eight carved birds were found at Great Zimbabwe"
+    },
+    {
+      "id": "hist-ex-1-3",
+      "lessonId": "history-lesson-1",
+      "type": "timeline_ordering",
+      "title": "Great Zimbabwe Timeline",
+      "question": "Arrange these events in chronological order",
+      "difficulty": "advanced",
+      "points": 25,
+      "events": [
+        {"event": "Great Zimbabwe's golden age begins", "year": "1100 CE"},
+        {"event": "Height of trading with China and Arabia", "year": "1300 CE"},
+        {"event": "Decline of Great Zimbabwe", "year": "1450 CE"},
+        {"event": "UNESCO World Heritage status", "year": "1986"}
+      ],
+      "correctOrder": [0, 1, 2, 3],
+      "intrinsicFeedback": {
+        "success": "Wonderful! You understand the historical progression of Great Zimbabwe!",
+        "encouragement": "This timeline shows our long and proud history"
+      }
+    },
+    {
+      "id": "hist-ex-1-4",
+      "lessonId": "history-lesson-1",
+      "type": "vocabulary_building",
+      "title": "Ancient Architecture Vocabulary",
+      "question": "Match the Shona terms with their meanings in the context of Great Zimbabwe",
+      "difficulty": "intermediate",
+      "points": 30,
+      "matches": [
+        {"shona": "madzimbahwe", "english": "stone ruins"},
+        {"shona": "dare", "english": "council court"},
+        {"shona": "mambo", "english": "king"},
+        {"shona": "hungwe", "english": "Zimbabwe bird"}
+      ],
+      "intrinsicFeedback": {
+        "success": "Excellent! You're mastering the vocabulary of our ancient heritage!",
+        "encouragement": "These words connect us to our ancestors"
+      }
+    },
+    {
+      "id": "hist-ex-2-1",
+      "lessonId": "history-lesson-2",
+      "type": "ruler_matching",
+      "title": "Great Leaders of Zimbabwe",
+      "question": "Match these titles and achievements with the correct historical figures",
+      "difficulty": "intermediate",
+      "points": 25,
+      "rulers": [
+        {"title": "Mwene Mutapa", "achievement": "Established vast empire controlling gold trade"},
+        {"title": "Changamire Dombo", "achievement": "Defeated Portuguese forces in 1684"},
+        {"title": "Svikiro", "achievement": "Connected rulers to ancestral wisdom"}
+      ],
+      "intrinsicFeedback": {
+        "success": "Great! You understand the legacy of our great leaders!",
+        "encouragement": "These leaders shaped Zimbabwe's pre-colonial power"
+      }
+    },
+    {
+      "id": "hist-ex-2-2",
+      "lessonId": "history-lesson-2",
+      "type": "empire_comparison",
+      "title": "Mutapa vs Rozvi Empires",
+      "question": "Which statement correctly describes the Rozvi Empire?",
+      "difficulty": "advanced",
+      "points": 30,
+      "correctAnswer": "The Rozvi Empire defeated the Portuguese and succeeded the Mutapa",
+      "options": [
+        "The Rozvi Empire defeated the Portuguese and succeeded the Mutapa",
+        "The Rozvi Empire came before the Mutapa Empire",
+        "The Rozvi Empire was allied with the Portuguese",
+        "The Rozvi Empire was smaller than Mutapa"
+      ],
+      "intrinsicFeedback": {
+        "success": "Excellent! You understand the succession of Zimbabwe's great empires!",
+        "encouragement": "The Rozvi showed our military strength"
+      }
+    },
+    {
+      "id": "hist-ex-3-1",
+      "lessonId": "history-lesson-3",
+      "type": "hero_identification",
+      "title": "Heroes of the First Chimurenga",
+      "question": "What prophetic words did Mbuya Nehanda speak before her execution?",
+      "difficulty": "intermediate",
+      "points": 25,
+      "correctAnswer": "My bones will rise again",
+      "options": [
+        "My bones will rise again",
+        "Zimbabwe will be free",
+        "The ancestors will return",
+        "Victory is certain"
+      ],
+      "intrinsicFeedback": {
+        "success": "Perfect! You remember the powerful prophecy that inspired generations!",
+        "encouragement": "These words came true with independence in 1980"
+      },
+      "culturalContext": "Nehanda's prophecy sustained hope through colonial rule"
+    },
+    {
+      "id": "hist-ex-3-2",
+      "lessonId": "history-lesson-3",
+      "type": "spiritual_leadership",
+      "title": "Spirit Mediums in Resistance",
+      "question": "How did spirit mediums like Nehanda and Kaguvi unite people in the First Chimurenga?",
+      "difficulty": "advanced",
+      "points": 35,
+      "correctAnswer": "They provided spiritual authority that transcended ethnic divisions",
+      "options": [
+        "They provided spiritual authority that transcended ethnic divisions",
+        "They commanded military forces directly",
+        "They negotiated with colonial authorities",
+        "They supplied weapons to fighters"
+      ],
+      "intrinsicFeedback": {
+        "success": "Excellent! You understand the spiritual dimension of our liberation struggle!",
+        "encouragement": "Spiritual unity was key to resistance"
+      }
+    },
+    {
+      "id": "hist-ex-3-3",
+      "lessonId": "history-lesson-3",
+      "type": "vocabulary_context",
+      "title": "Resistance Vocabulary",
+      "question": "Use 'chimurenga' correctly in a sentence about Zimbabwe's history",
+      "difficulty": "intermediate",
+      "points": 20,
+      "template": "The First _____ united Shona and Ndebele people",
+      "correctAnswer": "Chimurenga",
+      "intrinsicFeedback": {
+        "success": "Great! You can use liberation vocabulary correctly!",
+        "encouragement": "Chimurenga remains a powerful word in Zimbabwe"
+      }
+    },
+    {
+      "id": "hist-ex-4-1",
+      "lessonId": "history-lesson-4",
+      "type": "liberation_timeline",
+      "title": "Second Chimurenga Events",
+      "question": "When did the Second Chimurenga begin?",
+      "difficulty": "intermediate",
+      "points": 20,
+      "correctAnswer": "1966 in Chinhoyi",
+      "options": [
+        "1966 in Chinhoyi",
+        "1970 in Harare",
+        "1975 in Bulawayo",
+        "1960 in Mutare"
+      ],
+      "intrinsicFeedback": {
+        "success": "Correct! You know when the modern liberation struggle began!",
+        "encouragement": "The Battle of Chinhoyi marked the beginning"
+      }
+    },
+    {
+      "id": "hist-ex-4-2",
+      "lessonId": "history-lesson-4",
+      "type": "role_exploration",
+      "title": "Women in Liberation",
+      "question": "What was the role of 'vachimbwido' during the liberation war?",
+      "difficulty": "advanced",
+      "points": 30,
+      "correctAnswer": "Young women who provided support and intelligence to freedom fighters",
+      "options": [
+        "Young women who provided support and intelligence to freedom fighters",
+        "Female military commanders",
+        "Women who stayed in the cities",
+        "Traditional healers"
+      ],
+      "intrinsicFeedback": {
+        "success": "Excellent! You recognize the crucial role of women in liberation!",
+        "encouragement": "Women were essential to the struggle's success"
+      }
+    },
+    {
+      "id": "hist-ex-4-3",
+      "lessonId": "history-lesson-4",
+      "type": "pungwe_simulation",
+      "title": "Understanding Pungwe",
+      "question": "What was the purpose of 'pungwe' gatherings during the liberation war?",
+      "difficulty": "intermediate",
+      "points": 25,
+      "correctAnswer": "All-night political education and morale building sessions",
+      "options": [
+        "All-night political education and morale building sessions",
+        "Military training exercises",
+        "Religious ceremonies only",
+        "Food distribution events"
+      ],
+      "intrinsicFeedback": {
+        "success": "Perfect! You understand how pungwe united communities!",
+        "encouragement": "Pungwe kept the liberation spirit alive"
+      }
+    },
+    {
+      "id": "hist-ex-5-1",
+      "lessonId": "history-lesson-5",
+      "type": "independence_celebration",
+      "title": "Independence Day",
+      "question": "What significant date marks Zimbabwe's independence?",
+      "difficulty": "beginner",
+      "points": 15,
+      "correctAnswer": "April 18, 1980",
+      "options": [
+        "April 18, 1980",
+        "March 6, 1980",
+        "May 25, 1980",
+        "December 12, 1979"
+      ],
+      "intrinsicFeedback": {
+        "success": "Excellent! You know our Independence Day!",
+        "encouragement": "This date marks the birth of modern Zimbabwe"
+      }
+    },
+    {
+      "id": "hist-ex-5-2",
+      "lessonId": "history-lesson-5",
+      "type": "nation_building",
+      "title": "Post-Independence Achievements",
+      "question": "What was one of Zimbabwe's major achievements after independence?",
+      "difficulty": "intermediate",
+      "points": 25,
+      "correctAnswer": "Achieving one of the highest literacy rates in Africa",
+      "options": [
+        "Achieving one of the highest literacy rates in Africa",
+        "Becoming the largest economy in Africa",
+        "Hosting the Olympics",
+        "Building the largest dam in Africa"
+      ],
+      "intrinsicFeedback": {
+        "success": "Great! You know about Zimbabwe's education success!",
+        "encouragement": "Education was prioritized after independence"
+      }
+    },
+    {
+      "id": "hist-ex-5-3",
+      "lessonId": "history-lesson-5",
+      "type": "vocabulary_modern",
+      "title": "Modern Zimbabwe Terms",
+      "question": "Match these terms with their meanings in modern Zimbabwe",
+      "difficulty": "intermediate",
+      "points": 30,
+      "matches": [
+        {"shona": "uhuru", "english": "independence"},
+        {"shona": "mureza", "english": "flag"},
+        {"shona": "budiriro", "english": "development"},
+        {"shona": "ruzivo", "english": "education/knowledge"}
+      ],
+      "intrinsicFeedback": {
+        "success": "Wonderful! You're mastering modern political vocabulary!",
+        "encouragement": "These words shape contemporary Zimbabwe"
+      }
+    },
+    {
+      "id": "hist-ex-6-1",
+      "lessonId": "history-lesson-6",
+      "type": "cultural_heritage",
+      "title": "Zimbabwe's Cultural Treasures",
+      "question": "Which traditional instrument has been played in Zimbabwe for over 1000 years?",
+      "difficulty": "beginner",
+      "points": 15,
+      "correctAnswer": "Mbira",
+      "options": [
+        "Mbira",
+        "Guitar",
+        "Drums only",
+        "Flute"
+      ],
+      "intrinsicFeedback": {
+        "success": "Perfect! You know our ancient musical heritage!",
+        "encouragement": "The mbira connects us to our ancestors"
+      }
+    },
+    {
+      "id": "hist-ex-6-2",
+      "lessonId": "history-lesson-6",
+      "type": "totem_understanding",
+      "title": "Understanding Mitupo",
+      "question": "What is the primary purpose of totems (mitupo) in Shona society?",
+      "difficulty": "advanced",
+      "points": 30,
+      "correctAnswer": "To identify clans and regulate marriages",
+      "options": [
+        "To identify clans and regulate marriages",
+        "Only for religious ceremonies",
+        "To determine political leadership",
+        "For artistic expression only"
+      ],
+      "intrinsicFeedback": {
+        "success": "Excellent! You understand the social function of totems!",
+        "encouragement": "Totems maintain social harmony and identity"
+      }
+    },
+    {
+      "id": "hist-ex-6-3",
+      "lessonId": "history-lesson-6",
+      "type": "cultural_practice",
+      "title": "Traditional Ceremonies",
+      "question": "What happens at a 'bira' ceremony?",
+      "difficulty": "intermediate",
+      "points": 25,
+      "correctAnswer": "Ancestral spirits are honored with music and dance",
+      "options": [
+        "Ancestral spirits are honored with music and dance",
+        "Only weddings are celebrated",
+        "Political meetings are held",
+        "Harvest festivals only"
+      ],
+      "intrinsicFeedback": {
+        "success": "Great! You understand our spiritual traditions!",
+        "encouragement": "Bira ceremonies keep us connected to our ancestors"
+      }
+    }
+  ]
+}
