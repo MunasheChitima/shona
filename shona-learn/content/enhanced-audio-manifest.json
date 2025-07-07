@@ -1,0 +1,385 @@
+{
+  "manifest": {
+    "version": "2.0",
+    "lastUpdated": "2024-01-15T10:00:00Z",
+    "totalFiles": 1440,
+    "totalSize": "2.8GB",
+    "compressionRatio": 0.3,
+    "cdn": {
+      "primary": "https://cdn.shona-learn.com",
+      "fallback": "https://backup.shona-learn.com",
+      "regions": ["us-east-1", "eu-west-1", "ap-southeast-1", "af-south-1"]
+    },
+    "qualityTiers": {
+      "high": {
+        "format": "mp3",
+        "bitrate": "320kbps",
+        "sampleRate": "44100Hz",
+        "channels": 2
+      },
+      "medium": {
+        "format": "mp3", 
+        "bitrate": "128kbps",
+        "sampleRate": "44100Hz",
+        "channels": 1
+      },
+      "low": {
+        "format": "opus",
+        "bitrate": "64kbps",
+        "sampleRate": "48000Hz",
+        "channels": 1
+      },
+      "minimal": {
+        "format": "opus",
+        "bitrate": "32kbps",
+        "sampleRate": "24000Hz", 
+        "channels": 1
+      }
+    }
+  },
+  "categories": {
+    "words": {
+      "basic": {
+        "levels": [1, 2, 3],
+        "priority": "immediate",
+        "totalFiles": 300,
+        "estimatedSize": "150MB",
+        "subcategories": {
+          "greetings": {
+            "files": 20,
+            "examples": ["mhoro", "mhoroi", "makadii", "mangwanani"]
+          },
+          "family": {
+            "files": 40,
+            "examples": ["baba", "amai", "mwana", "sekuru"]
+          },
+          "numbers": {
+            "files": 30,
+            "examples": ["motsi", "piri", "tatu", "ina", "shanu"]
+          },
+          "colors": {
+            "files": 20,
+            "examples": ["tsvuku", "chena", "tamba", "bvungu"]
+          },
+          "body_parts": {
+            "files": 25,
+            "examples": ["musoro", "maziso", "pfumo", "ruoko"]
+          },
+          "food": {
+            "files": 35,
+            "examples": ["sadza", "nyama", "mvura", "mukaka"]
+          },
+          "animals": {
+            "files": 40,
+            "examples": ["imbwa", "katsi", "huku", "mombe"]
+          },
+          "nature": {
+            "files": 30,
+            "examples": ["muti", "mafuro", "gomo", "rwizi"]
+          },
+          "house": {
+            "files": 35,
+            "examples": ["imba", "mukova", "hwindo", "denga"]
+          },
+          "clothing": {
+            "files": 25,
+            "examples": ["hembe", "bhurugwa", "shangu", "nguwani"]
+          }
+        }
+      },
+      "intermediate": {
+        "levels": [4, 5, 6],
+        "priority": "prefetch",
+        "totalFiles": 400,
+        "estimatedSize": "200MB",
+        "subcategories": {
+          "emotions": {
+            "files": 30,
+            "examples": ["kufara", "kushungurudzika", "kutsamwa", "kutya"]
+          },
+          "actions": {
+            "files": 60,
+            "examples": ["kufamba", "kumira", "kutamba", "kushanda"]
+          },
+          "time": {
+            "files": 40,
+            "examples": ["mangwanani", "masikati", "madekwana", "usiku"]
+          },
+          "weather": {
+            "files": 25,
+            "examples": ["mvura", "zuva", "mhepo", "chando"]
+          },
+          "transportation": {
+            "files": 35,
+            "examples": ["motokari", "chitima", "ndege", "bhasikuru"]
+          },
+          "education": {
+            "files": 45,
+            "examples": ["chikoro", "mudzidzisi", "bhuku", "pepa"]
+          },
+          "health": {
+            "files": 40,
+            "examples": ["chirwere", "mushonga", "chipatara", "dhokita"]
+          },
+          "technology": {
+            "files": 35,
+            "examples": ["kompyuta", "runhare", "terevhizheni", "redhiyo"]
+          },
+          "business": {
+            "files": 45,
+            "examples": ["mushandi", "bhanga", "mari", "kutengesa"]
+          },
+          "culture": {
+            "files": 45,
+            "examples": ["mbira", "ngoma", "rwiyo", "mutambo"]
+          }
+        }
+      },
+      "advanced": {
+        "levels": [7, 8, 9, 10],
+        "priority": "onDemand", 
+        "totalFiles": 300,
+        "estimatedSize": "150MB",
+        "subcategories": {
+          "abstract_concepts": {
+            "files": 50,
+            "examples": ["huzhinji", "chiedza", "rugare", "pfungwa"]
+          },
+          "professional": {
+            "files": 60,
+            "examples": ["basa", "hurongwa", "musangano", "zvibvumirano"]
+          },
+          "academic": {
+            "files": 50,
+            "examples": ["dzidziso", "ongororo", "tsvagiridzo", "pfungwa"]
+          },
+          "spiritual": {
+            "files": 40,
+            "examples": ["mweya", "munamato", "chitendero", "runyararo"]
+          },
+          "literary": {
+            "files": 60,
+            "examples": ["ngano", "nhotembo", "rungano", "madhindindi"]
+          },
+          "scientific": {
+            "files": 40,
+            "examples": ["sainzi", "kuyedza", "pfungwa", "tsvagurudzo"]
+          }
+        }
+      }
+    },
+    "sentences": {
+      "basic_phrases": {
+        "levels": [1, 2, 3],
+        "priority": "immediate",
+        "totalFiles": 200,
+        "estimatedSize": "400MB",
+        "examples": [
+          "Ndiri kusevenza",
+          "Ndoda kudya",
+          "Ndirikuenda kumba",
+          "Mangwanani akanaka"
+        ]
+      },
+      "conversation": {
+        "levels": [4, 5, 6],
+        "priority": "prefetch", 
+        "totalFiles": 300,
+        "estimatedSize": "600MB",
+        "examples": [
+          "Makadini nhasi?",
+          "Ndichauya mangwana",
+          "Tinogona kutaura here?",
+          "Ndinotenda zvikuru"
+        ]
+      },
+      "complex_expressions": {
+        "levels": [7, 8, 9, 10],
+        "priority": "onDemand",
+        "totalFiles": 160,
+        "estimatedSize": "320MB",
+        "examples": [
+          "Zvinoshamisa zvikuru kuti",
+          "Pamusoro peizvozvo, ndinofunga kuti",
+          "Nekuda kweizvozvo, tinofanira",
+          "Kubva panguva iyoyo"
+        ]
+      }
+    },
+    "cultural": {
+      "stories": {
+        "priority": "onDemand",
+        "totalFiles": 40,
+        "estimatedSize": "800MB",
+        "subcategories": {
+          "folktales": {
+            "files": 15,
+            "examples": ["Shato na Mukoma", "Gudo na Tsuro", "Nzou na Hare"]
+          },
+          "proverbs": {
+            "files": 15,
+            "examples": ["Chakafukidza dzimba matenga", "Kurarama ndokutendeka"]
+          },
+          "historical": {
+            "files": 10,
+            "examples": ["Mbuya Nehanda", "King Lobengula", "Great Zimbabwe"]
+          }
+        }
+      },
+      "songs": {
+        "priority": "onDemand",
+        "totalFiles": 20,
+        "estimatedSize": "400MB",
+        "subcategories": {
+          "traditional": {
+            "files": 12,
+            "examples": ["Soko Risina Musoro", "Chemutengure"]
+          },
+          "children": {
+            "files": 8,
+            "examples": ["Makorokoto", "Amai VaPangi"]
+          }
+        }
+      },
+      "ceremonies": {
+        "priority": "onDemand",
+        "totalFiles": 20,
+        "estimatedSize": "400MB",
+        "subcategories": {
+          "traditional": {
+            "files": 15,
+            "examples": ["Kurova guva", "Mukwerera"]
+          },
+          "modern": {
+            "files": 5,
+            "examples": ["Muchato", "Graduation"]
+          }
+        }
+      }
+    },
+    "exercises": {
+      "pronunciation_drills": {
+        "priority": "immediate",
+        "totalFiles": 80,
+        "estimatedSize": "160MB",
+        "subcategories": {
+          "minimal_pairs": {
+            "files": 40,
+            "examples": ["piri/biri", "tatu/datu", "kura/gura"]
+          },
+          "tone_practice": {
+            "files": 40,
+            "examples": ["mukadzi/mukadzi", "baba/baba"]
+          }
+        }
+      },
+      "listening_comprehension": {
+        "priority": "prefetch",
+        "totalFiles": 60,
+        "estimatedSize": "480MB",
+        "subcategories": {
+          "short_dialogues": {
+            "files": 30,
+            "difficulty": "beginner"
+          },
+          "news_clips": {
+            "files": 30,
+            "difficulty": "advanced"
+          }
+        }
+      }
+    }
+  },
+  "fileStructure": {
+    "words": {
+      "basic": "/content/audio/words/basic/{category}/{word}.{quality}.{format}",
+      "intermediate": "/content/audio/words/intermediate/{category}/{word}.{quality}.{format}",
+      "advanced": "/content/audio/words/advanced/{category}/{word}.{quality}.{format}"
+    },
+    "sentences": "/content/audio/sentences/{category}/{id}.{quality}.{format}",
+    "cultural": "/content/audio/cultural/{category}/{subcategory}/{id}.{quality}.{format}",
+    "exercises": "/content/audio/exercises/{category}/{id}.{quality}.{format}"
+  },
+  "cacheStrategy": {
+    "immediate": {
+      "description": "Download immediately on app load",
+      "includes": ["basic words level 1-2", "basic phrases level 1-2", "pronunciation drills"],
+      "estimatedSize": "100MB",
+      "priority": 1
+    },
+    "prefetch": {
+      "description": "Download in background after immediate",
+      "includes": ["basic words level 3", "intermediate words level 4-5", "conversation phrases"],
+      "estimatedSize": "300MB",
+      "priority": 2
+    },
+    "onDemand": {
+      "description": "Download when specifically requested",
+      "includes": ["advanced content", "cultural stories", "complex expressions"],
+      "estimatedSize": "2.4GB",
+      "priority": 3
+    },
+    "adaptiveStrategy": {
+      "userProgress": "Adjust based on learning progress",
+      "weakAreas": "Prioritize user's weak vocabulary areas",
+      "frequency": "Prioritize frequently accessed content",
+      "connection": "Adjust quality based on connection speed"
+    }
+  },
+  "offlineSupport": {
+    "minimumOfflinePackage": {
+      "size": "50MB",
+      "content": ["basic greetings", "numbers 1-10", "family terms", "essential phrases"],
+      "quality": "low"
+    },
+    "standardOfflinePackage": {
+      "size": "200MB", 
+      "content": ["basic + intermediate words", "basic phrases", "pronunciation guides"],
+      "quality": "medium"
+    },
+    "fullOfflinePackage": {
+      "size": "800MB",
+      "content": ["all basic/intermediate", "selected advanced", "cultural basics"],
+      "quality": "high"
+    }
+  },
+  "qualityAssurance": {
+    "audioValidation": {
+      "minimumDuration": 0.3,
+      "maximumDuration": 15.0,
+      "silenceThreshold": 0.01,
+      "clippingThreshold": 0.98,
+      "volumeRange": [0.05, 0.8]
+    },
+    "pronunciationAccuracy": {
+      "nativeSpeakerValidation": true,
+      "linguistReview": true,
+      "communityFeedback": true,
+      "automaticAnalysis": true
+    },
+    "culturalAppropriateness": {
+      "culturalExpertReview": true,
+      "communityInput": true,
+      "contextualAccuracy": true
+    }
+  },
+  "analytics": {
+    "trackingMetrics": [
+      "playCount",
+      "completionRate", 
+      "skipRate",
+      "preferredSpeed",
+      "downloadTime",
+      "cacheHitRate",
+      "userFeedback",
+      "pronunciationAccuracy"
+    ],
+    "performanceMetrics": [
+      "loadTime",
+      "bufferHealth",
+      "downloadErrors",
+      "compressionRatio",
+      "storageUsage"
+    ]
+  }
+}
