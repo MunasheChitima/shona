@@ -169,12 +169,50 @@ export const quests: Quest[] = [
     lessons: ["history-lesson-1", "history-lesson-2", "history-lesson-3", "history-lesson-4", "history-lesson-5", "history-lesson-6"]
   },
   {
+    id: "quest-cultural-heritage",
+    title: "Roots & Identity - Connecting with Your Heritage",
+    description: "A journey of cultural discovery for Zimbabweans in the diaspora to reconnect with their roots",
+    storyNarrative: "You're a second or third generation Zimbabwean living abroad, yearning to understand your cultural heritage. This journey will help you discover your totem identity, understand family structures, learn cultural values, and reconnect with the traditions that define who you are. From understanding why you can't marry certain people to knowing how to properly greet elders, you'll gain the knowledge to confidently navigate Zimbabwean cultural spaces.",
+    category: "Cultural Heritage",
+    orderIndex: 6,
+    requiredLevel: 2,
+    learningObjectives: [
+      "Discover your totem identity and its significance",
+      "Understand extended family structures and hierarchy",
+      "Learn cultural values and ubuntu philosophy",
+      "Master traditional customs and etiquette",
+      "Connect ancient wisdom to modern life"
+    ],
+    discoveryElements: [
+      "Find out your totem and what it means for your identity",
+      "Discover why certain customs exist and their wisdom",
+      "Learn the deeper meanings behind proverbs and sayings",
+      "Explore how traditional values apply to modern life",
+      "Understand the 'why' behind cultural practices"
+    ],
+    collaborativeElements: [
+      "Interview family elders about your totem and its history",
+      "Create a family tree with proper Shona relationship terms",
+      "Share cultural experiences with other diaspora learners",
+      "Practice traditional greetings and customs together",
+      "Cook traditional meals and share recipes"
+    ],
+    intrinsicRewards: [
+      "Deep connection to your ancestral identity",
+      "Confidence in cultural settings and family gatherings",
+      "Ability to pass on traditions to the next generation",
+      "Understanding of your place in the larger Zimbabwean family",
+      "Pride in your cultural heritage and values"
+    ],
+    lessons: ["culture-lesson-1", "culture-lesson-2", "culture-lesson-3", "culture-lesson-4", "culture-lesson-5", "culture-lesson-6", "culture-lesson-7", "culture-lesson-8"]
+  },
+  {
     id: "quest-5",
     title: "The Great Baobab Tree",
     description: "Discover ancient Shona stories and legends while learning storytelling vocabulary",
     storyNarrative: "Under the ancient baobab tree, the village storyteller shares traditional tales. You'll learn the art of Shona storytelling while building your vocabulary through captivating legends of ancestors, spirits, and wisdom.",
-    category: "Cultural Heritage",
-    orderIndex: 6,
+    category: "Storytelling",
+    orderIndex: 7,
     requiredLevel: 5,
     learningObjectives: [
       "Learn storytelling vocabulary and phrases",

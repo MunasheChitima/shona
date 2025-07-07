@@ -607,6 +607,276 @@ async function main() {
       })
     }
   }
+
+  // Create Cultural Heritage Quest
+  const cultureQuest = await prisma.quest.create({
+    data: {
+      title: "Roots & Identity - Connecting with Your Heritage",
+      description: "A journey of cultural discovery for Zimbabweans in the diaspora",
+      storyNarrative: "Discover your totem identity, understand family structures, and reconnect with traditions.",
+      category: "Cultural Heritage",
+      orderIndex: 6,
+      requiredLevel: 2,
+      collaborativeElements: JSON.stringify([
+        "Interview family elders about your totem",
+        "Create a family tree with Shona terms",
+        "Share cultural experiences with other learners",
+        "Practice traditional customs together"
+      ]),
+      intrinsicRewards: JSON.stringify([
+        "Deep connection to ancestral identity",
+        "Confidence in cultural settings",
+        "Ability to pass on traditions",
+        "Pride in cultural heritage"
+      ])
+    }
+  })
+
+  // Add Cultural Heritage lessons
+  const cultureLessons = [
+    {
+      title: "Mitupo - Your Totem Identity",
+      description: "Discover your clan identity through Zimbabwe's totem system",
+      category: "Cultural Heritage",
+      orderIndex: 30,
+      xpReward: 100,
+      questId: cultureQuest.id,
+      learningObjectives: JSON.stringify([
+        "Understand what totems are and why they matter",
+        "Learn major Shona totems and their meanings",
+        "Discover how totems regulate marriages"
+      ]),
+      discoveryElements: JSON.stringify([
+        "Explore the connection between totems and nature",
+        "Learn how totems create extended family networks"
+      ]),
+      exercises: [
+        {
+          type: "multiple_choice",
+          question: "If your father's totem is Shumba, what is your totem?",
+          correctAnswer: "Shumba - totems are inherited from father",
+          options: JSON.stringify(["Shumba - totems are inherited from father", "You choose your own", "Your mother's totem", "Elders assign it"]),
+          shonaPhrase: "Mutupo",
+          audioText: "Mu-tu-po"
+        },
+        {
+          type: "vocabulary",
+          question: "What does 'mutupo' mean?",
+          correctAnswer: "Totem/clan name",
+          options: JSON.stringify(["Totem/clan name", "Family", "Animal", "Name"]),
+          shonaPhrase: "Mutupo",
+          audioText: "Mu-tu-po"
+        }
+      ]
+    },
+    {
+      title: "Common Totems and Their Stories",
+      description: "Learn about major Zimbabwean totems and their significance",
+      category: "Cultural Heritage",
+      orderIndex: 31,
+      xpReward: 100,
+      questId: cultureQuest.id,
+      learningObjectives: JSON.stringify([
+        "Master vocabulary for common animal totems",
+        "Understand the stories behind major totems",
+        "Learn totem praise names and greetings"
+      ]),
+      discoveryElements: JSON.stringify([
+        "Explore why certain animals were chosen as totems",
+        "Discover regional variations in totem names"
+      ]),
+      exercises: [
+        {
+          type: "multiple_choice",
+          question: "Which totem represents bravery and leadership?",
+          correctAnswer: "Shumba (Lion)",
+          options: JSON.stringify(["Shumba (Lion)", "Moyo (Heart)", "Nzou (Elephant)", "Shava (Eland)"]),
+          shonaPhrase: "Shumba",
+          audioText: "Shum-ba"
+        }
+      ]
+    },
+    {
+      title: "Mhuri - Family Structure and Hierarchy",
+      description: "Understanding the extended family system",
+      category: "Cultural Heritage",
+      orderIndex: 32,
+      xpReward: 100,
+      questId: cultureQuest.id,
+      learningObjectives: JSON.stringify([
+        "Map out extended family relationships",
+        "Understand the hierarchy of respect",
+        "Learn proper titles and forms of address"
+      ]),
+      discoveryElements: JSON.stringify([
+        "Explore why aunts are called mothers",
+        "Discover the special role of maternal uncles"
+      ]),
+      exercises: [
+        {
+          type: "multiple_choice",
+          question: "Who is 'babamukuru'?",
+          correctAnswer: "Father's older brother / family head",
+          options: JSON.stringify(["Father's older brother / family head", "Your father", "Grandfather", "Uncle"]),
+          shonaPhrase: "Babamukuru",
+          audioText: "Ba-ba-mu-ku-ru"
+        }
+      ]
+    },
+    {
+      title: "Tsika dzeChivanhu - Cultural Values",
+      description: "Core values that define Zimbabwean culture",
+      category: "Cultural Heritage",
+      orderIndex: 33,
+      xpReward: 100,
+      questId: cultureQuest.id,
+      learningObjectives: JSON.stringify([
+        "Understand hunhu/ubuntu philosophy",
+        "Learn vocabulary for expressing values",
+        "Master phrases for showing respect"
+      ]),
+      discoveryElements: JSON.stringify([
+        "Explore how ubuntu shapes daily life",
+        "Discover the importance of community"
+      ]),
+      exercises: [
+        {
+          type: "multiple_choice",
+          question: "What does 'hunhu' mean?",
+          correctAnswer: "Ubuntu/humanness",
+          options: JSON.stringify(["Ubuntu/humanness", "Respect", "Culture", "Tradition"]),
+          shonaPhrase: "Hunhu",
+          audioText: "Hu-nhu"
+        }
+      ]
+    },
+    {
+      title: "Mitambo neMhemberero - Ceremonies",
+      description: "Life ceremonies and cultural celebrations",
+      category: "Cultural Heritage",
+      orderIndex: 34,
+      xpReward: 120,
+      questId: cultureQuest.id,
+      learningObjectives: JSON.stringify([
+        "Learn about major life ceremonies",
+        "Understand wedding customs and lobola",
+        "Know proper ceremony etiquette"
+      ]),
+      discoveryElements: JSON.stringify([
+        "Explore the meaning behind rituals",
+        "Discover regional variations"
+      ]),
+      exercises: [
+        {
+          type: "multiple_choice",
+          question: "What is 'roora/lobola'?",
+          correctAnswer: "Bride price/appreciation",
+          options: JSON.stringify(["Bride price/appreciation", "Wedding gift", "Dowry", "Payment"]),
+          shonaPhrase: "Roora",
+          audioText: "Roo-ra"
+        }
+      ]
+    },
+    {
+      title: "Chikafu neTsika - Food Culture",
+      description: "Traditional foods and hospitality customs",
+      category: "Cultural Heritage",
+      orderIndex: 35,
+      xpReward: 120,
+      questId: cultureQuest.id,
+      learningObjectives: JSON.stringify([
+        "Learn traditional food vocabulary",
+        "Understand meal customs and etiquette",
+        "Master hospitality phrases"
+      ]),
+      discoveryElements: JSON.stringify([
+        "Explore the significance of sadza",
+        "Discover ceremonial foods"
+      ]),
+      exercises: [
+        {
+          type: "multiple_choice",
+          question: "What should you do when offered food?",
+          correctAnswer: "Accept graciously even if not hungry",
+          options: JSON.stringify(["Accept graciously even if not hungry", "Politely refuse", "Ask what it is", "Only if hungry"]),
+          englishPhrase: "Food hospitality",
+          audioText: "Ku-dya"
+        }
+      ]
+    },
+    {
+      title: "Kutaura Kwekare - Proverbs and Wisdom",
+      description: "Traditional proverbs that guide behavior",
+      category: "Cultural Heritage",
+      orderIndex: 36,
+      xpReward: 120,
+      questId: cultureQuest.id,
+      learningObjectives: JSON.stringify([
+        "Learn common Shona proverbs",
+        "Understand how proverbs teach values",
+        "Master using proverbs in conversation"
+      ]),
+      discoveryElements: JSON.stringify([
+        "Explore deeper meanings of proverbs",
+        "Discover how elders use proverbs"
+      ]),
+      exercises: [
+        {
+          type: "multiple_choice",
+          question: "What is a 'tsumo'?",
+          correctAnswer: "Proverb",
+          options: JSON.stringify(["Proverb", "Story", "Song", "Riddle"]),
+          shonaPhrase: "Tsumo",
+          audioText: "Tsu-mo"
+        }
+      ]
+    },
+    {
+      title: "Kuroorana - Marriage Customs",
+      description: "Understanding traditional marriage customs",
+      category: "Cultural Heritage",
+      orderIndex: 37,
+      xpReward: 120,
+      questId: cultureQuest.id,
+      learningObjectives: JSON.stringify([
+        "Understand the marriage process",
+        "Learn about lobola negotiations",
+        "Know marriage roles and responsibilities"
+      ]),
+      discoveryElements: JSON.stringify([
+        "Explore how marriages unite families",
+        "Discover modern adaptations"
+      ]),
+      exercises: [
+        {
+          type: "multiple_choice",
+          question: "Who is 'tete' in marriage customs?",
+          correctAnswer: "Paternal aunt/marriage counselor",
+          options: JSON.stringify(["Paternal aunt/marriage counselor", "Mother", "Sister", "Friend"]),
+          shonaPhrase: "Tete",
+          audioText: "Te-te"
+        }
+      ]
+    }
+  ]
+
+  // Create culture lessons with their exercises
+  for (const lessonData of cultureLessons) {
+    const { exercises, ...lesson } = lessonData
+    
+    const createdLesson = await prisma.lesson.create({
+      data: lesson
+    })
+    
+    for (const exercise of exercises) {
+      await prisma.exercise.create({
+        data: {
+          ...exercise,
+          lessonId: createdLesson.id
+        }
+      })
+    }
+  }
   
   console.log('Database seeded successfully!')
 }

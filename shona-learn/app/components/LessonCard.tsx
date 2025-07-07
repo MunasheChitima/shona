@@ -26,6 +26,7 @@ export default function LessonCard({ lesson, progress, onClick, locked }: Lesson
       case 'Time': return '⏰'
       case 'Travel': return '✈️'
       case 'Zimbabwean History': return '🏛️'
+      case 'Cultural Heritage': return '🌍'
       default: return '📚'
     }
   }
@@ -43,6 +44,7 @@ export default function LessonCard({ lesson, progress, onClick, locked }: Lesson
       case 'Time': return 'from-indigo-400 to-indigo-600'
       case 'Travel': return 'from-teal-400 to-teal-600'
       case 'Zimbabwean History': return 'from-amber-500 to-amber-700'
+      case 'Cultural Heritage': return 'from-emerald-500 to-emerald-700'
       default: return 'from-gray-400 to-gray-600'
     }
   }
