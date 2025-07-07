@@ -1,6 +1,21 @@
 import { PrismaClient } from '@prisma/client'
+import * as fs from 'fs';
+import * as path from 'path';
 
 const prisma = new PrismaClient()
+
+// Load age-appropriate content
+const ageAppropriateContent = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../content/age-appropriate-lessons-complete.json'), 'utf8')
+);
+
+const kidsExercises = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../content/kids-activities-exercises.json'), 'utf8')
+);
+
+const kidsQuest = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '../content/kids-cultural-quest.json'), 'utf8')
+);
 
 async function main() {
   // Clear existing data
@@ -877,6 +892,183 @@ async function main() {
       })
     }
   }
+  
+  // Add age-appropriate kids' lessons
+  console.log('Creating age-appropriate kids lessons...');
+  for (const lesson of ageAppropriateContent.childrenLessons) {
+    await prisma.lesson.create({
+      data: {
+        id: lesson.id,
+        title: lesson.title,
+        description: lesson.description,
+        category: lesson.category,
+        orderIndex: lesson.orderIndex,
+        level: lesson.level,
+        ageRange: lesson.ageRange,
+        ageRestriction: lesson.ageRestriction,
+        kidfriendly: lesson.kidfriendly,
+        visualAids: lesson.visualAids,
+        interactiveElements: lesson.interactiveElements,
+        xpReward: lesson.xpReward,
+        estimatedDuration: lesson.estimatedDuration,
+        content: JSON.stringify({
+          learningObjectives: lesson.learningObjectives,
+          discoveryElements: lesson.discoveryElements,
+          culturalNotes: lesson.culturalNotes
+        }),
+        vocabulary: JSON.stringify(lesson.vocabulary),
+        questId: lesson.questId,
+      },
+    });
+  }
+
+  // Add kids' quest
+  console.log('Creating kids quest...');
+  await prisma.quest.create({
+    data: {
+      id: kidsQuest.kidsQuest.id,
+      title: kidsQuest.kidsQuest.title,
+      description: kidsQuest.kidsQuest.description,
+      category: kidsQuest.kidsQuest.category,
+      ageRange: kidsQuest.kidsQuest.ageRange,
+      mascot: JSON.stringify(kidsQuest.kidsQuest.mascot),
+      difficulty: kidsQuest.kidsQuest.difficulty,
+      estimatedDuration: kidsQuest.kidsQuest.estimatedDuration,
+      totalXP: kidsQuest.kidsQuest.totalXP,
+      milestones: JSON.stringify(kidsQuest.kidsQuest.milestones),
+      rewards: JSON.stringify(kidsQuest.kidsQuest.rewards),
+      orderIndex: 1,
+      requiredLevel: 1,
+      storyNarrative: kidsQuest.kidsQuest.questNarrative.introduction,
+      collaborativeElements: JSON.stringify(kidsQuest.kidsQuest.specialActivities),
+      intrinsicRewards: JSON.stringify(kidsQuest.kidsQuest.parentGuidance),
+    },
+  });
+
+  // Add kids' exercises
+  console.log('Creating kids exercises...');
+  for (const exercise of kidsExercises.kidsExercises) {
+    await prisma.exercise.create({
+      data: {
+        id: exercise.id,
+        lessonId: exercise.lessonId,
+        type: exercise.type,
+        title: exercise.title,
+        question: exercise.question,
+        ageRange: exercise.ageRange,
+        kidfriendly: true,
+        gameType: exercise.gameType,
+        difficulty: exercise.difficulty,
+        points: exercise.points,
+        correctAnswer: exercise.correctAnswer,
+        options: JSON.stringify(exercise.options || exercise.scenarios || exercise.songs || exercise.ingredients || exercise.familyMembers),
+        intrinsicFeedback: JSON.stringify(exercise.intrinsicFeedback),
+        activities: JSON.stringify(exercise.activities),
+        audioText: exercise.audioFile || null,
+        discoveryHint: exercise.description,
+      },
+    });
+  }
+
+  // Update existing lessons with age restrictions
+  console.log('Updating existing lessons with age restrictions...');
+  
+  // Mark historical lessons as adults-only
+  const adultOnlyLessons = [
+    'history-chimurenga-1',
+    'history-chimurenga-2', 
+    'history-colonial-resistance',
+    'history-liberation-war'
+  ];
+  
+  for (const lessonId of adultOnlyLessons) {
+    await prisma.lesson.updateMany({
+      where: { id: lessonId },
+      data: {
+        ageRestriction: 'adultsOnly',
+        ageRange: '18+',
+        kidfriendly: false,
+      },
+    });
+  }
+
+  // Mark some lessons as teens and adults
+  const teensAndAdultsLessons = [
+    'history-great-zimbabwe',
+    'history-pre-colonial-kingdoms',
+    'history-independence',
+    'culture-traditional-ceremonies',
+    'culture-marriage-customs'
+  ];
+  
+  for (const lessonId of teensAndAdultsLessons) {
+    await prisma.lesson.updateMany({
+      where: { id: lessonId },
+      data: {
+        ageRestriction: 'teensAndAdults',
+        ageRange: '13+',
+        kidfriendly: false,
+      },
+    });
+  }
+
+  // Mark basic lessons as all ages
+  const allAgesLessons = [
+    'lesson-1', 'lesson-2', 'lesson-3', 'lesson-4', 'lesson-5'
+  ];
+  
+  for (const lessonId of allAgesLessons) {
+    await prisma.lesson.updateMany({
+      where: { id: lessonId },
+      data: {
+        ageRestriction: null,
+        ageRange: 'all',
+        kidfriendly: true,
+      },
+    });
+  }
+
+  // Create sample age-appropriate users
+  console.log('Creating sample age-appropriate users...');
+  
+  // Child user account
+  await prisma.user.create({
+    data: {
+      email: 'child@example.com',
+      password: '$2b$12$8PvL/y8pRxOCvNHzYQ6OiuJHWKjRKqmOsNMKpLbCEhWjNfIxSdmPO', // password123
+      name: 'Little Explorer',
+      age: 8,
+      ageGroup: 'children',
+      parentEmail: 'parent@example.com',
+      parentConsent: true,
+    },
+  });
+
+  // Teen user account
+  await prisma.user.create({
+    data: {
+      email: 'teen@example.com',
+      password: '$2b$12$8PvL/y8pRxOCvNHzYQ6OiuJHWKjRKqmOsNMKpLbCEhWjNfIxSdmPO', // password123
+      name: 'Teen Learner',
+      age: 15,
+      ageGroup: 'teens',
+      parentConsent: true,
+    },
+  });
+
+  // Adult user account
+  await prisma.user.create({
+    data: {
+      email: 'adult@example.com',
+      password: '$2b$12$8PvL/y8pRxOCvNHzYQ6OiuJHWKjRKqmOsNMKpLbCEhWjNfIxSdmPO', // password123
+      name: 'Adult Learner',
+      age: 30,
+      ageGroup: 'adults',
+      parentConsent: false,
+    },
+  });
+
+  console.log('Age-appropriate content seeded successfully!');
   
   console.log('Database seeded successfully!')
 }

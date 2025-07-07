@@ -1,0 +1,468 @@
+{
+  "kidsExercises": [
+    {
+      "id": "kids-ex-1-1",
+      "lessonId": "kids-culture-1",
+      "type": "animal_matching_game",
+      "title": "Find Your Animal Family!",
+      "question": "Which animal could be your family's special totem?",
+      "difficulty": "easy",
+      "points": 10,
+      "ageRange": "5-8",
+      "gameType": "drag_drop",
+      "correctAnswer": "Any animal - all families have special animals!",
+      "options": [
+        {
+          "animal": "Lion (Shumba)",
+          "sound": "ROAR!",
+          "trait": "Brave and strong",
+          "image": "lion_cartoon.png"
+        },
+        {
+          "animal": "Elephant (Nzou)",
+          "sound": "TRUMPET!",
+          "trait": "Wise and gentle",
+          "image": "elephant_cartoon.png"
+        },
+        {
+          "animal": "Heart (Moyo)",
+          "sound": "THUMP THUMP!",
+          "trait": "Kind and loving",
+          "image": "heart_cartoon.png"
+        }
+      ],
+      "intrinsicFeedback": {
+        "success": "Wow! Every animal family is special and amazing!",
+        "encouragement": "Your family animal makes you part of a big, loving family!"
+      },
+      "activities": {
+        "coloring": "Color your family animal and make it beautiful!",
+        "sounds": "Make the sound your family animal makes!",
+        "movement": "Move like your family animal!"
+      }
+    },
+    {
+      "id": "kids-ex-1-2",
+      "lessonId": "kids-culture-1",
+      "type": "animal_sound_quiz",
+      "title": "Animal Sounds Game",
+      "question": "What sound does a Shumba (lion) make?",
+      "difficulty": "easy",
+      "points": 15,
+      "ageRange": "5-10",
+      "gameType": "audio_match",
+      "correctAnswer": "ROAR!",
+      "options": [
+        {
+          "sound": "ROAR!",
+          "animal": "Shumba (Lion)",
+          "audioFile": "lion_roar_kid.mp3"
+        },
+        {
+          "sound": "TRUMPET!",
+          "animal": "Nzou (Elephant)",
+          "audioFile": "elephant_trumpet_kid.mp3"
+        },
+        {
+          "sound": "MOO!",
+          "animal": "Mombe (Cow)",
+          "audioFile": "cow_moo_kid.mp3"
+        }
+      ],
+      "intrinsicFeedback": {
+        "success": "Great job! You know animal sounds!",
+        "encouragement": "Animals are amazing friends in Zimbabwe!"
+      },
+      "activities": {
+        "acting": "Act like each animal with sounds and movements!",
+        "drawing": "Draw the animals making their sounds!"
+      }
+    },
+    {
+      "id": "kids-ex-2-1",
+      "lessonId": "kids-culture-2",
+      "type": "family_tree_builder",
+      "title": "Build Your Family Tree",
+      "question": "Who are the special people in your family?",
+      "difficulty": "easy",
+      "points": 20,
+      "ageRange": "6-12",
+      "gameType": "interactive_builder",
+      "familyMembers": [
+        {
+          "shona": "baba",
+          "english": "daddy",
+          "image": "dad_cartoon.png",
+          "role": "Takes care of you and loves you"
+        },
+        {
+          "shona": "amai",
+          "english": "mommy",
+          "image": "mom_cartoon.png",
+          "role": "Takes care of you and loves you"
+        },
+        {
+          "shona": "sekuru",
+          "english": "grandpa",
+          "image": "grandpa_cartoon.png",
+          "role": "Tells stories and gives wisdom"
+        },
+        {
+          "shona": "ambuya",
+          "english": "grandma",
+          "image": "grandma_cartoon.png",
+          "role": "Tells stories and gives wisdom"
+        }
+      ],
+      "intrinsicFeedback": {
+        "success": "Beautiful family tree! Your family is so special!",
+        "encouragement": "Every person in your family loves you very much!"
+      },
+      "activities": {
+        "drawing": "Draw pictures of your family members",
+        "photos": "Look at family photos and practice names",
+        "stories": "Ask family members to tell you stories"
+      }
+    },
+    {
+      "id": "kids-ex-2-2",
+      "lessonId": "kids-culture-2",
+      "type": "greeting_practice",
+      "title": "Greeting Family Game",
+      "question": "How do you greet your grandpa in Shona?",
+      "difficulty": "easy",
+      "points": 15,
+      "ageRange": "5-10",
+      "gameType": "role_play",
+      "correctAnswer": "Mangwanani, Sekuru!",
+      "scenarios": [
+        {
+          "person": "Grandpa (Sekuru)",
+          "greeting": "Mangwanani, Sekuru!",
+          "response": "Mangwanani, mwana wangu!"
+        },
+        {
+          "person": "Grandma (Ambuya)",
+          "greeting": "Mangwanani, Ambuya!",
+          "response": "Mangwanani, mwana wangu!"
+        },
+        {
+          "person": "Daddy (Baba)",
+          "greeting": "Mangwanani, Baba!",
+          "response": "Mangwanani, mwana wangu!"
+        }
+      ],
+      "intrinsicFeedback": {
+        "success": "Perfect greeting! Your family will be so proud!",
+        "encouragement": "Respectful greetings show you care about family!"
+      }
+    },
+    {
+      "id": "kids-ex-3-1",
+      "lessonId": "kids-culture-3",
+      "type": "cooking_game",
+      "title": "Make Pretend Sadza",
+      "question": "Let's cook sadza together! What do we need?",
+      "difficulty": "easy",
+      "points": 25,
+      "ageRange": "5-12",
+      "gameType": "cooking_simulation",
+      "ingredients": [
+        {
+          "name": "Mealie meal",
+          "shona": "hupfu",
+          "needed": true,
+          "image": "mealie_meal.png"
+        },
+        {
+          "name": "Water",
+          "shona": "mvura",
+          "needed": true,
+          "image": "water.png"
+        },
+        {
+          "name": "Love and care",
+          "shona": "rudo",
+          "needed": true,
+          "image": "heart.png"
+        }
+      ],
+      "cookingSteps": [
+        "Boil the water (mvura)",
+        "Add mealie meal (hupfu) slowly",
+        "Stir with love (rudo)!",
+        "Share with family!"
+      ],
+      "intrinsicFeedback": {
+        "success": "You're a great cook! Sadza brings families together!",
+        "encouragement": "Sharing food shows love in Zimbabwe!"
+      },
+      "activities": {
+        "pretend_cooking": "Use play dough to make pretend sadza",
+        "real_cooking": "Help a grown-up make real sadza",
+        "sharing": "Practice offering food to others politely"
+      }
+    },
+    {
+      "id": "kids-ex-3-2",
+      "lessonId": "kids-culture-3",
+      "type": "polite_words_game",
+      "title": "Magic Polite Words",
+      "question": "What magic word do you say when someone gives you food?",
+      "difficulty": "easy",
+      "points": 10,
+      "ageRange": "5-8",
+      "gameType": "scenario_response",
+      "correctAnswer": "Ndatenda!",
+      "scenarios": [
+        {
+          "situation": "Grandma gives you cookies",
+          "response": "Ndatenda, Ambuya!",
+          "result": "Grandma smiles and feels happy!"
+        },
+        {
+          "situation": "Friend shares their apple",
+          "response": "Ndatenda, shamwari!",
+          "result": "Your friend feels appreciated!"
+        },
+        {
+          "situation": "Mom makes your favorite meal",
+          "response": "Ndatenda, Amai!",
+          "result": "Mom knows you're grateful!"
+        }
+      ],
+      "intrinsicFeedback": {
+        "success": "You know the magic words! You're so polite!",
+        "encouragement": "Saying thank you makes everyone happy!"
+      },
+      "activities": {
+        "practice": "Practice saying thank you in different situations",
+        "role_play": "Take turns giving and receiving with thank you"
+      }
+    },
+    {
+      "id": "kids-ex-4-1",
+      "lessonId": "kids-culture-4",
+      "type": "music_and_movement",
+      "title": "Mbira Music and Dance",
+      "question": "Can you dance to the beautiful mbira music?",
+      "difficulty": "easy",
+      "points": 20,
+      "ageRange": "5-12",
+      "gameType": "music_interactive",
+      "musicElements": [
+        {
+          "instrument": "Mbira",
+          "sound": "Ting-ting-ting",
+          "movement": "Move your thumbs like playing mbira",
+          "audioFile": "mbira_kids_music.mp3"
+        },
+        {
+          "instrument": "Ngoma (Drum)",
+          "sound": "Boom-boom-boom",
+          "movement": "Pat your hands like playing drums",
+          "audioFile": "ngoma_kids_beat.mp3"
+        },
+        {
+          "instrument": "Hosho (Shakers)",
+          "sound": "Shake-shake-shake",
+          "movement": "Shake your hands like shakers",
+          "audioFile": "hosho_kids_rhythm.mp3"
+        }
+      ],
+      "intrinsicFeedback": {
+        "success": "You're a wonderful dancer! Music makes everyone happy!",
+        "encouragement": "Every person can dance - there's no wrong way!"
+      },
+      "activities": {
+        "making_instruments": "Make shakers with beans and containers",
+        "dancing": "Create your own dance moves to mbira music",
+        "singing": "Learn simple Shona songs"
+      }
+    },
+    {
+      "id": "kids-ex-4-2",
+      "lessonId": "kids-culture-4",
+      "type": "instrument_making",
+      "title": "Make Your Own Hosho Shakers",
+      "question": "Let's make music instruments like in Zimbabwe!",
+      "difficulty": "easy",
+      "points": 30,
+      "ageRange": "6-12",
+      "gameType": "craft_activity",
+      "materials": [
+        "Empty plastic bottle",
+        "Dried beans or rice",
+        "Colorful stickers",
+        "Tape"
+      ],
+      "steps": [
+        "Put beans in the bottle",
+        "Close the bottle tightly",
+        "Decorate with stickers",
+        "Shake and make music!"
+      ],
+      "intrinsicFeedback": {
+        "success": "You made your own Zimbabwean instrument!",
+        "encouragement": "Music brings joy to everyone!"
+      },
+      "activities": {
+        "decorating": "Make your shakers colorful and beautiful",
+        "rhythm_games": "Play rhythm games with your new shakers",
+        "family_band": "Start a family band with homemade instruments"
+      }
+    },
+    {
+      "id": "kids-ex-5-1",
+      "lessonId": "kids-culture-5",
+      "type": "helping_scenarios",
+      "title": "How Can I Help?",
+      "question": "Your friend drops their toys. What do you do?",
+      "difficulty": "easy",
+      "points": 15,
+      "ageRange": "5-10",
+      "gameType": "choice_scenario",
+      "correctAnswer": "Help pick up the toys and say 'Ndinokubatsira' (I will help you)",
+      "options": [
+        {
+          "choice": "Help pick up the toys",
+          "result": "Your friend feels happy and grateful!",
+          "shona": "Ndinokubatsira"
+        },
+        {
+          "choice": "Walk away",
+          "result": "Your friend feels sad and alone",
+          "feedback": "In Zimbabwe, we help each other"
+        },
+        {
+          "choice": "Laugh at them",
+          "result": "Your friend feels hurt",
+          "feedback": "That's not kind. We should help instead"
+        }
+      ],
+      "intrinsicFeedback": {
+        "success": "You have a kind heart! Helping others is wonderful!",
+        "encouragement": "When we help others, everyone feels good!"
+      },
+      "moreLessons": [
+        "Helping carry heavy things",
+        "Sharing toys and snacks",
+        "Comforting someone who is sad",
+        "Including others in games"
+      ]
+    },
+    {
+      "id": "kids-ex-5-2",
+      "lessonId": "kids-culture-5",
+      "type": "sharing_circle",
+      "title": "Sharing Makes Friends",
+      "question": "You have 3 cookies. How do you share with 2 friends?",
+      "difficulty": "easy",
+      "points": 20,
+      "ageRange": "6-10",
+      "gameType": "sharing_puzzle",
+      "correctAnswer": "Give each friend 1 cookie and keep 1 for yourself",
+      "sharingScenarios": [
+        {
+          "item": "Cookies",
+          "amount": 3,
+          "friends": 2,
+          "solution": "Everyone gets 1 cookie",
+          "shona": "Kupa vese"
+        },
+        {
+          "item": "Crayons",
+          "amount": 6,
+          "friends": 3,
+          "solution": "Everyone gets 2 crayons",
+          "shona": "Kupa vese"
+        }
+      ],
+      "intrinsicFeedback": {
+        "success": "You're great at sharing! That makes strong friendships!",
+        "encouragement": "Sharing shows you care about others!"
+      },
+      "activities": {
+        "practice": "Practice sharing real snacks with family",
+        "counting": "Use sharing to practice counting",
+        "kindness": "Think of other ways to be kind"
+      }
+    },
+    {
+      "id": "kids-ex-6-1",
+      "lessonId": "kids-culture-6",
+      "type": "celebration_craft",
+      "title": "Make Party Decorations",
+      "question": "Let's make colorful decorations for a celebration!",
+      "difficulty": "easy",
+      "points": 25,
+      "ageRange": "5-12",
+      "gameType": "art_activity",
+      "celebrations": [
+        {
+          "type": "New Baby Celebration",
+          "shona": "Mwana mutsva",
+          "colors": ["yellow", "green", "pink"],
+          "decorations": ["paper flowers", "welcome signs", "colorful streamers"]
+        },
+        {
+          "type": "Birthday Party",
+          "shona": "Zuva rekuzvarwa",
+          "colors": ["bright colors"],
+          "decorations": ["balloons", "happy signs", "party hats"]
+        }
+      ],
+      "craftInstructions": [
+        "Choose bright, happy colors",
+        "Cut paper into flower shapes",
+        "Decorate with patterns",
+        "Hang up your beautiful decorations!"
+      ],
+      "intrinsicFeedback": {
+        "success": "Your decorations are beautiful! Celebrations are more fun with you!",
+        "encouragement": "You help make special times even more special!"
+      },
+      "activities": {
+        "coloring": "Color celebration pictures",
+        "crafting": "Make real decorations for next family celebration",
+        "planning": "Help plan a small family celebration"
+      }
+    },
+    {
+      "id": "kids-ex-6-2",
+      "lessonId": "kids-culture-6",
+      "type": "celebration_songs",
+      "title": "Happy Celebration Songs",
+      "question": "Let's sing a happy song for celebrations!",
+      "difficulty": "easy",
+      "points": 20,
+      "ageRange": "5-10",
+      "gameType": "singing_activity",
+      "songs": [
+        {
+          "title": "Welcome Baby Song",
+          "shona": "Rwiyo rwemwana mutsva",
+          "lyrics": "Mwana mutsva akasvika! (New baby has arrived!)\nTinofara! Tinofara! (We are happy! We are happy!)",
+          "audioFile": "welcome_baby_song_kids.mp3",
+          "actions": "Clap hands and rock like holding a baby"
+        },
+        {
+          "title": "Happy Family Song",
+          "shona": "Rwiyo rwemhuri",
+          "lyrics": "Mhuri yangu ndinoyida! (I love my family!)\nTinofara pamwe chete! (We are happy together!)",
+          "audioFile": "happy_family_song_kids.mp3",
+          "actions": "Point to family members and hug"
+        }
+      ],
+      "intrinsicFeedback": {
+        "success": "You sing beautifully! Music makes celebrations special!",
+        "encouragement": "Your voice brings joy to everyone!"
+      },
+      "activities": {
+        "singing": "Practice the songs with family",
+        "creating": "Make up your own celebration songs",
+        "performing": "Perform songs at the next family gathering"
+      }
+    }
+  ]
+}

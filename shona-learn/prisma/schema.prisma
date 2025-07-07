@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:./dev.db"
+  url      = env("DATABASE_URL")
 }
 
 model User {
@@ -15,12 +15,17 @@ model User {
   email         String         @unique
   password      String
   name          String
+  age           Int?           // User's age for content filtering
+  ageGroup      String?        // "children", "teens", "adults"
+  parentEmail   String?        // For children accounts
+  parentConsent Boolean      @default(false) // Parental consent for children
   xp            Int            @default(0)
   streak        Int            @default(0)
   level         Int            @default(1)
   hearts        Int            @default(5)
   lastActive    DateTime       @default(now())
   createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
   progress      UserProgress[]
   questProgress QuestProgress[]
   socialConnections SocialConnection[] @relation("UserConnections")
@@ -30,6 +35,13 @@ model User {
   flashcards    Flashcard[]
   srsProgress   SRSProgress[]
   notificationPreferences NotificationPreference?
+  completedLessons CompletedLesson[]
+  achievements   Achievement[]
+  UserStats      UserStats[]
+  Progress       Progress[]
+  ContentFilter  ContentFilter[]
+  
+  @@map("users")
 }
 
 model Lesson {
@@ -38,7 +50,17 @@ model Lesson {
   description   String
   category      String
   orderIndex    Int
+  level         String
+  ageRange      String?        // "5-12", "13-17", "18+"
+  ageRestriction String?      // "childrenOnly", "teensAndAdults", "adultsOnly"
+  kidfriendly   Boolean        @default(false)
+  visualAids    Boolean        @default(false)
+  interactiveElements Boolean @default(false)
   xpReward      Int            @default(10)
+  estimatedDuration Int
+  content       String?        // JSON content
+  vocabulary    String?        // JSON vocabulary
+  culturalNotes String?        // JSON cultural notes
   questId       String?
   quest         Quest?         @relation(fields: [questId], references: [id])
   exercises     Exercise[]
@@ -46,6 +68,12 @@ model Lesson {
   learningObjectives String?  // JSON string of learning objectives
   discoveryElements String?   // JSON string of exploration prompts
   flashcards    Flashcard[]
+  completedLessons CompletedLesson[]
+  
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  
+  @@map("lessons")
 }
 
 model Quest {
@@ -54,28 +82,52 @@ model Quest {
   description   String
   storyNarrative String        // The quest narrative/story
   category      String
+  ageRange      String?        // "5-12", "13-17", "18+"
+  mascot        String?        // JSON mascot info
+  difficulty    String
+  estimatedDuration Int
+  totalXP       Int
+  milestones    String?        // JSON milestones
+  rewards       String?        // JSON rewards
   orderIndex    Int
   requiredLevel Int            @default(1)
   lessons       Lesson[]
   questProgress QuestProgress[]
   collaborativeElements String? // JSON string of social learning features
   intrinsicRewards String?    // JSON string of intrinsic motivation elements
+  
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  
+  @@map("quests")
 }
 
 model Exercise {
   id            String   @id @default(cuid())
   lessonId      String
-  lesson        Lesson   @relation(fields: [lessonId], references: [id])
   type          String   // multiple_choice, translation, matching, exploration, collaboration
+  title         String
   question      String
+  ageRange      String?    // "5-12", "13-17", "18+"
+  kidfriendly   Boolean      @default(false)
+  gameType      String?      // "drag_drop", "coloring", "music_interactive", etc.
+  difficulty    String
+  points        Int      @default(5)
   correctAnswer String
-  options       String   // JSON string
+  options       String?    // JSON options
+  intrinsicFeedback String? // JSON feedback
+  activities    String?    // JSON activities
   shonaPhrase   String?
   englishPhrase String?
-  audioText     String?  // Text for TTS
-  points        Int      @default(5)
-  intrinsicFeedback String? // JSON string for intrinsic motivation feedback
-  discoveryHint String?  // Hint for exploration-based learning
+  audioText     String?     // Text for TTS
+  discoveryHint String?     // Hint for exploration-based learning
+  
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  
+  lesson        Lesson   @relation(fields: [lessonId], references: [id])
+  
+  @@map("exercises")
 }
 
 model UserProgress {
@@ -208,4 +260,78 @@ model NotificationLog {
   deviceToken String?
   success     Boolean  @default(true)
   errorMessage String?
+}
+
+model CompletedLesson {
+  id          String   @id @default(cuid())
+  userId      String
+  lessonId    String
+  score       Int?
+  completedAt DateTime @default(now())
+  user        User       @relation(fields: [userId], references: [id])
+  lesson      Lesson     @relation(fields: [lessonId], references: [id])
+  
+  @@unique([userId, lessonId])
+  @@map("completed_lessons")
+}
+
+model Progress {
+  id            String   @id @default(cuid())
+  userId        String
+  totalXP       Int      @default(0)
+  currentStreak Int      @default(0)
+  maxStreak     Int      @default(0)
+  level         Int      @default(1)
+  hearts        Int      @default(5)
+  completedLessons Int    @default(0)
+  childrenLessonsCompleted Int @default(0)
+  adultLessonsCompleted    Int @default(0)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  user          User         @relation(fields: [userId], references: [id])
+  
+  @@unique([userId])
+  @@map("progress")
+}
+
+model Achievement {
+  id          String   @id @default(cuid())
+  userId      String
+  title       String
+  description String
+  icon        String
+  unlockedAt  DateTime @default(now())
+  user        User       @relation(fields: [userId], references: [id])
+  
+  @@map("achievements")
+}
+
+model UserStats {
+  id                 String   @id @default(cuid())
+  userId             String
+  totalTimeSpent     Int      @default(0) // in minutes
+  averageSessionTime Int      @default(0)
+  lessonsPerWeek     Int      @default(0)
+  favoriteCategory   String?
+  kidActivitiesCompleted Int    @default(0)
+  parentEngagement       Int    @default(0) // For tracking parent involvement
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  user             User         @relation(fields: [userId], references: [id])
+  
+  @@unique([userId])
+  @@map("user_stats")
+}
+
+model ContentFilter {
+  id          String   @id @default(cuid())
+  userId      String
+  filterType  String   // "age", "content", "custom"
+  filterValue String   // JSON filter criteria
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  user        User       @relation(fields: [userId], references: [id])
+  
+  @@map("content_filters")
 }

@@ -1,0 +1,191 @@
+{
+  "kidsQuest": {
+    "id": "quest-kids-culture",
+    "title": "🦁 Little Explorer's Journey Through Zimbabwe",
+    "description": "Join Simba the Lion on a fun adventure to discover Zimbabwe's amazing culture!",
+    "category": "Kids Cultural Heritage",
+    "difficulty": "easy",
+    "estimatedDuration": 180,
+    "totalXP": 330,
+    "ageRange": "5-12",
+    "mascot": {
+      "name": "Simba",
+      "animal": "Lion",
+      "personality": "Friendly, curious, and encouraging",
+      "catchPhrase": "Let's explore together, little explorer!"
+    },
+    "questNarrative": {
+      "introduction": "Hi there, little explorer! I'm Simba the Lion, and I'm here to take you on the most amazing adventure through Zimbabwe! We'll discover special animals, meet wonderful families, taste delicious food, dance to beautiful music, learn about kindness, and celebrate together! Are you ready for this magical journey?",
+      "progressEncouragement": [
+        "You're doing great, little explorer!",
+        "Simba is so proud of you!",
+        "What an amazing discovery!",
+        "You're becoming a Zimbabwe culture expert!",
+        "Keep going, you're almost there!"
+      ],
+      "completion": "WOW! You did it, little explorer! You've learned so much about Zimbabwe's wonderful culture. Simba is so proud of you! You now know about special family animals, loving families, delicious food, beautiful music, helping others, and fun celebrations. You're ready to share all these amazing things with your own family and friends!"
+    },
+    "milestones": [
+      {
+        "id": "animal-families",
+        "lessonId": "kids-culture-1",
+        "title": "Meet the Animal Families",
+        "description": "Discover your special family animal!",
+        "icon": "🦁",
+        "xpReward": 50,
+        "celebrationMessage": "Roar! You found your family animal! Simba is so excited!",
+        "unlockMessage": "Let's learn about the special animals that represent families in Zimbabwe!"
+      },
+      {
+        "id": "big-family",
+        "lessonId": "kids-culture-2",
+        "title": "My Big, Loving Family",
+        "description": "Meet all the wonderful people in your family!",
+        "icon": "👨‍👩‍👧‍👦",
+        "xpReward": 50,
+        "celebrationMessage": "Amazing! You know your whole family tree! Families are so special!",
+        "unlockMessage": "Now let's meet all the special people who love you!"
+      },
+      {
+        "id": "sharing-food",
+        "lessonId": "kids-culture-3",
+        "title": "Sharing Makes Friends",
+        "description": "Learn about yummy food and sharing!",
+        "icon": "🍽️",
+        "xpReward": 50,
+        "celebrationMessage": "Delicious! You learned about sharing food! That's so kind!",
+        "unlockMessage": "Let's cook and share delicious Zimbabwe food together!"
+      },
+      {
+        "id": "music-dance",
+        "lessonId": "kids-culture-4",
+        "title": "Music and Dancing Fun",
+        "description": "Make beautiful music and dance!",
+        "icon": "🎵",
+        "xpReward": 50,
+        "celebrationMessage": "You're a wonderful musician and dancer! Music makes everyone happy!",
+        "unlockMessage": "Time to make beautiful music and dance together!"
+      },
+      {
+        "id": "helping-others",
+        "lessonId": "kids-culture-5",
+        "title": "Being Kind and Helpful",
+        "description": "Learn about helping and being kind!",
+        "icon": "🤝",
+        "xpReward": 60,
+        "celebrationMessage": "You have such a kind heart! Helping others makes everyone smile!",
+        "unlockMessage": "Let's learn about being kind and helping others!"
+      },
+      {
+        "id": "celebration-time",
+        "lessonId": "kids-culture-6",
+        "title": "Celebration Time!",
+        "description": "Celebrate happy times together!",
+        "icon": "🎉",
+        "xpReward": 60,
+        "celebrationMessage": "Party time! You know how to make celebrations special!",
+        "unlockMessage": "Let's celebrate all the wonderful things in life!"
+      }
+    ],
+    "rewards": [
+      {
+        "milestone": "animal-families",
+        "type": "sticker",
+        "item": "Lion Family Sticker",
+        "description": "A beautiful sticker of your lion family"
+      },
+      {
+        "milestone": "big-family",
+        "type": "coloring_page",
+        "item": "Family Tree Coloring Page",
+        "description": "A special coloring page of your family tree"
+      },
+      {
+        "milestone": "sharing-food",
+        "type": "recipe_card",
+        "item": "Kid-Friendly Sadza Recipe",
+        "description": "A simple recipe to make with grown-ups"
+      },
+      {
+        "milestone": "music-dance",
+        "type": "instrument_guide",
+        "item": "Make Your Own Instruments Guide",
+        "description": "Instructions to make fun instruments at home"
+      },
+      {
+        "milestone": "helping-others",
+        "type": "kindness_chart",
+        "item": "Kindness Star Chart",
+        "description": "A chart to track your kind deeds"
+      },
+      {
+        "milestone": "celebration-time",
+        "type": "certificate",
+        "item": "Little Zimbabwe Explorer Certificate",
+        "description": "A special certificate showing you completed the journey!"
+      }
+    ],
+    "specialActivities": [
+      {
+        "id": "animal-sound-symphony",
+        "title": "Animal Sound Symphony",
+        "description": "Make music with all the animal sounds you learned!",
+        "type": "group_activity",
+        "materials": ["Your voice", "Clapping hands", "Stomping feet"]
+      },
+      {
+        "id": "family-photo-gallery",
+        "title": "Family Photo Gallery",
+        "description": "Create a gallery of family photos with Shona names!",
+        "type": "art_project",
+        "materials": ["Family photos", "Paper", "Crayons", "Stickers"]
+      },
+      {
+        "id": "cooking-show",
+        "title": "Little Chef Cooking Show",
+        "description": "Put on a pretend cooking show making Zimbabwe food!",
+        "type": "role_play",
+        "materials": ["Play kitchen", "Pretend food", "Apron"]
+      },
+      {
+        "id": "family-band",
+        "title": "Zimbabwe Family Band",
+        "description": "Start a family band with your homemade instruments!",
+        "type": "music_activity",
+        "materials": ["Homemade instruments", "Family members", "Happy songs"]
+      },
+      {
+        "id": "kindness-heroes",
+        "title": "Kindness Heroes",
+        "description": "Become a kindness hero by helping others every day!",
+        "type": "daily_practice",
+        "materials": ["Kind heart", "Helping hands", "Smile"]
+      },
+      {
+        "id": "celebration-planner",
+        "title": "Family Celebration Planner",
+        "description": "Help plan the next family celebration!",
+        "type": "planning_activity",
+        "materials": ["Paper", "Crayons", "Creative ideas"]
+      }
+    ],
+    "parentGuidance": {
+      "tips": [
+        "Encourage your child to share what they learned with family members",
+        "Practice the greetings and vocabulary words together",
+        "Help them make the craft activities for real",
+        "Sing the songs together as a family",
+        "Ask them to teach you about their family animal",
+        "Celebrate their progress and achievements"
+      ],
+      "extendedLearning": [
+        "Visit a local African cultural center or museum",
+        "Find children's books about Zimbabwe",
+        "Look up Zimbabwe on a map together",
+        "Try cooking simple Zimbabwe dishes as a family",
+        "Listen to Zimbabwe music together",
+        "Connect with Zimbabwe families in your community"
+      ]
+    }
+  }
+}

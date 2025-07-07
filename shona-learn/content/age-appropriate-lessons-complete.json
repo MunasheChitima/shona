@@ -1,0 +1,480 @@
+{
+  "ageGroups": {
+    "children": {
+      "ageRange": "5-12",
+      "name": "Little Explorers",
+      "mascot": "Simba the Lion",
+      "description": "Fun, safe learning for young children",
+      "allowedTopics": [
+        "Family relationships",
+        "Animals and totems",
+        "Food and sharing",
+        "Music and dancing",
+        "Kindness and helping",
+        "Happy celebrations"
+      ],
+      "excludedTopics": [
+        "War and conflict",
+        "Death and funeral ceremonies",
+        "Political struggles",
+        "Complex historical events",
+        "Adult relationships and marriage negotiations"
+      ]
+    },
+    "teens": {
+      "ageRange": "13-17",
+      "name": "Cultural Learners",
+      "mascot": "Hungwe the Eagle",
+      "description": "Age-appropriate cultural and historical content",
+      "allowedTopics": [
+        "Basic history",
+        "Cultural traditions",
+        "Family structures",
+        "Traditional ceremonies",
+        "Modern Zimbabwe",
+        "Educational content"
+      ],
+      "excludedTopics": [
+        "Detailed war descriptions",
+        "Complex political analysis",
+        "Sensitive historical details"
+      ]
+    },
+    "adults": {
+      "ageRange": "18+",
+      "name": "Full Learners",
+      "mascot": "Chapungu the Eagle",
+      "description": "Complete access to all historical and cultural content",
+      "allowedTopics": [
+        "Complete historical content",
+        "All cultural practices",
+        "Political history",
+        "Liberation struggles",
+        "Complex traditions"
+      ],
+      "excludedTopics": []
+    }
+  },
+  "ageRestrictedLessons": {
+    "restrictedToAdults": [
+      "history-chimurenga-1",
+      "history-chimurenga-2",
+      "culture-funeral-ceremonies",
+      "culture-marriage-negotiations",
+      "history-colonial-resistance",
+      "history-liberation-war"
+    ],
+    "restrictedToTeensAndAdults": [
+      "history-great-zimbabwe",
+      "history-pre-colonial-kingdoms",
+      "history-independence",
+      "culture-traditional-ceremonies",
+      "culture-marriage-customs"
+    ],
+    "childrenOnly": [
+      "kids-culture-1",
+      "kids-culture-2",
+      "kids-culture-3",
+      "kids-culture-4",
+      "kids-culture-5",
+      "kids-culture-6"
+    ]
+  },
+  "ageFiltering": {
+    "filterByAge": true,
+    "showAgeWarnings": true,
+    "parentalConsent": {
+      "required": true,
+      "message": "This content contains historical information that may be complex for younger learners. Would you like to continue?"
+    }
+  },
+  "childrenLessons": [
+    {
+      "id": "kids-culture-1",
+      "title": "My Animal Family - Learning About Totems",
+      "description": "Discover what animal represents your family!",
+      "questId": "quest-kids-culture",
+      "category": "Kids Cultural Heritage",
+      "orderIndex": 40,
+      "level": "beginner",
+      "ageRange": "5-12",
+      "ageRestriction": "childrenOnly",
+      "xpReward": 50,
+      "estimatedDuration": 15,
+      "kidfriendly": true,
+      "visualAids": true,
+      "interactiveElements": true,
+      "learningObjectives": [
+        "Learn what a totem animal is",
+        "Discover your family's special animal",
+        "Understand why animal families are important",
+        "Practice animal names in Shona"
+      ],
+      "discoveryElements": [
+        "Find out what animal your family belongs to",
+        "Learn cool facts about your totem animal",
+        "Discover animal sounds and movements",
+        "Play animal guessing games"
+      ],
+      "culturalNotes": [
+        "Every family has a special animal that represents them",
+        "Your totem animal is like your family's superhero mascot",
+        "People with the same totem animal are like extended family",
+        "We respect and protect our totem animals"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mutupo",
+          "english": "family animal / totem",
+          "audioFile": "mutupo_kids.mp3",
+          "usage": "Your family's special animal",
+          "example": "Mutupo wangu ndiShumba",
+          "pronunciation": "mu-TU-po",
+          "kidfriendly": true
+        },
+        {
+          "shona": "shumba",
+          "english": "lion",
+          "audioFile": "shumba_kids.mp3",
+          "usage": "The brave lion family",
+          "example": "Shumba inosimba",
+          "pronunciation": "SHUM-ba",
+          "kidfriendly": true
+        },
+        {
+          "shona": "nzou",
+          "english": "elephant",
+          "audioFile": "nzou_kids.mp3",
+          "usage": "The wise elephant family",
+          "example": "Nzou ihombe",
+          "pronunciation": "NZOU",
+          "kidfriendly": true
+        }
+      ]
+    },
+    {
+      "id": "kids-culture-2",
+      "title": "My Big Family Tree",
+      "description": "Learn about all the special people in your family",
+      "questId": "quest-kids-culture",
+      "category": "Kids Cultural Heritage",
+      "orderIndex": 41,
+      "level": "beginner",
+      "ageRange": "5-12",
+      "ageRestriction": "childrenOnly",
+      "xpReward": 50,
+      "estimatedDuration": 20,
+      "kidfriendly": true,
+      "visualAids": true,
+      "interactiveElements": true,
+      "learningObjectives": [
+        "Learn family member names in Shona",
+        "Understand that families are big and loving",
+        "Practice respectful greetings for elders",
+        "Draw your own family tree"
+      ],
+      "discoveryElements": [
+        "Discover why we have many mothers and fathers",
+        "Learn special names for grandparents",
+        "Find out about aunts and uncles",
+        "Explore family photo albums"
+      ],
+      "culturalNotes": [
+        "Zimbabwean families are big and full of love",
+        "Your father's brothers are also your fathers",
+        "Your mother's sisters are also your mothers",
+        "Grandparents are very special and wise"
+      ],
+      "vocabulary": [
+        {
+          "shona": "baba",
+          "english": "daddy / father",
+          "audioFile": "baba_kids.mp3",
+          "usage": "What you call your dad",
+          "example": "Baba vangu",
+          "pronunciation": "BA-ba",
+          "kidfriendly": true
+        },
+        {
+          "shona": "amai",
+          "english": "mommy / mother",
+          "audioFile": "amai_kids.mp3",
+          "usage": "What you call your mom",
+          "example": "Amai vangu",
+          "pronunciation": "A-mai",
+          "kidfriendly": true
+        },
+        {
+          "shona": "sekuru",
+          "english": "grandpa",
+          "audioFile": "sekuru_kids.mp3",
+          "usage": "Your mom's dad or your grandpa",
+          "example": "Sekuru vangu",
+          "pronunciation": "se-KU-ru",
+          "kidfriendly": true
+        },
+        {
+          "shona": "ambuya",
+          "english": "grandma",
+          "audioFile": "ambuya_kids.mp3",
+          "usage": "Your grandma",
+          "example": "Ambuya vangu",
+          "pronunciation": "am-BU-ya",
+          "kidfriendly": true
+        }
+      ]
+    },
+    {
+      "id": "kids-culture-3",
+      "title": "Sharing Food Makes Friends",
+      "description": "Learn about Zimbabwe's yummy food and how we share with others",
+      "questId": "quest-kids-culture",
+      "category": "Kids Cultural Heritage",
+      "orderIndex": 42,
+      "level": "beginner",
+      "ageRange": "5-12",
+      "ageRestriction": "childrenOnly",
+      "xpReward": 50,
+      "estimatedDuration": 25,
+      "kidfriendly": true,
+      "visualAids": true,
+      "interactiveElements": true,
+      "learningObjectives": [
+        "Learn about traditional Zimbabwean foods",
+        "Understand why sharing food is important",
+        "Practice saying 'thank you' and being polite",
+        "Help prepare simple traditional snacks"
+      ],
+      "discoveryElements": [
+        "Taste different traditional foods",
+        "Learn how sadza is made",
+        "Discover vegetables that grow in Zimbabwe",
+        "Play kitchen and cooking games"
+      ],
+      "culturalNotes": [
+        "In Zimbabwe, we always share our food with visitors",
+        "Sadza is like Zimbabwe's bread - we eat it every day",
+        "It's polite to accept food when offered",
+        "Saying 'thank you' shows good manners"
+      ],
+      "vocabulary": [
+        {
+          "shona": "sadza",
+          "english": "thick porridge (main food)",
+          "audioFile": "sadza_kids.mp3",
+          "usage": "The main food we eat every day",
+          "example": "Ndinoda sadza",
+          "pronunciation": "SA-dza",
+          "kidfriendly": true
+        },
+        {
+          "shona": "chikafu",
+          "english": "food",
+          "audioFile": "chikafu_kids.mp3",
+          "usage": "Anything we eat",
+          "example": "Chikafu chakanaka",
+          "pronunciation": "chi-KA-fu",
+          "kidfriendly": true
+        },
+        {
+          "shona": "ndatenda",
+          "english": "thank you",
+          "audioFile": "ndatenda_kids.mp3",
+          "usage": "What to say when someone gives you something",
+          "example": "Ndatenda, amai",
+          "pronunciation": "nda-TEN-da",
+          "kidfriendly": true
+        }
+      ]
+    },
+    {
+      "id": "kids-culture-4",
+      "title": "Music and Dancing Fun",
+      "description": "Learn about Zimbabwe's wonderful music and traditional dances",
+      "questId": "quest-kids-culture",
+      "category": "Kids Cultural Heritage",
+      "orderIndex": 43,
+      "level": "beginner",
+      "ageRange": "5-12",
+      "ageRestriction": "childrenOnly",
+      "xpReward": 50,
+      "estimatedDuration": 20,
+      "kidfriendly": true,
+      "visualAids": true,
+      "interactiveElements": true,
+      "learningObjectives": [
+        "Learn about traditional instruments like mbira",
+        "Practice simple traditional dance moves",
+        "Sing simple Shona songs",
+        "Make rhythm and clap along to music"
+      ],
+      "discoveryElements": [
+        "Listen to beautiful mbira music",
+        "Learn about different types of drums",
+        "Watch traditional dance videos",
+        "Make your own simple instruments"
+      ],
+      "culturalNotes": [
+        "Music and dancing are very important in Zimbabwe",
+        "The mbira is a special thumb piano",
+        "We dance to celebrate happy times",
+        "Everyone can dance - there's no wrong way!"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mbira",
+          "english": "thumb piano",
+          "audioFile": "mbira_kids.mp3",
+          "usage": "A special instrument you play with thumbs",
+          "example": "Mbira inonaka",
+          "pronunciation": "MBI-ra",
+          "kidfriendly": true
+        },
+        {
+          "shona": "rwiyo",
+          "english": "song",
+          "audioFile": "rwiyo_kids.mp3",
+          "usage": "Music we sing",
+          "example": "Rwiyo rwakanaka",
+          "pronunciation": "RWI-yo",
+          "kidfriendly": true
+        },
+        {
+          "shona": "kutamba",
+          "english": "to dance / to play",
+          "audioFile": "kutamba_kids.mp3",
+          "usage": "Moving to music or playing games",
+          "example": "Ndinoda kutamba",
+          "pronunciation": "ku-TAM-ba",
+          "kidfriendly": true
+        }
+      ]
+    },
+    {
+      "id": "kids-culture-5",
+      "title": "Being Kind and Helpful",
+      "description": "Learn about Zimbabwe's values of kindness and helping others",
+      "questId": "quest-kids-culture",
+      "category": "Kids Cultural Heritage",
+      "orderIndex": 44,
+      "level": "intermediate",
+      "ageRange": "6-12",
+      "ageRestriction": "childrenOnly",
+      "xpReward": 60,
+      "estimatedDuration": 25,
+      "kidfriendly": true,
+      "visualAids": true,
+      "interactiveElements": true,
+      "learningObjectives": [
+        "Understand the importance of helping others",
+        "Learn words for kindness and sharing",
+        "Practice good manners and respect",
+        "Share stories about helping friends"
+      ],
+      "discoveryElements": [
+        "Learn why helping others makes everyone happy",
+        "Discover ways to be kind to family and friends",
+        "Explore stories about helpful people",
+        "Practice sharing and taking turns"
+      ],
+      "culturalNotes": [
+        "In Zimbabwe, we believe in helping each other",
+        "When one person is happy, everyone is happy",
+        "Sharing makes friendships stronger",
+        "Being kind to others is very important"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kubatsira",
+          "english": "to help",
+          "audioFile": "kubatsira_kids.mp3",
+          "usage": "Helping someone who needs it",
+          "example": "Ndinokubatsira",
+          "pronunciation": "ku-ba-TSI-ra",
+          "kidfriendly": true
+        },
+        {
+          "shona": "shamwari",
+          "english": "friend",
+          "audioFile": "shamwari_kids.mp3",
+          "usage": "Someone you like to play with",
+          "example": "Shamwari yangu",
+          "pronunciation": "sham-WA-ri",
+          "kidfriendly": true
+        },
+        {
+          "shona": "kupa",
+          "english": "to give / to share",
+          "audioFile": "kupa_kids.mp3",
+          "usage": "Giving something to someone",
+          "example": "Ndinokupa chitoy",
+          "pronunciation": "KU-pa",
+          "kidfriendly": true
+        }
+      ]
+    },
+    {
+      "id": "kids-culture-6",
+      "title": "Celebration Time!",
+      "description": "Learn about fun celebrations and happy times in Zimbabwe",
+      "questId": "quest-kids-culture",
+      "category": "Kids Cultural Heritage",
+      "orderIndex": 45,
+      "level": "intermediate",
+      "ageRange": "6-12",
+      "ageRestriction": "childrenOnly",
+      "xpReward": 60,
+      "estimatedDuration": 30,
+      "kidfriendly": true,
+      "visualAids": true,
+      "interactiveElements": true,
+      "learningObjectives": [
+        "Learn about happy celebrations like birthdays and new babies",
+        "Practice celebration vocabulary",
+        "Understand why we celebrate together",
+        "Make celebration crafts and decorations"
+      ],
+      "discoveryElements": [
+        "Learn about naming ceremonies for new babies",
+        "Discover traditional games played at celebrations",
+        "Explore colorful traditional clothes",
+        "Practice celebration songs and cheers"
+      ],
+      "culturalNotes": [
+        "Zimbabweans love to celebrate happy times together",
+        "When a baby is born, the whole family celebrates",
+        "We wear special colorful clothes for celebrations",
+        "Singing and dancing make celebrations more fun"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mafaro",
+          "english": "joy / happiness",
+          "audioFile": "mafaro_kids.mp3",
+          "usage": "Being very happy",
+          "example": "Ndine mafaro",
+          "pronunciation": "ma-FA-ro",
+          "kidfriendly": true
+        },
+        {
+          "shona": "mwana mutsva",
+          "english": "new baby",
+          "audioFile": "mwana_mutsva_kids.mp3",
+          "usage": "A baby that was just born",
+          "example": "Mwana mutsva akasvika",
+          "pronunciation": "MWA-na mu-TSVA",
+          "kidfriendly": true
+        },
+        {
+          "shona": "kupembera",
+          "english": "to celebrate",
+          "audioFile": "kupembera_kids.mp3",
+          "usage": "Having a party for something special",
+          "example": "Tinoda kupembera",
+          "pronunciation": "ku-pem-BE-ra",
+          "kidfriendly": true
+        }
+      ]
+    }
+  ]
+}
