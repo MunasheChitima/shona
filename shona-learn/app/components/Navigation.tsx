@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { FaHome, FaBook, FaUser, FaSignOutAlt, FaTrophy, FaStar, FaMap, FaGamepad } from 'react-icons/fa'
+import { FaHome, FaBook, FaUser, FaSignOutAlt, FaTrophy, FaStar, FaMap, FaGamepad, FaVolumeUp } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 export default function Navigation({ user }: { user: any }) {
@@ -48,6 +48,13 @@ export default function Navigation({ user }: { user: any }) {
               <div className="flex items-center space-x-2 px-4 py-2 rounded-xl hover:bg-orange-50 transition-colors">
                 <FaGamepad className="text-orange-600 group-hover:text-orange-700" />
                 <span className="font-medium text-gray-700 group-hover:text-orange-700">Games</span>
+              </div>
+            </Link>
+            
+            <Link href="/pronunciation-test" className="group">
+              <div className="flex items-center space-x-2 px-4 py-2 rounded-xl hover:bg-pink-50 transition-colors">
+                <FaVolumeUp className="text-pink-600 group-hover:text-pink-700" />
+                <span className="font-medium text-gray-700 group-hover:text-pink-700">Pronunciation</span>
               </div>
             </Link>
             
