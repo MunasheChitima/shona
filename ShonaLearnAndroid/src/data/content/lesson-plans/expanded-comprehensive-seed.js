@@ -1,0 +1,494 @@
+const { PrismaClient } = require('@prisma/client')
+const { allFoundationLessons } = require('./foundation-level-lessons')
+const { allIntermediateLessons } = require('./intermediate-level-lessons')
+const { allAdvancedLessons } = require('./advanced-level-lessons')
+const { allFluentConversationalLessons } = require('./fluent-conversational-lessons')
+const { advancedConversationalVocabulary } = require('../vocabulary/advanced-conversational-vocabulary')
+const { professionalTechnicalVocabulary } = require('../vocabulary/professional-technical-vocabulary')
+const { contemporaryModernVocabulary } = require('../vocabulary/contemporary-modern-vocabulary')
+
+const prisma = new PrismaClient()
+
+// Existing basic lessons (1-8) from original seed
+const existingBasicLessons = [
+  {
+    title: "Greetings & Basics",
+    description: "Learn essential Shona greetings",
+    category: "Basics",
+    orderIndex: 1,
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "What does 'Mangwanani' mean?",
+        correctAnswer: "Good morning",
+        options: JSON.stringify(["Good morning", "Good evening", "Thank you", "Hello"]),
+        shonaPhrase: "Mangwanani",
+        audioText: "Mah-ngwah-nah-nee"
+      },
+      {
+        type: "multiple_choice",
+        question: "How do you say 'Good afternoon' in Shona?",
+        correctAnswer: "Masikati",
+        options: JSON.stringify(["Manheru", "Masikati", "Mangwanani", "Ndatenda"]),
+        englishPhrase: "Good afternoon",
+        audioText: "Mah-see-kah-tee"
+      },
+      {
+        type: "translation",
+        question: "Translate to English: Manheru",
+        correctAnswer: "Good evening",
+        options: JSON.stringify([]),
+        shonaPhrase: "Manheru",
+        englishPhrase: "Good evening",
+        audioText: "Mah-neh-roo"
+      },
+      {
+        type: "multiple_choice",
+        question: "What is the correct response to 'Makadii?' (How are you?)",
+        correctAnswer: "Ndiripo",
+        options: JSON.stringify(["Ndiripo", "Mangwanani", "Ndatenda", "Masikati"]),
+        shonaPhrase: "Makadii?",
+        audioText: "Mah-kah-dee"
+      },
+      {
+        type: "translation",
+        question: "Translate to Shona: Thank you",
+        correctAnswer: "Ndatenda",
+        options: JSON.stringify([]),
+        englishPhrase: "Thank you",
+        shonaPhrase: "Ndatenda",
+        audioText: "N-dah-ten-dah"
+      }
+    ]
+  },
+  {
+    title: "Numbers 1-10",
+    description: "Count from 1 to 10 in Shona",
+    category: "Numbers",
+    orderIndex: 2,
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "What is 'one' in Shona?",
+        correctAnswer: "Potsi",
+        options: JSON.stringify(["Potsi", "Piri", "Tatu", "Ina"]),
+        englishPhrase: "One",
+        audioText: "Poh-tsee"
+      },
+      {
+        type: "matching",
+        question: "Match the numbers",
+        correctAnswer: "2-Piri",
+        options: JSON.stringify(["1-Potsi", "2-Piri", "3-Tatu", "4-Ina"]),
+        shonaPhrase: "Piri",
+        audioText: "Pee-ree"
+      },
+      {
+        type: "multiple_choice",
+        question: "What number is 'Tatu'?",
+        correctAnswer: "Three",
+        options: JSON.stringify(["One", "Two", "Three", "Four"]),
+        shonaPhrase: "Tatu",
+        audioText: "Tah-too"
+      },
+      {
+        type: "translation",
+        question: "Translate to Shona: Five",
+        correctAnswer: "Shanu",
+        options: JSON.stringify([]),
+        englishPhrase: "Five",
+        shonaPhrase: "Shanu",
+        audioText: "Shah-noo"
+      },
+      {
+        type: "multiple_choice",
+        question: "What is 'Gumi' in English?",
+        correctAnswer: "Ten",
+        options: JSON.stringify(["Eight", "Nine", "Ten", "Seven"]),
+        shonaPhrase: "Gumi",
+        audioText: "Goo-mee"
+      }
+    ]
+  },
+  {
+    title: "Family Members",
+    description: "Learn words for family members",
+    category: "Family",
+    orderIndex: 3,
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "What does 'Amai' mean?",
+        correctAnswer: "Mother",
+        options: JSON.stringify(["Mother", "Father", "Sister", "Brother"]),
+        shonaPhrase: "Amai",
+        audioText: "Ah-my"
+      },
+      {
+        type: "multiple_choice",
+        question: "How do you say 'Father' in Shona?",
+        correctAnswer: "Baba",
+        options: JSON.stringify(["Amai", "Baba", "Mwana", "Mukoma"]),
+        englishPhrase: "Father",
+        audioText: "Bah-bah"
+      },
+      {
+        type: "translation",
+        question: "Translate to English: Mwana",
+        correctAnswer: "Child",
+        options: JSON.stringify([]),
+        shonaPhrase: "Mwana",
+        englishPhrase: "Child",
+        audioText: "Mwah-nah"
+      },
+      {
+        type: "multiple_choice",
+        question: "What is 'Sister' in Shona?",
+        correctAnswer: "Hanzvadzi",
+        options: JSON.stringify(["Mukoma", "Hanzvadzi", "Mwana", "Amai"]),
+        englishPhrase: "Sister",
+        audioText: "Hahn-zvah-dzee"
+      },
+      {
+        type: "translation",
+        question: "Translate to Shona: Brother",
+        correctAnswer: "Mukoma",
+        options: JSON.stringify([]),
+        englishPhrase: "Brother",
+        shonaPhrase: "Mukoma",
+        audioText: "Moo-koh-mah"
+      }
+    ]
+  },
+  {
+    title: "Common Verbs",
+    description: "Essential action words",
+    category: "Verbs",
+    orderIndex: 4,
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "What does 'Kuda' mean?",
+        correctAnswer: "To want/like",
+        options: JSON.stringify(["To want/like", "To go", "To eat", "To sleep"]),
+        shonaPhrase: "Kuda",
+        audioText: "Koo-dah"
+      },
+      {
+        type: "translation",
+        question: "Translate to English: Kuenda",
+        correctAnswer: "To go",
+        options: JSON.stringify([]),
+        shonaPhrase: "Kuenda",
+        englishPhrase: "To go",
+        audioText: "Koo-en-dah"
+      },
+      {
+        type: "multiple_choice",
+        question: "How do you say 'To eat' in Shona?",
+        correctAnswer: "Kudya",
+        options: JSON.stringify(["Kurara", "Kudya", "Kumira", "Kutaura"]),
+        englishPhrase: "To eat",
+        audioText: "Koo-dyah"
+      },
+      {
+        type: "translation",
+        question: "Translate: Kurara",
+        correctAnswer: "To sleep",
+        options: JSON.stringify([]),
+        shonaPhrase: "Kurara",
+        englishPhrase: "To sleep",
+        audioText: "Koo-rah-rah"
+      },
+      {
+        type: "multiple_choice",
+        question: "What is 'To speak' in Shona?",
+        correctAnswer: "Kutaura",
+        options: JSON.stringify(["Kutaura", "Kuona", "Kunzwa", "Kubata"]),
+        englishPhrase: "To speak",
+        audioText: "Koo-tow-rah"
+      }
+    ]
+  },
+  {
+    title: "Colors",
+    description: "Learn basic colors in Shona",
+    category: "Vocabulary",
+    orderIndex: 5,
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "What color is 'Chena'?",
+        correctAnswer: "White",
+        options: JSON.stringify(["White", "Black", "Red", "Blue"]),
+        shonaPhrase: "Chena",
+        audioText: "Cheh-nah"
+      },
+      {
+        type: "translation",
+        question: "Translate to English: Dema",
+        correctAnswer: "Black",
+        options: JSON.stringify([]),
+        shonaPhrase: "Dema",
+        englishPhrase: "Black",
+        audioText: "Deh-mah"
+      },
+      {
+        type: "multiple_choice",
+        question: "How do you say 'Red' in Shona?",
+        correctAnswer: "Tsvuku",
+        options: JSON.stringify(["Tsvuku", "Chena", "Dema", "Girinhi"]),
+        englishPhrase: "Red",
+        audioText: "Tsvoo-koo"
+      },
+      {
+        type: "translation",
+        question: "Translate: Bhuruu",
+        correctAnswer: "Blue",
+        options: JSON.stringify([]),
+        shonaPhrase: "Bhuruu",
+        englishPhrase: "Blue",
+        audioText: "Bhoo-roo"
+      },
+      {
+        type: "multiple_choice",
+        question: "What is 'Green' in Shona?",
+        correctAnswer: "Girinhi",
+        options: JSON.stringify(["Yero", "Girinhi", "Tsvuku", "Bhuruu"]),
+        englishPhrase: "Green",
+        audioText: "Gee-reen-hee"
+      }
+    ]
+  },
+  {
+    title: "Pronunciation Basics",
+    description: "Master Shona sounds",
+    category: "Pronunciation",
+    orderIndex: 6,
+    exercises: [
+      {
+        type: "voice",
+        voiceType: "pronunciation",
+        question: "Practice pronouncing these greetings",
+        voiceContent: JSON.stringify({
+          words: [
+            {
+              shona: "Mangwanani",
+              english: "Good morning",
+              phonetic: "mah-ngwah-NAH-nee",
+              tonePattern: "LLHL"
+            },
+            {
+              shona: "Masikati",
+              english: "Good afternoon",
+              phonetic: "mah-see-KAH-tee",
+              tonePattern: "LLHL"
+            },
+            {
+              shona: "Manheru",
+              english: "Good evening",
+              phonetic: "mah-NEH-roo",
+              tonePattern: "LHL"
+            }
+          ]
+        }),
+        points: 10
+      }
+    ]
+  },
+  {
+    title: "Tone Practice",
+    description: "Master Shona tones",
+    category: "Pronunciation",
+    orderIndex: 7,
+    exercises: [
+      {
+        type: "voice",
+        voiceType: "pronunciation",
+        question: "Practice these tone pairs",
+        voiceContent: JSON.stringify({
+          words: [
+            {
+              shona: "sara",
+              english: "remain (low tones)",
+              phonetic: "SAH-rah",
+              tonePattern: "LL"
+            },
+            {
+              shona: "sára",
+              english: "be satisfied (high-low)",
+              phonetic: "SÁH-rah",
+              tonePattern: "HL"
+            }
+          ]
+        }),
+        points: 15
+      }
+    ]
+  },
+  {
+    title: "Prenasalized Consonants",
+    description: "Learn mb, nd, ng sounds",
+    category: "Pronunciation",
+    orderIndex: 8,
+    exercises: [
+      {
+        type: "voice",
+        voiceType: "pronunciation",
+        question: "Practice prenasalized consonants",
+        voiceContent: JSON.stringify({
+          words: [
+            {
+              shona: "mbira",
+              english: "thumb piano",
+              phonetic: "MBEE-rah",
+              tonePattern: "HL"
+            },
+            {
+              shona: "ndimi",
+              english: "you (plural)",
+              phonetic: "NDEE-mee",
+              tonePattern: "HL"
+            },
+            {
+              shona: "ngoma",
+              english: "drum",
+              phonetic: "NGOH-mah",
+              tonePattern: "HL"
+            }
+          ]
+        }),
+        points: 12
+      }
+    ]
+  }
+]
+
+// Convert vocabulary modules to lesson format for integrated learning
+function createVocabularyLessons(vocabularyModule, moduleTitle, startIndex) {
+  const lessons = []
+  let currentIndex = startIndex
+  
+  Object.entries(vocabularyModule).forEach(([category, subCategories]) => {
+    Object.entries(subCategories).forEach(([subCategory, words]) => {
+      if (Array.isArray(words) && words.length > 0) {
+        const lesson = {
+          title: `${moduleTitle}: ${subCategory.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}`,
+          description: `Master ${subCategory.replace(/_/g, ' ')} vocabulary and expressions`,
+          category: "Vocabulary",
+          orderIndex: currentIndex++,
+          culturalContext: words[0].cultural_notes || `Understanding ${subCategory} in context`,
+          exercises: words.slice(0, 5).map(word => ({
+            type: "vocabulary",
+            question: `Learn: ${word.english}`,
+            correctAnswer: word.shona,
+            options: JSON.stringify([]),
+            shonaPhrase: word.shona,
+            englishPhrase: word.english,
+            audioText: word.ipa || word.shona,
+            culturalNote: word.cultural_notes,
+            points: word.difficulty * 2
+          }))
+        }
+        lessons.push(lesson)
+      }
+    })
+  })
+  
+  return lessons
+}
+
+// Combine all lessons including vocabulary-based lessons
+const vocabularyLessons = [
+  ...createVocabularyLessons(advancedConversationalVocabulary, "Advanced Conversation", 101),
+  ...createVocabularyLessons(professionalTechnicalVocabulary, "Professional & Technical", 120),
+  ...createVocabularyLessons(contemporaryModernVocabulary, "Contemporary & Modern", 140)
+]
+
+const allLessons = [
+  ...existingBasicLessons,
+  ...allFoundationLessons,
+  ...allIntermediateLessons,
+  ...allAdvancedLessons,
+  ...allFluentConversationalLessons,
+  ...vocabularyLessons
+]
+
+// Statistics about the expanded curriculum
+const curriculumStats = {
+  totalLessons: allLessons.length,
+  totalVocabularyItems: 5000, // Target vocabulary
+  levels: {
+    basic: 8,
+    foundation: allFoundationLessons.length,
+    intermediate: allIntermediateLessons.length,
+    advanced: allAdvancedLessons.length,
+    fluent: allFluentConversationalLessons.length,
+    vocabulary: vocabularyLessons.length
+  },
+  categories: [...new Set(allLessons.map(l => l.category))],
+  totalExercises: allLessons.reduce((sum, lesson) => sum + lesson.exercises.length, 0)
+}
+
+async function main() {
+  console.log('Starting EXPANDED comprehensive curriculum seeding...')
+  console.log('Curriculum Statistics:', curriculumStats)
+  
+  // Clear existing data
+  await prisma.exercise.deleteMany()
+  await prisma.lesson.deleteMany()
+  
+  console.log('Creating lessons with exercises...')
+  
+  // Create lessons with exercises
+  for (const lessonData of allLessons) {
+    const { exercises, ...lesson } = lessonData
+    
+    console.log(`Creating lesson ${lesson.orderIndex}: ${lesson.title}`)
+    
+    const createdLesson = await prisma.lesson.create({
+      data: lesson
+    })
+    
+    // Create exercises for this lesson
+    for (const exercise of exercises) {
+      await prisma.exercise.create({
+        data: {
+          ...exercise,
+          lessonId: createdLesson.id
+        }
+      })
+    }
+    
+    console.log(`Added ${exercises.length} exercises to lesson: ${lesson.title}`)
+  }
+  
+  console.log('\n=== EXPANDED CURRICULUM SEEDED SUCCESSFULLY! ===')
+  console.log(`Total lessons created: ${allLessons.length}`)
+  console.log('\nCurriculum structure:')
+  console.log('- Basic Level: Lessons 1-8')
+  console.log('- Foundation Level: Lessons 9-20')
+  console.log('- Intermediate Level: Lessons 21-40')
+  console.log('- Advanced Level: Lessons 41-50')
+  console.log('- Fluent & Conversational Level: Lessons 51-100')
+  console.log('- Vocabulary Expansion: Lessons 101-160+')
+  console.log('\nTarget vocabulary: 5000+ words')
+  console.log('Total exercises: ' + curriculumStats.totalExercises)
+}
+
+main()
+  .catch((e) => {
+    console.error('Error seeding expanded comprehensive curriculum:', e)
+    process.exit(1)
+  })
+  .finally(async () => {
+    await prisma.$disconnect()
+  })
+
+module.exports = { 
+  allLessons, 
+  curriculumStats,
+  advancedConversationalVocabulary,
+  professionalTechnicalVocabulary,
+  contemporaryModernVocabulary
+}
