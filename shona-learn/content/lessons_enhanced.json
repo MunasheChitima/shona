@@ -1,0 +1,263 @@
+{
+  "lessons": [
+    {
+      "id": "lesson-1",
+      "title": "Mhoro, Shamwari! - Hello, Friend!",
+      "description": "Learn basic greetings and how to introduce yourself in Shona culture",
+      "questId": "quest-1",
+      "category": "Cultural Immersion",
+      "orderIndex": 1,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 15,
+      "emoji": "👋",
+      "colorScheme": {
+        "primary": "#10b981",
+        "secondary": "#6ee7b7",
+        "gradient": "from-green-400 to-green-600"
+      },
+      "learningObjectives": [
+        "Master basic Shona greetings (mhoro, mhoroi, hesi)",
+        "Understand the cultural importance of respectful greetings",
+        "Practice proper pronunciation with audio feedback",
+        "Learn to introduce yourself with confidence"
+      ],
+      "discoveryElements": [
+        "Explore different times of day greetings",
+        "Discover the difference between formal and informal greetings",
+        "Learn about the plural of respect in Shona culture"
+      ],
+      "culturalNotes": [
+        "In Shona culture, greetings are sacred and show respect",
+        "Always use plural forms when addressing elders or strangers",
+        "The greeting 'mhoroi' shows more respect than 'mhoro'",
+        "Proper greetings create harmony and show good upbringing"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mhoro",
+          "english": "hello (informal)",
+          "pronunciation": "mm-HO-ro",
+          "phonetic": "/m̩.ho.ro/",
+          "syllables": "m-ho-ro",
+          "tonePattern": "L-H-L",
+          "audioFile": "mhoro.mp3",
+          "usage": "Used with friends and people your age",
+          "example": "Mhoro, shamwari!",
+          "culturalContext": "Casual greeting among peers"
+        },
+        {
+          "shona": "mhoroi",
+          "english": "hello (formal)",
+          "pronunciation": "mm-ho-ROH-ee",
+          "phonetic": "/m̩.ho.ro.i/",
+          "syllables": "m-ho-ro-i",
+          "tonePattern": "L-H-L-H",
+          "audioFile": "mhoroi.mp3",
+          "usage": "Used with elders, strangers, or to show respect",
+          "example": "Mhoroi, mai!",
+          "culturalContext": "Respectful greeting showing honor"
+        },
+        {
+          "shona": "shamwari",
+          "english": "friend",
+          "pronunciation": "sham-WAH-ree",
+          "phonetic": "/ʃam.wa.ri/",
+          "syllables": "sham-wa-ri",
+          "tonePattern": "L-H-L",
+          "audioFile": "shamwari.mp3",
+          "usage": "Common term for friend",
+          "example": "Shamwari yangu",
+          "culturalContext": "Deep friendship, not casual acquaintance"
+        },
+        {
+          "shona": "makadii",
+          "english": "how are you (formal)",
+          "pronunciation": "mah-kah-DEE",
+          "phonetic": "/ma.ka.di/",
+          "syllables": "ma-ka-dii",
+          "tonePattern": "L-L-H",
+          "audioFile": "makadii.mp3",
+          "usage": "Respectful way to ask how someone is",
+          "example": "Makadii, baba?",
+          "culturalContext": "Shows genuine concern for someone's wellbeing"
+        },
+        {
+          "shona": "wakadii",
+          "english": "how are you (informal)",
+          "pronunciation": "wah-kah-DEE",
+          "phonetic": "/wa.ka.di/",
+          "syllables": "wa-ka-dii",
+          "tonePattern": "L-L-H",
+          "audioFile": "wakadii.mp3",
+          "usage": "Casual way to ask how someone is",
+          "example": "Wakadii, shamwari?",
+          "culturalContext": "Friendly check-in among peers"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-1-1",
+          "type": "multiple_choice",
+          "question": "What does 'mhoro' mean?",
+          "correctAnswer": "hello (informal)",
+          "options": ["hello (informal)", "goodbye", "thank you", "how are you"],
+          "points": 10,
+          "audioText": "mhoro",
+          "pronunciation": "mm-HO-ro"
+        },
+        {
+          "id": "ex-1-2",
+          "type": "pronunciation",
+          "question": "Practice saying 'shamwari' (friend)",
+          "targetWord": "shamwari",
+          "pronunciation": "sham-WAH-ree",
+          "phonetic": "/ʃam.wa.ri/",
+          "points": 15,
+          "audioFile": "shamwari.mp3"
+        },
+        {
+          "id": "ex-1-3",
+          "type": "cultural_context",
+          "question": "When should you use 'mhoroi' instead of 'mhoro'?",
+          "correctAnswer": "When greeting elders or showing respect",
+          "options": ["When greeting elders or showing respect", "When greeting friends", "When saying goodbye", "When asking for help"],
+          "points": 12,
+          "culturalExplanation": "Mhoroi shows greater respect and is used with elders, strangers, or in formal situations"
+        }
+      ]
+    },
+    {
+      "id": "lesson-2",
+      "title": "Ini Ndinonzi - My Name Is",
+      "description": "Learn to introduce yourself and exchange names in Shona",
+      "questId": "quest-1",
+      "category": "Cultural Immersion",
+      "orderIndex": 2,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 15,
+      "emoji": "👋",
+      "colorScheme": {
+        "primary": "#10b981",
+        "secondary": "#6ee7b7",
+        "gradient": "from-green-400 to-green-600"
+      },
+      "learningObjectives": [
+        "Learn to state your name in Shona",
+        "Ask for someone's name politely",
+        "Practice numbers 1-10 for counting and market use",
+        "Understand basic sentence structure"
+      ],
+      "discoveryElements": [
+        "Explore how names carry meaning in Shona culture",
+        "Discover the importance of knowing someone's name",
+        "Learn about traditional Shona naming practices"
+      ],
+      "culturalNotes": [
+        "Names in Shona culture often have deep meaning",
+        "It's polite to ask for someone's name after greeting",
+        "Numbers are essential for market interactions",
+        "Knowing someone's name creates a personal connection"
+      ],
+      "vocabulary": [
+        {
+          "shona": "zita",
+          "english": "name",
+          "pronunciation": "ZEE-tah",
+          "phonetic": "/zi.ta/",
+          "syllables": "zi-ta",
+          "tonePattern": "H-L",
+          "audioFile": "zita.mp3",
+          "usage": "Word for name",
+          "example": "Zita rangu ndinonzi John",
+          "culturalContext": "Names carry deep meaning and family history"
+        },
+        {
+          "shona": "ini ndinonzi",
+          "english": "my name is",
+          "pronunciation": "EE-nee n-dee-NON-zee",
+          "phonetic": "/i.ni n̩.di.non.zi/",
+          "syllables": "i-ni n-di-non-zi",
+          "tonePattern": "H-L L-L-H-L",
+          "audioFile": "ini_ndinonzi.mp3",
+          "usage": "How to introduce yourself",
+          "example": "Ini ndinonzi Maria",
+          "culturalContext": "Formal way to state your name"
+        },
+        {
+          "shona": "munonzi ani",
+          "english": "what is your name (formal)",
+          "pronunciation": "moo-NON-zee AH-nee",
+          "phonetic": "/mu.non.zi a.ni/",
+          "syllables": "mu-non-zi a-ni",
+          "tonePattern": "L-H-L H-L",
+          "audioFile": "munonzi_ani.mp3",
+          "usage": "Respectful way to ask someone's name",
+          "example": "Munonzi ani, mai?",
+          "culturalContext": "Shows respect when asking someone's name"
+        },
+        {
+          "shona": "motsi",
+          "english": "one",
+          "pronunciation": "MOH-tsee",
+          "phonetic": "/mo.tsi/",
+          "syllables": "mo-tsi",
+          "tonePattern": "H-L",
+          "audioFile": "motsi.mp3",
+          "usage": "Number 1",
+          "example": "Motsi chete",
+          "culturalContext": "Basic counting for daily life"
+        },
+        {
+          "shona": "piri",
+          "english": "two",
+          "pronunciation": "PEE-ree",
+          "phonetic": "/pi.ri/",
+          "syllables": "pi-ri",
+          "tonePattern": "H-L",
+          "audioFile": "piri.mp3",
+          "usage": "Number 2",
+          "example": "Mapiri",
+          "culturalContext": "Essential for market transactions"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-2-1",
+          "type": "translation",
+          "question": "Translate: 'My name is Sarah'",
+          "correctAnswer": "Ini ndinonzi Sarah",
+          "options": ["Ini ndinonzi Sarah", "Zita rangu Sarah", "Munonzi Sarah", "Ndinonzi ani Sarah"],
+          "points": 12,
+          "audioText": "Ini ndinonzi Sarah",
+          "pronunciation": "EE-nee n-dee-NON-zee Sarah"
+        },
+        {
+          "id": "ex-2-2",
+          "type": "pronunciation",
+          "question": "Practice saying 'munonzi ani' (what is your name)",
+          "targetWord": "munonzi ani",
+          "pronunciation": "moo-NON-zee AH-nee",
+          "phonetic": "/mu.non.zi a.ni/",
+          "points": 15,
+          "audioFile": "munonzi_ani.mp3"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "2.0",
+    "lastUpdated": "2025-01-07",
+    "totalLessons": 2,
+    "features": [
+      "pronunciation_text",
+      "cultural_context",
+      "unified_exercises",
+      "audio_integration",
+      "tone_patterns"
+    ]
+  }
+}
