@@ -385,7 +385,7 @@ function createVocabularyLessons(vocabularyModule, moduleTitle, startIndex) {
             options: JSON.stringify([]),
             shonaPhrase: word.shona,
             englishPhrase: word.english,
-            audioText: word.ipa || word.shona,
+            audioText: word.ipa ? word.ipa.replace(/\//g, '').replace(/ⁿ/g, 'n').replace(/ʰ/g, 'h').replace(/ː/g, ':').replace(/ŋ/g, 'ng').replace(/ʃ/g, 'sh').replace(/ʤ/g, 'j').replace(/tʃ/g, 'ch').replace(/ɗ/g, 'd').replace(/ɲ/g, 'ny').replace(/ʒ/g, 'zh') : null,
             culturalNote: word.cultural_notes,
             points: word.difficulty * 2
           }))

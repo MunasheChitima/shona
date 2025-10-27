@@ -182,7 +182,7 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
                 <div className="bg-white rounded-xl p-4 mb-4 border border-blue-200">
                   <p className="text-sm text-gray-500 mb-1">Shona</p>
                   <p className="text-xl font-bold text-gray-800 mb-2">{currentExercise.shonaPhrase}</p>
-                  {currentExercise.audioText && (
+                  {currentExercise.audioText && currentExercise.audioText !== 'null' && (
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="text-sm text-gray-500 mb-1">Pronunciation</p>
@@ -204,7 +204,7 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
                 <div className="bg-white rounded-xl p-4 border border-blue-200">
                   <p className="text-sm text-gray-500 mb-1">English</p>
                   <p className="text-xl font-bold text-gray-800">{currentExercise.englishPhrase}</p>
-                  {currentExercise.shonaPhrase && currentExercise.audioText && (
+                  {currentExercise.shonaPhrase && currentExercise.audioText && currentExercise.audioText !== 'null' && (
                     <div className="mt-3 pt-3 border-t border-gray-200">
                       <p className="text-sm text-gray-500 mb-1">Shona Pronunciation</p>
                       <p className="text-lg font-mono text-blue-600">{currentExercise.audioText}</p>
