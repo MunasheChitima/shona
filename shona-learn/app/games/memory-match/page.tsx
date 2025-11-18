@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Navigation from '../../components/Navigation'
 import CelebrationModal from '../../components/CelebrationModal'
 import { FaArrowLeft, FaHeart, FaClock, FaStar, FaRedo } from 'react-icons/fa'
+import type { AppUser } from '@/types/app'
 
 interface Card {
   id: string
@@ -17,7 +18,7 @@ interface Card {
 
 export default function MemoryMatchGame() {
   const router = useRouter()
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<AppUser | null>(null)
   const [cards, setCards] = useState<Card[]>([])
   const [flippedCards, setFlippedCards] = useState<string[]>([])
   const [matchedPairs, setMatchedPairs] = useState<string[]>([])
@@ -51,7 +52,8 @@ export default function MemoryMatchGame() {
       router.push('/login')
       return
     }
-    setUser(JSON.parse(userData))
+    const parsedUser: AppUser = JSON.parse(userData)
+    setUser(parsedUser)
     initializeGame()
   }, [])
 
@@ -166,37 +168,37 @@ export default function MemoryMatchGame() {
 
   const submitScore = async (finalScore: number) => {
     try {
-      const response = await fetch('/api/games', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem('token')}`
-        },
-        body: JSON.stringify({
-          gameId: 'memory-match',
-          score: finalScore,
-          gameType: 'memory',
-          difficulty: 'Easy'
+        const response = await fetch('/api/games', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${localStorage.getItem('token')}`
+          },
+          body: JSON.stringify({
+            gameId: 'memory-match',
+            score: finalScore,
+            gameType: 'memory',
+            difficulty: 'Easy'
+          })
         })
-      })
-      
-      if (response.ok) {
-        const result = await response.json()
-        // Update user XP
-        const updatedUser = { ...user, xp: result.totalXP }
-        setUser(updatedUser)
-        localStorage.setItem('user', JSON.stringify(updatedUser))
         
-        // Update game progress
-        const gameProgress = JSON.parse(localStorage.getItem('gameProgress') || '{}')
-        gameProgress['memory-match'] = {
-          ...gameProgress['memory-match'],
-          highScore: Math.max(gameProgress['memory-match']?.highScore || 0, finalScore),
-          plays: (gameProgress['memory-match']?.plays || 0) + 1,
-          totalXP: (gameProgress['memory-match']?.totalXP || 0) + result.xpGained
+        if (response.ok && user) {
+          const result = await response.json()
+          // Update user XP
+          const updatedUser: AppUser = { ...user, xp: result.totalXP }
+          setUser(updatedUser)
+          localStorage.setItem('user', JSON.stringify(updatedUser))
+          
+          // Update game progress
+          const gameProgress = JSON.parse(localStorage.getItem('gameProgress') || '{}')
+          gameProgress['memory-match'] = {
+            ...gameProgress['memory-match'],
+            highScore: Math.max(gameProgress['memory-match']?.highScore || 0, finalScore),
+            plays: (gameProgress['memory-match']?.plays || 0) + 1,
+            totalXP: (gameProgress['memory-match']?.totalXP || 0) + result.xpGained
+          }
+          localStorage.setItem('gameProgress', JSON.stringify(gameProgress))
         }
-        localStorage.setItem('gameProgress', JSON.stringify(gameProgress))
-      }
     } catch (error) {
       console.error('Failed to submit score:', error)
     }

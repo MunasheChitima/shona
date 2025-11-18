@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FaUsers, FaComments, FaHandshake, FaLightbulb, FaHeart, FaStar } from 'react-icons/fa'
+import { FaUsers, FaComments, FaStar } from 'react-icons/fa'
 
 interface StudyGroup {
   id: string

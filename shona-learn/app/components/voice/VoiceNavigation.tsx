@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState, useCallback, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { FaMicrophone } from 'react-icons/fa'
 
@@ -43,14 +43,14 @@ export default function VoiceNavigation() {
   const router = useRouter()
   const [listening, setListening] = useState(false)
 
-  const commands = {
+  const commands = useMemo(() => ({
     'home': '/',
     'learn': '/learn',
     'profile': '/profile',
     'next lesson': 'next',
     'previous lesson': 'previous',
     'repeat': 'repeat'
-  }
+  }), [])
 
   const handleSpecialCommand = useCallback((command: string) => {
     switch(command) {

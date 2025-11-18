@@ -4,7 +4,8 @@ import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navigation from '../../components/Navigation'
 import CelebrationModal from '../../components/CelebrationModal'
-import { FaArrowLeft, FaCheck, FaTimes, FaQuestionCircle, FaRedo, FaClock, FaStar, FaGlobe, FaLightbulb } from 'react-icons/fa'
+import { FaArrowLeft, FaCheck, FaTimes, FaQuestionCircle, FaRedo, FaGlobe, FaLightbulb } from 'react-icons/fa'
+import type { AppUser } from '@/types/app'
 
 interface Question {
   id: string
@@ -34,7 +35,7 @@ interface QuizState {
 
 export default function CulturalQuizGame() {
   const router = useRouter()
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<AppUser | null>(null)
   const [quizState, setQuizState] = useState<QuizState>({
     currentQuestionIndex: 0,
     score: 0,
@@ -182,7 +183,8 @@ export default function CulturalQuizGame() {
       router.push('/login')
       return
     }
-    setUser(JSON.parse(userData))
+    const parsedUser: AppUser = JSON.parse(userData)
+    setUser(parsedUser)
   }, [])
 
   // Timer effect
@@ -302,9 +304,9 @@ export default function CulturalQuizGame() {
         })
       })
       
-      if (response.ok) {
+      if (response.ok && user) {
         const result = await response.json()
-        const updatedUser = { ...user, xp: result.totalXP }
+        const updatedUser: AppUser = { ...user, xp: result.totalXP }
         setUser(updatedUser)
         localStorage.setItem('user', JSON.stringify(updatedUser))
         

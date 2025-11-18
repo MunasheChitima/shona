@@ -1,18 +1,20 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { motion } from 'framer-motion'
 import Navigation from '../components/Navigation'
 import LessonCard from '../components/LessonCard'
 import ExerciseModal from '../components/ExerciseModal'
 import HeartDisplay from '../components/HeartDisplay'
+import type { AppUser, Lesson, LessonProgress } from '@/types/app'
+
+type LessonProgressMap = Record<string, LessonProgress>
 
 export default function Learn() {
   const router = useRouter()
-  const [user, setUser] = useState<any>(null)
-  const [lessons, setLessons] = useState<any[]>([])
-  const [selectedLesson, setSelectedLesson] = useState<any>(null)
-  const [progress, setProgress] = useState<any>({})
+  const [user, setUser] = useState<AppUser | null>(null)
+  const [lessons, setLessons] = useState<Lesson[]>([])
+  const [selectedLesson, setSelectedLesson] = useState<Lesson | null>(null)
+  const [progress, setProgress] = useState<LessonProgressMap>({})
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -21,7 +23,8 @@ export default function Learn() {
       router.push('/login')
       return
     }
-    setUser(JSON.parse(userData))
+    const parsedUser: AppUser = JSON.parse(userData)
+    setUser(parsedUser)
     fetchLessons()
     fetchProgress()
   }, [])
@@ -33,7 +36,7 @@ export default function Learn() {
       }
     })
     if (res.ok) {
-      const data = await res.json()
+      const data: Lesson[] = await res.json()
       setLessons(data)
     }
   }
@@ -45,8 +48,8 @@ export default function Learn() {
       }
     })
     if (res.ok) {
-      const data = await res.json()
-      const progressMap = data.reduce((acc: any, p: any) => {
+      const data: LessonProgress[] = await res.json()
+      const progressMap = data.reduce<LessonProgressMap>((acc, p) => {
         acc[p.lessonId] = p
         return acc
       }, {})
@@ -66,10 +69,13 @@ export default function Learn() {
     })
     
     // Update user data
-    const userData = JSON.parse(localStorage.getItem('user') || '{}')
-    userData.xp += score
-    localStorage.setItem('user', JSON.stringify(userData))
-    setUser(userData)
+    const userData = localStorage.getItem('user')
+    if (userData) {
+      const parsedUser: AppUser = JSON.parse(userData)
+      const updatedUser: AppUser = { ...parsedUser, xp: parsedUser.xp + score }
+      localStorage.setItem('user', JSON.stringify(updatedUser))
+      setUser(updatedUser)
+    }
     
     // Refresh progress
     fetchProgress()
@@ -78,7 +84,7 @@ export default function Learn() {
 
   const getLevel = (xp: number) => Math.floor(xp / 100) + 1
   const getProgressToNextLevel = (xp: number) => xp % 100
-  const getCompletedLessons = () => Object.values(progress).filter((p: any) => p.completed).length
+  const getCompletedLessons = () => Object.values(progress).filter(p => p.completed).length
 
   if (!user) return null
 
@@ -164,16 +170,22 @@ export default function Learn() {
             </div>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {lessons.map((lesson: any, index: number) => (
-                <div key={lesson.id}>
-                  <LessonCard
-                    lesson={lesson}
-                    progress={progress[lesson.id]}
-                    onClick={() => setSelectedLesson(lesson)}
-                    locked={lesson.orderIndex > 1 && !progress[lessons[lesson.orderIndex - 2]?.id]?.completed}
-                  />
-                </div>
-              ))}
+                {lessons.map((lesson) => {
+                  const previousLesson = lessons.find(l => l.orderIndex === lesson.orderIndex - 1)
+                  const previousCompleted = previousLesson ? progress[previousLesson.id]?.completed : true
+                  const isLocked = lesson.orderIndex > 1 && !previousCompleted
+
+                  return (
+                    <div key={lesson.id}>
+                      <LessonCard
+                        lesson={lesson}
+                        progress={progress[lesson.id]}
+                        onClick={() => setSelectedLesson(lesson)}
+                        locked={isLocked}
+                      />
+                    </div>
+                  )
+                })}
             </div>
           )}
         </div>
@@ -201,7 +213,7 @@ export default function Learn() {
         )}
       </div>
       
-      {selectedLesson && (
+        {selectedLesson && (
         <ExerciseModal
           lesson={selectedLesson}
           onClose={() => setSelectedLesson(null)}
