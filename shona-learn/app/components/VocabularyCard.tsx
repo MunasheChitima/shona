@@ -10,7 +10,6 @@ interface VocabularyCardProps {
   phonetic: string;
   tonePattern?: string;
   onFlip?: () => void;
-  showAnswer?: boolean;
   className?: string;
 }
 
@@ -20,7 +19,6 @@ export default function VocabularyCard({
   phonetic,
   tonePattern,
   onFlip,
-  showAnswer = false,
   className = ''
 }: VocabularyCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -148,10 +146,10 @@ export default function VocabularyCard({
                 </div>
 
                 {/* English translation */}
-                <h2 className="text-3xl font-bold mb-4">{english}</h2>
+                <h2 className="text-4xl font-bold mb-4">{english}</h2>
                 
                 {/* Shona word (smaller) */}
-                <p className="text-lg text-green-100 mb-2">{shona}</p>
+                <p className="text-xl text-green-100 mb-3">{shona}</p>
                 
                 {/* Phonetic pronunciation */}
                 <p className="text-lg font-mono mb-3 text-green-100">{phonetic}</p>
@@ -159,42 +157,29 @@ export default function VocabularyCard({
                 {/* Tone pattern */}
                 {tonePattern && renderTonePattern(tonePattern)}
                 
-                {/* Flip back hint */}
-                <p className="text-sm text-green-100 mt-auto">
-                  Click to see Shona word
-                </p>
+                {/* Flip hint */}
+                <div className="mt-auto flex items-center gap-2 text-sm text-green-100">
+                  <FaRotateLeft />
+                  <span>Click to flip back</span>
+                </div>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
       </motion.div>
-
-      {/* Flip indicator */}
-      <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
-        <motion.button
-          onClick={handleFlip}
-          className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-full text-sm font-medium transition-colors"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <FaRotateLeft className="text-gray-600" />
-          <span className="text-gray-700">
-            {isFlipped ? 'Show Shona' : 'Show English'}
-          </span>
-        </motion.button>
-      </div>
     </div>
   );
 }
 
-// Flash card deck component
+interface VocabularyWord {
+  shona: string;
+  english: string;
+  phonetic: string;
+  tonePattern?: string;
+}
+
 interface VocabularyDeckProps {
-  words: Array<{
-    shona: string;
-    english: string;
-    phonetic: string;
-    tonePattern?: string;
-  }>;
+  words: VocabularyWord[];
   className?: string;
 }
 
@@ -239,7 +224,6 @@ export function VocabularyDeck({ words, className = '' }: VocabularyDeckProps) {
         english={currentWord.english}
         phonetic={currentWord.phonetic}
         tonePattern={currentWord.tonePattern}
-        showAnswer={showAnswer}
         className="mb-8"
       />
 
@@ -247,15 +231,25 @@ export function VocabularyDeck({ words, className = '' }: VocabularyDeckProps) {
       <div className="flex gap-4">
         <motion.button
           onClick={previousCard}
-          className="px-6 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg font-medium transition-colors"
+          className="px-6 py-3 bg-gray-200 hover:bg-gray-300 rounded-xl font-semibold transition-colors"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           Previous
         </motion.button>
+        
+        <motion.button
+          onClick={() => setShowAnswer(!showAnswer)}
+          className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-xl font-semibold transition-colors"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          {showAnswer ? 'Hide Answer' : 'Show Answer'}
+        </motion.button>
+        
         <motion.button
           onClick={nextCard}
-          className="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition-colors"
+          className="px-6 py-3 bg-gray-200 hover:bg-gray-300 rounded-xl font-semibold transition-colors"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -264,4 +258,4 @@ export function VocabularyDeck({ words, className = '' }: VocabularyDeckProps) {
       </div>
     </div>
   );
-} 
+}

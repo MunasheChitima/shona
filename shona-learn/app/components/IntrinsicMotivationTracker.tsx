@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaHeart, FaStar, FaUsers, FaLightbulb, FaChartLine } from 'react-icons/fa'
 import { motivationPrompts, calculateMotivationScore, getMotivationInsights, getMotivationRecommendations, IntrinsicMotivationData } from '../../lib/intrinsic-motivation'
@@ -212,10 +212,10 @@ export default function IntrinsicMotivationTracker() {
       <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-4 border border-purple-200">
         <h4 className="font-semibold text-gray-800 mb-2">Why Intrinsic Motivation Matters</h4>
         <p className="text-sm text-gray-700 leading-relaxed">
-          True learning happens when you're driven by curiosity, connection, and personal growth rather than external rewards. 
+          True learning happens when you&apos;re driven by curiosity, connection, and personal growth rather than external rewards. 
           We focus on building your internal motivation to create lasting learning habits.
         </p>
       </div>
     </div>
   )
-} 
+}

@@ -2,9 +2,23 @@
 import { FaLock, FaCheck, FaStar, FaPlay } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
+interface Lesson {
+  id: string
+  title: string
+  description: string
+  category: string
+  difficulty?: string
+  exercises?: Array<{ id: string }>
+}
+
+interface Progress {
+  completed?: boolean
+  score?: number
+}
+
 interface LessonCardProps {
-  lesson: any
-  progress: any
+  lesson: Lesson
+  progress: Progress | null
   onClick: () => void
   locked: boolean
 }
@@ -182,4 +196,4 @@ export default function LessonCard({ lesson, progress, onClick, locked }: Lesson
       )}
     </motion.div>
   )
-} 
+}

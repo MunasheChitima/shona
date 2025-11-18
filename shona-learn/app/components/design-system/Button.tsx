@@ -19,6 +19,10 @@ export interface ButtonProps extends Omit<React.ButtonHTMLAttributes<HTMLButtonE
   children?: React.ReactNode
 }
 
+type RemainingButtonProps = Omit<ButtonProps, 
+  'variant' | 'size' | 'loading' | 'loadingText' | 'leftIcon' | 'rightIcon' | 
+  'iconOnly' | 'fullWidth' | 'animated' | 'rounded' | 'platform' | 'disabled' | 'children' | 'className'>
+
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
   variant = 'primary',
   size = 'md',
@@ -221,7 +225,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
         whileHover={{ scale: platform === 'web' ? 1.05 : 1.02 }}
         whileTap={{ scale: platform === 'watchos' ? 0.90 : 0.95 }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        {...(props as any)}
+        {...(props as RemainingButtonProps)}
       >
         <ButtonContent />
       </motion.button>

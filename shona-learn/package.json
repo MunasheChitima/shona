@@ -25,10 +25,7 @@
     "react-countdown-circle-timer": "^3.2.1",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
-    "react-mic": "^12.4.6",
-    "react-speech-kit": "^3.0.1",
-    "recharts": "^3.0.2",
-    "waveform-react": "^0.2.3"
+    "recharts": "^3.0.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

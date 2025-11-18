@@ -4,7 +4,8 @@ import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navigation from '../../components/Navigation'
 import CelebrationModal from '../../components/CelebrationModal'
-import { FaArrowLeft, FaCheck, FaTimes, FaPuzzlePiece, FaRedo, FaClock, FaStar, FaLightbulb, FaTrash } from 'react-icons/fa'
+import { FaArrowLeft, FaCheck, FaTimes, FaPuzzlePiece, FaRedo, FaLightbulb, FaTrash } from 'react-icons/fa'
+import type { AppUser } from '@/types/app'
 
 interface Morpheme {
   id: string
@@ -43,7 +44,7 @@ interface GameState {
 
 export default function WordBuilderGame() {
   const router = useRouter()
-  const [user, setUser] = useState<any>(null)
+  const [user, setUser] = useState<AppUser | null>(null)
   const [gameState, setGameState] = useState<GameState>({
     currentChallengeIndex: 0,
     score: 0,
@@ -207,7 +208,8 @@ export default function WordBuilderGame() {
       router.push('/login')
       return
     }
-    setUser(JSON.parse(userData))
+    const parsedUser: AppUser = JSON.parse(userData)
+    setUser(parsedUser)
   }, [])
 
   // Timer effect
@@ -350,21 +352,21 @@ export default function WordBuilderGame() {
         })
       })
       
-      if (response.ok) {
-        const result = await response.json()
-        const updatedUser = { ...user, xp: result.totalXP }
-        setUser(updatedUser)
-        localStorage.setItem('user', JSON.stringify(updatedUser))
-        
-        const gameProgress = JSON.parse(localStorage.getItem('gameProgress') || '{}')
-        gameProgress['word-builder'] = {
-          ...gameProgress['word-builder'],
-          highScore: Math.max(gameProgress['word-builder']?.highScore || 0, finalScore),
-          plays: (gameProgress['word-builder']?.plays || 0) + 1,
-          totalXP: (gameProgress['word-builder']?.totalXP || 0) + result.xpGained
+        if (response.ok && user) {
+          const result = await response.json()
+          const updatedUser: AppUser = { ...user, xp: result.totalXP }
+          setUser(updatedUser)
+          localStorage.setItem('user', JSON.stringify(updatedUser))
+          
+          const gameProgress = JSON.parse(localStorage.getItem('gameProgress') || '{}')
+          gameProgress['word-builder'] = {
+            ...gameProgress['word-builder'],
+            highScore: Math.max(gameProgress['word-builder']?.highScore || 0, finalScore),
+            plays: (gameProgress['word-builder']?.plays || 0) + 1,
+            totalXP: (gameProgress['word-builder']?.totalXP || 0) + result.xpGained
+          }
+          localStorage.setItem('gameProgress', JSON.stringify(gameProgress))
         }
-        localStorage.setItem('gameProgress', JSON.stringify(gameProgress))
-      }
     } catch (error) {
       console.error('Failed to submit score:', error)
     }
@@ -501,7 +503,7 @@ export default function WordBuilderGame() {
                 </div>
                 
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">
-                  Build: "{currentChallenge.translation}"
+                  Build: &quot;{currentChallenge.translation}&quot;
                 </h2>
                 <p className="text-gray-600 mb-6">Target word: <span className="font-mono font-bold">{currentChallenge.targetWord}</span></p>
                 

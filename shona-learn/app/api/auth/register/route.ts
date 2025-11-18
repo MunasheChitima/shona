@@ -1,10 +1,9 @@
 import { NextResponse } from 'next/server'
 import bcrypt from 'bcryptjs'
-import jwt from 'jsonwebtoken'
 import { PrismaClient } from '@prisma/client'
+import { jwtConfig } from '@/lib/jwt-config'
 
 const prisma = new PrismaClient()
-const JWT_SECRET = 'your-secret-key-change-in-production'
 
 export async function POST(request: Request) {
   try {
@@ -31,8 +30,8 @@ export async function POST(request: Request) {
       }
     })
     
-    // Create token
-    const token = jwt.sign({ userId: user.id }, JWT_SECRET)
+    // Create token using centralized config
+    const token = jwtConfig.signToken({ userId: user.id })
     
     return NextResponse.json({
       token,
@@ -46,7 +45,7 @@ export async function POST(request: Request) {
         hearts: user.hearts
       }
     })
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Registration failed' }, { status: 500 })
   }
-} 
+}

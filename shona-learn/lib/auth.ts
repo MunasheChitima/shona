@@ -1,6 +1,4 @@
-import jwt from 'jsonwebtoken'
-
-const JWT_SECRET = 'your-secret-key-change-in-production'
+import { jwtConfig } from './jwt-config'
 
 export async function verifyAuth(request: Request): Promise<string | null> {
   try {
@@ -8,10 +6,10 @@ export async function verifyAuth(request: Request): Promise<string | null> {
     if (!authorization) return null
     
     const token = authorization.replace('Bearer ', '')
-    const decoded = jwt.verify(token, JWT_SECRET) as { userId: string }
+    const decoded = jwtConfig.verifyToken(token)
     
-    return decoded.userId
-  } catch (error) {
+    return decoded?.userId || null
+  } catch {
     return null
   }
-} 
+}

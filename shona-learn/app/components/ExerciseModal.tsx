@@ -1,17 +1,36 @@
 'use client'
-import { useState, useEffect } from 'react'
-import { FaTimes, FaVolumeUp, FaHeart, FaStar, FaTrophy, FaArrowRight } from 'react-icons/fa'
+import { useState, useEffect, useCallback } from 'react'
+import { FaTimes, FaVolumeUp, FaHeart, FaStar } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import VoiceExercise from './voice/VoiceExercise'
 
+interface Lesson {
+  id: string
+  title: string
+}
+
+interface Exercise {
+  id: string
+  question: string
+  type: string
+  options: string
+  correctAnswer: string
+  points: number
+  shonaPhrase?: string
+  englishPhrase?: string
+  audioText?: string
+  voiceType?: string
+  voiceContent?: string
+}
+
 interface ExerciseModalProps {
-  lesson: any
+  lesson: Lesson
   onClose: () => void
   onComplete: (score: number) => void
 }
 
 export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseModalProps) {
-  const [exercises, setExercises] = useState<any[]>([])
+  const [exercises, setExercises] = useState<Exercise[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState('')
   const [showFeedback, setShowFeedback] = useState(false)
@@ -19,11 +38,7 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
   const [score, setScore] = useState(0)
   const [hearts, setHearts] = useState(5)
 
-  useEffect(() => {
-    fetchExercises()
-  }, [])
-
-  const fetchExercises = async () => {
+  const fetchExercises = useCallback(async () => {
     const res = await fetch(`/api/exercises/${lesson.id}`, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -33,7 +48,11 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
       const data = await res.json()
       setExercises(data)
     }
-  }
+  }, [lesson.id])
+
+  useEffect(() => {
+    fetchExercises()
+  }, [fetchExercises])
 
   const playAudio = (text: string) => {
     const utterance = new SpeechSynthesisUtterance(text)
@@ -168,7 +187,7 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
               
               {currentExercise.audioText && (
                 <motion.button
-                  onClick={() => playAudio(currentExercise.shonaPhrase || currentExercise.audioText)}
+                  onClick={() => playAudio(currentExercise.shonaPhrase || currentExercise.audioText || '')}
                   className="flex items-center space-x-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-3 rounded-xl mb-4 shadow-medium"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -189,7 +208,7 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
                         <p className="text-lg font-mono text-blue-600">{currentExercise.audioText}</p>
                       </div>
                       <button
-                        onClick={() => playAudio(currentExercise.shonaPhrase)}
+                        onClick={() => playAudio(currentExercise.shonaPhrase || '')}
                         className="flex items-center justify-center w-10 h-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-colors"
                         title="Listen to pronunciation"
                       >
@@ -315,7 +334,7 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
                   </div>
                   <div>
                     <p className={`font-bold text-lg ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
-                      {isCorrect ? 'Excellent! You got it right!' : 'Keep trying! You\'re learning!'}
+                      {isCorrect ? 'Excellent! You got it right!' : 'Keep trying! You&apos;re learning!'}
                     </p>
                     {!isCorrect && (
                       <p className="text-red-600 mt-1">
@@ -331,4 +350,4 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
       </motion.div>
     </div>
   )
-} 
+}

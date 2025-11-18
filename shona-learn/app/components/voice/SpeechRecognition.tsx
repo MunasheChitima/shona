@@ -24,6 +24,59 @@ export default function SpeechRecognition({
     }
   }, [])
 
+  const calculatePronunciationScore = useCallback((
+    spoken: string, 
+    target: string, 
+    confidence: number
+  ): number => {
+    // Normalize strings
+    const spokenNorm = spoken.toLowerCase().trim()
+    const targetNorm = target.toLowerCase().trim()
+
+    // Exact match
+    if (spokenNorm === targetNorm) {
+      return Math.round(confidence * 100)
+    }
+
+    // Calculate Levenshtein distance
+    const distance = levenshteinDistance(spokenNorm, targetNorm)
+    const maxLen = Math.max(spokenNorm.length, targetNorm.length)
+    const similarity = 1 - (distance / maxLen)
+
+    // Factor in confidence and similarity
+    const score = similarity * confidence * 100
+
+    return Math.round(Math.max(0, Math.min(100, score)))
+  }, [])
+
+  const levenshteinDistance = (a: string, b: string): number => {
+    const matrix = []
+
+    for (let i = 0; i <= b.length; i++) {
+      matrix[i] = [i]
+    }
+
+    for (let j = 0; j <= a.length; j++) {
+      matrix[0][j] = j
+    }
+
+    for (let i = 1; i <= b.length; i++) {
+      for (let j = 1; j <= a.length; j++) {
+        if (b.charAt(i - 1) === a.charAt(j - 1)) {
+          matrix[i][j] = matrix[i - 1][j - 1]
+        } else {
+          matrix[i][j] = Math.min(
+            matrix[i - 1][j - 1] + 1,
+            matrix[i][j - 1] + 1,
+            matrix[i - 1][j] + 1
+          )
+        }
+      }
+    }
+
+    return matrix[b.length][a.length]
+  }
+
   const startListening = useCallback(() => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
     const recognition = new SpeechRecognition()
@@ -65,60 +118,7 @@ export default function SpeechRecognition({
     }
 
     recognition.start()
-  }, [language, targetPhrase, onResult])
-
-  const calculatePronunciationScore = (
-    spoken: string, 
-    target: string, 
-    confidence: number
-  ): number => {
-    // Normalize strings
-    const spokenNorm = spoken.toLowerCase().trim()
-    const targetNorm = target.toLowerCase().trim()
-
-    // Exact match
-    if (spokenNorm === targetNorm) {
-      return Math.round(confidence * 100)
-    }
-
-    // Calculate Levenshtein distance
-    const distance = levenshteinDistance(spokenNorm, targetNorm)
-    const maxLen = Math.max(spokenNorm.length, targetNorm.length)
-    const similarity = 1 - (distance / maxLen)
-
-    // Factor in confidence and similarity
-    const score = similarity * confidence * 100
-
-    return Math.round(Math.max(0, Math.min(100, score)))
-  }
-
-  const levenshteinDistance = (a: string, b: string): number => {
-    const matrix = []
-
-    for (let i = 0; i <= b.length; i++) {
-      matrix[i] = [i]
-    }
-
-    for (let j = 0; j <= a.length; j++) {
-      matrix[0][j] = j
-    }
-
-    for (let i = 1; i <= b.length; i++) {
-      for (let j = 1; j <= a.length; j++) {
-        if (b.charAt(i - 1) === a.charAt(j - 1)) {
-          matrix[i][j] = matrix[i - 1][j - 1]
-        } else {
-          matrix[i][j] = Math.min(
-            matrix[i - 1][j - 1] + 1,
-            matrix[i][j - 1] + 1,
-            matrix[i - 1][j] + 1
-          )
-        }
-      }
-    }
-
-    return matrix[b.length][a.length]
-  }
+  }, [language, targetPhrase, onResult, calculatePronunciationScore])
 
   return (
     <div className="flex flex-col items-center space-y-4">
@@ -166,4 +166,4 @@ export default function SpeechRecognition({
       )}
     </div>
   )
-} 
+}

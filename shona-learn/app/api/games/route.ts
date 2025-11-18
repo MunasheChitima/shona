@@ -14,7 +14,7 @@ const verifyAuth = async (request: NextRequest) => {
       where: { email: 'test@example.com' } // This would be extracted from token
     })
     return user?.id
-  } catch (error) {
+  } catch {
     return null
   }
 }
@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
     
-    const { gameId, score, gameType, difficulty } = await request.json()
+    const { gameId, score, difficulty } = await request.json()
     
     // Calculate XP based on game type and difficulty
     const gameXPMap: Record<string, number> = {

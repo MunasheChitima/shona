@@ -1,10 +1,17 @@
 'use client'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { FaHome, FaBook, FaUser, FaSignOutAlt, FaTrophy, FaStar, FaMap, FaGamepad } from 'react-icons/fa'
-import { motion } from 'framer-motion'
+import { FaBook, FaUser, FaSignOutAlt, FaTrophy, FaMap, FaGamepad } from 'react-icons/fa'
 
-export default function Navigation({ user }: { user: any }) {
+interface User {
+  xp?: number
+}
+
+interface NavigationProps {
+  user: User | null
+}
+
+export default function Navigation({ user }: NavigationProps) {
   const router = useRouter()
   
   const handleLogout = () => {
@@ -25,7 +32,7 @@ export default function Navigation({ user }: { user: any }) {
               <span className="text-xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
                 Learn Shona
               </span>
-              <div className="text-xs text-gray-500">Master Zimbabwe's Language</div>
+              <div className="text-xs text-gray-500">Master Zimbabwe&apos;s Language</div>
             </div>
           </Link>
           
@@ -76,4 +83,4 @@ export default function Navigation({ user }: { user: any }) {
       </div>
     </nav>
   )
-} 
+}
