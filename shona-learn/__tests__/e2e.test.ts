@@ -2,40 +2,93 @@ import { test, expect } from '@jest/globals'
 import puppeteer, { Browser, Page } from 'puppeteer'
 import fs from 'fs'
 import path from 'path'
+import { spawn, ChildProcess } from 'child_process'
 
 const baseUrl = 'http://localhost:3001'
 
 describe('Shona Learning App E2E Tests', () => {
   let browser: Browser
   let page: Page
+  let devServer: ChildProcess | null = null
 
   beforeAll(async () => {
+    // Start Next.js dev server
+    console.log('🚀 Starting Next.js dev server...')
+    devServer = spawn('npm', ['run', 'dev'], {
+      cwd: process.cwd(),
+      stdio: 'pipe',
+      shell: true
+    })
+    
+    // Wait for server to be ready
+    await new Promise<void>((resolve, reject) => {
+      const timeout = setTimeout(() => {
+        reject(new Error('Dev server failed to start within 30 seconds'))
+      }, 30000)
+      
+      devServer?.stdout?.on('data', (data: Buffer) => {
+        const output = data.toString()
+        if (output.includes('Ready') || output.includes('Local:')) {
+          clearTimeout(timeout)
+          resolve()
+        }
+      })
+      
+      devServer?.stderr?.on('data', (data: Buffer) => {
+        const output = data.toString()
+        if (output.includes('Error') && !output.includes('EADDRINUSE')) {
+          clearTimeout(timeout)
+          reject(new Error(`Dev server error: ${output}`))
+        }
+      })
+    })
+    
+    // Give server a moment to fully initialize
+    await new Promise(resolve => setTimeout(resolve, 2000))
+    
     // Create test-screenshots directory if it doesn't exist
     if (!fs.existsSync('test-screenshots')) {
       fs.mkdirSync('test-screenshots', { recursive: true })
     }
 
-    browser = await puppeteer.launch({ 
-      headless: false,
-      slowMo: 100,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      // Enable video recording
-      defaultViewport: { width: 1280, height: 720 }
-    })
-    
-    // Create a new context with video recording
-    const context = await browser.createBrowserContext()
-    page = await context.newPage()
-    
-    // Set up video recording
-    await page.setViewport({ width: 1280, height: 720 })
-    
-    // Grant permissions for microphone and camera
-    await context.overridePermissions(baseUrl, ['microphone', 'camera'])
+    try {
+      browser = await puppeteer.launch({ 
+        headless: 'new',
+        slowMo: 100,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        defaultViewport: { width: 1280, height: 720 }
+      })
+      
+      // Create a new context with video recording
+      const context = await browser.createBrowserContext()
+      page = await context.newPage()
+      
+      // Set up video recording
+      await page.setViewport({ width: 1280, height: 720 })
+      
+      // Grant permissions for microphone and camera
+      await context.overridePermissions(baseUrl, ['microphone', 'camera'])
+    } catch (error) {
+      console.error('Failed to launch browser:', error)
+      throw error
+    }
   })
 
   afterAll(async () => {
-    await browser.close()
+    // Guard browser.close() when launch fails
+    if (browser) {
+      try {
+        await browser.close()
+      } catch (error) {
+        console.warn('Error closing browser:', error)
+      }
+    }
+    
+    // Stop dev server
+    if (devServer) {
+      devServer.kill()
+      await new Promise(resolve => setTimeout(resolve, 1000))
+    }
   })
 
   test('Complete Application Flow Test', async () => {
@@ -183,4 +236,4 @@ describe('Shona Learning App E2E Tests', () => {
       console.log(`✅ ${viewport.name} viewport tested`)
     }
   }, 20000)
-}) 
+})

@@ -105,6 +105,50 @@ const SHONA_PHONETIC_RULES = {
   affricates: {
     'ts': { type: 'Affricate', features: { burst_energy: 'medium' } },
     'dz': { type: 'Affricate', features: { burst_energy: 'medium' } }
+  },
+
+  // Whistled Affricates / Complex Sibilants
+  whistled_affricates: {
+    'tsv': { 
+      type: 'Whistled Affricate', 
+      features: { burst_energy: 'high', spectral_centroid_khz: 8.5 } 
+    }
+  },
+
+  // Core Plosives
+  plosives: {
+    'p': { type: 'Voiceless Plosive', features: { burst_energy: 'high', aspiration: 'low' } },
+    't': { type: 'Voiceless Plosive', features: { burst_energy: 'high', aspiration: 'low' } },
+    'k': { type: 'Voiceless Plosive', features: { burst_energy: 'high', aspiration: 'low' } },
+    'g': { type: 'Voiced Plosive', features: { burst_energy: 'medium', aspiration: 'none' } }
+  },
+
+  // Fricatives
+  fricatives: {
+    's': { type: 'Voiceless Fricative', features: { spectral_centroid_khz: 6.5 } },
+    'z': { type: 'Voiced Fricative', features: { spectral_centroid_khz: 6.2 } },
+    'f': { type: 'Voiceless Fricative', features: { spectral_centroid_khz: 5.8 } },
+    'v': { type: 'Voiced Fricative', features: { spectral_centroid_khz: 5.5 } },
+    'h': { type: 'Glottal Fricative', features: { aspiration: 'medium' } },
+    'sh': { type: 'Postalveolar Fricative', features: { spectral_centroid_khz: 6.8 } }
+  },
+
+  // Nasals
+  nasals: {
+    'm': { type: 'Nasal', features: { formants: 'stable' } },
+    'n': { type: 'Nasal', features: { formants: 'stable' } },
+    'ny': { type: 'Palatal Nasal', features: { formants: 'stable' } }
+  },
+
+  // Liquids and Approximants
+  liquids: {
+    'r': { type: 'Alveolar Tap', features: { formants: 'fluctuating' } },
+    'l': { type: 'Lateral Approximant', features: { formants: 'stable' } }
+  },
+
+  semivowels: {
+    'w': { type: 'Labio-Velar Approximant', features: { formants: 'fluctuating' } },
+    'y': { type: 'Palatal Approximant', features: { formants: 'fluctuating' } }
   }
 };
 
@@ -118,7 +162,9 @@ const FEEDBACK_TEMPLATES = {
   WHISTLE_QUALITY_LOW: "This is a whistled sound. Try to make it more high-pitched and whistling-like.",
   WHISTLE_MISSING: "This should be a whistled sound, not a regular fricative. Make it more high-pitched.",
   VOWEL_HIATUS_ERROR: "These are two separate vowel sounds, not a diphthong. Say them distinctly.",
-  UNEVEN_STRESS: "Try to keep even stress across all syllables. Don't emphasize one syllable too much."
+  UNEVEN_STRESS: "Try to keep even stress across all syllables. Don't emphasize one syllable too much.",
+  PHONEME_MISSING: "This sound is missing from your pronunciation.",
+  EXTRA_PHONEME: "This sound was not expected in the word."
 };
 
 // Error Messages
@@ -242,6 +288,15 @@ export class MuturikiriAI {
           expected_features: rule.features,
           expected_tone: rule.tone
         });
+      } else {
+        // Warn about unrecognized phonemes but still include them
+        console.warn(`No phonetic rule found for token: ${token} in word: ${target_word}`);
+        groundTruth.push({
+          phoneme: token,
+          expected_type: 'Unknown',
+          expected_features: {},
+          expected_tone: undefined
+        });
       }
     }
 
@@ -259,7 +314,7 @@ export class MuturikiriAI {
       let matched = false;
       
       // Try multi-character phonemes first (longest match)
-      const multiCharPhonemes = ['tsv', 'sv', 'zv', 'ts', 'dz', 'mb', 'nd', 'ng', 'bh', 'dh'];
+      const multiCharPhonemes = ['tsv', 'sv', 'zv', 'ts', 'dz', 'mb', 'nd', 'ng', 'bh', 'dh', 'ny', 'sh'];
       
       for (const phoneme of multiCharPhonemes) {
         if (remaining.startsWith(phoneme)) {
@@ -291,7 +346,13 @@ export class MuturikiriAI {
       ...SHONA_PHONETIC_RULES.breathy_voiced,
       ...SHONA_PHONETIC_RULES.whistled_sibilants,
       ...SHONA_PHONETIC_RULES.prenasalized,
-      ...SHONA_PHONETIC_RULES.affricates
+      ...SHONA_PHONETIC_RULES.affricates,
+      ...SHONA_PHONETIC_RULES.whistled_affricates,
+      ...SHONA_PHONETIC_RULES.plosives,
+      ...SHONA_PHONETIC_RULES.fricatives,
+      ...SHONA_PHONETIC_RULES.nasals,
+      ...SHONA_PHONETIC_RULES.liquids,
+      ...SHONA_PHONETIC_RULES.semivowels
     };
     
     return allRules[token as keyof typeof allRules];
@@ -405,6 +466,91 @@ Now, analyze the provided audio and return the JSON object.`;
   }
 
   /**
+   * Align ground truth and AI observations using dynamic programming
+   * Returns aligned pairs with nulls for missing phonemes
+   */
+  private alignPhonemes(
+    ground_truth: GroundTruthProfile[],
+    ai_observations: PhonemeObservation[]
+  ): Array<{ gt: GroundTruthProfile | null; ai: PhonemeObservation | null }> {
+    const gtLen = ground_truth.length;
+    const aiLen = ai_observations.length;
+    
+    // Simple alignment: try to match phonemes by position, allowing for insertions/deletions
+    const aligned: Array<{ gt: GroundTruthProfile | null; ai: PhonemeObservation | null }> = [];
+    let gtIdx = 0;
+    let aiIdx = 0;
+    
+    while (gtIdx < gtLen || aiIdx < aiLen) {
+      if (gtIdx >= gtLen) {
+        // Extra AI observations
+        aligned.push({ gt: null, ai: ai_observations[aiIdx] });
+        aiIdx++;
+      } else if (aiIdx >= aiLen) {
+        // Missing phonemes in AI observations
+        aligned.push({ gt: ground_truth[gtIdx], ai: null });
+        gtIdx++;
+      } else {
+        // Try to match current phonemes
+        const gtPhoneme = ground_truth[gtIdx].phoneme.toLowerCase();
+        const aiPhoneme = ai_observations[aiIdx].phoneme_observed.toLowerCase();
+        
+        if (gtPhoneme === aiPhoneme || this.arePhonemesSimilar(gtPhoneme, aiPhoneme)) {
+          // Match found
+          aligned.push({ gt: ground_truth[gtIdx], ai: ai_observations[aiIdx] });
+          gtIdx++;
+          aiIdx++;
+        } else if (gtIdx + 1 < gtLen && 
+                   ground_truth[gtIdx + 1].phoneme.toLowerCase() === aiPhoneme) {
+          // GT has extra phoneme
+          aligned.push({ gt: ground_truth[gtIdx], ai: null });
+          gtIdx++;
+        } else if (aiIdx + 1 < aiLen && 
+                   ai_observations[aiIdx + 1].phoneme_observed.toLowerCase() === gtPhoneme) {
+          // AI has extra phoneme
+          aligned.push({ gt: null, ai: ai_observations[aiIdx] });
+          aiIdx++;
+        } else {
+          // No clear match, align both and continue
+          aligned.push({ gt: ground_truth[gtIdx], ai: ai_observations[aiIdx] });
+          gtIdx++;
+          aiIdx++;
+        }
+      }
+    }
+    
+    return aligned;
+  }
+
+  /**
+   * Check if two phonemes are similar enough to be considered a match
+   */
+  private arePhonemesSimilar(gt: string, ai: string): boolean {
+    // Exact match
+    if (gt === ai) return true;
+    
+    // Check if one is a substring of the other (e.g., 'ts' vs 'tsv')
+    if (gt.includes(ai) || ai.includes(gt)) return true;
+    
+    // Check for common substitutions
+    const substitutions: Record<string, string[]> = {
+      'b': ['bh'],
+      'd': ['dh'],
+      's': ['sv', 'sh'],
+      'z': ['zv'],
+      'ts': ['tsv', 't']
+    };
+    
+    for (const [key, variants] of Object.entries(substitutions)) {
+      if ((gt === key && variants.includes(ai)) || (ai === key && variants.includes(gt))) {
+        return true;
+      }
+    }
+    
+    return false;
+  }
+
+  /**
    * Step 3.4: Compare AI observations with Ground Truth
    */
   private compareWithGroundTruth(
@@ -413,38 +559,52 @@ Now, analyze the provided audio and return the JSON object.`;
   ): PhonemeAnalysis[] {
     const analyses: PhonemeAnalysis[] = [];
     
-    // Align profiles
-    if (ground_truth.length !== ai_analysis.phoneme_observations.length) {
-      // Major pronunciation error - different number of phonemes
-      return ground_truth.map(gt => ({
-        phoneme: gt.phoneme,
-        score: 0,
-        deviations: [{
-          phoneme: gt.phoneme,
-          feature: 'phoneme_count',
-          expected: ground_truth.length,
-          observed: ai_analysis.phoneme_observations.length,
-          feedback_code: 'PHONEME_COUNT_MISMATCH'
-        }],
-        feedback_codes: ['PHONEME_COUNT_MISMATCH']
-      }));
-    }
+    // Align profiles instead of auto-zeroing
+    const aligned = this.alignPhonemes(ground_truth, ai_analysis.phoneme_observations);
     
-    // Compare each phoneme
-    for (let i = 0; i < ground_truth.length; i++) {
-      const gt = ground_truth[i];
-      const ai = ai_analysis.phoneme_observations[i];
-      
-      const deviations = this.comparePhoneme(gt, ai);
-      const score = this.calculatePhonemeScore(deviations);
-      const feedback_codes = deviations.map(d => d.feedback_code);
-      
-      analyses.push({
-        phoneme: gt.phoneme,
-        score,
-        deviations,
-        feedback_codes
-      });
+    // Compare each aligned pair
+    for (const pair of aligned) {
+      if (!pair.gt) {
+        // Extra phoneme in AI output
+        analyses.push({
+          phoneme: pair.ai!.phoneme_observed,
+          score: 0,
+          deviations: [{
+            phoneme: pair.ai!.phoneme_observed,
+            feature: 'phoneme_presence',
+            expected: 'not present',
+            observed: 'present',
+            feedback_code: 'EXTRA_PHONEME'
+          }],
+          feedback_codes: ['EXTRA_PHONEME']
+        });
+      } else if (!pair.ai) {
+        // Missing phoneme in AI output
+        analyses.push({
+          phoneme: pair.gt.phoneme,
+          score: 0,
+          deviations: [{
+            phoneme: pair.gt.phoneme,
+            feature: 'phoneme_presence',
+            expected: 'present',
+            observed: 'not present',
+            feedback_code: 'PHONEME_MISSING'
+          }],
+          feedback_codes: ['PHONEME_MISSING']
+        });
+      } else {
+        // Both present - compare them
+        const deviations = this.comparePhoneme(pair.gt, pair.ai);
+        const score = this.calculatePhonemeScore(deviations);
+        const feedback_codes = deviations.map(d => d.feedback_code);
+        
+        analyses.push({
+          phoneme: pair.gt.phoneme,
+          score,
+          deviations,
+          feedback_codes
+        });
+      }
     }
     
     return analyses;
@@ -546,6 +706,8 @@ Now, analyze the provided audio and return the JSON object.`;
         case 'IMPLOSIVE_TOO_PLOSIVE':
         case 'BREATHY_VOICE_WEAK':
         case 'WHISTLE_MISSING':
+        case 'PHONEME_MISSING':
+        case 'EXTRA_PHONEME':
           score -= 60; // Critical error
           break;
         case 'INCORRECT_TONE':
@@ -595,4 +757,4 @@ Now, analyze the provided audio and return the JSON object.`;
 // Export a factory function for creating the Muturikiri AI instance
 export function createMuturikiriAI(apiKey: string): MuturikiriAI {
   return new MuturikiriAI(apiKey);
-} 
+}

@@ -19,7 +19,7 @@ export async function GET(request: Request) {
     })
     
     return NextResponse.json(lessons)
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Failed to fetch lessons' }, { status: 500 })
   }
-} 
+}

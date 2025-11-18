@@ -126,7 +126,7 @@ export default function PronunciationPractice({
                     {getScoreFeedback(attempts[attempts.length - 1].score)}
                   </p>
                   <p className="text-gray-600 mt-2">
-                    You said: "{attempts[attempts.length - 1].transcript}"
+                    You said: &quot;{attempts[attempts.length - 1].transcript}&quot;
                   </p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function PronunciationPractice({
             <div className="space-y-2">
               {attempts.slice(-5).reverse().map((attempt, index) => (
                 <div key={index} className="flex justify-between items-center bg-gray-50 rounded p-2">
-                  <span className="text-sm text-gray-600">"{attempt.transcript}"</span>
+                  <span className="text-sm text-gray-600">&quot;{attempt.transcript}&quot;</span>
                   <span className={`font-semibold text-sm`} style={{ color: getScoreColor(attempt.score) }}>
                     {attempt.score}%
                   </span>
@@ -169,4 +169,4 @@ export default function PronunciationPractice({
       </div>
     </div>
   )
-} 
+}

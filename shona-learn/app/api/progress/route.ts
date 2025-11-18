@@ -16,7 +16,7 @@ export async function GET(request: Request) {
     })
     
     return NextResponse.json(progress)
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Failed to fetch progress' }, { status: 500 })
   }
 }
@@ -66,7 +66,7 @@ export async function POST(request: Request) {
     }
     
     return NextResponse.json(progress)
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Failed to update progress' }, { status: 500 })
   }
-} 
+}

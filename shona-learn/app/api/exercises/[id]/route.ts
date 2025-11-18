@@ -20,7 +20,7 @@ export async function GET(
     })
     
     return NextResponse.json(exercises)
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: 'Failed to fetch exercises' }, { status: 500 })
   }
-} 
+}
