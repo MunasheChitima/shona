@@ -251,7 +251,7 @@ export default function FlashcardsPage() {
                 
                 {currentCard.context && (
                   <div className="text-sm text-gray-500 italic mb-6">
-                    "{currentCard.context}"
+                    &quot;{currentCard.context}&quot;
                   </div>
                 )}
 
@@ -357,7 +357,7 @@ export default function FlashcardsPage() {
                   </div>
                   <h3 className="text-lg font-medium text-gray-900 mb-2">No cards due</h3>
                   <p className="text-gray-600 mb-4">
-                    You're all caught up! Come back later or add more cards to study.
+                    You&apos;re all caught up! Come back later or add more cards to study.
                   </p>
                   <button
                     onClick={() => router.push('/learn')}

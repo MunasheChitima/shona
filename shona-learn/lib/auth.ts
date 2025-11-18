@@ -9,7 +9,7 @@ export async function verifyAuth(request: Request): Promise<string | null> {
     const decoded = jwtConfig.verifyToken(token)
     
     return decoded?.userId || null
-  } catch (error) {
+  } catch {
     return null
   }
 }

@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaTrophy, FaStar, FaFire, FaRocket } from 'react-icons/fa'
+import { FaStar, FaFire, FaRocket } from 'react-icons/fa'
 
 interface CelebrationModalProps {
   isOpen: boolean
@@ -163,4 +163,4 @@ export default function CelebrationModal({ isOpen, score, lessonTitle, onClose }
       )}
     </AnimatePresence>
   )
-} 
+}

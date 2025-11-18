@@ -1,13 +1,12 @@
 'use client'
-import { useState, useEffect } from 'react'
-import { FaVolumeUp, FaStop, FaPlay, FaPause } from 'react-icons/fa'
+import { useState, useEffect, useCallback } from 'react'
+import { FaStop, FaPlay, FaPause } from 'react-icons/fa'
 
 interface TextToSpeechProps {
   text: string
   phonetic?: string
   rate?: number
   pitch?: number
-  voice?: string
   autoPlay?: boolean
   onEnd?: () => void
 }
@@ -17,43 +16,14 @@ export default function TextToSpeech({
   phonetic,
   rate = 0.8,
   pitch = 1,
-  voice = 'default',
   autoPlay = false,
   onEnd
 }: TextToSpeechProps) {
   const [speaking, setSpeaking] = useState(false)
   const [paused, setPaused] = useState(false)
-  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([])
   const [selectedVoice, setSelectedVoice] = useState<SpeechSynthesisVoice | null>(null)
 
-  useEffect(() => {
-    const loadVoices = () => {
-      const availableVoices = speechSynthesis.getVoices()
-      setVoices(availableVoices)
-      
-      // Try to find an African or British English voice
-      const preferredVoice = availableVoices.find(v => 
-        v.lang.includes('en-ZA') || // South African English
-        v.lang.includes('en-GB') || // British English
-        v.lang.includes('en-KE')    // Kenyan English
-      ) || availableVoices[0]
-      
-      setSelectedVoice(preferredVoice)
-    }
-
-    loadVoices()
-    speechSynthesis.onvoiceschanged = loadVoices
-
-    if (autoPlay) {
-      speak()
-    }
-
-    return () => {
-      speechSynthesis.cancel()
-    }
-  }, [])
-
-  const speak = (textOverride?: string) => {
+  const speak = useCallback((textOverride?: string) => {
     speechSynthesis.cancel()
     
     const utterance = new SpeechSynthesisUtterance(textOverride || phonetic || text)
@@ -82,7 +52,33 @@ export default function TextToSpeech({
     }
 
     speechSynthesis.speak(utterance)
-  }
+  }, [text, phonetic, rate, pitch, selectedVoice, onEnd])
+
+  useEffect(() => {
+    const loadVoices = () => {
+      const availableVoices = speechSynthesis.getVoices()
+      
+      // Try to find an African or British English voice
+      const preferredVoice = availableVoices.find(v => 
+        v.lang.includes('en-ZA') || // South African English
+        v.lang.includes('en-GB') || // British English
+        v.lang.includes('en-KE')    // Kenyan English
+      ) || availableVoices[0]
+      
+      setSelectedVoice(preferredVoice)
+    }
+
+    loadVoices()
+    speechSynthesis.onvoiceschanged = loadVoices
+
+    if (autoPlay) {
+      speak()
+    }
+
+    return () => {
+      speechSynthesis.cancel()
+    }
+  }, [autoPlay, speak])
 
   const pause = () => {
     if (speechSynthesis.speaking && !speechSynthesis.paused) {
@@ -184,4 +180,4 @@ export default function TextToSpeech({
       )}
     </div>
   )
-} 
+}

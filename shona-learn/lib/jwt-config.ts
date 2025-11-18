@@ -3,6 +3,8 @@
  * Enforces minimum secret length and provides rotation support
  */
 
+import jwt from 'jsonwebtoken'
+
 const MIN_SECRET_LENGTH = 32;
 
 function getJWTSecret(): string {
@@ -40,12 +42,10 @@ export const jwtConfig = {
    * Verify a token with support for secret rotation
    */
   verifyToken(token: string): { userId: string } | null {
-    const jwt = require('jsonwebtoken');
-    
     try {
       // Try with primary secret
       return jwt.verify(token, this.secret) as { userId: string };
-    } catch (error) {
+    } catch {
       // If rotation secret exists, try with that
       if (this.rotationSecret) {
         try {
@@ -62,7 +62,6 @@ export const jwtConfig = {
    * Sign a token using the current secret
    */
   signToken(payload: { userId: string }): string {
-    const jwt = require('jsonwebtoken');
     return jwt.sign(payload, this.secret);
   }
 };

@@ -3,11 +3,22 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import PronunciationPractice from './PronunciationPractice'
 
+interface Word {
+  shona: string
+  english: string
+  phonetic: string
+  tonePattern?: string
+}
+
+interface ExerciseContent {
+  words?: Word[]
+}
+
 interface VoiceExerciseProps {
   exercise: {
     id: string
     type: 'pronunciation' | 'conversation' | 'listening'
-    content: any
+    content: ExerciseContent
   }
   onComplete: (score: number) => void
 }
@@ -88,7 +99,7 @@ export default function VoiceExercise({ exercise, onComplete }: VoiceExercisePro
       {exercise.type === 'pronunciation' && exercise.content.words && exercise.content.words.length > 1 && (
         <div className="mb-6">
           <div className="flex justify-center space-x-2">
-            {exercise.content.words.map((_: any, index: number) => (
+            {exercise.content.words.map((_, index: number) => (
               <motion.div
                 key={index}
                 className={`w-3 h-3 rounded-full ${
@@ -111,4 +122,4 @@ export default function VoiceExercise({ exercise, onComplete }: VoiceExercisePro
       {renderExercise()}
     </div>
   )
-} 
+}
