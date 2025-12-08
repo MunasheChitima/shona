@@ -1,0 +1,211 @@
+name: Web Deploy
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'shona-learn/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'shona-learn/**'
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Deployment environment'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: shona-learn/package-lock.json
+          
+      - name: Install dependencies
+        working-directory: shona-learn
+        run: npm ci
+        
+      - name: Run linter
+        working-directory: shona-learn
+        run: npm run lint
+        
+      - name: Run tests
+        working-directory: shona-learn
+        run: npm run test
+        env:
+          CI: true
+          
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: test
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: shona-learn/package-lock.json
+          
+      - name: Install dependencies
+        working-directory: shona-learn
+        run: npm ci
+        
+      - name: Build application
+        working-directory: shona-learn
+        run: npm run build
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          NEXTAUTH_SECRET: ${{ secrets.NEXTAUTH_SECRET }}
+          NEXTAUTH_URL: ${{ secrets.NEXTAUTH_URL }}
+          GOOGLE_AI_API_KEY: ${{ secrets.GOOGLE_AI_API_KEY }}
+          
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: shona-learn/.next
+          retention-days: 7
+          
+  deploy-vercel:
+    name: Deploy to Vercel
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/'))
+    environment:
+      name: production
+      url: https://shona-learn.vercel.app
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          working-directory: shona-learn
+          vercel-args: '--prod'
+          
+  deploy-netlify:
+    name: Deploy to Netlify (Alternative)
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'staging'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: shona-learn/package-lock.json
+          
+      - name: Install dependencies
+        working-directory: shona-learn
+        run: npm ci
+        
+      - name: Build
+        working-directory: shona-learn
+        run: npm run build
+        
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3.0
+        with:
+          publish-dir: 'shona-learn/.next'
+          production-branch: main
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: 'Deploy from GitHub Actions'
+          enable-pull-request-comment: true
+          enable-commit-comment: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          
+  deploy-docker:
+    name: Build and Push Docker Image
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          
+      - name: Extract metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ secrets.DOCKER_USERNAME }}/shona-learn
+          tags: |
+            type=ref,event=branch
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=sha
+            
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: shona-learn
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          
+  notification:
+    name: Send Notification
+    runs-on: ubuntu-latest
+    needs: [deploy-vercel, deploy-netlify, deploy-docker]
+    if: always()
+    steps:
+      - name: Send Slack notification
+        if: env.SLACK_WEBHOOK_URL != ''
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          STATUS="success"
+          if [ "${{ needs.deploy-vercel.result }}" != "success" ] && \
+             [ "${{ needs.deploy-netlify.result }}" != "success" ] && \
+             [ "${{ needs.deploy-docker.result }}" != "success" ]; then
+            STATUS="failed"
+          fi
+          curl -X POST -H 'Content-type: application/json' \
+            --data "{\"text\":\"Web deployment $STATUS\"}" \
+            $SLACK_WEBHOOK_URL

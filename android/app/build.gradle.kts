@@ -23,13 +23,39 @@ android {
         }
     }
 
+    signingConfigs {
+        create("release") {
+            // For local builds, use local keystore
+            // For CI/CD, use environment variables
+            storeFile = file(project.findProperty("SHONA_RELEASE_STORE_FILE") as String? 
+                ?: System.getenv("SHONA_RELEASE_STORE_FILE") 
+                ?: "shona-release-key.jks")
+            storePassword = project.findProperty("SHONA_RELEASE_STORE_PASSWORD") as String? 
+                ?: System.getenv("SHONA_RELEASE_STORE_PASSWORD") 
+                ?: ""
+            keyAlias = project.findProperty("SHONA_RELEASE_KEY_ALIAS") as String? 
+                ?: System.getenv("SHONA_RELEASE_KEY_ALIAS") 
+                ?: "shona-release"
+            keyPassword = project.findProperty("SHONA_RELEASE_KEY_PASSWORD") as String? 
+                ?: System.getenv("SHONA_RELEASE_KEY_PASSWORD") 
+                ?: ""
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
+            
+            // Optimization flags
+            ndk {
+                debugSymbolLevel = "FULL"
+            }
         }
         debug {
             isDebuggable = true
