@@ -1,0 +1,4613 @@
+[
+  {
+    "id": "fund_num_001",
+    "shona": "pashure",
+    "english": "one",
+    "raw": "{\n  // Numbers & Counting (30+ words)\n  numbersCount: {\n    basic_numbers: [\n      {\n        id: \"fund_num_001\",\n        shona: \"pashure\",\n        english: \"one\",\n        category: \"numbers\",\n        "
+  },
+  {
+    "id": "fund_num_002",
+    "shona": "Ndine bhuku rimwe chete",
+    "english": "I have only one book",
+    "raw": "{\n            shona: \"Ndine bhuku rimwe chete\",\n            english: \"I have only one book\",\n            context: \"Counting objects\",\n            register: \"neutral\"\n          }\n        ],\n        aud"
+  },
+  {
+    "id": "fund_num_003",
+    "shona": "tatu",
+    "english": "three",
+    "category": "numbers",
+    "subcategories": [
+      "basic_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 1,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/tatu/"
+  },
+  {
+    "id": "fund_num_004",
+    "shona": "china",
+    "english": "four",
+    "category": "numbers",
+    "subcategories": [
+      "basic_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 1,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/tʃina/"
+  },
+  {
+    "id": "fund_num_005",
+    "shona": "shanu",
+    "english": "five",
+    "category": "numbers",
+    "subcategories": [
+      "basic_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 1,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ʃanu/"
+  },
+  {
+    "id": "fund_num_006",
+    "shona": "tanhatu",
+    "english": "six",
+    "category": "numbers",
+    "subcategories": [
+      "basic_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/tanɦatu/"
+  },
+  {
+    "id": "fund_num_007",
+    "shona": "nomwe",
+    "english": "seven",
+    "category": "numbers",
+    "subcategories": [
+      "basic_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/nomwe/"
+  },
+  {
+    "id": "fund_num_008",
+    "shona": "sere",
+    "english": "eight",
+    "category": "numbers",
+    "subcategories": [
+      "basic_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/sere/"
+  },
+  {
+    "id": "fund_num_009",
+    "shona": "pfumbamwe",
+    "english": "nine",
+    "category": "numbers",
+    "subcategories": [
+      "basic_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/pfumbamwe/"
+  },
+  {
+    "id": "fund_num_010",
+    "shona": "gumi",
+    "english": "ten",
+    "category": "numbers",
+    "subcategories": [
+      "basic_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/gumi/"
+  },
+  {
+    "id": "fund_ord_001",
+    "shona": "wokutanga",
+    "english": "first",
+    "raw": "{\n        id: \"fund_ord_001\",\n        shona: \"wokutanga\",\n        english: \"first\",\n        category: \"numbers\",\n        subcategories: [\"ordinal_numbers\"],\n        level: \"A1\",\n        difficulty: 3,"
+  },
+  {
+    "id": "fund_ord_002",
+    "shona": "wechipiri",
+    "english": "second",
+    "category": "numbers",
+    "subcategories": [
+      "ordinal_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/wetʃipiri/"
+  },
+  {
+    "id": "fund_ord_003",
+    "shona": "wechitatu",
+    "english": "third",
+    "category": "numbers",
+    "subcategories": [
+      "ordinal_numbers"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/wetʃitatu/"
+  },
+  {
+    "id": "fund_time_001",
+    "shona": "nguva",
+    "english": "time",
+    "raw": "{\n    basic_time: [\n      {\n        id: \"fund_time_001\",\n        shona: \"nguva\",\n        english: \"time\",\n        category: \"time\",\n        subcategories: [\"basic_time\"],\n        level: \"A1\",\n        "
+  },
+  {
+    "id": "fund_time_002",
+    "shona": "Nguva yacho yasvika",
+    "english": "The time has come",
+    "raw": "{\n            shona: \"Nguva yacho yasvika\",\n            english: \"The time has come\",\n            context: \"Timing or deadline\",\n            register: \"neutral\"\n          }\n        ]\n      },\n      {\n"
+  },
+  {
+    "id": "fund_time_003",
+    "shona": "usiku",
+    "english": "night",
+    "category": "time",
+    "subcategories": [
+      "basic_time"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/usiku/"
+  },
+  {
+    "id": "fund_time_004",
+    "shona": "mangwana",
+    "english": "tomorrow",
+    "category": "time",
+    "subcategories": [
+      "basic_time"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/maŋgwana/"
+  },
+  {
+    "id": "fund_time_005",
+    "shona": "nezuro",
+    "english": "yesterday",
+    "category": "time",
+    "subcategories": [
+      "basic_time"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/nezuro/"
+  },
+  {
+    "id": "fund_time_006",
+    "shona": "nhasi",
+    "english": "today",
+    "category": "time",
+    "subcategories": [
+      "basic_time"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ɲasi/"
+  },
+  {
+    "id": "fund_day_001",
+    "shona": "Muvhuro",
+    "english": "Monday",
+    "category": "time",
+    "subcategories": [
+      "days_of_week"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/muvɦuro/",
+    "cultural_notes": "First day of the working week in Zimbabwe"
+  },
+  {
+    "id": "fund_day_002",
+    "shona": "Chipiri",
+    "english": "Tuesday",
+    "category": "time",
+    "subcategories": [
+      "days_of_week"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/tʃipiri/"
+  },
+  {
+    "id": "fund_day_003",
+    "shona": "Chitatu",
+    "english": "Wednesday",
+    "category": "time",
+    "subcategories": [
+      "days_of_week"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/tʃitatu/"
+  },
+  {
+    "id": "fund_day_004",
+    "shona": "China",
+    "english": "Thursday",
+    "category": "time",
+    "subcategories": [
+      "days_of_week"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/tʃina/"
+  },
+  {
+    "id": "fund_day_005",
+    "shona": "Chishanu",
+    "english": "Friday",
+    "category": "time",
+    "subcategories": [
+      "days_of_week"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/tʃiʃanu/"
+  },
+  {
+    "id": "fund_day_006",
+    "shona": "Mugovera",
+    "english": "Saturday",
+    "category": "time",
+    "subcategories": [
+      "days_of_week"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/mugovera/"
+  },
+  {
+    "id": "fund_day_007",
+    "shona": "Svondo",
+    "english": "Sunday",
+    "category": "time",
+    "subcategories": [
+      "days_of_week"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/svondo/",
+    "cultural_notes": "Traditional day of rest and church attendance"
+  },
+  {
+    "id": "fund_mon_001",
+    "shona": "Ndira",
+    "english": "January",
+    "category": "time",
+    "subcategories": [
+      "months"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ⁿdira/",
+    "cultural_notes": "Rainy season month in Zimbabwe"
+  },
+  {
+    "id": "fund_mon_002",
+    "shona": "Kukadzi",
+    "english": "February",
+    "category": "time",
+    "subcategories": [
+      "months"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kukadzi/"
+  },
+  {
+    "id": "fund_mon_003",
+    "shona": "Kurume",
+    "english": "March",
+    "category": "time",
+    "subcategories": [
+      "months"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kurume/"
+  },
+  {
+    "id": "fund_mon_004",
+    "shona": "Kubvumbi",
+    "english": "April",
+    "category": "time",
+    "subcategories": [
+      "months"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kubvumbi/"
+  },
+  {
+    "id": "fund_body_001",
+    "shona": "musoro",
+    "english": "head",
+    "raw": "{\n    head_face: [\n      {\n        id: \"fund_body_001\",\n        shona: \"musoro\",\n        english: \"head\",\n        category: \"body_parts\",\n        subcategories: [\"head_face\"],\n        level: \"A1\",\n   "
+  },
+  {
+    "id": "fund_body_002",
+    "shona": "Musoro wangu unorwadza",
+    "english": "My head hurts",
+    "raw": "{\n            shona: \"Musoro wangu unorwadza\",\n            english: \"My head hurts\",\n            context: \"Health complaint\",\n            register: \"neutral\"\n          }\n        ]\n      },\n      {\n   "
+  },
+  {
+    "id": "fund_body_003",
+    "shona": "ziso",
+    "english": "eye",
+    "raw": "{\n        id: \"fund_body_003\",\n        shona: \"ziso\",\n        english: \"eye\",\n        category: \"body_parts\",\n        subcategories: [\"head_face\"],\n        level: \"A1\",\n        difficulty: 2,\n        "
+  },
+  {
+    "id": "fund_body_004",
+    "shona": "nzeve",
+    "english": "ear",
+    "raw": "{\n        id: \"fund_body_004\",\n        shona: \"nzeve\",\n        english: \"ear\",\n        category: \"body_parts\",\n        subcategories: [\"head_face\"],\n        level: \"A1\",\n        difficulty: 2,\n       "
+  },
+  {
+    "id": "fund_body_005",
+    "shona": "mhino",
+    "english": "nose",
+    "category": "body_parts",
+    "subcategories": [
+      "head_face"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/mɦino/"
+  },
+  {
+    "id": "fund_body_006",
+    "shona": "muromo",
+    "english": "mouth",
+    "category": "body_parts",
+    "subcategories": [
+      "head_face"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/muromo/"
+  },
+  {
+    "id": "fund_body_007",
+    "shona": "mazino",
+    "english": "teeth",
+    "category": "body_parts",
+    "subcategories": [
+      "head_face"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/mazino/",
+    "usage_notes": "Always plural form"
+  },
+  {
+    "id": "fund_trunk_001",
+    "shona": "muviri",
+    "english": "body",
+    "category": "body_parts",
+    "subcategories": [
+      "body_trunk"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/muviri/"
+  },
+  {
+    "id": "fund_trunk_002",
+    "shona": "chipfuva",
+    "english": "chest",
+    "category": "body_parts",
+    "subcategories": [
+      "body_trunk"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/tʃipfuva/"
+  },
+  {
+    "id": "fund_trunk_003",
+    "shona": "dumbu",
+    "english": "stomach",
+    "category": "body_parts",
+    "subcategories": [
+      "body_trunk"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/dumbu/"
+  },
+  {
+    "id": "fund_trunk_004",
+    "shona": "musana",
+    "english": "back",
+    "category": "body_parts",
+    "subcategories": [
+      "body_trunk"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/musana/"
+  },
+  {
+    "id": "fund_limb_001",
+    "shona": "ruoko",
+    "english": "hand/arm",
+    "category": "body_parts",
+    "subcategories": [
+      "limbs"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/ruoko/",
+    "usage_notes": "Covers both hand and arm in Shona"
+  },
+  {
+    "id": "fund_limb_002",
+    "shona": "gumbo",
+    "english": "leg/foot",
+    "category": "body_parts",
+    "subcategories": [
+      "limbs"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/gumbo/",
+    "usage_notes": "Covers both leg and foot in Shona"
+  },
+  {
+    "id": "fund_limb_003",
+    "shona": "munwe",
+    "english": "finger",
+    "raw": "{\n        id: \"fund_limb_003\",\n        shona: \"munwe\",\n        english: \"finger\",\n        category: \"body_parts\",\n        subcategories: [\"limbs\"],\n        level: \"A2\",\n        difficulty: 3,\n        "
+  },
+  {
+    "id": "fund_col_001",
+    "shona": "chena",
+    "english": "white",
+    "raw": "{\n    basic_colors: [\n      {\n        id: \"fund_col_001\",\n        shona: \"chena\",\n        english: \"white\",\n        category: \"colors\",\n        subcategories: [\"basic_colors\"],\n        level: \"A1\",\n  "
+  },
+  {
+    "id": "fund_col_002",
+    "shona": "nhema",
+    "english": "black",
+    "category": "colors",
+    "subcategories": [
+      "basic_colors"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ɲema/"
+  },
+  {
+    "id": "fund_col_003",
+    "shona": "tsvuku",
+    "english": "red",
+    "category": "colors",
+    "subcategories": [
+      "basic_colors"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/tsvuku/"
+  },
+  {
+    "id": "fund_col_004",
+    "shona": "girini",
+    "english": "green",
+    "category": "colors",
+    "subcategories": [
+      "basic_colors"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/girini/",
+    "usage_notes": "Borrowed from English 'green'"
+  },
+  {
+    "id": "fund_col_005",
+    "shona": "bhuruu",
+    "english": "blue",
+    "category": "colors",
+    "subcategories": [
+      "basic_colors"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/b̤uruː/",
+    "usage_notes": "Borrowed from English 'blue'"
+  },
+  {
+    "id": "fund_col_006",
+    "shona": "yero",
+    "english": "yellow",
+    "category": "colors",
+    "subcategories": [
+      "basic_colors"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/jero/",
+    "usage_notes": "Borrowed from English 'yellow'"
+  },
+  {
+    "id": "fund_wea_001",
+    "shona": "mamiriro ekunze",
+    "english": "weather",
+    "raw": "{\n    weather: [\n      {\n        id: \"fund_wea_001\",\n        shona: \"mamiriro ekunze\",\n        english: \"weather\",\n        category: \"weather\",\n        subcategories: [\"general\"],\n        level: \"A2\","
+  },
+  {
+    "id": "fund_wea_002",
+    "shona": "mvura",
+    "english": "rain",
+    "raw": "{\n        id: \"fund_wea_002\",\n        shona: \"mvura\",\n        english: \"rain\",\n        category: \"weather\",\n        subcategories: [\"precipitation\"],\n        level: \"A1\",\n        difficulty: 2,\n      "
+  },
+  {
+    "id": "fund_wea_003",
+    "shona": "mhepo",
+    "english": "wind",
+    "category": "weather",
+    "subcategories": [
+      "wind"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/mɦepo/"
+  },
+  {
+    "id": "fund_wea_004",
+    "shona": "zuva",
+    "english": "sun",
+    "category": "weather",
+    "subcategories": [
+      "sun"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/zuva/",
+    "usage_notes": "Same word used for 'day' and 'sun'"
+  },
+  {
+    "id": "fund_wea_005",
+    "shona": "makore",
+    "english": "clouds",
+    "category": "weather",
+    "subcategories": [
+      "sky"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/makore/"
+  },
+  {
+    "id": "fund_nat_001",
+    "shona": "muti",
+    "english": "tree",
+    "category": "nature",
+    "subcategories": [
+      "plants"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/muti/",
+    "cultural_notes": "Trees are sacred in Shona culture, often associated with ancestors"
+  },
+  {
+    "id": "fund_nat_002",
+    "shona": "rwizi",
+    "english": "river",
+    "category": "nature",
+    "subcategories": [
+      "water"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/rwizi/"
+  },
+  {
+    "id": "fund_nat_003",
+    "shona": "gomo",
+    "english": "mountain/hill",
+    "category": "nature",
+    "subcategories": [
+      "landforms"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/gomo/"
+  },
+  {
+    "id": "fund_nat_004",
+    "shona": "sango",
+    "english": "forest",
+    "category": "nature",
+    "subcategories": [
+      "landforms"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/saŋgo/"
+  },
+  {
+    "id": "phrase_greet_001",
+    "shona": "Mangwanani",
+    "english": "Good morning",
+    "raw": "{\n  // Greetings & Social Phrases (50+ phrases)\n  greetingsSocial: {\n    basic_greetings: [\n      {\n        id: \"phrase_greet_001\",\n        shona: \"Mangwanani\",\n        english: \"Good morning\",\n      "
+  },
+  {
+    "id": "phrase_greet_002",
+    "shona": "Masikati",
+    "english": "Good afternoon",
+    "raw": "{\n          phrase: \"mangwanani.mp3\",\n          conversation: [\"mangwanani_conversation1.mp3\"]\n        }\n      },\n      {\n        id: \"phrase_greet_002\",\n        shona: \"Masikati\",\n        english: \"G"
+  },
+  {
+    "id": "phrase_greet_003",
+    "shona": "Manheru",
+    "english": "Good evening",
+    "raw": "{\n        id: \"phrase_greet_003\",\n        shona: \"Manheru\",\n        english: \"Good evening\",\n        category: \"greetings\",\n        subcategories: [\"basic_greetings\", \"time_specific\"],\n        level: "
+  },
+  {
+    "id": "phrase_greet_004",
+    "shona": "Makadii?",
+    "english": "How are you?",
+    "raw": "{\n        id: \"phrase_greet_004\",\n        shona: \"Makadii?\",\n        english: \"How are you?\",\n        category: \"greetings\",\n        subcategories: [\"inquiry\", \"polite\"],\n        level: \"A1\",\n        "
+  },
+  {
+    "id": "phrase_greet_005",
+    "shona": "Tiripo",
+    "english": "We are fine/here",
+    "raw": "{\n        id: \"phrase_greet_005\",\n        shona: \"Tiripo\",\n        english: \"We are fine/here\",\n        category: \"greetings\",\n        subcategories: [\"response\", \"polite\"],\n        level: \"A1\",\n     "
+  },
+  {
+    "id": "phrase_fare_001",
+    "shona": "Fambai zvakanaka",
+    "english": "Go well/Goodbye (to someone leaving)",
+    "raw": "{\n        id: \"phrase_fare_001\",\n        shona: \"Fambai zvakanaka\",\n        english: \"Go well/Goodbye (to someone leaving)\",\n        category: \"farewells\",\n        subcategories: [\"departing\"],\n      "
+  },
+  {
+    "id": "phrase_fare_002",
+    "shona": "Sarai zvakanaka",
+    "english": "Stay well/Goodbye (to someone staying)",
+    "raw": "{\n        id: \"phrase_fare_002\",\n        shona: \"Sarai zvakanaka\",\n        english: \"Stay well/Goodbye (to someone staying)\",\n        category: \"farewells\",\n        subcategories: [\"staying\"],\n       "
+  },
+  {
+    "id": "phrase_fare_003",
+    "shona": "Tizonanana",
+    "english": "We",
+    "raw": "{\n        id: \"phrase_fare_003\",\n        shona: \"Tizonanana\",\n        english: \"We'll see each other (later)\",\n        category: \"farewells\",\n        subcategories: [\"future_meeting\"],\n        level: "
+  },
+  {
+    "id": "phrase_ques_001",
+    "shona": "Zita renyu ndiani?",
+    "english": "What is your name?",
+    "raw": "{\n    basic_questions: [\n      {\n        id: \"phrase_ques_001\",\n        shona: \"Zita renyu ndiani?\",\n        english: \"What is your name?\",\n        category: \"questions\",\n        subcategories: [\"pers"
+  },
+  {
+    "id": "phrase_ques_002",
+    "shona": "Munobva kupi?",
+    "english": "Where do you come from?",
+    "raw": "{\n        id: \"phrase_ques_002\",\n        shona: \"Munobva kupi?\",\n        english: \"Where do you come from?\",\n        category: \"questions\",\n        subcategories: [\"personal_information\", \"origin\"],\n "
+  },
+  {
+    "id": "phrase_ques_003",
+    "shona": "Muri kuenda kupi?",
+    "english": "Where are you going?",
+    "raw": "{\n        id: \"phrase_ques_003\",\n        shona: \"Muri kuenda kupi?\",\n        english: \"Where are you going?\",\n        category: \"questions\",\n        subcategories: [\"direction\", \"travel\"],\n        lev"
+  },
+  {
+    "id": "phrase_ques_004",
+    "shona": "Nguva yakaniko?",
+    "english": "What time is it?",
+    "raw": "{\n        id: \"phrase_ques_004\",\n        shona: \"Nguva yakaniko?\",\n        english: \"What time is it?\",\n        category: \"questions\",\n        subcategories: [\"time\"],\n        level: \"A2\",\n        dif"
+  },
+  {
+    "id": "phrase_ques_005",
+    "shona": "Munoita sei?",
+    "english": "How do you do it?",
+    "raw": "{\n        id: \"phrase_ques_005\",\n        shona: \"Munoita sei?\",\n        english: \"How do you do it?\",\n        category: \"questions\",\n        subcategories: [\"instruction\", \"method\"],\n        level: \"A"
+  },
+  {
+    "id": "phrase_resp_001",
+    "shona": "Zita rangu ndi...",
+    "english": "My name is...",
+    "raw": "{\n        id: \"phrase_resp_001\",\n        shona: \"Zita rangu ndi...\",\n        english: \"My name is...\",\n        category: \"responses\",\n        subcategories: [\"personal_information\"],\n        level: \"A"
+  },
+  {
+    "id": "phrase_resp_002",
+    "shona": "Ndinobva ku...",
+    "english": "I come from...",
+    "raw": "{\n        id: \"phrase_resp_002\",\n        shona: \"Ndinobva ku...\",\n        english: \"I come from...\",\n        category: \"responses\",\n        subcategories: [\"personal_information\", \"origin\"],\n        l"
+  },
+  {
+    "id": "phrase_resp_003",
+    "shona": "Handizivi",
+    "english": "I don",
+    "raw": "{\n        id: \"phrase_resp_003\",\n        shona: \"Handizivi\",\n        english: \"I don't know\",\n        category: \"responses\",\n        subcategories: [\"knowledge\", \"uncertainty\"],\n        level: \"A1\",\n "
+  },
+  {
+    "id": "phrase_pol_001",
+    "shona": "Ndapota",
+    "english": "Please",
+    "raw": "{\n    requests: [\n      {\n        id: \"phrase_pol_001\",\n        shona: \"Ndapota\",\n        english: \"Please\",\n        category: \"politeness\",\n        subcategories: [\"requests\"],\n        level: \"A1\",\n "
+  },
+  {
+    "id": "phrase_pol_002",
+    "shona": "Ndinokumbirawo",
+    "english": "I kindly request",
+    "raw": "{\n        id: \"phrase_pol_002\",\n        shona: \"Ndinokumbirawo\",\n        english: \"I kindly request\",\n        category: \"politeness\",\n        subcategories: [\"requests\", \"formal\"],\n        level: \"A2\""
+  },
+  {
+    "id": "phrase_pol_003",
+    "shona": "Ndinoregerera",
+    "english": "Excuse me/I",
+    "raw": "{\n        id: \"phrase_pol_003\",\n        shona: \"Ndinoregerera\",\n        english: \"Excuse me/I'm sorry\",\n        category: \"politeness\",\n        subcategories: [\"apology\", \"attention\"],\n        level: "
+  },
+  {
+    "id": "phrase_grat_001",
+    "shona": "Ndinotenda",
+    "english": "Thank you",
+    "raw": "{\n        id: \"phrase_grat_001\",\n        shona: \"Ndinotenda\",\n        english: \"Thank you\",\n        category: \"politeness\",\n        subcategories: [\"gratitude\"],\n        level: \"A1\",\n        difficult"
+  },
+  {
+    "id": "phrase_grat_002",
+    "shona": "Maita henyu",
+    "english": "Thank you (formal)",
+    "raw": "{\n        id: \"phrase_grat_002\",\n        shona: \"Maita henyu\",\n        english: \"Thank you (formal)\",\n        category: \"politeness\",\n        subcategories: [\"gratitude\", \"formal\"],\n        level: \"A2"
+  },
+  {
+    "id": "phrase_grat_003",
+    "shona": "Hazvina mhosva",
+    "english": "You",
+    "raw": "{\n        id: \"phrase_grat_003\",\n        shona: \"Hazvina mhosva\",\n        english: \"You're welcome/It's nothing\",\n        category: \"politeness\",\n        subcategories: [\"response_to_thanks\"],\n       "
+  },
+  {
+    "id": "phrase_need_001",
+    "shona": "Ndinoda mvura",
+    "english": "I want/need water",
+    "raw": "{\n    needs: [\n      {\n        id: \"phrase_need_001\",\n        shona: \"Ndinoda mvura\",\n        english: \"I want/need water\",\n        category: \"needs\",\n        subcategories: [\"basic_needs\", \"drinks\"],"
+  },
+  {
+    "id": "phrase_need_002",
+    "shona": "Ndine nzara",
+    "english": "I am hungry",
+    "raw": "{\n        id: \"phrase_need_002\",\n        shona: \"Ndine nzara\",\n        english: \"I am hungry\",\n        category: \"needs\",\n        subcategories: [\"basic_needs\", \"food\"],\n        level: \"A1\",\n        d"
+  },
+  {
+    "id": "phrase_need_003",
+    "shona": "Ndinoda kuenda kumusasa",
+    "english": "I need to go to the toilet",
+    "raw": "{\n        id: \"phrase_need_003\",\n        shona: \"Ndinoda kuenda kumusasa\",\n        english: \"I need to go to the toilet\",\n        category: \"needs\",\n        subcategories: [\"basic_needs\", \"bathroom\"],"
+  },
+  {
+    "id": "phrase_need_004",
+    "shona": "Ndinoda kurara",
+    "english": "I want to sleep",
+    "raw": "{\n        id: \"phrase_need_004\",\n        shona: \"Ndinoda kurara\",\n        english: \"I want to sleep\",\n        category: \"needs\",\n        subcategories: [\"basic_needs\", \"rest\"],\n        level: \"A1\",\n  "
+  },
+  {
+    "id": "phrase_shop_001",
+    "shona": "Marii iyi?",
+    "english": "How much is this?",
+    "raw": "{\n        id: \"phrase_shop_001\",\n        shona: \"Marii iyi?\",\n        english: \"How much is this?\",\n        category: \"shopping\",\n        subcategories: [\"price_inquiry\"],\n        level: \"A1\",\n       "
+  },
+  {
+    "id": "phrase_shop_002",
+    "shona": "Ndinoda kutenga...",
+    "english": "I want to buy...",
+    "raw": "{\n        id: \"phrase_shop_002\",\n        shona: \"Ndinoda kutenga...\",\n        english: \"I want to buy...\",\n        category: \"shopping\",\n        subcategories: [\"purchasing\"],\n        level: \"A1\",\n   "
+  },
+  {
+    "id": "phrase_shop_003",
+    "shona": "Zvadhura zvikuru",
+    "english": "It",
+    "raw": "{\n        id: \"phrase_shop_003\",\n        shona: \"Zvadhura zvikuru\",\n        english: \"It's too expensive\",\n        category: \"shopping\",\n        subcategories: [\"price_complaint\"],\n        level: \"A2\""
+  },
+  {
+    "id": "phrase_emerg_001",
+    "shona": "Ndibatsireiwo!",
+    "english": "Help me please!",
+    "raw": "{\n    emergency: [\n      {\n        id: \"phrase_emerg_001\",\n        shona: \"Ndibatsireiwo!\",\n        english: \"Help me please!\",\n        category: \"emergency\",\n        subcategories: [\"help_request\"],\n"
+  },
+  {
+    "id": "phrase_emerg_002",
+    "shona": "Pane dambudziko",
+    "english": "There is a problem",
+    "raw": "{\n        id: \"phrase_emerg_002\",\n        shona: \"Pane dambudziko\",\n        english: \"There is a problem\",\n        category: \"emergency\",\n        subcategories: [\"problem_statement\"],\n        level: \""
+  },
+  {
+    "id": "phrase_emerg_003",
+    "shona": "Ndinorwara",
+    "english": "I am sick/ill",
+    "raw": "{\n        id: \"phrase_emerg_003\",\n        shona: \"Ndinorwara\",\n        english: \"I am sick/ill\",\n        category: \"emergency\",\n        subcategories: [\"health\"],\n        level: \"A1\",\n        difficul"
+  },
+  {
+    "id": "phrase_dir_001",
+    "shona": "Ndiri kurasika",
+    "english": "I am lost",
+    "raw": "{\n    directions: [\n      {\n        id: \"phrase_dir_001\",\n        shona: \"Ndiri kurasika\",\n        english: \"I am lost\",\n        category: \"travel\",\n        subcategories: [\"directions\", \"help\"],\n    "
+  },
+  {
+    "id": "phrase_dir_002",
+    "shona": "Kunoenda kupi nzira iyi?",
+    "english": "Where does this road go?",
+    "raw": "{\n        id: \"phrase_dir_002\",\n        shona: \"Kunoenda kupi nzira iyi?\",\n        english: \"Where does this road go?\",\n        category: \"travel\",\n        subcategories: [\"directions\"],\n        level"
+  },
+  {
+    "id": "phrase_dir_003",
+    "shona": "Kure sei kusvika...",
+    "english": "How far is it to...",
+    "raw": "{\n        id: \"phrase_dir_003\",\n        shona: \"Kure sei kusvika...\",\n        english: \"How far is it to...\",\n        category: \"travel\",\n        subcategories: [\"distance\"],\n        level: \"A2\",\n    "
+  },
+  {
+    "id": "verb_bas_001",
+    "shona": "kuenda",
+    "english": "to go",
+    "raw": "{\n  // Basic Actions & Movement (60+ words)\n  basicActionsMovement: {\n    basic_verbs: [\n      {\n        id: \"verb_bas_001\",\n        shona: \"kuenda\",\n        english: \"to go\",\n        category: \"verbs"
+  },
+  {
+    "id": "verb_bas_002",
+    "shona": "Ndinoenda kushandi",
+    "english": "I am going to work",
+    "raw": "{\n            shona: \"Ndinoenda kushandi\",\n            english: \"I am going to work\",\n            context: \"Daily routine\",\n            register: \"neutral\"\n          },\n          {\n            shona: "
+  },
+  {
+    "id": "verb_bas_003",
+    "shona": "kumira",
+    "english": "to stand",
+    "raw": "{\n        id: \"verb_bas_003\",\n        shona: \"kumira\",\n        english: \"to stand\",\n        category: \"verbs\",\n        subcategories: [\"position\", \"basic_actions\"],\n        level: \"A1\",\n        diffic"
+  },
+  {
+    "id": "verb_bas_004",
+    "shona": "kugara",
+    "english": "to sit/to live",
+    "raw": "{\n        id: \"verb_bas_004\",\n        shona: \"kugara\",\n        english: \"to sit/to live\",\n        category: \"verbs\",\n        subcategories: [\"position\", \"residence\"],\n        level: \"A1\",\n        diff"
+  },
+  {
+    "id": "verb_bas_005",
+    "shona": "Gara pasi",
+    "english": "Sit down",
+    "raw": "{\n            shona: \"Gara pasi\",\n            english: \"Sit down\",\n            context: \"Command\",\n            register: \"informal\"\n          }\n        ]\n      },\n      {\n        id: \"verb_bas_005\",\n "
+  },
+  {
+    "id": "verb_bas_006",
+    "shona": "kumuka",
+    "english": "to wake up/get up",
+    "raw": "{\n        id: \"verb_bas_006\",\n        shona: \"kumuka\",\n        english: \"to wake up/get up\",\n        category: \"verbs\",\n        subcategories: [\"daily_routine\"],\n        level: \"A1\",\n        difficult"
+  },
+  {
+    "id": "verb_mov_001",
+    "shona": "kufamba",
+    "english": "to walk/travel",
+    "raw": "{\n        id: \"verb_mov_001\",\n        shona: \"kufamba\",\n        english: \"to walk/travel\",\n        category: \"verbs\",\n        subcategories: [\"movement\"],\n        level: \"A1\",\n        difficulty: 2,\n "
+  },
+  {
+    "id": "verb_mov_002",
+    "shona": "kutamba",
+    "english": "to run",
+    "raw": "{\n        id: \"verb_mov_002\",\n        shona: \"kutamba\",\n        english: \"to run\",\n        category: \"verbs\",\n        subcategories: [\"movement\"],\n        level: \"A1\",\n        difficulty: 2,\n        f"
+  },
+  {
+    "id": "verb_mov_003",
+    "shona": "kusvetuka",
+    "english": "to jump",
+    "category": "verbs",
+    "subcategories": [
+      "movement"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kusvetuka/"
+  },
+  {
+    "id": "verb_mov_004",
+    "shona": "kutyaira",
+    "english": "to drive",
+    "raw": "{\n        id: \"verb_mov_004\",\n        shona: \"kutyaira\",\n        english: \"to drive\",\n        category: \"verbs\",\n        subcategories: [\"movement\", \"transportation\"],\n        level: \"A2\",\n        dif"
+  },
+  {
+    "id": "verb_eat_001",
+    "shona": "kudya",
+    "english": "to eat",
+    "raw": "{\n    eating_drinking: [\n      {\n        id: \"verb_eat_001\",\n        shona: \"kudya\",\n        english: \"to eat\",\n        category: \"verbs\",\n        subcategories: [\"eating\", \"daily_activities\"],\n      "
+  },
+  {
+    "id": "verb_eat_002",
+    "shona": "kunwa",
+    "english": "to drink",
+    "raw": "{\n        id: \"verb_eat_002\",\n        shona: \"kunwa\",\n        english: \"to drink\",\n        category: \"verbs\",\n        subcategories: [\"drinking\", \"daily_activities\"],\n        level: \"A1\",\n        diff"
+  },
+  {
+    "id": "verb_eat_003",
+    "shona": "kubika",
+    "english": "to cook",
+    "raw": "{\n        id: \"verb_eat_003\",\n        shona: \"kubika\",\n        english: \"to cook\",\n        category: \"verbs\",\n        subcategories: [\"cooking\", \"daily_activities\"],\n        level: \"A1\",\n        diffi"
+  },
+  {
+    "id": "verb_care_001",
+    "shona": "kushamba",
+    "english": "to wash/bathe",
+    "raw": "{\n        id: \"verb_care_001\",\n        shona: \"kushamba\",\n        english: \"to wash/bathe\",\n        category: \"verbs\",\n        subcategories: [\"personal_care\"],\n        level: \"A1\",\n        difficulty"
+  },
+  {
+    "id": "verb_care_002",
+    "shona": "kupfeka",
+    "english": "to wear/put on clothes",
+    "raw": "{\n        id: \"verb_care_002\",\n        shona: \"kupfeka\",\n        english: \"to wear/put on clothes\",\n        category: \"verbs\",\n        subcategories: [\"personal_care\", \"clothing\"],\n        level: \"A1\""
+  },
+  {
+    "id": "verb_care_003",
+    "shona": "kubvisa",
+    "english": "to remove/take off",
+    "raw": "{\n        id: \"verb_care_003\",\n        shona: \"kubvisa\",\n        english: \"to remove/take off\",\n        category: \"verbs\",\n        subcategories: [\"personal_care\", \"clothing\"],\n        level: \"A1\",\n  "
+  },
+  {
+    "id": "verb_com_001",
+    "shona": "kutaura",
+    "english": "to speak/talk",
+    "raw": "{\n    speaking_listening: [\n      {\n        id: \"verb_com_001\",\n        shona: \"kutaura\",\n        english: \"to speak/talk\",\n        category: \"verbs\",\n        subcategories: [\"communication\"],\n       "
+  },
+  {
+    "id": "verb_com_002",
+    "shona": "kunzwa",
+    "english": "to hear",
+    "raw": "{\n        id: \"verb_com_002\",\n        shona: \"kunzwa\",\n        english: \"to hear\",\n        category: \"verbs\",\n        subcategories: [\"communication\", \"senses\"],\n        level: \"A1\",\n        difficult"
+  },
+  {
+    "id": "verb_com_003",
+    "shona": "kuteerera",
+    "english": "to listen",
+    "raw": "{\n        id: \"verb_com_003\",\n        shona: \"kuteerera\",\n        english: \"to listen\",\n        category: \"verbs\",\n        subcategories: [\"communication\"],\n        level: \"A2\",\n        difficulty: 3,"
+  },
+  {
+    "id": "verb_com_004",
+    "shona": "kuverenga",
+    "english": "to read",
+    "raw": "{\n        id: \"verb_com_004\",\n        shona: \"kuverenga\",\n        english: \"to read\",\n        category: \"verbs\",\n        subcategories: [\"communication\", \"education\"],\n        level: \"A2\",\n        dif"
+  },
+  {
+    "id": "verb_com_005",
+    "shona": "kunyora",
+    "english": "to write",
+    "raw": "{\n        id: \"verb_com_005\",\n        shona: \"kunyora\",\n        english: \"to write\",\n        category: \"verbs\",\n        subcategories: [\"communication\", \"education\"],\n        level: \"A2\",\n        diff"
+  },
+  {
+    "id": "verb_soc_001",
+    "shona": "kusangana",
+    "english": "to meet",
+    "raw": "{\n        id: \"verb_soc_001\",\n        shona: \"kusangana\",\n        english: \"to meet\",\n        category: \"verbs\",\n        subcategories: [\"social_interaction\"],\n        level: \"A2\",\n        difficulty:"
+  },
+  {
+    "id": "verb_soc_002",
+    "shona": "kubvunza",
+    "english": "to ask",
+    "raw": "{\n        id: \"verb_soc_002\",\n        shona: \"kubvunza\",\n        english: \"to ask\",\n        category: \"verbs\",\n        subcategories: [\"social_interaction\"],\n        level: \"A1\",\n        difficulty: 2"
+  },
+  {
+    "id": "verb_soc_003",
+    "shona": "kupindura",
+    "english": "to answer",
+    "raw": "{\n        id: \"verb_soc_003\",\n        shona: \"kupindura\",\n        english: \"to answer\",\n        category: \"verbs\",\n        subcategories: [\"social_interaction\"],\n        level: \"A2\",\n        difficult"
+  },
+  {
+    "id": "verb_work_001",
+    "shona": "kushanda",
+    "english": "to work",
+    "raw": "{\n    work_verbs: [\n      {\n        id: \"verb_work_001\",\n        shona: \"kushanda\",\n        english: \"to work\",\n        category: \"verbs\",\n        subcategories: [\"work\"],\n        level: \"A1\",\n       "
+  },
+  {
+    "id": "verb_work_002",
+    "shona": "kubata",
+    "english": "to hold/catch",
+    "raw": "{\n        id: \"verb_work_002\",\n        shona: \"kubata\",\n        english: \"to hold/catch\",\n        category: \"verbs\",\n        subcategories: [\"physical_actions\"],\n        level: \"A1\",\n        difficult"
+  },
+  {
+    "id": "verb_work_003",
+    "shona": "kuisa",
+    "english": "to put/place",
+    "raw": "{\n        id: \"verb_work_003\",\n        shona: \"kuisa\",\n        english: \"to put/place\",\n        category: \"verbs\",\n        subcategories: [\"physical_actions\"],\n        level: \"A1\",\n        difficulty:"
+  },
+  {
+    "id": "verb_work_004",
+    "shona": "kutora",
+    "english": "to take",
+    "raw": "{\n        id: \"verb_work_004\",\n        shona: \"kutora\",\n        english: \"to take\",\n        category: \"verbs\",\n        subcategories: [\"physical_actions\"],\n        level: \"A1\",\n        difficulty: 2,\n"
+  },
+  {
+    "id": "verb_learn_001",
+    "shona": "kudzidza",
+    "english": "to learn/study",
+    "raw": "{\n        id: \"verb_learn_001\",\n        shona: \"kudzidza\",\n        english: \"to learn/study\",\n        category: \"verbs\",\n        subcategories: [\"education\"],\n        level: \"A1\",\n        difficulty: "
+  },
+  {
+    "id": "verb_learn_002",
+    "shona": "kudzidzisa",
+    "english": "to teach",
+    "raw": "{\n        id: \"verb_learn_002\",\n        shona: \"kudzidzisa\",\n        english: \"to teach\",\n        category: \"verbs\",\n        subcategories: [\"education\"],\n        level: \"A2\",\n        difficulty: 3,\n "
+  },
+  {
+    "id": "verb_ment_001",
+    "shona": "kufunga",
+    "english": "to think",
+    "raw": "{\n    thinking_knowing: [\n      {\n        id: \"verb_ment_001\",\n        shona: \"kufunga\",\n        english: \"to think\",\n        category: \"verbs\",\n        subcategories: [\"mental_states\"],\n        level"
+  },
+  {
+    "id": "verb_ment_002",
+    "shona": "kuziva",
+    "english": "to know",
+    "raw": "{\n        id: \"verb_ment_002\",\n        shona: \"kuziva\",\n        english: \"to know\",\n        category: \"verbs\",\n        subcategories: [\"mental_states\"],\n        level: \"A1\",\n        difficulty: 2,\n   "
+  },
+  {
+    "id": "verb_ment_003",
+    "shona": "kukanganwa",
+    "english": "to forget",
+    "raw": "{\n        id: \"verb_ment_003\",\n        shona: \"kukanganwa\",\n        english: \"to forget\",\n        category: \"verbs\",\n        subcategories: [\"mental_states\"],\n        level: \"A2\",\n        difficulty: "
+  },
+  {
+    "id": "verb_ment_004",
+    "shona": "kuyeuka",
+    "english": "to remember",
+    "raw": "{\n        id: \"verb_ment_004\",\n        shona: \"kuyeuka\",\n        english: \"to remember\",\n        category: \"verbs\",\n        subcategories: [\"mental_states\"],\n        level: \"A2\",\n        difficulty: 3"
+  },
+  {
+    "id": "verb_feel_001",
+    "shona": "kufara",
+    "english": "to be happy",
+    "raw": "{\n        id: \"verb_feel_001\",\n        shona: \"kufara\",\n        english: \"to be happy\",\n        category: \"verbs\",\n        subcategories: [\"emotions\"],\n        level: \"A1\",\n        difficulty: 2,\n    "
+  },
+  {
+    "id": "verb_feel_002",
+    "shona": "kutsamwa",
+    "english": "to be angry",
+    "raw": "{\n        id: \"verb_feel_002\",\n        shona: \"kutsamwa\",\n        english: \"to be angry\",\n        category: \"verbs\",\n        subcategories: [\"emotions\"],\n        level: \"A2\",\n        difficulty: 3,\n  "
+  },
+  {
+    "id": "trad_fam_001",
+    "shona": "baba",
+    "english": "father",
+    "raw": "{\n  // Family & Kinship (60+ words)\n  familyKinship: {\n    immediate_family: [\n      {\n        id: \"trad_fam_001\",\n        shona: \"baba\",\n        english: \"father\",\n        category: \"family\",\n       "
+  },
+  {
+    "id": "trad_fam_002",
+    "shona": "Baba vangu vari kushanda",
+    "english": "My father is working",
+    "raw": "{\n            shona: \"Baba vangu vari kushanda\",\n            english: \"My father is working\",\n            context: \"Family discussion\",\n            register: \"neutral\"\n          }\n        ],\n        a"
+  },
+  {
+    "id": "trad_fam_003",
+    "shona": "mwanakomana",
+    "english": "son",
+    "raw": "{\n        id: \"trad_fam_003\",\n        shona: \"mwanakomana\",\n        english: \"son\",\n        category: \"family\",\n        subcategories: [\"immediate_family\", \"children\"],\n        level: \"A2\",\n        di"
+  },
+  {
+    "id": "trad_fam_004",
+    "shona": "mwanasikana",
+    "english": "daughter",
+    "category": "family",
+    "subcategories": [
+      "immediate_family",
+      "children"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/mwanasikana/",
+    "cultural_notes": "Daughters traditionally join husband's family after marriage"
+  },
+  {
+    "id": "trad_fam_005",
+    "shona": "mukoma",
+    "english": "older brother",
+    "category": "family",
+    "subcategories": [
+      "siblings"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/mukoma/",
+    "cultural_notes": "Respected position, responsible for younger siblings"
+  },
+  {
+    "id": "trad_fam_006",
+    "shona": "hanzvadzi",
+    "english": "sister",
+    "category": "family",
+    "subcategories": [
+      "siblings"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/ɦanzvadzi/"
+  },
+  {
+    "id": "trad_ext_001",
+    "shona": "sekuru",
+    "english": "grandfather",
+    "category": "family",
+    "subcategories": [
+      "extended_family",
+      "grandparents"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "respectful",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/sekuru/",
+    "cultural_notes": "Highly respected elder, source of wisdom and tradition",
+    "usage_notes": "Also used as respectful address for elderly men"
+  },
+  {
+    "id": "trad_ext_002",
+    "shona": "ambuya",
+    "english": "grandmother",
+    "category": "family",
+    "subcategories": [
+      "extended_family",
+      "grandparents"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "respectful",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/ambuɪa/",
+    "cultural_notes": "Keeper of family traditions and cultural knowledge"
+  },
+  {
+    "id": "trad_ext_003",
+    "shona": "babamunini",
+    "english": "uncle (father's younger brother)",
+    "category": "family",
+    "subcategories": [
+      "extended_family",
+      "uncles"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "respectful",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/babamunini/",
+    "cultural_notes": "Important family figure, often helps with child-rearing"
+  },
+  {
+    "id": "trad_ext_004",
+    "shona": "babamukuru",
+    "english": "uncle (father's older brother)",
+    "category": "family",
+    "subcategories": [
+      "extended_family",
+      "uncles"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "respectful",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/babamukuru/",
+    "cultural_notes": "Senior uncle, may act as family head in father's absence"
+  },
+  {
+    "id": "trad_ext_005",
+    "shona": "tete",
+    "english": "aunt (father's sister)",
+    "category": "family",
+    "subcategories": [
+      "extended_family",
+      "aunts"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "respectful",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/tete/",
+    "cultural_notes": "Has special role in family ceremonies and guidance"
+  },
+  {
+    "id": "trad_cer_001",
+    "shona": "kurova guva",
+    "english": "memorial ceremony for deceased",
+    "raw": "{\n    life_events: [\n      {\n        id: \"trad_cer_001\",\n        shona: \"kurova guva\",\n        english: \"memorial ceremony for deceased\",\n        category: \"ceremonies\",\n        subcategories: [\"death"
+  },
+  {
+    "id": "trad_cer_002",
+    "shona": "roora",
+    "english": "bride price/lobola",
+    "raw": "{\n        id: \"trad_cer_002\",\n        shona: \"roora\",\n        english: \"bride price/lobola\",\n        category: \"ceremonies\",\n        subcategories: [\"marriage\"],\n        level: \"B1\",\n        difficult"
+  },
+  {
+    "id": "trad_cer_003",
+    "shona": "mukwerere",
+    "english": "bride/daughter-in-law",
+    "category": "ceremonies",
+    "subcategories": [
+      "marriage",
+      "family_roles"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/mukwerere/",
+    "cultural_notes": "New bride joins husband's family, special status"
+  },
+  {
+    "id": "trad_cer_004",
+    "shona": "kuraguza vana",
+    "english": "naming ceremony",
+    "category": "ceremonies",
+    "subcategories": [
+      "birth",
+      "children"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHLH",
+    "ipa": "/kuraguza vana/",
+    "cultural_notes": "Traditional ceremony to formally name children"
+  },
+  {
+    "id": "trad_spi_001",
+    "shona": "svikiro",
+    "english": "spirit medium",
+    "category": "spiritual",
+    "subcategories": [
+      "traditional_religion"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "respectful",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/svikiro/",
+    "cultural_notes": "Person through whom ancestors communicate with the living"
+  },
+  {
+    "id": "trad_spi_002",
+    "shona": "midzimu",
+    "english": "ancestral spirits",
+    "category": "spiritual",
+    "subcategories": [
+      "traditional_religion"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "respectful",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/midzimu/",
+    "cultural_notes": "Family ancestors who guide and protect descendants"
+  },
+  {
+    "id": "trad_spi_003",
+    "shona": "n'anga",
+    "english": "traditional healer",
+    "category": "spiritual",
+    "subcategories": [
+      "traditional_medicine"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "respectful",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ŋaŋga/",
+    "cultural_notes": "Traditional doctor combining spiritual and herbal healing"
+  },
+  {
+    "id": "trad_spi_004",
+    "shona": "mubvumira",
+    "english": "divination bones",
+    "category": "spiritual",
+    "subcategories": [
+      "divination"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "low",
+    "register": "respectful",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/mubvumira/",
+    "cultural_notes": "Bones used by n'anga for divination and diagnosis"
+  },
+  {
+    "id": "trad_food_001",
+    "shona": "sadza",
+    "english": "staple food made from maize meal",
+    "raw": "{\n    staple_foods: [\n      {\n        id: \"trad_food_001\",\n        shona: \"sadza\",\n        english: \"staple food made from maize meal\",\n        category: \"food\",\n        subcategories: [\"staples\"],\n  "
+  },
+  {
+    "id": "trad_food_002",
+    "shona": "muriwo",
+    "english": "vegetables",
+    "category": "food",
+    "subcategories": [
+      "vegetables"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/muriwo/",
+    "cultural_notes": "Essential part of every meal, often wild or traditional varieties"
+  },
+  {
+    "id": "trad_food_003",
+    "shona": "muriwo unedovi",
+    "english": "vegetables with peanut butter sauce",
+    "category": "food",
+    "subcategories": [
+      "dishes"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLLHL",
+    "ipa": "/muriwo unedovi/",
+    "cultural_notes": "Traditional and nutritious way to prepare vegetables"
+  },
+  {
+    "id": "trad_food_004",
+    "shona": "nyama",
+    "english": "meat",
+    "category": "food",
+    "subcategories": [
+      "proteins"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ɲama/"
+  },
+  {
+    "id": "trad_food_005",
+    "shona": "rukweza",
+    "english": "traditional beer",
+    "category": "food",
+    "subcategories": [
+      "beverages"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/rukweza/",
+    "cultural_notes": "Made from sorghum, important in ceremonies"
+  },
+  {
+    "id": "trad_food_006",
+    "shona": "maheu",
+    "english": "traditional drink made from maize",
+    "category": "food",
+    "subcategories": [
+      "beverages"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/maɦeu/",
+    "cultural_notes": "Nutritious fermented drink, often given to children"
+  },
+  {
+    "id": "trad_agr_001",
+    "shona": "murima",
+    "english": "field/farmland",
+    "category": "agriculture",
+    "subcategories": [
+      "land"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/murima/",
+    "cultural_notes": "Central to traditional life, source of family sustenance"
+  },
+  {
+    "id": "trad_agr_002",
+    "shona": "chibage",
+    "english": "maize/corn",
+    "category": "agriculture",
+    "subcategories": [
+      "crops"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/tʃibage/",
+    "cultural_notes": "Most important crop, basis of food security"
+  },
+  {
+    "id": "trad_agr_003",
+    "shona": "mapfunde",
+    "english": "sorghum",
+    "category": "agriculture",
+    "subcategories": [
+      "crops"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/mapfunde/",
+    "cultural_notes": "Traditional grain, drought-resistant, used for beer"
+  },
+  {
+    "id": "trad_agr_004",
+    "shona": "mhunga",
+    "english": "millet",
+    "category": "agriculture",
+    "subcategories": [
+      "crops"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/mɦuŋga/"
+  },
+  {
+    "id": "trad_agr_005",
+    "shona": "kurima",
+    "english": "to farm/cultivate",
+    "raw": "{\n        id: \"trad_agr_005\",\n        shona: \"kurima\",\n        english: \"to farm/cultivate\",\n        category: \"agriculture\",\n        subcategories: [\"activities\"],\n        level: \"A2\",\n        diffic"
+  },
+  {
+    "id": "trad_agr_006",
+    "shona": "kukohwa",
+    "english": "to harvest",
+    "category": "agriculture",
+    "subcategories": [
+      "activities"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kukoɦwa/"
+  },
+  {
+    "id": "trad_cra_001",
+    "shona": "kuumbwa kwembiya",
+    "english": "pottery making",
+    "raw": "{\n    traditional_crafts: [\n      {\n        id: \"trad_cra_001\",\n        shona: \"kuumbwa kwembiya\",\n        english: \"pottery making\",\n        category: \"crafts\",\n        subcategories: [\"pottery\"],\n  "
+  },
+  {
+    "id": "trad_cra_002",
+    "shona": "kuruka",
+    "english": "to weave",
+    "category": "crafts",
+    "subcategories": [
+      "weaving"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kuruka/",
+    "cultural_notes": "Traditional skill for making baskets and mats"
+  },
+  {
+    "id": "trad_cra_003",
+    "shona": "dendera",
+    "english": "traditional basket",
+    "category": "crafts",
+    "subcategories": [
+      "baskets"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/dendera/",
+    "cultural_notes": "Used for storing grain and carrying items"
+  },
+  {
+    "id": "trad_cra_004",
+    "shona": "mbira",
+    "english": "traditional musical instrument",
+    "category": "crafts",
+    "subcategories": [
+      "music"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/mbira/",
+    "cultural_notes": "Sacred instrument used in spiritual ceremonies"
+  },
+  {
+    "id": "trad_cra_005",
+    "shona": "ngoma",
+    "english": "traditional drum",
+    "category": "crafts",
+    "subcategories": [
+      "music"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ŋgoma/",
+    "cultural_notes": "Used in ceremonies and traditional dances"
+  },
+  {
+    "id": "trad_bui_001",
+    "shona": "imba",
+    "english": "house/home",
+    "category": "building",
+    "subcategories": [
+      "structures"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/imba/",
+    "cultural_notes": "Center of family life, traditionally round with thatched roof"
+  },
+  {
+    "id": "trad_bui_002",
+    "shona": "rondavel",
+    "english": "traditional round house",
+    "category": "building",
+    "subcategories": [
+      "traditional_structures"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/rondavel/",
+    "cultural_notes": "Traditional architectural style, still used in rural areas"
+  },
+  {
+    "id": "trad_bui_003",
+    "shona": "dare",
+    "english": "traditional court/meeting place",
+    "category": "building",
+    "subcategories": [
+      "community"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/dare/",
+    "cultural_notes": "Traditional place for community meetings and dispute resolution"
+  },
+  {
+    "id": "trad_bui_004",
+    "shona": "dura",
+    "english": "granary/storage hut",
+    "category": "building",
+    "subcategories": [
+      "storage"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "low",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/dura/",
+    "cultural_notes": "Raised structure for storing grain, protected from pests"
+  },
+  {
+    "id": "trad_val_001",
+    "shona": "ukama",
+    "english": "kinship/family relationships",
+    "raw": "{\n    social_values: [\n      {\n        id: \"trad_val_001\",\n        shona: \"ukama\",\n        english: \"kinship/family relationships\",\n        category: \"values\",\n        subcategories: [\"family\", \"relat"
+  },
+  {
+    "id": "trad_val_002",
+    "shona": "hunhu",
+    "english": "good character/humanness",
+    "raw": "{\n        id: \"trad_val_002\",\n        shona: \"hunhu\",\n        english: \"good character/humanness\",\n        category: \"values\",\n        subcategories: [\"character\", \"morality\"],\n        level: \"B2\",\n  "
+  },
+  {
+    "id": "trad_val_003",
+    "shona": "ruremekedzo",
+    "english": "respect",
+    "category": "values",
+    "subcategories": [
+      "social_behavior"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/ruremekedzo/",
+    "cultural_notes": "Essential value, especially towards elders and authority"
+  },
+  {
+    "id": "trad_val_004",
+    "shona": "kusununguka",
+    "english": "hospitality",
+    "category": "values",
+    "subcategories": [
+      "social_behavior"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kusunungu​ka/",
+    "cultural_notes": "Traditional obligation to welcome and care for guests"
+  },
+  {
+    "id": "trad_val_005",
+    "shona": "simba",
+    "english": "strength/power",
+    "category": "values",
+    "subcategories": [
+      "personal_qualities"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/simba/",
+    "cultural_notes": "Physical and spiritual strength, highly valued"
+  },
+  {
+    "id": "adv_emo_001",
+    "shona": "ndafara zvikuru",
+    "english": "I am very happy",
+    "raw": "{\n  // Emotional Expressions (50+ words)\n  emotionalExpressions: {\n    joy: [\n      {\n        id: \"adv_emo_001\",\n        shona: \"ndafara zvikuru\",\n        english: \"I am very happy\",\n        category:"
+  },
+  {
+    "id": "adv_emo_002",
+    "shona": "Ndafara zvikuru kukuonai",
+    "english": "I am very happy to see you",
+    "raw": "{\n            shona: \"Ndafara zvikuru kukuonai\",\n            english: \"I am very happy to see you\",\n            context: \"Meeting someone after a long time\",\n            register: \"formal\"\n          }"
+  },
+  {
+    "id": "adv_emo_003",
+    "shona": "kufadzwa",
+    "english": "to be pleased/delighted",
+    "raw": "{\n        id: \"adv_emo_003\",\n        shona: \"kufadzwa\",\n        english: \"to be pleased/delighted\",\n        category: \"emotions\",\n        subcategories: [\"joy\", \"satisfaction\"],\n        level: \"B2\",\n "
+  },
+  {
+    "id": "adv_emo_010",
+    "shona": "kushungurudzika",
+    "english": "to be sad/troubled",
+    "raw": "{\n        id: \"adv_emo_010\",\n        shona: \"kushungurudzika\",\n        english: \"to be sad/troubled\",\n        category: \"emotions\",\n        subcategories: [\"sadness\", \"distress\"],\n        level: \"B2\","
+  },
+  {
+    "id": "adv_emo_011",
+    "shona": "shungu",
+    "english": "sorrow/grief",
+    "category": "emotions",
+    "subcategories": [
+      "sadness",
+      "grief"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ʃuŋgu/"
+  },
+  {
+    "id": "adv_emo_020",
+    "shona": "kutsamwa",
+    "english": "to be angry",
+    "raw": "{\n        id: \"adv_emo_020\",\n        shona: \"kutsamwa\",\n        english: \"to be angry\",\n        category: \"emotions\",\n        subcategories: [\"anger\"],\n        level: \"B1\",\n        difficulty: 5,\n    "
+  },
+  {
+    "id": "adv_emo_021",
+    "shona": "kugumbuka",
+    "english": "to be frustrated/annoyed",
+    "category": "emotions",
+    "subcategories": [
+      "anger",
+      "frustration"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kugumbuka/"
+  },
+  {
+    "id": "adv_emo_030",
+    "shona": "kutya",
+    "english": "to fear/be afraid",
+    "raw": "{\n        id: \"adv_emo_030\",\n        shona: \"kutya\",\n        english: \"to fear/be afraid\",\n        category: \"emotions\",\n        subcategories: [\"fear\"],\n        level: \"A2\",\n        difficulty: 4,\n  "
+  },
+  {
+    "id": "adv_emo_031",
+    "shona": "kuvhunduka",
+    "english": "to be startled/shocked",
+    "category": "emotions",
+    "subcategories": [
+      "fear",
+      "surprise"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kuvunduka/"
+  },
+  {
+    "id": "adv_emo_040",
+    "shona": "kushamisika",
+    "english": "to be surprised",
+    "raw": "{\n        id: \"adv_emo_040\",\n        shona: \"kushamisika\",\n        english: \"to be surprised\",\n        category: \"emotions\",\n        subcategories: [\"surprise\"],\n        level: \"B1\",\n        difficult"
+  },
+  {
+    "id": "adv_op_001",
+    "shona": "ndinofunga kuti",
+    "english": "I think that",
+    "raw": "{\n    expressing: [\n      {\n        id: \"adv_op_001\",\n        shona: \"ndinofunga kuti\",\n        english: \"I think that\",\n        category: \"opinions\",\n        subcategories: [\"expressing_opinion\"],\n  "
+  },
+  {
+    "id": "adv_op_002",
+    "shona": "maonero angu ndeekuti",
+    "english": "my view is that",
+    "raw": "{\n        id: \"adv_op_002\",\n        shona: \"maonero angu ndeekuti\",\n        english: \"my view is that\",\n        category: \"opinions\",\n        subcategories: [\"expressing_opinion\"],\n        level: \"B2\""
+  },
+  {
+    "id": "adv_op_003",
+    "shona": "ndinotenda kuti",
+    "english": "I believe that",
+    "category": "opinions",
+    "subcategories": [
+      "expressing_opinion",
+      "belief"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLLHL",
+    "ipa": "/ⁿdinotenda kuti/"
+  },
+  {
+    "id": "adv_op_004",
+    "shona": "zviri pachena kuti",
+    "english": "it's clear that",
+    "category": "opinions",
+    "subcategories": [
+      "expressing_opinion",
+      "certainty"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLLHLHL",
+    "ipa": "/zviri patʃena kuti/"
+  },
+  {
+    "id": "adv_op_010",
+    "shona": "ndinobvumirana newe",
+    "english": "I agree with you",
+    "raw": "{\n        id: \"adv_op_010\",\n        shona: \"ndinobvumirana newe\",\n        english: \"I agree with you\",\n        category: \"opinions\",\n        subcategories: [\"agreement\"],\n        level: \"B1\",\n        "
+  },
+  {
+    "id": "adv_op_011",
+    "shona": "zvirinani",
+    "english": "that's right/correct",
+    "category": "opinions",
+    "subcategories": [
+      "agreement"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/zvirinani/"
+  },
+  {
+    "id": "adv_op_012",
+    "shona": "handina kupikisa",
+    "english": "I don't disagree",
+    "category": "opinions",
+    "subcategories": [
+      "agreement",
+      "mild"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLLLHL",
+    "ipa": "/handina kupikisa/"
+  },
+  {
+    "id": "adv_op_020",
+    "shona": "handifungi kudaro",
+    "english": "I don",
+    "raw": "{\n        id: \"adv_op_020\",\n        shona: \"handifungi kudaro\",\n        english: \"I don't think so\",\n        category: \"opinions\",\n        subcategories: [\"disagreement\"],\n        level: \"B1\",\n       "
+  },
+  {
+    "id": "adv_op_021",
+    "shona": "ndinopikisa",
+    "english": "I disagree",
+    "category": "opinions",
+    "subcategories": [
+      "disagreement"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/ⁿdinopikisa/"
+  },
+  {
+    "id": "adv_op_022",
+    "shona": "handizvo zvandinoona",
+    "english": "that's not how I see it",
+    "category": "opinions",
+    "subcategories": [
+      "disagreement",
+      "perspective"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLLLLHL",
+    "ipa": "/handizvo zvaⁿdinoːna/"
+  },
+  {
+    "id": "adv_pol_001",
+    "shona": "ndapota",
+    "english": "please",
+    "raw": "{\n    requests: [\n      {\n        id: \"adv_pol_001\",\n        shona: \"ndapota\",\n        english: \"please\",\n        category: \"politeness\",\n        subcategories: [\"requests\"],\n        level: \"A2\",\n    "
+  },
+  {
+    "id": "adv_pol_002",
+    "shona": "dai maibvuma",
+    "english": "if you would allow",
+    "category": "politeness",
+    "subcategories": [
+      "requests",
+      "formal"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/dai maibvuma/"
+  },
+  {
+    "id": "adv_pol_003",
+    "shona": "ndinokumbirawo",
+    "english": "I kindly request",
+    "category": "politeness",
+    "subcategories": [
+      "requests",
+      "formal"
+    ],
+    "level": "B1",
+    "difficulty": 6,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLLHL",
+    "ipa": "/ⁿdinokumbirawo/"
+  },
+  {
+    "id": "adv_pol_010",
+    "shona": "ndinotenda zvikuru",
+    "english": "thank you very much",
+    "raw": "{\n        id: \"adv_pol_010\",\n        shona: \"ndinotenda zvikuru\",\n        english: \"thank you very much\",\n        category: \"politeness\",\n        subcategories: [\"gratitude\"],\n        level: \"A2\",\n   "
+  },
+  {
+    "id": "adv_pol_011",
+    "shona": "ndatenda hangu",
+    "english": "I really appreciate it",
+    "category": "politeness",
+    "subcategories": [
+      "gratitude",
+      "informal"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/ⁿdatenda haŋgu/"
+  },
+  {
+    "id": "adv_pol_020",
+    "shona": "ndine urombo",
+    "english": "I",
+    "raw": "{\n        id: \"adv_pol_020\",\n        shona: \"ndine urombo\",\n        english: \"I'm sorry\",\n        category: \"politeness\",\n        subcategories: [\"apologies\"],\n        level: \"A2\",\n        difficulty:"
+  },
+  {
+    "id": "adv_pol_021",
+    "shona": "ndikanganwa",
+    "english": "I forgot/made a mistake",
+    "category": "politeness",
+    "subcategories": [
+      "apologies",
+      "admission"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/ⁿdikaŋganwa/"
+  },
+  {
+    "id": "adv_pol_022",
+    "shona": "musandipa mhosva",
+    "english": "please don't blame me",
+    "category": "politeness",
+    "subcategories": [
+      "apologies",
+      "defense"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LLLHL",
+    "ipa": "/musandipa m̥osva/"
+  },
+  {
+    "id": "adv_dis_001",
+    "shona": "pakutanga",
+    "english": "firstly/at first",
+    "raw": "{\n    sequencing: [\n      {\n        id: \"adv_dis_001\",\n        shona: \"pakutanga\",\n        english: \"firstly/at first\",\n        category: \"discourse\",\n        subcategories: [\"sequencing\"],\n        le"
+  },
+  {
+    "id": "adv_dis_002",
+    "shona": "mushure mezvo",
+    "english": "after that/then",
+    "category": "discourse",
+    "subcategories": [
+      "sequencing"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/muʃure mezvo/"
+  },
+  {
+    "id": "adv_dis_003",
+    "shona": "pakupedzisira",
+    "english": "finally/lastly",
+    "category": "discourse",
+    "subcategories": [
+      "sequencing"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/pakupeʣisira/"
+  },
+  {
+    "id": "adv_dis_010",
+    "shona": "asi",
+    "english": "but",
+    "raw": "{\n        id: \"adv_dis_010\",\n        shona: \"asi\",\n        english: \"but\",\n        category: \"discourse\",\n        subcategories: [\"contrast\"],\n        level: \"A2\",\n        difficulty: 3,\n        frequ"
+  },
+  {
+    "id": "adv_dis_011",
+    "shona": "zvisinei nazvo",
+    "english": "nevertheless/regardless",
+    "category": "discourse",
+    "subcategories": [
+      "contrast",
+      "concession"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLLLHL",
+    "ipa": "/zvisinej nazvo/"
+  },
+  {
+    "id": "adv_dis_012",
+    "shona": "kunyangwe zvakadaro",
+    "english": "even so/however",
+    "category": "discourse",
+    "subcategories": [
+      "contrast"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLLHL",
+    "ipa": "/kuɲaŋgwe zvakadaro/"
+  },
+  {
+    "id": "adv_dis_020",
+    "shona": "uyezve",
+    "english": "also/and also",
+    "raw": "{\n        id: \"adv_dis_020\",\n        shona: \"uyezve\",\n        english: \"also/and also\",\n        category: \"discourse\",\n        subcategories: [\"addition\"],\n        level: \"B1\",\n        difficulty: 5,\n"
+  },
+  {
+    "id": "adv_dis_021",
+    "shona": "pamusoro pezvo",
+    "english": "furthermore/moreover",
+    "category": "discourse",
+    "subcategories": [
+      "addition",
+      "emphasis"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHLHL",
+    "ipa": "/pamusoro pezvo/"
+  },
+  {
+    "id": "adv_dis_030",
+    "shona": "ndiko kuti",
+    "english": "that is to say",
+    "raw": "{\n        id: \"adv_dis_030\",\n        shona: \"ndiko kuti\",\n        english: \"that is to say\",\n        category: \"discourse\",\n        subcategories: [\"explanation\"],\n        level: \"B2\",\n        difficu"
+  },
+  {
+    "id": "adv_dis_031",
+    "shona": "nemamwe mazwi",
+    "english": "in other words",
+    "category": "discourse",
+    "subcategories": [
+      "explanation",
+      "paraphrase"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/nemamwe mazwi/"
+  },
+  {
+    "id": "adv_hes_001",
+    "shona": "regai ndifunge",
+    "english": "let me think",
+    "raw": "{\n      id: \"adv_hes_001\",\n      shona: \"regai ndifunge\",\n      english: \"let me think\",\n      category: \"hesitation\",\n      subcategories: [\"thinking\"],\n      level: \"B1\",\n      difficulty: 5,\n      "
+  },
+  {
+    "id": "adv_hes_002",
+    "shona": "handinyatsoziva",
+    "english": "I'm not quite sure",
+    "category": "hesitation",
+    "subcategories": [
+      "uncertainty"
+    ],
+    "level": "B1",
+    "difficulty": 6,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLLHL",
+    "ipa": "/handiɲatsoziva/"
+  },
+  {
+    "id": "adv_hes_003",
+    "shona": "pamwe",
+    "english": "maybe/perhaps",
+    "category": "hesitation",
+    "subcategories": [
+      "possibility"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/pamwe/"
+  },
+  {
+    "id": "adv_hes_004",
+    "shona": "zvimwe",
+    "english": "possibly",
+    "category": "hesitation",
+    "subcategories": [
+      "possibility"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/zvimwe/"
+  },
+  {
+    "id": "adv_hes_005",
+    "shona": "ndinofungidzira kuti",
+    "english": "I suppose that",
+    "category": "hesitation",
+    "subcategories": [
+      "speculation"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLLLHL",
+    "ipa": "/ⁿdinofuŋgiʣira kuti/"
+  },
+  {
+    "id": "adv_int_001",
+    "shona": "maiwe!",
+    "english": "oh my!",
+    "raw": "{\n    surprise: [\n      {\n        id: \"adv_int_001\",\n        shona: \"maiwe!\",\n        english: \"oh my!\",\n        category: \"interjections\",\n        subcategories: [\"surprise\"],\n        level: \"A2\",\n  "
+  },
+  {
+    "id": "adv_int_002",
+    "shona": "haiwa!",
+    "english": "wow!/really!",
+    "category": "interjections",
+    "subcategories": [
+      "surprise",
+      "disbelief"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LH",
+    "ipa": "/hajwa/"
+  },
+  {
+    "id": "adv_int_003",
+    "shona": "ehe!",
+    "english": "oh!/I see!",
+    "category": "interjections",
+    "subcategories": [
+      "realization"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LH",
+    "ipa": "/ehe/"
+  },
+  {
+    "id": "adv_int_010",
+    "shona": "hongu",
+    "english": "yes",
+    "category": "interjections",
+    "subcategories": [
+      "agreement"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/hoŋgu/",
+    "usage_notes": "Standard affirmative response"
+  },
+  {
+    "id": "adv_int_011",
+    "shona": "ehe",
+    "english": "yeah/yep",
+    "category": "interjections",
+    "subcategories": [
+      "agreement",
+      "informal"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LH",
+    "ipa": "/ehe/"
+  },
+  {
+    "id": "adv_int_020",
+    "shona": "aaah!",
+    "english": "ouch!",
+    "category": "interjections",
+    "subcategories": [
+      "pain"
+    ],
+    "level": "A2",
+    "difficulty": 2,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/aːː/",
+    "usage_notes": "Universal expression of pain"
+  },
+  {
+    "id": "cont_urb_001",
+    "shona": "mudhorobha",
+    "english": "in the city/urban area",
+    "raw": "{\n  // Urban Life (50+ words)\n  urbanLife: {\n    city_living: [\n      {\n        id: \"cont_urb_001\",\n        shona: \"mudhorobha\",\n        english: \"in the city/urban area\",\n        category: \"urban_lif"
+  },
+  {
+    "id": "cont_urb_002",
+    "shona": "Ndinogara mudhorobha reHarare",
+    "english": "I live in the city of Harare",
+    "raw": "{\n            shona: \"Ndinogara mudhorobha reHarare\",\n            english: \"I live in the city of Harare\",\n            context: \"Describing residence\",\n            register: \"neutral\"\n          }\n    "
+  },
+  {
+    "id": "cont_urb_003",
+    "shona": "kombi",
+    "english": "minibus taxi",
+    "category": "urban_life",
+    "subcategories": [
+      "transportation"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/kombi/",
+    "usage_notes": "Main form of public transport in Zimbabwe"
+  },
+  {
+    "id": "cont_urb_004",
+    "shona": "traffic",
+    "english": "traffic",
+    "category": "urban_life",
+    "subcategories": [
+      "transportation"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/træfɪk/",
+    "usage_notes": "Often used as-is from English"
+  },
+  {
+    "id": "cont_urb_005",
+    "shona": "shopping mall",
+    "english": "shopping mall",
+    "raw": "{\n        id: \"cont_urb_005\",\n        shona: \"shopping mall\",\n        english: \"shopping mall\",\n        category: \"urban_life\",\n        subcategories: [\"shopping\", \"entertainment\"],\n        level: \"B1"
+  },
+  {
+    "id": "cont_iss_001",
+    "shona": "loadshedding",
+    "english": "power cuts/loadshedding",
+    "category": "urban_life",
+    "subcategories": [
+      "infrastructure"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HLHL",
+    "ipa": "/loʊdʃedɪŋ/",
+    "cultural_notes": "Common issue in urban Zimbabwe"
+  },
+  {
+    "id": "cont_iss_002",
+    "shona": "mvura yekunwa",
+    "english": "drinking water",
+    "category": "urban_life",
+    "subcategories": [
+      "infrastructure",
+      "basic_needs"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HLLHL",
+    "ipa": "/mvura jekunwa/"
+  },
+  {
+    "id": "cont_iss_003",
+    "shona": "mushikashika",
+    "english": "hustle/informal work",
+    "category": "urban_life",
+    "subcategories": [
+      "work",
+      "economy"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/muʃikaʃika/",
+    "cultural_notes": "Refers to informal economic activities common in cities"
+  },
+  {
+    "id": "cont_soc_001",
+    "shona": "WhatsApp",
+    "english": "WhatsApp",
+    "raw": "{\n    platforms: [\n      {\n        id: \"cont_soc_001\",\n        shona: \"WhatsApp\",\n        english: \"WhatsApp\",\n        category: \"social_media\",\n        subcategories: [\"platforms\", \"messaging\"],\n    "
+  },
+  {
+    "id": "cont_soc_002",
+    "shona": "Facebook",
+    "english": "Facebook",
+    "category": "social_media",
+    "subcategories": [
+      "platforms"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/feɪsbʊk/"
+  },
+  {
+    "id": "cont_soc_003",
+    "shona": "Twitter",
+    "english": "Twitter",
+    "category": "social_media",
+    "subcategories": [
+      "platforms"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/twɪtə/"
+  },
+  {
+    "id": "cont_soc_004",
+    "shona": "Instagram",
+    "english": "Instagram",
+    "category": "social_media",
+    "subcategories": [
+      "platforms",
+      "photo_sharing"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HLH",
+    "ipa": "/ɪnstəgræm/"
+  },
+  {
+    "id": "cont_act_001",
+    "shona": "kulaika",
+    "english": "to like (social media)",
+    "category": "social_media",
+    "subcategories": [
+      "actions"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kulajka/",
+    "usage_notes": "Direct borrowing from English 'like'"
+  },
+  {
+    "id": "cont_act_002",
+    "shona": "kushera",
+    "english": "to share",
+    "category": "social_media",
+    "subcategories": [
+      "actions"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kuʃera/"
+  },
+  {
+    "id": "cont_act_003",
+    "shona": "kukomenda",
+    "english": "to comment",
+    "category": "social_media",
+    "subcategories": [
+      "actions"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kukomenda/"
+  },
+  {
+    "id": "cont_act_004",
+    "shona": "status",
+    "english": "status update",
+    "category": "social_media",
+    "subcategories": [
+      "content"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/steɪtəs/"
+  },
+  {
+    "id": "cont_act_005",
+    "shona": "selfie",
+    "english": "selfie",
+    "raw": "{\n        id: \"cont_act_005\",\n        shona: \"selfie\",\n        english: \"selfie\",\n        category: \"social_media\",\n        subcategories: [\"content\", \"photos\"],\n        level: \"A2\",\n        difficult"
+  },
+  {
+    "id": "cont_dig_001",
+    "shona": "data bundles",
+    "english": "data bundles",
+    "category": "technology",
+    "subcategories": [
+      "internet",
+      "mobile"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HLHL",
+    "ipa": "/deɪtə bʌndəlz/",
+    "cultural_notes": "Essential for internet access in Zimbabwe"
+  },
+  {
+    "id": "cont_dig_002",
+    "shona": "airtime",
+    "english": "airtime/phone credit",
+    "category": "technology",
+    "subcategories": [
+      "mobile",
+      "communication"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/eətaɪm/"
+  },
+  {
+    "id": "cont_dig_003",
+    "shona": "kukiya",
+    "english": "to go offline/disconnect",
+    "category": "technology",
+    "subcategories": [
+      "internet"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kukija/"
+  },
+  {
+    "id": "cont_dig_004",
+    "shona": "influencer",
+    "english": "social media influencer",
+    "category": "social_media",
+    "subcategories": [
+      "roles"
+    ],
+    "level": "B2",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HLH",
+    "ipa": "/ɪnfluənsə/"
+  },
+  {
+    "id": "cont_rel_001",
+    "shona": "kudanana",
+    "english": "to date/be in a relationship",
+    "raw": "{\n    dating: [\n      {\n        id: \"cont_rel_001\",\n        shona: \"kudanana\",\n        english: \"to date/be in a relationship\",\n        category: \"relationships\",\n        subcategories: [\"dating\"],\n  "
+  },
+  {
+    "id": "cont_rel_002",
+    "shona": "Tave kudanana kwemwedzi mitatu",
+    "english": "We",
+    "raw": "{\n            shona: \"Tave kudanana kwemwedzi mitatu\",\n            english: \"We've been dating for three months\",\n            context: \"Relationship status\",\n            register: \"informal\"\n         "
+  },
+  {
+    "id": "cont_rel_003",
+    "shona": "boyfriend",
+    "english": "boyfriend",
+    "category": "relationships",
+    "subcategories": [
+      "dating",
+      "partners"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/bɔɪfrend/",
+    "usage_notes": "Often used as-is from English"
+  },
+  {
+    "id": "cont_rel_004",
+    "shona": "girlfriend",
+    "english": "girlfriend",
+    "category": "relationships",
+    "subcategories": [
+      "dating",
+      "partners"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/gɜːlfrend/"
+  },
+  {
+    "id": "cont_rel_005",
+    "shona": "kuroorana",
+    "english": "to marry/get married",
+    "category": "relationships",
+    "subcategories": [
+      "marriage"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kuroːrana/"
+  },
+  {
+    "id": "cont_fam_001",
+    "shona": "single parent",
+    "english": "single parent",
+    "category": "relationships",
+    "subcategories": [
+      "family",
+      "modern_structures"
+    ],
+    "level": "B2",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HLHL",
+    "ipa": "/sɪŋgəl peərənt/"
+  },
+  {
+    "id": "cont_fam_002",
+    "shona": "kurambana",
+    "english": "to divorce/separate",
+    "category": "relationships",
+    "subcategories": [
+      "marriage",
+      "separation"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kurambana/",
+    "cultural_notes": "Increasingly common but still culturally sensitive topic"
+  },
+  {
+    "id": "cont_fam_003",
+    "shona": "step-parent",
+    "english": "step-parent",
+    "category": "relationships",
+    "subcategories": [
+      "family",
+      "blended"
+    ],
+    "level": "B2",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/step peərənt/"
+  },
+  {
+    "id": "cont_ent_001",
+    "shona": "firimu",
+    "english": "movie/film",
+    "raw": "{\n    movies_tv: [\n      {\n        id: \"cont_ent_001\",\n        shona: \"firimu\",\n        english: \"movie/film\",\n        category: \"entertainment\",\n        subcategories: [\"movies\"],\n        level: \"A2\""
+  },
+  {
+    "id": "cont_ent_002",
+    "shona": "series",
+    "english": "TV series",
+    "category": "entertainment",
+    "subcategories": [
+      "television"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/sɪəriːz/"
+  },
+  {
+    "id": "cont_ent_003",
+    "shona": "Netflix",
+    "english": "Netflix",
+    "category": "entertainment",
+    "subcategories": [
+      "streaming"
+    ],
+    "level": "B1",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/netflɪks/"
+  },
+  {
+    "id": "cont_ent_004",
+    "shona": "DStv",
+    "english": "DStv (satellite TV)",
+    "category": "entertainment",
+    "subcategories": [
+      "television"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/diːestiːviː/",
+    "cultural_notes": "Popular satellite TV service in Southern Africa"
+  },
+  {
+    "id": "cont_mus_001",
+    "shona": "zimdancehall",
+    "english": "Zimbabwean dancehall music",
+    "category": "entertainment",
+    "subcategories": [
+      "music",
+      "genres"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HLHL",
+    "ipa": "/zɪmdɑːnshɔːl/",
+    "cultural_notes": "Popular youth music genre in Zimbabwe"
+  },
+  {
+    "id": "cont_mus_002",
+    "shona": "sungura",
+    "english": "sungura music",
+    "category": "entertainment",
+    "subcategories": [
+      "music",
+      "genres"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/suŋgura/",
+    "cultural_notes": "Traditional Zimbabwean music genre"
+  },
+  {
+    "id": "cont_mus_003",
+    "shona": "playlist",
+    "english": "playlist",
+    "category": "entertainment",
+    "subcategories": [
+      "music",
+      "digital"
+    ],
+    "level": "B1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/pleɪlɪst/"
+  },
+  {
+    "id": "cont_mus_004",
+    "shona": "kudownloader",
+    "english": "to download",
+    "category": "entertainment",
+    "subcategories": [
+      "digital",
+      "actions"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kudaʊnloʊdə/"
+  },
+  {
+    "id": "cont_spo_001",
+    "shona": "bhora",
+    "english": "football/soccer",
+    "category": "entertainment",
+    "subcategories": [
+      "sports"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/b̤ora/",
+    "usage_notes": "From English 'ball'"
+  },
+  {
+    "id": "cont_spo_002",
+    "shona": "cricket",
+    "english": "cricket",
+    "category": "entertainment",
+    "subcategories": [
+      "sports"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/krɪkɪt/"
+  },
+  {
+    "id": "cont_spo_003",
+    "shona": "gym",
+    "english": "gym",
+    "category": "entertainment",
+    "subcategories": [
+      "fitness"
+    ],
+    "level": "B1",
+    "difficulty": 3,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "H",
+    "ipa": "/dʒɪm/"
+  },
+  {
+    "id": "cont_fas_001",
+    "shona": "fashion",
+    "english": "fashion",
+    "raw": "{\n    clothing: [\n      {\n        id: \"cont_fas_001\",\n        shona: \"fashion\",\n        english: \"fashion\",\n        category: \"fashion\",\n        subcategories: [\"general\"],\n        level: \"B1\",\n      "
+  },
+  {
+    "id": "cont_fas_002",
+    "shona": "swag",
+    "english": "style/swag",
+    "category": "fashion",
+    "subcategories": [
+      "style"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "H",
+    "ipa": "/swæg/",
+    "cultural_notes": "Popular among youth"
+  },
+  {
+    "id": "cont_fas_003",
+    "shona": "designer",
+    "english": "designer (clothes)",
+    "category": "fashion",
+    "subcategories": [
+      "brands"
+    ],
+    "level": "B2",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HLH",
+    "ipa": "/dɪzaɪnə/"
+  },
+  {
+    "id": "cont_fas_004",
+    "shona": "weave",
+    "english": "hair weave/extensions",
+    "category": "fashion",
+    "subcategories": [
+      "beauty",
+      "hair"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "H",
+    "ipa": "/wiːv/"
+  },
+  {
+    "id": "cont_fas_005",
+    "shona": "make-up",
+    "english": "makeup",
+    "category": "fashion",
+    "subcategories": [
+      "beauty"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/meɪkʌp/"
+  },
+  {
+    "id": "cont_tre_001",
+    "shona": "trending",
+    "english": "trending",
+    "category": "fashion",
+    "subcategories": [
+      "trends",
+      "social_media"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/trendɪŋ/"
+  },
+  {
+    "id": "cont_tre_002",
+    "shona": "vintage",
+    "english": "vintage style",
+    "category": "fashion",
+    "subcategories": [
+      "style"
+    ],
+    "level": "B2",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/vɪntɪdʒ/"
+  },
+  {
+    "id": "cont_tra_001",
+    "shona": "Victoria Falls",
+    "english": "Victoria Falls",
+    "raw": "{\n    destinations: [\n      {\n        id: \"cont_tra_001\",\n        shona: \"Victoria Falls\",\n        english: \"Victoria Falls\",\n        category: \"travel\",\n        subcategories: [\"destinations\", \"touri"
+  },
+  {
+    "id": "cont_tra_002",
+    "shona": "safari",
+    "english": "safari",
+    "category": "travel",
+    "subcategories": [
+      "tourism",
+      "activities"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/səfɑːri/"
+  },
+  {
+    "id": "cont_tra_003",
+    "shona": "hotel",
+    "english": "hotel",
+    "category": "travel",
+    "subcategories": [
+      "accommodation"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/həʊtel/"
+  },
+  {
+    "id": "cont_tra_004",
+    "shona": "lodge",
+    "english": "lodge",
+    "category": "travel",
+    "subcategories": [
+      "accommodation"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "H",
+    "ipa": "/lɒdʒ/"
+  },
+  {
+    "id": "cont_act_010",
+    "shona": "kubhuka",
+    "english": "to book/reserve",
+    "category": "travel",
+    "subcategories": [
+      "planning"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kub̤uka/"
+  },
+  {
+    "id": "cont_act_011",
+    "shona": "passport",
+    "english": "passport",
+    "category": "travel",
+    "subcategories": [
+      "documents"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/pɑːspɔːt/"
+  },
+  {
+    "id": "cont_act_012",
+    "shona": "visa",
+    "english": "visa",
+    "category": "travel",
+    "subcategories": [
+      "documents"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/viːzə/"
+  },
+  {
+    "id": "cont_env_001",
+    "shona": "kushanduka kwemamiriro ekunze",
+    "english": "climate change",
+    "raw": "{\n    climate: [\n      {\n        id: \"cont_env_001\",\n        shona: \"kushanduka kwemamiriro ekunze\",\n        english: \"climate change\",\n        category: \"environment\",\n        subcategories: [\"climat"
+  },
+  {
+    "id": "cont_env_002",
+    "shona": "kusanaya kwemvura",
+    "english": "drought",
+    "category": "environment",
+    "subcategories": [
+      "climate",
+      "disasters"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLLHL",
+    "ipa": "/kusanaja kwemvura/"
+  },
+  {
+    "id": "cont_env_003",
+    "shona": "kupisa kukuru",
+    "english": "global warming",
+    "category": "environment",
+    "subcategories": [
+      "climate"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHLHL",
+    "ipa": "/kupisa kukuru/"
+  },
+  {
+    "id": "cont_con_001",
+    "shona": "kuchengetedza zvakatipoteredza",
+    "english": "environmental conservation",
+    "category": "environment",
+    "subcategories": [
+      "conservation"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHLLLHL",
+    "ipa": "/kutʃeŋgeteʣa zvakatipotereʣa/"
+  },
+  {
+    "id": "cont_con_002",
+    "shona": "recycling",
+    "english": "recycling",
+    "category": "environment",
+    "subcategories": [
+      "conservation",
+      "waste"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HLH",
+    "ipa": "/riːsaɪklɪŋ/"
+  },
+  {
+    "id": "cont_con_003",
+    "shona": "solar",
+    "english": "solar power",
+    "category": "environment",
+    "subcategories": [
+      "energy",
+      "renewable"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/səʊlə/",
+    "cultural_notes": "Increasingly popular due to power shortages"
+  },
+  {
+    "id": "cont_con_004",
+    "shona": "kutema miti",
+    "english": "deforestation",
+    "category": "environment",
+    "subcategories": [
+      "conservation",
+      "problems"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLHL",
+    "ipa": "/kutema miti/"
+  },
+  {
+    "id": "cont_men_001",
+    "shona": "hutano hwepfungwa",
+    "english": "mental health",
+    "raw": "{\n    mental_health: [\n      {\n        id: \"cont_men_001\",\n        shona: \"hutano hwepfungwa\",\n        english: \"mental health\",\n        category: \"health\",\n        subcategories: [\"mental_health\"],\n "
+  },
+  {
+    "id": "cont_men_002",
+    "shona": "kushushikana",
+    "english": "stress/anxiety",
+    "category": "health",
+    "subcategories": [
+      "mental_health",
+      "conditions"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kuʃuʃikana/"
+  },
+  {
+    "id": "cont_men_003",
+    "shona": "kuora moyo",
+    "english": "depression",
+    "category": "health",
+    "subcategories": [
+      "mental_health",
+      "conditions"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLHL",
+    "ipa": "/kuora mojo/",
+    "usage_notes": "Literally 'rotting of the heart'"
+  },
+  {
+    "id": "cont_men_004",
+    "shona": "therapy",
+    "english": "therapy",
+    "category": "health",
+    "subcategories": [
+      "mental_health",
+      "treatment"
+    ],
+    "level": "B2",
+    "difficulty": 5,
+    "frequency": "low",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/θerəpi/"
+  },
+  {
+    "id": "cont_wel_001",
+    "shona": "yoga",
+    "english": "yoga",
+    "category": "health",
+    "subcategories": [
+      "wellness",
+      "exercise"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/jəʊgə/"
+  },
+  {
+    "id": "cont_wel_002",
+    "shona": "meditation",
+    "english": "meditation",
+    "category": "health",
+    "subcategories": [
+      "wellness",
+      "mental_health"
+    ],
+    "level": "B2",
+    "difficulty": 5,
+    "frequency": "low",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "HLHL",
+    "ipa": "/medɪteɪʃən/"
+  },
+  {
+    "id": "cont_wel_003",
+    "shona": "self-care",
+    "english": "self-care",
+    "category": "health",
+    "subcategories": [
+      "wellness"
+    ],
+    "level": "B2",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/self keə/"
+  },
+  {
+    "id": "prof_bus_001",
+    "shona": "bhizinesi",
+    "english": "business",
+    "raw": "{\n  // Business & Commerce (80+ words)\n  businessCommerce: {\n    general: [\n      {\n        id: \"prof_bus_001\",\n        shona: \"bhizinesi\",\n        english: \"business\",\n        category: \"business\",\n "
+  },
+  {
+    "id": "prof_bus_002",
+    "shona": "Ndiri kuvhura bhizinesi yangu",
+    "english": "I am opening my business",
+    "raw": "{\n            shona: \"Ndiri kuvhura bhizinesi yangu\",\n            english: \"I am opening my business\",\n            context: \"Entrepreneurship\",\n            register: \"neutral\"\n          }\n        ],\n "
+  },
+  {
+    "id": "prof_bus_003",
+    "shona": "mutengesi",
+    "english": "seller/vendor",
+    "category": "business",
+    "subcategories": [
+      "commerce",
+      "roles"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/muteŋgesi/"
+  },
+  {
+    "id": "prof_bus_004",
+    "shona": "mutengi",
+    "english": "buyer/customer",
+    "category": "business",
+    "subcategories": [
+      "commerce",
+      "roles"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/muteŋgi/"
+  },
+  {
+    "id": "prof_bus_005",
+    "shona": "chibvumirano",
+    "english": "agreement/contract",
+    "category": "business",
+    "subcategories": [
+      "legal",
+      "documents"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/tʃibvumirano/",
+    "cultural_notes": "Important in formal business dealings, often requires witnesses"
+  },
+  {
+    "id": "prof_fin_001",
+    "shona": "mari",
+    "english": "money",
+    "category": "business",
+    "subcategories": [
+      "finance"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/mari/"
+  },
+  {
+    "id": "prof_fin_002",
+    "shona": "bhangi",
+    "english": "bank",
+    "category": "business",
+    "subcategories": [
+      "finance",
+      "institutions"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/b̤aŋgi/"
+  },
+  {
+    "id": "prof_fin_003",
+    "shona": "kuchinjisa",
+    "english": "to exchange (money)",
+    "category": "business",
+    "subcategories": [
+      "finance",
+      "transactions"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kutʃindʒisa/"
+  },
+  {
+    "id": "prof_fin_004",
+    "shona": "chikwereti",
+    "english": "loan/credit",
+    "raw": "{\n        id: \"prof_fin_004\",\n        shona: \"chikwereti\",\n        english: \"loan/credit\",\n        category: \"business\",\n        subcategories: [\"finance\", \"banking\"],\n        level: \"B1\",\n        dif"
+  },
+  {
+    "id": "prof_fin_005",
+    "shona": "mubereko",
+    "english": "interest (financial)",
+    "category": "business",
+    "subcategories": [
+      "finance",
+      "banking"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/mubereko/"
+  },
+  {
+    "id": "prof_fin_006",
+    "shona": "mutero",
+    "english": "tax",
+    "category": "business",
+    "subcategories": [
+      "finance",
+      "government"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/mutero/"
+  },
+  {
+    "id": "prof_ent_001",
+    "shona": "muzvinabhizinesi",
+    "english": "entrepreneur",
+    "category": "business",
+    "subcategories": [
+      "entrepreneurship",
+      "roles"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLLHL",
+    "ipa": "/muzvinab̤izinesi/",
+    "cultural_notes": "Growing importance in Zimbabwe's economy"
+  },
+  {
+    "id": "prof_ent_002",
+    "shona": "kuvamba bhizinesi",
+    "english": "to start a business",
+    "category": "business",
+    "subcategories": [
+      "entrepreneurship"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLLHL",
+    "ipa": "/kuvamba b̤izinesi/"
+  },
+  {
+    "id": "prof_ent_003",
+    "shona": "purofiti",
+    "english": "profit",
+    "category": "business",
+    "subcategories": [
+      "finance",
+      "entrepreneurship"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/purofiti/"
+  },
+  {
+    "id": "prof_ent_004",
+    "shona": "kurasikirwa",
+    "english": "loss (financial)",
+    "category": "business",
+    "subcategories": [
+      "finance",
+      "entrepreneurship"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kurasikirwa/"
+  },
+  {
+    "id": "prof_tech_001",
+    "shona": "kompyuta",
+    "english": "computer",
+    "raw": "{\n    computers: [\n      {\n        id: \"prof_tech_001\",\n        shona: \"kompyuta\",\n        english: \"computer\",\n        category: \"technology\",\n        subcategories: [\"computers\"],\n        level: \"A2"
+  },
+  {
+    "id": "prof_tech_002",
+    "shona": "Ndinoshandisa kompyuta pabasa",
+    "english": "I use a computer at work",
+    "raw": "{\n            shona: \"Ndinoshandisa kompyuta pabasa\",\n            english: \"I use a computer at work\",\n            context: \"Workplace technology\",\n            register: \"neutral\"\n          }\n        "
+  },
+  {
+    "id": "prof_tech_003",
+    "shona": "intaneti",
+    "english": "internet",
+    "category": "technology",
+    "subcategories": [
+      "internet"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/intaneti/"
+  },
+  {
+    "id": "prof_tech_004",
+    "shona": "nhare",
+    "english": "phone",
+    "category": "technology",
+    "subcategories": [
+      "communication"
+    ],
+    "level": "A1",
+    "difficulty": 2,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ɲare/"
+  },
+  {
+    "id": "prof_tech_005",
+    "shona": "nharembozha",
+    "english": "mobile phone",
+    "raw": "{\n        id: \"prof_tech_005\",\n        shona: \"nharembozha\",\n        english: \"mobile phone\",\n        category: \"technology\",\n        subcategories: [\"communication\", \"mobile\"],\n        level: \"A2\",\n "
+  },
+  {
+    "id": "prof_soft_001",
+    "shona": "purogiramu",
+    "english": "program/software",
+    "category": "technology",
+    "subcategories": [
+      "software"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/purogiramu/"
+  },
+  {
+    "id": "prof_soft_002",
+    "shona": "app",
+    "english": "app/application",
+    "category": "technology",
+    "subcategories": [
+      "software",
+      "mobile"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "L",
+    "ipa": "/æp/"
+  },
+  {
+    "id": "prof_soft_003",
+    "shona": "dhata",
+    "english": "data",
+    "category": "technology",
+    "subcategories": [
+      "computing"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/ɗata/"
+  },
+  {
+    "id": "prof_soft_004",
+    "shona": "webusaiti",
+    "english": "website",
+    "category": "technology",
+    "subcategories": [
+      "internet"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/webusajti/"
+  },
+  {
+    "id": "prof_soc_001",
+    "shona": "social media",
+    "english": "social media",
+    "category": "technology",
+    "subcategories": [
+      "social_media"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/soʃal miɗia/",
+    "usage_notes": "Often used as is in English"
+  },
+  {
+    "id": "prof_soc_002",
+    "shona": "kutumira meseji",
+    "english": "to send a message",
+    "category": "technology",
+    "subcategories": [
+      "communication"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLLHL",
+    "ipa": "/kutumira meseʤi/"
+  },
+  {
+    "id": "prof_soc_003",
+    "shona": "kutevera",
+    "english": "to follow (social media)",
+    "category": "technology",
+    "subcategories": [
+      "social_media"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kutevera/"
+  },
+  {
+    "id": "prof_soc_004",
+    "shona": "kupousta",
+    "english": "to post",
+    "category": "technology",
+    "subcategories": [
+      "social_media"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "informal",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kupousta/"
+  },
+  {
+    "id": "prof_med_001",
+    "shona": "chiremba",
+    "english": "doctor",
+    "raw": "{\n    medical_professionals: [\n      {\n        id: \"prof_med_001\",\n        shona: \"chiremba\",\n        english: \"doctor\",\n        category: \"medicine\",\n        subcategories: [\"professionals\"],\n       "
+  },
+  {
+    "id": "prof_med_002",
+    "shona": "Ndinofanira kuona chiremba",
+    "english": "I need to see a doctor",
+    "raw": "{\n            shona: \"Ndinofanira kuona chiremba\",\n            english: \"I need to see a doctor\",\n            context: \"Health consultation\",\n            register: \"neutral\"\n          }\n        ]\n    "
+  },
+  {
+    "id": "prof_med_003",
+    "shona": "chiremba wemazino",
+    "english": "dentist",
+    "category": "medicine",
+    "subcategories": [
+      "professionals",
+      "specialists"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLHL",
+    "ipa": "/tʃiremba wemazino/"
+  },
+  {
+    "id": "prof_med_004",
+    "shona": "mushandi wehutano",
+    "english": "health worker",
+    "category": "medicine",
+    "subcategories": [
+      "professionals"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHLLHL",
+    "ipa": "/muʃandi wehutano/"
+  },
+  {
+    "id": "prof_fac_001",
+    "shona": "chipatara",
+    "english": "hospital",
+    "category": "medicine",
+    "subcategories": [
+      "facilities"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/tʃipatara/"
+  },
+  {
+    "id": "prof_fac_002",
+    "shona": "kiriniki",
+    "english": "clinic",
+    "category": "medicine",
+    "subcategories": [
+      "facilities"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kiriniki/"
+  },
+  {
+    "id": "prof_fac_003",
+    "shona": "femesi",
+    "english": "pharmacy",
+    "category": "medicine",
+    "subcategories": [
+      "facilities"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/femesi/"
+  },
+  {
+    "id": "prof_cond_001",
+    "shona": "chirwere",
+    "english": "disease/illness",
+    "category": "medicine",
+    "subcategories": [
+      "conditions"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/tʃirwere/"
+  },
+  {
+    "id": "prof_cond_002",
+    "shona": "musana",
+    "english": "fever",
+    "category": "medicine",
+    "subcategories": [
+      "symptoms"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/musana/"
+  },
+  {
+    "id": "prof_cond_003",
+    "shona": "kuvhuvhuta",
+    "english": "to cough",
+    "category": "medicine",
+    "subcategories": [
+      "symptoms"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kuvuvuta/"
+  },
+  {
+    "id": "prof_cond_004",
+    "shona": "kurwara musoro",
+    "english": "headache",
+    "category": "medicine",
+    "subcategories": [
+      "symptoms"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLHL",
+    "ipa": "/kurwara musoro/"
+  },
+  {
+    "id": "prof_cond_005",
+    "shona": "chirwere cheshuga",
+    "english": "diabetes",
+    "category": "medicine",
+    "subcategories": [
+      "conditions",
+      "chronic"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHLLHL",
+    "ipa": "/tʃirwere tʃeʃuga/",
+    "usage_notes": "Literally 'sugar disease'"
+  },
+  {
+    "id": "prof_treat_001",
+    "shona": "mushonga",
+    "english": "medicine/drug",
+    "category": "medicine",
+    "subcategories": [
+      "treatments"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/muʃoŋga/"
+  },
+  {
+    "id": "prof_treat_002",
+    "shona": "jekiseni",
+    "english": "injection",
+    "category": "medicine",
+    "subcategories": [
+      "treatments"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/ʤekiseni/"
+  },
+  {
+    "id": "prof_treat_003",
+    "shona": "kubaya jekiseni",
+    "english": "to give an injection",
+    "category": "medicine",
+    "subcategories": [
+      "procedures"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLLHL",
+    "ipa": "/kubaja ʤekiseni/"
+  },
+  {
+    "id": "prof_treat_004",
+    "shona": "kurapwa",
+    "english": "to be treated",
+    "category": "medicine",
+    "subcategories": [
+      "treatments"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kurapwa/"
+  },
+  {
+    "id": "prof_edu_001",
+    "shona": "chikoro",
+    "english": "school",
+    "raw": "{\n    institutions: [\n      {\n        id: \"prof_edu_001\",\n        shona: \"chikoro\",\n        english: \"school\",\n        category: \"education\",\n        subcategories: [\"institutions\"],\n        level: \"A"
+  },
+  {
+    "id": "prof_edu_002",
+    "shona": "yunivhesiti",
+    "english": "university",
+    "category": "education",
+    "subcategories": [
+      "institutions",
+      "higher_education"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/juniv̤esiti/"
+  },
+  {
+    "id": "prof_edu_003",
+    "shona": "koriji",
+    "english": "college",
+    "category": "education",
+    "subcategories": [
+      "institutions",
+      "higher_education"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/koridʒi/"
+  },
+  {
+    "id": "prof_edu_004",
+    "shona": "chikoro chepuraimari",
+    "english": "primary school",
+    "category": "education",
+    "subcategories": [
+      "institutions",
+      "primary"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLLHL",
+    "ipa": "/tʃikoro tʃepurajmari/"
+  },
+  {
+    "id": "prof_edu_005",
+    "shona": "chikoro chesekondari",
+    "english": "secondary school",
+    "category": "education",
+    "subcategories": [
+      "institutions",
+      "secondary"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHLLLHL",
+    "ipa": "/tʃikoro tʃesekondari/"
+  },
+  {
+    "id": "prof_role_001",
+    "shona": "mudzidzisi",
+    "english": "teacher",
+    "raw": "{\n        id: \"prof_role_001\",\n        shona: \"mudzidzisi\",\n        english: \"teacher\",\n        category: \"education\",\n        subcategories: [\"roles\"],\n        level: \"A1\",\n        difficulty: 3,\n   "
+  },
+  {
+    "id": "prof_role_002",
+    "shona": "mudzidzi",
+    "english": "student",
+    "category": "education",
+    "subcategories": [
+      "roles"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/muʣiʣi/"
+  },
+  {
+    "id": "prof_role_003",
+    "shona": "purofesa",
+    "english": "professor",
+    "category": "education",
+    "subcategories": [
+      "roles",
+      "higher_education"
+    ],
+    "level": "B2",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/purofesa/"
+  },
+  {
+    "id": "prof_role_004",
+    "shona": "mukuru wechikoro",
+    "english": "headmaster/principal",
+    "category": "education",
+    "subcategories": [
+      "roles",
+      "administration"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHLLHL",
+    "ipa": "/mukuru wetʃikoro/"
+  },
+  {
+    "id": "prof_term_001",
+    "shona": "chidzidzo",
+    "english": "lesson/subject",
+    "category": "education",
+    "subcategories": [
+      "academics"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/tʃiʣiʣo/"
+  },
+  {
+    "id": "prof_term_002",
+    "shona": "bvunzo",
+    "english": "exam/test",
+    "category": "education",
+    "subcategories": [
+      "assessment"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "HL",
+    "ipa": "/bvunzo/"
+  },
+  {
+    "id": "prof_term_003",
+    "shona": "dhigirii",
+    "english": "degree",
+    "category": "education",
+    "subcategories": [
+      "qualifications"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/ɗigiriː/"
+  },
+  {
+    "id": "prof_term_004",
+    "shona": "satefeketi",
+    "english": "certificate",
+    "category": "education",
+    "subcategories": [
+      "qualifications"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/satefeketi/"
+  },
+  {
+    "id": "prof_term_005",
+    "shona": "kudzidza",
+    "english": "to study/learn",
+    "category": "education",
+    "subcategories": [
+      "actions"
+    ],
+    "level": "A1",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kuʣiʣa/"
+  },
+  {
+    "id": "prof_pol_001",
+    "shona": "hurumende",
+    "english": "government",
+    "raw": "{\n    governance: [\n      {\n        id: \"prof_pol_001\",\n        shona: \"hurumende\",\n        english: \"government\",\n        category: \"politics\",\n        subcategories: [\"governance\"],\n        level: \""
+  },
+  {
+    "id": "prof_pol_002",
+    "shona": "mutungamiri",
+    "english": "leader",
+    "category": "politics",
+    "subcategories": [
+      "roles"
+    ],
+    "level": "A2",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/mutuŋgamiri/"
+  },
+  {
+    "id": "prof_pol_003",
+    "shona": "mutungamiri wenyika",
+    "english": "president",
+    "category": "politics",
+    "subcategories": [
+      "roles",
+      "executive"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHLLHL",
+    "ipa": "/mutuŋgamiri weɲika/"
+  },
+  {
+    "id": "prof_pol_004",
+    "shona": "paramende",
+    "english": "parliament",
+    "category": "politics",
+    "subcategories": [
+      "institutions"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/paramende/"
+  },
+  {
+    "id": "prof_dem_001",
+    "shona": "sarudzo",
+    "english": "election",
+    "category": "politics",
+    "subcategories": [
+      "democracy"
+    ],
+    "level": "B1",
+    "difficulty": 5,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/saruʣo/"
+  },
+  {
+    "id": "prof_dem_002",
+    "shona": "kuvhota",
+    "english": "to vote",
+    "category": "politics",
+    "subcategories": [
+      "democracy",
+      "actions"
+    ],
+    "level": "B1",
+    "difficulty": 4,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kuv̤ota/"
+  },
+  {
+    "id": "prof_dem_003",
+    "shona": "bato rezvematongerwo",
+    "english": "political party",
+    "category": "politics",
+    "subcategories": [
+      "democracy",
+      "organizations"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "HLLLLHL",
+    "ipa": "/bato rezvematoŋgerwo/"
+  },
+  {
+    "id": "prof_dem_004",
+    "shona": "kodzero",
+    "english": "rights",
+    "category": "politics",
+    "subcategories": [
+      "democracy",
+      "law"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/koʣero/"
+  },
+  {
+    "id": "prof_eco_001",
+    "shona": "hupfumi",
+    "english": "economy/wealth",
+    "raw": "{\n    general: [\n      {\n        id: \"prof_eco_001\",\n        shona: \"hupfumi\",\n        english: \"economy/wealth\",\n        category: \"economics\",\n        subcategories: [\"general\"],\n        level: \"B1\""
+  },
+  {
+    "id": "prof_eco_002",
+    "shona": "kukura kwehupfumi",
+    "english": "economic growth",
+    "category": "economics",
+    "subcategories": [
+      "macroeconomics"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHLLHL",
+    "ipa": "/kukura kwehupfumi/"
+  },
+  {
+    "id": "prof_eco_003",
+    "shona": "mitengo",
+    "english": "prices",
+    "category": "economics",
+    "subcategories": [
+      "commerce"
+    ],
+    "level": "A2",
+    "difficulty": 3,
+    "frequency": "high",
+    "register": "neutral",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/miteŋgo/"
+  },
+  {
+    "id": "prof_eco_004",
+    "shona": "kukwira kwemitengo",
+    "english": "inflation",
+    "category": "economics",
+    "subcategories": [
+      "macroeconomics"
+    ],
+    "level": "B2",
+    "difficulty": 7,
+    "frequency": "high",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHLLHL",
+    "ipa": "/kukwira kwemiteŋgo/",
+    "cultural_notes": "Important concept in Zimbabwe's economic history"
+  },
+  {
+    "id": "prof_trade_001",
+    "shona": "kutengeserana",
+    "english": "trade/commerce",
+    "category": "economics",
+    "subcategories": [
+      "trade"
+    ],
+    "level": "B1",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LLHL",
+    "ipa": "/kuteŋgeserana/"
+  },
+  {
+    "id": "prof_trade_002",
+    "shona": "kunze kwenyika",
+    "english": "export/foreign",
+    "category": "economics",
+    "subcategories": [
+      "trade",
+      "international"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "HLLHL",
+    "ipa": "/kunze kweɲika/"
+  },
+  {
+    "id": "prof_trade_003",
+    "shona": "kupinza",
+    "english": "to import",
+    "category": "economics",
+    "subcategories": [
+      "trade",
+      "international"
+    ],
+    "level": "B2",
+    "difficulty": 6,
+    "frequency": "medium",
+    "register": "formal",
+    "dialect": "standard",
+    "tones": "LHL",
+    "ipa": "/kupinza/"
+  }
+]

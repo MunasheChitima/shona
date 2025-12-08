@@ -1,56 +1,18 @@
 {
-  "version": "1.0.0",
-  "lastUpdated": "2025-07-06T17:53:27.779Z",
+  "version": "5.0.0",
+  "lastUpdated": "2025-12-08T15:39:21.209Z",
   "contentStats": {
-    "lessons": 12,
-    "exercises": 60,
-    "vocabulary": 49,
+    "lessons": 95,
+    "vocabulary": 365,
     "pronunciationExercises": 15,
-    "quests": 3,
-    "flashcards": 49
+    "quests": 12,
+    "flashcards": 365,
+    "exercises": 16,
+    "culturalNotes": 9
   },
-  "files": [
-    {
-      "name": "lessons.json",
-      "type": "lessons",
-      "count": 12,
-      "description": "Complete lesson database with exercises and cultural context"
-    },
-    {
-      "name": "vocabulary.json",
-      "type": "vocabulary",
-      "count": 49,
-      "description": "Comprehensive vocabulary with pronunciation and cultural notes"
-    },
-    {
-      "name": "pronunciation-exercises.json",
-      "type": "pronunciation",
-      "count": 15,
-      "description": "Pronunciation exercises with phonetic breakdown"
-    },
-    {
-      "name": "quests.json",
-      "type": "quests",
-      "count": 3,
-      "description": "Learning quests with narrative and gamification"
-    },
-    {
-      "name": "flashcards.json",
-      "type": "flashcards",
-      "count": 49,
-      "description": "Spaced repetition flashcards with SRS support"
-    }
-  ],
-  "features": [
-    "Comprehensive lesson database",
-    "Advanced vocabulary with IPA and tone patterns",
-    "Pronunciation exercises with phonetic breakdown",
-    "Cultural context and notes",
-    "Gamified learning quests",
-    "Spaced repetition system",
-    "Multi-level difficulty progression",
-    "Voice and conversation exercises",
-    "Professional and contemporary vocabulary",
-    "Dialectal awareness and variations"
-  ]
+  "migration": {
+    "source": "shona-learn folder - COMPLETE extraction with proper parsing",
+    "date": "2025-12-08",
+    "notes": "Final comprehensive extraction: 95 lessons and 365 vocabulary items using brace-depth tracking and multiple extraction methods"
+  }
 }
