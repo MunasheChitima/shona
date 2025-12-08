@@ -1,212 +1,461 @@
 [
   {
     "id": "pronunciation_mangwanani",
-    "word": "mangwanani",
-    "phonetic": "m-a-ng-w-a-n-a-n-i",
-    "syllables": "ma-ngwa-na-ni",
-    "tonePattern": "HL",
-    "audioFile": "mangwanani.wav",
-    "complexity": 9,
-    "specialSounds": "[{\"token\":\"ng\",\"type\":\"prenasalized\",\"ipa\":\"ŋɡ\"}]",
-    "pronunciationTips": [],
-    "learningLevel": "Intermediate",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: mangwanani",
+    "translation": "good morning",
     "category": "Greetings",
-    "translation": "good morning"
+    "voiceContent": {
+      "words": [{
+        "shona": "mangwanani",
+        "english": "good morning",
+        "phonetic": "m-a-ng-w-a-n-a-n-i",
+        "syllables": "ma-ngwa-na-ni",
+        "tonePattern": "HL",
+        "audioFile": "mangwanani.wav",
+        "complexity": 9,
+        "specialSounds": [{"token": "ng", "type": "prenasalized", "ipa": "ŋɡ"}],
+        "pronunciationTips": [],
+        "learningLevel": "Intermediate"
+      }]
+    },
+    "difficulty": "intermediate",
+    "points": 18,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "greetings",
+      "prenasalized"
+    ]
   },
   {
     "id": "pronunciation_masikati",
-    "word": "masikati",
-    "phonetic": "m-a-s-i-k-a-t-i",
-    "syllables": "ma-si-ka-ti",
-    "tonePattern": "HL",
-    "audioFile": "masikati.wav",
-    "complexity": 8,
-    "specialSounds": "[]",
-    "pronunciationTips": [],
-    "learningLevel": "Intermediate",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: masikati",
+    "translation": "good afternoon",
     "category": "Greetings",
-    "translation": "good afternoon"
+    "voiceContent": {
+      "words": [{
+        "shona": "masikati",
+        "english": "good afternoon",
+        "phonetic": "m-a-s-i-k-a-t-i",
+        "syllables": "ma-si-ka-ti",
+        "tonePattern": "HL",
+        "audioFile": "masikati.wav",
+        "complexity": 8,
+        "specialSounds": [],
+        "pronunciationTips": [],
+        "learningLevel": "Intermediate"
+      }]
+    },
+    "difficulty": "intermediate",
+    "points": 16,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "greetings"
+    ]
   },
   {
     "id": "pronunciation_manheru",
-    "word": "manheru",
-    "phonetic": "m-a-n-h-e-r-u",
-    "syllables": "ma-nhe-ru",
-    "tonePattern": "HL",
-    "audioFile": "manheru.wav",
-    "complexity": 7,
-    "specialSounds": "[]",
-    "pronunciationTips": [],
-    "learningLevel": "Intermediate",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: manheru",
+    "translation": "good evening",
     "category": "Greetings",
-    "translation": "good evening"
+    "voiceContent": {
+      "words": [{
+        "shona": "manheru",
+        "english": "good evening",
+        "phonetic": "m-a-n-h-e-r-u",
+        "syllables": "ma-nhe-ru",
+        "tonePattern": "HL",
+        "audioFile": "manheru.wav",
+        "complexity": 7,
+        "specialSounds": [],
+        "pronunciationTips": [],
+        "learningLevel": "Intermediate"
+      }]
+    },
+    "difficulty": "intermediate",
+    "points": 14,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "greetings"
+    ]
   },
   {
     "id": "pronunciation_bhazi",
-    "word": "bhazi",
-    "phonetic": "bh-a-z-i",
-    "syllables": "bha-zi",
-    "tonePattern": "HL",
-    "audioFile": "bhazi.wav",
-    "complexity": 4,
-    "specialSounds": "[{\"token\":\"bh\",\"type\":\"breathy\",\"ipa\":\"bʱ\"}]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: bhazi",
+    "translation": "bus",
     "category": "Transport",
-    "translation": "bus"
+    "voiceContent": {
+      "words": [{
+        "shona": "bhazi",
+        "english": "bus",
+        "phonetic": "bh-a-z-i",
+        "syllables": "bha-zi",
+        "tonePattern": "HL",
+        "audioFile": "bhazi.wav",
+        "complexity": 4,
+        "specialSounds": [{"token": "bh", "type": "breathy", "ipa": "bʱ"}],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 8,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "transport",
+      "breathy"
+    ]
   },
   {
     "id": "pronunciation_svika",
-    "word": "svika",
-    "phonetic": "sv-i-k-a",
-    "syllables": "svi-ka",
-    "tonePattern": "HL",
-    "audioFile": "svika.wav",
-    "complexity": 4,
-    "specialSounds": "[{\"token\":\"sv\",\"type\":\"whistled\",\"ipa\":\"swhistling\"}]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: svika",
+    "translation": "arrive",
     "category": "Movement",
-    "translation": "arrive"
+    "voiceContent": {
+      "words": [{
+        "shona": "svika",
+        "english": "arrive",
+        "phonetic": "sv-i-k-a",
+        "syllables": "svi-ka",
+        "tonePattern": "HL",
+        "audioFile": "svika.wav",
+        "complexity": 4,
+        "specialSounds": [{"token": "sv", "type": "whistled", "ipa": "swhistling"}],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 8,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "movement",
+      "whistled"
+    ]
   },
   {
     "id": "pronunciation_zvino",
-    "word": "zvino",
-    "phonetic": "zv-i-n-o",
-    "syllables": "zvi-no",
-    "tonePattern": "HL",
-    "audioFile": "zvino.wav",
-    "complexity": 4,
-    "specialSounds": "[{\"token\":\"zv\",\"type\":\"whistled\",\"ipa\":\"zwhistling\"}]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: zvino",
+    "translation": "now",
     "category": "Time",
-    "translation": "now"
+    "voiceContent": {
+      "words": [{
+        "shona": "zvino",
+        "english": "now",
+        "phonetic": "zv-i-n-o",
+        "syllables": "zvi-no",
+        "tonePattern": "HL",
+        "audioFile": "zvino.wav",
+        "complexity": 4,
+        "specialSounds": [{"token": "zv", "type": "whistled", "ipa": "zwhistling"}],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 8,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "time",
+      "whistled"
+    ]
   },
   {
     "id": "pronunciation_tsvaira",
-    "word": "tsvaira",
-    "phonetic": "tsv-a-i-r-a",
-    "syllables": "tsva-i-ra",
-    "tonePattern": "HL",
-    "audioFile": "tsvaira.wav",
-    "complexity": 5,
-    "specialSounds": "[]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: tsvaira",
+    "translation": "drive",
     "category": "Action",
-    "translation": "drive"
+    "voiceContent": {
+      "words": [{
+        "shona": "tsvaira",
+        "english": "drive",
+        "phonetic": "tsv-a-i-r-a",
+        "syllables": "tsva-i-ra",
+        "tonePattern": "HL",
+        "audioFile": "tsvaira.wav",
+        "complexity": 5,
+        "specialSounds": [],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 10,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "action"
+    ]
   },
   {
     "id": "pronunciation_kuudza",
-    "word": "kuudza",
-    "phonetic": "k-u-u-dz-a",
-    "syllables": "ku-u-dza",
-    "tonePattern": "HL",
-    "audioFile": "kuudza.wav",
-    "complexity": 5,
-    "specialSounds": "[]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: kuudza",
+    "translation": "to tell",
     "category": "Communication",
-    "translation": "to tell"
+    "voiceContent": {
+      "words": [{
+        "shona": "kuudza",
+        "english": "to tell",
+        "phonetic": "k-u-u-dz-a",
+        "syllables": "ku-u-dza",
+        "tonePattern": "HL",
+        "audioFile": "kuudza.wav",
+        "complexity": 5,
+        "specialSounds": [],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 10,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "communication"
+    ]
   },
   {
     "id": "pronunciation_mbira",
-    "word": "mbira",
-    "phonetic": "mb-i-r-a",
-    "syllables": "mbi-ra",
-    "tonePattern": "HL",
-    "audioFile": "mbira.wav",
-    "complexity": 4,
-    "specialSounds": "[{\"token\":\"mb\",\"type\":\"prenasalized\",\"ipa\":\"mb\"}]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: mbira",
+    "translation": "thumb piano",
     "category": "Music",
-    "translation": "thumb piano"
+    "voiceContent": {
+      "words": [{
+        "shona": "mbira",
+        "english": "thumb piano",
+        "phonetic": "mb-i-r-a",
+        "syllables": "mbi-ra",
+        "tonePattern": "HL",
+        "audioFile": "mbira.wav",
+        "complexity": 4,
+        "specialSounds": [{"token": "mb", "type": "prenasalized", "ipa": "mb"}],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 8,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "music",
+      "prenasalized"
+    ]
   },
   {
     "id": "pronunciation_ndimi",
-    "word": "ndimi",
-    "phonetic": "nd-i-m-i",
-    "syllables": "ndi-mi",
-    "tonePattern": "HL",
-    "audioFile": "ndimi.wav",
-    "complexity": 4,
-    "specialSounds": "[{\"token\":\"nd\",\"type\":\"prenasalized\",\"ipa\":\"nd\"}]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: ndimi",
+    "translation": "you (plural)",
     "category": "Pronouns",
-    "translation": "you (plural)"
+    "voiceContent": {
+      "words": [{
+        "shona": "ndimi",
+        "english": "you (plural)",
+        "phonetic": "nd-i-m-i",
+        "syllables": "ndi-mi",
+        "tonePattern": "HL",
+        "audioFile": "ndimi.wav",
+        "complexity": 4,
+        "specialSounds": [{"token": "nd", "type": "prenasalized", "ipa": "nd"}],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 8,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "pronouns",
+      "prenasalized"
+    ]
   },
   {
     "id": "pronunciation_ngoma",
-    "word": "ngoma",
-    "phonetic": "ng-o-m-a",
-    "syllables": "ngo-ma",
-    "tonePattern": "HL",
-    "audioFile": "ngoma.wav",
-    "complexity": 4,
-    "specialSounds": "[{\"token\":\"ng\",\"type\":\"prenasalized\",\"ipa\":\"ŋɡ\"}]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: ngoma",
+    "translation": "drum",
     "category": "Music",
-    "translation": "drum"
+    "voiceContent": {
+      "words": [{
+        "shona": "ngoma",
+        "english": "drum",
+        "phonetic": "ng-o-m-a",
+        "syllables": "ngo-ma",
+        "tonePattern": "HL",
+        "audioFile": "ngoma.wav",
+        "complexity": 4,
+        "specialSounds": [{"token": "ng", "type": "prenasalized", "ipa": "ŋɡ"}],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 8,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "music",
+      "prenasalized"
+    ]
   },
   {
     "id": "pronunciation_ndatenda",
-    "word": "ndatenda",
-    "phonetic": "nd-a-t-e-nd-a",
-    "syllables": "nda-te-nda",
-    "tonePattern": "HL",
-    "audioFile": "ndatenda.wav",
-    "complexity": 6,
-    "specialSounds": "[{\"token\":\"nd\",\"type\":\"prenasalized\",\"ipa\":\"nd\"},{\"token\":\"nd\",\"type\":\"prenasalized\",\"ipa\":\"nd\"}]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: ndatenda",
+    "translation": "thank you",
     "category": "Courtesy",
-    "translation": "thank you"
+    "voiceContent": {
+      "words": [{
+        "shona": "ndatenda",
+        "english": "thank you",
+        "phonetic": "nd-a-t-e-nd-a",
+        "syllables": "nda-te-nda",
+        "tonePattern": "HL",
+        "audioFile": "ndatenda.wav",
+        "complexity": 6,
+        "specialSounds": [{"token": "nd", "type": "prenasalized", "ipa": "nd"}, {"token": "nd", "type": "prenasalized", "ipa": "nd"}],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 12,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "courtesy",
+      "prenasalized"
+    ]
   },
   {
     "id": "pronunciation_zvakanaka",
-    "word": "zvakanaka",
-    "phonetic": "zv-a-k-a-n-a-k-a",
-    "syllables": "zva-ka-na-ka",
-    "tonePattern": "HL",
-    "audioFile": "zvakanaka.wav",
-    "complexity": 8,
-    "specialSounds": "[{\"token\":\"zv\",\"type\":\"whistled\",\"ipa\":\"zwhistling\"}]",
-    "pronunciationTips": [],
-    "learningLevel": "Intermediate",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: zvakanaka",
+    "translation": "fine/good",
     "category": "Responses",
-    "translation": "fine/good"
+    "voiceContent": {
+      "words": [{
+        "shona": "zvakanaka",
+        "english": "fine/good",
+        "phonetic": "zv-a-k-a-n-a-k-a",
+        "syllables": "zva-ka-na-ka",
+        "tonePattern": "HL",
+        "audioFile": "zvakanaka.wav",
+        "complexity": 8,
+        "specialSounds": [{"token": "zv", "type": "whistled", "ipa": "zwhistling"}],
+        "pronunciationTips": [],
+        "learningLevel": "Intermediate"
+      }]
+    },
+    "difficulty": "intermediate",
+    "points": 16,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "responses",
+      "whistled"
+    ]
   },
   {
     "id": "pronunciation_pamusoroi",
-    "word": "pamusoroi",
-    "phonetic": "p-a-m-u-s-o-r-o-i",
-    "syllables": "pa-mu-so-ro-i",
-    "tonePattern": "HL",
-    "audioFile": "pamusoroi.wav",
-    "complexity": 9,
-    "specialSounds": "[]",
-    "pronunciationTips": [],
-    "learningLevel": "Intermediate",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: pamusoroi",
+    "translation": "excuse me",
     "category": "Courtesy",
-    "translation": "excuse me"
+    "voiceContent": {
+      "words": [{
+        "shona": "pamusoroi",
+        "english": "excuse me",
+        "phonetic": "p-a-m-u-s-o-r-o-i",
+        "syllables": "pa-mu-so-ro-i",
+        "tonePattern": "HL",
+        "audioFile": "pamusoroi.wav",
+        "complexity": 9,
+        "specialSounds": [],
+        "pronunciationTips": [],
+        "learningLevel": "Intermediate"
+      }]
+    },
+    "difficulty": "intermediate",
+    "points": 18,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "courtesy"
+    ]
   },
   {
     "id": "pronunciation_sara",
-    "word": "sara",
-    "phonetic": "s-a-r-a",
-    "syllables": "sa-ra",
-    "tonePattern": "HL",
-    "audioFile": "sara.wav",
-    "complexity": 4,
-    "specialSounds": "[]",
-    "pronunciationTips": [],
-    "learningLevel": "Beginner",
+    "type": "voice",
+    "voiceType": "pronunciation",
+    "question": "Practice pronouncing the Shona word: sara",
+    "translation": "remain",
     "category": "Action",
-    "translation": "remain"
+    "voiceContent": {
+      "words": [{
+        "shona": "sara",
+        "english": "remain",
+        "phonetic": "s-a-r-a",
+        "syllables": "sa-ra",
+        "tonePattern": "HL",
+        "audioFile": "sara.wav",
+        "complexity": 4,
+        "specialSounds": [],
+        "pronunciationTips": [],
+        "learningLevel": "Beginner"
+      }]
+    },
+    "difficulty": "beginner",
+    "points": 8,
+    "tags": [
+      "pronunciation",
+      "shona",
+      "mudzidzisi-ai",
+      "action"
+    ]
   }
 ]
