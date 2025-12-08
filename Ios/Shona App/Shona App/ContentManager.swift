@@ -109,6 +109,10 @@ struct FlashcardJSON: Decodable {
     let usageExample: String?
     let culturalNote: String?
     let audioFile: String?
+    let pronunciation: String?
+    let phonetic: String?
+    let tonePattern: String?
+    let context: String?
 }
 
 // MARK: - ContentManager
@@ -382,12 +386,22 @@ class ContentManager: ObservableObject {
                 lastReviewed: nil,
                 nextReviewDate: Date(),
                 repetitionCount: 0,
-                easeFactor: 2.5
+                easeFactor: 2.5,
+                pronunciation: cardData.pronunciation,
+                phonetic: cardData.phonetic,
+                tonePattern: cardData.tonePattern,
+                context: cardData.context
             )
+            
+            // Create SRSProgress for the flashcard
+            let srsProgress = SRSProgress(flashcardId: flashcard.id, userId: "default_user")
+            flashcard.srsProgress = srsProgress
+            
             modelContext.insert(flashcard)
+            modelContext.insert(srsProgress)
         }
         
-        print("✅ Loaded \(flashcardsJSON.count) flashcards")
+        print("✅ Loaded \(flashcardsJSON.count) flashcards with SRS progress tracking")
     }
     
     private func createFlashcardsFromVocabulary() async throws {
