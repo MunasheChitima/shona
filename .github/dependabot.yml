@@ -1,0 +1,37 @@
+version: 2
+updates:
+  # Web dependencies
+  - package-ecosystem: "npm"
+    directory: "/shona-learn"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "your-team"
+    labels:
+      - "dependencies"
+      - "web"
+      
+  # Android dependencies
+  - package-ecosystem: "gradle"
+    directory: "/android"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "your-team"
+    labels:
+      - "dependencies"
+      - "android"
+      
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "your-team"
+    labels:
+      - "dependencies"
+      - "ci-cd"

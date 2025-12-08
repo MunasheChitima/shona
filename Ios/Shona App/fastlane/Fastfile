@@ -1,0 +1,133 @@
+# Fastfile for Shona Learn iOS App
+# Install fastlane: gem install fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  
+  desc "Build and run tests"
+  lane :test do
+    run_tests(
+      scheme: "Shona App",
+      devices: ["iPhone 15 Pro"]
+    )
+  end
+
+  desc "Build development IPA"
+  lane :development do
+    build_app(
+      scheme: "Shona App",
+      configuration: "Debug",
+      export_method: "development",
+      output_directory: "./build/development",
+      output_name: "ShonaApp-dev.ipa"
+    )
+  end
+
+  desc "Build AdHoc IPA for testing"
+  lane :adhoc do
+    increment_build_number(xcodeproj: "Shona App.xcodeproj")
+    
+    build_app(
+      scheme: "Shona App",
+      configuration: "Release",
+      export_method: "ad-hoc",
+      export_options: {
+        compileBitcode: false,
+        uploadSymbols: true
+      },
+      output_directory: "./build/adhoc",
+      output_name: "ShonaApp-adhoc.ipa"
+    )
+  end
+
+  desc "Build and upload to TestFlight"
+  lane :beta do
+    # Increment build number
+    increment_build_number(xcodeproj: "Shona App.xcodeproj")
+    
+    # Build app
+    build_app(
+      scheme: "Shona App",
+      configuration: "Release",
+      export_method: "app-store",
+      export_options: {
+        provisioningProfiles: {
+          "com.shonalearn.app" => "YOUR_PROVISIONING_PROFILE"
+        }
+      }
+    )
+    
+    # Upload to TestFlight
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true
+    )
+    
+    # Commit version bump
+    commit_version_bump(
+      message: "Version bump for TestFlight build",
+      xcodeproj: "Shona App.xcodeproj"
+    )
+  end
+
+  desc "Build and upload to App Store"
+  lane :release do
+    # Ensure git is clean
+    ensure_git_status_clean
+    
+    # Increment version
+    increment_version_number(
+      bump_type: "patch",
+      xcodeproj: "Shona App.xcodeproj"
+    )
+    increment_build_number(xcodeproj: "Shona App.xcodeproj")
+    
+    # Build app
+    build_app(
+      scheme: "Shona App",
+      configuration: "Release",
+      export_method: "app-store"
+    )
+    
+    # Upload to App Store
+    upload_to_app_store(
+      submit_for_review: false,
+      automatic_release: false,
+      skip_screenshots: true,
+      skip_metadata: true
+    )
+    
+    # Commit and tag
+    commit_version_bump(
+      message: "Release version bump",
+      xcodeproj: "Shona App.xcodeproj"
+    )
+    add_git_tag(
+      tag: "ios-v#{get_version_number(xcodeproj: 'Shona App.xcodeproj')}"
+    )
+    push_to_git_remote
+  end
+
+  desc "Take screenshots for App Store"
+  lane :screenshots do
+    capture_screenshots(
+      scheme: "Shona App"
+    )
+  end
+
+  desc "Sync certificates and provisioning profiles"
+  lane :sync_certificates do
+    match(type: "development")
+    match(type: "adhoc")
+    match(type: "appstore")
+  end
+
+  # Error handling
+  error do |lane, exception|
+    slack(
+      message: "iOS build failed in lane: #{lane}",
+      success: false
+    ) if ENV['SLACK_WEBHOOK_URL']
+  end
+
+end

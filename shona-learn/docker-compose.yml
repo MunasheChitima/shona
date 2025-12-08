@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - NEXTAUTH_SECRET=${NEXTAUTH_SECRET}
+      - NEXTAUTH_URL=${NEXTAUTH_URL}
+      - GOOGLE_AI_API_KEY=${GOOGLE_AI_API_KEY}
+    depends_on:
+      - db
+    restart: unless-stopped
+    networks:
+      - shona-network
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=shonalearn
+      - POSTGRES_USER=${DB_USER:-shonalearn}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - shona-network
+
+volumes:
+  postgres_data:
+
+networks:
+  shona-network:
+    driver: bridge
