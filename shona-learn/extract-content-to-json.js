@@ -207,18 +207,38 @@ lessonFiles.forEach(file => {
   }
 });
 
-// Remove duplicates
+// Remove duplicates - prioritize by orderIndex, then by having more complete data
 const lessonMap = new Map();
 allLessons.forEach(lesson => {
   const key = lesson.orderIndex || lesson.id;
-  if (!lessonMap.has(key) || !lessonMap.get(key).title) {
+  const existing = lessonMap.get(key);
+  
+  if (!existing) {
     lessonMap.set(key, lesson);
+  } else {
+    // If duplicate, keep the one with more complete data (has description, exercises, etc.)
+    const existingScore = (existing.description ? 1 : 0) + (existing.exercises?.length || 0);
+    const newScore = (lesson.description ? 1 : 0) + (lesson.exercises?.length || 0);
+    
+    if (newScore > existingScore) {
+      console.log(`  Replacing duplicate lesson ${key}: "${existing.title}" -> "${lesson.title}"`);
+      lessonMap.set(key, lesson);
+    } else {
+      console.log(`  Skipping duplicate lesson ${key}: "${lesson.title}" (keeping "${existing.title}")`);
+    }
   }
 });
 allLessons = Array.from(lessonMap.values()).sort((a, b) => 
   (a.orderIndex || 999) - (b.orderIndex || 999)
 );
-console.log(`\n   Total: ${allLessons.length} unique lessons\n`);
+console.log(`\n   Total: ${allLessons.length} unique lessons (removed ${lessonFiles.reduce((sum, f) => {
+  const filePath = path.join(contentDir, f);
+  if (fs.existsSync(filePath)) {
+    const lessons = extractLessonsFromFile(filePath);
+    return sum + lessons.length;
+  }
+  return sum;
+}, 0) - allLessons.length} duplicates)\n`);
 
 // Save to JSON files
 console.log('3. Saving to JSON files...\n');
@@ -226,7 +246,7 @@ const vocabPath = path.join(contentDir, 'vocabulary.json');
 fs.writeFileSync(vocabPath, JSON.stringify(allVocabulary, null, 2));
 console.log(`   ✓ vocabulary.json: ${allVocabulary.length} items`);
 
-// Merge with existing lessons.json
+// Merge with existing lessons.json, but prioritize new extracted lessons
 const existingLessonsPath = path.join(contentDir, 'lessons.json');
 let existingLessons = { lessons: [] };
 if (fs.existsSync(existingLessonsPath)) {
@@ -234,12 +254,31 @@ if (fs.existsSync(existingLessonsPath)) {
   existingLessons = existing.lessons ? existing : { lessons: existing };
 }
 
+// Use orderIndex as primary key for deduplication
 const lessonMapFinal = new Map();
+// First add existing lessons
 existingLessons.lessons.forEach(lesson => {
-  if (lesson.id) lessonMapFinal.set(lesson.id, lesson);
+  const key = lesson.orderIndex || lesson.id;
+  if (key && !lessonMapFinal.has(key)) {
+    lessonMapFinal.set(key, lesson);
+  }
 });
+// Then add/override with newly extracted lessons (they take priority)
 allLessons.forEach(lesson => {
-  lessonMapFinal.set(lesson.id, lesson);
+  const key = lesson.orderIndex || lesson.id;
+  if (key) {
+    if (lessonMapFinal.has(key)) {
+      // Keep the one with more complete data
+      const existing = lessonMapFinal.get(key);
+      const existingScore = (existing.description ? 1 : 0) + (existing.exercises?.length || 0) + (existing.learningObjectives ? 1 : 0);
+      const newScore = (lesson.description ? 1 : 0) + (lesson.exercises?.length || 0) + (lesson.learningObjectives ? 1 : 0);
+      if (newScore >= existingScore) {
+        lessonMapFinal.set(key, lesson);
+      }
+    } else {
+      lessonMapFinal.set(key, lesson);
+    }
+  }
 });
 
 const mergedLessons = { 
@@ -247,8 +286,23 @@ const mergedLessons = {
     (a.orderIndex || 999) - (b.orderIndex || 999)
   ) 
 };
-fs.writeFileSync(existingLessonsPath, JSON.stringify(mergedLessons, null, 2));
-console.log(`   ✓ lessons.json: ${mergedLessons.lessons.length} lessons\n`);
+
+// Final deduplication check - remove any remaining duplicates by orderIndex
+const finalLessons = [];
+const seenOrderIndexes = new Set();
+mergedLessons.lessons.forEach(lesson => {
+  const orderIndex = lesson.orderIndex;
+  if (!seenOrderIndexes.has(orderIndex)) {
+    seenOrderIndexes.add(orderIndex);
+    finalLessons.push(lesson);
+  } else {
+    console.log(`   ⚠️  Removing duplicate orderIndex ${orderIndex}: ${lesson.title}`);
+  }
+});
+
+const finalMerged = { lessons: finalLessons };
+fs.writeFileSync(existingLessonsPath, JSON.stringify(finalMerged, null, 2));
+console.log(`   ✓ lessons.json: ${finalLessons.length} unique lessons (removed duplicates)\n`);
 
 console.log('=== EXTRACTION COMPLETE ===');
 console.log(`Lessons: ${mergedLessons.lessons.length}`);

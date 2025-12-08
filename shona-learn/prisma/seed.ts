@@ -34,6 +34,19 @@ async function main() {
     const lessonsFile = JSON.parse(fs.readFileSync(lessonsPath, 'utf8'))
     lessonsData = lessonsFile.lessons || lessonsFile
     console.log(`Loaded ${lessonsData.length} lessons from JSON file`)
+    
+    // Remove duplicates based on orderIndex (keep first occurrence)
+    const seenOrderIndexes = new Set()
+    lessonsData = lessonsData.filter((lesson: any) => {
+      const orderIndex = lesson.orderIndex
+      if (seenOrderIndexes.has(orderIndex)) {
+        console.log(`Skipping duplicate lesson with orderIndex ${orderIndex}: ${lesson.title}`)
+        return false
+      }
+      seenOrderIndexes.add(orderIndex)
+      return true
+    })
+    console.log(`After deduplication: ${lessonsData.length} unique lessons`)
   } else {
     console.log('Lessons JSON file not found, using default lessons')
     // Fallback to default lessons if JSON doesn't exist
@@ -60,6 +73,16 @@ async function main() {
 
   for (const lessonData of lessonsData) {
     const { exercises, learningObjectives, discoveryElements, ...lesson } = lessonData
+    
+    // Check if lesson with same orderIndex already exists (extra safety check)
+    const existing = await prisma.lesson.findFirst({
+      where: { orderIndex: lesson.orderIndex || 999 }
+    })
+    
+    if (existing) {
+      console.log(`Skipping lesson with orderIndex ${lesson.orderIndex} - already exists: ${existing.title}`)
+      continue
+    }
     
     const createdLesson = await prisma.lesson.create({
       data: {
