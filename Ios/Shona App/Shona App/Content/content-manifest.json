@@ -1,85 +1,18 @@
 {
-  "version": "2.0.0",
-  "lastUpdated": "2025-01-27T00:00:00.000Z",
+  "version": "3.1.0",
+  "lastUpdated": "2025-12-08T15:15:49.947Z",
   "contentStats": {
-    "lessons": 8,
-    "exercises": 15,
-    "vocabulary": 49,
+    "lessons": 65,
+    "vocabulary": 365,
     "pronunciationExercises": 15,
     "quests": 12,
-    "flashcards": 49,
-    "culturalNotes": 9,
-    "lessonProgression": 1
+    "flashcards": 365,
+    "exercises": 15,
+    "culturalNotes": 9
   },
-  "files": [
-    {
-      "name": "lessons.json",
-      "type": "lessons",
-      "count": 8,
-      "description": "Comprehensive lesson database with learning objectives, discovery elements, cultural notes, and vocabulary"
-    },
-    {
-      "name": "vocabulary.json",
-      "type": "vocabulary",
-      "count": 49,
-      "description": "Comprehensive vocabulary with pronunciation and cultural notes"
-    },
-    {
-      "name": "pronunciation-exercises.json",
-      "type": "pronunciation",
-      "count": 15,
-      "description": "Pronunciation exercises with detailed phonetic breakdown, tone patterns, and special sounds"
-    },
-    {
-      "name": "quests.json",
-      "type": "quests",
-      "count": 12,
-      "description": "Rich learning quests with narrative, activities, and gamification elements"
-    },
-    {
-      "name": "flashcards.json",
-      "type": "flashcards",
-      "count": 49,
-      "description": "Spaced repetition flashcards with SRS support"
-    },
-    {
-      "name": "exercises.json",
-      "type": "exercises",
-      "count": 15,
-      "description": "Interactive exercises with intrinsic feedback and cultural context"
-    },
-    {
-      "name": "cultural-notes.json",
-      "type": "cultural",
-      "count": 9,
-      "description": "Comprehensive cultural notes covering greetings, family, markets, values, and more"
-    },
-    {
-      "name": "lesson-progression.json",
-      "type": "progression",
-      "count": 1,
-      "description": "Structured lesson progression paths by difficulty level and quest relationships"
-    }
-  ],
-  "features": [
-    "Comprehensive lesson database with rich metadata",
-    "Advanced vocabulary with IPA and tone patterns",
-    "Pronunciation exercises with detailed phonetic breakdown",
-    "Cultural context and comprehensive notes",
-    "Gamified learning quests with activities",
-    "Spaced repetition system",
-    "Multi-level difficulty progression",
-    "Voice and conversation exercises",
-    "Interactive exercises with intrinsic feedback",
-    "Story-based quest activities",
-    "Cultural immersion content",
-    "Lesson progression tracking",
-    "Professional and contemporary vocabulary",
-    "Dialectal awareness and variations"
-  ],
   "migration": {
-    "source": "shona-learn folder",
-    "date": "2025-01-27",
-    "notes": "Merged comprehensive content from shona-learn including enhanced lessons, quests, exercises, cultural notes, and pronunciation exercises"
+    "source": "shona-learn folder - FINAL comprehensive extraction",
+    "date": "2025-12-08",
+    "notes": "Complete migration of all content from shona-learn folder including 65 lessons and 365 vocabulary items"
   }
 }

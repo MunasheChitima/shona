@@ -1,516 +1,719 @@
 {
   "lessons": [
     {
-      "id": "lesson-1",
-      "title": "Mhoro, Shamwari! - Hello, Friend!",
-      "description": "Learn basic greetings and how to introduce yourself in Shona culture",
-      "questId": "quest-1",
-      "category": "Cultural Immersion",
+      "id": "lesson-seed-1",
+      "title": "Greetings & Basics",
+      "description": "Learn essential Shona greetings",
+      "category": "Basics",
       "orderIndex": 1,
       "level": "beginner",
       "xpReward": 50,
-      "estimatedDuration": 15,
-      "learningObjectives": [
-        "Master basic Shona greetings (mhoro, mhoroi, hesi)",
-        "Understand the cultural importance of respectful greetings",
-        "Practice proper pronunciation with audio feedback",
-        "Learn to introduce yourself with confidence"
-      ],
-      "discoveryElements": [
-        "Explore different times of day greetings",
-        "Discover the difference between formal and informal greetings",
-        "Learn about the plural of respect in Shona culture"
-      ],
-      "culturalNotes": [
-        "In Shona culture, greetings are sacred and show respect",
-        "Always use plural forms when addressing elders or strangers",
-        "The greeting 'mhoroi' shows more respect than 'mhoro'"
-      ],
-      "vocabulary": [
-        {
-          "shona": "mhoro",
-          "english": "hello (informal)",
-          "audioFile": "mhoro.mp3",
-          "usage": "Used with friends and people your age",
-          "example": "Mhoro, shamwari!"
-        },
-        {
-          "shona": "mhoroi",
-          "english": "hello (formal)",
-          "audioFile": "mhoroi.mp3",
-          "usage": "Used with elders, strangers, or to show respect",
-          "example": "Mhoroi, mai!"
-        },
-        {
-          "shona": "shamwari",
-          "english": "friend",
-          "audioFile": "shamwari.mp3",
-          "usage": "Common term for friend",
-          "example": "Shamwari yangu"
-        },
-        {
-          "shona": "makadii",
-          "english": "how are you (formal)",
-          "audioFile": "makadii.mp3",
-          "usage": "Respectful way to ask how someone is",
-          "example": "Makadii, baba?"
-        },
-        {
-          "shona": "wakadii",
-          "english": "how are you (informal)",
-          "audioFile": "wakadii.mp3",
-          "usage": "Casual way to ask how someone is",
-          "example": "Wakadii, shamwari?"
-        }
-      ]
+      "estimatedDuration": 20,
+      "exercises": []
     },
     {
-      "id": "lesson-2",
-      "title": "Ini Ndinonzi - My Name Is",
-      "description": "Learn to introduce yourself and exchange names in Shona",
-      "questId": "quest-1",
-      "category": "Cultural Immersion",
+      "id": "lesson-seed-2",
+      "title": "Numbers 1-10",
+      "description": "Count from 1 to 10 in Shona",
+      "category": "Numbers",
       "orderIndex": 2,
       "level": "beginner",
       "xpReward": 50,
-      "estimatedDuration": 15,
-      "learningObjectives": [
-        "Learn to state your name in Shona",
-        "Ask for someone's name politely",
-        "Practice numbers 1-10 for counting and market use",
-        "Understand basic sentence structure"
-      ],
-      "discoveryElements": [
-        "Explore how names carry meaning in Shona culture",
-        "Discover the importance of knowing someone's name",
-        "Learn about traditional Shona naming practices"
-      ],
-      "culturalNotes": [
-        "Names in Shona culture often have deep meaning",
-        "It's polite to ask for someone's name after greeting",
-        "Numbers are essential for market interactions"
-      ],
-      "vocabulary": [
-        {
-          "shona": "zita",
-          "english": "name",
-          "audioFile": "zita.mp3",
-          "usage": "Word for name",
-          "example": "Zita rangu ndinonzi John"
-        },
-        {
-          "shona": "ini ndinonzi",
-          "english": "my name is",
-          "audioFile": "ini_ndinonzi.mp3",
-          "usage": "How to introduce yourself",
-          "example": "Ini ndinonzi Maria"
-        },
-        {
-          "shona": "munonzi ani",
-          "english": "what is your name (formal)",
-          "audioFile": "munonzi_ani.mp3",
-          "usage": "Respectful way to ask someone's name",
-          "example": "Munonzi ani, mai?"
-        },
-        {
-          "shona": "motsi",
-          "english": "one",
-          "audioFile": "motsi.mp3",
-          "usage": "Number 1",
-          "example": "Motsi chete"
-        },
-        {
-          "shona": "piri",
-          "english": "two",
-          "audioFile": "piri.mp3",
-          "usage": "Number 2",
-          "example": "Mapiri"
-        }
-      ]
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-seed-3",
+      "title": "Family Members",
+      "description": "Learn words for family members",
+      "category": "Family",
+      "orderIndex": 3,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-seed-4",
+      "title": "Common Verbs",
+      "description": "Essential action words",
+      "category": "Verbs",
+      "orderIndex": 4,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-seed-5",
+      "title": "Colors",
+      "description": "Learn basic colors in Shona",
+      "category": "Vocabulary",
+      "orderIndex": 5,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-seed-6",
+      "title": "Pronunciation Basics",
+      "description": "Master Shona sounds",
+      "category": "Pronunciation",
+      "orderIndex": 6,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-seed-7",
+      "title": "Tone Practice",
+      "description": "Master Shona tones",
+      "category": "Pronunciation",
+      "orderIndex": 7,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-seed-8",
+      "title": "Prenasalized Consonants",
+      "description": "Learn mb, nd, ng sounds",
+      "category": "Pronunciation",
+      "orderIndex": 8,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-1",
+      "title": "Personal Information & Introductions",
+      "description": "Learn to introduce yourself and share personal information",
+      "category": "Communication",
+      "orderIndex": 9,
+      "level": "beginner",
+      "xpReward": 95,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-2",
+      "title": "Time & Days of the Week",
+      "description": "Learn to tell time and discuss days of the week",
+      "category": "Time",
+      "orderIndex": 10,
+      "level": "beginner",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "exercises": []
     },
     {
       "id": "lesson-3",
-      "title": "Mhuri Yangu - My Family",
-      "description": "Learn family vocabulary and understand Shona family structure",
-      "questId": "quest-2",
-      "category": "Family & Relationships",
-      "orderIndex": 3,
+      "title": "Food & Eating",
+      "description": "Essential vocabulary for food and eating",
+      "category": "Food",
+      "orderIndex": 11,
       "level": "beginner",
-      "xpReward": 60,
+      "xpReward": 105,
       "estimatedDuration": 20,
-      "learningObjectives": [
-        "Master family member vocabulary",
-        "Understand the Shona extended family system",
-        "Learn possessive pronouns (-angu, -ako)",
-        "Practice noun classes for people (1/2)"
-      ],
-      "discoveryElements": [
-        "Explore the importance of extended family in Shona culture",
-        "Discover different roles within the family structure",
-        "Learn about respect for elders"
-      ],
-      "culturalNotes": [
-        "Family is central to Shona identity and culture",
-        "Extended family members are considered as close as immediate family",
-        "Respect for elders is fundamental to Shona values"
-      ],
-      "vocabulary": [
-        {
-          "shona": "mhuri",
-          "english": "family",
-          "audioFile": "mhuri.mp3",
-          "usage": "Word for family",
-          "example": "Mhuri yangu"
-        },
-        {
-          "shona": "baba",
-          "english": "father",
-          "audioFile": "baba.mp3",
-          "usage": "Word for father, also used as respectful address",
-          "example": "Baba vangu"
-        },
-        {
-          "shona": "amai",
-          "english": "mother",
-          "audioFile": "amai.mp3",
-          "usage": "Word for mother, also used as respectful address",
-          "example": "Amai vangu"
-        },
-        {
-          "shona": "mwana",
-          "english": "child",
-          "audioFile": "mwana.mp3",
-          "usage": "Word for child",
-          "example": "Mwana wangu"
-        },
-        {
-          "shona": "mukoma",
-          "english": "older brother",
-          "audioFile": "mukoma.mp3",
-          "usage": "Respectful term for older brother",
-          "example": "Mukoma wangu"
-        }
-      ]
+      "exercises": []
     },
     {
       "id": "lesson-4",
-      "title": "Vanhu Vemhuri - Family People",
-      "description": "Expand family vocabulary and practice family conversations",
-      "questId": "quest-2",
-      "category": "Family & Relationships",
-      "orderIndex": 4,
+      "title": "Shopping & Market",
+      "description": "Learn to shop and negotiate at the market",
+      "category": "Commerce",
+      "orderIndex": 12,
       "level": "beginner",
-      "xpReward": 60,
+      "xpReward": 110,
       "estimatedDuration": 20,
-      "learningObjectives": [
-        "Learn extended family vocabulary",
-        "Practice describing family relationships",
-        "Master plural forms of family terms",
-        "Understand family hierarchy and respect"
-      ],
-      "discoveryElements": [
-        "Explore traditional family roles and responsibilities",
-        "Discover how family relationships shape social interactions",
-        "Learn about family gatherings and traditions"
-      ],
-      "culturalNotes": [
-        "Grandparents hold special wisdom and respect",
-        "Family decisions are often made collectively",
-        "Children are taught to respect all family members"
-      ],
-      "vocabulary": [
-        {
-          "shona": "sekuru",
-          "english": "grandfather",
-          "audioFile": "sekuru.mp3",
-          "usage": "Word for grandfather, also respectful address for elderly men",
-          "example": "Sekuru vangu"
-        },
-        {
-          "shona": "ambuya",
-          "english": "grandmother",
-          "audioFile": "ambuya.mp3",
-          "usage": "Word for grandmother, also respectful address for elderly women",
-          "example": "Ambuya vangu"
-        },
-        {
-          "shona": "hanzvadzi",
-          "english": "sister/brother",
-          "audioFile": "hanzvadzi.mp3",
-          "usage": "General term for siblings",
-          "example": "Hanzvadzi yangu"
-        },
-        {
-          "shona": "mwanakomana",
-          "english": "son",
-          "audioFile": "mwanakomana.mp3",
-          "usage": "Word for son",
-          "example": "Mwanakomana wangu"
-        },
-        {
-          "shona": "mwanasikana",
-          "english": "daughter",
-          "audioFile": "mwanasikana.mp3",
-          "usage": "Word for daughter",
-          "example": "Mwanasikana wangu"
-        }
-      ]
+      "exercises": []
     },
     {
       "id": "lesson-5",
-      "title": "Kumusika - At the Market",
-      "description": "Learn market vocabulary, colors, and basic negotiation phrases",
-      "questId": "quest-3",
-      "category": "Practical Communication",
-      "orderIndex": 5,
-      "level": "intermediate",
-      "xpReward": 75,
-      "estimatedDuration": 25,
-      "learningObjectives": [
-        "Master market vocabulary and transactions",
-        "Learn color words and descriptions",
-        "Practice numbers 1-10 in practical contexts",
-        "Understand basic negotiation phrases"
-      ],
-      "discoveryElements": [
-        "Explore traditional Shona markets and their importance",
-        "Discover local foods and traditional crafts",
-        "Learn about bargaining as a social interaction"
-      ],
-      "culturalNotes": [
-        "Markets are social centers, not just commercial spaces",
-        "Bargaining is expected and shows engagement",
-        "Respect for vendors and their goods is important"
-      ],
-      "vocabulary": [
-        {
-          "shona": "musika",
-          "english": "market",
-          "audioFile": "musika.mp3",
-          "usage": "Word for market",
-          "example": "Ndinoenda kumusika"
-        },
-        {
-          "shona": "mari",
-          "english": "money",
-          "audioFile": "mari.mp3",
-          "usage": "Word for money",
-          "example": "Ndine mari"
-        },
-        {
-          "shona": "imarii",
-          "english": "how much",
-          "audioFile": "imarii.mp3",
-          "usage": "Question to ask price",
-          "example": "Imarii ichi?"
-        },
-        {
-          "shona": "tsvuku",
-          "english": "red",
-          "audioFile": "tsvuku.mp3",
-          "usage": "Color red",
-          "example": "Chitsvuku"
-        },
-        {
-          "shona": "chena",
-          "english": "white",
-          "audioFile": "chena.mp3",
-          "usage": "Color white",
-          "example": "Chichena"
-        }
-      ]
+      "title": "Directions & Transportation",
+      "description": "Learn to ask for directions and discuss transportation",
+      "category": "Travel",
+      "orderIndex": 13,
+      "level": "beginner",
+      "xpReward": 115,
+      "estimatedDuration": 20,
+      "exercises": []
     },
     {
       "id": "lesson-6",
-      "title": "Mazwi Emutauro - Sounds of Language",
-      "description": "Master Shona pronunciation and tone patterns",
-      "questId": "quest-4",
-      "category": "Pronunciation Mastery",
-      "orderIndex": 6,
-      "level": "intermediate",
-      "xpReward": 80,
-      "estimatedDuration": 30,
-      "learningObjectives": [
-        "Master Shona vowel sounds (a, e, i, o, u)",
-        "Practice tone patterns and their meanings",
-        "Learn prenasalized consonants (mb, nd, ng, nz)",
-        "Develop authentic pronunciation habits"
-      ],
-      "discoveryElements": [
-        "Explore the musical nature of Shona language",
-        "Discover how tones change word meanings",
-        "Learn about regional pronunciation variations"
-      ],
-      "culturalNotes": [
-        "Shona is a tonal language with high and low tones",
-        "Proper pronunciation shows respect for the language",
-        "Each region may have slight pronunciation differences"
-      ],
-      "vocabulary": [
-        {
-          "shona": "mazwi",
-          "english": "words",
-          "audioFile": "mazwi.mp3",
-          "usage": "Word for words",
-          "example": "Mazwi makuru"
-        },
-        {
-          "shona": "mutauro",
-          "english": "language",
-          "audioFile": "mutauro.mp3",
-          "usage": "Word for language",
-          "example": "Mutauro wechiShona"
-        },
-        {
-          "shona": "mbira",
-          "english": "traditional instrument",
-          "audioFile": "mbira.mp3",
-          "usage": "Traditional Shona instrument",
-          "example": "Ndiri kuridza mbira"
-        },
-        {
-          "shona": "nzira",
-          "english": "path/way",
-          "audioFile": "nzira.mp3",
-          "usage": "Word for path or way",
-          "example": "Nzira yakanaka"
-        },
-        {
-          "shona": "ngoma",
-          "english": "drum",
-          "audioFile": "ngoma.mp3",
-          "usage": "Traditional drum",
-          "example": "Ngoma inorira"
-        }
-      ]
+      "title": "Weather & Seasons",
+      "description": "Discuss weather conditions and seasons",
+      "category": "Environment",
+      "orderIndex": 14,
+      "level": "beginner",
+      "xpReward": 120,
+      "estimatedDuration": 20,
+      "exercises": []
     },
     {
       "id": "lesson-7",
-      "title": "Manzwi Matsvuku - Clear Sounds",
-      "description": "Practice consonant clusters and whistled sounds",
-      "questId": "quest-4",
-      "category": "Pronunciation Mastery",
-      "orderIndex": 7,
-      "level": "intermediate",
-      "xpReward": 80,
-      "estimatedDuration": 30,
-      "learningObjectives": [
-        "Master whistled consonants (sv, zv, tsv, dzv)",
-        "Practice breathy consonants (bh, dh, vh)",
-        "Learn consonant clusters and combinations",
-        "Develop muscle memory for difficult sounds"
-      ],
-      "discoveryElements": [
-        "Explore the unique sound system of Shona",
-        "Discover how sounds connect to meaning",
-        "Learn about sound symbolism in Shona"
-      ],
-      "culturalNotes": [
-        "Whistled sounds are unique to Shona and related languages",
-        "Proper pronunciation helps with comprehension",
-        "Practice makes perfect with difficult sounds"
-      ],
-      "vocabulary": [
-        {
-          "shona": "svika",
-          "english": "arrive",
-          "audioFile": "svika.mp3",
-          "usage": "Verb meaning to arrive",
-          "example": "Ndasvika kumba"
-        },
-        {
-          "shona": "zvinonzi",
-          "english": "they are called",
-          "audioFile": "zvinonzi.mp3",
-          "usage": "Phrase meaning 'they are called'",
-          "example": "Zvinonzi mufudzi"
-        },
-        {
-          "shona": "tsvaira",
-          "english": "sweep",
-          "audioFile": "tsvaira.mp3",
-          "usage": "Verb meaning to sweep",
-          "example": "Ndinotsvaira imba"
-        },
-        {
-          "shona": "dzvanya",
-          "english": "press",
-          "audioFile": "dzvanya.mp3",
-          "usage": "Verb meaning to press",
-          "example": "Dzvanya button"
-        },
-        {
-          "shona": "vhara",
-          "english": "close",
-          "audioFile": "vhara.mp3",
-          "usage": "Verb meaning to close",
-          "example": "Vhara mukova"
-        }
-      ]
+      "title": "Body Parts & Health",
+      "description": "Learn body parts and basic health vocabulary",
+      "category": "Health",
+      "orderIndex": 15,
+      "level": "beginner",
+      "xpReward": 125,
+      "estimatedDuration": 20,
+      "exercises": []
     },
     {
       "id": "lesson-8",
-      "title": "Rwiyo Rwemutauro - The Song of Language",
-      "description": "Master rhythm, stress, and intonation patterns",
-      "questId": "quest-4",
-      "category": "Pronunciation Mastery",
-      "orderIndex": 8,
+      "title": "Present Tense Verbs",
+      "description": "Master present tense verb conjugation",
+      "category": "Grammar",
+      "orderIndex": 16,
+      "level": "beginner",
+      "xpReward": 130,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-9",
+      "title": "Past Tense Introduction",
+      "description": "Learn to talk about past actions",
+      "category": "Grammar",
+      "orderIndex": 17,
+      "level": "beginner",
+      "xpReward": 135,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-10",
+      "title": "Question Formation",
+      "description": "Learn to ask questions properly",
+      "category": "Grammar",
+      "orderIndex": 18,
+      "level": "beginner",
+      "xpReward": 140,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-11",
+      "title": "Negation",
+      "description": "Learn to make negative statements",
+      "category": "Grammar",
+      "orderIndex": 19,
+      "level": "beginner",
+      "xpReward": 145,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-12",
+      "title": "Possessives",
+      "description": "Learn to express ownership and possession",
+      "category": "Grammar",
+      "orderIndex": 20,
+      "level": "beginner",
+      "xpReward": 150,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-13",
+      "title": "Traditional Shona Culture",
+      "description": "Learn about Shona cultural practices and beliefs",
+      "category": "Culture",
+      "orderIndex": 21,
       "level": "intermediate",
-      "xpReward": 80,
-      "estimatedDuration": 30,
-      "learningObjectives": [
-        "Master natural rhythm and stress patterns",
-        "Learn question intonation vs. statement intonation",
-        "Practice emotional expression through tone",
-        "Develop conversational flow and naturalness"
-      ],
-      "discoveryElements": [
-        "Explore how rhythm creates meaning in Shona",
-        "Discover the musical qualities of natural speech",
-        "Learn about emotional expression through intonation"
-      ],
-      "culturalNotes": [
-        "Shona has natural rhythm patterns that create beauty",
-        "Emotional expression is important in communication",
-        "Natural flow shows comfort with the language"
-      ],
-      "vocabulary": [
-        {
-          "shona": "rwiyo",
-          "english": "song",
-          "audioFile": "rwiyo.mp3",
-          "usage": "Word for song",
-          "example": "Rwiyo rwakanaka"
-        },
-        {
-          "shona": "kurira",
-          "english": "to cry/sound",
-          "audioFile": "kurira.mp3",
-          "usage": "Verb meaning to cry or make sound",
-          "example": "Shiri dziri kurira"
-        },
-        {
-          "shona": "kunzwa",
-          "english": "to hear/feel",
-          "audioFile": "kunzwa.mp3",
-          "usage": "Verb meaning to hear or feel",
-          "example": "Ndinozwa rwiyo"
-        },
-        {
-          "shona": "moyo",
-          "english": "heart",
-          "audioFile": "moyo.mp3",
-          "usage": "Word for heart",
-          "example": "Moyo wangu"
-        },
-        {
-          "shona": "kufara",
-          "english": "to be happy",
-          "audioFile": "kufara.mp3",
-          "usage": "Verb meaning to be happy",
-          "example": "Ndiri kufara"
-        }
-      ]
+      "xpReward": 155,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-14",
+      "title": "Proverbs & Wisdom (Tsumo)",
+      "description": "Learn traditional Shona proverbs and their meanings",
+      "category": "Culture",
+      "orderIndex": 23,
+      "level": "intermediate",
+      "xpReward": 165,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-15",
+      "title": "At the Doctor/Clinic",
+      "description": "Medical consultations and health discussions",
+      "category": "Health",
+      "orderIndex": 26,
+      "level": "intermediate",
+      "xpReward": 180,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-16",
+      "title": "School & Education",
+      "description": "Educational contexts and academic discussions",
+      "category": "Education",
+      "orderIndex": 27,
+      "level": "intermediate",
+      "xpReward": 185,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-17",
+      "title": "Future Tense",
+      "description": "Learn to express future actions and plans",
+      "category": "Grammar",
+      "orderIndex": 31,
+      "level": "intermediate",
+      "xpReward": 205,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-18",
+      "title": "Conditional Statements",
+      "description": "Learn to express conditions and possibilities",
+      "category": "Grammar",
+      "orderIndex": 32,
+      "level": "intermediate",
+      "xpReward": 210,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-19",
+      "title": "Formal vs Informal Speech",
+      "description": "Learn appropriate register for different situations",
+      "category": "Communication",
+      "orderIndex": 36,
+      "level": "intermediate",
+      "xpReward": 230,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-20",
+      "title": "Storytelling & Narratives",
+      "description": "Master the art of Shona storytelling",
+      "category": "Culture",
+      "orderIndex": 38,
+      "level": "intermediate",
+      "xpReward": 240,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-21",
+      "title": "Reading Shona Literature",
+      "description": "Explore classic and contemporary Shona literature",
+      "category": "Literature",
+      "orderIndex": 41,
+      "level": "advanced",
+      "xpReward": 255,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-22",
+      "title": "News & Current Events",
+      "description": "Understand news language and current affairs",
+      "category": "Media",
+      "orderIndex": 42,
+      "level": "advanced",
+      "xpReward": 260,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-23",
+      "title": "Poetry & Songs",
+      "description": "Appreciate Shona poetry and traditional songs",
+      "category": "Literature",
+      "orderIndex": 43,
+      "level": "advanced",
+      "xpReward": 265,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-24",
+      "title": "Business & Commerce",
+      "description": "Professional business communication in Shona",
+      "category": "Business",
+      "orderIndex": 46,
+      "level": "advanced",
+      "xpReward": 280,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-25",
+      "title": "Academic & Scientific Terms",
+      "description": "Advanced academic and scientific vocabulary",
+      "category": "Academic",
+      "orderIndex": 47,
+      "level": "advanced",
+      "xpReward": 285,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-26",
+      "title": "Agriculture & Rural Life",
+      "description": "Traditional and modern agricultural practices",
+      "category": "Agriculture",
+      "orderIndex": 49,
+      "level": "advanced",
+      "xpReward": 295,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-27",
+      "title": "Tourism & Travel",
+      "description": "Travel and tourism in Zimbabwe",
+      "category": "Tourism",
+      "orderIndex": 50,
+      "level": "advanced",
+      "xpReward": 300,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-28",
+      "title": "Complex Verb Tenses & Aspects",
+      "description": "Master advanced tense-aspect combinations for nuanced expression",
+      "category": "Grammar",
+      "orderIndex": 51,
+      "level": "advanced",
+      "xpReward": 305,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-29",
+      "title": "Subjunctive Mood & Hypotheticals",
+      "description": "Express wishes, possibilities, and contrary-to-fact situations",
+      "category": "Grammar",
+      "orderIndex": 52,
+      "level": "advanced",
+      "xpReward": 310,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-30",
+      "title": "Passive Voice Mastery",
+      "description": "Advanced passive constructions and when to use them",
+      "category": "Grammar",
+      "orderIndex": 53,
+      "level": "advanced",
+      "xpReward": 315,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-31",
+      "title": "Causative Constructions",
+      "description": "Express making someone do something or having something done",
+      "category": "Grammar",
+      "orderIndex": 54,
+      "level": "advanced",
+      "xpReward": 320,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-32",
+      "title": "Serial Verb Constructions",
+      "description": "Combine multiple verbs for complex meanings",
+      "category": "Grammar",
+      "orderIndex": 55,
+      "level": "advanced",
+      "xpReward": 325,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-33",
+      "title": "Professional Presentations",
+      "description": "Learn to give presentations and speeches in formal Shona",
+      "category": "Professional",
+      "orderIndex": 61,
+      "level": "advanced",
+      "xpReward": 355,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-34",
+      "title": "Business Negotiations",
+      "description": "Master the language of business deals and negotiations",
+      "category": "Professional",
+      "orderIndex": 62,
+      "level": "advanced",
+      "xpReward": 360,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-35",
+      "title": "Conflict Resolution Language",
+      "description": "Navigate disagreements and resolve conflicts diplomatically",
+      "category": "Communication",
+      "orderIndex": 63,
+      "level": "advanced",
+      "xpReward": 365,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-36",
+      "title": "Academic Discourse",
+      "description": "Engage in scholarly discussions and academic writing",
+      "category": "Academic",
+      "orderIndex": 64,
+      "level": "advanced",
+      "xpReward": 370,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-37",
+      "title": "Media & Journalism Language",
+      "description": "Report news and conduct interviews professionally",
+      "category": "Professional",
+      "orderIndex": 65,
+      "level": "advanced",
+      "xpReward": 375,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-38",
+      "title": "Cultural Ceremonies & Protocols",
+      "description": "Navigate traditional ceremonies with appropriate language",
+      "category": "Cultural",
+      "orderIndex": 66,
+      "level": "advanced",
+      "xpReward": 380,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-39",
+      "title": "Humor & Wordplay",
+      "description": "Understand and create jokes, puns, and humorous expressions",
+      "category": "Cultural",
+      "orderIndex": 67,
+      "level": "advanced",
+      "xpReward": 385,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-40",
+      "title": "Telephone & Video Call Etiquette",
+      "description": "Professional communication in remote settings",
+      "category": "Professional",
+      "orderIndex": 68,
+      "level": "advanced",
+      "xpReward": 390,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-41",
+      "title": "Social Media Communication",
+      "description": "Navigate online communication in Shona",
+      "category": "Digital",
+      "orderIndex": 69,
+      "level": "advanced",
+      "xpReward": 395,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-42",
+      "title": "Interview Skills",
+      "description": "Excel in job interviews and professional assessments",
+      "category": "Professional",
+      "orderIndex": 70,
+      "level": "advanced",
+      "xpReward": 400,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-43",
+      "title": "Traditional Wisdom & Proverb Application",
+      "description": "Use proverbs appropriately in context",
+      "category": "Cultural",
+      "orderIndex": 76,
+      "level": "advanced",
+      "xpReward": 430,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-44",
+      "title": "Regional Variations - Karanga Dialect",
+      "description": "Understand and communicate in the Karanga dialect",
+      "category": "Dialects",
+      "orderIndex": 77,
+      "level": "advanced",
+      "xpReward": 435,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-45",
+      "title": "Urban Shona & Code-Switching",
+      "description": "Navigate between languages in urban contexts",
+      "category": "Sociolinguistics",
+      "orderIndex": 78,
+      "level": "advanced",
+      "xpReward": 440,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-46",
+      "title": "Gender & Power in Language",
+      "description": "Understand how gender and power dynamics affect language use",
+      "category": "Sociolinguistics",
+      "orderIndex": 79,
+      "level": "advanced",
+      "xpReward": 445,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-47",
+      "title": "Traditional Storytelling Techniques",
+      "description": "Master the art of Shona narrative and storytelling",
+      "category": "Cultural",
+      "orderIndex": 80,
+      "level": "advanced",
+      "xpReward": 450,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-48",
+      "title": "Medical Consultations",
+      "description": "Communicate effectively in healthcare settings",
+      "category": "Healthcare",
+      "orderIndex": 86,
+      "level": "advanced",
+      "xpReward": 480,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-49",
+      "title": "Legal Language & Court Proceedings",
+      "description": "Understand legal terminology and court language",
+      "category": "Legal",
+      "orderIndex": 87,
+      "level": "advanced",
+      "xpReward": 485,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-50",
+      "title": "Agricultural & Environmental Communication",
+      "description": "Discuss farming, climate, and environmental issues",
+      "category": "Agriculture",
+      "orderIndex": 88,
+      "level": "advanced",
+      "xpReward": 490,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-51",
+      "title": "Tourism & Hospitality Language",
+      "description": "Guide tourists and provide hospitality services",
+      "category": "Tourism",
+      "orderIndex": 89,
+      "level": "advanced",
+      "xpReward": 495,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-52",
+      "title": "Technology & Innovation Discourse",
+      "description": "Discuss modern technology and innovation in Shona",
+      "category": "Technology",
+      "orderIndex": 90,
+      "level": "advanced",
+      "xpReward": 500,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-53",
+      "title": "Non-Verbal Communication Mastery",
+      "description": "Understand gestures, silence, and body language in Shona culture",
+      "category": "Cultural",
+      "orderIndex": 96,
+      "level": "advanced",
+      "xpReward": 530,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-54",
+      "title": "Indirect Communication & Face-Saving",
+      "description": "Master indirect communication strategies",
+      "category": "Cultural",
+      "orderIndex": 97,
+      "level": "advanced",
+      "xpReward": 535,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-55",
+      "title": "Cross-Cultural Business Communication",
+      "description": "Navigate between Shona and Western business practices",
+      "category": "Professional",
+      "orderIndex": 98,
+      "level": "advanced",
+      "xpReward": 540,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-56",
+      "title": "Advanced Idiomatic Expressions",
+      "description": "Master complex idioms and metaphorical language",
+      "category": "Advanced",
+      "orderIndex": 99,
+      "level": "advanced",
+      "xpReward": 545,
+      "estimatedDuration": 20,
+      "exercises": []
+    },
+    {
+      "id": "lesson-57",
+      "title": "Native-Level Fluency Assessment",
+      "description": "Comprehensive evaluation of all language skills",
+      "category": "Assessment",
+      "orderIndex": 100,
+      "level": "advanced",
+      "xpReward": 550,
+      "estimatedDuration": 20,
+      "exercises": []
     }
   ]
 }
