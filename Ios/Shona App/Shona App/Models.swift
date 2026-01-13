@@ -339,6 +339,25 @@ final class Flashcard {
     var nextReviewDate: Date
     var repetitionCount: Int
     var easeFactor: Double
+    var pronunciation: String?
+    var context: String?
+    
+    // Relationship to SRS progress
+    @Relationship(deleteRule: .cascade) var srsProgress: SRSProgress?
+    
+    // Computed properties for FlashcardView compatibility
+    var shonaText: String { front }
+    var englishText: String { back }
+    
+    // Difficulty as Double for DifficultyBadge
+    var difficultyLevel: Double {
+        switch difficulty.lowercased() {
+        case "beginner", "easy": return 0.2
+        case "intermediate", "medium": return 0.5
+        case "advanced", "hard": return 0.8
+        default: return 0.5
+        }
+    }
     
     init(id: String = UUID().uuidString,
          category: String,
@@ -353,7 +372,9 @@ final class Flashcard {
          lastReviewed: Date? = nil,
          nextReviewDate: Date = Date(),
          repetitionCount: Int = 0,
-         easeFactor: Double = 2.5) {
+         easeFactor: Double = 2.5,
+         pronunciation: String? = nil,
+         context: String? = nil) {
         self.id = id
         self.category = category
         self.front = front
@@ -368,6 +389,8 @@ final class Flashcard {
         self.nextReviewDate = nextReviewDate
         self.repetitionCount = repetitionCount
         self.easeFactor = easeFactor
+        self.pronunciation = pronunciation
+        self.context = context
     }
 }
 
@@ -542,47 +565,6 @@ struct LearningStats {
     let pronunciationAccuracy: Double
 }
 
-struct FlashcardStats {
-    let totalCards: Int
-    let dueCards: Int
-    let newCards: Int
-    let reviewedToday: Int
-    let accuracy: Int
-    let streakDays: Int
-    let masteredCards: Int
-}
+// Note: FlashcardStats and SessionStats are defined locally in FlashcardView.swift
 
-struct SessionStats {
-    var totalReviewed: Int = 0
-    var correct: Int = 0
-    var incorrect: Int = 0
-    var timeSpent: TimeInterval = 0
-    var startTime: Date = Date()
-}
-
-// MARK: - Content Management
-
-class ContentManager {
-    static let shared = ContentManager()
-    
-    private init() {}
-    
-    func loadVocabulary() -> [VocabularyWord] {
-        // Load vocabulary from bundled JSON files
-        return []
-    }
-    
-    func loadLessons() -> [Lesson] {
-        // Load lessons from bundled JSON files
-        return []
-    }
-    
-    func loadPronunciationExercises() -> [PronunciationExercise] {
-        // Load pronunciation exercises from bundled JSON files
-        return []
-    }
-    
-    func syncWithWebApp() {
-        // Sync content with web app via API
-    }
-} 
+// Note: ContentManager is defined in ContentManager.swift with full JSON loading implementation 

@@ -14,11 +14,20 @@ struct OnboardingView: View {
     @AppStorage("username") private var username = ""
     @AppStorage("userId") private var userId = ""
     
+    // Binding to communicate with MainTabView
+    @Binding var isFirstLaunch: Bool
+    
     @State private var name = ""
+    @State private var email = ""
     @State private var currentPage = 0
     @State private var contentManager: ContentManager?
     @State private var isLoadingContent = false
     @State private var loadError: String?
+    
+    // Default initializer for standalone use
+    init(isFirstLaunch: Binding<Bool> = .constant(true)) {
+        self._isFirstLaunch = isFirstLaunch
+    }
     
     var body: some View {
         if isLoadingContent {
@@ -58,6 +67,12 @@ struct OnboardingView: View {
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding(.horizontal, 40)
                             .autocapitalization(.words)
+                        
+                        TextField("Email (optional)", text: $email)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding(.horizontal, 40)
+                            .autocapitalization(.none)
+                            .keyboardType(.emailAddress)
                     }
                     .tag(1)
                     
@@ -149,8 +164,8 @@ struct OnboardingView: View {
         username = name
         userId = UUID().uuidString
         
-        // Create user
-        let user = User(id: userId, name: username)
+        // Create user with email (use empty string if not provided)
+        let user = User(id: userId, name: username, email: email)
         modelContext.insert(user)
         
         // Initialize ContentManager and load content
@@ -165,6 +180,7 @@ struct OnboardingView: View {
                 isLoadingContent = false
                 if contentManager?.error == nil {
                     hasCompletedOnboarding = true
+                    isFirstLaunch = false
                 } else {
                     loadError = contentManager?.error
                 }
@@ -199,6 +215,6 @@ struct FeatureRow: View {
 }
 
 #Preview {
-    OnboardingView()
+    OnboardingView(isFirstLaunch: .constant(true))
         .modelContainer(for: [User.self, Lesson.self, VocabularyItem.self])
 } 

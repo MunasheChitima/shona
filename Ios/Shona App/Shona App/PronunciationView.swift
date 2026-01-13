@@ -208,8 +208,8 @@ struct PronunciationView: View {
                                         .font(.body)
                                         .foregroundColor(.secondary)
                                     
-                                    if let syllables = exercise.syllables {
-                                        Text("Syllables: \(syllables)")
+                                    if !exercise.syllables.isEmpty {
+                                        Text("Syllables: \(exercise.syllables)")
                                             .font(.body)
                                             .foregroundColor(.secondary)
                                     }
@@ -235,8 +235,8 @@ struct PronunciationView: View {
                             
                             if showTonePattern {
                                 VStack(alignment: .leading, spacing: 8) {
-                                    if let tonePattern = exercise.tonePattern {
-                                        Text(tonePattern)
+                                    if !exercise.tonePattern.isEmpty {
+                                        Text(exercise.tonePattern)
                                             .font(.title2)
                                             .fontWeight(.bold)
                                             .foregroundColor(.orange)
@@ -255,8 +255,7 @@ struct PronunciationView: View {
                         }
                         
                                 // Special Sounds
-        if !exercise.specialSounds.isEmpty {
-                            
+                        if !exercise.specialSounds.isEmpty {
                             VStack(alignment: .leading, spacing: 12) {
                                 Button(action: { showSpecialSounds.toggle() }) {
                                     HStack {
@@ -273,18 +272,11 @@ struct PronunciationView: View {
                                 
                                 if showSpecialSounds {
                                     VStack(alignment: .leading, spacing: 8) {
-                                        ForEach(exercise.specialSounds, id: \.token) { sound in
-                                            VStack(alignment: .leading, spacing: 4) {
-                                                Text("\(sound.token) - \(sound.type)")
-                                                    .font(.body)
-                                                    .fontWeight(.semibold)
-                                                
-                                                if let description = sound.description {
-                                                    Text(description)
-                                                        .font(.caption)
-                                                        .foregroundColor(.secondary)
-                                                }
-                                            }
+                                        ForEach(exercise.specialSounds, id: \.self) { sound in
+                                            Text(sound)
+                                                .font(.body)
+                                                .fontWeight(.semibold)
+                                                .foregroundColor(.purple)
                                         }
                                     }
                                     .padding(.leading, 20)
@@ -595,7 +587,7 @@ struct PronunciationExerciseCard: View {
                     .foregroundColor(.blue)
                     .cornerRadius(6)
                 
-                Text(exercise.difficulty)
+                Text(exercise.learningLevel)
                     .font(.caption)
                     .foregroundColor(.secondary)
             }

@@ -79,5 +79,5 @@ struct MainTabView: View {
 
 #Preview {
     MainTabView()
-        .modelContainer(for: [User.self, Lesson.self, Progress.self, Exercise.self, Flashcard.self, SRSProgress.self, NotificationPreference.self], inMemory: true)
+        .modelContainer(for: [User.self, Lesson.self, Progress.self, Exercise.self, Flashcard.self, SRSProgress.self], inMemory: true)
 } 

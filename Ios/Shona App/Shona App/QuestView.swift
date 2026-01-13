@@ -356,7 +356,7 @@ struct QuestCard: View {
                     }
                 }
                 
-                Text(quest.description)
+                Text(quest.questDescription)
                     .font(.body)
                     .foregroundColor(.secondary)
                     .lineLimit(2)
@@ -454,7 +454,7 @@ struct QuestDetailView: View {
                             .font(.headline)
                             .fontWeight(.semibold)
                         
-                        Text(quest.description)
+                        Text(quest.questDescription)
                             .font(.body)
                             .foregroundColor(.secondary)
                     }

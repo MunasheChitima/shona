@@ -312,7 +312,7 @@ class ContentManager: ObservableObject {
                     let activity = QuestActivity(
                         id: "\(questData.id)_activity_\(index)",
                         title: lesson.title,
-                        description: lesson.description,
+                        description: lesson.lessonDescription,
                         type: "lesson",
                         requiredScore: 80,
                         xpReward: 10,

@@ -157,7 +157,7 @@ struct FlashcardView: View {
                     // Card Content
                     VStack(spacing: 20) {
                         // Difficulty Badge
-                        DifficultyBadge(difficulty: card.difficulty)
+                        DifficultyBadge(difficulty: card.difficultyLevel)
                         
                         // Shona Text
                         Text(card.shonaText)
@@ -553,16 +553,7 @@ struct QualityButton: View {
     }
 }
 
-struct PrimaryButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .padding()
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(12)
-            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
-    }
-}
+// Note: PrimaryButtonStyle is defined in ExerciseView.swift
 
 struct StatRow: View {
     let title: String
