@@ -1,33 +1,28 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Zimbabwean Theme */
+@import './zimbabwean-theme.css';
 
 :root {
-  --background: #f0f9ff;
-  --foreground: #1e293b;
-  --primary: #10b981;
-  --primary-dark: #059669;
-  --secondary: #3b82f6;
-  --accent: #f59e0b;
-  --success: #10b981;
-  --warning: #f59e0b;
-  --error: #ef4444;
-  --gradient-primary: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  --gradient-secondary: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-  --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-  --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  /* Zimbabwean Theme Colors */
+  --background: var(--color-bg-primary);
+  --foreground: var(--color-neutral-800);
+  --primary: var(--color-primary-500);
+  --primary-dark: var(--color-primary-700);
+  --secondary: var(--color-secondary-500);
+  --accent: var(--color-accent-gold-500);
+  --success: var(--color-success-500);
+  --warning: var(--color-warning-500);
+  --error: var(--color-error-500);
+  --gradient-primary: var(--gradient-sunrise);
+  --gradient-secondary: var(--gradient-earth);
+  --gradient-accent: var(--gradient-gold);
+  --gradient-hero: var(--gradient-sunrise);
+  --shadow-soft: var(--shadow-md);
+  --shadow-medium: var(--shadow-lg);
+  --shadow-large: var(--shadow-xl);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -244,11 +239,11 @@ html {
 
 /* Focus styles for accessibility */
 .focus-ring:focus {
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--color-primary-500);
   outline-offset: 2px;
 }
 
-/* Loading states */
+/* Loading shimmer effect */
 .loading-shimmer {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;
