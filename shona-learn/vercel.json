@@ -1,0 +1,7 @@
+{
+  "buildCommand": "prisma generate && prisma migrate deploy && next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "npm install --legacy-peer-deps",
+  "regions": ["iad1"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "shona-app-root",
+  "version": "1.0.0",
+  "description": "Root package.json for Shona App project",
+  "scripts": {
+    "dev": "cd shona-learn && npm run dev",
+    "build": "cd shona-learn && npm run build",
+    "test": "cd shona-learn && npm run test",
+    "save-chat": "node scripts/auto-save-chat.js",
+    "auto-save": "node scripts/true-auto-save.js",
+    "start-auto-save": "node scripts/true-auto-save.js",
+    "git-auto-save": "node scripts/git-auto-save.js",
+    "start": "cd shona-learn && npm run start"
+  },
+  "private": true
+}
