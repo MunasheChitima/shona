@@ -1,0 +1,1097 @@
+{
+  "metadata": {
+    "category": "religion",
+    "totalWords": 24,
+    "created": "2025-07-07T01:37:03.813Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_alleluya_1751852223800",
+      "shona": "alleluya",
+      "english": "hallelujah",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/alleluya/",
+      "simplified": "a-lle-lu-ya",
+      "source": "religious_hymns",
+      "difficulty": 2,
+      "cultural": "Joyful praise",
+      "examples": [
+        {
+          "shona": "Ndinoda alleluya",
+          "english": "I want hallelujah"
+        },
+        {
+          "shona": "alleluya yakanaka",
+          "english": "hallelujah is good"
+        },
+        {
+          "shona": "Ndinoda alleluya",
+          "english": "I want hallelujah"
+        },
+        {
+          "shona": "alleluya yakanaka",
+          "english": "hallelujah is good"
+        }
+      ],
+      "audioFile": "alleluya.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "religious_hymns",
+        "religious_hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_hosana_1751852223800",
+      "shona": "hosana",
+      "english": "hosanna",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/hosana/",
+      "simplified": "ho-sa-na",
+      "source": "religious_hymns",
+      "difficulty": 2,
+      "cultural": "Praise expression",
+      "examples": [
+        {
+          "shona": "Ndinoda hosana",
+          "english": "I want hosanna"
+        },
+        {
+          "shona": "hosana yakanaka",
+          "english": "hosanna is good"
+        },
+        {
+          "shona": "Ndinoda hosana",
+          "english": "I want hosanna"
+        },
+        {
+          "shona": "hosana yakanaka",
+          "english": "hosanna is good"
+        }
+      ],
+      "audioFile": "hosana.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "religious_hymns",
+        "religious_hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chechi_1751852223800",
+      "shona": "chechi",
+      "english": "church",
+      "category": "religion",
+      "tones": "HL",
+      "ipa": "/chechi/",
+      "simplified": "che-chi",
+      "source": "ethnography",
+      "difficulty": 3,
+      "cultural": "Christian place of worship",
+      "examples": [
+        {
+          "shona": "Ndinoenda kuchechi",
+          "english": "I am going to church"
+        },
+        {
+          "shona": "chechi inofadza",
+          "english": "church is joyful"
+        },
+        {
+          "shona": "Tinoda chechi",
+          "english": "We want church"
+        },
+        {
+          "shona": "Ndinoenda kuchechi",
+          "english": "I am going to church"
+        },
+        {
+          "shona": "chechi inofadza",
+          "english": "church is joyful"
+        },
+        {
+          "shona": "Tinoda chechi",
+          "english": "We want church"
+        }
+      ],
+      "audioFile": "chechi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chipfuva_1751852223800",
+      "shona": "chipfuva",
+      "english": "prayer",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/chipfuva/",
+      "simplified": "chi-pfu-va",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kuchipfuva",
+          "english": "I am going to prayer"
+        },
+        {
+          "shona": "chipfuva inofadza",
+          "english": "prayer is joyful"
+        },
+        {
+          "shona": "Tinoda chipfuva",
+          "english": "We want prayer"
+        },
+        {
+          "shona": "Ndinoenda kuchipfuva",
+          "english": "I am going to prayer"
+        },
+        {
+          "shona": "chipfuva inofadza",
+          "english": "prayer is joyful"
+        },
+        {
+          "shona": "Tinoda chipfuva",
+          "english": "We want prayer"
+        }
+      ],
+      "audioFile": "chipfuva.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kereke_1751852223800",
+      "shona": "kereke",
+      "english": "church",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/kereke/",
+      "simplified": "ke-re-ke",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kukereke",
+          "english": "I am going to church"
+        },
+        {
+          "shona": "kereke inofadza",
+          "english": "church is joyful"
+        },
+        {
+          "shona": "Tinoda kereke",
+          "english": "We want church"
+        },
+        {
+          "shona": "Ndinoenda kukereke",
+          "english": "I am going to church"
+        },
+        {
+          "shona": "kereke inofadza",
+          "english": "church is joyful"
+        },
+        {
+          "shona": "Tinoda kereke",
+          "english": "We want church"
+        }
+      ],
+      "audioFile": "kereke.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuimba_1751852223800",
+      "shona": "kuimba",
+      "english": "to sing",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/kuimba/",
+      "simplified": "ku-i-mba",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kukuimba",
+          "english": "I am going to to sing"
+        },
+        {
+          "shona": "kuimba inofadza",
+          "english": "to sing is joyful"
+        },
+        {
+          "shona": "Tinoda kuimba",
+          "english": "We want to sing"
+        },
+        {
+          "shona": "Ndinoenda kukuimba",
+          "english": "I am going to to sing"
+        },
+        {
+          "shona": "kuimba inofadza",
+          "english": "to sing is joyful"
+        },
+        {
+          "shona": "Tinoda kuimba",
+          "english": "We want to sing"
+        }
+      ],
+      "audioFile": "kuimba.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kukomborera_1751852223800",
+      "shona": "kukomborera",
+      "english": "to bless",
+      "category": "religion",
+      "tones": "HHLHL",
+      "ipa": "/kukomborera/",
+      "simplified": "ku-ko-mbo-re-ra",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kukukomborera",
+          "english": "I am going to to bless"
+        },
+        {
+          "shona": "kukomborera inofadza",
+          "english": "to bless is joyful"
+        },
+        {
+          "shona": "Tinoda kukomborera",
+          "english": "We want to bless"
+        },
+        {
+          "shona": "Ndinoenda kukukomborera",
+          "english": "I am going to to bless"
+        },
+        {
+          "shona": "kukomborera inofadza",
+          "english": "to bless is joyful"
+        },
+        {
+          "shona": "Tinoda kukomborera",
+          "english": "We want to bless"
+        }
+      ],
+      "audioFile": "kukomborera.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kunamata_1751852223800",
+      "shona": "kunamata",
+      "english": "to pray",
+      "category": "religion",
+      "tones": "HLHL",
+      "ipa": "/kunamata/",
+      "simplified": "ku-na-ma-ta",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kukunamata",
+          "english": "I am going to to pray"
+        },
+        {
+          "shona": "kunamata inofadza",
+          "english": "to pray is joyful"
+        },
+        {
+          "shona": "Tinoda kunamata",
+          "english": "We want to pray"
+        },
+        {
+          "shona": "Ndinoenda kukunamata",
+          "english": "I am going to to pray"
+        },
+        {
+          "shona": "kunamata inofadza",
+          "english": "to pray is joyful"
+        },
+        {
+          "shona": "Tinoda kunamata",
+          "english": "We want to pray"
+        }
+      ],
+      "audioFile": "kunamata.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kupfugama_1751852223800",
+      "shona": "kupfugama",
+      "english": "to kneel",
+      "category": "religion",
+      "tones": "HLHL",
+      "ipa": "/kupfugama/",
+      "simplified": "ku-pfu-ga-ma",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kukupfugama",
+          "english": "I am going to to kneel"
+        },
+        {
+          "shona": "kupfugama inofadza",
+          "english": "to kneel is joyful"
+        },
+        {
+          "shona": "Tinoda kupfugama",
+          "english": "We want to kneel"
+        },
+        {
+          "shona": "Ndinoenda kukupfugama",
+          "english": "I am going to to kneel"
+        },
+        {
+          "shona": "kupfugama inofadza",
+          "english": "to kneel is joyful"
+        },
+        {
+          "shona": "Tinoda kupfugama",
+          "english": "We want to kneel"
+        }
+      ],
+      "audioFile": "kupfugama.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kurapa_1751852223800",
+      "shona": "kurapa",
+      "english": "to heal",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/kurapa/",
+      "simplified": "ku-ra-pa",
+      "source": "ethnography",
+      "difficulty": 3,
+      "cultural": "Traditional healing practice",
+      "examples": [
+        {
+          "shona": "Ndinoenda kukurapa",
+          "english": "I am going to to heal"
+        },
+        {
+          "shona": "kurapa inofadza",
+          "english": "to heal is joyful"
+        },
+        {
+          "shona": "Tinoda kurapa",
+          "english": "We want to heal"
+        },
+        {
+          "shona": "Ndinoenda kukurapa",
+          "english": "I am going to to heal"
+        },
+        {
+          "shona": "kurapa inofadza",
+          "english": "to heal is joyful"
+        },
+        {
+          "shona": "Tinoda kurapa",
+          "english": "We want to heal"
+        }
+      ],
+      "audioFile": "kurapa.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kurumbidza_1751852223800",
+      "shona": "kurumbidza",
+      "english": "to praise",
+      "category": "religion",
+      "tones": "HLHL",
+      "ipa": "/kurumbidza/",
+      "simplified": "ku-ru-mbi-dza",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kukurumbidza",
+          "english": "I am going to to praise"
+        },
+        {
+          "shona": "kurumbidza inofadza",
+          "english": "to praise is joyful"
+        },
+        {
+          "shona": "Tinoda kurumbidza",
+          "english": "We want to praise"
+        },
+        {
+          "shona": "Ndinoenda kukurumbidza",
+          "english": "I am going to to praise"
+        },
+        {
+          "shona": "kurumbidza inofadza",
+          "english": "to praise is joyful"
+        },
+        {
+          "shona": "Tinoda kurumbidza",
+          "english": "We want to praise"
+        }
+      ],
+      "audioFile": "kurumbidza.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_moyo_1751852223800",
+      "shona": "moyo",
+      "english": "heart",
+      "category": "religion",
+      "tones": "HL",
+      "ipa": "/moyo/",
+      "simplified": "mo-yo",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kumoyo",
+          "english": "I am going to heart"
+        },
+        {
+          "shona": "moyo inofadza",
+          "english": "heart is joyful"
+        },
+        {
+          "shona": "Tinoda moyo",
+          "english": "We want heart"
+        },
+        {
+          "shona": "Ndinoenda kumoyo",
+          "english": "I am going to heart"
+        },
+        {
+          "shona": "moyo inofadza",
+          "english": "heart is joyful"
+        },
+        {
+          "shona": "Tinoda moyo",
+          "english": "We want heart"
+        }
+      ],
+      "audioFile": "moyo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mudzimu_1751852223800",
+      "shona": "mudzimu",
+      "english": "ancestral spirit",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/mudzimu/",
+      "simplified": "mu-dzi-mu",
+      "source": "ethnography",
+      "difficulty": 3,
+      "cultural": "Traditional spiritual belief",
+      "examples": [
+        {
+          "shona": "Ndinoenda kumudzimu",
+          "english": "I am going to ancestral spirit"
+        },
+        {
+          "shona": "mudzimu inofadza",
+          "english": "ancestral spirit is joyful"
+        },
+        {
+          "shona": "Tinoda mudzimu",
+          "english": "We want ancestral spirit"
+        },
+        {
+          "shona": "Ndinoenda kumudzimu",
+          "english": "I am going to ancestral spirit"
+        },
+        {
+          "shona": "mudzimu inofadza",
+          "english": "ancestral spirit is joyful"
+        },
+        {
+          "shona": "Tinoda mudzimu",
+          "english": "We want ancestral spirit"
+        }
+      ],
+      "audioFile": "mudzimu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mufudzi_1751852223800",
+      "shona": "mufudzi",
+      "english": "pastor",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/mufudzi/",
+      "simplified": "mu-fu-dzi",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kumufudzi",
+          "english": "I am going to pastor"
+        },
+        {
+          "shona": "mufudzi inofadza",
+          "english": "pastor is joyful"
+        },
+        {
+          "shona": "Tinoda mufudzi",
+          "english": "We want pastor"
+        },
+        {
+          "shona": "Ndinoenda kumufudzi",
+          "english": "I am going to pastor"
+        },
+        {
+          "shona": "mufudzi inofadza",
+          "english": "pastor is joyful"
+        },
+        {
+          "shona": "Tinoda mufudzi",
+          "english": "We want pastor"
+        }
+      ],
+      "audioFile": "mufudzi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mutapa_1751852223800",
+      "shona": "mutapa",
+      "english": "medicine",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/mutapa/",
+      "simplified": "mu-ta-pa",
+      "source": "ethnography",
+      "difficulty": 3,
+      "cultural": "Traditional medicine",
+      "examples": [
+        {
+          "shona": "Ndinoenda kumutapa",
+          "english": "I am going to medicine"
+        },
+        {
+          "shona": "mutapa inofadza",
+          "english": "medicine is joyful"
+        },
+        {
+          "shona": "Tinoda mutapa",
+          "english": "We want medicine"
+        },
+        {
+          "shona": "Ndinoenda kumutapa",
+          "english": "I am going to medicine"
+        },
+        {
+          "shona": "mutapa inofadza",
+          "english": "medicine is joyful"
+        },
+        {
+          "shona": "Tinoda mutapa",
+          "english": "We want medicine"
+        }
+      ],
+      "audioFile": "mutapa.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mutumwa_1751852223800",
+      "shona": "mutumwa",
+      "english": "apostle",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/mutumwa/",
+      "simplified": "mu-tu-mwa",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kumutumwa",
+          "english": "I am going to apostle"
+        },
+        {
+          "shona": "mutumwa inofadza",
+          "english": "apostle is joyful"
+        },
+        {
+          "shona": "Tinoda mutumwa",
+          "english": "We want apostle"
+        },
+        {
+          "shona": "Ndinoenda kumutumwa",
+          "english": "I am going to apostle"
+        },
+        {
+          "shona": "mutumwa inofadza",
+          "english": "apostle is joyful"
+        },
+        {
+          "shona": "Tinoda mutumwa",
+          "english": "We want apostle"
+        }
+      ],
+      "audioFile": "mutumwa.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_Mwari_1751852223800",
+      "shona": "Mwari",
+      "english": "God",
+      "category": "religion",
+      "tones": "HL",
+      "ipa": "/mwari/",
+      "simplified": "mwa-ri",
+      "source": "ethnography",
+      "difficulty": 3,
+      "cultural": "Supreme deity",
+      "examples": [
+        {
+          "shona": "Ndinoenda kuMwari",
+          "english": "I am going to God"
+        },
+        {
+          "shona": "Mwari inofadza",
+          "english": "God is joyful"
+        },
+        {
+          "shona": "Tinoda Mwari",
+          "english": "We want God"
+        },
+        {
+          "shona": "Ndinoenda kuMwari",
+          "english": "I am going to God"
+        },
+        {
+          "shona": "Mwari inofadza",
+          "english": "God is joyful"
+        },
+        {
+          "shona": "Tinoda Mwari",
+          "english": "We want God"
+        }
+      ],
+      "audioFile": "Mwari.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mwoya_1751852223800",
+      "shona": "mwoya",
+      "english": "spirit",
+      "category": "religion",
+      "tones": "HL",
+      "ipa": "/mwoya/",
+      "simplified": "mwo-ya",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kumwoya",
+          "english": "I am going to spirit"
+        },
+        {
+          "shona": "mwoya inofadza",
+          "english": "spirit is joyful"
+        },
+        {
+          "shona": "Tinoda mwoya",
+          "english": "We want spirit"
+        },
+        {
+          "shona": "Ndinoenda kumwoya",
+          "english": "I am going to spirit"
+        },
+        {
+          "shona": "mwoya inofadza",
+          "english": "spirit is joyful"
+        },
+        {
+          "shona": "Tinoda mwoya",
+          "english": "We want spirit"
+        }
+      ],
+      "audioFile": "mwoya.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_n_anga_1751852223800",
+      "shona": "n'anga",
+      "english": "traditional healer",
+      "category": "religion",
+      "tones": "HL",
+      "ipa": "/n'anga/",
+      "simplified": "n'a-nga",
+      "source": "ethnography",
+      "difficulty": 3,
+      "cultural": "Spiritual and medical healer",
+      "examples": [
+        {
+          "shona": "Ndinoenda kun'anga",
+          "english": "I am going to traditional healer"
+        },
+        {
+          "shona": "n'anga inofadza",
+          "english": "traditional healer is joyful"
+        },
+        {
+          "shona": "Tinoda n'anga",
+          "english": "We want traditional healer"
+        },
+        {
+          "shona": "Ndinoenda kun'anga",
+          "english": "I am going to traditional healer"
+        },
+        {
+          "shona": "n'anga inofadza",
+          "english": "traditional healer is joyful"
+        },
+        {
+          "shona": "Tinoda n'anga",
+          "english": "We want traditional healer"
+        }
+      ],
+      "audioFile": "nanga.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_rufaro_1751852223800",
+      "shona": "rufaro",
+      "english": "joy",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/rufaro/",
+      "simplified": "ru-fa-ro",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kurufaro",
+          "english": "I am going to joy"
+        },
+        {
+          "shona": "rufaro inofadza",
+          "english": "joy is joyful"
+        },
+        {
+          "shona": "Tinoda rufaro",
+          "english": "We want joy"
+        },
+        {
+          "shona": "Ndinoenda kurufaro",
+          "english": "I am going to joy"
+        },
+        {
+          "shona": "rufaro inofadza",
+          "english": "joy is joyful"
+        },
+        {
+          "shona": "Tinoda rufaro",
+          "english": "We want joy"
+        }
+      ],
+      "audioFile": "rufaro.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_rwiyo_1751852223800",
+      "shona": "rwiyo",
+      "english": "song",
+      "category": "religion",
+      "tones": "HL",
+      "ipa": "/rwiyo/",
+      "simplified": "rwi-yo",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kurwiyo",
+          "english": "I am going to song"
+        },
+        {
+          "shona": "rwiyo inofadza",
+          "english": "song is joyful"
+        },
+        {
+          "shona": "Tinoda rwiyo",
+          "english": "We want song"
+        },
+        {
+          "shona": "Ndinoenda kurwiyo",
+          "english": "I am going to song"
+        },
+        {
+          "shona": "rwiyo inofadza",
+          "english": "song is joyful"
+        },
+        {
+          "shona": "Tinoda rwiyo",
+          "english": "We want song"
+        }
+      ],
+      "audioFile": "rwiyo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_svikiro_1751852223800",
+      "shona": "svikiro",
+      "english": "spirit medium",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/svikiro/",
+      "simplified": "svi-ki-ro",
+      "source": "ethnography",
+      "difficulty": 3,
+      "cultural": "Communicates with ancestors",
+      "examples": [
+        {
+          "shona": "Ndinoenda kusvikiro",
+          "english": "I am going to spirit medium"
+        },
+        {
+          "shona": "svikiro inofadza",
+          "english": "spirit medium is joyful"
+        },
+        {
+          "shona": "Tinoda svikiro",
+          "english": "We want spirit medium"
+        },
+        {
+          "shona": "Ndinoenda kusvikiro",
+          "english": "I am going to spirit medium"
+        },
+        {
+          "shona": "svikiro inofadza",
+          "english": "spirit medium is joyful"
+        },
+        {
+          "shona": "Tinoda svikiro",
+          "english": "We want spirit medium"
+        }
+      ],
+      "audioFile": "svikiro.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_ufambi_1751852223800",
+      "shona": "ufambi",
+      "english": "fellowship",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/ufambi/",
+      "simplified": "u-fa-mbi",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kuufambi",
+          "english": "I am going to fellowship"
+        },
+        {
+          "shona": "ufambi inofadza",
+          "english": "fellowship is joyful"
+        },
+        {
+          "shona": "Tinoda ufambi",
+          "english": "We want fellowship"
+        },
+        {
+          "shona": "Ndinoenda kuufambi",
+          "english": "I am going to fellowship"
+        },
+        {
+          "shona": "ufambi inofadza",
+          "english": "fellowship is joyful"
+        },
+        {
+          "shona": "Tinoda ufambi",
+          "english": "We want fellowship"
+        }
+      ],
+      "audioFile": "ufambi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_vatengi_1751852223800",
+      "shona": "vatengi",
+      "english": "congregation",
+      "category": "religion",
+      "tones": "HHL",
+      "ipa": "/vatengi/",
+      "simplified": "va-te-ngi",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoenda kuvatengi",
+          "english": "I am going to congregation"
+        },
+        {
+          "shona": "vatengi inofadza",
+          "english": "congregation is joyful"
+        },
+        {
+          "shona": "Tinoda vatengi",
+          "english": "We want congregation"
+        },
+        {
+          "shona": "Ndinoenda kuvatengi",
+          "english": "I am going to congregation"
+        },
+        {
+          "shona": "vatengi inofadza",
+          "english": "congregation is joyful"
+        },
+        {
+          "shona": "Tinoda vatengi",
+          "english": "We want congregation"
+        }
+      ],
+      "audioFile": "vatengi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    }
+  ]
+}

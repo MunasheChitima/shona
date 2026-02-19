@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "category": "culture",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.812Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_shiri_1751852223800",
+      "shona": "shiri",
+      "english": "bird",
+      "category": "culture",
+      "tones": "HL",
+      "ipa": "/shiri/",
+      "simplified": "shi-ri",
+      "source": "ruins",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine shiri",
+          "english": "I have bird"
+        },
+        {
+          "shona": "shiri yakanaka",
+          "english": "bird is good"
+        },
+        {
+          "shona": "Ndinoda shiri",
+          "english": "I want bird"
+        },
+        {
+          "shona": "Ndine shiri",
+          "english": "I have bird"
+        },
+        {
+          "shona": "shiri yakanaka",
+          "english": "bird is good"
+        },
+        {
+          "shona": "Ndinoda shiri",
+          "english": "I want bird"
+        },
+        {
+          "shona": "Ndinoda shiri",
+          "english": "I want bird",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "shiri.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins",
+        "cultural_practices"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_hunhu_1751852223800",
+      "shona": "hunhu",
+      "english": "culture/humanity",
+      "category": "culture",
+      "tones": "HL",
+      "ipa": "/hunhu/",
+      "simplified": "hu-nhu",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine hunhu",
+          "english": "I have culture/humanity"
+        },
+        {
+          "shona": "hunhu yakanaka",
+          "english": "culture/humanity is good"
+        },
+        {
+          "shona": "Ndinoda hunhu",
+          "english": "I want culture/humanity"
+        },
+        {
+          "shona": "Ndine hunhu",
+          "english": "I have culture/humanity"
+        },
+        {
+          "shona": "hunhu yakanaka",
+          "english": "culture/humanity is good"
+        },
+        {
+          "shona": "Ndinoda hunhu",
+          "english": "I want culture/humanity"
+        }
+      ],
+      "audioFile": "hunhu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mbeu_1751852223800",
+      "shona": "mbeu",
+      "english": "seed",
+      "category": "culture",
+      "tones": "HL",
+      "ipa": "/mbeu/",
+      "simplified": "mbe-u",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine mbeu",
+          "english": "I have seed"
+        },
+        {
+          "shona": "mbeu yakanaka",
+          "english": "seed is good"
+        },
+        {
+          "shona": "Ndinoda mbeu",
+          "english": "I want seed"
+        },
+        {
+          "shona": "Ndine mbeu",
+          "english": "I have seed"
+        },
+        {
+          "shona": "mbeu yakanaka",
+          "english": "seed is good"
+        },
+        {
+          "shona": "Ndinoda mbeu",
+          "english": "I want seed"
+        }
+      ],
+      "audioFile": "mbeu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mbira_1751852223800",
+      "shona": "mbira",
+      "english": "traditional instrument",
+      "category": "culture",
+      "tones": "HL",
+      "ipa": "/mbira/",
+      "simplified": "mbi-ra",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine mbira",
+          "english": "I have traditional instrument"
+        },
+        {
+          "shona": "mbira yakanaka",
+          "english": "traditional instrument is good"
+        },
+        {
+          "shona": "Ndinoda mbira",
+          "english": "I want traditional instrument"
+        },
+        {
+          "shona": "Ndine mbira",
+          "english": "I have traditional instrument"
+        },
+        {
+          "shona": "mbira yakanaka",
+          "english": "traditional instrument is good"
+        },
+        {
+          "shona": "Ndinoda mbira",
+          "english": "I want traditional instrument"
+        }
+      ],
+      "audioFile": "mbira.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    }
+  ]
+}

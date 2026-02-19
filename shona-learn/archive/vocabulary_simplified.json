@@ -1,0 +1,558 @@
+{
+  "metadata": {
+    "title": "Simplified Shona Vocabulary List",
+    "version": "1.0.0",
+    "totalWords": 61
+  },
+  "vocabulary": [
+    {
+      "shona": "mangwanani",
+      "english": "good morning",
+      "pronunciation": "ma-nggwa-na-ni",
+      "tones": "LHLHL",
+      "category": "greetings",
+      "difficulty": 1,
+      "cultural": "Standard morning greeting, used until around 10 AM"
+    },
+    {
+      "shona": "masikati",
+      "english": "good afternoon",
+      "pronunciation": "ma-si-ka-ti",
+      "tones": "LHLHL",
+      "category": "greetings",
+      "difficulty": 1,
+      "cultural": "Used from around 10 AM to sunset"
+    },
+    {
+      "shona": "manheru",
+      "english": "good evening",
+      "pronunciation": "ma-nhe-ru",
+      "tones": "LHLHL",
+      "category": "greetings",
+      "difficulty": 1,
+      "cultural": "Used after sunset"
+    },
+    {
+      "shona": "poshi",
+      "english": "one",
+      "pronunciation": "po-shi",
+      "tones": "LHL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null
+    },
+    {
+      "shona": "piri",
+      "english": "two",
+      "pronunciation": "pi-ri",
+      "tones": "LHL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null
+    },
+    {
+      "shona": "tatu",
+      "english": "three",
+      "pronunciation": "ta-tu",
+      "tones": "LHL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null
+    },
+    {
+      "shona": "china",
+      "english": "four",
+      "pronunciation": "chi-na",
+      "tones": "LHL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null
+    },
+    {
+      "shona": "shanu",
+      "english": "five",
+      "pronunciation": "sha-nu",
+      "tones": "LHL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null
+    },
+    {
+      "shona": "tanhatu",
+      "english": "six",
+      "pronunciation": "ta-nha-tu",
+      "tones": "LHL",
+      "category": "numbers",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "nomwe",
+      "english": "seven",
+      "pronunciation": "no-mwe",
+      "tones": "LHL",
+      "category": "numbers",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "sere",
+      "english": "eight",
+      "pronunciation": "se-re",
+      "tones": "LHL",
+      "category": "numbers",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "pfumbamwe",
+      "english": "nine",
+      "pronunciation": "pfu-mba-mwe",
+      "tones": "LHLHL",
+      "category": "numbers",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "gumi",
+      "english": "ten",
+      "pronunciation": "gu-mi",
+      "tones": "LHL",
+      "category": "numbers",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "ndatenda",
+      "english": "thank you",
+      "pronunciation": "nda-te-nda",
+      "tones": "LHLHL",
+      "category": "expressions",
+      "difficulty": 2,
+      "cultural": "Standard expression of gratitude"
+    },
+    {
+      "shona": "ndapota",
+      "english": "please",
+      "pronunciation": "nda-po-ta",
+      "tones": "LHLHL",
+      "category": "expressions",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "ndine urombo",
+      "english": "I'm sorry",
+      "pronunciation": "ndi-ne- u-ro-mbo",
+      "tones": "LHLHL",
+      "category": "expressions",
+      "difficulty": 3,
+      "cultural": "Expression of apology or sympathy"
+    },
+    {
+      "shona": "zvakanaka",
+      "english": "it's good/okay",
+      "pronunciation": "zva-ka-na-ka",
+      "tones": "LHLHL",
+      "category": "expressions",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "hapana",
+      "english": "nothing/no",
+      "pronunciation": "ha-pa-na",
+      "tones": "LHL",
+      "category": "expressions",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "ndiani",
+      "english": "who",
+      "pronunciation": "ndi-a-ni",
+      "tones": "LHL",
+      "category": "questions",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "chii",
+      "english": "what",
+      "pronunciation": "chi-i",
+      "tones": "LH",
+      "category": "questions",
+      "difficulty": 1,
+      "cultural": null
+    },
+    {
+      "shona": "kupi",
+      "english": "where",
+      "pronunciation": "ku-pi",
+      "tones": "LHL",
+      "category": "questions",
+      "difficulty": 1,
+      "cultural": null
+    },
+    {
+      "shona": "rinhi",
+      "english": "when",
+      "pronunciation": "ri-nhi",
+      "tones": "LHL",
+      "category": "questions",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "sei",
+      "english": "how",
+      "pronunciation": "se-i",
+      "tones": "LH",
+      "category": "questions",
+      "difficulty": 1,
+      "cultural": null
+    },
+    {
+      "shona": "ndiri",
+      "english": "I am",
+      "pronunciation": "ndi-ri",
+      "tones": "LHL",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "uri",
+      "english": "you are (singular)",
+      "pronunciation": "u-ri",
+      "tones": "LH",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "ari",
+      "english": "he/she is",
+      "pronunciation": "a-ri",
+      "tones": "LH",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "tiri",
+      "english": "we are",
+      "pronunciation": "ti-ri",
+      "tones": "LHL",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "muri",
+      "english": "you are (plural)",
+      "pronunciation": "mu-ri",
+      "tones": "LHL",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "vari",
+      "english": "they are",
+      "pronunciation": "va-ri",
+      "tones": "LHL",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "ndinoda",
+      "english": "I want",
+      "pronunciation": "ndi-no-da",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "unoda",
+      "english": "you want (singular)",
+      "pronunciation": "u-no-da",
+      "tones": "LHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "anoda",
+      "english": "he/she wants",
+      "pronunciation": "a-no-da",
+      "tones": "LHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "tinoda",
+      "english": "we want",
+      "pronunciation": "ti-no-da",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "munoda",
+      "english": "you want (plural)",
+      "pronunciation": "mu-no-da",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "vanoda",
+      "english": "they want",
+      "pronunciation": "va-no-da",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "ndiri kuenda",
+      "english": "I am going",
+      "pronunciation": "ndi-ri- ku-e-nda",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null
+    },
+    {
+      "shona": "uri kuenda",
+      "english": "you are going (singular)",
+      "pronunciation": "u-ri- ku-e-nda",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null
+    },
+    {
+      "shona": "ari kuenda",
+      "english": "he/she is going",
+      "pronunciation": "a-ri- ku-e-nda",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null
+    },
+    {
+      "shona": "tiri kuenda",
+      "english": "we are going",
+      "pronunciation": "ti-ri- ku-e-nda",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null
+    },
+    {
+      "shona": "muri kuenda",
+      "english": "you are going (plural)",
+      "pronunciation": "mu-ri- ku-e-nda",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null
+    },
+    {
+      "shona": "vari kuenda",
+      "english": "they are going",
+      "pronunciation": "va-ri- ku-e-nda",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null
+    },
+    {
+      "shona": "mukadzi",
+      "english": "woman/wife",
+      "pronunciation": "mu-ka-dzi",
+      "tones": "LHL",
+      "category": "family",
+      "difficulty": 2,
+      "cultural": "Respectful term for woman or wife"
+    },
+    {
+      "shona": "murume",
+      "english": "man/husband",
+      "pronunciation": "mu-ru-me",
+      "tones": "LHL",
+      "category": "family",
+      "difficulty": 2,
+      "cultural": "Respectful term for man or husband"
+    },
+    {
+      "shona": "vana",
+      "english": "children",
+      "pronunciation": "va-na",
+      "tones": "LHL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Plural form of child"
+    },
+    {
+      "shona": "mwana",
+      "english": "child",
+      "pronunciation": "mwa-na",
+      "tones": "LHL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": null
+    },
+    {
+      "shona": "sadza",
+      "english": "maize porridge",
+      "pronunciation": "sa-dza",
+      "tones": "LHL",
+      "category": "food",
+      "difficulty": 2,
+      "cultural": "Staple food in Zimbabwe, made from maize meal"
+    },
+    {
+      "shona": "nyama",
+      "english": "meat",
+      "pronunciation": "nya-ma",
+      "tones": "LHL",
+      "category": "food",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "muriwo",
+      "english": "vegetables",
+      "pronunciation": "mu-ri-wo",
+      "tones": "LHLHL",
+      "category": "food",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "mvura",
+      "english": "water",
+      "pronunciation": "mvu-ra",
+      "tones": "LHL",
+      "category": "food",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "musoro",
+      "english": "head",
+      "pronunciation": "mu-so-ro",
+      "tones": "LHL",
+      "category": "body",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "meso",
+      "english": "eyes",
+      "pronunciation": "me-so",
+      "tones": "LHL",
+      "category": "body",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "nzeve",
+      "english": "ears",
+      "pronunciation": "nze-ve",
+      "tones": "LHL",
+      "category": "body",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "mukanwa",
+      "english": "mouth",
+      "pronunciation": "mu-ka-nwa",
+      "tones": "LHLHL",
+      "category": "body",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "chena",
+      "english": "white",
+      "pronunciation": "che-na",
+      "tones": "LHL",
+      "category": "colors",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "nhema",
+      "english": "black",
+      "pronunciation": "nye-ma",
+      "tones": "LHL",
+      "category": "colors",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "tsvuku",
+      "english": "red",
+      "pronunciation": "tsvu-ku",
+      "tones": "LHL",
+      "category": "colors",
+      "difficulty": 3,
+      "cultural": null
+    },
+    {
+      "shona": "yero",
+      "english": "yellow",
+      "pronunciation": "je-ro",
+      "tones": "LHL",
+      "category": "colors",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "mombe",
+      "english": "cow",
+      "pronunciation": "mo-mbe",
+      "tones": "LHL",
+      "category": "animals",
+      "difficulty": 2,
+      "cultural": "Important animal in Shona culture, symbol of wealth"
+    },
+    {
+      "shona": "imbwa",
+      "english": "dog",
+      "pronunciation": "i-mbwa",
+      "tones": "LHL",
+      "category": "animals",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "katsi",
+      "english": "cat",
+      "pronunciation": "ka-tsi",
+      "tones": "LHL",
+      "category": "animals",
+      "difficulty": 2,
+      "cultural": null
+    },
+    {
+      "shona": "shiri",
+      "english": "bird",
+      "pronunciation": "shi-ri",
+      "tones": "LHL",
+      "category": "animals",
+      "difficulty": 2,
+      "cultural": null
+    }
+  ]
+}

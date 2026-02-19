@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "version": "3.0.0",
+    "integratedAt": "2025-07-09T06:18:11.219Z",
+    "totalWords": 0,
+    "sources": [
+      "fundamental-basic-vocabulary.js",
+      "traditional-cultural-vocabulary.js",
+      "essential-verbs-actions.js",
+      "essential-phrases-expressions.js",
+      "advanced-conversational-vocabulary.js",
+      "contemporary-modern-vocabulary.js",
+      "professional-technical-vocabulary.js"
+    ],
+    "categories": [],
+    "difficultyLevels": []
+  },
+  "vocabulary": []
+}

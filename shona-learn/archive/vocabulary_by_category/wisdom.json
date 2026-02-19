@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "category": "wisdom",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.813Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_hunhu_hwakanaka_1751852223800",
+      "shona": "hunhu hwakanaka",
+      "english": "good character",
+      "category": "wisdom",
+      "tones": "HLHL",
+      "ipa": "/hunhu hwakanaka/",
+      "simplified": "hu-nhu- hwa-ka-na-ka",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Moral excellence",
+      "examples": [
+        {
+          "shona": "Vakuru vatinodzidzisa hunhu hwakanaka",
+          "english": "Elders teach us good character"
+        },
+        {
+          "shona": "hunhu hwakanaka inobva kumazuva ekare",
+          "english": "good character comes from ancient times"
+        },
+        {
+          "shona": "Vakuru vatinodzidzisa hunhu hwakanaka",
+          "english": "Elders teach us good character"
+        },
+        {
+          "shona": "hunhu hwakanaka inobva kumazuva ekare",
+          "english": "good character comes from ancient times"
+        }
+      ],
+      "audioFile": "hunhu_hwakanaka.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_madimikira_1751852223800",
+      "shona": "madimikira",
+      "english": "riddles",
+      "category": "wisdom",
+      "tones": "HHL",
+      "ipa": "/madimikira/",
+      "simplified": "ma-di-mi-ki-ra",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Traditional puzzles teaching wisdom",
+      "examples": [
+        {
+          "shona": "Vakuru vatinodzidzisa madimikira",
+          "english": "Elders teach us riddles"
+        },
+        {
+          "shona": "madimikira inobva kumazuva ekare",
+          "english": "riddles comes from ancient times"
+        },
+        {
+          "shona": "Vakuru vatinodzidzisa madimikira",
+          "english": "Elders teach us riddles"
+        },
+        {
+          "shona": "madimikira inobva kumazuva ekare",
+          "english": "riddles comes from ancient times"
+        }
+      ],
+      "audioFile": "madimikira.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_pfungwa_dzokare_1751852223800",
+      "shona": "pfungwa dzokare",
+      "english": "ancient wisdom",
+      "category": "wisdom",
+      "tones": "HLHL",
+      "ipa": "/pfungwa dzokare/",
+      "simplified": "pfu-ngwa- dzo-ka-re",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Traditional knowledge",
+      "examples": [
+        {
+          "shona": "Vakuru vatinodzidzisa pfungwa dzokare",
+          "english": "Elders teach us ancient wisdom"
+        },
+        {
+          "shona": "pfungwa dzokare inobva kumazuva ekare",
+          "english": "ancient wisdom comes from ancient times"
+        },
+        {
+          "shona": "Vakuru vatinodzidzisa pfungwa dzokare",
+          "english": "Elders teach us ancient wisdom"
+        },
+        {
+          "shona": "pfungwa dzokare inobva kumazuva ekare",
+          "english": "ancient wisdom comes from ancient times"
+        }
+      ],
+      "audioFile": "pfungwa_dzokare.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tsumo_1751852223800",
+      "shona": "tsumo",
+      "english": "proverb",
+      "category": "wisdom",
+      "tones": "HL",
+      "ipa": "/tsumo/",
+      "simplified": "tsu-mo",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Traditional saying with deep meaning",
+      "examples": [
+        {
+          "shona": "Vakuru vatinodzidzisa tsumo",
+          "english": "Elders teach us proverb"
+        },
+        {
+          "shona": "tsumo inobva kumazuva ekare",
+          "english": "proverb comes from ancient times"
+        },
+        {
+          "shona": "Vakuru vatinodzidzisa tsumo",
+          "english": "Elders teach us proverb"
+        },
+        {
+          "shona": "tsumo inobva kumazuva ekare",
+          "english": "proverb comes from ancient times"
+        }
+      ],
+      "audioFile": "tsumo.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    }
+  ]
+}

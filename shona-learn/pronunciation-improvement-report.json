@@ -1,0 +1,138 @@
+{
+  "summary": {
+    "totalTests": 6,
+    "successfulTests": 6,
+    "successRate": "100.0",
+    "timestamp": "2025-07-07T06:30:38.776Z",
+    "improvements": {
+      "speedReduction": "25% (rate=\"75%\")",
+      "pitchAdjustment": "-10% for clarity",
+      "emphasis": "Strong emphasis on special sounds",
+      "pauses": "Added pauses between complex sounds"
+    }
+  },
+  "results": [
+    {
+      "word": "svika",
+      "english": "arrive",
+      "expected": "Clear whistled sibilant",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_svika.mp3",
+      "size": 21360,
+      "originalText": "svika",
+      "improvedText": "<speak>\n      <prosody rate=\"75%\" pitch=\"-10%\" volume=\"loud\">\n        <emphasis level=\"strong\">\n          s...vi...ka\n        </emphasis>\n      </prosody>\n    </speak>",
+      "duration": 1.332188,
+      "analysis": {
+        "text": "svika",
+        "audioFile": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_svika.mp3",
+        "issues": [
+          "Whistled sibilants may need more emphasis"
+        ],
+        "suggestions": [],
+        "score": 90
+      }
+    },
+    {
+      "word": "zvino",
+      "english": "now",
+      "expected": "Clear whistled sibilant",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_zvino.mp3",
+      "size": 21360,
+      "originalText": "zvino",
+      "improvedText": "<speak>\n      <prosody rate=\"75%\" pitch=\"-10%\" volume=\"loud\">\n        <emphasis level=\"strong\">\n          z...vi...no\n        </emphasis>\n      </prosody>\n    </speak>",
+      "duration": 1.332188,
+      "analysis": {
+        "text": "zvino",
+        "audioFile": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_zvino.mp3",
+        "issues": [
+          "Whistled sibilants may need more emphasis"
+        ],
+        "suggestions": [],
+        "score": 90
+      }
+    },
+    {
+      "word": "mbira",
+      "english": "thumb piano",
+      "expected": "Clear prenasalized consonant",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_mbira.mp3",
+      "size": 20107,
+      "originalText": "mbira",
+      "improvedText": "<speak>\n      <prosody rate=\"75%\" pitch=\"-10%\" volume=\"loud\">\n        <emphasis level=\"strong\">\n          m...bi...ra\n        </emphasis>\n      </prosody>\n    </speak>",
+      "duration": 1.253875,
+      "analysis": {
+        "text": "mbira",
+        "audioFile": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_mbira.mp3",
+        "issues": [
+          "Prenasalized consonants may need longer nasal sound"
+        ],
+        "suggestions": [],
+        "score": 90
+      }
+    },
+    {
+      "word": "ndatenda",
+      "english": "thank you",
+      "expected": "Clear prenasalized consonants",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_ndatenda.mp3",
+      "size": 43094,
+      "originalText": "ndatenda",
+      "improvedText": "<speak>\n      <prosody rate=\"75%\" pitch=\"-10%\" volume=\"loud\">\n        <emphasis level=\"strong\">\n          n...da...ten...da\n        </emphasis>\n      </prosody>\n    </speak>",
+      "duration": 2.690563,
+      "analysis": {
+        "text": "ndatenda",
+        "audioFile": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_ndatenda.mp3",
+        "issues": [
+          "Prenasalized consonants may need longer nasal sound"
+        ],
+        "suggestions": [],
+        "score": 90
+      }
+    },
+    {
+      "word": "bhazi",
+      "english": "bus",
+      "expected": "Clear breathy consonant",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_bhazi.mp3",
+      "size": 23868,
+      "originalText": "bhazi",
+      "improvedText": "<speak>\n      <prosody rate=\"75%\" pitch=\"-10%\" volume=\"loud\">\n        <emphasis level=\"strong\">\n          b...ha...zi\n        </emphasis>\n      </prosody>\n    </speak>",
+      "duration": 1.488938,
+      "analysis": {
+        "text": "bhazi",
+        "audioFile": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_bhazi.mp3",
+        "issues": [
+          "Breathy consonants may need more breath emphasis"
+        ],
+        "suggestions": [],
+        "score": 90
+      }
+    },
+    {
+      "word": "mangwanani",
+      "english": "good morning",
+      "expected": "Clear complex word",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_mangwanani.mp3",
+      "size": 35571,
+      "originalText": "mangwanani",
+      "improvedText": "<speak>\n      <prosody rate=\"75%\" pitch=\"-10%\" volume=\"loud\">\n        <emphasis level=\"strong\">\n          ma...n...g...wa...na...ni\n        </emphasis>\n      </prosody>\n    </speak>",
+      "duration": 2.220375,
+      "analysis": {
+        "text": "mangwanani",
+        "audioFile": "/Users/munashe/Documents/Shona App/shona-learn/improved-audio/improved_mangwanani.mp3",
+        "issues": [
+          "Prenasalized consonants may need longer nasal sound"
+        ],
+        "suggestions": [
+          "Consider breaking down longer words with pauses"
+        ],
+        "score": 90
+      }
+    }
+  ]
+}

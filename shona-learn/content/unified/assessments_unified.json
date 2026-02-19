@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "version": "3.0.0",
+    "integratedAt": "2025-07-07T11:41:18.257Z",
+    "totalAssessments": 2,
+    "sources": [
+      "generated"
+    ],
+    "types": [
+      "vocabulary",
+      "grammar"
+    ],
+    "levels": [
+      "A1"
+    ]
+  },
+  "assessments": [
+    {
+      "id": "vocab_basic_001",
+      "title": "Basic Vocabulary Assessment",
+      "type": "vocabulary",
+      "category": "basic",
+      "level": "A1",
+      "difficulty": 1,
+      "description": "Test your knowledge of basic Shona vocabulary",
+      "instructions": [
+        "Read each question carefully",
+        "Choose the best answer",
+        "You have 15 minutes to complete this assessment"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple_choice",
+          "question": "What does \"mangwanani\" mean?",
+          "options": [
+            "Good morning",
+            "Good afternoon",
+            "Good evening",
+            "Goodbye"
+          ],
+          "correct_answer": "Good morning",
+          "points": 10,
+          "explanation": "Mangwanani is the traditional Shona greeting for morning."
+        },
+        {
+          "id": "q2",
+          "type": "multiple_choice",
+          "question": "What is the Shona word for \"water\"?",
+          "options": [
+            "mvura",
+            "moto",
+            "muti",
+            "gomo"
+          ],
+          "correct_answer": "mvura",
+          "points": 10,
+          "explanation": "Mvura means water in Shona."
+        }
+      ],
+      "time_limit": "15 minutes",
+      "passing_score": 70,
+      "source": "generated",
+      "integrated": true
+    },
+    {
+      "id": "grammar_basic_001",
+      "title": "Basic Grammar Assessment",
+      "type": "grammar",
+      "category": "basic",
+      "level": "A1",
+      "difficulty": 2,
+      "description": "Test your understanding of basic Shona grammar",
+      "instructions": [
+        "Complete each sentence with the correct word",
+        "Pay attention to grammar rules",
+        "You have 20 minutes to complete this assessment"
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "fill_blank",
+          "question": "Complete: \"Ndiri kuenda ___ Harare\" (I am going to Harare)",
+          "options": [
+            "ku",
+            "kuna",
+            "kuti",
+            "kuti"
+          ],
+          "correct_answer": "kuna",
+          "points": 10,
+          "explanation": "Kuna is used to indicate direction or destination."
+        }
+      ],
+      "time_limit": "20 minutes",
+      "passing_score": 75,
+      "source": "generated",
+      "integrated": true
+    }
+  ]
+}

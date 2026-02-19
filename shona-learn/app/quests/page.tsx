@@ -1,8 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { motion } from 'framer-motion'
-import Navigation from '../components/Navigation'
+// Removed framer-motion import
 import { FaMap, FaCompass, FaUsers, FaLightbulb, FaStar, FaBookOpen, FaHeart } from 'react-icons/fa'
 import { quests, getQuestsByLevel, Quest } from '../../lib/quests'
 
@@ -52,16 +51,10 @@ export default function Quests() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-purple-50">
-      <Navigation user={user} />
       
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
-        <motion.div 
-          className="mb-8"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="mb-8">
           <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-white/20">
             <div className="flex items-center space-x-4 mb-4">
               <div className="p-3 bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl">
@@ -92,7 +85,7 @@ export default function Quests() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Quests Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -101,11 +94,8 @@ export default function Quests() {
             const isAvailable = quest.requiredLevel <= userLevel
             
             return (
-              <motion.div
+              <div
                 key={quest.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
                 className={`relative group cursor-pointer ${
                   isCompleted ? 'opacity-75' : ''
                 }`}
@@ -173,17 +163,15 @@ export default function Quests() {
 
                   {/* Action Button */}
                   {isAvailable && !isCompleted && (
-                    <motion.button
-                      className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      onClick={(e) => {
+                    <button
+                      className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 hover:scale-105"
+                      onClick={(e: React.MouseEvent) => {
                         e.stopPropagation()
                         handleStartQuest(quest)
                       }}
                     >
                       Begin Quest
-                    </motion.button>
+                    </button>
                   )}
 
                   {isCompleted && (
@@ -192,26 +180,20 @@ export default function Quests() {
                     </div>
                   )}
                 </div>
-              </motion.div>
+              </div>
             )
           })}
         </div>
 
         {/* Quest Details Modal */}
         {selectedQuest && (
-          <motion.div
+          <div
             className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
             onClick={() => setSelectedQuest(null)}
           >
-            <motion.div
+            <div
               className="bg-white rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               <div className="flex justify-between items-start mb-6">
                 <h2 className="text-3xl font-bold text-gray-800">
@@ -288,14 +270,12 @@ export default function Quests() {
               {/* Action Buttons */}
               <div className="flex space-x-4">
                 {selectedQuest.requiredLevel <= userLevel && !completedQuests.includes(selectedQuest.id) && (
-                  <motion.button
-                    className="flex-1 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
+                  <button
+                    className="flex-1 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105"
                     onClick={() => handleStartQuest(selectedQuest)}
                   >
                     Begin Your Journey
-                  </motion.button>
+                  </button>
                 )}
                 <button
                   className="px-6 py-3 border border-gray-300 text-gray-700 rounded-xl hover:bg-gray-50 transition-colors"
@@ -304,8 +284,8 @@ export default function Quests() {
                   Close
                 </button>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         )}
       </div>
     </div>

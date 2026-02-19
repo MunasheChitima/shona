@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "category": "architecture",
+    "totalWords": 3,
+    "created": "2025-07-07T01:37:03.814Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_mazimba_1751852223800",
+      "shona": "mazimba",
+      "english": "houses",
+      "category": "architecture",
+      "tones": "HHL",
+      "ipa": "/mazimba/",
+      "simplified": "ma-zi-mba",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine mazimba",
+          "english": "I have houses"
+        },
+        {
+          "shona": "mazimba yakanaka",
+          "english": "houses is good"
+        },
+        {
+          "shona": "Ndinoda mazimba",
+          "english": "I want houses"
+        },
+        {
+          "shona": "Ndine mazimba",
+          "english": "I have houses"
+        },
+        {
+          "shona": "mazimba yakanaka",
+          "english": "houses is good"
+        },
+        {
+          "shona": "Ndinoda mazimba",
+          "english": "I want houses"
+        }
+      ],
+      "audioFile": "mazimba.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mukombe_1751852223800",
+      "shona": "mukombe",
+      "english": "walls",
+      "category": "architecture",
+      "tones": "HHL",
+      "ipa": "/mukombe/",
+      "simplified": "mu-ko-mbe",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine mukombe",
+          "english": "I have walls"
+        },
+        {
+          "shona": "mukombe yakanaka",
+          "english": "walls is good"
+        },
+        {
+          "shona": "Ndinoda mukombe",
+          "english": "I want walls"
+        },
+        {
+          "shona": "Ndine mukombe",
+          "english": "I have walls"
+        },
+        {
+          "shona": "mukombe yakanaka",
+          "english": "walls is good"
+        },
+        {
+          "shona": "Ndinoda mukombe",
+          "english": "I want walls"
+        }
+      ],
+      "audioFile": "mukombe.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_rusvingo_1751852223800",
+      "shona": "rusvingo",
+      "english": "wall/fortification",
+      "category": "architecture",
+      "tones": "HHL",
+      "ipa": "/rusvingo/",
+      "simplified": "ru-svi-ngo",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine rusvingo",
+          "english": "I have wall/fortification"
+        },
+        {
+          "shona": "rusvingo yakanaka",
+          "english": "wall/fortification is good"
+        },
+        {
+          "shona": "Ndinoda rusvingo",
+          "english": "I want wall/fortification"
+        },
+        {
+          "shona": "Ndine rusvingo",
+          "english": "I have wall/fortification"
+        },
+        {
+          "shona": "rusvingo yakanaka",
+          "english": "wall/fortification is good"
+        },
+        {
+          "shona": "Ndinoda rusvingo",
+          "english": "I want wall/fortification"
+        }
+      ],
+      "audioFile": "rusvingo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    }
+  ]
+}

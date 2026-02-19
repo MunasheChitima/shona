@@ -1,0 +1,439 @@
+{
+  "metadata": {
+    "category": "body",
+    "totalWords": 10,
+    "created": "2025-07-07T01:37:03.810Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_dumbu_1751852223800",
+      "shona": "dumbu",
+      "english": "stomach",
+      "category": "body",
+      "tones": "HL",
+      "ipa": "/dumbu/",
+      "simplified": "du-mbu",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine dumbu",
+          "english": "I have stomach"
+        },
+        {
+          "shona": "dumbu yakanaka",
+          "english": "stomach is good"
+        },
+        {
+          "shona": "Ndinoda dumbu",
+          "english": "I want stomach"
+        },
+        {
+          "shona": "Ndine dumbu",
+          "english": "I have stomach"
+        },
+        {
+          "shona": "dumbu yakanaka",
+          "english": "stomach is good"
+        },
+        {
+          "shona": "Ndinoda dumbu",
+          "english": "I want stomach"
+        }
+      ],
+      "audioFile": "dumbu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_manzino_1751852223800",
+      "shona": "manzino",
+      "english": "teeth",
+      "category": "body",
+      "tones": "HHL",
+      "ipa": "/manzino/",
+      "simplified": "ma-nzi-no",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine manzino",
+          "english": "I have teeth"
+        },
+        {
+          "shona": "manzino yakanaka",
+          "english": "teeth is good"
+        },
+        {
+          "shona": "Ndinoda manzino",
+          "english": "I want teeth"
+        },
+        {
+          "shona": "Ndine manzino",
+          "english": "I have teeth"
+        },
+        {
+          "shona": "manzino yakanaka",
+          "english": "teeth is good"
+        },
+        {
+          "shona": "Ndinoda manzino",
+          "english": "I want teeth"
+        }
+      ],
+      "audioFile": "manzino.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_maoko_1751852223800",
+      "shona": "maoko",
+      "english": "hands",
+      "category": "body",
+      "tones": "HL",
+      "ipa": "/maoko/",
+      "simplified": "ma-o-ko",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine maoko",
+          "english": "I have hands"
+        },
+        {
+          "shona": "maoko yakanaka",
+          "english": "hands is good"
+        },
+        {
+          "shona": "Ndinoda maoko",
+          "english": "I want hands"
+        },
+        {
+          "shona": "Ndine maoko",
+          "english": "I have hands"
+        },
+        {
+          "shona": "maoko yakanaka",
+          "english": "hands is good"
+        },
+        {
+          "shona": "Ndinoda maoko",
+          "english": "I want hands"
+        }
+      ],
+      "audioFile": "maoko.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_maziso_1751852223800",
+      "shona": "maziso",
+      "english": "eyes",
+      "category": "body",
+      "tones": "HHL",
+      "ipa": "/maziso/",
+      "simplified": "ma-zi-so",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine maziso",
+          "english": "I have eyes"
+        },
+        {
+          "shona": "maziso yakanaka",
+          "english": "eyes is good"
+        },
+        {
+          "shona": "Ndinoda maziso",
+          "english": "I want eyes"
+        },
+        {
+          "shona": "Ndine maziso",
+          "english": "I have eyes"
+        },
+        {
+          "shona": "maziso yakanaka",
+          "english": "eyes is good"
+        },
+        {
+          "shona": "Ndinoda maziso",
+          "english": "I want eyes"
+        }
+      ],
+      "audioFile": "maziso.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_muromo_1751852223800",
+      "shona": "muromo",
+      "english": "mouth",
+      "category": "body",
+      "tones": "HHL",
+      "ipa": "/muromo/",
+      "simplified": "mu-ro-mo",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine muromo",
+          "english": "I have mouth"
+        },
+        {
+          "shona": "muromo yakanaka",
+          "english": "mouth is good"
+        },
+        {
+          "shona": "Ndinoda muromo",
+          "english": "I want mouth"
+        },
+        {
+          "shona": "Ndine muromo",
+          "english": "I have mouth"
+        },
+        {
+          "shona": "muromo yakanaka",
+          "english": "mouth is good"
+        },
+        {
+          "shona": "Ndinoda muromo",
+          "english": "I want mouth"
+        }
+      ],
+      "audioFile": "muromo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_musoro_1751852223800",
+      "shona": "musoro",
+      "english": "head",
+      "category": "body",
+      "tones": "HHL",
+      "ipa": "/musoro/",
+      "simplified": "mu-so-ro",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine musoro",
+          "english": "I have head"
+        },
+        {
+          "shona": "musoro yakanaka",
+          "english": "head is good"
+        },
+        {
+          "shona": "Ndinoda musoro",
+          "english": "I want head"
+        },
+        {
+          "shona": "Ndine musoro",
+          "english": "I have head"
+        },
+        {
+          "shona": "musoro yakanaka",
+          "english": "head is good"
+        },
+        {
+          "shona": "Ndinoda musoro",
+          "english": "I want head"
+        },
+        {
+          "shona": "Ndinoda musoro",
+          "english": "I want head",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "musoro.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_nzeve_1751852223800",
+      "shona": "nzeve",
+      "english": "ear",
+      "category": "body",
+      "tones": "HL",
+      "ipa": "/nzeve/",
+      "simplified": "nze-ve",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine nzeve",
+          "english": "I have ear"
+        },
+        {
+          "shona": "nzeve yakanaka",
+          "english": "ear is good"
+        },
+        {
+          "shona": "Ndinoda nzeve",
+          "english": "I want ear"
+        },
+        {
+          "shona": "Ndine nzeve",
+          "english": "I have ear"
+        },
+        {
+          "shona": "nzeve yakanaka",
+          "english": "ear is good"
+        },
+        {
+          "shona": "Ndinoda nzeve",
+          "english": "I want ear"
+        },
+        {
+          "shona": "Ndinoda nzeve",
+          "english": "I want ears",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "nzeve.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tsoka_1751852223800",
+      "shona": "tsoka",
+      "english": "foot",
+      "category": "body",
+      "tones": "HL",
+      "ipa": "/tsoka/",
+      "simplified": "tso-ka",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine tsoka",
+          "english": "I have foot"
+        },
+        {
+          "shona": "tsoka yakanaka",
+          "english": "foot is good"
+        },
+        {
+          "shona": "Ndinoda tsoka",
+          "english": "I want foot"
+        },
+        {
+          "shona": "Ndine tsoka",
+          "english": "I have foot"
+        },
+        {
+          "shona": "tsoka yakanaka",
+          "english": "foot is good"
+        },
+        {
+          "shona": "Ndinoda tsoka",
+          "english": "I want foot"
+        }
+      ],
+      "audioFile": "tsoka.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_meso_1751852223801",
+      "shona": "meso",
+      "english": "eyes",
+      "category": "body",
+      "tones": "LHL",
+      "ipa": "/meso/",
+      "simplified": "MEH-soh",
+      "source": "primary_textbook",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda meso",
+          "english": "I want eyes",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "meso.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_mukanwa_1751852223801",
+      "shona": "mukanwa",
+      "english": "mouth",
+      "category": "body",
+      "tones": "LHLHL",
+      "ipa": "/mukanwa/",
+      "simplified": "moo-KAH-nwah",
+      "source": "primary_textbook",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda mukanwa",
+          "english": "I want mouth",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "mukanwa.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    }
+  ]
+}

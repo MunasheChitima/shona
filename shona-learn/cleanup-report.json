@@ -1,0 +1,945 @@
+{
+  "timestamp": "2025-07-07T03:06:12.424Z",
+  "summary": {
+    "orphanedVocabulary": 185,
+    "orphanedExercises": 0,
+    "lessonsWithoutExercises": 0,
+    "vocabularyWithoutRequiredFields": 0,
+    "lessonsWithoutRequiredFields": 0,
+    "exercisesWithoutRequiredFields": 0
+  },
+  "details": {
+    "removedVocabulary": [
+      {
+        "id": "cmcsirlzv00456da39fwc805d",
+        "shona": "DStv",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzh003i6da3wgfi6mg8",
+        "shona": "Facebook",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzi003k6da3t4lye6yj",
+        "shona": "Instagram",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzu00446da35o1cdkru",
+        "shona": "Netflix",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzi003j6da365akz1we",
+        "shona": "Twitter",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm03004k6da3m307nrqy",
+        "shona": "Victoria Falls",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzh003h6da3v3z13b6k",
+        "shona": "WhatsApp",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyf00176da3ipy9ul8r",
+        "shona": "aaah!",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzm003r6da37lewzlxf",
+        "shona": "airtime",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyo001t6da3oqg6a5jr",
+        "shona": "app",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlya000v6da37scc1gud",
+        "shona": "asi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz900306da3cn48nfp8",
+        "shona": "bato rezvematongerwo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyi001e6da3r02vdrp4",
+        "shona": "bhangi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyg00186da3srv9svhx",
+        "shona": "bhizinesi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzx004a6da3b7cwrc0t",
+        "shona": "bhora",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzp003w6da3zbo4y19t",
+        "shona": "boyfriend",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz3002q6da3m96idsce",
+        "shona": "bvunzo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyh001c6da3wpu4itvb",
+        "shona": "chibvumirano",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz2002p6da3d4bsvrvw",
+        "shona": "chidzidzo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyx002g6da34i6o1wp9",
+        "shona": "chikoro",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz0002j6da328m08smg",
+        "shona": "chikoro chepuraimari",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz0002k6da3y5zdonxi",
+        "shona": "chikoro chesekondari",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyj001g6da3hz0o9ljw",
+        "shona": "chikwereti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlys00246da35ton52fc",
+        "shona": "chipatara",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyr00206da3iqsnpneg",
+        "shona": "chiremba",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyr00226da3ghu1lswy",
+        "shona": "chiremba wemazino",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyt00276da3wqazd2vm",
+        "shona": "chirwere",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyv002b6da3j2g8b07q",
+        "shona": "chirwere cheshuga",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzx004b6da3q4unbdeh",
+        "shona": "cricket",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly6000l6da34cbl0mva",
+        "shona": "dai maibvuma",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzl003q6da3nkr9qqom",
+        "shona": "data bundles",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzz004f6da3vkuwwrh3",
+        "shona": "designer",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyo001u6da3ounysg5k",
+        "shona": "dhata",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz3002r6da3swq7kjql",
+        "shona": "dhigirii",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyf00166da3emqy4mki",
+        "shona": "ehe",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlye00146da395w9phwx",
+        "shona": "ehe!",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzy004d6da3zzljkrti",
+        "shona": "fashion",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyt00266da3sbhxei5u",
+        "shona": "femesi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzt00426da3n2rlhzuu",
+        "shona": "firimu",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzq003x6da3s7q3dior",
+        "shona": "girlfriend",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzy004c6da33s6gsouh",
+        "shona": "gym",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyd00136da3ofokfz8v",
+        "shona": "haiwa!",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly4000h6da39u7xs2us",
+        "shona": "handifungi kudaro",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly4000g6da3wg3siist",
+        "shona": "handina kupikisa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly5000j6da34vlepm5o",
+        "shona": "handizvo zvandinoona",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlye00156da3vfslhabx",
+        "shona": "hongu",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm04004m6da3ju4huoy9",
+        "shona": "hotel",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlza00326da3jw8c2cpt",
+        "shona": "hupfumi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz4002u6da3ciplqrd0",
+        "shona": "hurumende",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm09004y6da3vjr2cioo",
+        "shona": "hutano hwepfungwa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzo003t6da37c0stm84",
+        "shona": "influencer",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlym001p6da3zb8v2xm3",
+        "shona": "intaneti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyw002d6da3r6k0o783",
+        "shona": "jekiseni",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyt00256da31xr7139i",
+        "shona": "kiriniki",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz900316da39znwsyc2",
+        "shona": "kodzero",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlze003b6da33ldi9uc5",
+        "shona": "kombi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlym001n6da36ntujx5e",
+        "shona": "kompyuta",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyz002i6da3htu5ng2n",
+        "shona": "koriji",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyw002e6da3n264qesz",
+        "shona": "kubaya jekiseni",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm05004o6da3u2bs45fk",
+        "shona": "kubhuka",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm07004u6da36f8daoup",
+        "shona": "kuchengetedza zvakatipoteredza",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyj001f6da38pqm5yn6",
+        "shona": "kuchinjisa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzo003u6da3hees5bvn",
+        "shona": "kudanana",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzx00496da3omgrceai",
+        "shona": "kudownloader",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz4002t6da3ff8mph7u",
+        "shona": "kudzidza",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlxw00026da3357gnkwf",
+        "shona": "kufadzwa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlxz00066da3o3pb2cil",
+        "shona": "kugumbuka",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzm003s6da3pkg1b0sy",
+        "shona": "kukiya",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzk003n6da3edv6lzeq",
+        "shona": "kukomenda",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlza00336da30j63b42z",
+        "shona": "kukura kwehupfumi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzb00356da3mots8yjt",
+        "shona": "kukwira kwemitengo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzj003l6da31tzjpza6",
+        "shona": "kulaika",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyb000x6da3col4m290",
+        "shona": "kunyangwe zvakadaro",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzc00376da39wyfiqdx",
+        "shona": "kunze kwenyika",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm0a00506da3z6kse0in",
+        "shona": "kuora moyo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzc00386da3h3ccdhhm",
+        "shona": "kupinza",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm07004t6da3dh1gsrnq",
+        "shona": "kupisa kukuru",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyq001z6da3pbs5yoox",
+        "shona": "kupousta",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzr00406da347cuj5jx",
+        "shona": "kurambana",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyx002f6da3lmvgmtgh",
+        "shona": "kurapwa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyl001m6da3q9mprxxk",
+        "shona": "kurasikirwa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzq003y6da3qwohxepx",
+        "shona": "kuroorana",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyv002a6da3rxbnvdcm",
+        "shona": "kurwara musoro",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm06004s6da32doy8yv6",
+        "shona": "kusanaya kwemvura",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly000096da3j3m4gnod",
+        "shona": "kushamisika",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm06004r6da3x7k7wwan",
+        "shona": "kushanduka kwemamiriro ekunze",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzj003m6da3eop46z9j",
+        "shona": "kushera",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlxx00036da3m1mxhi05",
+        "shona": "kushungurudzika",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm0a004z6da3v6zz895b",
+        "shona": "kushushikana",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm08004x6da33xst72wq",
+        "shona": "kutema miti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzb00366da302yj6ngi",
+        "shona": "kutengeserana",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyq001y6da3y5631p4q",
+        "shona": "kutevera",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlxy00056da3mobxg3ss",
+        "shona": "kutsamwa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyp001x6da3eiy2g1rw",
+        "shona": "kutumira meseji",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlxz00076da3ou3lwhj8",
+        "shona": "kutya",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyl001k6da3ii02w7pv",
+        "shona": "kuvamba bhizinesi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz8002z6da3r2khwdqh",
+        "shona": "kuvhota",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly000086da3p3gjq15p",
+        "shona": "kuvhunduka",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyu00296da3iypr8nqe",
+        "shona": "kuvhuvhuta",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzg003e6da3cvf5rzm1",
+        "shona": "loadshedding",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm04004n6da3ohtxzk5e",
+        "shona": "lodge",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlze003a6da35xv3ynd1",
+        "shona": "maflats",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyd00126da30jveoh5i",
+        "shona": "maiwe!",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm00004h6da3ybmpvgbj",
+        "shona": "make-up",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly1000b6da349mpazuu",
+        "shona": "maonero angu ndeekuti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyi001d6da33ivlgyhn",
+        "shona": "mari",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm0c00536da3dxved81j",
+        "shona": "meditation",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlza00346da32pgtf45v",
+        "shona": "mitengo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyj001h6da3x8237nnd",
+        "shona": "mubereko",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlym001o6da3p8ss9dp7",
+        "shona": "muchina",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzd00396da3gfs0dqbz",
+        "shona": "mudhorobha",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzp003v6da3lcgjvqv1",
+        "shona": "mudiwa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz1002m6da31uwmvrui",
+        "shona": "mudzidzi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz1002l6da32ijvzy14",
+        "shona": "mudzidzisi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlxw00016da3eff5jqrq",
+        "shona": "mufaro mukuru",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyr00216da3ruh3evep",
+        "shona": "mukoti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz2002o6da36y9fq94u",
+        "shona": "mukuru wechikoro",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyu00286da3r7bd4apy",
+        "shona": "musana",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly9000r6da3wo66ivx7",
+        "shona": "musandipa mhosva",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlys00236da3j6isfge7",
+        "shona": "mushandi wehutano",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzh003g6da3u86qt9be",
+        "shona": "mushikashika",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyv002c6da37sds6ru9",
+        "shona": "mushonga",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly9000t6da3orx4p43k",
+        "shona": "mushure mezvo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyg00196da3yomb05of",
+        "shona": "musika",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyg001a6da3bmxtia2e",
+        "shona": "mutengesi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyh001b6da3xisixfyp",
+        "shona": "mutengi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyk001i6da3topmduwa",
+        "shona": "mutero",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz5002v6da3bkun3xi9",
+        "shona": "mutungamiri",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz5002w6da3l7thzy1z",
+        "shona": "mutungamiri wenyika",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyk001j6da3ziyr1jsh",
+        "shona": "muzvinabhizinesi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzg003f6da3xz4xxhbw",
+        "shona": "mvura yekunwa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlxp00006da37cug66d7",
+        "shona": "ndafara zvikuru",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly5000k6da3rm3pbb7p",
+        "shona": "ndapota",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly7000o6da3q5opcec3",
+        "shona": "ndatenda hangu",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly8000q6da3zl4ir7zk",
+        "shona": "ndikanganwa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyc00106da3z2licm8l",
+        "shona": "ndiko kuti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly8000p6da3gznmy3xi",
+        "shona": "ndine urombo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly3000e6da3wsthkjig",
+        "shona": "ndinobvumirana newe",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly1000a6da3742a4kdo",
+        "shona": "ndinofunga kuti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly6000m6da3xdrp02uy",
+        "shona": "ndinokumbirawo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly5000i6da37ggfkrfg",
+        "shona": "ndinopikisa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly2000c6da3ypr7ylb4",
+        "shona": "ndinotenda kuti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly7000n6da3t8m4sjph",
+        "shona": "ndinotenda zvikuru",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyc00116da3zmfn2oao",
+        "shona": "nemamwe mazwi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyn001q6da3fxdh5qz6",
+        "shona": "nhare",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyn001r6da3gpz1h9ok",
+        "shona": "nharembozha",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlya000u6da3drbrxj6v",
+        "shona": "pakupedzisira",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly9000s6da3q0l3f196",
+        "shona": "pakutanga",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyc000z6da3lxauks3n",
+        "shona": "pamusoro pezvo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz6002x6da34gf1oo6f",
+        "shona": "paramende",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm05004p6da38c4bbm7p",
+        "shona": "passport",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzw00486da3z0t8v8ir",
+        "shona": "playlist",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz2002n6da3ta50j1ke",
+        "shona": "purofesa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyl001l6da3jfzflls6",
+        "shona": "purofiti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyn001s6da3lkcrei53",
+        "shona": "purogiramu",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm08004v6da326o9ufm4",
+        "shona": "recycling",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm03004l6da3di2mtw86",
+        "shona": "safari",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz8002y6da31zmo1l53",
+        "shona": "sarudzo",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlz3002s6da3v803p64e",
+        "shona": "satefeketi",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm0c00546da3bfc3ghf3",
+        "shona": "self-care",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzl003p6da38f2mev06",
+        "shona": "selfie",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzu00436da3995hsak7",
+        "shona": "series",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzf003d6da3um7it47v",
+        "shona": "shopping mall",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlxx00046da354sj9ekp",
+        "shona": "shungu",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzq003z6da3b087hg9l",
+        "shona": "single parent",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyp001w6da31bh19qap",
+        "shona": "social media",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm08004w6da3l5r4wvkg",
+        "shona": "solar",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzk003o6da3a6w7znku",
+        "shona": "status",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzr00416da39971c16t",
+        "shona": "step-parent",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzw00476da33mxir3z5",
+        "shona": "sungura",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzz004e6da3560riqjf",
+        "shona": "swag",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm0b00516da39xfakfhx",
+        "shona": "therapy",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzf003c6da3y0yyx2nd",
+        "shona": "traffic",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm02004i6da3mks5k6t5",
+        "shona": "trending",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyb000y6da35dcfl5yg",
+        "shona": "uyezve",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm02004j6da3mqnp9zfi",
+        "shona": "vintage",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm05004q6da3t0yv8kou",
+        "shona": "visa",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm00004g6da33twfuxg3",
+        "shona": "weave",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyp001v6da37y367u8s",
+        "shona": "webusaiti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirm0c00526da36ohtzx9m",
+        "shona": "yoga",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlyy002h6da3whchziah",
+        "shona": "yunivhesiti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlzv00466da3luvztdsj",
+        "shona": "zimdancehall",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly2000d6da3kn6rryt0",
+        "shona": "zviri pachena kuti",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirly3000f6da3bma1iolt",
+        "shona": "zvirinani",
+        "reason": "Duplicate"
+      },
+      {
+        "id": "cmcsirlya000w6da3uaqxjnuw",
+        "shona": "zvisinei nazvo",
+        "reason": "Duplicate"
+      }
+    ],
+    "removedExercises": [],
+    "removedLessons": [],
+    "fixedVocabulary": [],
+    "fixedLessons": [],
+    "fixedExercises": []
+  }
+}

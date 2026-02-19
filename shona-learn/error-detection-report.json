@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-07-09T11:33:05.416Z",
+  "summary": {
+    "errors": 1,
+    "warnings": 9,
+    "fixes": 0
+  },
+  "errors": [
+    "TypeScript compilation errors:\n__tests__/e2e.test.ts(27,35): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\nlib/auth-server.ts(12,14): error TS2769: No overload matches this call.\n  Overload 1 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: null, options?: (SignOptions & { algorithm: \"none\"; }) | undefined): string', gave the following error.\n    Argument of type 'string' is not assignable to parameter of type 'null'.\n  Overload 2 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: Buffer<ArrayBufferLike> | Secret | PrivateKeyInput | JsonWebKeyInput, options?: SignOptions | undefined): string', gave the following error.\n    Type 'string' is not assignable to type 'number | StringValue | undefined'.\n  Overload 3 of 5, '(payload: string | object | Buffer<ArrayBufferLike>, secretOrPrivateKey: Buffer<ArrayBufferLike> | Secret | PrivateKeyInput | JsonWebKeyInput, callback: SignCallback): void', gave the following error.\n    Object literal may only specify known properties, and 'expiresIn' does not exist in type 'SignCallback'.\nlib/performance.ts(92,67): error TS2339: Property 'transferSize' does not exist on type 'PerformanceEntry'.\ntests/autonomous-test-framework/performance-tester.ts(1352,65): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\ntests/autonomous-test-framework/performance-tester.ts(1390,51): error TS7006: Parameter 'r' implicitly has an 'any' type.\ntests/autonomous-test-framework/security-tester.ts(207,40): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\ntests/autonomous-test-framework/security-tester.ts(431,39): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\ntests/autonomous-test-framework/security-tester.ts(1352,64): error TS2352: Conversion of type 'HTMLTextAreaElement' to type 'HTMLInputElement' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.\n  Type 'HTMLTextAreaElement' is missing the following properties from type 'HTMLInputElement': accept, align, alt, capture, and 29 more.\ntests/autonomous-test-framework/test-orchestrator.ts(94,42): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\ntests/autonomous-test-framework/test-orchestrator.ts(370,40): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\n"
+  ],
+  "warnings": [
+    "Non-standard import path in app/components/shared/PronunciationText.tsx: \n\ninterface PronunciationTextProps {\n  word: string\n  pronunciation: string\n  phonetic?: string\n  syllables?: string\n  tonePattern?: string\n  audioFile?: string\n  size?: ",
+    "Non-standard import path in app/components/shared/VocabularyDisplay.tsx: \n\ninterface VocabularyItem {\n  shona: string\n  english: string\n  pronunciation: string\n  phonetic?: string\n  syllables?: string\n  tonePattern?: string\n  audioFile?: string\n  usage?: string\n  example?: string\n  culturalContext?: string\n}\n\ninterface VocabularyDisplayProps {\n  vocabulary: VocabularyItem[]\n  variant?: ",
+    "Non-standard import path in app/components/voice/PronunciationPractice.tsx: \nimport LoadingSpinner from ",
+    "No audioService import found in app/components/ExerciseModal.tsx",
+    "swcMinify option is deprecated in Next.js 15",
+    "No headings found in app/layout.tsx",
+    "Skip link not found in app/components/Navigation.tsx",
+    "No headings found in app/components/Navigation.tsx",
+    "No mobile breakpoints found in app/styles/globals.css"
+  ],
+  "fixes": []
+}

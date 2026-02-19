@@ -1,0 +1,42 @@
+[
+  {
+    "word": "VP Mnangagwa Shona version   isolated",
+    "voiceSettings": {
+      "stability": 0.75,
+      "similarity_boost": 0.85,
+      "style": 0.4,
+      "use_speaker_boost": true
+    },
+    "ssmlSettings": {
+      "rate": "85%",
+      "pitch": "0%",
+      "volume": "medium",
+      "emphasis": "moderate"
+    },
+    "textProcessing": {
+      "useNaturalFlow": true,
+      "avoidArtificialPauses": true,
+      "maintainWordIntegrity": true
+    }
+  },
+  {
+    "word": "WIKITONGUES  Tatenda speaking Shona   isolated",
+    "voiceSettings": {
+      "stability": 0.75,
+      "similarity_boost": 0.85,
+      "style": 0.4,
+      "use_speaker_boost": true
+    },
+    "ssmlSettings": {
+      "rate": "85%",
+      "pitch": "0%",
+      "volume": "medium",
+      "emphasis": "moderate"
+    },
+    "textProcessing": {
+      "useNaturalFlow": true,
+      "avoidArtificialPauses": true,
+      "maintainWordIntegrity": true
+    }
+  }
+]

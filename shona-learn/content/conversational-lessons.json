@@ -1,0 +1,399 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "created": "2025-01-16",
+    "description": "Conversational lesson content for practical Shona dialogue",
+    "totalLessons": 5,
+    "focus": "conversation_skills"
+  },
+  "lessons": [
+    {
+      "id": "conversation-1",
+      "title": "Kuzvikwazisa - Introducing Yourself",
+      "description": "Learn to introduce yourself and have basic conversations in Shona",
+      "category": "Communication",
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 75,
+      "estimatedDuration": 20,
+      "emoji": "🤝",
+      "learningObjectives": [
+        "Master self-introduction in Shona",
+        "Ask about names and origins",
+        "Practice basic conversational flow",
+        "Understand cultural greeting protocols"
+      ],
+      "culturalNotes": [
+        "Introductions often include your family background",
+        "Asking about someone's totem (mutupo) is culturally significant",
+        "Respectful introductions show good upbringing"
+      ],
+      "dialogues": [
+        {
+          "id": "dialogue-1",
+          "title": "Meeting Someone New",
+          "scenario": "Two people meeting for the first time",
+          "conversation": [
+            {
+              "speaker": "Person A",
+              "shona": "Mhoroi, ini ndinonzi John. Munonzi ani?",
+              "english": "Hello, I am called John. What are you called?",
+              "pronunciation": "mm-HO-roi, i-ni ndi-no-nzi John. mu-no-nzi a-ni?"
+            },
+            {
+              "speaker": "Person B", 
+              "shona": "Mhoroi John, ini ndinonzi Mary. Makadii?",
+              "english": "Hello John, I am called Mary. How are you?",
+              "pronunciation": "mm-HO-roi John, i-ni ndi-no-nzi Mary. ma-ka-di?"
+            },
+            {
+              "speaker": "Person A",
+              "shona": "Ndiripofuti, makadiiwo?",
+              "english": "I am fine, how are you too?",
+              "pronunciation": "ndi-ri-po-fu-ti, ma-ka-di-wo?"
+            },
+            {
+              "speaker": "Person B",
+              "shona": "Ndiripofuti. Munobva kupi?",
+              "english": "I am fine. Where do you come from?",
+              "pronunciation": "ndi-ri-po-fu-ti. mu-no-bva ku-pi?"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "exercise-1",
+          "type": "dialogue_practice",
+          "question": "Complete the conversation: 'Mhoroi, ini ndinonzi Sarah. Munonzi ___?'",
+          "correctAnswer": "ani",
+          "options": ["ani", "here", "kupi", "sei"],
+          "explanation": "Use 'ani' to ask 'what' when asking for someone's name"
+        },
+        {
+          "id": "exercise-2",
+          "type": "role_play",
+          "scenario": "Introduce yourself to a new colleague",
+          "culturalContext": "Professional setting with appropriate respect",
+          "expectedResponse": "Mhoroi, ini ndinonzi [name]. Makadii?"
+        }
+      ]
+    },
+    {
+      "id": "conversation-2",
+      "title": "Kubvunza Migwagwa - Asking for Directions",
+      "description": "Learn to ask for and give directions in Shona",
+      "category": "Communication",
+      "level": "beginner",
+      "difficulty": "medium",
+      "xpReward": 80,
+      "estimatedDuration": 25,
+      "emoji": "🗺️",
+      "learningObjectives": [
+        "Ask for directions politely",
+        "Understand directional vocabulary",
+        "Give simple directions",
+        "Practice location-based conversations"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kupi",
+          "english": "where",
+          "pronunciation": "ku-pi"
+        },
+        {
+          "shona": "rudyi",
+          "english": "right",
+          "pronunciation": "ru-dyi"
+        },
+        {
+          "shona": "kuruboshwe",
+          "english": "left",
+          "pronunciation": "ku-ru-bo-shwe"
+        },
+        {
+          "shona": "mberi",
+          "english": "forward/ahead",
+          "pronunciation": "mbe-ri"
+        },
+        {
+          "shona": "kumashure",
+          "english": "behind/back",
+          "pronunciation": "ku-ma-shu-re"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "dialogue-2",
+          "title": "Finding the Market",
+          "scenario": "Tourist asking for directions to the market",
+          "conversation": [
+            {
+              "speaker": "Tourist",
+              "shona": "Ndingaona kwenyu, musika uripi?",
+              "english": "Excuse me, where is the market?",
+              "pronunciation": "ndi-nga-o-na kwe-nyu, mu-si-ka u-ri-pi?"
+            },
+            {
+              "speaker": "Local",
+              "shona": "Musika uri pedyo nezvikoro. Enda mberi, wobva wasvika.",
+              "english": "The market is near the schools. Go forward, then you will arrive.",
+              "pronunciation": "mu-si-ka u-ri pe-dyo ne-zvi-ko-ro. e-nda mbe-ri, wo-bva wa-svi-ka."
+            },
+            {
+              "speaker": "Tourist",
+              "shona": "Ndatenda. Ndinofanira kufamba mangani?",
+              "english": "Thank you. How long should I walk?",
+              "pronunciation": "nda-te-nda. ndi-no-fa-ni-ra ku-fa-mba ma-nga-ni?"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "exercise-3",
+          "type": "translation",
+          "question": "How do you say 'Where is the hospital?' in Shona?",
+          "correctAnswer": "Chipatara chiripi?",
+          "explanation": "Use 'chiripi' for 'where is' when referring to buildings/places"
+        }
+      ]
+    },
+    {
+      "id": "conversation-3",
+      "title": "Mumusika - At the Market",
+      "description": "Learn to bargain and shop at a traditional Shona market",
+      "category": "Communication",
+      "level": "intermediate",
+      "difficulty": "medium",
+      "xpReward": 90,
+      "estimatedDuration": 30,
+      "emoji": "🛒",
+      "learningObjectives": [
+        "Negotiate prices respectfully",
+        "Use market-specific vocabulary",
+        "Practice numbers and quantities",
+        "Understand market culture"
+      ],
+      "culturalNotes": [
+        "Bargaining is expected and shows engagement",
+        "Always greet the seller first",
+        "Ask about the family - it's culturally important"
+      ],
+      "dialogues": [
+        {
+          "id": "dialogue-3",
+          "title": "Buying Vegetables",
+          "scenario": "Customer buying vegetables at market",
+          "conversation": [
+            {
+              "speaker": "Customer",
+              "shona": "Mangwanani amai. Tomato dzinobhadhariswa sei?",
+              "english": "Good morning mother. How much do the tomatoes cost?",
+              "pronunciation": "ma-ngwa-na-ni a-mai. to-ma-to dzi-no-bha-dha-ri-swa sei?"
+            },
+            {
+              "speaker": "Seller",
+              "shona": "Mangwanani mwana. Tomato dziri madhora maviri pakg.",
+              "english": "Good morning child. The tomatoes are two dollars per kg.",
+              "pronunciation": "ma-ngwa-na-ni mwa-na. to-ma-to dzi-ri ma-dho-ra ma-vi-ri pa-kg."
+            },
+            {
+              "speaker": "Customer",
+              "shona": "Aiwa, zvakanyanyisa. Mungatengesa madhora rimwe nehafu here?",
+              "english": "No, that's too much. Can you sell for one dollar fifty?",
+              "pronunciation": "ai-wa, zva-ka-nya-nyi-sa. mu-nga-te-nge-sa ma-dho-ra ri-mwe ne-ha-fu he-re?"
+            },
+            {
+              "speaker": "Seller",
+              "shona": "Zvakanaka, asi nditore maviri makg.",
+              "english": "Okay, but take two kilograms.",
+              "pronunciation": "zva-ka-na-ka, a-si ndi-to-re ma-vi-ri ma-kg."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "exercise-4",
+          "type": "cultural_context",
+          "question": "Why is it important to greet the seller before asking about prices?",
+          "correctAnswer": "It shows respect and cultural awareness",
+          "explanation": "Greetings establish relationship and respect before business"
+        }
+      ]
+    },
+    {
+      "id": "conversation-4",
+      "title": "Pamhuri - Family Conversations",
+      "description": "Learn to talk about family and relationships in Shona",
+      "category": "Family",
+      "level": "intermediate",
+      "difficulty": "medium",
+      "xpReward": 85,
+      "estimatedDuration": 25,
+      "emoji": "👨‍👩‍👧‍👦",
+      "learningObjectives": [
+        "Discuss family relationships",
+        "Ask about family members",
+        "Share family stories",
+        "Understand kinship terms"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mhuri",
+          "english": "family",
+          "pronunciation": "mhu-ri"
+        },
+        {
+          "shona": "baba",
+          "english": "father",
+          "pronunciation": "ba-ba"
+        },
+        {
+          "shona": "amai",
+          "english": "mother",
+          "pronunciation": "a-mai"
+        },
+        {
+          "shona": "mukoma",
+          "english": "older brother",
+          "pronunciation": "mu-ko-ma"
+        },
+        {
+          "shona": "hanzvadzi",
+          "english": "sister",
+          "pronunciation": "ha-nzva-dzi"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "dialogue-4",
+          "title": "Family Discussion",
+          "scenario": "Friends talking about their families",
+          "conversation": [
+            {
+              "speaker": "Friend A",
+              "shona": "Mhuri yako yakadii?",
+              "english": "How is your family?",
+              "pronunciation": "mhu-ri ya-ko ya-ka-di?"
+            },
+            {
+              "speaker": "Friend B",
+              "shona": "Mhuri yangu iriright. Baba vangu varipabasa, amai vangu varikumaruwa.",
+              "english": "My family is fine. My father is at work, my mother is in the fields.",
+              "pronunciation": "mhu-ri ya-ngu i-ri-right. ba-ba va-ngu va-ri-pa-ba-sa, a-mai va-ngu va-ri-ku-ma-ru-wa."
+            },
+            {
+              "speaker": "Friend A",
+              "shona": "Unemukoma here kana hanzvadzi?",
+              "english": "Do you have an older brother or sister?",
+              "pronunciation": "u-ne-mu-ko-ma he-re ka-na ha-nzva-dzi?"
+            },
+            {
+              "speaker": "Friend B",
+              "shona": "Ndine mukoma mumwe nehanzvadzi vaviri. Iwe?",
+              "english": "I have one older brother and two sisters. And you?",
+              "pronunciation": "ndi-ne mu-ko-ma mu-mwe ne-ha-nzva-dzi va-vi-ri. i-we?"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "exercise-5",
+          "type": "fill_blank",
+          "question": "Complete: 'Ndine _____ vaviri' (I have two sisters)",
+          "correctAnswer": "hanzvadzi",
+          "explanation": "Use 'hanzvadzi' for sister in family context"
+        }
+      ]
+    },
+    {
+      "id": "conversation-5",
+      "title": "Kubvunza Nguva - Asking About Time",
+      "description": "Learn to ask about time and discuss schedules in Shona",
+      "category": "Time",
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 70,
+      "estimatedDuration": 20,
+      "emoji": "⏰",
+      "learningObjectives": [
+        "Ask about time",
+        "Tell time in Shona",
+        "Discuss daily schedules",
+        "Use time expressions"
+      ],
+      "vocabulary": [
+        {
+          "shona": "nguva",
+          "english": "time",
+          "pronunciation": "ngu-va"
+        },
+        {
+          "shona": "mangwanani",
+          "english": "morning",
+          "pronunciation": "ma-ngwa-na-ni"
+        },
+        {
+          "shona": "masikati",
+          "english": "afternoon",
+          "pronunciation": "ma-si-ka-ti"
+        },
+        {
+          "shona": "manheru",
+          "english": "evening",
+          "pronunciation": "ma-nhe-ru"
+        },
+        {
+          "shona": "husiku",
+          "english": "night",
+          "pronunciation": "hu-si-ku"
+        }
+      ],
+      "dialogues": [
+        {
+          "id": "dialogue-5",
+          "title": "Asking About Time",
+          "scenario": "Someone asking about the time",
+          "conversation": [
+            {
+              "speaker": "Person A",
+              "shona": "Inguva ipi zvino?",
+              "english": "What time is it now?",
+              "pronunciation": "i-ngu-va i-pi zvi-no?"
+            },
+            {
+              "speaker": "Person B",
+              "shona": "Inguva gumi nemaviri masikati.",
+              "english": "It's twelve o'clock in the afternoon.",
+              "pronunciation": "i-ngu-va gu-mi ne-ma-vi-ri ma-si-ka-ti."
+            },
+            {
+              "speaker": "Person A",
+              "shona": "Ndatenda. Unobva basa riini?",
+              "english": "Thank you. What time do you finish work?",
+              "pronunciation": "nda-te-nda. u-no-bva ba-sa ri-i-ni?"
+            },
+            {
+              "speaker": "Person B",
+              "shona": "Ndinobva basa nguva shanu manheru.",
+              "english": "I finish work at five in the evening.",
+              "pronunciation": "ndi-no-bva ba-sa ngu-va sha-nu ma-nhe-ru."
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "exercise-6",
+          "type": "translation",
+          "question": "How do you ask 'What time is it?' in Shona?",
+          "correctAnswer": "Inguva ipi?",
+          "explanation": "Use 'Inguva ipi?' or 'Inguva ipi zvino?' to ask about time"
+        }
+      ]
+    }
+  ]
+} 

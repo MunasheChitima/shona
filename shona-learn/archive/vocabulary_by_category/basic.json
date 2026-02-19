@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "category": "basic",
+    "totalWords": 2,
+    "created": "2025-07-07T01:37:03.810Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_hongu_1751852223800",
+      "shona": "hongu",
+      "english": "yes",
+      "category": "basic",
+      "tones": "HL",
+      "ipa": "/hongu/",
+      "simplified": "ho-ngu",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": "Affirmative response",
+      "examples": [
+        {
+          "shona": "Ndinoda hongu",
+          "english": "I want yes"
+        },
+        {
+          "shona": "hongu yakanaka",
+          "english": "yes is good"
+        },
+        {
+          "shona": "Ndinoda hongu",
+          "english": "I want yes"
+        },
+        {
+          "shona": "hongu yakanaka",
+          "english": "yes is good"
+        }
+      ],
+      "audioFile": "hongu.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kwete_1751852223800",
+      "shona": "kwete",
+      "english": "no",
+      "category": "basic",
+      "tones": "HL",
+      "ipa": "/kwete/",
+      "simplified": "kwe-te",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": "Negative response",
+      "examples": [
+        {
+          "shona": "Ndinoda kwete",
+          "english": "I want no"
+        },
+        {
+          "shona": "kwete yakanaka",
+          "english": "no is good"
+        },
+        {
+          "shona": "Ndinoda kwete",
+          "english": "I want no"
+        },
+        {
+          "shona": "kwete yakanaka",
+          "english": "no is good"
+        }
+      ],
+      "audioFile": "kwete.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    }
+  ]
+}

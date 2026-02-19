@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "category": "health",
+    "totalWords": 8,
+    "created": "2025-07-07T01:37:03.812Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_hutano_1751852223800",
+      "shona": "hutano",
+      "english": "health",
+      "category": "health",
+      "tones": "HHL",
+      "ipa": "/hutano/",
+      "simplified": "hu-ta-no",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Physical and spiritual wellness",
+      "examples": [
+        {
+          "shona": "Ndinoda hutano",
+          "english": "I want health"
+        },
+        {
+          "shona": "hutano yakanaka",
+          "english": "health is good"
+        },
+        {
+          "shona": "Ndinoda hutano",
+          "english": "I want health"
+        },
+        {
+          "shona": "hutano yakanaka",
+          "english": "health is good"
+        },
+        {
+          "shona": "Ndine hutano",
+          "english": "I have health"
+        },
+        {
+          "shona": "hutano yakanaka",
+          "english": "health is good"
+        },
+        {
+          "shona": "Ndinoda hutano",
+          "english": "I want health"
+        }
+      ],
+      "audioFile": "hutano.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kupora_1751852223800",
+      "shona": "kupora",
+      "english": "to heal/recover",
+      "category": "health",
+      "tones": "HHL",
+      "ipa": "/kupora/",
+      "simplified": "ku-po-ra",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Return to wellness",
+      "examples": [
+        {
+          "shona": "Ndinoda kupora",
+          "english": "I want to heal/recover"
+        },
+        {
+          "shona": "kupora yakanaka",
+          "english": "to heal/recover is good"
+        },
+        {
+          "shona": "Ndinoda kupora",
+          "english": "I want to heal/recover"
+        },
+        {
+          "shona": "kupora yakanaka",
+          "english": "to heal/recover is good"
+        }
+      ],
+      "audioFile": "kupora.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kurwara_1751852223800",
+      "shona": "kurwara",
+      "english": "to be sick",
+      "category": "health",
+      "tones": "HHL",
+      "ipa": "/kurwara/",
+      "simplified": "ku-rwa-ra",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "State of illness",
+      "examples": [
+        {
+          "shona": "Ndinoda kurwara",
+          "english": "I want to be sick"
+        },
+        {
+          "shona": "kurwara yakanaka",
+          "english": "to be sick is good"
+        },
+        {
+          "shona": "Ndinoda kurwara",
+          "english": "I want to be sick"
+        },
+        {
+          "shona": "kurwara yakanaka",
+          "english": "to be sick is good"
+        }
+      ],
+      "audioFile": "kurwara.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mishonga_1751852223800",
+      "shona": "mishonga",
+      "english": "medicines",
+      "category": "health",
+      "tones": "HHL",
+      "ipa": "/mishonga/",
+      "simplified": "mi-sho-nga",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Healing substances",
+      "examples": [
+        {
+          "shona": "Ndinoda mishonga",
+          "english": "I want medicines"
+        },
+        {
+          "shona": "mishonga yakanaka",
+          "english": "medicines is good"
+        },
+        {
+          "shona": "Ndinoda mishonga",
+          "english": "I want medicines"
+        },
+        {
+          "shona": "mishonga yakanaka",
+          "english": "medicines is good"
+        }
+      ],
+      "audioFile": "mishonga.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chiremba_1751852223800",
+      "shona": "chiremba",
+      "english": "doctor",
+      "category": "health",
+      "tones": "HHL",
+      "ipa": "/chiremba/",
+      "simplified": "chi-re-mba",
+      "source": "ethnography",
+      "difficulty": 5,
+      "cultural": "Modern medical doctor",
+      "examples": [
+        {
+          "shona": "Ndine chiremba",
+          "english": "I have doctor"
+        },
+        {
+          "shona": "chiremba yakanaka",
+          "english": "doctor is good"
+        },
+        {
+          "shona": "Ndinoda chiremba",
+          "english": "I want doctor"
+        },
+        {
+          "shona": "Ndine chiremba",
+          "english": "I have doctor"
+        },
+        {
+          "shona": "chiremba yakanaka",
+          "english": "doctor is good"
+        },
+        {
+          "shona": "Ndinoda chiremba",
+          "english": "I want doctor"
+        }
+      ],
+      "audioFile": "chiremba.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chirwere_1751852223800",
+      "shona": "chirwere",
+      "english": "illness",
+      "category": "health",
+      "tones": "HHL",
+      "ipa": "/chirwere/",
+      "simplified": "chi-rwe-re",
+      "source": "ethnography",
+      "difficulty": 5,
+      "cultural": "Physical or spiritual sickness",
+      "examples": [
+        {
+          "shona": "Ndine chirwere",
+          "english": "I have illness"
+        },
+        {
+          "shona": "chirwere yakanaka",
+          "english": "illness is good"
+        },
+        {
+          "shona": "Ndinoda chirwere",
+          "english": "I want illness"
+        },
+        {
+          "shona": "Ndine chirwere",
+          "english": "I have illness"
+        },
+        {
+          "shona": "chirwere yakanaka",
+          "english": "illness is good"
+        },
+        {
+          "shona": "Ndinoda chirwere",
+          "english": "I want illness"
+        }
+      ],
+      "audioFile": "chirwere.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_hurwere_1751852223800",
+      "shona": "hurwere",
+      "english": "to be sick",
+      "category": "health",
+      "tones": "HHL",
+      "ipa": "/hurwere/",
+      "simplified": "hu-rwe-re",
+      "source": "ethnography",
+      "difficulty": 5,
+      "cultural": "State of illness",
+      "examples": [
+        {
+          "shona": "Ndine hurwere",
+          "english": "I have to be sick"
+        },
+        {
+          "shona": "hurwere yakanaka",
+          "english": "to be sick is good"
+        },
+        {
+          "shona": "Ndinoda hurwere",
+          "english": "I want to be sick"
+        },
+        {
+          "shona": "Ndine hurwere",
+          "english": "I have to be sick"
+        },
+        {
+          "shona": "hurwere yakanaka",
+          "english": "to be sick is good"
+        },
+        {
+          "shona": "Ndinoda hurwere",
+          "english": "I want to be sick"
+        }
+      ],
+      "audioFile": "hurwere.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mushonga_1751852223800",
+      "shona": "mushonga",
+      "english": "medicine",
+      "category": "health",
+      "tones": "HHL",
+      "ipa": "/mushonga/",
+      "simplified": "mu-sho-nga",
+      "source": "ethnography",
+      "difficulty": 5,
+      "cultural": "Both traditional and modern medicine",
+      "examples": [
+        {
+          "shona": "Ndine mushonga",
+          "english": "I have medicine"
+        },
+        {
+          "shona": "mushonga yakanaka",
+          "english": "medicine is good"
+        },
+        {
+          "shona": "Ndinoda mushonga",
+          "english": "I want medicine"
+        },
+        {
+          "shona": "Ndine mushonga",
+          "english": "I have medicine"
+        },
+        {
+          "shona": "mushonga yakanaka",
+          "english": "medicine is good"
+        },
+        {
+          "shona": "Ndinoda mushonga",
+          "english": "I want medicine"
+        }
+      ],
+      "audioFile": "mushonga.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    }
+  ]
+}

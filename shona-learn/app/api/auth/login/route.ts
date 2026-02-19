@@ -1,39 +1,59 @@
 import { NextResponse } from 'next/server'
 import bcrypt from 'bcryptjs'
-import jwt from 'jsonwebtoken'
+import { generateToken } from '@/lib/auth-server'
 import { PrismaClient } from '@prisma/client'
+import { loginSchema, validate, sanitizeInput } from '@/lib/validation'
 
 const prisma = new PrismaClient()
-const JWT_SECRET = 'your-secret-key-change-in-production'
 
 export async function POST(request: Request) {
   try {
-    const { email, password } = await request.json()
+    let body: unknown
+    try {
+      body = await request.json()
+    } catch {
+      return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
+    }
+
+    const validation = validate(loginSchema, body)
+    if (!validation.success) {
+      return NextResponse.json(
+        { 
+          error: 'Invalid input', 
+          details: validation.errors?.errors.map(e => ({
+            field: e.path.join('.'),
+            message: e.message
+          }))
+        }, 
+        { status: 400 }
+      )
+    }
     
-    // Find user
+    const { email, password } = validation.data!
+    
+    const sanitizedEmail = sanitizeInput(email)
+    const sanitizedPassword = sanitizeInput(password)
+    
     const user = await prisma.user.findUnique({
-      where: { email }
+      where: { email: sanitizedEmail }
     })
     
     if (!user) {
       return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 })
     }
     
-    // Check password
-    const validPassword = await bcrypt.compare(password, user.password)
+    const validPassword = await bcrypt.compare(sanitizedPassword, user.password)
     
     if (!validPassword) {
       return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 })
     }
     
-    // Update last active
     await prisma.user.update({
       where: { id: user.id },
       data: { lastActive: new Date() }
     })
     
-    // Create token
-    const token = jwt.sign({ userId: user.id }, JWT_SECRET)
+    const token = generateToken(user.id)
     
     return NextResponse.json({
       token,
@@ -48,6 +68,7 @@ export async function POST(request: Request) {
       }
     })
   } catch (error) {
+    console.error('Login error:', error)
     return NextResponse.json({ error: 'Login failed' }, { status: 500 })
   }
 } 

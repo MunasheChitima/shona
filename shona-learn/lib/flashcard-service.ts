@@ -381,7 +381,7 @@ export class FlashcardService {
           const flashcard = await this.createFlashcard(userId, {
             shonaText: exercise.shonaPhrase,
             englishText: exercise.englishPhrase,
-            audioText: exercise.audioText,
+            audioText: exercise.audioText || undefined,
             context: exercise.question,
             lessonId: lessonId,
             tags: [lesson.category.toLowerCase()],

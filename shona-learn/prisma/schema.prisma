@@ -6,8 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model User {
@@ -76,6 +76,23 @@ model Exercise {
   points        Int      @default(5)
   intrinsicFeedback String? // JSON string for intrinsic motivation feedback
   discoveryHint String?  // Hint for exploration-based learning
+}
+
+model VocabularyItem {
+  id            String   @id @default(cuid())
+  shona         String
+  english       String
+  category      String
+  tones         String?
+  cultural      String?
+  modern        Boolean  @default(true)
+  source        String
+  difficulty    Int      @default(1)
+  audioFile     String?
+  pronunciation String?
+  examples      String   // JSON string
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 }
 
 model UserProgress {

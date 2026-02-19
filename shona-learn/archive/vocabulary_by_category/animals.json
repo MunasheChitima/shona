@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "category": "animals",
+    "totalWords": 3,
+    "created": "2025-07-07T01:37:03.812Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_master_comprehensive.json_imbwa_1751852223801",
+      "shona": "imbwa",
+      "english": "dog",
+      "category": "animals",
+      "tones": "LHL",
+      "ipa": "/iᵐbwa/",
+      "simplified": "eem-BWAH",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda imbwa",
+          "english": "I want dog",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "imbwa.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_katsi_1751852223801",
+      "shona": "katsi",
+      "english": "cat",
+      "category": "animals",
+      "tones": "LHL",
+      "ipa": "/katsi/",
+      "simplified": "KAH-tsee",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda katsi",
+          "english": "I want cat",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "katsi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_mombe_1751852223801",
+      "shona": "mombe",
+      "english": "cow",
+      "category": "animals",
+      "tones": "LHL",
+      "ipa": "/mombe/",
+      "simplified": "MOHM-beh",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "cultural": "Important animal in Shona culture, symbol of wealth",
+      "examples": [
+        {
+          "shona": "Ndinoda mombe",
+          "english": "I want cow",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "mombe.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    }
+  ]
+}

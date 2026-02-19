@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "category": "values",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.813Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_kuvimba_1751852223800",
+      "shona": "kuvimba",
+      "english": "trust",
+      "category": "values",
+      "tones": "HHL",
+      "ipa": "/kuvimba/",
+      "simplified": "ku-vi-mba",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Confidence in others",
+      "examples": [
+        {
+          "shona": "Ndinoda kuvimba",
+          "english": "I want trust"
+        },
+        {
+          "shona": "kuvimba yakanaka",
+          "english": "trust is good"
+        },
+        {
+          "shona": "Ndinoda kuvimba",
+          "english": "I want trust"
+        },
+        {
+          "shona": "kuvimba yakanaka",
+          "english": "trust is good"
+        }
+      ],
+      "audioFile": "kuvimba.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuwadzana_1751852223800",
+      "shona": "kuwadzana",
+      "english": "harmony",
+      "category": "values",
+      "tones": "HHL",
+      "ipa": "/kuwadzana/",
+      "simplified": "ku-wa-dza-na",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Living in peace together",
+      "examples": [
+        {
+          "shona": "Ndinoda kuwadzana",
+          "english": "I want harmony"
+        },
+        {
+          "shona": "kuwadzana yakanaka",
+          "english": "harmony is good"
+        },
+        {
+          "shona": "Ndinoda kuwadzana",
+          "english": "I want harmony"
+        },
+        {
+          "shona": "kuwadzana yakanaka",
+          "english": "harmony is good"
+        }
+      ],
+      "audioFile": "kuwadzana.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_ruremekedzo_1751852223800",
+      "shona": "ruremekedzo",
+      "english": "respect",
+      "category": "values",
+      "tones": "HHL",
+      "ipa": "/ruremekedzo/",
+      "simplified": "ru-re-me-ke-dzo",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Fundamental social value",
+      "examples": [
+        {
+          "shona": "Ndinoda ruremekedzo",
+          "english": "I want respect"
+        },
+        {
+          "shona": "ruremekedzo yakanaka",
+          "english": "respect is good"
+        },
+        {
+          "shona": "Ndinoda ruremekedzo",
+          "english": "I want respect"
+        },
+        {
+          "shona": "ruremekedzo yakanaka",
+          "english": "respect is good"
+        }
+      ],
+      "audioFile": "ruremekedzo.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_unyangadzi_1751852223800",
+      "shona": "unyangadzi",
+      "english": "honesty",
+      "category": "values",
+      "tones": "HHL",
+      "ipa": "/unyangadzi/",
+      "simplified": "u-nya-nga-dzi",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Truthfulness in relationships",
+      "examples": [
+        {
+          "shona": "Ndinoda unyangadzi",
+          "english": "I want honesty"
+        },
+        {
+          "shona": "unyangadzi yakanaka",
+          "english": "honesty is good"
+        },
+        {
+          "shona": "Ndinoda unyangadzi",
+          "english": "I want honesty"
+        },
+        {
+          "shona": "unyangadzi yakanaka",
+          "english": "honesty is good"
+        }
+      ],
+      "audioFile": "unyangadzi.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    }
+  ]
+}

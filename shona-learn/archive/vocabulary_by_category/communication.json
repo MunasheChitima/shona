@@ -1,0 +1,351 @@
+{
+  "metadata": {
+    "category": "communication",
+    "totalWords": 9,
+    "created": "2025-07-07T01:37:03.811Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_dudziro_1751852223800",
+      "shona": "dudziro",
+      "english": "interpretation",
+      "category": "communication",
+      "tones": "HHL",
+      "ipa": "/dudziro/",
+      "simplified": "du-dzi-ro",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Making meaning clear",
+      "examples": [
+        {
+          "shona": "Ndinoda dudziro",
+          "english": "I want interpretation"
+        },
+        {
+          "shona": "dudziro yakanaka",
+          "english": "interpretation is good"
+        },
+        {
+          "shona": "Ndinoda dudziro",
+          "english": "I want interpretation"
+        },
+        {
+          "shona": "dudziro yakanaka",
+          "english": "interpretation is good"
+        }
+      ],
+      "audioFile": "dudziro.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_nhaurirano_1751852223800",
+      "shona": "nhaurirano",
+      "english": "conversation",
+      "category": "communication",
+      "tones": "HLHL",
+      "ipa": "/nhaurirano/",
+      "simplified": "nha-u-ri-ra-no",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Dialogue and discussion",
+      "examples": [
+        {
+          "shona": "Ndinoda nhaurirano",
+          "english": "I want conversation"
+        },
+        {
+          "shona": "nhaurirano yakanaka",
+          "english": "conversation is good"
+        },
+        {
+          "shona": "Ndinoda nhaurirano",
+          "english": "I want conversation"
+        },
+        {
+          "shona": "nhaurirano yakanaka",
+          "english": "conversation is good"
+        }
+      ],
+      "audioFile": "nhaurirano.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_nhevedzano_1751852223800",
+      "shona": "nhevedzano",
+      "english": "storytelling",
+      "category": "communication",
+      "tones": "HLHL",
+      "ipa": "/nhevedzano/",
+      "simplified": "nhe-ve-dza-no",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Traditional narrative sharing",
+      "examples": [
+        {
+          "shona": "Ndinoda nhevedzano",
+          "english": "I want storytelling"
+        },
+        {
+          "shona": "nhevedzano yakanaka",
+          "english": "storytelling is good"
+        },
+        {
+          "shona": "Ndinoda nhevedzano",
+          "english": "I want storytelling"
+        },
+        {
+          "shona": "nhevedzano yakanaka",
+          "english": "storytelling is good"
+        }
+      ],
+      "audioFile": "nhevedzano.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tsananguro_1751852223800",
+      "shona": "tsananguro",
+      "english": "explanation",
+      "category": "communication",
+      "tones": "HLHL",
+      "ipa": "/tsananguro/",
+      "simplified": "tsa-na-ngu-ro",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Clear communication of ideas",
+      "examples": [
+        {
+          "shona": "Ndinoda tsananguro",
+          "english": "I want explanation"
+        },
+        {
+          "shona": "tsananguro yakanaka",
+          "english": "explanation is good"
+        },
+        {
+          "shona": "Ndinoda tsananguro",
+          "english": "I want explanation"
+        },
+        {
+          "shona": "tsananguro yakanaka",
+          "english": "explanation is good"
+        }
+      ],
+      "audioFile": "tsananguro.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_handingakubatsiri_1751852223800",
+      "shona": "handingakubatsiri",
+      "english": "I cannot help you",
+      "category": "communication",
+      "tones": "HHLHHL",
+      "ipa": "/handingakubatsiri/",
+      "simplified": "ha-ndi-nga-ku-ba-tsi-ri",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Honest limitation",
+      "examples": [
+        {
+          "shona": "Ndinoda handingakubatsiri",
+          "english": "I want I cannot help you"
+        },
+        {
+          "shona": "handingakubatsiri yakanaka",
+          "english": "I cannot help you is good"
+        },
+        {
+          "shona": "Ndinoda handingakubatsiri",
+          "english": "I want I cannot help you"
+        },
+        {
+          "shona": "handingakubatsiri yakanaka",
+          "english": "I cannot help you is good"
+        }
+      ],
+      "audioFile": "handingakubatsiri.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kunzwisisa_1751852223800",
+      "shona": "kunzwisisa",
+      "english": "to understand",
+      "category": "communication",
+      "tones": "HLHL",
+      "ipa": "/kunzwisisa/",
+      "simplified": "ku-nzwi-si-sa",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Deep comprehension",
+      "examples": [
+        {
+          "shona": "Ndinoda kunzwisisa",
+          "english": "I want to understand"
+        },
+        {
+          "shona": "kunzwisisa yakanaka",
+          "english": "to understand is good"
+        },
+        {
+          "shona": "Ndinoda kunzwisisa",
+          "english": "I want to understand"
+        },
+        {
+          "shona": "kunzwisisa yakanaka",
+          "english": "to understand is good"
+        }
+      ],
+      "audioFile": "kunzwisisa.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_ndine_dambudziko_1751852223800",
+      "shona": "ndine dambudziko",
+      "english": "I have a problem",
+      "category": "communication",
+      "tones": "HLHHL",
+      "ipa": "/ndine dambudziko/",
+      "simplified": "ndi-ne- da-mbu-dzi-ko",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Seeking help",
+      "examples": [
+        {
+          "shona": "Ndinoda ndine dambudziko",
+          "english": "I want I have a problem"
+        },
+        {
+          "shona": "ndine dambudziko yakanaka",
+          "english": "I have a problem is good"
+        },
+        {
+          "shona": "Ndinoda ndine dambudziko",
+          "english": "I want I have a problem"
+        },
+        {
+          "shona": "ndine dambudziko yakanaka",
+          "english": "I have a problem is good"
+        }
+      ],
+      "audioFile": "ndine_dambudziko.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_ndinokutenda_1751852223800",
+      "shona": "ndinokutenda",
+      "english": "I thank you",
+      "category": "communication",
+      "tones": "HLHL",
+      "ipa": "/ndinokutenda/",
+      "simplified": "ndi-no-ku-te-nda",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Gratitude expression",
+      "examples": [
+        {
+          "shona": "Ndinoda ndinokutenda",
+          "english": "I want I thank you"
+        },
+        {
+          "shona": "ndinokutenda yakanaka",
+          "english": "I thank you is good"
+        },
+        {
+          "shona": "Ndinoda ndinokutenda",
+          "english": "I want I thank you"
+        },
+        {
+          "shona": "ndinokutenda yakanaka",
+          "english": "I thank you is good"
+        }
+      ],
+      "audioFile": "ndinokutenda.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_zvinotenda_1751852223800",
+      "shona": "zvinotenda",
+      "english": "thank you (formal)",
+      "category": "communication",
+      "tones": "HHL",
+      "ipa": "/zvinotenda/",
+      "simplified": "zvi-no-te-nda",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Formal gratitude",
+      "examples": [
+        {
+          "shona": "Ndinoda zvinotenda",
+          "english": "I want thank you (formal)"
+        },
+        {
+          "shona": "zvinotenda yakanaka",
+          "english": "thank you (formal) is good"
+        },
+        {
+          "shona": "Ndinoda zvinotenda",
+          "english": "I want thank you (formal)"
+        },
+        {
+          "shona": "zvinotenda yakanaka",
+          "english": "thank you (formal) is good"
+        }
+      ],
+      "audioFile": "zvinotenda.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    }
+  ]
+}

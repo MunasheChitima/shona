@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "category": "celebration",
+    "totalWords": 5,
+    "created": "2025-07-07T01:37:03.814Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_bira_1751852223800",
+      "shona": "bira",
+      "english": "spirit ceremony",
+      "category": "celebration",
+      "tones": "HL",
+      "ipa": "/bira/",
+      "simplified": "bi-ra",
+      "source": "ethnography",
+      "difficulty": 9,
+      "cultural": "Traditional religious ceremony",
+      "examples": [
+        {
+          "shona": "Ndine bira",
+          "english": "I have spirit ceremony"
+        },
+        {
+          "shona": "bira yakanaka",
+          "english": "spirit ceremony is good"
+        },
+        {
+          "shona": "Ndinoda bira",
+          "english": "I want spirit ceremony"
+        },
+        {
+          "shona": "Ndine bira",
+          "english": "I have spirit ceremony"
+        },
+        {
+          "shona": "bira yakanaka",
+          "english": "spirit ceremony is good"
+        },
+        {
+          "shona": "Ndinoda bira",
+          "english": "I want spirit ceremony"
+        }
+      ],
+      "audioFile": "bira.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kurova_guva_1751852223800",
+      "shona": "kurova guva",
+      "english": "memorial ceremony",
+      "category": "celebration",
+      "tones": "HLHL",
+      "ipa": "/kurova guva/",
+      "simplified": "ku-ro-va- gu-va",
+      "source": "ethnography",
+      "difficulty": 9,
+      "cultural": "Ancestral remembrance",
+      "examples": [
+        {
+          "shona": "Ndine kurova guva",
+          "english": "I have memorial ceremony"
+        },
+        {
+          "shona": "kurova guva yakanaka",
+          "english": "memorial ceremony is good"
+        },
+        {
+          "shona": "Ndinoda kurova guva",
+          "english": "I want memorial ceremony"
+        },
+        {
+          "shona": "Ndine kurova guva",
+          "english": "I have memorial ceremony"
+        },
+        {
+          "shona": "kurova guva yakanaka",
+          "english": "memorial ceremony is good"
+        },
+        {
+          "shona": "Ndinoda kurova guva",
+          "english": "I want memorial ceremony"
+        }
+      ],
+      "audioFile": "kurova_guva.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mapira_1751852223800",
+      "shona": "mapira",
+      "english": "first fruits ceremony",
+      "category": "celebration",
+      "tones": "HHL",
+      "ipa": "/mapira/",
+      "simplified": "ma-pi-ra",
+      "source": "ethnography",
+      "difficulty": 9,
+      "cultural": "Harvest celebration",
+      "examples": [
+        {
+          "shona": "Ndine mapira",
+          "english": "I have first fruits ceremony"
+        },
+        {
+          "shona": "mapira yakanaka",
+          "english": "first fruits ceremony is good"
+        },
+        {
+          "shona": "Ndinoda mapira",
+          "english": "I want first fruits ceremony"
+        },
+        {
+          "shona": "Ndine mapira",
+          "english": "I have first fruits ceremony"
+        },
+        {
+          "shona": "mapira yakanaka",
+          "english": "first fruits ceremony is good"
+        },
+        {
+          "shona": "Ndinoda mapira",
+          "english": "I want first fruits ceremony"
+        }
+      ],
+      "audioFile": "mapira.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mukwerere_1751852223800",
+      "shona": "mukwerere",
+      "english": "rain ceremony",
+      "category": "celebration",
+      "tones": "HLHL",
+      "ipa": "/mukwerere/",
+      "simplified": "mu-kwe-re-re",
+      "source": "ethnography",
+      "difficulty": 9,
+      "cultural": "Traditional rain-making",
+      "examples": [
+        {
+          "shona": "Ndine mukwerere",
+          "english": "I have rain ceremony"
+        },
+        {
+          "shona": "mukwerere yakanaka",
+          "english": "rain ceremony is good"
+        },
+        {
+          "shona": "Ndinoda mukwerere",
+          "english": "I want rain ceremony"
+        },
+        {
+          "shona": "Ndine mukwerere",
+          "english": "I have rain ceremony"
+        },
+        {
+          "shona": "mukwerere yakanaka",
+          "english": "rain ceremony is good"
+        },
+        {
+          "shona": "Ndinoda mukwerere",
+          "english": "I want rain ceremony"
+        }
+      ],
+      "audioFile": "mukwerere.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_roora_1751852223800",
+      "shona": "roora",
+      "english": "bride price",
+      "category": "celebration",
+      "tones": "HL",
+      "ipa": "/roora/",
+      "simplified": "ro-o-ra",
+      "source": "ethnography",
+      "difficulty": 9,
+      "cultural": "Marriage custom",
+      "examples": [
+        {
+          "shona": "Ndine roora",
+          "english": "I have bride price"
+        },
+        {
+          "shona": "roora yakanaka",
+          "english": "bride price is good"
+        },
+        {
+          "shona": "Ndinoda roora",
+          "english": "I want bride price"
+        },
+        {
+          "shona": "Ndine roora",
+          "english": "I have bride price"
+        },
+        {
+          "shona": "roora yakanaka",
+          "english": "bride price is good"
+        },
+        {
+          "shona": "Ndinoda roora",
+          "english": "I want bride price"
+        }
+      ],
+      "audioFile": "roora.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    }
+  ]
+}

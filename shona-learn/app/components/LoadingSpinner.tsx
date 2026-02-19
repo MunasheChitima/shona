@@ -1,79 +1,70 @@
 import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
 
 interface LoadingSpinnerProps {
-  size?: 'sm' | 'md' | 'lg'
-  text?: string
+  size?: 'small' | 'medium' | 'large'
+  message?: string
+  fullScreen?: boolean
 }
 
-export default function LoadingSpinner({ size = 'md', text = 'Loading...' }: LoadingSpinnerProps) {
+export default function LoadingSpinner({ 
+  size = 'medium', 
+  message, 
+  fullScreen = false 
+}: LoadingSpinnerProps) {
+  const [randomMessage, setRandomMessage] = useState('Tiri kushanda...')
+  
+  useEffect(() => {
+    const messages = ['Tiri kushanda...', 'Mbira inorira 🎶', 'Dzidza Shona!', '🇿🇼']
+    setRandomMessage(messages[Math.floor(Math.random() * messages.length)])
+  }, [])
+
   const sizeClasses = {
-    sm: 'w-8 h-8',
-    md: 'w-12 h-12',
-    lg: 'w-16 h-16'
+    small: 'h-8 w-8 border-2',
+    medium: 'h-16 w-16 border-3',
+    large: 'h-24 w-24 border-4'
   }
 
-  const textSizes = {
-    sm: 'text-sm',
-    md: 'text-base',
-    lg: 'text-lg'
-  }
-
-  return (
+  const spinner = (
     <div className="flex flex-col items-center justify-center space-y-4">
       <motion.div
-        className={`${sizeClasses[size]} relative`}
+        className={`${sizeClasses[size]} border-green-200 border-t-green-600 rounded-full`}
         animate={{ rotate: 360 }}
-        transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+        transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
       >
-        {/* Outer ring */}
-        <div className={`${sizeClasses[size]} border-4 border-gray-200 rounded-full`} />
-        
-        {/* Animated border */}
-        <motion.div
-          className={`${sizeClasses[size]} border-4 border-transparent border-t-green-500 border-r-blue-500 rounded-full absolute inset-0`}
-          animate={{ rotate: 360 }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
-        />
-        
-        {/* Center dot */}
-        <motion.div
-          className="absolute inset-0 flex items-center justify-center"
+        <motion.span
+          className="absolute text-3xl left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 select-none"
+          initial={{ scale: 1 }}
           animate={{ scale: [1, 1.2, 1] }}
-          transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <div className="w-2 h-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-full" />
-        </motion.div>
+          transition={{ duration: 1.2, repeat: Infinity, repeatType: 'loop', ease: 'easeInOut' }}
+        >🇿🇼</motion.span>
       </motion.div>
-      
-      {text && (
-        <motion.p
-          className={`${textSizes[size]} text-gray-600 font-medium`}
-          animate={{ opacity: [0.5, 1, 0.5] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-        >
-          {text}
-        </motion.p>
-      )}
-      
-      {/* Floating dots */}
-      <div className="flex space-x-1">
-        {[...Array(3)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-400 rounded-full"
-            animate={{ 
-              y: [0, -10, 0],
-              opacity: [0.5, 1, 0.5]
-            }}
-            transition={{ 
-              duration: 1,
-              repeat: Infinity,
-              delay: i * 0.2,
-              ease: "easeInOut"
-            }}
-          />
-        ))}
-      </div>
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+        className="text-gray-600 font-medium text-center"
+      >
+        {message || 'Loading Shona magic...'}
+      </motion.p>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0, 1, 0] }}
+        transition={{ duration: 2, repeat: Infinity, repeatType: 'loop' }}
+        className="text-xs text-green-500 font-semibold"
+      >
+        {randomMessage}
+      </motion.p>
     </div>
   )
+
+  if (fullScreen) {
+    return (
+      <div className="fixed inset-0 bg-white/80 backdrop-blur-sm flex items-center justify-center z-50">
+        {spinner}
+      </div>
+    )
+  }
+
+  return spinner
 } 

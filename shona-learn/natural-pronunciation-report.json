@@ -1,0 +1,77 @@
+{
+  "summary": {
+    "totalTests": 6,
+    "successfulTests": 6,
+    "successRate": "100.0",
+    "timestamp": "2025-07-07T06:37:58.553Z",
+    "approach": "natural_flow_no_modifications",
+    "voiceSettings": {
+      "stability": 0.75,
+      "similarity_boost": 0.85,
+      "style": 0.4,
+      "use_speaker_boost": true
+    }
+  },
+  "results": [
+    {
+      "word": "svika",
+      "english": "arrive",
+      "expected": "Natural whistled sibilant",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/natural-audio/natural_svika.mp3",
+      "size": 19271,
+      "originalText": "svika",
+      "duration": 9.6355
+    },
+    {
+      "word": "zvino",
+      "english": "now",
+      "expected": "Natural whistled sibilant",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/natural-audio/natural_zvino.mp3",
+      "size": 17181,
+      "originalText": "zvino",
+      "duration": 8.5905
+    },
+    {
+      "word": "mbira",
+      "english": "thumb piano",
+      "expected": "Natural prenasalized consonant",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/natural-audio/natural_mbira.mp3",
+      "size": 17181,
+      "originalText": "mbira",
+      "duration": 8.5905
+    },
+    {
+      "word": "ndatenda",
+      "english": "thank you",
+      "expected": "Natural prenasalized consonants",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/natural-audio/natural_ndatenda.mp3",
+      "size": 19271,
+      "originalText": "ndatenda",
+      "duration": 9.6355
+    },
+    {
+      "word": "bhazi",
+      "english": "bus",
+      "expected": "Natural breathy consonant",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/natural-audio/natural_bhazi.mp3",
+      "size": 19271,
+      "originalText": "bhazi",
+      "duration": 9.6355
+    },
+    {
+      "word": "mangwanani",
+      "english": "good morning",
+      "expected": "Natural complex word",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/natural-audio/natural_mangwanani.mp3",
+      "size": 27212,
+      "originalText": "mangwanani",
+      "duration": 13.606
+    }
+  ]
+}

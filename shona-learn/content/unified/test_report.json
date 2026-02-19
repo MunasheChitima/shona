@@ -1,0 +1,85 @@
+{
+  "timestamp": "2025-07-07T11:45:09.470Z",
+  "tests": {
+    "vocabulary_integration": {
+      "passed": 5,
+      "failed": 0,
+      "warnings": 0,
+      "details": [
+        "✅ content/vocabulary/fundamental-basic-vocabulary.js exists",
+        "✅ content/vocabulary/traditional-cultural-vocabulary.js exists",
+        "✅ content/vocabulary/essential-verbs-actions.js exists",
+        "✅ content/vocabulary/essential-phrases-expressions.js exists",
+        "✅ Unified vocabulary: 480 words"
+      ]
+    },
+    "lesson_plan_integration": {
+      "passed": 5,
+      "failed": 0,
+      "warnings": 0,
+      "details": [
+        "✅ content/lesson-plans/fundamental-basic-lessons.js exists",
+        "✅ content/lesson-plans/traditional-cultural-lessons.js exists",
+        "✅ content/lesson-plans/essential-verbs-lessons.js exists",
+        "✅ content/lesson-plans/essential-phrases-lessons.js exists",
+        "✅ Unified lessons: 2 lessons"
+      ]
+    },
+    "assessment_integration": {
+      "passed": 2,
+      "failed": 0,
+      "warnings": 0,
+      "details": [
+        "✅ content/assessments/comprehensive-assessments.js exists",
+        "✅ Unified assessments: 2 assessments"
+      ]
+    },
+    "cross_platform_content": {
+      "passed": 3,
+      "failed": 0,
+      "warnings": 0,
+      "details": [
+        "✅ web content generated",
+        "✅ ios content generated",
+        "✅ android content generated"
+      ]
+    },
+    "ios_integration": {
+      "passed": 4,
+      "failed": 0,
+      "warnings": 0,
+      "details": [
+        "✅ vocabulary_unified.json copied to iOS",
+        "✅ lessons_unified.json copied to iOS",
+        "✅ assessments_unified.json copied to iOS",
+        "✅ ContentManager.swift updated for unified content"
+      ]
+    },
+    "web_app_integration": {
+      "passed": 3,
+      "failed": 0,
+      "warnings": 0,
+      "details": [
+        "✅ IntegratedContentService.ts exists",
+        "✅ IntegratedVocabularyView.tsx exists",
+        "✅ Integrated vocabulary page exists"
+      ]
+    },
+    "content_validation": {
+      "passed": 3,
+      "failed": 0,
+      "warnings": 0,
+      "details": [
+        "✅ Vocabulary structure valid",
+        "✅ Lessons structure valid",
+        "✅ Assessments structure valid"
+      ]
+    }
+  },
+  "summary": {
+    "total": 25,
+    "passed": 25,
+    "failed": 0,
+    "warnings": 0
+  }
+}

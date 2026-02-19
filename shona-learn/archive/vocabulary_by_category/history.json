@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "category": "history",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.813Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_nhoroondo_1751852223800",
+      "shona": "nhoroondo",
+      "english": "history",
+      "category": "history",
+      "tones": "HHL",
+      "ipa": "/nhoroondo/",
+      "simplified": "nho-ro-o-ndo",
+      "source": "historical_sources",
+      "difficulty": 3,
+      "cultural": "Record of past events",
+      "examples": [
+        {
+          "shona": "Ndinoda nhoroondo",
+          "english": "I want history"
+        },
+        {
+          "shona": "nhoroondo yakanaka",
+          "english": "history is good"
+        },
+        {
+          "shona": "Ndinoda nhoroondo",
+          "english": "I want history"
+        },
+        {
+          "shona": "nhoroondo yakanaka",
+          "english": "history is good"
+        }
+      ],
+      "audioFile": "nhoroondo.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "historical_sources",
+        "historical_sources"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_zviyeuchidzo_1751852223800",
+      "shona": "zviyeuchidzo",
+      "english": "monuments",
+      "category": "history",
+      "tones": "HHL",
+      "ipa": "/zviyeuchidzo/",
+      "simplified": "zvi-ye-u-chi-dzo",
+      "source": "historical_sources",
+      "difficulty": 3,
+      "cultural": "Memorial structures",
+      "examples": [
+        {
+          "shona": "Ndinoda zviyeuchidzo",
+          "english": "I want monuments"
+        },
+        {
+          "shona": "zviyeuchidzo yakanaka",
+          "english": "monuments is good"
+        },
+        {
+          "shona": "Ndinoda zviyeuchidzo",
+          "english": "I want monuments"
+        },
+        {
+          "shona": "zviyeuchidzo yakanaka",
+          "english": "monuments is good"
+        }
+      ],
+      "audioFile": "zviyeuchidzo.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "historical_sources",
+        "historical_sources"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chikuva_1751852223800",
+      "shona": "chikuva",
+      "english": "ruins",
+      "category": "history",
+      "tones": "HHL",
+      "ipa": "/chikuva/",
+      "simplified": "chi-ku-va",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine chikuva",
+          "english": "I have ruins"
+        },
+        {
+          "shona": "chikuva yakanaka",
+          "english": "ruins is good"
+        },
+        {
+          "shona": "Ndinoda chikuva",
+          "english": "I want ruins"
+        },
+        {
+          "shona": "Ndine chikuva",
+          "english": "I have ruins"
+        },
+        {
+          "shona": "chikuva yakanaka",
+          "english": "ruins is good"
+        },
+        {
+          "shona": "Ndinoda chikuva",
+          "english": "I want ruins"
+        }
+      ],
+      "audioFile": "chikuva.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_nzvimbo_1751852223800",
+      "shona": "nzvimbo",
+      "english": "place",
+      "category": "history",
+      "tones": "HHL",
+      "ipa": "/nzvimbo/",
+      "simplified": "nzvi-mbo",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine nzvimbo",
+          "english": "I have place"
+        },
+        {
+          "shona": "nzvimbo yakanaka",
+          "english": "place is good"
+        },
+        {
+          "shona": "Ndinoda nzvimbo",
+          "english": "I want place"
+        },
+        {
+          "shona": "Ndine nzvimbo",
+          "english": "I have place"
+        },
+        {
+          "shona": "nzvimbo yakanaka",
+          "english": "place is good"
+        },
+        {
+          "shona": "Ndinoda nzvimbo",
+          "english": "I want place"
+        }
+      ],
+      "audioFile": "nzvimbo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    }
+  ]
+}

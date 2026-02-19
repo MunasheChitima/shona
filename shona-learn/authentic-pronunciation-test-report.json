@@ -1,0 +1,123 @@
+{
+  "timestamp": "2025-07-07T07:27:17.124Z",
+  "summary": {
+    "totalWords": 6,
+    "improvedWords": 6,
+    "successRate": "100.0%"
+  },
+  "testResults": [
+    {
+      "word": "svika",
+      "english": "arrive",
+      "oldPronunciation": "sveeika",
+      "newPronunciation": "svika",
+      "improvement": true,
+      "guidance": {
+        "word": "svika",
+        "naturalApproach": "sv should sound like \"sh\" with slight whistle - natural flow like \"shika\"",
+        "avoidArtificial": [
+          "svee",
+          "s-v",
+          "artificial emphasis"
+        ],
+        "nativeInsight": "Native speakers pronounce \"svika\" flowing naturally like \"shika\" with subtle whistled quality"
+      }
+    },
+    {
+      "word": "zvino",
+      "english": "now",
+      "oldPronunciation": "zveeino",
+      "newPronunciation": "zvino",
+      "improvement": true,
+      "guidance": {
+        "word": "zvino",
+        "naturalApproach": "zv should flow naturally with voiced whistled quality",
+        "avoidArtificial": [
+          "zvee",
+          "z-v",
+          "artificial breaks"
+        ],
+        "nativeInsight": "Native speakers maintain natural word flow without artificial pauses"
+      }
+    },
+    {
+      "word": "mbira",
+      "english": "thumb piano",
+      "oldPronunciation": "m-bira",
+      "newPronunciation": "mbira",
+      "improvement": true,
+      "guidance": {
+        "word": "mbira",
+        "naturalApproach": "Prenasalized consonants should flow naturally with brief nasal onset",
+        "avoidArtificial": [
+          "artificial hyphens",
+          "broken syllables"
+        ],
+        "nativeInsight": "Native speakers maintain smooth nasal-to-consonant transitions"
+      }
+    },
+    {
+      "word": "bhazi",
+      "english": "bus",
+      "oldPronunciation": "b-haazi",
+      "newPronunciation": "bhazi",
+      "improvement": true,
+      "guidance": {
+        "word": "bhazi",
+        "naturalApproach": "Breathy consonants need subtle breath emphasis, not exaggerated",
+        "avoidArtificial": [
+          "b-ha",
+          "artificial breath sounds"
+        ],
+        "nativeInsight": "Native speakers use subtle breath emphasis without breaking word flow"
+      }
+    },
+    {
+      "word": "ndatenda",
+      "english": "thank you",
+      "oldPronunciation": "n-daten-da",
+      "newPronunciation": "ndatenda",
+      "improvement": true,
+      "guidance": {
+        "word": "ndatenda",
+        "naturalApproach": "Prenasalized consonants should flow naturally with brief nasal onset",
+        "avoidArtificial": [
+          "artificial hyphens",
+          "broken syllables"
+        ],
+        "nativeInsight": "Native speakers maintain smooth nasal-to-consonant transitions"
+      }
+    },
+    {
+      "word": "mangwanani",
+      "english": "good morning",
+      "oldPronunciation": "man-gwanani",
+      "newPronunciation": "mangwanani",
+      "improvement": true,
+      "guidance": {
+        "word": "mangwanani",
+        "naturalApproach": "Prenasalized consonants should flow naturally with brief nasal onset",
+        "avoidArtificial": [
+          "artificial hyphens",
+          "broken syllables"
+        ],
+        "nativeInsight": "Native speakers maintain smooth nasal-to-consonant transitions"
+      }
+    }
+  ],
+  "improvements": [
+    "svika now sounds like \"shika\" instead of \"sveeika\"",
+    "zvino flows naturally instead of \"zveeino\"",
+    "mbira maintains natural flow instead of \"m-bira\"",
+    "bhazi has subtle breath instead of \"b-haazi\"",
+    "ndatenda flows naturally instead of \"n-daten-da\"",
+    "All words maintain natural word integrity"
+  ],
+  "systemChanges": [
+    "Replaced ElevenLabsService with AuthenticShonaElevenLabsService",
+    "Updated TextToSpeech component for authentic pronunciation",
+    "Removed all artificial pronunciation transformations",
+    "Implemented natural SSML based on native speaker analysis",
+    "Added pronunciation guidance showing natural approach"
+  ]
+}

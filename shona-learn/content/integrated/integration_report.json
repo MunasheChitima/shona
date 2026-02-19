@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-07-09T06:12:40.561Z",
+  "modules": {
+    "vocabulary": {
+      "totalWords": 0,
+      "modules": [],
+      "outputFile": "vocabulary_integrated.json"
+    },
+    "lessons": {
+      "totalLessons": 0,
+      "modules": [],
+      "outputFile": "lessons_integrated.json"
+    },
+    "assessments": {
+      "totalAssessments": 0,
+      "modules": [],
+      "outputFile": "assessments_integrated.json"
+    }
+  },
+  "statistics": {},
+  "errors": [],
+  "warnings": []
+}

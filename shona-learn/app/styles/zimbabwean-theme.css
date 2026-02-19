@@ -1,0 +1,581 @@
+/* Zimbabwean/African Theme CSS */
+/* Comprehensive theme implementation for Shona Learning Web App */
+
+:root {
+  /* Primary Colors - Based on official Zimbabwean flag colors */
+  --color-primary-50: #fef2f3;
+  --color-primary-100: #fde2e4;
+  --color-primary-200: #fbc9ce;
+  --color-primary-300: #f8a4ab;
+  --color-primary-400: #f37077;
+  --color-primary-500: #ef3340;  /* Official Zimbabwean flag red */
+  --color-primary-600: #d62d37;
+  --color-primary-700: #b32129;
+  --color-primary-800: #941f26;
+  --color-primary-900: #7d1f25;
+  
+  /* Secondary Colors - Based on African earth tones */
+  --color-secondary-50: #faf7f2;
+  --color-secondary-100: #f3ede0;
+  --color-secondary-200: #e7d9c1;
+  --color-secondary-300: #d9c4a2;
+  --color-secondary-400: #cbaa83;
+  --color-secondary-500: #bd9064;  /* African earth brown */
+  --color-secondary-600: #a77a56;
+  --color-secondary-700: #8b6448;
+  --color-secondary-800: #6f4e3a;
+  --color-secondary-900: #5b4030;
+  
+  /* Accent Colors - Based on official Zimbabwean flag colors */
+  --color-accent-green-50: #f0fdf4;
+  --color-accent-green-100: #dcfce7;
+  --color-accent-green-200: #bbf7d0;
+  --color-accent-green-300: #86efac;
+  --color-accent-green-400: #4ade80;
+  --color-accent-green-500: #009739;  /* Official Zimbabwean flag green */
+  --color-accent-green-600: #008530;
+  --color-accent-green-700: #007327;
+  --color-accent-green-800: #006122;
+  --color-accent-green-900: #004f1d;
+  
+  --color-accent-gold-50: #fffef0;
+  --color-accent-gold-100: #fffbcc;
+  --color-accent-gold-200: #fff499;
+  --color-accent-gold-300: #ffe766;
+  --color-accent-gold-400: #ffdd33;
+  --color-accent-gold-500: #fce300;  /* Official Zimbabwean flag yellow */
+  --color-accent-gold-600: #e6cc00;
+  --color-accent-gold-700: #ccb300;
+  --color-accent-gold-800: #b39900;
+  --color-accent-gold-900: #998000;
+  
+  --color-accent-blue-50: #f0f7ff;
+  --color-accent-blue-100: #e0effe;
+  --color-accent-blue-200: #bae0fd;
+  --color-accent-blue-300: #7cc7fb;
+  --color-accent-blue-400: #36a7f7;
+  --color-accent-blue-500: #0d8aed;  /* Zimbabwean sky blue */
+  --color-accent-blue-600: #0b6ecb;
+  --color-accent-blue-700: #0a57a5;
+  --color-accent-blue-800: #0b4787;
+  --color-accent-blue-900: #0e3d70;
+  
+  /* Neutral Colors - Based on African soil and stone */
+  --color-neutral-50: #fafaf9;
+  --color-neutral-100: #f5f5f4;
+  --color-neutral-200: #e7e5e4;
+  --color-neutral-300: #d6d3d1;
+  --color-neutral-400: #a8a29e;
+  --color-neutral-500: #78716c;  /* African stone gray */
+  --color-neutral-600: #57534e;
+  --color-neutral-700: #44403c;
+  --color-neutral-800: #292524;
+  --color-neutral-900: #1c1917;
+  
+  /* Semantic Colors */
+  --color-success-50: #f0fdf4;
+  --color-success-100: #dcfce7;
+  --color-success-200: #bbf7d0;
+  --color-success-300: #86efac;
+  --color-success-400: #4ade80;
+  --color-success-500: #22c55e;  /* Success green */
+  --color-success-600: #16a34a;
+  --color-success-700: #15803d;
+  --color-success-800: #166534;
+  --color-success-900: #14532d;
+  
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-200: #fde68a;
+  --color-warning-300: #fcd34d;
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;  /* Warning orange */
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+  --color-warning-800: #92400e;
+  --color-warning-900: #78350f;
+  
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-200: #fecaca;
+  --color-error-300: #fca5a5;
+  --color-error-400: #f87171;
+  --color-error-500: #ef4444;  /* Error red */
+  --color-error-600: #dc2626;
+  --color-error-700: #b91c1c;
+  --color-error-800: #991b1b;
+  --color-error-900: #7f1d1d;
+  
+  /* Background Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #faf7f2;    /* Light earth tone */
+  --color-bg-tertiary: #f3ede0;     /* Lighter earth tone */
+  --color-bg-dark: #1c1917;         /* Dark neutral */
+  
+  /* Surface Colors */
+  --color-surface-primary: #ffffff;
+  --color-surface-secondary: #faf7f2;
+  --color-surface-tertiary: #f3ede0;
+  --color-surface-elevated: #ffffff;
+  --color-surface-dark: #292524;
+  
+  /* Typography */
+  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-secondary: 'Georgia', 'Times New Roman', serif;
+  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+  
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-size-xl: 1.25rem;      /* 20px */
+  --font-size-2xl: 1.5rem;      /* 24px */
+  --font-size-3xl: 1.875rem;    /* 30px */
+  --font-size-4xl: 2.25rem;     /* 36px */
+  --font-size-5xl: 3rem;        /* 48px */
+  --font-size-6xl: 3.75rem;     /* 60px */
+  
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* Line Heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  
+  /* Spacing */
+  --spacing-0: 0px;
+  --spacing-1: 0.25rem;    /* 4px */
+  --spacing-2: 0.5rem;     /* 8px */
+  --spacing-3: 0.75rem;    /* 12px */
+  --spacing-4: 1rem;       /* 16px */
+  --spacing-5: 1.25rem;    /* 20px */
+  --spacing-6: 1.5rem;     /* 24px */
+  --spacing-8: 2rem;       /* 32px */
+  --spacing-10: 2.5rem;    /* 40px */
+  --spacing-12: 3rem;      /* 48px */
+  --spacing-16: 4rem;      /* 64px */
+  --spacing-20: 5rem;      /* 80px */
+  --spacing-24: 6rem;      /* 96px */
+  --spacing-32: 8rem;      /* 128px */
+  --spacing-40: 10rem;     /* 160px */
+  --spacing-48: 12rem;     /* 192px */
+  --spacing-56: 14rem;     /* 224px */
+  --spacing-64: 16rem;     /* 256px */
+  
+  /* Border Radius */
+  --radius-none: 0px;
+  --radius-sm: 0.125rem;   /* 2px */
+  --radius-base: 0.25rem;  /* 4px */
+  --radius-md: 0.375rem;   /* 6px */
+  --radius-lg: 0.5rem;     /* 8px */
+  --radius-xl: 0.75rem;    /* 12px */
+  --radius-2xl: 1rem;      /* 16px */
+  --radius-3xl: 1.5rem;    /* 24px */
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --shadow-none: none;
+  
+  /* Gradients - Based on official Zimbabwean flag colors */
+  --gradient-sunrise: linear-gradient(135deg, #ef3340 0%, #fce300 100%);
+  --gradient-sunset: linear-gradient(135deg, #fce300 0%, #ef3340 100%);
+  --gradient-earth: linear-gradient(135deg, #bd9064 0%, #78716c 100%);
+  --gradient-sky: linear-gradient(135deg, #0d8aed 0%, #009739 100%);
+  --gradient-gold: linear-gradient(135deg, #fce300 0%, #ffdd33 100%);
+  --gradient-green: linear-gradient(135deg, #009739 0%, #4ade80 100%);
+  --gradient-flag: linear-gradient(135deg, #009739 0%, #fce300 25%, #ef3340 50%, #000000 75%, #ffffff 100%);
+  --gradient-zimbabwe: linear-gradient(135deg, #009739 0%, #fce300 50%, #ef3340 100%);
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-neutral-800);
+  background-color: var(--color-bg-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography Utilities */
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+.text-3xl { font-size: var(--font-size-3xl); }
+.text-4xl { font-size: var(--font-size-4xl); }
+.text-5xl { font-size: var(--font-size-5xl); }
+.text-6xl { font-size: var(--font-size-6xl); }
+
+.font-light { font-weight: var(--font-weight-light); }
+.font-normal { font-weight: var(--font-weight-normal); }
+.font-medium { font-weight: var(--font-weight-medium); }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold { font-weight: var(--font-weight-bold); }
+.font-extrabold { font-weight: var(--font-weight-extrabold); }
+
+.leading-tight { line-height: var(--line-height-tight); }
+.leading-normal { line-height: var(--line-height-normal); }
+.leading-relaxed { line-height: var(--line-height-relaxed); }
+
+.tracking-tight { letter-spacing: var(--letter-spacing-tight); }
+.tracking-normal { letter-spacing: var(--letter-spacing-normal); }
+.tracking-wide { letter-spacing: var(--letter-spacing-wide); }
+.tracking-wider { letter-spacing: var(--letter-spacing-wider); }
+
+/* Color Utilities */
+.text-primary { color: var(--color-primary-500); }
+.text-secondary { color: var(--color-secondary-500); }
+.text-accent-green { color: var(--color-accent-green-500); }
+.text-accent-gold { color: var(--color-accent-gold-500); }
+.text-accent-blue { color: var(--color-accent-blue-500); }
+.text-neutral { color: var(--color-neutral-500); }
+.text-success { color: var(--color-success-500); }
+.text-warning { color: var(--color-warning-500); }
+.text-error { color: var(--color-error-500); }
+
+.bg-primary { background-color: var(--color-primary-500); }
+.bg-secondary { background-color: var(--color-secondary-500); }
+.bg-accent-green { background-color: var(--color-accent-green-500); }
+.bg-accent-gold { background-color: var(--color-accent-gold-500); }
+.bg-accent-blue { background-color: var(--color-accent-blue-500); }
+.bg-neutral { background-color: var(--color-neutral-500); }
+.bg-success { background-color: var(--color-success-500); }
+.bg-warning { background-color: var(--color-warning-500); }
+.bg-error { background-color: var(--color-error-500); }
+
+.bg-gradient-sunrise { background: var(--gradient-sunrise); }
+.bg-gradient-sunset { background: var(--gradient-sunset); }
+.bg-gradient-earth { background: var(--gradient-earth); }
+.bg-gradient-sky { background: var(--gradient-sky); }
+.bg-gradient-gold { background: var(--gradient-gold); }
+.bg-gradient-green { background: var(--gradient-green); }
+.bg-gradient-flag { background: var(--gradient-flag); }
+.bg-gradient-zimbabwe { background: var(--gradient-zimbabwe); }
+
+/* Zimbabwean Flag Color Utilities */
+.text-flag-green { color: #009739; }
+.text-flag-yellow { color: #fce300; }
+.text-flag-red { color: #ef3340; }
+.text-flag-black { color: #000000; }
+.text-flag-white { color: #ffffff; }
+
+.bg-flag-green { background-color: #009739; }
+.bg-flag-yellow { background-color: #fce300; }
+.bg-flag-red { background-color: #ef3340; }
+.bg-flag-black { background-color: #000000; }
+.bg-flag-white { background-color: #ffffff; }
+
+/* Flag-inspired patterns */
+.flag-stripes {
+  background: linear-gradient(
+    to bottom,
+    #009739 0%, #009739 14.3%,
+    #fce300 14.3%, #fce300 28.6%,
+    #ef3340 28.6%, #ef3340 42.9%,
+    #000000 42.9%, #000000 57.1%,
+    #ef3340 57.1%, #ef3340 71.4%,
+    #fce300 71.4%, #fce300 85.7%,
+    #009739 85.7%, #009739 100%
+  );
+}
+
+/* Spacing Utilities */
+.p-0 { padding: var(--spacing-0); }
+.p-1 { padding: var(--spacing-1); }
+.p-2 { padding: var(--spacing-2); }
+.p-3 { padding: var(--spacing-3); }
+.p-4 { padding: var(--spacing-4); }
+.p-5 { padding: var(--spacing-5); }
+.p-6 { padding: var(--spacing-6); }
+.p-8 { padding: var(--spacing-8); }
+.p-10 { padding: var(--spacing-10); }
+.p-12 { padding: var(--spacing-12); }
+
+.m-0 { margin: var(--spacing-0); }
+.m-1 { margin: var(--spacing-1); }
+.m-2 { margin: var(--spacing-2); }
+.m-3 { margin: var(--spacing-3); }
+.m-4 { margin: var(--spacing-4); }
+.m-5 { margin: var(--spacing-5); }
+.m-6 { margin: var(--spacing-6); }
+.m-8 { margin: var(--spacing-8); }
+.m-10 { margin: var(--spacing-10); }
+.m-12 { margin: var(--spacing-12); }
+
+/* Border Radius Utilities */
+.rounded-none { border-radius: var(--radius-none); }
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded { border-radius: var(--radius-base); }
+.rounded-md { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-xl { border-radius: var(--radius-xl); }
+.rounded-2xl { border-radius: var(--radius-2xl); }
+.rounded-3xl { border-radius: var(--radius-3xl); }
+.rounded-full { border-radius: var(--radius-full); }
+
+/* Shadow Utilities */
+.shadow-none { box-shadow: var(--shadow-none); }
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow { box-shadow: var(--shadow-base); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-xl { box-shadow: var(--shadow-xl); }
+.shadow-2xl { box-shadow: var(--shadow-2xl); }
+.shadow-inner { box-shadow: var(--shadow-inner); }
+
+/* Component Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-3) var(--spacing-6);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-lg);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-family: var(--font-family-primary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary-500);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-600);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  background-color: var(--color-primary-700);
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary-500);
+  border: 2px solid var(--color-primary-500);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-500);
+  color: white;
+}
+
+.btn-accent-gold {
+  background: var(--gradient-gold);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-accent-green {
+  background: var(--gradient-green);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.card {
+  background-color: var(--color-surface-primary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: var(--spacing-6);
+  border: 1px solid var(--color-neutral-200);
+}
+
+.card-elevated {
+  background-color: var(--color-surface-elevated);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  padding: var(--spacing-6);
+  border: 1px solid var(--color-neutral-200);
+}
+
+.input {
+  background-color: var(--color-surface-primary);
+  border: 2px solid var(--color-neutral-300);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-3) var(--spacing-4);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-primary);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary-500);
+  box-shadow: 0 0 0 3px var(--color-primary-100);
+}
+
+/* Layout Components */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+.header {
+  background: var(--gradient-sunrise);
+  color: white;
+  padding: var(--spacing-6) 0;
+  box-shadow: var(--shadow-lg);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-4) 0;
+}
+
+.nav-brand {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: var(--spacing-6);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Cultural Icons */
+.icon-mbira::before { content: '🎵'; }
+.icon-drum::before { content: '🥁'; }
+.icon-mask::before { content: '🎭'; }
+.icon-bead::before { content: '🔴'; }
+.icon-pot::before { content: '🏺'; }
+.icon-basket::before { content: '🧺'; }
+.icon-spear::before { content: '🔱'; }
+.icon-shield::before { content: '🛡️'; }
+.icon-crown::before { content: '👑'; }
+.icon-star::before { content: '⭐'; }
+
+.icon-tree::before { content: '🌳'; }
+.icon-flower::before { content: '🌸'; }
+.icon-sun::before { content: '☀️'; }
+.icon-moon::before { content: '🌙'; }
+.icon-mountain::before { content: '⛰️'; }
+.icon-river::before { content: '🌊'; }
+.icon-fire::before { content: '🔥'; }
+.icon-earth::before { content: '🌍'; }
+.icon-leaf::before { content: '🍃'; }
+
+.icon-book::before { content: '📚'; }
+.icon-scroll::before { content: '📜'; }
+.icon-pen::before { content: '✒️'; }
+.icon-brain::before { content: '🧠'; }
+.icon-lightbulb::before { content: '💡'; }
+.icon-trophy::before { content: '🏆'; }
+.icon-medal::before { content: '🥇'; }
+.icon-flag::before { content: '🏁'; }
+.icon-target::before { content: '🎯'; }
+.icon-checkmark::before { content: '✅'; }
+
+.icon-home::before { content: '🏠'; }
+.icon-search::before { content: '🔍'; }
+.icon-settings::before { content: '⚙️'; }
+.icon-profile::before { content: '👤'; }
+.icon-menu::before { content: '☰'; }
+.icon-back::before { content: '←'; }
+.icon-forward::before { content: '→'; }
+.icon-up::before { content: '↑'; }
+.icon-down::before { content: '↓'; }
+.icon-close::before { content: '✕'; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-2);
+  }
+  
+  .nav {
+    flex-direction: column;
+    gap: var(--spacing-4);
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    gap: var(--spacing-2);
+  }
+  
+  .text-4xl { font-size: var(--font-size-3xl); }
+  .text-5xl { font-size: var(--font-size-4xl); }
+  .text-6xl { font-size: var(--font-size-5xl); }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: var(--color-bg-dark);
+    --color-bg-secondary: var(--color-neutral-800);
+    --color-bg-tertiary: var(--color-neutral-700);
+    --color-surface-primary: var(--color-neutral-800);
+    --color-surface-secondary: var(--color-neutral-700);
+    --color-surface-tertiary: var(--color-neutral-600);
+    --color-surface-elevated: var(--color-neutral-700);
+  }
+  
+  body {
+    color: var(--color-neutral-100);
+    background-color: var(--color-bg-primary);
+  }
+  
+  .card {
+    background-color: var(--color-surface-primary);
+    border-color: var(--color-neutral-600);
+  }
+  
+  .input {
+    background-color: var(--color-surface-primary);
+    border-color: var(--color-neutral-600);
+    color: var(--color-neutral-100);
+  }
+} 

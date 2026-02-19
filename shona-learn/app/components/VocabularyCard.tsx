@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaVolumeUp, FaVolumeMute, FaRotateLeft } from 'react-icons/fa';
+import { FaVolumeUp, FaVolumeMute, FaRedo } from 'react-icons/fa';
 
 interface VocabularyCardProps {
   shona: string;
@@ -177,7 +177,7 @@ export default function VocabularyCard({
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <FaRotateLeft className="text-gray-600" />
+          <FaRedo className="text-gray-600" />
           <span className="text-gray-700">
             {isFlipped ? 'Show Shona' : 'Show English'}
           </span>

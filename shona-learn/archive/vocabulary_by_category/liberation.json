@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "category": "liberation",
+    "totalWords": 2,
+    "created": "2025-07-07T01:37:03.813Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_kurwira_nyika_1751852223800",
+      "shona": "kurwira nyika",
+      "english": "to fight for country",
+      "category": "liberation",
+      "tones": "HLHL",
+      "ipa": "/kurwira nyika/",
+      "simplified": "ku-rwi-ra- nyi-ka",
+      "source": "liberation_history",
+      "difficulty": 3,
+      "cultural": "Patriotic struggle",
+      "examples": [
+        {
+          "shona": "Ndinoda kurwira nyika",
+          "english": "I want to fight for country"
+        },
+        {
+          "shona": "kurwira nyika yakanaka",
+          "english": "to fight for country is good"
+        },
+        {
+          "shona": "Ndinoda kurwira nyika",
+          "english": "I want to fight for country"
+        },
+        {
+          "shona": "kurwira nyika yakanaka",
+          "english": "to fight for country is good"
+        }
+      ],
+      "audioFile": "kurwira_nyika.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "liberation_history",
+        "liberation_history"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_rusununguko_1751852223800",
+      "shona": "rusununguko",
+      "english": "independence",
+      "category": "liberation",
+      "tones": "HHL",
+      "ipa": "/rusununguko/",
+      "simplified": "ru-su-nu-ngu-ko",
+      "source": "liberation_history",
+      "difficulty": 3,
+      "cultural": "Political freedom",
+      "examples": [
+        {
+          "shona": "Ndinoda rusununguko",
+          "english": "I want independence"
+        },
+        {
+          "shona": "rusununguko yakanaka",
+          "english": "independence is good"
+        },
+        {
+          "shona": "Ndinoda rusununguko",
+          "english": "I want independence"
+        },
+        {
+          "shona": "rusununguko yakanaka",
+          "english": "independence is good"
+        }
+      ],
+      "audioFile": "rusununguko.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "liberation_history",
+        "liberation_history"
+      ]
+    }
+  ]
+}

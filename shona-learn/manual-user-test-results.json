@@ -1,0 +1,74 @@
+{
+  "timestamp": "2025-07-12T12:14:37.615Z",
+  "tests": [
+    {
+      "name": "Home Page Access",
+      "status": "passed"
+    },
+    {
+      "name": "User Registration",
+      "status": "passed"
+    },
+    {
+      "name": "User Login",
+      "status": "passed"
+    },
+    {
+      "name": "Lessons API",
+      "status": "passed"
+    },
+    {
+      "name": "Progress API",
+      "status": "passed"
+    },
+    {
+      "name": "Vocabulary API",
+      "status": "passed"
+    },
+    {
+      "name": "Learn Page Access",
+      "status": "passed"
+    },
+    {
+      "name": "Flashcards Page Access",
+      "status": "passed"
+    },
+    {
+      "name": "Pronunciation Test Access",
+      "status": "passed"
+    },
+    {
+      "name": "Quests Page Access",
+      "status": "passed"
+    },
+    {
+      "name": "Profile Page Access",
+      "status": "passed"
+    },
+    {
+      "name": "Vocabulary Page Access",
+      "status": "passed"
+    },
+    {
+      "name": "Theme Demo Access",
+      "status": "passed"
+    },
+    {
+      "name": "Static Assets",
+      "status": "passed"
+    },
+    {
+      "name": "Error Handling",
+      "status": "passed"
+    },
+    {
+      "name": "Performance Check",
+      "status": "passed"
+    }
+  ],
+  "summary": {
+    "passed": 16,
+    "failed": 0,
+    "total": 16
+  }
+}

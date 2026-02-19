@@ -145,4 +145,28 @@ test-screenshots/
 temp/
 tmp/
 *.tmp
-*.temp 
+*.temp
+
+# macOS duplicate files
+* 2.*
+* 2
+
+# Large binary files
+*.mov
+*.mp4
+*.pdf
+*.tar.gz
+
+# IDE metadata
+.chat-context*.json
+.cursor/
+.cursorrules*
+
+# SQLite journal
+*.db-journal
+
+# Lock files (let Vercel generate fresh)
+shona-learn/package-lock.json
+
+# Env files in nested dirs
+*.env.local

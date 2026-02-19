@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "category": "colors",
+    "totalWords": 7,
+    "created": "2025-07-07T01:37:03.810Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_bhuruu_1751852223800",
+      "shona": "bhuruu",
+      "english": "blue",
+      "category": "colors",
+      "tones": "HL",
+      "ipa": "/bhuruu/",
+      "simplified": "bhu-ru-u",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine bhuruu",
+          "english": "I have blue"
+        },
+        {
+          "shona": "bhuruu yakanaka",
+          "english": "blue is good"
+        },
+        {
+          "shona": "Ndinoda bhuruu",
+          "english": "I want blue"
+        },
+        {
+          "shona": "Ndine bhuruu",
+          "english": "I have blue"
+        },
+        {
+          "shona": "bhuruu yakanaka",
+          "english": "blue is good"
+        },
+        {
+          "shona": "Ndinoda bhuruu",
+          "english": "I want blue"
+        }
+      ],
+      "audioFile": "bhuruu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chena_1751852223800",
+      "shona": "chena",
+      "english": "white",
+      "category": "colors",
+      "tones": "HL",
+      "ipa": "/chena/",
+      "simplified": "che-na",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine chena",
+          "english": "I have white"
+        },
+        {
+          "shona": "chena yakanaka",
+          "english": "white is good"
+        },
+        {
+          "shona": "Ndinoda chena",
+          "english": "I want white"
+        },
+        {
+          "shona": "Ndine chena",
+          "english": "I have white"
+        },
+        {
+          "shona": "chena yakanaka",
+          "english": "white is good"
+        },
+        {
+          "shona": "Ndinoda chena",
+          "english": "I want white"
+        },
+        {
+          "shona": "Ndinoda chena",
+          "english": "I want white",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "chena.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_dema_1751852223800",
+      "shona": "dema",
+      "english": "black",
+      "category": "colors",
+      "tones": "HL",
+      "ipa": "/dema/",
+      "simplified": "de-ma",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine dema",
+          "english": "I have black"
+        },
+        {
+          "shona": "dema yakanaka",
+          "english": "black is good"
+        },
+        {
+          "shona": "Ndinoda dema",
+          "english": "I want black"
+        },
+        {
+          "shona": "Ndine dema",
+          "english": "I have black"
+        },
+        {
+          "shona": "dema yakanaka",
+          "english": "black is good"
+        },
+        {
+          "shona": "Ndinoda dema",
+          "english": "I want black"
+        }
+      ],
+      "audioFile": "dema.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_girini_1751852223800",
+      "shona": "girini",
+      "english": "green",
+      "category": "colors",
+      "tones": "HHL",
+      "ipa": "/girini/",
+      "simplified": "gi-ri-ni",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine girini",
+          "english": "I have green"
+        },
+        {
+          "shona": "girini yakanaka",
+          "english": "green is good"
+        },
+        {
+          "shona": "Ndinoda girini",
+          "english": "I want green"
+        },
+        {
+          "shona": "Ndine girini",
+          "english": "I have green"
+        },
+        {
+          "shona": "girini yakanaka",
+          "english": "green is good"
+        },
+        {
+          "shona": "Ndinoda girini",
+          "english": "I want green"
+        }
+      ],
+      "audioFile": "girini.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tsvuku_1751852223800",
+      "shona": "tsvuku",
+      "english": "red",
+      "category": "colors",
+      "tones": "HHL",
+      "ipa": "/tsvuku/",
+      "simplified": "tsvu-ku",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine tsvuku",
+          "english": "I have red"
+        },
+        {
+          "shona": "tsvuku yakanaka",
+          "english": "red is good"
+        },
+        {
+          "shona": "Ndinoda tsvuku",
+          "english": "I want red"
+        },
+        {
+          "shona": "Ndine tsvuku",
+          "english": "I have red"
+        },
+        {
+          "shona": "tsvuku yakanaka",
+          "english": "red is good"
+        },
+        {
+          "shona": "Ndinoda tsvuku",
+          "english": "I want red"
+        },
+        {
+          "shona": "Ndinoda tsvuku",
+          "english": "I want red",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "tsvuku.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_yero_1751852223800",
+      "shona": "yero",
+      "english": "yellow",
+      "category": "colors",
+      "tones": "HL",
+      "ipa": "/yero/",
+      "simplified": "ye-ro",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine yero",
+          "english": "I have yellow"
+        },
+        {
+          "shona": "yero yakanaka",
+          "english": "yellow is good"
+        },
+        {
+          "shona": "Ndinoda yero",
+          "english": "I want yellow"
+        },
+        {
+          "shona": "Ndine yero",
+          "english": "I have yellow"
+        },
+        {
+          "shona": "yero yakanaka",
+          "english": "yellow is good"
+        },
+        {
+          "shona": "Ndinoda yero",
+          "english": "I want yellow"
+        },
+        {
+          "shona": "Ndinoda yero",
+          "english": "I want yellow",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "yero.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_nhema_1751852223801",
+      "shona": "nhema",
+      "english": "black",
+      "category": "colors",
+      "tones": "LHL",
+      "ipa": "/ɲema/",
+      "simplified": "NYEH-mah",
+      "source": "primary_textbook",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda nhema",
+          "english": "I want black",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "nhema.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    }
+  ]
+}

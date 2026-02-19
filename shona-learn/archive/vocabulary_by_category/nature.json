@@ -1,0 +1,338 @@
+{
+  "metadata": {
+    "category": "nature",
+    "totalWords": 7,
+    "created": "2025-07-07T01:37:03.812Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_mvura_1751852223800",
+      "shona": "mvura",
+      "english": "water",
+      "category": "nature",
+      "tones": "HL",
+      "ipa": "/mvura/",
+      "simplified": "mvu-ra",
+      "source": "ethnography",
+      "difficulty": 2,
+      "cultural": "Sacred element",
+      "examples": [
+        {
+          "shona": "Ndine mvura",
+          "english": "I have water"
+        },
+        {
+          "shona": "mvura yakanaka",
+          "english": "water is good"
+        },
+        {
+          "shona": "Ndinoda mvura",
+          "english": "I want water"
+        },
+        {
+          "shona": "Ndine mvura",
+          "english": "I have water"
+        },
+        {
+          "shona": "mvura yakanaka",
+          "english": "water is good"
+        },
+        {
+          "shona": "Ndinoda mvura",
+          "english": "I want water"
+        },
+        {
+          "shona": "Ndinoda mvura",
+          "english": "I want water",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "mvura.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography",
+        "cultural_practices"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_denga_1751852223800",
+      "shona": "denga",
+      "english": "sky",
+      "category": "nature",
+      "tones": "HL",
+      "ipa": "/denga/",
+      "simplified": "de-nga",
+      "source": "ethnography",
+      "difficulty": 10,
+      "cultural": "Spiritual realm",
+      "examples": [
+        {
+          "shona": "Ndine denga",
+          "english": "I have sky"
+        },
+        {
+          "shona": "denga yakanaka",
+          "english": "sky is good"
+        },
+        {
+          "shona": "Ndinoda denga",
+          "english": "I want sky"
+        },
+        {
+          "shona": "Ndine denga",
+          "english": "I have sky"
+        },
+        {
+          "shona": "denga yakanaka",
+          "english": "sky is good"
+        },
+        {
+          "shona": "Ndinoda denga",
+          "english": "I want sky"
+        }
+      ],
+      "audioFile": "denga.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_gomo_1751852223800",
+      "shona": "gomo",
+      "english": "mountain",
+      "category": "nature",
+      "tones": "HL",
+      "ipa": "/gomo/",
+      "simplified": "go-mo",
+      "source": "ethnography",
+      "difficulty": 10,
+      "cultural": "Sacred places",
+      "examples": [
+        {
+          "shona": "Ndine gomo",
+          "english": "I have mountain"
+        },
+        {
+          "shona": "gomo yakanaka",
+          "english": "mountain is good"
+        },
+        {
+          "shona": "Ndinoda gomo",
+          "english": "I want mountain"
+        },
+        {
+          "shona": "Ndine gomo",
+          "english": "I have mountain"
+        },
+        {
+          "shona": "gomo yakanaka",
+          "english": "mountain is good"
+        },
+        {
+          "shona": "Ndinoda gomo",
+          "english": "I want mountain"
+        }
+      ],
+      "audioFile": "gomo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_ivhu_1751852223800",
+      "shona": "ivhu",
+      "english": "soil/earth",
+      "category": "nature",
+      "tones": "HL",
+      "ipa": "/ivhu/",
+      "simplified": "i-vhu",
+      "source": "ethnography",
+      "difficulty": 10,
+      "cultural": "Connection to ancestors",
+      "examples": [
+        {
+          "shona": "Ndine ivhu",
+          "english": "I have soil/earth"
+        },
+        {
+          "shona": "ivhu yakanaka",
+          "english": "soil/earth is good"
+        },
+        {
+          "shona": "Ndinoda ivhu",
+          "english": "I want soil/earth"
+        },
+        {
+          "shona": "Ndine ivhu",
+          "english": "I have soil/earth"
+        },
+        {
+          "shona": "ivhu yakanaka",
+          "english": "soil/earth is good"
+        },
+        {
+          "shona": "Ndinoda ivhu",
+          "english": "I want soil/earth"
+        }
+      ],
+      "audioFile": "ivhu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_muti_1751852223800",
+      "shona": "muti",
+      "english": "tree",
+      "category": "nature",
+      "tones": "HL",
+      "ipa": "/muti/",
+      "simplified": "mu-ti",
+      "source": "ethnography",
+      "difficulty": 10,
+      "cultural": "Important in traditional culture",
+      "examples": [
+        {
+          "shona": "Ndine muti",
+          "english": "I have tree"
+        },
+        {
+          "shona": "muti yakanaka",
+          "english": "tree is good"
+        },
+        {
+          "shona": "Ndinoda muti",
+          "english": "I want tree"
+        },
+        {
+          "shona": "Ndine muti",
+          "english": "I have tree"
+        },
+        {
+          "shona": "muti yakanaka",
+          "english": "tree is good"
+        },
+        {
+          "shona": "Ndinoda muti",
+          "english": "I want tree"
+        }
+      ],
+      "audioFile": "muti.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_rwizi_1751852223800",
+      "shona": "rwizi",
+      "english": "river",
+      "category": "nature",
+      "tones": "HL",
+      "ipa": "/rwizi/",
+      "simplified": "rwi-zi",
+      "source": "ethnography",
+      "difficulty": 10,
+      "cultural": "Water source",
+      "examples": [
+        {
+          "shona": "Ndine rwizi",
+          "english": "I have river"
+        },
+        {
+          "shona": "rwizi yakanaka",
+          "english": "river is good"
+        },
+        {
+          "shona": "Ndinoda rwizi",
+          "english": "I want river"
+        },
+        {
+          "shona": "Ndine rwizi",
+          "english": "I have river"
+        },
+        {
+          "shona": "rwizi yakanaka",
+          "english": "river is good"
+        },
+        {
+          "shona": "Ndinoda rwizi",
+          "english": "I want river"
+        }
+      ],
+      "audioFile": "rwizi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_sango_1751852223800",
+      "shona": "sango",
+      "english": "forest",
+      "category": "nature",
+      "tones": "HL",
+      "ipa": "/sango/",
+      "simplified": "sa-ngo",
+      "source": "ethnography",
+      "difficulty": 10,
+      "cultural": "Traditional medicine source",
+      "examples": [
+        {
+          "shona": "Ndine sango",
+          "english": "I have forest"
+        },
+        {
+          "shona": "sango yakanaka",
+          "english": "forest is good"
+        },
+        {
+          "shona": "Ndinoda sango",
+          "english": "I want forest"
+        },
+        {
+          "shona": "Ndine sango",
+          "english": "I have forest"
+        },
+        {
+          "shona": "sango yakanaka",
+          "english": "forest is good"
+        },
+        {
+          "shona": "Ndinoda sango",
+          "english": "I want forest"
+        }
+      ],
+      "audioFile": "sango.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    }
+  ]
+}

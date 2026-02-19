@@ -1,0 +1,926 @@
+{
+  "metadata": {
+    "category": "family",
+    "totalWords": 22,
+    "created": "2025-07-07T01:37:03.811Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_ambuya_1751852223800",
+      "shona": "ambuya",
+      "english": "grandmother (maternal)",
+      "category": "family",
+      "tones": "HHL",
+      "ipa": "/ambuya/",
+      "simplified": "a-mbu-ya",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Highly respected female elder",
+      "examples": [
+        {
+          "shona": "Ndinoda ambuya",
+          "english": "I want grandmother (maternal)"
+        },
+        {
+          "shona": "ambuya yakanaka",
+          "english": "grandmother (maternal) is good"
+        },
+        {
+          "shona": "Ndinoda ambuya",
+          "english": "I want grandmother (maternal)"
+        },
+        {
+          "shona": "ambuya yakanaka",
+          "english": "grandmother (maternal) is good"
+        }
+      ],
+      "audioFile": "ambuya.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_baba_1751852223799",
+      "shona": "baba",
+      "english": "father",
+      "category": "family",
+      "tones": "HL",
+      "ipa": "/baba/",
+      "simplified": "ba-ba",
+      "source": "ethnography_enhanced",
+      "difficulty": 1,
+      "cultural": "Primary term for father, shows respect",
+      "examples": [
+        {
+          "shona": "Ndinoda baba",
+          "english": "I want father"
+        },
+        {
+          "shona": "baba yakanaka",
+          "english": "father is good"
+        },
+        {
+          "shona": "Ndinoda baba",
+          "english": "I want father"
+        },
+        {
+          "shona": "baba yakanaka",
+          "english": "father is good"
+        },
+        {
+          "shona": "baba vangu vanofara",
+          "english": "My father is happy"
+        },
+        {
+          "shona": "Ndoda baba wangu",
+          "english": "I love my father"
+        },
+        {
+          "shona": "baba vari kupi?",
+          "english": "Where is father?"
+        }
+      ],
+      "audioFile": "baba.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_babamukuru_1751852223799",
+      "shona": "babamukuru",
+      "english": "father's elder brother",
+      "category": "family",
+      "tones": "HHLLL",
+      "ipa": "/babamukuru/",
+      "simplified": "ba-ba-mu-ku-ru",
+      "source": "ethnography",
+      "difficulty": 1,
+      "cultural": "Senior male authority",
+      "examples": [
+        {
+          "shona": "babamukuru vangu vanofara",
+          "english": "My father's elder brother is happy"
+        },
+        {
+          "shona": "Ndoda babamukuru wangu",
+          "english": "I love my father's elder brother"
+        },
+        {
+          "shona": "babamukuru vari kupi?",
+          "english": "Where is father's elder brother?"
+        },
+        {
+          "shona": "babamukuru vangu vanofara",
+          "english": "My father's elder brother is happy"
+        },
+        {
+          "shona": "Ndoda babamukuru wangu",
+          "english": "I love my father's elder brother"
+        },
+        {
+          "shona": "babamukuru vari kupi?",
+          "english": "Where is father's elder brother?"
+        }
+      ],
+      "audioFile": "babamukuru.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mai_1751852223799",
+      "shona": "mai",
+      "english": "mother",
+      "category": "family",
+      "tones": "HL",
+      "ipa": "/mai/",
+      "simplified": "ma-i",
+      "source": "ethnography_enhanced",
+      "difficulty": 1,
+      "cultural": "Primary term for mother, used with respect",
+      "examples": [
+        {
+          "shona": "Ndinoda mai",
+          "english": "I want mother"
+        },
+        {
+          "shona": "mai yakanaka",
+          "english": "mother is good"
+        },
+        {
+          "shona": "Ndinoda mai",
+          "english": "I want mother"
+        },
+        {
+          "shona": "mai yakanaka",
+          "english": "mother is good"
+        },
+        {
+          "shona": "mai vangu vanofara",
+          "english": "My mother is happy"
+        },
+        {
+          "shona": "Ndoda mai wangu",
+          "english": "I love my mother"
+        },
+        {
+          "shona": "mai vari kupi?",
+          "english": "Where is mother?"
+        }
+      ],
+      "audioFile": "mai.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mbuya_1751852223799",
+      "shona": "mbuya",
+      "english": "grandmother",
+      "category": "family",
+      "tones": "HL",
+      "ipa": "/mbuya/",
+      "simplified": "mbu-ya",
+      "source": "ethnography",
+      "difficulty": 1,
+      "cultural": "Revered elder, keeper of traditions",
+      "examples": [
+        {
+          "shona": "mbuya vangu vanofara",
+          "english": "My grandmother is happy"
+        },
+        {
+          "shona": "Ndoda mbuya wangu",
+          "english": "I love my grandmother"
+        },
+        {
+          "shona": "mbuya vari kupi?",
+          "english": "Where is grandmother?"
+        },
+        {
+          "shona": "mbuya vangu vanofara",
+          "english": "My grandmother is happy"
+        },
+        {
+          "shona": "Ndoda mbuya wangu",
+          "english": "I love my grandmother"
+        },
+        {
+          "shona": "mbuya vari kupi?",
+          "english": "Where is grandmother?"
+        }
+      ],
+      "audioFile": "mbuya.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mudzimai_1751852223800",
+      "shona": "mudzimai",
+      "english": "wife",
+      "category": "family",
+      "tones": "HHL",
+      "ipa": "/mudzimai/",
+      "simplified": "mu-dzi-ma-i",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Marriage partnership with mutual respect",
+      "examples": [
+        {
+          "shona": "Ndinoda mudzimai",
+          "english": "I want wife"
+        },
+        {
+          "shona": "mudzimai yakanaka",
+          "english": "wife is good"
+        },
+        {
+          "shona": "Ndinoda mudzimai",
+          "english": "I want wife"
+        },
+        {
+          "shona": "mudzimai yakanaka",
+          "english": "wife is good"
+        }
+      ],
+      "audioFile": "mudzimai.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mukoma_1751852223799",
+      "shona": "mukoma",
+      "english": "older brother",
+      "category": "family",
+      "tones": "HLL",
+      "ipa": "/mukoma/",
+      "simplified": "mu-ko-ma",
+      "source": "ethnography",
+      "difficulty": 1,
+      "cultural": "Respect for older siblings",
+      "examples": [
+        {
+          "shona": "mukoma vangu vanofara",
+          "english": "My older brother is happy"
+        },
+        {
+          "shona": "Ndoda mukoma wangu",
+          "english": "I love my older brother"
+        },
+        {
+          "shona": "mukoma vari kupi?",
+          "english": "Where is older brother?"
+        },
+        {
+          "shona": "mukoma vangu vanofara",
+          "english": "My older brother is happy"
+        },
+        {
+          "shona": "Ndoda mukoma wangu",
+          "english": "I love my older brother"
+        },
+        {
+          "shona": "mukoma vari kupi?",
+          "english": "Where is older brother?"
+        }
+      ],
+      "audioFile": "mukoma.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mukomana_1751852223800",
+      "shona": "mukomana",
+      "english": "boy",
+      "category": "family",
+      "tones": "HLL",
+      "ipa": "/mukomana/",
+      "simplified": "mu-ko-ma-na",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Male child with specific expectations",
+      "examples": [
+        {
+          "shona": "Ndinoda mukomana",
+          "english": "I want boy"
+        },
+        {
+          "shona": "mukomana yakanaka",
+          "english": "boy is good"
+        },
+        {
+          "shona": "Ndinoda mukomana",
+          "english": "I want boy"
+        },
+        {
+          "shona": "mukomana yakanaka",
+          "english": "boy is good"
+        }
+      ],
+      "audioFile": "mukomana.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_munin_ina_1751852223799",
+      "shona": "munin'ina",
+      "english": "younger sibling",
+      "category": "family",
+      "tones": "HLHL",
+      "ipa": "/munin'ina/",
+      "simplified": "mu-ni-n'i-na",
+      "source": "ethnography",
+      "difficulty": 1,
+      "cultural": "Younger family member",
+      "examples": [
+        {
+          "shona": "munin'ina vangu vanofara",
+          "english": "My younger sibling is happy"
+        },
+        {
+          "shona": "Ndoda munin'ina wangu",
+          "english": "I love my younger sibling"
+        },
+        {
+          "shona": "munin'ina vari kupi?",
+          "english": "Where is younger sibling?"
+        },
+        {
+          "shona": "munin'ina vangu vanofara",
+          "english": "My younger sibling is happy"
+        },
+        {
+          "shona": "Ndoda munin'ina wangu",
+          "english": "I love my younger sibling"
+        },
+        {
+          "shona": "munin'ina vari kupi?",
+          "english": "Where is younger sibling?"
+        }
+      ],
+      "audioFile": "muninina.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_murume_1751852223800",
+      "shona": "murume",
+      "english": "husband/man",
+      "category": "family",
+      "tones": "HHL",
+      "ipa": "/murume/",
+      "simplified": "mu-ru-me",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Male head of household",
+      "examples": [
+        {
+          "shona": "Ndinoda murume",
+          "english": "I want husband/man"
+        },
+        {
+          "shona": "murume yakanaka",
+          "english": "husband/man is good"
+        },
+        {
+          "shona": "Ndinoda murume",
+          "english": "I want husband/man"
+        },
+        {
+          "shona": "murume yakanaka",
+          "english": "husband/man is good"
+        },
+        {
+          "shona": "Ndinoda murume",
+          "english": "I want man/husband",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "murume.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_musikana_1751852223800",
+      "shona": "musikana",
+      "english": "girl",
+      "category": "family",
+      "tones": "HLL",
+      "ipa": "/musikana/",
+      "simplified": "mu-si-ka-na",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Female child with traditional roles",
+      "examples": [
+        {
+          "shona": "Ndinoda musikana",
+          "english": "I want girl"
+        },
+        {
+          "shona": "musikana yakanaka",
+          "english": "girl is good"
+        },
+        {
+          "shona": "Ndinoda musikana",
+          "english": "I want girl"
+        },
+        {
+          "shona": "musikana yakanaka",
+          "english": "girl is good"
+        }
+      ],
+      "audioFile": "musikana.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_muzukuru_1751852223799",
+      "shona": "muzukuru",
+      "english": "grandchild/nephew/niece",
+      "category": "family",
+      "tones": "HLHL",
+      "ipa": "/muzukuru/",
+      "simplified": "mu-zu-ku-ru",
+      "source": "ethnography",
+      "difficulty": 1,
+      "cultural": "Important kinship term",
+      "examples": [
+        {
+          "shona": "muzukuru vangu vanofara",
+          "english": "My grandchild/nephew/niece is happy"
+        },
+        {
+          "shona": "Ndoda muzukuru wangu",
+          "english": "I love my grandchild/nephew/niece"
+        },
+        {
+          "shona": "muzukuru vari kupi?",
+          "english": "Where is grandchild/nephew/niece?"
+        },
+        {
+          "shona": "muzukuru vangu vanofara",
+          "english": "My grandchild/nephew/niece is happy"
+        },
+        {
+          "shona": "Ndoda muzukuru wangu",
+          "english": "I love my grandchild/nephew/niece"
+        },
+        {
+          "shona": "muzukuru vari kupi?",
+          "english": "Where is grandchild/nephew/niece?"
+        }
+      ],
+      "audioFile": "muzukuru.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mwana_1751852223800",
+      "shona": "mwana",
+      "english": "child",
+      "category": "family",
+      "tones": "HL",
+      "ipa": "/mwana/",
+      "simplified": "mwa-na",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Central to family identity",
+      "examples": [
+        {
+          "shona": "Ndinoda mwana",
+          "english": "I want child"
+        },
+        {
+          "shona": "mwana yakanaka",
+          "english": "child is good"
+        },
+        {
+          "shona": "Ndinoda mwana",
+          "english": "I want child"
+        },
+        {
+          "shona": "mwana yakanaka",
+          "english": "child is good"
+        },
+        {
+          "shona": "Ndinoda mwana",
+          "english": "I want child",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "mwana.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_sekuru_1751852223799",
+      "shona": "sekuru",
+      "english": "grandfather (maternal)",
+      "category": "family",
+      "tones": "HLL",
+      "ipa": "/sekuru/",
+      "simplified": "se-ku-ru",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Wise elder and cultural keeper",
+      "examples": [
+        {
+          "shona": "Ndinoda sekuru",
+          "english": "I want grandfather (maternal)"
+        },
+        {
+          "shona": "sekuru yakanaka",
+          "english": "grandfather (maternal) is good"
+        },
+        {
+          "shona": "Ndinoda sekuru",
+          "english": "I want grandfather (maternal)"
+        },
+        {
+          "shona": "sekuru yakanaka",
+          "english": "grandfather (maternal) is good"
+        },
+        {
+          "shona": "sekuru vangu vanofara",
+          "english": "My grandfather is happy"
+        },
+        {
+          "shona": "Ndoda sekuru wangu",
+          "english": "I love my grandfather"
+        },
+        {
+          "shona": "sekuru vari kupi?",
+          "english": "Where is grandfather?"
+        }
+      ],
+      "audioFile": "sekuru.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tezvara_1751852223799",
+      "shona": "tezvara",
+      "english": "father-in-law",
+      "category": "family",
+      "tones": "HLL",
+      "ipa": "/tezvara/",
+      "simplified": "te-zva-ra",
+      "source": "ethnography",
+      "difficulty": 1,
+      "cultural": "Respect relationship",
+      "examples": [
+        {
+          "shona": "tezvara vangu vanofara",
+          "english": "My father-in-law is happy"
+        },
+        {
+          "shona": "Ndoda tezvara wangu",
+          "english": "I love my father-in-law"
+        },
+        {
+          "shona": "tezvara vari kupi?",
+          "english": "Where is father-in-law?"
+        },
+        {
+          "shona": "tezvara vangu vanofara",
+          "english": "My father-in-law is happy"
+        },
+        {
+          "shona": "Ndoda tezvara wangu",
+          "english": "I love my father-in-law"
+        },
+        {
+          "shona": "tezvara vari kupi?",
+          "english": "Where is father-in-law?"
+        }
+      ],
+      "audioFile": "tezvara.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_vana_1751852223801",
+      "shona": "vana",
+      "english": "children",
+      "category": "family",
+      "tones": "LHL",
+      "ipa": "/vana/",
+      "simplified": "VAH-nah",
+      "source": "ethnography",
+      "difficulty": 1,
+      "cultural": "Plural form of child",
+      "examples": [
+        {
+          "shona": "Ndinoda vana",
+          "english": "I want children",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "vana.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_merged.json_vatete_1751852223799",
+      "shona": "vatete",
+      "english": "paternal aunt",
+      "category": "family",
+      "tones": "HHL",
+      "ipa": "/vatete/",
+      "simplified": "va-te-te",
+      "source": "ethnography",
+      "difficulty": 1,
+      "cultural": "Important female authority",
+      "examples": [
+        {
+          "shona": "vatete vangu vanofara",
+          "english": "My paternal aunt is happy"
+        },
+        {
+          "shona": "Ndoda vatete wangu",
+          "english": "I love my paternal aunt"
+        },
+        {
+          "shona": "vatete vari kupi?",
+          "english": "Where is paternal aunt?"
+        },
+        {
+          "shona": "vatete vangu vanofara",
+          "english": "My paternal aunt is happy"
+        },
+        {
+          "shona": "Ndoda vatete wangu",
+          "english": "I love my paternal aunt"
+        },
+        {
+          "shona": "vatete vari kupi?",
+          "english": "Where is paternal aunt?"
+        }
+      ],
+      "audioFile": "vatete.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_babamunini_1751852223800",
+      "shona": "babamunini",
+      "english": "father's younger brother",
+      "category": "family",
+      "tones": "HLHL",
+      "ipa": "/babamunini/",
+      "simplified": "ba-ba-mu-ni-ni",
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "cultural": "Junior paternal authority",
+      "examples": [
+        {
+          "shona": "Ndinoda babamunini",
+          "english": "I want father's younger brother"
+        },
+        {
+          "shona": "babamunini yakanaka",
+          "english": "father's younger brother is good"
+        },
+        {
+          "shona": "Ndinoda babamunini",
+          "english": "I want father's younger brother"
+        },
+        {
+          "shona": "babamunini yakanaka",
+          "english": "father's younger brother is good"
+        }
+      ],
+      "audioFile": "babamunini.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mbuya_vekuwasha_1751852223800",
+      "shona": "mbuya vekuwasha",
+      "english": "mother-in-law",
+      "category": "family",
+      "tones": "HLHHL",
+      "ipa": "/mbuya vekuwasha/",
+      "simplified": "mbu-ya- ve-ku-wa-sha",
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "cultural": "In-law relationship",
+      "examples": [
+        {
+          "shona": "Ndinoda mbuya vekuwasha",
+          "english": "I want mother-in-law"
+        },
+        {
+          "shona": "mbuya vekuwasha yakanaka",
+          "english": "mother-in-law is good"
+        },
+        {
+          "shona": "Ndinoda mbuya vekuwasha",
+          "english": "I want mother-in-law"
+        },
+        {
+          "shona": "mbuya vekuwasha yakanaka",
+          "english": "mother-in-law is good"
+        }
+      ],
+      "audioFile": "mbuya_vekuwasha.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced"
+      ]
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_mukadzi_1751852223801",
+      "shona": "mukadzi",
+      "english": "woman/wife",
+      "category": "family",
+      "tones": "LHL",
+      "ipa": "/mukadzi/",
+      "simplified": "moo-KAH-dzee",
+      "source": "ethnography",
+      "difficulty": 2,
+      "cultural": "Respectful term for woman or wife",
+      "examples": [
+        {
+          "shona": "Ndinoda mukadzi",
+          "english": "I want woman/wife",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "mukadzi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_merged.json_sekuru_vekuwasha_1751852223800",
+      "shona": "sekuru vekuwasha",
+      "english": "father-in-law",
+      "category": "family",
+      "tones": "HLHHL",
+      "ipa": "/sekuru vekuwasha/",
+      "simplified": "se-ku-ru- ve-ku-wa-sha",
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "cultural": "In-law relationship",
+      "examples": [
+        {
+          "shona": "Ndinoda sekuru vekuwasha",
+          "english": "I want father-in-law"
+        },
+        {
+          "shona": "sekuru vekuwasha yakanaka",
+          "english": "father-in-law is good"
+        },
+        {
+          "shona": "Ndinoda sekuru vekuwasha",
+          "english": "I want father-in-law"
+        },
+        {
+          "shona": "sekuru vekuwasha yakanaka",
+          "english": "father-in-law is good"
+        }
+      ],
+      "audioFile": "sekuru_vekuwasha.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tete_mukuru_1751852223800",
+      "shona": "tete mukuru",
+      "english": "eldest paternal aunt",
+      "category": "family",
+      "tones": "HLHL",
+      "ipa": "/tete mukuru/",
+      "simplified": "te-te- mu-ku-ru",
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "cultural": "Senior female authority",
+      "examples": [
+        {
+          "shona": "Ndinoda tete mukuru",
+          "english": "I want eldest paternal aunt"
+        },
+        {
+          "shona": "tete mukuru yakanaka",
+          "english": "eldest paternal aunt is good"
+        },
+        {
+          "shona": "Ndinoda tete mukuru",
+          "english": "I want eldest paternal aunt"
+        },
+        {
+          "shona": "tete mukuru yakanaka",
+          "english": "eldest paternal aunt is good"
+        }
+      ],
+      "audioFile": "tete_mukuru.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced"
+      ]
+    }
+  ]
+}

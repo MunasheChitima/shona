@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "category": "ceremony",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.813Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_bira_remukwerere_1751852223800",
+      "shona": "bira remukwerere",
+      "english": "rain ceremony",
+      "category": "ceremony",
+      "tones": "HLHHL",
+      "ipa": "/bira remukwerere/",
+      "simplified": "bi-ra- re-mu-kwe-re-re",
+      "source": "ethnography_enhanced",
+      "difficulty": 3,
+      "cultural": "Traditional rain-calling ceremony",
+      "examples": [
+        {
+          "shona": "Vana vanobatsira pabira remukwerere",
+          "english": "Children help with rain ceremony"
+        },
+        {
+          "shona": "bira remukwerere yakakosha kwatiri",
+          "english": "rain ceremony is important to us"
+        },
+        {
+          "shona": "Vana vanobatsira pabira remukwerere",
+          "english": "Children help with rain ceremony"
+        },
+        {
+          "shona": "bira remukwerere yakakosha kwatiri",
+          "english": "rain ceremony is important to us"
+        }
+      ],
+      "audioFile": "bira_remukwerere.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kudira_mvura_1751852223800",
+      "shona": "kudira mvura",
+      "english": "to pour water",
+      "category": "ceremony",
+      "tones": "HLHL",
+      "ipa": "/kudira mvura/",
+      "simplified": "ku-di-ra- mvu-ra",
+      "source": "ethnography_enhanced",
+      "difficulty": 3,
+      "cultural": "Cleansing ritual",
+      "examples": [
+        {
+          "shona": "Vana vanobatsira pakudira mvura",
+          "english": "Children help with to pour water"
+        },
+        {
+          "shona": "kudira mvura yakakosha kwatiri",
+          "english": "to pour water is important to us"
+        },
+        {
+          "shona": "Vana vanobatsira pakudira mvura",
+          "english": "Children help with to pour water"
+        },
+        {
+          "shona": "kudira mvura yakakosha kwatiri",
+          "english": "to pour water is important to us"
+        }
+      ],
+      "audioFile": "kudira_mvura.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kupira_mhuri_1751852223800",
+      "shona": "kupira mhuri",
+      "english": "to pour for family",
+      "category": "ceremony",
+      "tones": "HLHL",
+      "ipa": "/kupira mhuri/",
+      "simplified": "ku-pi-ra- mhu-ri",
+      "source": "ethnography_enhanced",
+      "difficulty": 3,
+      "cultural": "Ancestral offering ritual",
+      "examples": [
+        {
+          "shona": "Vana vanobatsira pakupira mhuri",
+          "english": "Children help with to pour for family"
+        },
+        {
+          "shona": "kupira mhuri yakakosha kwatiri",
+          "english": "to pour for family is important to us"
+        },
+        {
+          "shona": "Vana vanobatsira pakupira mhuri",
+          "english": "Children help with to pour for family"
+        },
+        {
+          "shona": "kupira mhuri yakakosha kwatiri",
+          "english": "to pour for family is important to us"
+        }
+      ],
+      "audioFile": "kupira_mhuri.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuraguza_midzimu_1751852223800",
+      "shona": "kuraguza midzimu",
+      "english": "to consult ancestors",
+      "category": "ceremony",
+      "tones": "HLHHL",
+      "ipa": "/kuraguza midzimu/",
+      "simplified": "ku-ra-gu-za- mi-dzi-mu",
+      "source": "ethnography_enhanced",
+      "difficulty": 3,
+      "cultural": "Spiritual consultation process",
+      "examples": [
+        {
+          "shona": "Vana vanobatsira pakuraguza midzimu",
+          "english": "Children help with to consult ancestors"
+        },
+        {
+          "shona": "kuraguza midzimu yakakosha kwatiri",
+          "english": "to consult ancestors is important to us"
+        },
+        {
+          "shona": "Vana vanobatsira pakuraguza midzimu",
+          "english": "Children help with to consult ancestors"
+        },
+        {
+          "shona": "kuraguza midzimu yakakosha kwatiri",
+          "english": "to consult ancestors is important to us"
+        }
+      ],
+      "audioFile": "kuraguza_midzimu.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography_enhanced",
+        "ethnography_enhanced"
+      ]
+    }
+  ]
+}

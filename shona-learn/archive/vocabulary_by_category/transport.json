@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "category": "transport",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.813Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_chitima_1751852223800",
+      "shona": "chitima",
+      "english": "train",
+      "category": "transport",
+      "tones": "HHL",
+      "ipa": "/chitima/",
+      "simplified": "chi-ti-ma",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Railway transportation",
+      "examples": [
+        {
+          "shona": "Ndinoda chitima",
+          "english": "I want train"
+        },
+        {
+          "shona": "chitima yakanaka",
+          "english": "train is good"
+        },
+        {
+          "shona": "Ndinoda chitima",
+          "english": "I want train"
+        },
+        {
+          "shona": "chitima yakanaka",
+          "english": "train is good"
+        }
+      ],
+      "audioFile": "chitima.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kombi_1751852223800",
+      "shona": "kombi",
+      "english": "minibus",
+      "category": "transport",
+      "tones": "HL",
+      "ipa": "/kombi/",
+      "simplified": "ko-mbi",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Common urban transport",
+      "examples": [
+        {
+          "shona": "Ndinoda kombi",
+          "english": "I want minibus"
+        },
+        {
+          "shona": "kombi yakanaka",
+          "english": "minibus is good"
+        },
+        {
+          "shona": "Ndinoda kombi",
+          "english": "I want minibus"
+        },
+        {
+          "shona": "kombi yakanaka",
+          "english": "minibus is good"
+        }
+      ],
+      "audioFile": "kombi.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mota_1751852223800",
+      "shona": "mota",
+      "english": "car",
+      "category": "transport",
+      "tones": "HL",
+      "ipa": "/mota/",
+      "simplified": "mo-ta",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Private vehicle",
+      "examples": [
+        {
+          "shona": "Ndinoda mota",
+          "english": "I want car"
+        },
+        {
+          "shona": "mota yakanaka",
+          "english": "car is good"
+        },
+        {
+          "shona": "Ndinoda mota",
+          "english": "I want car"
+        },
+        {
+          "shona": "mota yakanaka",
+          "english": "car is good"
+        }
+      ],
+      "audioFile": "mota.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_ndege_1751852223800",
+      "shona": "ndege",
+      "english": "airplane",
+      "category": "transport",
+      "tones": "HL",
+      "ipa": "/ndege/",
+      "simplified": "nde-ge",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Air travel",
+      "examples": [
+        {
+          "shona": "Ndinoda ndege",
+          "english": "I want airplane"
+        },
+        {
+          "shona": "ndege yakanaka",
+          "english": "airplane is good"
+        },
+        {
+          "shona": "Ndinoda ndege",
+          "english": "I want airplane"
+        },
+        {
+          "shona": "ndege yakanaka",
+          "english": "airplane is good"
+        }
+      ],
+      "audioFile": "ndege.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    }
+  ]
+}

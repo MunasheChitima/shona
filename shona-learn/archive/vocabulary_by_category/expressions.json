@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "category": "expressions",
+    "totalWords": 5,
+    "created": "2025-07-07T01:37:03.812Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_master_comprehensive.json_hapana_1751852223801",
+      "shona": "hapana",
+      "english": "nothing/no",
+      "category": "expressions",
+      "tones": "LHL",
+      "ipa": "/hapana/",
+      "simplified": "hah-PAH-nah",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda hapana",
+          "english": "I want nothing/no",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "hapana.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_ndapota_1751852223801",
+      "shona": "ndapota",
+      "english": "please",
+      "category": "expressions",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdapota/",
+      "simplified": "ndah-POH-tah",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda ndapota",
+          "english": "I want please",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "ndapota.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_ndatenda_1751852223801",
+      "shona": "ndatenda",
+      "english": "thank you",
+      "category": "expressions",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdatenda/",
+      "simplified": "ndah-TEN-dah",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": "Standard expression of gratitude",
+      "examples": [
+        {
+          "shona": "Ndinoda ndatenda",
+          "english": "I want thank you",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "ndatenda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_ndine_urombo_1751852223801",
+      "shona": "ndine urombo",
+      "english": "I'm sorry",
+      "category": "expressions",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdine urombo/",
+      "simplified": "ndee-neh oo-ROHM-boh",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "cultural": "Expression of apology or sympathy",
+      "examples": [
+        {
+          "shona": "Ndinoda ndine urombo",
+          "english": "I want I'm sorry",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "ndine urombo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_zvakanaka_1751852223801",
+      "shona": "zvakanaka",
+      "english": "it's good/okay",
+      "category": "expressions",
+      "tones": "LHLHL",
+      "ipa": "/z͎akanaka/",
+      "simplified": "zvah-kah-NAH-kah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda zvakanaka",
+          "english": "I want it's good/okay",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "zvakanaka.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    }
+  ]
+}

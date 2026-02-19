@@ -1,0 +1,711 @@
+{
+  "metadata": {
+    "category": "verbs",
+    "totalWords": 21,
+    "created": "2025-07-07T01:37:03.812Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_kubvuma_1751852223800",
+      "shona": "kubvuma",
+      "english": "to agree",
+      "category": "verbs",
+      "tones": "HHL",
+      "ipa": "/kubvuma/",
+      "simplified": "ku-bvu-ma",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kubvuma",
+          "english": "I have to agree"
+        },
+        {
+          "shona": "kubvuma yakanaka",
+          "english": "to agree is good"
+        },
+        {
+          "shona": "Ndinoda kubvuma",
+          "english": "I want to agree"
+        },
+        {
+          "shona": "Ndine kubvuma",
+          "english": "I have to agree"
+        },
+        {
+          "shona": "kubvuma yakanaka",
+          "english": "to agree is good"
+        },
+        {
+          "shona": "Ndinoda kubvuma",
+          "english": "I want to agree"
+        }
+      ],
+      "audioFile": "kubvuma.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kudya_1751852223800",
+      "shona": "kudya",
+      "english": "to eat",
+      "category": "verbs",
+      "tones": "HL",
+      "ipa": "/kudya/",
+      "simplified": "ku-dya",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kudya",
+          "english": "I have to eat"
+        },
+        {
+          "shona": "kudya yakanaka",
+          "english": "to eat is good"
+        },
+        {
+          "shona": "Ndinoda kudya",
+          "english": "I want to eat"
+        },
+        {
+          "shona": "Ndine kudya",
+          "english": "I have to eat"
+        },
+        {
+          "shona": "kudya yakanaka",
+          "english": "to eat is good"
+        },
+        {
+          "shona": "Ndinoda kudya",
+          "english": "I want to eat"
+        }
+      ],
+      "audioFile": "kudya.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kufamba_1751852223800",
+      "shona": "kufamba",
+      "english": "to walk",
+      "category": "verbs",
+      "tones": "HHL",
+      "ipa": "/kufamba/",
+      "simplified": "ku-fa-mba",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kufamba",
+          "english": "I have to walk"
+        },
+        {
+          "shona": "kufamba yakanaka",
+          "english": "to walk is good"
+        },
+        {
+          "shona": "Ndinoda kufamba",
+          "english": "I want to walk"
+        },
+        {
+          "shona": "Ndine kufamba",
+          "english": "I have to walk"
+        },
+        {
+          "shona": "kufamba yakanaka",
+          "english": "to walk is good"
+        },
+        {
+          "shona": "Ndinoda kufamba",
+          "english": "I want to walk"
+        }
+      ],
+      "audioFile": "kufamba.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kugara_1751852223800",
+      "shona": "kugara",
+      "english": "to sit/live",
+      "category": "verbs",
+      "tones": "HHL",
+      "ipa": "/kugara/",
+      "simplified": "ku-ga-ra",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kugara",
+          "english": "I have to sit/live"
+        },
+        {
+          "shona": "kugara yakanaka",
+          "english": "to sit/live is good"
+        },
+        {
+          "shona": "Ndinoda kugara",
+          "english": "I want to sit/live"
+        },
+        {
+          "shona": "Ndine kugara",
+          "english": "I have to sit/live"
+        },
+        {
+          "shona": "kugara yakanaka",
+          "english": "to sit/live is good"
+        },
+        {
+          "shona": "Ndinoda kugara",
+          "english": "I want to sit/live"
+        }
+      ],
+      "audioFile": "kugara.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kumuka_1751852223800",
+      "shona": "kumuka",
+      "english": "to wake up",
+      "category": "verbs",
+      "tones": "HHL",
+      "ipa": "/kumuka/",
+      "simplified": "ku-mu-ka",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kumuka",
+          "english": "I have to wake up"
+        },
+        {
+          "shona": "kumuka yakanaka",
+          "english": "to wake up is good"
+        },
+        {
+          "shona": "Ndinoda kumuka",
+          "english": "I want to wake up"
+        },
+        {
+          "shona": "Ndine kumuka",
+          "english": "I have to wake up"
+        },
+        {
+          "shona": "kumuka yakanaka",
+          "english": "to wake up is good"
+        },
+        {
+          "shona": "Ndinoda kumuka",
+          "english": "I want to wake up"
+        }
+      ],
+      "audioFile": "kumuka.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kunwa_1751852223800",
+      "shona": "kunwa",
+      "english": "to drink",
+      "category": "verbs",
+      "tones": "HL",
+      "ipa": "/kunwa/",
+      "simplified": "ku-nwa",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kunwa",
+          "english": "I have to drink"
+        },
+        {
+          "shona": "kunwa yakanaka",
+          "english": "to drink is good"
+        },
+        {
+          "shona": "Ndinoda kunwa",
+          "english": "I want to drink"
+        },
+        {
+          "shona": "Ndine kunwa",
+          "english": "I have to drink"
+        },
+        {
+          "shona": "kunwa yakanaka",
+          "english": "to drink is good"
+        },
+        {
+          "shona": "Ndinoda kunwa",
+          "english": "I want to drink"
+        }
+      ],
+      "audioFile": "kunwa.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuramba_1751852223800",
+      "shona": "kuramba",
+      "english": "to refuse",
+      "category": "verbs",
+      "tones": "HHL",
+      "ipa": "/kuramba/",
+      "simplified": "ku-ra-mba",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kuramba",
+          "english": "I have to refuse"
+        },
+        {
+          "shona": "kuramba yakanaka",
+          "english": "to refuse is good"
+        },
+        {
+          "shona": "Ndinoda kuramba",
+          "english": "I want to refuse"
+        },
+        {
+          "shona": "Ndine kuramba",
+          "english": "I have to refuse"
+        },
+        {
+          "shona": "kuramba yakanaka",
+          "english": "to refuse is good"
+        },
+        {
+          "shona": "Ndinoda kuramba",
+          "english": "I want to refuse"
+        }
+      ],
+      "audioFile": "kuramba.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kurara_1751852223800",
+      "shona": "kurara",
+      "english": "to sleep",
+      "category": "verbs",
+      "tones": "HHL",
+      "ipa": "/kurara/",
+      "simplified": "ku-ra-ra",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kurara",
+          "english": "I have to sleep"
+        },
+        {
+          "shona": "kurara yakanaka",
+          "english": "to sleep is good"
+        },
+        {
+          "shona": "Ndinoda kurara",
+          "english": "I want to sleep"
+        },
+        {
+          "shona": "Ndine kurara",
+          "english": "I have to sleep"
+        },
+        {
+          "shona": "kurara yakanaka",
+          "english": "to sleep is good"
+        },
+        {
+          "shona": "Ndinoda kurara",
+          "english": "I want to sleep"
+        }
+      ],
+      "audioFile": "kurara.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kutamba_1751852223800",
+      "shona": "kutamba",
+      "english": "to play",
+      "category": "verbs",
+      "tones": "HHL",
+      "ipa": "/kutamba/",
+      "simplified": "ku-ta-mba",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kutamba",
+          "english": "I have to play"
+        },
+        {
+          "shona": "kutamba yakanaka",
+          "english": "to play is good"
+        },
+        {
+          "shona": "Ndinoda kutamba",
+          "english": "I want to play"
+        },
+        {
+          "shona": "Ndine kutamba",
+          "english": "I have to play"
+        },
+        {
+          "shona": "kutamba yakanaka",
+          "english": "to play is good"
+        },
+        {
+          "shona": "Ndinoda kutamba",
+          "english": "I want to play"
+        }
+      ],
+      "audioFile": "kutamba.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "fsi_filtered",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_anoda_1751852223801",
+      "shona": "anoda",
+      "english": "he/she wants",
+      "category": "verbs",
+      "tones": "LHL",
+      "ipa": "/anoda/",
+      "simplified": "ah-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda anoda",
+          "english": "I want he/she wants",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "anoda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_munoda_1751852223801",
+      "shona": "munoda",
+      "english": "you want (plural)",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/munoda/",
+      "simplified": "moo-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda munoda",
+          "english": "I want you want (plural)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "munoda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_ndinoda_1751852223801",
+      "shona": "ndinoda",
+      "english": "I want",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdinoda/",
+      "simplified": "ndee-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda ndinoda",
+          "english": "I want I want",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "ndinoda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_tinoda_1751852223801",
+      "shona": "tinoda",
+      "english": "we want",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/tinoda/",
+      "simplified": "tee-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda tinoda",
+          "english": "I want we want",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "tinoda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_unoda_1751852223801",
+      "shona": "unoda",
+      "english": "you want (singular)",
+      "category": "verbs",
+      "tones": "LHL",
+      "ipa": "/unoda/",
+      "simplified": "oo-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda unoda",
+          "english": "I want you want (singular)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "unoda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_vanoda_1751852223801",
+      "shona": "vanoda",
+      "english": "they want",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/vanoda/",
+      "simplified": "vah-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda vanoda",
+          "english": "I want they want",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "vanoda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_ari_kuenda_1751852223801",
+      "shona": "ari kuenda",
+      "english": "he/she is going",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/ari kuenda/",
+      "simplified": "AH-ree koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda ari kuenda",
+          "english": "I want he/she is going",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "ari kuenda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_muri_kuenda_1751852223801",
+      "shona": "muri kuenda",
+      "english": "you are going (plural)",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/muri kuenda/",
+      "simplified": "moo-REE koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda muri kuenda",
+          "english": "I want you are going (plural)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "muri kuenda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_ndiri_kuenda_1751852223801",
+      "shona": "ndiri kuenda",
+      "english": "I am going",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdiri kuenda/",
+      "simplified": "ndee-REE koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda ndiri kuenda",
+          "english": "I want I am going",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "ndiri kuenda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_tiri_kuenda_1751852223801",
+      "shona": "tiri kuenda",
+      "english": "we are going",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/tiri kuenda/",
+      "simplified": "tee-REE koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda tiri kuenda",
+          "english": "I want we are going",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "tiri kuenda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_uri_kuenda_1751852223801",
+      "shona": "uri kuenda",
+      "english": "you are going (singular)",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/uri kuenda/",
+      "simplified": "OO-ree koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda uri kuenda",
+          "english": "I want you are going (singular)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "uri kuenda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_vari_kuenda_1751852223801",
+      "shona": "vari kuenda",
+      "english": "they are going",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/vari kuenda/",
+      "simplified": "vah-REE koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda vari kuenda",
+          "english": "I want they are going",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "vari kuenda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    }
+  ]
+}

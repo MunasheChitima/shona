@@ -1,0 +1,5737 @@
+{
+  "metadata": {
+    "totalWords": 232,
+    "originalWords": 150,
+    "enhancedWords": 89,
+    "newWords": 82,
+    "mergedAt": "2025-07-06T01:36:32.938Z",
+    "version": "2.1.0",
+    "sources": [
+      "ethnography",
+      "syllabus",
+      "hymns",
+      "ruins",
+      "chimurenga",
+      "fsi",
+      "primary_textbook",
+      "language_course",
+      "dictionary_phrasebook",
+      "ethnography_primary",
+      "traditional_wisdom",
+      "cultural_practices",
+      "academic_syllabus",
+      "sda_hymns",
+      "traditional_hymns",
+      "zimbabwe_ruins",
+      "prehistoric_history",
+      "chimurenga_primary",
+      "zimbabwe_struggle",
+      "fsi_basic"
+    ]
+  },
+  "vocabulary": [
+    {
+      "shona": "mai",
+      "english": "mother",
+      "category": "family",
+      "tones": "HL",
+      "cultural": "Primary term for mother, used with respect",
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "audioFile": "mai.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mai",
+          "english": "I want mother"
+        },
+        {
+          "shona": "mai yakanaka",
+          "english": "mother is good"
+        }
+      ],
+      "pronunciation": "/mai/ [HL]",
+      "source_type": "enhanced",
+      "modern": true,
+      "sources": [
+        "ethnography",
+        "ethnography_enhanced"
+      ]
+    },
+    {
+      "shona": "baba",
+      "english": "father",
+      "category": "family",
+      "tones": "HL",
+      "cultural": "Primary term for father, shows respect",
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "audioFile": "baba.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda baba",
+          "english": "I want father"
+        },
+        {
+          "shona": "baba yakanaka",
+          "english": "father is good"
+        }
+      ],
+      "pronunciation": "/baba/ [HL]",
+      "source_type": "enhanced",
+      "modern": true,
+      "sources": [
+        "ethnography",
+        "ethnography_enhanced"
+      ]
+    },
+    {
+      "shona": "mbuya",
+      "english": "grandmother",
+      "category": "family",
+      "tones": "HL",
+      "cultural": "Revered elder, keeper of traditions",
+      "source": "ethnography",
+      "difficulty": 1,
+      "audioFile": "mbuya.mp3",
+      "examples": [
+        {
+          "shona": "mbuya vangu vanofara",
+          "english": "My grandmother is happy"
+        },
+        {
+          "shona": "Ndoda mbuya wangu",
+          "english": "I love my grandmother"
+        },
+        {
+          "shona": "mbuya vari kupi?",
+          "english": "Where is grandmother?"
+        }
+      ],
+      "pronunciation": "/mbuya/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "sekuru",
+      "english": "grandfather (maternal)",
+      "category": "family",
+      "tones": "HLL",
+      "cultural": "Wise elder and cultural keeper",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "sekuru.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda sekuru",
+          "english": "I want grandfather (maternal)"
+        },
+        {
+          "shona": "sekuru yakanaka",
+          "english": "grandfather (maternal) is good"
+        }
+      ],
+      "pronunciation": "/sekuru/ [HLL]",
+      "source_type": "enhanced",
+      "modern": true,
+      "sources": [
+        "ethnography",
+        "primary_textbook"
+      ]
+    },
+    {
+      "shona": "mukoma",
+      "english": "older brother",
+      "category": "family",
+      "tones": "HLL",
+      "cultural": "Respect for older siblings",
+      "source": "ethnography",
+      "difficulty": 1,
+      "audioFile": "mukoma.mp3",
+      "examples": [
+        {
+          "shona": "mukoma vangu vanofara",
+          "english": "My older brother is happy"
+        },
+        {
+          "shona": "Ndoda mukoma wangu",
+          "english": "I love my older brother"
+        },
+        {
+          "shona": "mukoma vari kupi?",
+          "english": "Where is older brother?"
+        }
+      ],
+      "pronunciation": "/mukoma/ [HLL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "munin'ina",
+      "english": "younger sibling",
+      "category": "family",
+      "tones": "HLHL",
+      "cultural": "Younger family member",
+      "source": "ethnography",
+      "difficulty": 1,
+      "audioFile": "muninina.mp3",
+      "examples": [
+        {
+          "shona": "munin'ina vangu vanofara",
+          "english": "My younger sibling is happy"
+        },
+        {
+          "shona": "Ndoda munin'ina wangu",
+          "english": "I love my younger sibling"
+        },
+        {
+          "shona": "munin'ina vari kupi?",
+          "english": "Where is younger sibling?"
+        }
+      ],
+      "pronunciation": "/munin'ina/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "muzukuru",
+      "english": "grandchild/nephew/niece",
+      "category": "family",
+      "tones": "HLHL",
+      "cultural": "Important kinship term",
+      "source": "ethnography",
+      "difficulty": 1,
+      "audioFile": "muzukuru.mp3",
+      "examples": [
+        {
+          "shona": "muzukuru vangu vanofara",
+          "english": "My grandchild/nephew/niece is happy"
+        },
+        {
+          "shona": "Ndoda muzukuru wangu",
+          "english": "I love my grandchild/nephew/niece"
+        },
+        {
+          "shona": "muzukuru vari kupi?",
+          "english": "Where is grandchild/nephew/niece?"
+        }
+      ],
+      "pronunciation": "/muzukuru/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "tezvara",
+      "english": "father-in-law",
+      "category": "family",
+      "tones": "HLL",
+      "cultural": "Respect relationship",
+      "source": "ethnography",
+      "difficulty": 1,
+      "audioFile": "tezvara.mp3",
+      "examples": [
+        {
+          "shona": "tezvara vangu vanofara",
+          "english": "My father-in-law is happy"
+        },
+        {
+          "shona": "Ndoda tezvara wangu",
+          "english": "I love my father-in-law"
+        },
+        {
+          "shona": "tezvara vari kupi?",
+          "english": "Where is father-in-law?"
+        }
+      ],
+      "pronunciation": "/tezvara/ [HLL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "vatete",
+      "english": "paternal aunt",
+      "category": "family",
+      "tones": "HHL",
+      "cultural": "Important female authority",
+      "source": "ethnography",
+      "difficulty": 1,
+      "audioFile": "vatete.mp3",
+      "examples": [
+        {
+          "shona": "vatete vangu vanofara",
+          "english": "My paternal aunt is happy"
+        },
+        {
+          "shona": "Ndoda vatete wangu",
+          "english": "I love my paternal aunt"
+        },
+        {
+          "shona": "vatete vari kupi?",
+          "english": "Where is paternal aunt?"
+        }
+      ],
+      "pronunciation": "/vatete/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "babamukuru",
+      "english": "father's elder brother",
+      "category": "family",
+      "tones": "HHLLL",
+      "cultural": "Senior male authority",
+      "source": "ethnography",
+      "difficulty": 1,
+      "audioFile": "babamukuru.mp3",
+      "examples": [
+        {
+          "shona": "babamukuru vangu vanofara",
+          "english": "My father's elder brother is happy"
+        },
+        {
+          "shona": "Ndoda babamukuru wangu",
+          "english": "I love my father's elder brother"
+        },
+        {
+          "shona": "babamukuru vari kupi?",
+          "english": "Where is father's elder brother?"
+        }
+      ],
+      "pronunciation": "/babamukuru/ [HHLLL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mambo",
+      "english": "chief",
+      "category": "community",
+      "tones": "HL",
+      "cultural": "Traditional leader",
+      "source": "ethnography",
+      "difficulty": 6,
+      "audioFile": "mambo.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mambo",
+          "english": "I have chief"
+        },
+        {
+          "shona": "mambo yakanaka",
+          "english": "chief is good"
+        },
+        {
+          "shona": "Ndinoda mambo",
+          "english": "I want chief"
+        }
+      ],
+      "pronunciation": "/mambo/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "dare",
+      "english": "court/meeting place",
+      "category": "community",
+      "tones": "HL",
+      "cultural": "Traditional justice system",
+      "source": "ethnography",
+      "difficulty": 6,
+      "audioFile": "dare.mp3",
+      "examples": [
+        {
+          "shona": "Ndine dare",
+          "english": "I have court/meeting place"
+        },
+        {
+          "shona": "dare yakanaka",
+          "english": "court/meeting place is good"
+        },
+        {
+          "shona": "Ndinoda dare",
+          "english": "I want court/meeting place"
+        }
+      ],
+      "pronunciation": "/dare/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "musha",
+      "english": "homestead",
+      "category": "community",
+      "tones": "HL",
+      "cultural": "Extended family living area",
+      "source": "ethnography",
+      "difficulty": 6,
+      "audioFile": "musha.mp3",
+      "examples": [
+        {
+          "shona": "Ndine musha",
+          "english": "I have homestead"
+        },
+        {
+          "shona": "musha yakanaka",
+          "english": "homestead is good"
+        },
+        {
+          "shona": "Ndinoda musha",
+          "english": "I want homestead"
+        }
+      ],
+      "pronunciation": "/musha/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "dunhu",
+      "english": "district",
+      "category": "community",
+      "tones": "HL",
+      "cultural": "Administrative area",
+      "source": "ethnography",
+      "difficulty": 6,
+      "audioFile": "dunhu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine dunhu",
+          "english": "I have district"
+        },
+        {
+          "shona": "dunhu yakanaka",
+          "english": "district is good"
+        },
+        {
+          "shona": "Ndinoda dunhu",
+          "english": "I want district"
+        }
+      ],
+      "pronunciation": "/dunhu/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "guta",
+      "english": "town/city",
+      "category": "community",
+      "tones": "HL",
+      "cultural": "Urban center",
+      "source": "ethnography",
+      "difficulty": 6,
+      "audioFile": "guta.mp3",
+      "examples": [
+        {
+          "shona": "Ndine guta",
+          "english": "I have town/city"
+        },
+        {
+          "shona": "guta yakanaka",
+          "english": "town/city is good"
+        },
+        {
+          "shona": "Ndinoda guta",
+          "english": "I want town/city"
+        }
+      ],
+      "pronunciation": "/guta/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mumusha",
+      "english": "villager",
+      "category": "community",
+      "tones": "HHL",
+      "cultural": "Rural community member",
+      "source": "ethnography",
+      "difficulty": 6,
+      "audioFile": "mumusha.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mumusha",
+          "english": "I have villager"
+        },
+        {
+          "shona": "mumusha yakanaka",
+          "english": "villager is good"
+        },
+        {
+          "shona": "Ndinoda mumusha",
+          "english": "I want villager"
+        }
+      ],
+      "pronunciation": "/mumusha/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "vanhu",
+      "english": "people",
+      "category": "community",
+      "tones": "HL",
+      "cultural": "Community collective",
+      "source": "ethnography",
+      "difficulty": 6,
+      "audioFile": "vanhu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine vanhu",
+          "english": "I have people"
+        },
+        {
+          "shona": "vanhu yakanaka",
+          "english": "people is good"
+        },
+        {
+          "shona": "Ndinoda vanhu",
+          "english": "I want people"
+        }
+      ],
+      "pronunciation": "/vanhu/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "ukama",
+      "english": "relationship/kinship",
+      "category": "community",
+      "tones": "HHL",
+      "cultural": "Fundamental social bond",
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "ukama.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ukama",
+          "english": "I want relationship/kinship"
+        },
+        {
+          "shona": "ukama yakanaka",
+          "english": "relationship/kinship is good"
+        }
+      ],
+      "pronunciation": "/ukama/ [HHL]",
+      "source_type": "enhanced",
+      "modern": true,
+      "sources": [
+        "ethnography",
+        "language_course"
+      ]
+    },
+    {
+      "shona": "mudzimu",
+      "english": "ancestral spirit",
+      "category": "religion",
+      "tones": "HHL",
+      "cultural": "Traditional spiritual belief",
+      "source": "ethnography",
+      "difficulty": 3,
+      "audioFile": "mudzimu.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kumudzimu",
+          "english": "I am going to ancestral spirit"
+        },
+        {
+          "shona": "mudzimu inofadza",
+          "english": "ancestral spirit is joyful"
+        },
+        {
+          "shona": "Tinoda mudzimu",
+          "english": "We want ancestral spirit"
+        }
+      ],
+      "pronunciation": "/mudzimu/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "n'anga",
+      "english": "traditional healer",
+      "category": "religion",
+      "tones": "HL",
+      "cultural": "Spiritual and medical healer",
+      "source": "ethnography",
+      "difficulty": 3,
+      "audioFile": "nanga.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kun'anga",
+          "english": "I am going to traditional healer"
+        },
+        {
+          "shona": "n'anga inofadza",
+          "english": "traditional healer is joyful"
+        },
+        {
+          "shona": "Tinoda n'anga",
+          "english": "We want traditional healer"
+        }
+      ],
+      "pronunciation": "/n'anga/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "svikiro",
+      "english": "spirit medium",
+      "category": "religion",
+      "tones": "HHL",
+      "cultural": "Communicates with ancestors",
+      "source": "ethnography",
+      "difficulty": 3,
+      "audioFile": "svikiro.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kusvikiro",
+          "english": "I am going to spirit medium"
+        },
+        {
+          "shona": "svikiro inofadza",
+          "english": "spirit medium is joyful"
+        },
+        {
+          "shona": "Tinoda svikiro",
+          "english": "We want spirit medium"
+        }
+      ],
+      "pronunciation": "/svikiro/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "Mwari",
+      "english": "God",
+      "category": "religion",
+      "tones": "HL",
+      "cultural": "Supreme deity",
+      "source": "ethnography",
+      "difficulty": 3,
+      "audioFile": "Mwari.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kuMwari",
+          "english": "I am going to God"
+        },
+        {
+          "shona": "Mwari inofadza",
+          "english": "God is joyful"
+        },
+        {
+          "shona": "Tinoda Mwari",
+          "english": "We want God"
+        }
+      ],
+      "pronunciation": "/mwari/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "chechi",
+      "english": "church",
+      "category": "religion",
+      "tones": "HL",
+      "cultural": "Christian place of worship",
+      "source": "ethnography",
+      "difficulty": 3,
+      "audioFile": "chechi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kuchechi",
+          "english": "I am going to church"
+        },
+        {
+          "shona": "chechi inofadza",
+          "english": "church is joyful"
+        },
+        {
+          "shona": "Tinoda chechi",
+          "english": "We want church"
+        }
+      ],
+      "pronunciation": "/tʃetʃi/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kunamata",
+      "english": "to pray",
+      "category": "religion",
+      "tones": "HLHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "kunamata.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kukunamata",
+          "english": "I am going to to pray"
+        },
+        {
+          "shona": "kunamata inofadza",
+          "english": "to pray is joyful"
+        },
+        {
+          "shona": "Tinoda kunamata",
+          "english": "We want to pray"
+        }
+      ],
+      "pronunciation": "/kunamata/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kurapa",
+      "english": "to heal",
+      "category": "religion",
+      "tones": "HHL",
+      "cultural": "Traditional healing practice",
+      "source": "ethnography",
+      "difficulty": 3,
+      "audioFile": "kurapa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kukurapa",
+          "english": "I am going to to heal"
+        },
+        {
+          "shona": "kurapa inofadza",
+          "english": "to heal is joyful"
+        },
+        {
+          "shona": "Tinoda kurapa",
+          "english": "We want to heal"
+        }
+      ],
+      "pronunciation": "/kurapa/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mutapa",
+      "english": "medicine",
+      "category": "religion",
+      "tones": "HHL",
+      "cultural": "Traditional medicine",
+      "source": "ethnography",
+      "difficulty": 3,
+      "audioFile": "mutapa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kumutapa",
+          "english": "I am going to medicine"
+        },
+        {
+          "shona": "mutapa inofadza",
+          "english": "medicine is joyful"
+        },
+        {
+          "shona": "Tinoda mutapa",
+          "english": "We want medicine"
+        }
+      ],
+      "pronunciation": "/mutapa/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "roora",
+      "english": "bride price",
+      "category": "celebration",
+      "tones": "HL",
+      "cultural": "Marriage custom",
+      "source": "ethnography",
+      "difficulty": 9,
+      "audioFile": "roora.mp3",
+      "examples": [
+        {
+          "shona": "Ndine roora",
+          "english": "I have bride price"
+        },
+        {
+          "shona": "roora yakanaka",
+          "english": "bride price is good"
+        },
+        {
+          "shona": "Ndinoda roora",
+          "english": "I want bride price"
+        }
+      ],
+      "pronunciation": "/roora/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kurova guva",
+      "english": "memorial ceremony",
+      "category": "celebration",
+      "tones": "HLHL",
+      "cultural": "Ancestral remembrance",
+      "source": "ethnography",
+      "difficulty": 9,
+      "audioFile": "kurova_guva.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kurova guva",
+          "english": "I have memorial ceremony"
+        },
+        {
+          "shona": "kurova guva yakanaka",
+          "english": "memorial ceremony is good"
+        },
+        {
+          "shona": "Ndinoda kurova guva",
+          "english": "I want memorial ceremony"
+        }
+      ],
+      "pronunciation": "/kurova guva/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mukwerere",
+      "english": "rain ceremony",
+      "category": "celebration",
+      "tones": "HLHL",
+      "cultural": "Traditional rain-making",
+      "source": "ethnography",
+      "difficulty": 9,
+      "audioFile": "mukwerere.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mukwerere",
+          "english": "I have rain ceremony"
+        },
+        {
+          "shona": "mukwerere yakanaka",
+          "english": "rain ceremony is good"
+        },
+        {
+          "shona": "Ndinoda mukwerere",
+          "english": "I want rain ceremony"
+        }
+      ],
+      "pronunciation": "/mukwerere/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "bira",
+      "english": "spirit ceremony",
+      "category": "celebration",
+      "tones": "HL",
+      "cultural": "Traditional religious ceremony",
+      "source": "ethnography",
+      "difficulty": 9,
+      "audioFile": "bira.mp3",
+      "examples": [
+        {
+          "shona": "Ndine bira",
+          "english": "I have spirit ceremony"
+        },
+        {
+          "shona": "bira yakanaka",
+          "english": "spirit ceremony is good"
+        },
+        {
+          "shona": "Ndinoda bira",
+          "english": "I want spirit ceremony"
+        }
+      ],
+      "pronunciation": "/bira/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mapira",
+      "english": "first fruits ceremony",
+      "category": "celebration",
+      "tones": "HHL",
+      "cultural": "Harvest celebration",
+      "source": "ethnography",
+      "difficulty": 9,
+      "audioFile": "mapira.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mapira",
+          "english": "I have first fruits ceremony"
+        },
+        {
+          "shona": "mapira yakanaka",
+          "english": "first fruits ceremony is good"
+        },
+        {
+          "shona": "Ndinoda mapira",
+          "english": "I want first fruits ceremony"
+        }
+      ],
+      "pronunciation": "/mapira/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mhoro",
+      "english": "hello (casual)",
+      "category": "greetings",
+      "tones": "HL",
+      "cultural": "Modern casual greeting",
+      "source": "ethnography",
+      "difficulty": 2,
+      "audioFile": "mhoro.mp3",
+      "examples": [
+        {
+          "shona": "mhoro shamwari",
+          "english": "hello (casual) friend"
+        },
+        {
+          "shona": "mhoro, makadii?",
+          "english": "hello (casual), how are you?"
+        },
+        {
+          "shona": "mhoro mukoma",
+          "english": "hello (casual) big brother"
+        }
+      ],
+      "pronunciation": "/mhoro/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mangwanani",
+      "english": "morning",
+      "category": "time",
+      "tones": "HLHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "mangwanani.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mangwanani",
+          "english": "I have morning"
+        },
+        {
+          "shona": "mangwanani yakanaka",
+          "english": "morning is good"
+        },
+        {
+          "shona": "Ndinoda mangwanani",
+          "english": "I want morning"
+        }
+      ],
+      "pronunciation": "/mangwanani/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "masikati",
+      "english": "afternoon",
+      "category": "time",
+      "tones": "HLHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "masikati.mp3",
+      "examples": [
+        {
+          "shona": "Ndine masikati",
+          "english": "I have afternoon"
+        },
+        {
+          "shona": "masikati yakanaka",
+          "english": "afternoon is good"
+        },
+        {
+          "shona": "Ndinoda masikati",
+          "english": "I want afternoon"
+        }
+      ],
+      "pronunciation": "/masikati/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "manheru",
+      "english": "evening",
+      "category": "time",
+      "tones": "HHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "manheru.mp3",
+      "examples": [
+        {
+          "shona": "Ndine manheru",
+          "english": "I have evening"
+        },
+        {
+          "shona": "manheru yakanaka",
+          "english": "evening is good"
+        },
+        {
+          "shona": "Ndinoda manheru",
+          "english": "I want evening"
+        }
+      ],
+      "pronunciation": "/manheru/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "makadii",
+      "english": "how are you?",
+      "category": "greetings",
+      "tones": "HHL",
+      "cultural": "Standard greeting inquiry",
+      "source": "ethnography",
+      "difficulty": 2,
+      "audioFile": "makadii.mp3",
+      "examples": [
+        {
+          "shona": "makadii shamwari",
+          "english": "how are you? friend"
+        },
+        {
+          "shona": "makadii, makadii?",
+          "english": "how are you?, how are you?"
+        },
+        {
+          "shona": "makadii mukoma",
+          "english": "how are you? big brother"
+        }
+      ],
+      "pronunciation": "/makadii/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "tiripo",
+      "english": "we are fine",
+      "category": "greetings",
+      "tones": "HHL",
+      "cultural": "Standard positive response",
+      "source": "ethnography",
+      "difficulty": 2,
+      "audioFile": "tiripo.mp3",
+      "examples": [
+        {
+          "shona": "tiripo shamwari",
+          "english": "we are fine friend"
+        },
+        {
+          "shona": "tiripo, makadii?",
+          "english": "we are fine, how are you?"
+        },
+        {
+          "shona": "tiripo mukoma",
+          "english": "we are fine big brother"
+        }
+      ],
+      "pronunciation": "/tiripo/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "chisarai",
+      "english": "goodbye",
+      "category": "greetings",
+      "tones": "HHL",
+      "cultural": "Formal farewell",
+      "source": "ethnography",
+      "difficulty": 2,
+      "audioFile": "chisarai.mp3",
+      "examples": [
+        {
+          "shona": "chisarai shamwari",
+          "english": "goodbye friend"
+        },
+        {
+          "shona": "chisarai, makadii?",
+          "english": "goodbye, how are you?"
+        },
+        {
+          "shona": "chisarai mukoma",
+          "english": "goodbye big brother"
+        }
+      ],
+      "pronunciation": "/tʃisarai/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "hutano",
+      "english": "health",
+      "category": "health",
+      "tones": "HHL",
+      "cultural": "Physical and spiritual wellness",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "hutano.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda hutano",
+          "english": "I want health"
+        },
+        {
+          "shona": "hutano yakanaka",
+          "english": "health is good"
+        }
+      ],
+      "pronunciation": "/hutano/ [HHL]",
+      "source_type": "enhanced",
+      "modern": true,
+      "sources": [
+        "ethnography",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "shona": "chirwere",
+      "english": "illness",
+      "category": "health",
+      "tones": "HHL",
+      "cultural": "Physical or spiritual sickness",
+      "source": "ethnography",
+      "difficulty": 5,
+      "audioFile": "chirwere.mp3",
+      "examples": [
+        {
+          "shona": "Ndine chirwere",
+          "english": "I have illness"
+        },
+        {
+          "shona": "chirwere yakanaka",
+          "english": "illness is good"
+        },
+        {
+          "shona": "Ndinoda chirwere",
+          "english": "I want illness"
+        }
+      ],
+      "pronunciation": "/tʃirwere/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mushonga",
+      "english": "medicine",
+      "category": "health",
+      "tones": "HHL",
+      "cultural": "Both traditional and modern medicine",
+      "source": "ethnography",
+      "difficulty": 5,
+      "audioFile": "mushonga.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mushonga",
+          "english": "I have medicine"
+        },
+        {
+          "shona": "mushonga yakanaka",
+          "english": "medicine is good"
+        },
+        {
+          "shona": "Ndinoda mushonga",
+          "english": "I want medicine"
+        }
+      ],
+      "pronunciation": "/mushonga/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "chiremba",
+      "english": "doctor",
+      "category": "health",
+      "tones": "HHL",
+      "cultural": "Modern medical doctor",
+      "source": "ethnography",
+      "difficulty": 5,
+      "audioFile": "chiremba.mp3",
+      "examples": [
+        {
+          "shona": "Ndine chiremba",
+          "english": "I have doctor"
+        },
+        {
+          "shona": "chiremba yakanaka",
+          "english": "doctor is good"
+        },
+        {
+          "shona": "Ndinoda chiremba",
+          "english": "I want doctor"
+        }
+      ],
+      "pronunciation": "/tʃiremba/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "hurwere",
+      "english": "to be sick",
+      "category": "health",
+      "tones": "HHL",
+      "cultural": "State of illness",
+      "source": "ethnography",
+      "difficulty": 5,
+      "audioFile": "hurwere.mp3",
+      "examples": [
+        {
+          "shona": "Ndine hurwere",
+          "english": "I have to be sick"
+        },
+        {
+          "shona": "hurwere yakanaka",
+          "english": "to be sick is good"
+        },
+        {
+          "shona": "Ndinoda hurwere",
+          "english": "I want to be sick"
+        }
+      ],
+      "pronunciation": "/hurwere/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "chikoro",
+      "english": "school",
+      "category": "education",
+      "tones": "HHL",
+      "cultural": "Educational institution",
+      "source": "ethnography",
+      "difficulty": 4,
+      "audioFile": "chikoro.mp3",
+      "examples": [
+        {
+          "shona": "Ndine chikoro",
+          "english": "I have school"
+        },
+        {
+          "shona": "chikoro yakanaka",
+          "english": "school is good"
+        },
+        {
+          "shona": "Ndinoda chikoro",
+          "english": "I want school"
+        }
+      ],
+      "pronunciation": "/tʃikoro/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mudzidzi",
+      "english": "student",
+      "category": "education",
+      "tones": "HHL",
+      "cultural": "Learner",
+      "source": "ethnography",
+      "difficulty": 4,
+      "audioFile": "mudzidzi.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mudzidzi",
+          "english": "I have student"
+        },
+        {
+          "shona": "mudzidzi yakanaka",
+          "english": "student is good"
+        },
+        {
+          "shona": "Ndinoda mudzidzi",
+          "english": "I want student"
+        }
+      ],
+      "pronunciation": "/mudzidzi/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mudzidzisi",
+      "english": "teacher",
+      "category": "education",
+      "tones": "HHHL",
+      "cultural": "Educator",
+      "source": "ethnography",
+      "difficulty": 4,
+      "audioFile": "mudzidzisi.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mudzidzisi",
+          "english": "I have teacher"
+        },
+        {
+          "shona": "mudzidzisi yakanaka",
+          "english": "teacher is good"
+        },
+        {
+          "shona": "Ndinoda mudzidzisi",
+          "english": "I want teacher"
+        }
+      ],
+      "pronunciation": "/mudzidzisi/ [HHHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kudzidza",
+      "english": "to learn",
+      "category": "education",
+      "tones": "HHL",
+      "cultural": "Acquiring knowledge and wisdom",
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "kudzidza.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kudzidza",
+          "english": "I want to learn"
+        },
+        {
+          "shona": "kudzidza yakanaka",
+          "english": "to learn is good"
+        }
+      ],
+      "pronunciation": "/kudzidza/ [HHL]",
+      "source_type": "enhanced",
+      "modern": true,
+      "sources": [
+        "ethnography",
+        "language_course"
+      ]
+    },
+    {
+      "shona": "ruzivo",
+      "english": "knowledge",
+      "category": "education",
+      "tones": "HHL",
+      "cultural": "Traditional and modern knowledge",
+      "source": "ethnography",
+      "difficulty": 4,
+      "audioFile": "ruzivo.mp3",
+      "examples": [
+        {
+          "shona": "Ndine ruzivo",
+          "english": "I have knowledge"
+        },
+        {
+          "shona": "ruzivo yakanaka",
+          "english": "knowledge is good"
+        },
+        {
+          "shona": "Ndinoda ruzivo",
+          "english": "I want knowledge"
+        }
+      ],
+      "pronunciation": "/ruzivo/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "bhuku",
+      "english": "book",
+      "category": "education",
+      "tones": "HL",
+      "cultural": "Written knowledge",
+      "source": "ethnography",
+      "difficulty": 4,
+      "audioFile": "bhuku.mp3",
+      "examples": [
+        {
+          "shona": "Ndine bhuku",
+          "english": "I have book"
+        },
+        {
+          "shona": "bhuku yakanaka",
+          "english": "book is good"
+        },
+        {
+          "shona": "Ndinoda bhuku",
+          "english": "I want book"
+        }
+      ],
+      "pronunciation": "/βuku/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "chikafu",
+      "english": "food",
+      "category": "food",
+      "tones": "HHL",
+      "cultural": "Nourishment",
+      "source": "ethnography",
+      "difficulty": 8,
+      "audioFile": "chikafu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine chikafu",
+          "english": "I have food"
+        },
+        {
+          "shona": "chikafu yakanaka",
+          "english": "food is good"
+        },
+        {
+          "shona": "Ndinoda chikafu",
+          "english": "I want food"
+        }
+      ],
+      "pronunciation": "/tʃikafu/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "sadza",
+      "english": "staple food/porridge",
+      "category": "food",
+      "tones": "HL",
+      "cultural": "Traditional staple food",
+      "source": "ethnography",
+      "difficulty": 8,
+      "audioFile": "sadza.mp3",
+      "examples": [
+        {
+          "shona": "Ndine sadza",
+          "english": "I have staple food/porridge"
+        },
+        {
+          "shona": "sadza yakanaka",
+          "english": "staple food/porridge is good"
+        },
+        {
+          "shona": "Ndinoda sadza",
+          "english": "I want staple food/porridge"
+        }
+      ],
+      "pronunciation": "/sadza/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "dovi",
+      "english": "peanut butter stew",
+      "category": "food",
+      "tones": "HL",
+      "cultural": "Traditional dish",
+      "source": "ethnography",
+      "difficulty": 8,
+      "audioFile": "dovi.mp3",
+      "examples": [
+        {
+          "shona": "Ndine dovi",
+          "english": "I have peanut butter stew"
+        },
+        {
+          "shona": "dovi yakanaka",
+          "english": "peanut butter stew is good"
+        },
+        {
+          "shona": "Ndinoda dovi",
+          "english": "I want peanut butter stew"
+        }
+      ],
+      "pronunciation": "/dovi/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mazanje",
+      "english": "masawu fruits",
+      "category": "food",
+      "tones": "HHL",
+      "cultural": "Traditional fruits",
+      "source": "ethnography",
+      "difficulty": 8,
+      "audioFile": "mazanje.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mazanje",
+          "english": "I have masawu fruits"
+        },
+        {
+          "shona": "mazanje yakanaka",
+          "english": "masawu fruits is good"
+        },
+        {
+          "shona": "Ndinoda mazanje",
+          "english": "I want masawu fruits"
+        }
+      ],
+      "pronunciation": "/mazanje/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mufushwa",
+      "english": "dried vegetables",
+      "category": "food",
+      "tones": "HHL",
+      "cultural": "Traditional preservation",
+      "source": "ethnography",
+      "difficulty": 8,
+      "audioFile": "mufushwa.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mufushwa",
+          "english": "I have dried vegetables"
+        },
+        {
+          "shona": "mufushwa yakanaka",
+          "english": "dried vegetables is good"
+        },
+        {
+          "shona": "Ndinoda mufushwa",
+          "english": "I want dried vegetables"
+        }
+      ],
+      "pronunciation": "/mufushwa/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mukaka",
+      "english": "milk",
+      "category": "food",
+      "tones": "HHL",
+      "cultural": "Dairy product",
+      "source": "ethnography",
+      "difficulty": 8,
+      "audioFile": "mukaka.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mukaka",
+          "english": "I have milk"
+        },
+        {
+          "shona": "mukaka yakanaka",
+          "english": "milk is good"
+        },
+        {
+          "shona": "Ndinoda mukaka",
+          "english": "I want milk"
+        }
+      ],
+      "pronunciation": "/mukaka/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mhiripiri",
+      "english": "chili pepper",
+      "category": "food",
+      "tones": "HLHL",
+      "cultural": "Traditional spicing",
+      "source": "ethnography",
+      "difficulty": 8,
+      "audioFile": "mhiripiri.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mhiripiri",
+          "english": "I have chili pepper"
+        },
+        {
+          "shona": "mhiripiri yakanaka",
+          "english": "chili pepper is good"
+        },
+        {
+          "shona": "Ndinoda mhiripiri",
+          "english": "I want chili pepper"
+        }
+      ],
+      "pronunciation": "/mhiripiri/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "muti",
+      "english": "tree",
+      "category": "nature",
+      "tones": "HL",
+      "cultural": "Important in traditional culture",
+      "source": "ethnography",
+      "difficulty": 10,
+      "audioFile": "muti.mp3",
+      "examples": [
+        {
+          "shona": "Ndine muti",
+          "english": "I have tree"
+        },
+        {
+          "shona": "muti yakanaka",
+          "english": "tree is good"
+        },
+        {
+          "shona": "Ndinoda muti",
+          "english": "I want tree"
+        }
+      ],
+      "pronunciation": "/muti/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mvura",
+      "english": "water",
+      "category": "nature",
+      "tones": "HL",
+      "cultural": "Sacred element",
+      "source": "ethnography",
+      "difficulty": 10,
+      "audioFile": "mvura.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mvura",
+          "english": "I have water"
+        },
+        {
+          "shona": "mvura yakanaka",
+          "english": "water is good"
+        },
+        {
+          "shona": "Ndinoda mvura",
+          "english": "I want water"
+        }
+      ],
+      "pronunciation": "/mvura/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "ivhu",
+      "english": "soil/earth",
+      "category": "nature",
+      "tones": "HL",
+      "cultural": "Connection to ancestors",
+      "source": "ethnography",
+      "difficulty": 10,
+      "audioFile": "ivhu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine ivhu",
+          "english": "I have soil/earth"
+        },
+        {
+          "shona": "ivhu yakanaka",
+          "english": "soil/earth is good"
+        },
+        {
+          "shona": "Ndinoda ivhu",
+          "english": "I want soil/earth"
+        }
+      ],
+      "pronunciation": "/ivhu/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "denga",
+      "english": "sky",
+      "category": "nature",
+      "tones": "HL",
+      "cultural": "Spiritual realm",
+      "source": "ethnography",
+      "difficulty": 10,
+      "audioFile": "denga.mp3",
+      "examples": [
+        {
+          "shona": "Ndine denga",
+          "english": "I have sky"
+        },
+        {
+          "shona": "denga yakanaka",
+          "english": "sky is good"
+        },
+        {
+          "shona": "Ndinoda denga",
+          "english": "I want sky"
+        }
+      ],
+      "pronunciation": "/denga/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "gomo",
+      "english": "mountain",
+      "category": "nature",
+      "tones": "HL",
+      "cultural": "Sacred places",
+      "source": "ethnography",
+      "difficulty": 10,
+      "audioFile": "gomo.mp3",
+      "examples": [
+        {
+          "shona": "Ndine gomo",
+          "english": "I have mountain"
+        },
+        {
+          "shona": "gomo yakanaka",
+          "english": "mountain is good"
+        },
+        {
+          "shona": "Ndinoda gomo",
+          "english": "I want mountain"
+        }
+      ],
+      "pronunciation": "/gomo/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "rwizi",
+      "english": "river",
+      "category": "nature",
+      "tones": "HL",
+      "cultural": "Water source",
+      "source": "ethnography",
+      "difficulty": 10,
+      "audioFile": "rwizi.mp3",
+      "examples": [
+        {
+          "shona": "Ndine rwizi",
+          "english": "I have river"
+        },
+        {
+          "shona": "rwizi yakanaka",
+          "english": "river is good"
+        },
+        {
+          "shona": "Ndinoda rwizi",
+          "english": "I want river"
+        }
+      ],
+      "pronunciation": "/rwizi/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "sango",
+      "english": "forest",
+      "category": "nature",
+      "tones": "HL",
+      "cultural": "Traditional medicine source",
+      "source": "ethnography",
+      "difficulty": 10,
+      "audioFile": "sango.mp3",
+      "examples": [
+        {
+          "shona": "Ndine sango",
+          "english": "I have forest"
+        },
+        {
+          "shona": "sango yakanaka",
+          "english": "forest is good"
+        },
+        {
+          "shona": "Ndinoda sango",
+          "english": "I want forest"
+        }
+      ],
+      "pronunciation": "/sango/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "chinyorwa",
+      "english": "writing",
+      "category": "education",
+      "tones": "HHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "chinyorwa.mp3",
+      "examples": [
+        {
+          "shona": "Ndine chinyorwa",
+          "english": "I have writing"
+        },
+        {
+          "shona": "chinyorwa yakanaka",
+          "english": "writing is good"
+        },
+        {
+          "shona": "Ndinoda chinyorwa",
+          "english": "I want writing"
+        }
+      ],
+      "pronunciation": "/tʃiɲorwa/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kutaura",
+      "english": "to speak",
+      "category": "education",
+      "tones": "HHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "kutaura.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kutaura",
+          "english": "I have to speak"
+        },
+        {
+          "shona": "kutaura yakanaka",
+          "english": "to speak is good"
+        },
+        {
+          "shona": "Ndinoda kutaura",
+          "english": "I want to speak"
+        }
+      ],
+      "pronunciation": "/kutaura/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kuteerera",
+      "english": "to listen",
+      "category": "education",
+      "tones": "HHHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "kuteerera.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kuteerera",
+          "english": "I have to listen"
+        },
+        {
+          "shona": "kuteerera yakanaka",
+          "english": "to listen is good"
+        },
+        {
+          "shona": "Ndinoda kuteerera",
+          "english": "I want to listen"
+        }
+      ],
+      "pronunciation": "/kuteerera/ [HHHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kuverenga",
+      "english": "to read",
+      "category": "education",
+      "tones": "HHHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "kuverenga.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kuverenga",
+          "english": "I have to read"
+        },
+        {
+          "shona": "kuverenga yakanaka",
+          "english": "to read is good"
+        },
+        {
+          "shona": "Ndinoda kuverenga",
+          "english": "I want to read"
+        }
+      ],
+      "pronunciation": "/kuverenga/ [HHHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kunyora",
+      "english": "to write",
+      "category": "education",
+      "tones": "HHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "kunyora.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kunyora",
+          "english": "I have to write"
+        },
+        {
+          "shona": "kunyora yakanaka",
+          "english": "to write is good"
+        },
+        {
+          "shona": "Ndinoda kunyora",
+          "english": "I want to write"
+        }
+      ],
+      "pronunciation": "/kuɲora/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mutauro",
+      "english": "language",
+      "category": "education",
+      "tones": "HHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "mutauro.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mutauro",
+          "english": "I have language"
+        },
+        {
+          "shona": "mutauro yakanaka",
+          "english": "language is good"
+        },
+        {
+          "shona": "Ndinoda mutauro",
+          "english": "I want language"
+        }
+      ],
+      "pronunciation": "/mutauro/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "tsamba",
+      "english": "letter",
+      "category": "education",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "tsamba.mp3",
+      "examples": [
+        {
+          "shona": "Ndine tsamba",
+          "english": "I have letter"
+        },
+        {
+          "shona": "tsamba yakanaka",
+          "english": "letter is good"
+        },
+        {
+          "shona": "Ndinoda tsamba",
+          "english": "I want letter"
+        }
+      ],
+      "pronunciation": "/tsamba/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mazwi",
+      "english": "words",
+      "category": "education",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "mazwi.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mazwi",
+          "english": "I have words"
+        },
+        {
+          "shona": "mazwi yakanaka",
+          "english": "words is good"
+        },
+        {
+          "shona": "Ndinoda mazwi",
+          "english": "I want words"
+        }
+      ],
+      "pronunciation": "/mazwi/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mutsara",
+      "english": "sentence",
+      "category": "education",
+      "tones": "HHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "mutsara.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mutsara",
+          "english": "I have sentence"
+        },
+        {
+          "shona": "mutsara yakanaka",
+          "english": "sentence is good"
+        },
+        {
+          "shona": "Ndinoda mutsara",
+          "english": "I want sentence"
+        }
+      ],
+      "pronunciation": "/mutsara/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "pfungwa",
+      "english": "idea/thought",
+      "category": "education",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "pfungwa.mp3",
+      "examples": [
+        {
+          "shona": "Ndine pfungwa",
+          "english": "I have idea/thought"
+        },
+        {
+          "shona": "pfungwa yakanaka",
+          "english": "idea/thought is good"
+        },
+        {
+          "shona": "Ndinoda pfungwa",
+          "english": "I want idea/thought"
+        }
+      ],
+      "pronunciation": "/pfungwa/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "poshi",
+      "english": "one",
+      "category": "numbers",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "poshi.mp3",
+      "examples": [
+        {
+          "shona": "Ndine poshi",
+          "english": "I have one"
+        },
+        {
+          "shona": "poshi yakanaka",
+          "english": "one is good"
+        },
+        {
+          "shona": "Ndinoda poshi",
+          "english": "I want one"
+        }
+      ],
+      "pronunciation": "/poshi/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "piri",
+      "english": "two",
+      "category": "numbers",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "piri.mp3",
+      "examples": [
+        {
+          "shona": "Ndine piri",
+          "english": "I have two"
+        },
+        {
+          "shona": "piri yakanaka",
+          "english": "two is good"
+        },
+        {
+          "shona": "Ndinoda piri",
+          "english": "I want two"
+        }
+      ],
+      "pronunciation": "/piri/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "tatu",
+      "english": "three",
+      "category": "numbers",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "tatu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine tatu",
+          "english": "I have three"
+        },
+        {
+          "shona": "tatu yakanaka",
+          "english": "three is good"
+        },
+        {
+          "shona": "Ndinoda tatu",
+          "english": "I want three"
+        }
+      ],
+      "pronunciation": "/tatu/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "china",
+      "english": "four",
+      "category": "numbers",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "china.mp3",
+      "examples": [
+        {
+          "shona": "Ndine china",
+          "english": "I have four"
+        },
+        {
+          "shona": "china yakanaka",
+          "english": "four is good"
+        },
+        {
+          "shona": "Ndinoda china",
+          "english": "I want four"
+        }
+      ],
+      "pronunciation": "/tʃina/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "shanu",
+      "english": "five",
+      "category": "numbers",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "shanu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine shanu",
+          "english": "I have five"
+        },
+        {
+          "shona": "shanu yakanaka",
+          "english": "five is good"
+        },
+        {
+          "shona": "Ndinoda shanu",
+          "english": "I want five"
+        }
+      ],
+      "pronunciation": "/shanu/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "tanhatu",
+      "english": "six",
+      "category": "numbers",
+      "tones": "HHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "tanhatu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine tanhatu",
+          "english": "I have six"
+        },
+        {
+          "shona": "tanhatu yakanaka",
+          "english": "six is good"
+        },
+        {
+          "shona": "Ndinoda tanhatu",
+          "english": "I want six"
+        }
+      ],
+      "pronunciation": "/tanhatu/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "nomwe",
+      "english": "seven",
+      "category": "numbers",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "nomwe.mp3",
+      "examples": [
+        {
+          "shona": "Ndine nomwe",
+          "english": "I have seven"
+        },
+        {
+          "shona": "nomwe yakanaka",
+          "english": "seven is good"
+        },
+        {
+          "shona": "Ndinoda nomwe",
+          "english": "I want seven"
+        }
+      ],
+      "pronunciation": "/nomwe/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "sere",
+      "english": "eight",
+      "category": "numbers",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "sere.mp3",
+      "examples": [
+        {
+          "shona": "Ndine sere",
+          "english": "I have eight"
+        },
+        {
+          "shona": "sere yakanaka",
+          "english": "eight is good"
+        },
+        {
+          "shona": "Ndinoda sere",
+          "english": "I want eight"
+        }
+      ],
+      "pronunciation": "/sere/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "pfumbamwe",
+      "english": "nine",
+      "category": "numbers",
+      "tones": "HHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "pfumbamwe.mp3",
+      "examples": [
+        {
+          "shona": "Ndine pfumbamwe",
+          "english": "I have nine"
+        },
+        {
+          "shona": "pfumbamwe yakanaka",
+          "english": "nine is good"
+        },
+        {
+          "shona": "Ndinoda pfumbamwe",
+          "english": "I want nine"
+        }
+      ],
+      "pronunciation": "/pfumbamwe/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "gumi",
+      "english": "ten",
+      "category": "numbers",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "gumi.mp3",
+      "examples": [
+        {
+          "shona": "Ndine gumi",
+          "english": "I have ten"
+        },
+        {
+          "shona": "gumi yakanaka",
+          "english": "ten is good"
+        },
+        {
+          "shona": "Ndinoda gumi",
+          "english": "I want ten"
+        }
+      ],
+      "pronunciation": "/gumi/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "nguva",
+      "english": "time",
+      "category": "time",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "nguva.mp3",
+      "examples": [
+        {
+          "shona": "Ndine nguva",
+          "english": "I have time"
+        },
+        {
+          "shona": "nguva yakanaka",
+          "english": "time is good"
+        },
+        {
+          "shona": "Ndinoda nguva",
+          "english": "I want time"
+        }
+      ],
+      "pronunciation": "/nguva/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "zuva",
+      "english": "day",
+      "category": "time",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "zuva.mp3",
+      "examples": [
+        {
+          "shona": "Ndine zuva",
+          "english": "I have day"
+        },
+        {
+          "shona": "zuva yakanaka",
+          "english": "day is good"
+        },
+        {
+          "shona": "Ndinoda zuva",
+          "english": "I want day"
+        }
+      ],
+      "pronunciation": "/zuva/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "vhiki",
+      "english": "week",
+      "category": "time",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "vhiki.mp3",
+      "examples": [
+        {
+          "shona": "Ndine vhiki",
+          "english": "I have week"
+        },
+        {
+          "shona": "vhiki yakanaka",
+          "english": "week is good"
+        },
+        {
+          "shona": "Ndinoda vhiki",
+          "english": "I want week"
+        }
+      ],
+      "pronunciation": "/vhiki/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mwedzi",
+      "english": "month",
+      "category": "time",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "mwedzi.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mwedzi",
+          "english": "I have month"
+        },
+        {
+          "shona": "mwedzi yakanaka",
+          "english": "month is good"
+        },
+        {
+          "shona": "Ndinoda mwedzi",
+          "english": "I want month"
+        }
+      ],
+      "pronunciation": "/mwedzi/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "gore",
+      "english": "year",
+      "category": "time",
+      "tones": "HL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "gore.mp3",
+      "examples": [
+        {
+          "shona": "Ndine gore",
+          "english": "I have year"
+        },
+        {
+          "shona": "gore yakanaka",
+          "english": "year is good"
+        },
+        {
+          "shona": "Ndinoda gore",
+          "english": "I want year"
+        }
+      ],
+      "pronunciation": "/gore/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "husiku",
+      "english": "night",
+      "category": "time",
+      "tones": "HHL",
+      "source": "syllabus",
+      "difficulty": 2,
+      "audioFile": "husiku.mp3",
+      "examples": [
+        {
+          "shona": "Ndine husiku",
+          "english": "I have night"
+        },
+        {
+          "shona": "husiku yakanaka",
+          "english": "night is good"
+        },
+        {
+          "shona": "Ndinoda husiku",
+          "english": "I want night"
+        }
+      ],
+      "pronunciation": "/husiku/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "rwiyo",
+      "english": "song",
+      "category": "religion",
+      "tones": "HL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "rwiyo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kurwiyo",
+          "english": "I am going to song"
+        },
+        {
+          "shona": "rwiyo inofadza",
+          "english": "song is joyful"
+        },
+        {
+          "shona": "Tinoda rwiyo",
+          "english": "We want song"
+        }
+      ],
+      "pronunciation": "/rwiyo/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kuimba",
+      "english": "to sing",
+      "category": "religion",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "kuimba.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kukuimba",
+          "english": "I am going to to sing"
+        },
+        {
+          "shona": "kuimba inofadza",
+          "english": "to sing is joyful"
+        },
+        {
+          "shona": "Tinoda kuimba",
+          "english": "We want to sing"
+        }
+      ],
+      "pronunciation": "/kuimba/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kurumbidza",
+      "english": "to praise",
+      "category": "religion",
+      "tones": "HLHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "kurumbidza.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kukurumbidza",
+          "english": "I am going to to praise"
+        },
+        {
+          "shona": "kurumbidza inofadza",
+          "english": "to praise is joyful"
+        },
+        {
+          "shona": "Tinoda kurumbidza",
+          "english": "We want to praise"
+        }
+      ],
+      "pronunciation": "/kurumbidza/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kupfugama",
+      "english": "to kneel",
+      "category": "religion",
+      "tones": "HLHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "kupfugama.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kukupfugama",
+          "english": "I am going to to kneel"
+        },
+        {
+          "shona": "kupfugama inofadza",
+          "english": "to kneel is joyful"
+        },
+        {
+          "shona": "Tinoda kupfugama",
+          "english": "We want to kneel"
+        }
+      ],
+      "pronunciation": "/kupfugama/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mufudzi",
+      "english": "pastor",
+      "category": "religion",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "mufudzi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kumufudzi",
+          "english": "I am going to pastor"
+        },
+        {
+          "shona": "mufudzi inofadza",
+          "english": "pastor is joyful"
+        },
+        {
+          "shona": "Tinoda mufudzi",
+          "english": "We want pastor"
+        }
+      ],
+      "pronunciation": "/mufudzi/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kereke",
+      "english": "church",
+      "category": "religion",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "kereke.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kukereke",
+          "english": "I am going to church"
+        },
+        {
+          "shona": "kereke inofadza",
+          "english": "church is joyful"
+        },
+        {
+          "shona": "Tinoda kereke",
+          "english": "We want church"
+        }
+      ],
+      "pronunciation": "/kereke/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "vatengi",
+      "english": "congregation",
+      "category": "religion",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "vatengi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kuvatengi",
+          "english": "I am going to congregation"
+        },
+        {
+          "shona": "vatengi inofadza",
+          "english": "congregation is joyful"
+        },
+        {
+          "shona": "Tinoda vatengi",
+          "english": "We want congregation"
+        }
+      ],
+      "pronunciation": "/vatengi/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "chipfuva",
+      "english": "prayer",
+      "category": "religion",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "chipfuva.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kuchipfuva",
+          "english": "I am going to prayer"
+        },
+        {
+          "shona": "chipfuva inofadza",
+          "english": "prayer is joyful"
+        },
+        {
+          "shona": "Tinoda chipfuva",
+          "english": "We want prayer"
+        }
+      ],
+      "pronunciation": "/tʃipfuva/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kukomborera",
+      "english": "to bless",
+      "category": "religion",
+      "tones": "HHLHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "kukomborera.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kukukomborera",
+          "english": "I am going to to bless"
+        },
+        {
+          "shona": "kukomborera inofadza",
+          "english": "to bless is joyful"
+        },
+        {
+          "shona": "Tinoda kukomborera",
+          "english": "We want to bless"
+        }
+      ],
+      "pronunciation": "/kukomborera/ [HHLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "ufambi",
+      "english": "fellowship",
+      "category": "religion",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "ufambi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kuufambi",
+          "english": "I am going to fellowship"
+        },
+        {
+          "shona": "ufambi inofadza",
+          "english": "fellowship is joyful"
+        },
+        {
+          "shona": "Tinoda ufambi",
+          "english": "We want fellowship"
+        }
+      ],
+      "pronunciation": "/ufambi/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mutumwa",
+      "english": "apostle",
+      "category": "religion",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "mutumwa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kumutumwa",
+          "english": "I am going to apostle"
+        },
+        {
+          "shona": "mutumwa inofadza",
+          "english": "apostle is joyful"
+        },
+        {
+          "shona": "Tinoda mutumwa",
+          "english": "We want apostle"
+        }
+      ],
+      "pronunciation": "/mutumwa/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mwoya",
+      "english": "spirit",
+      "category": "religion",
+      "tones": "HL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "mwoya.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kumwoya",
+          "english": "I am going to spirit"
+        },
+        {
+          "shona": "mwoya inofadza",
+          "english": "spirit is joyful"
+        },
+        {
+          "shona": "Tinoda mwoya",
+          "english": "We want spirit"
+        }
+      ],
+      "pronunciation": "/mwoya/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "moyo",
+      "english": "heart",
+      "category": "religion",
+      "tones": "HL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "moyo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kumoyo",
+          "english": "I am going to heart"
+        },
+        {
+          "shona": "moyo inofadza",
+          "english": "heart is joyful"
+        },
+        {
+          "shona": "Tinoda moyo",
+          "english": "We want heart"
+        }
+      ],
+      "pronunciation": "/moyo/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "rufaro",
+      "english": "joy",
+      "category": "religion",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "rufaro.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoenda kurufaro",
+          "english": "I am going to joy"
+        },
+        {
+          "shona": "rufaro inofadza",
+          "english": "joy is joyful"
+        },
+        {
+          "shona": "Tinoda rufaro",
+          "english": "We want joy"
+        }
+      ],
+      "pronunciation": "/rufaro/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "sangano",
+      "english": "gathering",
+      "category": "community",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "sangano.mp3",
+      "examples": [
+        {
+          "shona": "Ndine sangano",
+          "english": "I have gathering"
+        },
+        {
+          "shona": "sangano yakanaka",
+          "english": "gathering is good"
+        },
+        {
+          "shona": "Ndinoda sangano",
+          "english": "I want gathering"
+        }
+      ],
+      "pronunciation": "/sangano/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "upenyu",
+      "english": "life",
+      "category": "community",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "upenyu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine upenyu",
+          "english": "I have life"
+        },
+        {
+          "shona": "upenyu yakanaka",
+          "english": "life is good"
+        },
+        {
+          "shona": "Ndinoda upenyu",
+          "english": "I want life"
+        }
+      ],
+      "pronunciation": "/upeɲu/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "rudo",
+      "english": "love",
+      "category": "community",
+      "tones": "HL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "rudo.mp3",
+      "examples": [
+        {
+          "shona": "Ndine rudo",
+          "english": "I have love"
+        },
+        {
+          "shona": "rudo yakanaka",
+          "english": "love is good"
+        },
+        {
+          "shona": "Ndinoda rudo",
+          "english": "I want love"
+        }
+      ],
+      "pronunciation": "/rudo/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "rugare",
+      "english": "peace",
+      "category": "community",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "rugare.mp3",
+      "examples": [
+        {
+          "shona": "Ndine rugare",
+          "english": "I have peace"
+        },
+        {
+          "shona": "rugare yakanaka",
+          "english": "peace is good"
+        },
+        {
+          "shona": "Ndinoda rugare",
+          "english": "I want peace"
+        }
+      ],
+      "pronunciation": "/rugare/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "simba",
+      "english": "strength/power",
+      "category": "community",
+      "tones": "HL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "simba.mp3",
+      "examples": [
+        {
+          "shona": "Ndine simba",
+          "english": "I have strength/power"
+        },
+        {
+          "shona": "simba yakanaka",
+          "english": "strength/power is good"
+        },
+        {
+          "shona": "Ndinoda simba",
+          "english": "I want strength/power"
+        }
+      ],
+      "pronunciation": "/simba/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "tariro",
+      "english": "hope",
+      "category": "community",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "tariro.mp3",
+      "examples": [
+        {
+          "shona": "Ndine tariro",
+          "english": "I have hope"
+        },
+        {
+          "shona": "tariro yakanaka",
+          "english": "hope is good"
+        },
+        {
+          "shona": "Ndinoda tariro",
+          "english": "I want hope"
+        }
+      ],
+      "pronunciation": "/tariro/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kutenda",
+      "english": "to believe",
+      "category": "community",
+      "tones": "HHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "kutenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kutenda",
+          "english": "I have to believe"
+        },
+        {
+          "shona": "kutenda yakanaka",
+          "english": "to believe is good"
+        },
+        {
+          "shona": "Ndinoda kutenda",
+          "english": "I want to believe"
+        }
+      ],
+      "pronunciation": "/kutenda/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kuyamura",
+      "english": "to honor",
+      "category": "community",
+      "tones": "HLHL",
+      "source": "hymns",
+      "difficulty": 3,
+      "audioFile": "kuyamura.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kuyamura",
+          "english": "I have to honor"
+        },
+        {
+          "shona": "kuyamura yakanaka",
+          "english": "to honor is good"
+        },
+        {
+          "shona": "Ndinoda kuyamura",
+          "english": "I want to honor"
+        }
+      ],
+      "pronunciation": "/kuyamura/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mukombe",
+      "english": "walls",
+      "category": "architecture",
+      "tones": "HHL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "mukombe.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mukombe",
+          "english": "I have walls"
+        },
+        {
+          "shona": "mukombe yakanaka",
+          "english": "walls is good"
+        },
+        {
+          "shona": "Ndinoda mukombe",
+          "english": "I want walls"
+        }
+      ],
+      "pronunciation": "/mukombe/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mbira",
+      "english": "traditional instrument",
+      "category": "culture",
+      "tones": "HL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "mbira.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mbira",
+          "english": "I have traditional instrument"
+        },
+        {
+          "shona": "mbira yakanaka",
+          "english": "traditional instrument is good"
+        },
+        {
+          "shona": "Ndinoda mbira",
+          "english": "I want traditional instrument"
+        }
+      ],
+      "pronunciation": "/mbira/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "shiri",
+      "english": "bird",
+      "category": "culture",
+      "tones": "HL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "shiri.mp3",
+      "examples": [
+        {
+          "shona": "Ndine shiri",
+          "english": "I have bird"
+        },
+        {
+          "shona": "shiri yakanaka",
+          "english": "bird is good"
+        },
+        {
+          "shona": "Ndinoda shiri",
+          "english": "I want bird"
+        }
+      ],
+      "pronunciation": "/shiri/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "gona",
+      "english": "gold",
+      "category": "trade",
+      "tones": "HL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "gona.mp3",
+      "examples": [
+        {
+          "shona": "Ndine gona",
+          "english": "I have gold"
+        },
+        {
+          "shona": "gona yakanaka",
+          "english": "gold is good"
+        },
+        {
+          "shona": "Ndinoda gona",
+          "english": "I want gold"
+        }
+      ],
+      "pronunciation": "/gona/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mazimba",
+      "english": "houses",
+      "category": "architecture",
+      "tones": "HHL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "mazimba.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mazimba",
+          "english": "I have houses"
+        },
+        {
+          "shona": "mazimba yakanaka",
+          "english": "houses is good"
+        },
+        {
+          "shona": "Ndinoda mazimba",
+          "english": "I want houses"
+        }
+      ],
+      "pronunciation": "/mazimba/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "rusvingo",
+      "english": "wall/fortification",
+      "category": "architecture",
+      "tones": "HHL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "rusvingo.mp3",
+      "examples": [
+        {
+          "shona": "Ndine rusvingo",
+          "english": "I have wall/fortification"
+        },
+        {
+          "shona": "rusvingo yakanaka",
+          "english": "wall/fortification is good"
+        },
+        {
+          "shona": "Ndinoda rusvingo",
+          "english": "I want wall/fortification"
+        }
+      ],
+      "pronunciation": "/rusvingo/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "chikuva",
+      "english": "ruins",
+      "category": "history",
+      "tones": "HHL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "chikuva.mp3",
+      "examples": [
+        {
+          "shona": "Ndine chikuva",
+          "english": "I have ruins"
+        },
+        {
+          "shona": "chikuva yakanaka",
+          "english": "ruins is good"
+        },
+        {
+          "shona": "Ndinoda chikuva",
+          "english": "I want ruins"
+        }
+      ],
+      "pronunciation": "/tʃikuva/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "nzvimbo",
+      "english": "place",
+      "category": "history",
+      "tones": "HHL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "nzvimbo.mp3",
+      "examples": [
+        {
+          "shona": "Ndine nzvimbo",
+          "english": "I have place"
+        },
+        {
+          "shona": "nzvimbo yakanaka",
+          "english": "place is good"
+        },
+        {
+          "shona": "Ndinoda nzvimbo",
+          "english": "I want place"
+        }
+      ],
+      "pronunciation": "/nzvimbo/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "hunhu",
+      "english": "culture/humanity",
+      "category": "culture",
+      "tones": "HL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "hunhu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine hunhu",
+          "english": "I have culture/humanity"
+        },
+        {
+          "shona": "hunhu yakanaka",
+          "english": "culture/humanity is good"
+        },
+        {
+          "shona": "Ndinoda hunhu",
+          "english": "I want culture/humanity"
+        }
+      ],
+      "pronunciation": "/hunhu/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mbeu",
+      "english": "seed",
+      "category": "culture",
+      "tones": "HL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "mbeu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine mbeu",
+          "english": "I have seed"
+        },
+        {
+          "shona": "mbeu yakanaka",
+          "english": "seed is good"
+        },
+        {
+          "shona": "Ndinoda mbeu",
+          "english": "I want seed"
+        }
+      ],
+      "pronunciation": "/mbeu/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kuchera",
+      "english": "to dig",
+      "category": "archaeology",
+      "tones": "HHL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "kuchera.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kuchera",
+          "english": "I have to dig"
+        },
+        {
+          "shona": "kuchera yakanaka",
+          "english": "to dig is good"
+        },
+        {
+          "shona": "Ndinoda kuchera",
+          "english": "I want to dig"
+        }
+      ],
+      "pronunciation": "/kutʃera/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "makore",
+      "english": "years",
+      "category": "time",
+      "tones": "HHL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "makore.mp3",
+      "examples": [
+        {
+          "shona": "Ndine makore",
+          "english": "I have years"
+        },
+        {
+          "shona": "makore yakanaka",
+          "english": "years is good"
+        },
+        {
+          "shona": "Ndinoda makore",
+          "english": "I want years"
+        }
+      ],
+      "pronunciation": "/makore/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kare",
+      "english": "long ago",
+      "category": "time",
+      "tones": "HL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "kare.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kare",
+          "english": "I have long ago"
+        },
+        {
+          "shona": "kare yakanaka",
+          "english": "long ago is good"
+        },
+        {
+          "shona": "Ndinoda kare",
+          "english": "I want long ago"
+        }
+      ],
+      "pronunciation": "/kare/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "zvipfuwo",
+      "english": "livestock",
+      "category": "trade",
+      "tones": "HHL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "zvipfuwo.mp3",
+      "examples": [
+        {
+          "shona": "Ndine zvipfuwo",
+          "english": "I have livestock"
+        },
+        {
+          "shona": "zvipfuwo yakanaka",
+          "english": "livestock is good"
+        },
+        {
+          "shona": "Ndinoda zvipfuwo",
+          "english": "I want livestock"
+        }
+      ],
+      "pronunciation": "/zvipfuwo/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kuchinjana",
+      "english": "to trade",
+      "category": "trade",
+      "tones": "HLHL",
+      "source": "ruins",
+      "difficulty": 4,
+      "audioFile": "kuchinjana.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kuchinjana",
+          "english": "I have to trade"
+        },
+        {
+          "shona": "kuchinjana yakanaka",
+          "english": "to trade is good"
+        },
+        {
+          "shona": "Ndinoda kuchinjana",
+          "english": "I want to trade"
+        }
+      ],
+      "pronunciation": "/kutʃinjana/ [HLHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kufamba",
+      "english": "to walk",
+      "category": "verbs",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kufamba.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kufamba",
+          "english": "I have to walk"
+        },
+        {
+          "shona": "kufamba yakanaka",
+          "english": "to walk is good"
+        },
+        {
+          "shona": "Ndinoda kufamba",
+          "english": "I want to walk"
+        }
+      ],
+      "pronunciation": "/kufamba/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kudya",
+      "english": "to eat",
+      "category": "verbs",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kudya.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kudya",
+          "english": "I have to eat"
+        },
+        {
+          "shona": "kudya yakanaka",
+          "english": "to eat is good"
+        },
+        {
+          "shona": "Ndinoda kudya",
+          "english": "I want to eat"
+        }
+      ],
+      "pronunciation": "/kudya/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kunwa",
+      "english": "to drink",
+      "category": "verbs",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kunwa.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kunwa",
+          "english": "I have to drink"
+        },
+        {
+          "shona": "kunwa yakanaka",
+          "english": "to drink is good"
+        },
+        {
+          "shona": "Ndinoda kunwa",
+          "english": "I want to drink"
+        }
+      ],
+      "pronunciation": "/kunwa/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kurara",
+      "english": "to sleep",
+      "category": "verbs",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kurara.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kurara",
+          "english": "I have to sleep"
+        },
+        {
+          "shona": "kurara yakanaka",
+          "english": "to sleep is good"
+        },
+        {
+          "shona": "Ndinoda kurara",
+          "english": "I want to sleep"
+        }
+      ],
+      "pronunciation": "/kurara/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kumuka",
+      "english": "to wake up",
+      "category": "verbs",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kumuka.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kumuka",
+          "english": "I have to wake up"
+        },
+        {
+          "shona": "kumuka yakanaka",
+          "english": "to wake up is good"
+        },
+        {
+          "shona": "Ndinoda kumuka",
+          "english": "I want to wake up"
+        }
+      ],
+      "pronunciation": "/kumuka/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kugara",
+      "english": "to sit/live",
+      "category": "verbs",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kugara.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kugara",
+          "english": "I have to sit/live"
+        },
+        {
+          "shona": "kugara yakanaka",
+          "english": "to sit/live is good"
+        },
+        {
+          "shona": "Ndinoda kugara",
+          "english": "I want to sit/live"
+        }
+      ],
+      "pronunciation": "/kugara/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kubvuma",
+      "english": "to agree",
+      "category": "verbs",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kubvuma.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kubvuma",
+          "english": "I have to agree"
+        },
+        {
+          "shona": "kubvuma yakanaka",
+          "english": "to agree is good"
+        },
+        {
+          "shona": "Ndinoda kubvuma",
+          "english": "I want to agree"
+        }
+      ],
+      "pronunciation": "/kubvuma/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kuramba",
+      "english": "to refuse",
+      "category": "verbs",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kuramba.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kuramba",
+          "english": "I have to refuse"
+        },
+        {
+          "shona": "kuramba yakanaka",
+          "english": "to refuse is good"
+        },
+        {
+          "shona": "Ndinoda kuramba",
+          "english": "I want to refuse"
+        }
+      ],
+      "pronunciation": "/kuramba/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kutamba",
+      "english": "to play",
+      "category": "verbs",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kutamba.mp3",
+      "examples": [
+        {
+          "shona": "Ndine kutamba",
+          "english": "I have to play"
+        },
+        {
+          "shona": "kutamba yakanaka",
+          "english": "to play is good"
+        },
+        {
+          "shona": "Ndinoda kutamba",
+          "english": "I want to play"
+        }
+      ],
+      "pronunciation": "/kutamba/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "kushanda",
+      "english": "to work",
+      "category": "work",
+      "tones": "HHL",
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "kushanda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kushanda",
+          "english": "I want to work"
+        },
+        {
+          "shona": "kushanda yakanaka",
+          "english": "to work is good"
+        }
+      ],
+      "pronunciation": "/kushanda/ [HHL]",
+      "source_type": "enhanced",
+      "cultural": "Economic activity",
+      "modern": true,
+      "sources": [
+        "fsi_filtered",
+        "language_course"
+      ]
+    },
+    {
+      "shona": "chena",
+      "english": "white",
+      "category": "colors",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "chena.mp3",
+      "examples": [
+        {
+          "shona": "Ndine chena",
+          "english": "I have white"
+        },
+        {
+          "shona": "chena yakanaka",
+          "english": "white is good"
+        },
+        {
+          "shona": "Ndinoda chena",
+          "english": "I want white"
+        }
+      ],
+      "pronunciation": "/tʃena/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "dema",
+      "english": "black",
+      "category": "colors",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "dema.mp3",
+      "examples": [
+        {
+          "shona": "Ndine dema",
+          "english": "I have black"
+        },
+        {
+          "shona": "dema yakanaka",
+          "english": "black is good"
+        },
+        {
+          "shona": "Ndinoda dema",
+          "english": "I want black"
+        }
+      ],
+      "pronunciation": "/dema/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "tsvuku",
+      "english": "red",
+      "category": "colors",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "tsvuku.mp3",
+      "examples": [
+        {
+          "shona": "Ndine tsvuku",
+          "english": "I have red"
+        },
+        {
+          "shona": "tsvuku yakanaka",
+          "english": "red is good"
+        },
+        {
+          "shona": "Ndinoda tsvuku",
+          "english": "I want red"
+        }
+      ],
+      "pronunciation": "/tsvuku/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "girini",
+      "english": "green",
+      "category": "colors",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "girini.mp3",
+      "examples": [
+        {
+          "shona": "Ndine girini",
+          "english": "I have green"
+        },
+        {
+          "shona": "girini yakanaka",
+          "english": "green is good"
+        },
+        {
+          "shona": "Ndinoda girini",
+          "english": "I want green"
+        }
+      ],
+      "pronunciation": "/girini/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "bhuruu",
+      "english": "blue",
+      "category": "colors",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "bhuruu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine bhuruu",
+          "english": "I have blue"
+        },
+        {
+          "shona": "bhuruu yakanaka",
+          "english": "blue is good"
+        },
+        {
+          "shona": "Ndinoda bhuruu",
+          "english": "I want blue"
+        }
+      ],
+      "pronunciation": "/βuruu/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "yero",
+      "english": "yellow",
+      "category": "colors",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "yero.mp3",
+      "examples": [
+        {
+          "shona": "Ndine yero",
+          "english": "I have yellow"
+        },
+        {
+          "shona": "yero yakanaka",
+          "english": "yellow is good"
+        },
+        {
+          "shona": "Ndinoda yero",
+          "english": "I want yellow"
+        }
+      ],
+      "pronunciation": "/yero/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "musoro",
+      "english": "head",
+      "category": "body",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "musoro.mp3",
+      "examples": [
+        {
+          "shona": "Ndine musoro",
+          "english": "I have head"
+        },
+        {
+          "shona": "musoro yakanaka",
+          "english": "head is good"
+        },
+        {
+          "shona": "Ndinoda musoro",
+          "english": "I want head"
+        }
+      ],
+      "pronunciation": "/musoro/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "maziso",
+      "english": "eyes",
+      "category": "body",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "maziso.mp3",
+      "examples": [
+        {
+          "shona": "Ndine maziso",
+          "english": "I have eyes"
+        },
+        {
+          "shona": "maziso yakanaka",
+          "english": "eyes is good"
+        },
+        {
+          "shona": "Ndinoda maziso",
+          "english": "I want eyes"
+        }
+      ],
+      "pronunciation": "/maziso/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "nzeve",
+      "english": "ear",
+      "category": "body",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "nzeve.mp3",
+      "examples": [
+        {
+          "shona": "Ndine nzeve",
+          "english": "I have ear"
+        },
+        {
+          "shona": "nzeve yakanaka",
+          "english": "ear is good"
+        },
+        {
+          "shona": "Ndinoda nzeve",
+          "english": "I want ear"
+        }
+      ],
+      "pronunciation": "/nzeve/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "muromo",
+      "english": "mouth",
+      "category": "body",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "muromo.mp3",
+      "examples": [
+        {
+          "shona": "Ndine muromo",
+          "english": "I have mouth"
+        },
+        {
+          "shona": "muromo yakanaka",
+          "english": "mouth is good"
+        },
+        {
+          "shona": "Ndinoda muromo",
+          "english": "I want mouth"
+        }
+      ],
+      "pronunciation": "/muromo/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "manzino",
+      "english": "teeth",
+      "category": "body",
+      "tones": "HHL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "manzino.mp3",
+      "examples": [
+        {
+          "shona": "Ndine manzino",
+          "english": "I have teeth"
+        },
+        {
+          "shona": "manzino yakanaka",
+          "english": "teeth is good"
+        },
+        {
+          "shona": "Ndinoda manzino",
+          "english": "I want teeth"
+        }
+      ],
+      "pronunciation": "/manzino/ [HHL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "maoko",
+      "english": "hands",
+      "category": "body",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "maoko.mp3",
+      "examples": [
+        {
+          "shona": "Ndine maoko",
+          "english": "I have hands"
+        },
+        {
+          "shona": "maoko yakanaka",
+          "english": "hands is good"
+        },
+        {
+          "shona": "Ndinoda maoko",
+          "english": "I want hands"
+        }
+      ],
+      "pronunciation": "/maoko/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "tsoka",
+      "english": "foot",
+      "category": "body",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "tsoka.mp3",
+      "examples": [
+        {
+          "shona": "Ndine tsoka",
+          "english": "I have foot"
+        },
+        {
+          "shona": "tsoka yakanaka",
+          "english": "foot is good"
+        },
+        {
+          "shona": "Ndinoda tsoka",
+          "english": "I want foot"
+        }
+      ],
+      "pronunciation": "/tsoka/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "dumbu",
+      "english": "stomach",
+      "category": "body",
+      "tones": "HL",
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "dumbu.mp3",
+      "examples": [
+        {
+          "shona": "Ndine dumbu",
+          "english": "I have stomach"
+        },
+        {
+          "shona": "dumbu yakanaka",
+          "english": "stomach is good"
+        },
+        {
+          "shona": "Ndinoda dumbu",
+          "english": "I want stomach"
+        }
+      ],
+      "pronunciation": "/dumbu/ [HL]",
+      "source_type": "original"
+    },
+    {
+      "shona": "mwana",
+      "english": "child",
+      "category": "family",
+      "tones": "HL",
+      "cultural": "Central to family identity",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "mwana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mwana",
+          "english": "I want child"
+        },
+        {
+          "shona": "mwana yakanaka",
+          "english": "child is good"
+        }
+      ],
+      "pronunciation": "/mwana/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mukomana",
+      "english": "boy",
+      "category": "family",
+      "tones": "HLL",
+      "cultural": "Male child with specific expectations",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "mukomana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mukomana",
+          "english": "I want boy"
+        },
+        {
+          "shona": "mukomana yakanaka",
+          "english": "boy is good"
+        }
+      ],
+      "pronunciation": "/mukomana/ [HLL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "musikana",
+      "english": "girl",
+      "category": "family",
+      "tones": "HLL",
+      "cultural": "Female child with traditional roles",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "musikana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda musikana",
+          "english": "I want girl"
+        },
+        {
+          "shona": "musikana yakanaka",
+          "english": "girl is good"
+        }
+      ],
+      "pronunciation": "/musikana/ [HLL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mudzimai",
+      "english": "wife",
+      "category": "family",
+      "tones": "HHL",
+      "cultural": "Marriage partnership with mutual respect",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "mudzimai.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mudzimai",
+          "english": "I want wife"
+        },
+        {
+          "shona": "mudzimai yakanaka",
+          "english": "wife is good"
+        }
+      ],
+      "pronunciation": "/mudzimai/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "murume",
+      "english": "husband/man",
+      "category": "family",
+      "tones": "HHL",
+      "cultural": "Male head of household",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "murume.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda murume",
+          "english": "I want husband/man"
+        },
+        {
+          "shona": "murume yakanaka",
+          "english": "husband/man is good"
+        }
+      ],
+      "pronunciation": "/murume/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "ambuya",
+      "english": "grandmother (maternal)",
+      "category": "family",
+      "tones": "HHL",
+      "cultural": "Highly respected female elder",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "ambuya.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ambuya",
+          "english": "I want grandmother (maternal)"
+        },
+        {
+          "shona": "ambuya yakanaka",
+          "english": "grandmother (maternal) is good"
+        }
+      ],
+      "pronunciation": "/ambuya/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kwaziwai",
+      "english": "good evening (formal)",
+      "category": "greetings",
+      "tones": "HHL",
+      "cultural": "Formal evening greeting",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "kwaziwai.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kwaziwai",
+          "english": "I want good evening (formal)"
+        },
+        {
+          "shona": "kwaziwai yakanaka",
+          "english": "good evening (formal) is good"
+        }
+      ],
+      "pronunciation": "/kwaziwai/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "rarama",
+      "english": "goodbye (informal)",
+      "category": "greetings",
+      "tones": "HHL",
+      "cultural": "Casual farewell among peers",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "rarama.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda rarama",
+          "english": "I want goodbye (informal)"
+        },
+        {
+          "shona": "rarama yakanaka",
+          "english": "goodbye (informal) is good"
+        }
+      ],
+      "pronunciation": "/rarama/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "tunoswera",
+      "english": "we are fine",
+      "category": "greetings",
+      "tones": "HLHL",
+      "cultural": "Collective response showing unity",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "tunoswera.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda tunoswera",
+          "english": "I want we are fine"
+        },
+        {
+          "shona": "tunoswera yakanaka",
+          "english": "we are fine is good"
+        }
+      ],
+      "pronunciation": "/tunoswera/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mazuva ano",
+      "english": "these days",
+      "category": "greetings",
+      "tones": "HLHL",
+      "cultural": "Contemporary greeting expression",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "mazuva_ano.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mazuva ano",
+          "english": "I want these days"
+        },
+        {
+          "shona": "mazuva ano yakanaka",
+          "english": "these days is good"
+        }
+      ],
+      "pronunciation": "/mazuva ano/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "pfudziso",
+      "english": "education",
+      "category": "education",
+      "tones": "HHL",
+      "cultural": "Formal learning process",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "pfudziso.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda pfudziso",
+          "english": "I want education"
+        },
+        {
+          "shona": "pfudziso yakanaka",
+          "english": "education is good"
+        }
+      ],
+      "pronunciation": "/pfudziso/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "chidzidzo",
+      "english": "lesson/teaching",
+      "category": "education",
+      "tones": "HHL",
+      "cultural": "Knowledge transfer",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "chidzidzo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda chidzidzo",
+          "english": "I want lesson/teaching"
+        },
+        {
+          "shona": "chidzidzo yakanaka",
+          "english": "lesson/teaching is good"
+        }
+      ],
+      "pronunciation": "/tʃidzidzo/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mubvunzo",
+      "english": "question",
+      "category": "education",
+      "tones": "HHL",
+      "cultural": "Inquiry for learning",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "mubvunzo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mubvunzo",
+          "english": "I want question"
+        },
+        {
+          "shona": "mubvunzo yakanaka",
+          "english": "question is good"
+        }
+      ],
+      "pronunciation": "/mubvunzo/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mhinduro",
+      "english": "answer",
+      "category": "education",
+      "tones": "HHL",
+      "cultural": "Response to inquiry",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "mhinduro.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mhinduro",
+          "english": "I want answer"
+        },
+        {
+          "shona": "mhinduro yakanaka",
+          "english": "answer is good"
+        }
+      ],
+      "pronunciation": "/mhinduro/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kuwongorora",
+      "english": "to examine",
+      "category": "education",
+      "tones": "HLHL",
+      "cultural": "Careful study and analysis",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "kuwongorora.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kuwongorora",
+          "english": "I want to examine"
+        },
+        {
+          "shona": "kuwongorora yakanaka",
+          "english": "to examine is good"
+        }
+      ],
+      "pronunciation": "/kuwongorora/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "nhaurirano",
+      "english": "conversation",
+      "category": "communication",
+      "tones": "HLHL",
+      "cultural": "Dialogue and discussion",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "nhaurirano.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda nhaurirano",
+          "english": "I want conversation"
+        },
+        {
+          "shona": "nhaurirano yakanaka",
+          "english": "conversation is good"
+        }
+      ],
+      "pronunciation": "/nhaurirano/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "tsananguro",
+      "english": "explanation",
+      "category": "communication",
+      "tones": "HLHL",
+      "cultural": "Clear communication of ideas",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "tsananguro.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda tsananguro",
+          "english": "I want explanation"
+        },
+        {
+          "shona": "tsananguro yakanaka",
+          "english": "explanation is good"
+        }
+      ],
+      "pronunciation": "/tsananguro/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "dudziro",
+      "english": "interpretation",
+      "category": "communication",
+      "tones": "HHL",
+      "cultural": "Making meaning clear",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "dudziro.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda dudziro",
+          "english": "I want interpretation"
+        },
+        {
+          "shona": "dudziro yakanaka",
+          "english": "interpretation is good"
+        }
+      ],
+      "pronunciation": "/dudziro/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "nhevedzano",
+      "english": "storytelling",
+      "category": "communication",
+      "tones": "HLHL",
+      "cultural": "Traditional narrative sharing",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "nhevedzano.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda nhevedzano",
+          "english": "I want storytelling"
+        },
+        {
+          "shona": "nhevedzano yakanaka",
+          "english": "storytelling is good"
+        }
+      ],
+      "pronunciation": "/nhevedzano/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kuberekerwa",
+      "english": "to be born",
+      "category": "life_events",
+      "tones": "HLHL",
+      "cultural": "Life beginning ceremony",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "kuberekerwa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kuberekerwa",
+          "english": "I want to be born"
+        },
+        {
+          "shona": "kuberekerwa yakanaka",
+          "english": "to be born is good"
+        }
+      ],
+      "pronunciation": "/kuberekerwa/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kuroora",
+      "english": "to marry (for man)",
+      "category": "life_events",
+      "tones": "HHL",
+      "cultural": "Male marriage action",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "kuroora.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kuroora",
+          "english": "I want to marry (for man)"
+        },
+        {
+          "shona": "kuroora yakanaka",
+          "english": "to marry (for man) is good"
+        }
+      ],
+      "pronunciation": "/kuroora/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kuroorwa",
+      "english": "to marry (for woman)",
+      "category": "life_events",
+      "tones": "HHL",
+      "cultural": "Female marriage experience",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "kuroorwa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kuroorwa",
+          "english": "I want to marry (for woman)"
+        },
+        {
+          "shona": "kuroorwa yakanaka",
+          "english": "to marry (for woman) is good"
+        }
+      ],
+      "pronunciation": "/kuroorwa/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kufa",
+      "english": "to die",
+      "category": "life_events",
+      "tones": "HL",
+      "cultural": "Life transition to ancestorhood",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "kufa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kufa",
+          "english": "I want to die"
+        },
+        {
+          "shona": "kufa yakanaka",
+          "english": "to die is good"
+        }
+      ],
+      "pronunciation": "/kufa/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kubata mapoka",
+      "english": "to attend meetings",
+      "category": "community",
+      "tones": "HLHHL",
+      "cultural": "Community participation",
+      "modern": true,
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "audioFile": "kubata_mapoka.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kubata mapoka",
+          "english": "I want to attend meetings"
+        },
+        {
+          "shona": "kubata mapoka yakanaka",
+          "english": "to attend meetings is good"
+        }
+      ],
+      "pronunciation": "/kubata mapoka/ [HLHHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kunzwisisa",
+      "english": "to understand",
+      "category": "communication",
+      "tones": "HLHL",
+      "cultural": "Deep comprehension",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "kunzwisisa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kunzwisisa",
+          "english": "I want to understand"
+        },
+        {
+          "shona": "kunzwisisa yakanaka",
+          "english": "to understand is good"
+        }
+      ],
+      "pronunciation": "/kunzwisisa/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kutevedzera",
+      "english": "to follow/imitate",
+      "category": "education",
+      "tones": "HLHL",
+      "cultural": "Learning through observation",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "kutevedzera.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kutevedzera",
+          "english": "I want to follow/imitate"
+        },
+        {
+          "shona": "kutevedzera yakanaka",
+          "english": "to follow/imitate is good"
+        }
+      ],
+      "pronunciation": "/kutevedzera/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kuratidza",
+      "english": "to show/teach",
+      "category": "education",
+      "tones": "HLHL",
+      "cultural": "Sharing knowledge with others",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "kuratidza.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kuratidza",
+          "english": "I want to show/teach"
+        },
+        {
+          "shona": "kuratidza yakanaka",
+          "english": "to show/teach is good"
+        }
+      ],
+      "pronunciation": "/kuratidza/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "chino",
+      "english": "now/currently",
+      "category": "time",
+      "tones": "HL",
+      "cultural": "Present moment awareness",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "chino.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda chino",
+          "english": "I want now/currently"
+        },
+        {
+          "shona": "chino yakanaka",
+          "english": "now/currently is good"
+        }
+      ],
+      "pronunciation": "/tʃino/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "nekuchinjika",
+      "english": "gradually",
+      "category": "time",
+      "tones": "HLHL",
+      "cultural": "Slow change over time",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "nekuchinjika.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda nekuchinjika",
+          "english": "I want gradually"
+        },
+        {
+          "shona": "nekuchinjika yakanaka",
+          "english": "gradually is good"
+        }
+      ],
+      "pronunciation": "/nekutʃinjika/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "nguva dzose",
+      "english": "always",
+      "category": "time",
+      "tones": "HLHL",
+      "cultural": "Continuous time",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "nguva_dzose.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda nguva dzose",
+          "english": "I want always"
+        },
+        {
+          "shona": "nguva dzose yakanaka",
+          "english": "always is good"
+        }
+      ],
+      "pronunciation": "/nguva dzose/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "zvinhu zvachinja",
+      "english": "things have changed",
+      "category": "time",
+      "tones": "HLHHL",
+      "cultural": "Acknowledgment of change",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "zvinhu_zvachinja.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda zvinhu zvachinja",
+          "english": "I want things have changed"
+        },
+        {
+          "shona": "zvinhu zvachinja yakanaka",
+          "english": "things have changed is good"
+        }
+      ],
+      "pronunciation": "/zvinhu zvatʃinja/ [HLHHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "husahwira",
+      "english": "friendship",
+      "category": "community",
+      "tones": "HHL",
+      "cultural": "Close personal bond",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "husahwira.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda husahwira",
+          "english": "I want friendship"
+        },
+        {
+          "shona": "husahwira yakanaka",
+          "english": "friendship is good"
+        }
+      ],
+      "pronunciation": "/husahwira/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kubatsirana",
+      "english": "to help each other",
+      "category": "community",
+      "tones": "HLHL",
+      "cultural": "Mutual assistance",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "kubatsirana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kubatsirana",
+          "english": "I want to help each other"
+        },
+        {
+          "shona": "kubatsirana yakanaka",
+          "english": "to help each other is good"
+        }
+      ],
+      "pronunciation": "/kubatsirana/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kugovanisa",
+      "english": "to share",
+      "category": "community",
+      "tones": "HLHL",
+      "cultural": "Community sharing ethic",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "kugovanisa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kugovanisa",
+          "english": "I want to share"
+        },
+        {
+          "shona": "kugovanisa yakanaka",
+          "english": "to share is good"
+        }
+      ],
+      "pronunciation": "/kugovanisa/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "basa",
+      "english": "work/job",
+      "category": "work",
+      "tones": "HL",
+      "cultural": "Employment and livelihood",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "basa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda basa",
+          "english": "I want work/job"
+        },
+        {
+          "shona": "basa yakanaka",
+          "english": "work/job is good"
+        }
+      ],
+      "pronunciation": "/basa/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mushandiri",
+      "english": "worker/employee",
+      "category": "work",
+      "tones": "HHL",
+      "cultural": "Person who works",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "mushandiri.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mushandiri",
+          "english": "I want worker/employee"
+        },
+        {
+          "shona": "mushandiri yakanaka",
+          "english": "worker/employee is good"
+        }
+      ],
+      "pronunciation": "/mushandiri/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mukuru",
+      "english": "boss/elder",
+      "category": "work",
+      "tones": "HHL",
+      "cultural": "Authority figure",
+      "modern": true,
+      "source": "language_course",
+      "difficulty": 2,
+      "audioFile": "mukuru.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mukuru",
+          "english": "I want boss/elder"
+        },
+        {
+          "shona": "mukuru yakanaka",
+          "english": "boss/elder is good"
+        }
+      ],
+      "pronunciation": "/mukuru/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "ndine dambudziko",
+      "english": "I have a problem",
+      "category": "communication",
+      "tones": "HLHHL",
+      "cultural": "Seeking help",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "ndine_dambudziko.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndine dambudziko",
+          "english": "I want I have a problem"
+        },
+        {
+          "shona": "ndine dambudziko yakanaka",
+          "english": "I have a problem is good"
+        }
+      ],
+      "pronunciation": "/ndine dambudziko/ [HLHHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "handingakubatsiri",
+      "english": "I cannot help you",
+      "category": "communication",
+      "tones": "HHLHHL",
+      "cultural": "Honest limitation",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "handingakubatsiri.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda handingakubatsiri",
+          "english": "I want I cannot help you"
+        },
+        {
+          "shona": "handingakubatsiri yakanaka",
+          "english": "I cannot help you is good"
+        }
+      ],
+      "pronunciation": "/handingakubatsiri/ [HHLHHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "ndinokutenda",
+      "english": "I thank you",
+      "category": "communication",
+      "tones": "HLHL",
+      "cultural": "Gratitude expression",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "ndinokutenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndinokutenda",
+          "english": "I want I thank you"
+        },
+        {
+          "shona": "ndinokutenda yakanaka",
+          "english": "I thank you is good"
+        }
+      ],
+      "pronunciation": "/ndinokutenda/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "zvinotenda",
+      "english": "thank you (formal)",
+      "category": "communication",
+      "tones": "HHL",
+      "cultural": "Formal gratitude",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "zvinotenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda zvinotenda",
+          "english": "I want thank you (formal)"
+        },
+        {
+          "shona": "zvinotenda yakanaka",
+          "english": "thank you (formal) is good"
+        }
+      ],
+      "pronunciation": "/zvinotenda/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mitengo",
+      "english": "prices",
+      "category": "commerce",
+      "tones": "HHL",
+      "cultural": "Market negotiation",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "mitengo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mitengo",
+          "english": "I want prices"
+        },
+        {
+          "shona": "mitengo yakanaka",
+          "english": "prices is good"
+        }
+      ],
+      "pronunciation": "/mitengo/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kutengeserana",
+      "english": "to trade/do business",
+      "category": "commerce",
+      "tones": "HLHL",
+      "cultural": "Commercial activity",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "kutengeserana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kutengeserana",
+          "english": "I want to trade/do business"
+        },
+        {
+          "shona": "kutengeserana yakanaka",
+          "english": "to trade/do business is good"
+        }
+      ],
+      "pronunciation": "/kutengeserana/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mari",
+      "english": "money",
+      "category": "commerce",
+      "tones": "HL",
+      "cultural": "Medium of exchange",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "mari.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mari",
+          "english": "I want money"
+        },
+        {
+          "shona": "mari yakanaka",
+          "english": "money is good"
+        }
+      ],
+      "pronunciation": "/mari/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "dhora",
+      "english": "dollar",
+      "category": "commerce",
+      "tones": "HL",
+      "cultural": "Modern currency",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "dhora.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda dhora",
+          "english": "I want dollar"
+        },
+        {
+          "shona": "dhora yakanaka",
+          "english": "dollar is good"
+        }
+      ],
+      "pronunciation": "/ðora/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kurwara",
+      "english": "to be sick",
+      "category": "health",
+      "tones": "HHL",
+      "cultural": "State of illness",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "kurwara.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kurwara",
+          "english": "I want to be sick"
+        },
+        {
+          "shona": "kurwara yakanaka",
+          "english": "to be sick is good"
+        }
+      ],
+      "pronunciation": "/kurwara/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kupora",
+      "english": "to heal/recover",
+      "category": "health",
+      "tones": "HHL",
+      "cultural": "Return to wellness",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "kupora.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kupora",
+          "english": "I want to heal/recover"
+        },
+        {
+          "shona": "kupora yakanaka",
+          "english": "to heal/recover is good"
+        }
+      ],
+      "pronunciation": "/kupora/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mishonga",
+      "english": "medicines",
+      "category": "health",
+      "tones": "HHL",
+      "cultural": "Healing substances",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "mishonga.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mishonga",
+          "english": "I want medicines"
+        },
+        {
+          "shona": "mishonga yakanaka",
+          "english": "medicines is good"
+        }
+      ],
+      "pronunciation": "/mishonga/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "chitima",
+      "english": "train",
+      "category": "transport",
+      "tones": "HHL",
+      "cultural": "Railway transportation",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "chitima.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda chitima",
+          "english": "I want train"
+        },
+        {
+          "shona": "chitima yakanaka",
+          "english": "train is good"
+        }
+      ],
+      "pronunciation": "/tʃitima/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "ndege",
+      "english": "airplane",
+      "category": "transport",
+      "tones": "HL",
+      "cultural": "Air travel",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "ndege.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndege",
+          "english": "I want airplane"
+        },
+        {
+          "shona": "ndege yakanaka",
+          "english": "airplane is good"
+        }
+      ],
+      "pronunciation": "/ndege/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kombi",
+      "english": "minibus",
+      "category": "transport",
+      "tones": "HL",
+      "cultural": "Common urban transport",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "kombi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kombi",
+          "english": "I want minibus"
+        },
+        {
+          "shona": "kombi yakanaka",
+          "english": "minibus is good"
+        }
+      ],
+      "pronunciation": "/kombi/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mota",
+      "english": "car",
+      "category": "transport",
+      "tones": "HL",
+      "cultural": "Private vehicle",
+      "modern": true,
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "audioFile": "mota.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mota",
+          "english": "I want car"
+        },
+        {
+          "shona": "mota yakanaka",
+          "english": "car is good"
+        }
+      ],
+      "pronunciation": "/mota/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "bira remukwerere",
+      "english": "rain ceremony",
+      "category": "ceremony",
+      "tones": "HLHHL",
+      "cultural": "Traditional rain-calling ceremony",
+      "modern": true,
+      "source": "ethnography_enhanced",
+      "difficulty": 3,
+      "audioFile": "bira_remukwerere.mp3",
+      "examples": [
+        {
+          "shona": "Vana vanobatsira pabira remukwerere",
+          "english": "Children help with rain ceremony"
+        },
+        {
+          "shona": "bira remukwerere yakakosha kwatiri",
+          "english": "rain ceremony is important to us"
+        }
+      ],
+      "pronunciation": "/bira remukwerere/ [HLHHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kuraguza midzimu",
+      "english": "to consult ancestors",
+      "category": "ceremony",
+      "tones": "HLHHL",
+      "cultural": "Spiritual consultation process",
+      "modern": true,
+      "source": "ethnography_enhanced",
+      "difficulty": 3,
+      "audioFile": "kuraguza_midzimu.mp3",
+      "examples": [
+        {
+          "shona": "Vana vanobatsira pakuraguza midzimu",
+          "english": "Children help with to consult ancestors"
+        },
+        {
+          "shona": "kuraguza midzimu yakakosha kwatiri",
+          "english": "to consult ancestors is important to us"
+        }
+      ],
+      "pronunciation": "/kuraguza midzimu/ [HLHHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kupira mhuri",
+      "english": "to pour for family",
+      "category": "ceremony",
+      "tones": "HLHL",
+      "cultural": "Ancestral offering ritual",
+      "modern": true,
+      "source": "ethnography_enhanced",
+      "difficulty": 3,
+      "audioFile": "kupira_mhuri.mp3",
+      "examples": [
+        {
+          "shona": "Vana vanobatsira pakupira mhuri",
+          "english": "Children help with to pour for family"
+        },
+        {
+          "shona": "kupira mhuri yakakosha kwatiri",
+          "english": "to pour for family is important to us"
+        }
+      ],
+      "pronunciation": "/kupira mhuri/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kudira mvura",
+      "english": "to pour water",
+      "category": "ceremony",
+      "tones": "HLHL",
+      "cultural": "Cleansing ritual",
+      "modern": true,
+      "source": "ethnography_enhanced",
+      "difficulty": 3,
+      "audioFile": "kudira_mvura.mp3",
+      "examples": [
+        {
+          "shona": "Vana vanobatsira pakudira mvura",
+          "english": "Children help with to pour water"
+        },
+        {
+          "shona": "kudira mvura yakakosha kwatiri",
+          "english": "to pour water is important to us"
+        }
+      ],
+      "pronunciation": "/kudira mvura/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "tete mukuru",
+      "english": "eldest paternal aunt",
+      "category": "family",
+      "tones": "HLHL",
+      "cultural": "Senior female authority",
+      "modern": true,
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "audioFile": "tete_mukuru.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda tete mukuru",
+          "english": "I want eldest paternal aunt"
+        },
+        {
+          "shona": "tete mukuru yakanaka",
+          "english": "eldest paternal aunt is good"
+        }
+      ],
+      "pronunciation": "/tete mukuru/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "babamunini",
+      "english": "father's younger brother",
+      "category": "family",
+      "tones": "HLHL",
+      "cultural": "Junior paternal authority",
+      "modern": true,
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "audioFile": "babamunini.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda babamunini",
+          "english": "I want father's younger brother"
+        },
+        {
+          "shona": "babamunini yakanaka",
+          "english": "father's younger brother is good"
+        }
+      ],
+      "pronunciation": "/babamunini/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mbuya vekuwasha",
+      "english": "mother-in-law",
+      "category": "family",
+      "tones": "HLHHL",
+      "cultural": "In-law relationship",
+      "modern": true,
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "audioFile": "mbuya_vekuwasha.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mbuya vekuwasha",
+          "english": "I want mother-in-law"
+        },
+        {
+          "shona": "mbuya vekuwasha yakanaka",
+          "english": "mother-in-law is good"
+        }
+      ],
+      "pronunciation": "/mbuya vekuwasha/ [HLHHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "sekuru vekuwasha",
+      "english": "father-in-law",
+      "category": "family",
+      "tones": "HLHHL",
+      "cultural": "In-law relationship",
+      "modern": true,
+      "source": "ethnography_enhanced",
+      "difficulty": 2,
+      "audioFile": "sekuru_vekuwasha.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda sekuru vekuwasha",
+          "english": "I want father-in-law"
+        },
+        {
+          "shona": "sekuru vekuwasha yakanaka",
+          "english": "father-in-law is good"
+        }
+      ],
+      "pronunciation": "/sekuru vekuwasha/ [HLHHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "tsumo",
+      "english": "proverb",
+      "category": "wisdom",
+      "tones": "HL",
+      "cultural": "Traditional saying with deep meaning",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "tsumo.mp3",
+      "examples": [
+        {
+          "shona": "Vakuru vatinodzidzisa tsumo",
+          "english": "Elders teach us proverb"
+        },
+        {
+          "shona": "tsumo inobva kumazuva ekare",
+          "english": "proverb comes from ancient times"
+        }
+      ],
+      "pronunciation": "/tsumo/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "madimikira",
+      "english": "riddles",
+      "category": "wisdom",
+      "tones": "HHL",
+      "cultural": "Traditional puzzles teaching wisdom",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "madimikira.mp3",
+      "examples": [
+        {
+          "shona": "Vakuru vatinodzidzisa madimikira",
+          "english": "Elders teach us riddles"
+        },
+        {
+          "shona": "madimikira inobva kumazuva ekare",
+          "english": "riddles comes from ancient times"
+        }
+      ],
+      "pronunciation": "/madimikira/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "pfungwa dzokare",
+      "english": "ancient wisdom",
+      "category": "wisdom",
+      "tones": "HLHL",
+      "cultural": "Traditional knowledge",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "pfungwa_dzokare.mp3",
+      "examples": [
+        {
+          "shona": "Vakuru vatinodzidzisa pfungwa dzokare",
+          "english": "Elders teach us ancient wisdom"
+        },
+        {
+          "shona": "pfungwa dzokare inobva kumazuva ekare",
+          "english": "ancient wisdom comes from ancient times"
+        }
+      ],
+      "pronunciation": "/pfungwa dzokare/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "hunhu hwakanaka",
+      "english": "good character",
+      "category": "wisdom",
+      "tones": "HLHL",
+      "cultural": "Moral excellence",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "hunhu_hwakanaka.mp3",
+      "examples": [
+        {
+          "shona": "Vakuru vatinodzidzisa hunhu hwakanaka",
+          "english": "Elders teach us good character"
+        },
+        {
+          "shona": "hunhu hwakanaka inobva kumazuva ekare",
+          "english": "good character comes from ancient times"
+        }
+      ],
+      "pronunciation": "/hunhu hwakanaka/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "chakafukidza dzimba matenga",
+      "english": "what covers houses is thatch",
+      "category": "proverbs",
+      "tones": "HLHLHLHL",
+      "cultural": "Everyone needs shelter/protection",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "chakafukidza_dzimba_matenga.mp3",
+      "examples": [
+        {
+          "shona": "Tsumo inoti: chakafukidza dzimba matenga",
+          "english": "The proverb says: what covers houses is thatch"
+        },
+        {
+          "shona": "chakafukidza dzimba matenga - iri tsumo ratinodzidzisa",
+          "english": "what covers houses is thatch - this proverb teaches us"
+        }
+      ],
+      "pronunciation": "/tʃakafukidza dzimba matenga/ [HLHLHLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kudzidza hakupi shame",
+      "english": "learning brings no shame",
+      "category": "proverbs",
+      "tones": "HLHLHL",
+      "cultural": "Education is always valuable",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "kudzidza_hakupi_shame.mp3",
+      "examples": [
+        {
+          "shona": "Tsumo inoti: kudzidza hakupi shame",
+          "english": "The proverb says: learning brings no shame"
+        },
+        {
+          "shona": "kudzidza hakupi shame - iri tsumo ratinodzidzisa",
+          "english": "learning brings no shame - this proverb teaches us"
+        }
+      ],
+      "pronunciation": "/kudzidza hakupi shame/ [HLHLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "ukama hunei mukombe",
+      "english": "kinship knows no boundaries",
+      "category": "proverbs",
+      "tones": "HLHLHL",
+      "cultural": "Family bonds transcend distance",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "ukama_hunei_mukombe.mp3",
+      "examples": [
+        {
+          "shona": "Tsumo inoti: ukama hunei mukombe",
+          "english": "The proverb says: kinship knows no boundaries"
+        },
+        {
+          "shona": "ukama hunei mukombe - iri tsumo ratinodzidzisa",
+          "english": "kinship knows no boundaries - this proverb teaches us"
+        }
+      ],
+      "pronunciation": "/ukama hunei mukombe/ [HLHLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "mwana wamambo muranda",
+      "english": "a king's child is a servant",
+      "category": "proverbs",
+      "tones": "HLHLHL",
+      "cultural": "Everyone must learn humility",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "mwana_wamambo_muranda.mp3",
+      "examples": [
+        {
+          "shona": "Tsumo inoti: mwana wamambo muranda",
+          "english": "The proverb says: a king's child is a servant"
+        },
+        {
+          "shona": "mwana wamambo muranda - iri tsumo ratinodzidzisa",
+          "english": "a king's child is a servant - this proverb teaches us"
+        }
+      ],
+      "pronunciation": "/mwana wamambo muranda/ [HLHLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "ruremekedzo",
+      "english": "respect",
+      "category": "values",
+      "tones": "HHL",
+      "cultural": "Fundamental social value",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "ruremekedzo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ruremekedzo",
+          "english": "I want respect"
+        },
+        {
+          "shona": "ruremekedzo yakanaka",
+          "english": "respect is good"
+        }
+      ],
+      "pronunciation": "/ruremekedzo/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kuwadzana",
+      "english": "harmony",
+      "category": "values",
+      "tones": "HHL",
+      "cultural": "Living in peace together",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "kuwadzana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kuwadzana",
+          "english": "I want harmony"
+        },
+        {
+          "shona": "kuwadzana yakanaka",
+          "english": "harmony is good"
+        }
+      ],
+      "pronunciation": "/kuwadzana/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "unyangadzi",
+      "english": "honesty",
+      "category": "values",
+      "tones": "HHL",
+      "cultural": "Truthfulness in relationships",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "unyangadzi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda unyangadzi",
+          "english": "I want honesty"
+        },
+        {
+          "shona": "unyangadzi yakanaka",
+          "english": "honesty is good"
+        }
+      ],
+      "pronunciation": "/uɲangadzi/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kuvimba",
+      "english": "trust",
+      "category": "values",
+      "tones": "HHL",
+      "cultural": "Confidence in others",
+      "modern": true,
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "audioFile": "kuvimba.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kuvimba",
+          "english": "I want trust"
+        },
+        {
+          "shona": "kuvimba yakanaka",
+          "english": "trust is good"
+        }
+      ],
+      "pronunciation": "/kuvimba/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "akadimi",
+      "english": "academic",
+      "category": "education",
+      "tones": "HHL",
+      "cultural": "Scholarly approach",
+      "modern": true,
+      "source": "academic_syllabus",
+      "difficulty": 2,
+      "audioFile": "akadimi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda akadimi",
+          "english": "I want academic"
+        },
+        {
+          "shona": "akadimi yakanaka",
+          "english": "academic is good"
+        }
+      ],
+      "pronunciation": "/akadimi/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "pfudziso yepamusoro",
+      "english": "higher education",
+      "category": "education",
+      "tones": "HLHHL",
+      "cultural": "University level learning",
+      "modern": true,
+      "source": "academic_syllabus",
+      "difficulty": 2,
+      "audioFile": "pfudziso_yepamusoro.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda pfudziso yepamusoro",
+          "english": "I want higher education"
+        },
+        {
+          "shona": "pfudziso yepamusoro yakanaka",
+          "english": "higher education is good"
+        }
+      ],
+      "pronunciation": "/pfudziso yepamusoro/ [HLHHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "hosana",
+      "english": "hosanna",
+      "category": "religion",
+      "tones": "HHL",
+      "cultural": "Praise expression",
+      "modern": true,
+      "source": "religious_hymns",
+      "difficulty": 2,
+      "audioFile": "hosana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda hosana",
+          "english": "I want hosanna"
+        },
+        {
+          "shona": "hosana yakanaka",
+          "english": "hosanna is good"
+        }
+      ],
+      "pronunciation": "/hosana/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "alleluya",
+      "english": "hallelujah",
+      "category": "religion",
+      "tones": "HHL",
+      "cultural": "Joyful praise",
+      "modern": true,
+      "source": "religious_hymns",
+      "difficulty": 2,
+      "audioFile": "alleluya.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda alleluya",
+          "english": "I want hallelujah"
+        },
+        {
+          "shona": "alleluya yakanaka",
+          "english": "hallelujah is good"
+        }
+      ],
+      "pronunciation": "/alleluya/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "nhoroondo",
+      "english": "history",
+      "category": "history",
+      "tones": "HHL",
+      "cultural": "Record of past events",
+      "modern": true,
+      "source": "historical_sources",
+      "difficulty": 3,
+      "audioFile": "nhoroondo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda nhoroondo",
+          "english": "I want history"
+        },
+        {
+          "shona": "nhoroondo yakanaka",
+          "english": "history is good"
+        }
+      ],
+      "pronunciation": "/nhoroondo/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "zviyeuchidzo",
+      "english": "monuments",
+      "category": "history",
+      "tones": "HHL",
+      "cultural": "Memorial structures",
+      "modern": true,
+      "source": "historical_sources",
+      "difficulty": 3,
+      "audioFile": "zviyeuchidzo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda zviyeuchidzo",
+          "english": "I want monuments"
+        },
+        {
+          "shona": "zviyeuchidzo yakanaka",
+          "english": "monuments is good"
+        }
+      ],
+      "pronunciation": "/zviyeutʃidzo/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "rusununguko",
+      "english": "independence",
+      "category": "liberation",
+      "tones": "HHL",
+      "cultural": "Political freedom",
+      "modern": true,
+      "source": "liberation_history",
+      "difficulty": 3,
+      "audioFile": "rusununguko.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda rusununguko",
+          "english": "I want independence"
+        },
+        {
+          "shona": "rusununguko yakanaka",
+          "english": "independence is good"
+        }
+      ],
+      "pronunciation": "/rusununguko/ [HHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kurwira nyika",
+      "english": "to fight for country",
+      "category": "liberation",
+      "tones": "HLHL",
+      "cultural": "Patriotic struggle",
+      "modern": true,
+      "source": "liberation_history",
+      "difficulty": 3,
+      "audioFile": "kurwira_nyika.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kurwira nyika",
+          "english": "I want to fight for country"
+        },
+        {
+          "shona": "kurwira nyika yakanaka",
+          "english": "to fight for country is good"
+        }
+      ],
+      "pronunciation": "/kurwira ɲika/ [HLHL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "hongu",
+      "english": "yes",
+      "category": "basic",
+      "tones": "HL",
+      "cultural": "Affirmative response",
+      "modern": true,
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "hongu.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda hongu",
+          "english": "I want yes"
+        },
+        {
+          "shona": "hongu yakanaka",
+          "english": "yes is good"
+        }
+      ],
+      "pronunciation": "/hongu/ [HL]",
+      "source_type": "new"
+    },
+    {
+      "shona": "kwete",
+      "english": "no",
+      "category": "basic",
+      "tones": "HL",
+      "cultural": "Negative response",
+      "modern": true,
+      "source": "fsi_filtered",
+      "difficulty": 1,
+      "audioFile": "kwete.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kwete",
+          "english": "I want no"
+        },
+        {
+          "shona": "kwete yakanaka",
+          "english": "no is good"
+        }
+      ],
+      "pronunciation": "/kwete/ [HL]",
+      "source_type": "new"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "summary": {
+    "totalWords": 5,
+    "averageScore": "88.0",
+    "averageSizeIncrease": "45.2%",
+    "averageDurationIncrease": "45.2%",
+    "timestamp": "2025-07-07T06:31:47.892Z"
+  },
+  "results": [
+    {
+      "word": "svika",
+      "english": "arrive",
+      "textAnalysis": {
+        "text": "svika",
+        "patterns": [
+          {
+            "type": "whistled_sibilant",
+            "sounds": [
+              "sv"
+            ],
+            "difficulty": "high",
+            "description": "High-frequency sibilants with lip rounding"
+          }
+        ],
+        "complexity": "moderate",
+        "suggestions": [
+          "Use slower speech rate for whistled sibilants",
+          "Add pauses between s and v sounds"
+        ],
+        "score": 85
+      },
+      "audioComparison": {
+        "original": {
+          "size": 17599,
+          "estimatedDuration": 8.7995,
+          "sizeKB": "17.2"
+        },
+        "improved": {
+          "size": 21360,
+          "estimatedDuration": 10.68,
+          "sizeKB": "20.9"
+        },
+        "differences": {
+          "sizeIncrease": "21.4%",
+          "durationIncrease": "21.4%",
+          "improvement": "Larger file suggests better quality"
+        }
+      },
+      "recommendations": [
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Use slower speech rate for whistled sibilants"
+        },
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Add pauses between s and v sounds"
+        },
+        {
+          "type": "quality",
+          "priority": "medium",
+          "suggestion": "Significant file size increase suggests better audio quality"
+        }
+      ]
+    },
+    {
+      "word": "zvino",
+      "english": "now",
+      "textAnalysis": {
+        "text": "zvino",
+        "patterns": [
+          {
+            "type": "whistled_sibilant",
+            "sounds": [
+              "zv"
+            ],
+            "difficulty": "high",
+            "description": "High-frequency sibilants with lip rounding"
+          }
+        ],
+        "complexity": "moderate",
+        "suggestions": [
+          "Use slower speech rate for whistled sibilants",
+          "Add pauses between s and v sounds"
+        ],
+        "score": 85
+      },
+      "audioComparison": {
+        "original": {
+          "size": 17181,
+          "estimatedDuration": 8.5905,
+          "sizeKB": "16.8"
+        },
+        "improved": {
+          "size": 21360,
+          "estimatedDuration": 10.68,
+          "sizeKB": "20.9"
+        },
+        "differences": {
+          "sizeIncrease": "24.3%",
+          "durationIncrease": "24.3%",
+          "improvement": "Larger file suggests better quality"
+        }
+      },
+      "recommendations": [
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Use slower speech rate for whistled sibilants"
+        },
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Add pauses between s and v sounds"
+        },
+        {
+          "type": "quality",
+          "priority": "medium",
+          "suggestion": "Significant file size increase suggests better audio quality"
+        }
+      ]
+    },
+    {
+      "word": "mbira",
+      "english": "thumb piano",
+      "textAnalysis": {
+        "text": "mbira",
+        "patterns": [
+          {
+            "type": "prenasalized_consonant",
+            "sounds": [
+              "mb"
+            ],
+            "difficulty": "medium",
+            "description": "Brief nasal sound before consonant"
+          }
+        ],
+        "complexity": "moderate",
+        "suggestions": [
+          "Emphasize nasal component",
+          "Use longer nasal sound"
+        ],
+        "score": 90
+      },
+      "audioComparison": {
+        "original": {
+          "size": 17181,
+          "estimatedDuration": 8.5905,
+          "sizeKB": "16.8"
+        },
+        "improved": {
+          "size": 20107,
+          "estimatedDuration": 10.0535,
+          "sizeKB": "19.6"
+        },
+        "differences": {
+          "sizeIncrease": "17.0%",
+          "durationIncrease": "17.0%",
+          "improvement": "Larger file suggests better quality"
+        }
+      },
+      "recommendations": [
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Emphasize nasal component"
+        },
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Use longer nasal sound"
+        }
+      ]
+    },
+    {
+      "word": "ndatenda",
+      "english": "thank you",
+      "textAnalysis": {
+        "text": "ndatenda",
+        "patterns": [
+          {
+            "type": "prenasalized_consonant",
+            "sounds": [
+              "nd",
+              "nd"
+            ],
+            "difficulty": "medium",
+            "description": "Brief nasal sound before consonant"
+          }
+        ],
+        "complexity": "moderate",
+        "suggestions": [
+          "Emphasize nasal component",
+          "Use longer nasal sound"
+        ],
+        "score": 90
+      },
+      "audioComparison": {
+        "original": {
+          "size": 18435,
+          "estimatedDuration": 9.2175,
+          "sizeKB": "18.0"
+        },
+        "improved": {
+          "size": 43094,
+          "estimatedDuration": 21.547,
+          "sizeKB": "42.1"
+        },
+        "differences": {
+          "sizeIncrease": "133.8%",
+          "durationIncrease": "133.8%",
+          "improvement": "Larger file suggests better quality"
+        }
+      },
+      "recommendations": [
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Emphasize nasal component"
+        },
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Use longer nasal sound"
+        },
+        {
+          "type": "quality",
+          "priority": "medium",
+          "suggestion": "Significant file size increase suggests better audio quality"
+        },
+        {
+          "type": "speed",
+          "priority": "high",
+          "suggestion": "Significant duration increase indicates slower, clearer pronunciation"
+        }
+      ]
+    },
+    {
+      "word": "bhazi",
+      "english": "bus",
+      "textAnalysis": {
+        "text": "bhazi",
+        "patterns": [
+          {
+            "type": "breathy_consonant",
+            "sounds": [
+              "bh"
+            ],
+            "difficulty": "medium",
+            "description": "Consonants with audible breath/aspiration"
+          }
+        ],
+        "complexity": "moderate",
+        "suggestions": [
+          "Add audible breath sound",
+          "Emphasize aspiration"
+        ],
+        "score": 90
+      },
+      "audioComparison": {
+        "original": {
+          "size": 18435,
+          "estimatedDuration": 9.2175,
+          "sizeKB": "18.0"
+        },
+        "improved": {
+          "size": 23868,
+          "estimatedDuration": 11.934,
+          "sizeKB": "23.3"
+        },
+        "differences": {
+          "sizeIncrease": "29.5%",
+          "durationIncrease": "29.5%",
+          "improvement": "Larger file suggests better quality"
+        }
+      },
+      "recommendations": [
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Add audible breath sound"
+        },
+        {
+          "type": "pronunciation",
+          "priority": "high",
+          "suggestion": "Emphasize aspiration"
+        },
+        {
+          "type": "quality",
+          "priority": "medium",
+          "suggestion": "Significant file size increase suggests better audio quality"
+        }
+      ]
+    }
+  ]
+}

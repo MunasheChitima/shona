@@ -1,0 +1,688 @@
+{
+  "metadata": {
+    "category": "time",
+    "totalWords": 15,
+    "created": "2025-07-07T01:37:03.811Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_mangwanani_1751852223800",
+      "shona": "mangwanani",
+      "english": "morning",
+      "category": "time",
+      "tones": "HLHL",
+      "ipa": "/mangwanani/",
+      "simplified": "ma-ngwa-na-ni",
+      "source": "syllabus",
+      "difficulty": 1,
+      "cultural": "Standard morning greeting, used until around 10 AM",
+      "examples": [
+        {
+          "shona": "Ndine mangwanani",
+          "english": "I have morning"
+        },
+        {
+          "shona": "mangwanani yakanaka",
+          "english": "morning is good"
+        },
+        {
+          "shona": "Ndinoda mangwanani",
+          "english": "I want morning"
+        },
+        {
+          "shona": "Ndine mangwanani",
+          "english": "I have morning"
+        },
+        {
+          "shona": "mangwanani yakanaka",
+          "english": "morning is good"
+        },
+        {
+          "shona": "Ndinoda mangwanani",
+          "english": "I want morning"
+        },
+        {
+          "shona": "Ndinoda mangwanani",
+          "english": "I want good morning",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "mangwanani.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_manheru_1751852223800",
+      "shona": "manheru",
+      "english": "evening",
+      "category": "time",
+      "tones": "HHL",
+      "ipa": "/manheru/",
+      "simplified": "ma-nhe-ru",
+      "source": "syllabus",
+      "difficulty": 1,
+      "cultural": "Used after sunset",
+      "examples": [
+        {
+          "shona": "Ndine manheru",
+          "english": "I have evening"
+        },
+        {
+          "shona": "manheru yakanaka",
+          "english": "evening is good"
+        },
+        {
+          "shona": "Ndinoda manheru",
+          "english": "I want evening"
+        },
+        {
+          "shona": "Ndine manheru",
+          "english": "I have evening"
+        },
+        {
+          "shona": "manheru yakanaka",
+          "english": "evening is good"
+        },
+        {
+          "shona": "Ndinoda manheru",
+          "english": "I want evening"
+        },
+        {
+          "shona": "Ndinoda manheru",
+          "english": "I want good evening",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "manheru.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_masikati_1751852223800",
+      "shona": "masikati",
+      "english": "afternoon",
+      "category": "time",
+      "tones": "HLHL",
+      "ipa": "/masikati/",
+      "simplified": "ma-si-ka-ti",
+      "source": "syllabus",
+      "difficulty": 1,
+      "cultural": "Used from around 10 AM to sunset",
+      "examples": [
+        {
+          "shona": "Ndine masikati",
+          "english": "I have afternoon"
+        },
+        {
+          "shona": "masikati yakanaka",
+          "english": "afternoon is good"
+        },
+        {
+          "shona": "Ndinoda masikati",
+          "english": "I want afternoon"
+        },
+        {
+          "shona": "Ndine masikati",
+          "english": "I have afternoon"
+        },
+        {
+          "shona": "masikati yakanaka",
+          "english": "afternoon is good"
+        },
+        {
+          "shona": "Ndinoda masikati",
+          "english": "I want afternoon"
+        },
+        {
+          "shona": "Ndinoda masikati",
+          "english": "I want good afternoon",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "masikati.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chino_1751852223800",
+      "shona": "chino",
+      "english": "now/currently",
+      "category": "time",
+      "tones": "HL",
+      "ipa": "/chino/",
+      "simplified": "chi-no",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Present moment awareness",
+      "examples": [
+        {
+          "shona": "Ndinoda chino",
+          "english": "I want now/currently"
+        },
+        {
+          "shona": "chino yakanaka",
+          "english": "now/currently is good"
+        },
+        {
+          "shona": "Ndinoda chino",
+          "english": "I want now/currently"
+        },
+        {
+          "shona": "chino yakanaka",
+          "english": "now/currently is good"
+        }
+      ],
+      "audioFile": "chino.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_gore_1751852223800",
+      "shona": "gore",
+      "english": "year",
+      "category": "time",
+      "tones": "HL",
+      "ipa": "/gore/",
+      "simplified": "go-re",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine gore",
+          "english": "I have year"
+        },
+        {
+          "shona": "gore yakanaka",
+          "english": "year is good"
+        },
+        {
+          "shona": "Ndinoda gore",
+          "english": "I want year"
+        },
+        {
+          "shona": "Ndine gore",
+          "english": "I have year"
+        },
+        {
+          "shona": "gore yakanaka",
+          "english": "year is good"
+        },
+        {
+          "shona": "Ndinoda gore",
+          "english": "I want year"
+        }
+      ],
+      "audioFile": "gore.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_husiku_1751852223800",
+      "shona": "husiku",
+      "english": "night",
+      "category": "time",
+      "tones": "HHL",
+      "ipa": "/husiku/",
+      "simplified": "hu-si-ku",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine husiku",
+          "english": "I have night"
+        },
+        {
+          "shona": "husiku yakanaka",
+          "english": "night is good"
+        },
+        {
+          "shona": "Ndinoda husiku",
+          "english": "I want night"
+        },
+        {
+          "shona": "Ndine husiku",
+          "english": "I have night"
+        },
+        {
+          "shona": "husiku yakanaka",
+          "english": "night is good"
+        },
+        {
+          "shona": "Ndinoda husiku",
+          "english": "I want night"
+        }
+      ],
+      "audioFile": "husiku.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mwedzi_1751852223800",
+      "shona": "mwedzi",
+      "english": "month",
+      "category": "time",
+      "tones": "HL",
+      "ipa": "/mwedzi/",
+      "simplified": "mwe-dzi",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine mwedzi",
+          "english": "I have month"
+        },
+        {
+          "shona": "mwedzi yakanaka",
+          "english": "month is good"
+        },
+        {
+          "shona": "Ndinoda mwedzi",
+          "english": "I want month"
+        },
+        {
+          "shona": "Ndine mwedzi",
+          "english": "I have month"
+        },
+        {
+          "shona": "mwedzi yakanaka",
+          "english": "month is good"
+        },
+        {
+          "shona": "Ndinoda mwedzi",
+          "english": "I want month"
+        }
+      ],
+      "audioFile": "mwedzi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_nekuchinjika_1751852223800",
+      "shona": "nekuchinjika",
+      "english": "gradually",
+      "category": "time",
+      "tones": "HLHL",
+      "ipa": "/nekuchinjika/",
+      "simplified": "ne-ku-chi-nji-ka",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Slow change over time",
+      "examples": [
+        {
+          "shona": "Ndinoda nekuchinjika",
+          "english": "I want gradually"
+        },
+        {
+          "shona": "nekuchinjika yakanaka",
+          "english": "gradually is good"
+        },
+        {
+          "shona": "Ndinoda nekuchinjika",
+          "english": "I want gradually"
+        },
+        {
+          "shona": "nekuchinjika yakanaka",
+          "english": "gradually is good"
+        }
+      ],
+      "audioFile": "nekuchinjika.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_nguva_1751852223800",
+      "shona": "nguva",
+      "english": "time",
+      "category": "time",
+      "tones": "HL",
+      "ipa": "/nguva/",
+      "simplified": "ngu-va",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine nguva",
+          "english": "I have time"
+        },
+        {
+          "shona": "nguva yakanaka",
+          "english": "time is good"
+        },
+        {
+          "shona": "Ndinoda nguva",
+          "english": "I want time"
+        },
+        {
+          "shona": "Ndine nguva",
+          "english": "I have time"
+        },
+        {
+          "shona": "nguva yakanaka",
+          "english": "time is good"
+        },
+        {
+          "shona": "Ndinoda nguva",
+          "english": "I want time"
+        }
+      ],
+      "audioFile": "nguva.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_nguva_dzose_1751852223800",
+      "shona": "nguva dzose",
+      "english": "always",
+      "category": "time",
+      "tones": "HLHL",
+      "ipa": "/nguva dzose/",
+      "simplified": "ngu-va- dzo-se",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Continuous time",
+      "examples": [
+        {
+          "shona": "Ndinoda nguva dzose",
+          "english": "I want always"
+        },
+        {
+          "shona": "nguva dzose yakanaka",
+          "english": "always is good"
+        },
+        {
+          "shona": "Ndinoda nguva dzose",
+          "english": "I want always"
+        },
+        {
+          "shona": "nguva dzose yakanaka",
+          "english": "always is good"
+        }
+      ],
+      "audioFile": "nguva_dzose.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_vhiki_1751852223800",
+      "shona": "vhiki",
+      "english": "week",
+      "category": "time",
+      "tones": "HL",
+      "ipa": "/vhiki/",
+      "simplified": "vhi-ki",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine vhiki",
+          "english": "I have week"
+        },
+        {
+          "shona": "vhiki yakanaka",
+          "english": "week is good"
+        },
+        {
+          "shona": "Ndinoda vhiki",
+          "english": "I want week"
+        },
+        {
+          "shona": "Ndine vhiki",
+          "english": "I have week"
+        },
+        {
+          "shona": "vhiki yakanaka",
+          "english": "week is good"
+        },
+        {
+          "shona": "Ndinoda vhiki",
+          "english": "I want week"
+        }
+      ],
+      "audioFile": "vhiki.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_zuva_1751852223800",
+      "shona": "zuva",
+      "english": "day",
+      "category": "time",
+      "tones": "HL",
+      "ipa": "/zuva/",
+      "simplified": "zu-va",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine zuva",
+          "english": "I have day"
+        },
+        {
+          "shona": "zuva yakanaka",
+          "english": "day is good"
+        },
+        {
+          "shona": "Ndinoda zuva",
+          "english": "I want day"
+        },
+        {
+          "shona": "Ndine zuva",
+          "english": "I have day"
+        },
+        {
+          "shona": "zuva yakanaka",
+          "english": "day is good"
+        },
+        {
+          "shona": "Ndinoda zuva",
+          "english": "I want day"
+        }
+      ],
+      "audioFile": "zuva.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_zvinhu_zvachinja_1751852223800",
+      "shona": "zvinhu zvachinja",
+      "english": "things have changed",
+      "category": "time",
+      "tones": "HLHHL",
+      "ipa": "/zvinhu zvachinja/",
+      "simplified": "zvi-nhu- zva-chi-nja",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Acknowledgment of change",
+      "examples": [
+        {
+          "shona": "Ndinoda zvinhu zvachinja",
+          "english": "I want things have changed"
+        },
+        {
+          "shona": "zvinhu zvachinja yakanaka",
+          "english": "things have changed is good"
+        },
+        {
+          "shona": "Ndinoda zvinhu zvachinja",
+          "english": "I want things have changed"
+        },
+        {
+          "shona": "zvinhu zvachinja yakanaka",
+          "english": "things have changed is good"
+        }
+      ],
+      "audioFile": "zvinhu_zvachinja.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kare_1751852223800",
+      "shona": "kare",
+      "english": "long ago",
+      "category": "time",
+      "tones": "HL",
+      "ipa": "/kare/",
+      "simplified": "ka-re",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kare",
+          "english": "I have long ago"
+        },
+        {
+          "shona": "kare yakanaka",
+          "english": "long ago is good"
+        },
+        {
+          "shona": "Ndinoda kare",
+          "english": "I want long ago"
+        },
+        {
+          "shona": "Ndine kare",
+          "english": "I have long ago"
+        },
+        {
+          "shona": "kare yakanaka",
+          "english": "long ago is good"
+        },
+        {
+          "shona": "Ndinoda kare",
+          "english": "I want long ago"
+        }
+      ],
+      "audioFile": "kare.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_makore_1751852223800",
+      "shona": "makore",
+      "english": "years",
+      "category": "time",
+      "tones": "HHL",
+      "ipa": "/makore/",
+      "simplified": "ma-ko-re",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine makore",
+          "english": "I have years"
+        },
+        {
+          "shona": "makore yakanaka",
+          "english": "years is good"
+        },
+        {
+          "shona": "Ndinoda makore",
+          "english": "I want years"
+        },
+        {
+          "shona": "Ndine makore",
+          "english": "I have years"
+        },
+        {
+          "shona": "makore yakanaka",
+          "english": "years is good"
+        },
+        {
+          "shona": "Ndinoda makore",
+          "english": "I want years"
+        }
+      ],
+      "audioFile": "makore.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    }
+  ]
+}

@@ -6,11 +6,10 @@ export default function Logout() {
   const router = useRouter()
 
   useEffect(() => {
-    // Clear user data
-    localStorage.removeItem('token')
-    localStorage.removeItem('user')
-    
-    // Redirect to home page
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('token')
+      localStorage.removeItem('user')
+    }
     router.push('/')
   }, [])
 

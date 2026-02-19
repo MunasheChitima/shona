@@ -1,0 +1,51 @@
+{
+  "vocabulary": {
+    "metadata": {
+      "version": "3.0.0",
+      "integratedAt": "2025-07-09T06:12:40.567Z",
+      "totalModules": 7,
+      "totalWords": 0,
+      "categories": [],
+      "difficultyLevels": [],
+      "sources": []
+    },
+    "vocabulary": [],
+    "modules": {},
+    "platform": "android",
+    "format": "json",
+    "optimized": true,
+    "kotlinCompatible": true
+  },
+  "lessons": {
+    "metadata": {
+      "version": "3.0.0",
+      "integratedAt": "2025-07-09T06:12:40.571Z",
+      "totalModules": 5,
+      "totalLessons": 0,
+      "categories": [],
+      "difficultyLevels": []
+    },
+    "lessons": [],
+    "modules": {},
+    "platform": "android",
+    "format": "json",
+    "optimized": true,
+    "kotlinCompatible": true
+  },
+  "assessments": {
+    "metadata": {
+      "version": "3.0.0",
+      "integratedAt": "2025-07-09T06:12:40.573Z",
+      "totalModules": 1,
+      "totalAssessments": 0,
+      "assessmentTypes": [],
+      "difficultyLevels": []
+    },
+    "assessments": [],
+    "modules": {},
+    "platform": "android",
+    "format": "json",
+    "optimized": true,
+    "kotlinCompatible": true
+  }
+}

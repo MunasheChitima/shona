@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "category": "archaeology",
+    "totalWords": 1,
+    "created": "2025-07-07T01:37:03.814Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_kuchera_1751852223800",
+      "shona": "kuchera",
+      "english": "to dig",
+      "category": "archaeology",
+      "tones": "HHL",
+      "ipa": "/kuchera/",
+      "simplified": "ku-che-ra",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kuchera",
+          "english": "I have to dig"
+        },
+        {
+          "shona": "kuchera yakanaka",
+          "english": "to dig is good"
+        },
+        {
+          "shona": "Ndinoda kuchera",
+          "english": "I want to dig"
+        },
+        {
+          "shona": "Ndine kuchera",
+          "english": "I have to dig"
+        },
+        {
+          "shona": "kuchera yakanaka",
+          "english": "to dig is good"
+        },
+        {
+          "shona": "Ndinoda kuchera",
+          "english": "I want to dig"
+        }
+      ],
+      "audioFile": "kuchera.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    }
+  ]
+}

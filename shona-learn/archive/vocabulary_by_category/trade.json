@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "category": "trade",
+    "totalWords": 3,
+    "created": "2025-07-07T01:37:03.814Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_gona_1751852223800",
+      "shona": "gona",
+      "english": "gold",
+      "category": "trade",
+      "tones": "HL",
+      "ipa": "/gona/",
+      "simplified": "go-na",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine gona",
+          "english": "I have gold"
+        },
+        {
+          "shona": "gona yakanaka",
+          "english": "gold is good"
+        },
+        {
+          "shona": "Ndinoda gona",
+          "english": "I want gold"
+        },
+        {
+          "shona": "Ndine gona",
+          "english": "I have gold"
+        },
+        {
+          "shona": "gona yakanaka",
+          "english": "gold is good"
+        },
+        {
+          "shona": "Ndinoda gona",
+          "english": "I want gold"
+        }
+      ],
+      "audioFile": "gona.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuchinjana_1751852223800",
+      "shona": "kuchinjana",
+      "english": "to trade",
+      "category": "trade",
+      "tones": "HLHL",
+      "ipa": "/kuchinjana/",
+      "simplified": "ku-chi-nja-na",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kuchinjana",
+          "english": "I have to trade"
+        },
+        {
+          "shona": "kuchinjana yakanaka",
+          "english": "to trade is good"
+        },
+        {
+          "shona": "Ndinoda kuchinjana",
+          "english": "I want to trade"
+        },
+        {
+          "shona": "Ndine kuchinjana",
+          "english": "I have to trade"
+        },
+        {
+          "shona": "kuchinjana yakanaka",
+          "english": "to trade is good"
+        },
+        {
+          "shona": "Ndinoda kuchinjana",
+          "english": "I want to trade"
+        }
+      ],
+      "audioFile": "kuchinjana.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_zvipfuwo_1751852223800",
+      "shona": "zvipfuwo",
+      "english": "livestock",
+      "category": "trade",
+      "tones": "HHL",
+      "ipa": "/zvipfuwo/",
+      "simplified": "zvi-pfu-wo",
+      "source": "ruins",
+      "difficulty": 4,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine zvipfuwo",
+          "english": "I have livestock"
+        },
+        {
+          "shona": "zvipfuwo yakanaka",
+          "english": "livestock is good"
+        },
+        {
+          "shona": "Ndinoda zvipfuwo",
+          "english": "I want livestock"
+        },
+        {
+          "shona": "Ndine zvipfuwo",
+          "english": "I have livestock"
+        },
+        {
+          "shona": "zvipfuwo yakanaka",
+          "english": "livestock is good"
+        },
+        {
+          "shona": "Ndinoda zvipfuwo",
+          "english": "I want livestock"
+        }
+      ],
+      "audioFile": "zvipfuwo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ruins",
+        "ruins"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "category": "work",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.812Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_kushanda_1751852223800",
+      "shona": "kushanda",
+      "english": "to work",
+      "category": "work",
+      "tones": "HHL",
+      "ipa": "/kushanda/",
+      "simplified": "ku-sha-nda",
+      "source": "language_course",
+      "difficulty": 1,
+      "cultural": "Economic activity",
+      "examples": [
+        {
+          "shona": "Ndinoda kushanda",
+          "english": "I want to work"
+        },
+        {
+          "shona": "kushanda yakanaka",
+          "english": "to work is good"
+        },
+        {
+          "shona": "Ndinoda kushanda",
+          "english": "I want to work"
+        },
+        {
+          "shona": "kushanda yakanaka",
+          "english": "to work is good"
+        },
+        {
+          "shona": "Ndine kushanda",
+          "english": "I have to work"
+        },
+        {
+          "shona": "kushanda yakanaka",
+          "english": "to work is good"
+        },
+        {
+          "shona": "Ndinoda kushanda",
+          "english": "I want to work"
+        }
+      ],
+      "audioFile": "kushanda.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course",
+        "fsi_filtered"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_basa_1751852223800",
+      "shona": "basa",
+      "english": "work/job",
+      "category": "work",
+      "tones": "HL",
+      "ipa": "/basa/",
+      "simplified": "ba-sa",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Employment and livelihood",
+      "examples": [
+        {
+          "shona": "Ndinoda basa",
+          "english": "I want work/job"
+        },
+        {
+          "shona": "basa yakanaka",
+          "english": "work/job is good"
+        },
+        {
+          "shona": "Ndinoda basa",
+          "english": "I want work/job"
+        },
+        {
+          "shona": "basa yakanaka",
+          "english": "work/job is good"
+        }
+      ],
+      "audioFile": "basa.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mukuru_1751852223800",
+      "shona": "mukuru",
+      "english": "boss/elder",
+      "category": "work",
+      "tones": "HHL",
+      "ipa": "/mukuru/",
+      "simplified": "mu-ku-ru",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Authority figure",
+      "examples": [
+        {
+          "shona": "Ndinoda mukuru",
+          "english": "I want boss/elder"
+        },
+        {
+          "shona": "mukuru yakanaka",
+          "english": "boss/elder is good"
+        },
+        {
+          "shona": "Ndinoda mukuru",
+          "english": "I want boss/elder"
+        },
+        {
+          "shona": "mukuru yakanaka",
+          "english": "boss/elder is good"
+        }
+      ],
+      "audioFile": "mukuru.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mushandiri_1751852223800",
+      "shona": "mushandiri",
+      "english": "worker/employee",
+      "category": "work",
+      "tones": "HHL",
+      "ipa": "/mushandiri/",
+      "simplified": "mu-sha-ndi-ri",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Person who works",
+      "examples": [
+        {
+          "shona": "Ndinoda mushandiri",
+          "english": "I want worker/employee"
+        },
+        {
+          "shona": "mushandiri yakanaka",
+          "english": "worker/employee is good"
+        },
+        {
+          "shona": "Ndinoda mushandiri",
+          "english": "I want worker/employee"
+        },
+        {
+          "shona": "mushandiri yakanaka",
+          "english": "worker/employee is good"
+        }
+      ],
+      "audioFile": "mushandiri.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    }
+  ]
+}

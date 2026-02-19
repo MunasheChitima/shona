@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "category": "pronouns",
+    "totalWords": 6,
+    "created": "2025-07-07T01:37:03.813Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_master_comprehensive.json_ari_1751852223801",
+      "shona": "ari",
+      "english": "he/she is",
+      "category": "pronouns",
+      "tones": "LH",
+      "ipa": "/ari/",
+      "simplified": "AH-ree",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda ari",
+          "english": "I want he/she is",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "ari.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_muri_1751852223801",
+      "shona": "muri",
+      "english": "you are (plural)",
+      "category": "pronouns",
+      "tones": "LHL",
+      "ipa": "/muri/",
+      "simplified": "moo-REE",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda muri",
+          "english": "I want you are (plural)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "muri.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_ndiri_1751852223801",
+      "shona": "ndiri",
+      "english": "I am",
+      "category": "pronouns",
+      "tones": "LHL",
+      "ipa": "/ⁿdiri/",
+      "simplified": "ndee-REE",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda ndiri",
+          "english": "I want I am",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "ndiri.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_tiri_1751852223801",
+      "shona": "tiri",
+      "english": "we are",
+      "category": "pronouns",
+      "tones": "LHL",
+      "ipa": "/tiri/",
+      "simplified": "tee-REE",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda tiri",
+          "english": "I want we are",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "tiri.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_uri_1751852223801",
+      "shona": "uri",
+      "english": "you are (singular)",
+      "category": "pronouns",
+      "tones": "LH",
+      "ipa": "/uri/",
+      "simplified": "OO-ree",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda uri",
+          "english": "I want you are (singular)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "uri.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_vari_1751852223801",
+      "shona": "vari",
+      "english": "they are",
+      "category": "pronouns",
+      "tones": "LHL",
+      "ipa": "/vari/",
+      "simplified": "vah-REE",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda vari",
+          "english": "I want they are",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "vari.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    }
+  ]
+}

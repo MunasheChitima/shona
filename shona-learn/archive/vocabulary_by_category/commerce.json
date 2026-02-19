@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "category": "commerce",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.812Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_dhora_1751852223800",
+      "shona": "dhora",
+      "english": "dollar",
+      "category": "commerce",
+      "tones": "HL",
+      "ipa": "/dhora/",
+      "simplified": "dho-ra",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Modern currency",
+      "examples": [
+        {
+          "shona": "Ndinoda dhora",
+          "english": "I want dollar"
+        },
+        {
+          "shona": "dhora yakanaka",
+          "english": "dollar is good"
+        },
+        {
+          "shona": "Ndinoda dhora",
+          "english": "I want dollar"
+        },
+        {
+          "shona": "dhora yakanaka",
+          "english": "dollar is good"
+        }
+      ],
+      "audioFile": "dhora.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kutengeserana_1751852223800",
+      "shona": "kutengeserana",
+      "english": "to trade/do business",
+      "category": "commerce",
+      "tones": "HLHL",
+      "ipa": "/kutengeserana/",
+      "simplified": "ku-te-nge-se-ra-na",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Commercial activity",
+      "examples": [
+        {
+          "shona": "Ndinoda kutengeserana",
+          "english": "I want to trade/do business"
+        },
+        {
+          "shona": "kutengeserana yakanaka",
+          "english": "to trade/do business is good"
+        },
+        {
+          "shona": "Ndinoda kutengeserana",
+          "english": "I want to trade/do business"
+        },
+        {
+          "shona": "kutengeserana yakanaka",
+          "english": "to trade/do business is good"
+        }
+      ],
+      "audioFile": "kutengeserana.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mari_1751852223800",
+      "shona": "mari",
+      "english": "money",
+      "category": "commerce",
+      "tones": "HL",
+      "ipa": "/mari/",
+      "simplified": "ma-ri",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Medium of exchange",
+      "examples": [
+        {
+          "shona": "Ndinoda mari",
+          "english": "I want money"
+        },
+        {
+          "shona": "mari yakanaka",
+          "english": "money is good"
+        },
+        {
+          "shona": "Ndinoda mari",
+          "english": "I want money"
+        },
+        {
+          "shona": "mari yakanaka",
+          "english": "money is good"
+        }
+      ],
+      "audioFile": "mari.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mitengo_1751852223800",
+      "shona": "mitengo",
+      "english": "prices",
+      "category": "commerce",
+      "tones": "HHL",
+      "ipa": "/mitengo/",
+      "simplified": "mi-te-ngo",
+      "source": "dictionary_phrasebook",
+      "difficulty": 2,
+      "cultural": "Market negotiation",
+      "examples": [
+        {
+          "shona": "Ndinoda mitengo",
+          "english": "I want prices"
+        },
+        {
+          "shona": "mitengo yakanaka",
+          "english": "prices is good"
+        },
+        {
+          "shona": "Ndinoda mitengo",
+          "english": "I want prices"
+        },
+        {
+          "shona": "mitengo yakanaka",
+          "english": "prices is good"
+        }
+      ],
+      "audioFile": "mitengo.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "dictionary_phrasebook",
+        "dictionary_phrasebook"
+      ]
+    }
+  ]
+}

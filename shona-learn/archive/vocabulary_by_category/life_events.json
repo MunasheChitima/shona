@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "category": "life_events",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.811Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_kuberekerwa_1751852223800",
+      "shona": "kuberekerwa",
+      "english": "to be born",
+      "category": "life_events",
+      "tones": "HLHL",
+      "ipa": "/kuberekerwa/",
+      "simplified": "ku-be-re-ke-rwa",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Life beginning ceremony",
+      "examples": [
+        {
+          "shona": "Ndinoda kuberekerwa",
+          "english": "I want to be born"
+        },
+        {
+          "shona": "kuberekerwa yakanaka",
+          "english": "to be born is good"
+        },
+        {
+          "shona": "Ndinoda kuberekerwa",
+          "english": "I want to be born"
+        },
+        {
+          "shona": "kuberekerwa yakanaka",
+          "english": "to be born is good"
+        }
+      ],
+      "audioFile": "kuberekerwa.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kufa_1751852223800",
+      "shona": "kufa",
+      "english": "to die",
+      "category": "life_events",
+      "tones": "HL",
+      "ipa": "/kufa/",
+      "simplified": "ku-fa",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Life transition to ancestorhood",
+      "examples": [
+        {
+          "shona": "Ndinoda kufa",
+          "english": "I want to die"
+        },
+        {
+          "shona": "kufa yakanaka",
+          "english": "to die is good"
+        },
+        {
+          "shona": "Ndinoda kufa",
+          "english": "I want to die"
+        },
+        {
+          "shona": "kufa yakanaka",
+          "english": "to die is good"
+        }
+      ],
+      "audioFile": "kufa.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuroora_1751852223800",
+      "shona": "kuroora",
+      "english": "to marry (for man)",
+      "category": "life_events",
+      "tones": "HHL",
+      "ipa": "/kuroora/",
+      "simplified": "ku-ro-o-ra",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Male marriage action",
+      "examples": [
+        {
+          "shona": "Ndinoda kuroora",
+          "english": "I want to marry (for man)"
+        },
+        {
+          "shona": "kuroora yakanaka",
+          "english": "to marry (for man) is good"
+        },
+        {
+          "shona": "Ndinoda kuroora",
+          "english": "I want to marry (for man)"
+        },
+        {
+          "shona": "kuroora yakanaka",
+          "english": "to marry (for man) is good"
+        }
+      ],
+      "audioFile": "kuroora.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuroorwa_1751852223800",
+      "shona": "kuroorwa",
+      "english": "to marry (for woman)",
+      "category": "life_events",
+      "tones": "HHL",
+      "ipa": "/kuroorwa/",
+      "simplified": "ku-ro-o-rwa",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Female marriage experience",
+      "examples": [
+        {
+          "shona": "Ndinoda kuroorwa",
+          "english": "I want to marry (for woman)"
+        },
+        {
+          "shona": "kuroorwa yakanaka",
+          "english": "to marry (for woman) is good"
+        },
+        {
+          "shona": "Ndinoda kuroorwa",
+          "english": "I want to marry (for woman)"
+        },
+        {
+          "shona": "kuroorwa yakanaka",
+          "english": "to marry (for woman) is good"
+        }
+      ],
+      "audioFile": "kuroorwa.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    }
+  ]
+}

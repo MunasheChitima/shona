@@ -1,0 +1,386 @@
+{
+  "metadata": {
+    "category": "food",
+    "totalWords": 9,
+    "created": "2025-07-07T01:37:03.812Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_master_comprehensive.json_nyama_1751852223801",
+      "shona": "nyama",
+      "english": "meat",
+      "category": "food",
+      "tones": "LHL",
+      "ipa": "/ɲama/",
+      "simplified": "NYAH-mah",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda nyama",
+          "english": "I want meat",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "nyama.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_merged.json_sadza_1751852223800",
+      "shona": "sadza",
+      "english": "staple food/porridge",
+      "category": "food",
+      "tones": "HL",
+      "ipa": "/sadza/",
+      "simplified": "sa-dza",
+      "source": "ethnography",
+      "difficulty": 2,
+      "cultural": "Traditional staple food",
+      "examples": [
+        {
+          "shona": "Ndine sadza",
+          "english": "I have staple food/porridge"
+        },
+        {
+          "shona": "sadza yakanaka",
+          "english": "staple food/porridge is good"
+        },
+        {
+          "shona": "Ndinoda sadza",
+          "english": "I want staple food/porridge"
+        },
+        {
+          "shona": "Ndine sadza",
+          "english": "I have staple food/porridge"
+        },
+        {
+          "shona": "sadza yakanaka",
+          "english": "staple food/porridge is good"
+        },
+        {
+          "shona": "Ndinoda sadza",
+          "english": "I want staple food/porridge"
+        },
+        {
+          "shona": "Ndinoda sadza",
+          "english": "I want maize porridge",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "sadza.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography",
+        "cultural_practices"
+      ]
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_muriwo_1751852223801",
+      "shona": "muriwo",
+      "english": "vegetables",
+      "category": "food",
+      "tones": "LHLHL",
+      "ipa": "/muriwo/",
+      "simplified": "moo-REE-woh",
+      "source": "cultural_practices",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda muriwo",
+          "english": "I want vegetables",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "muriwo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_merged.json_chikafu_1751852223800",
+      "shona": "chikafu",
+      "english": "food",
+      "category": "food",
+      "tones": "HHL",
+      "ipa": "/chikafu/",
+      "simplified": "chi-ka-fu",
+      "source": "ethnography",
+      "difficulty": 8,
+      "cultural": "Nourishment",
+      "examples": [
+        {
+          "shona": "Ndine chikafu",
+          "english": "I have food"
+        },
+        {
+          "shona": "chikafu yakanaka",
+          "english": "food is good"
+        },
+        {
+          "shona": "Ndinoda chikafu",
+          "english": "I want food"
+        },
+        {
+          "shona": "Ndine chikafu",
+          "english": "I have food"
+        },
+        {
+          "shona": "chikafu yakanaka",
+          "english": "food is good"
+        },
+        {
+          "shona": "Ndinoda chikafu",
+          "english": "I want food"
+        }
+      ],
+      "audioFile": "chikafu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_dovi_1751852223800",
+      "shona": "dovi",
+      "english": "peanut butter stew",
+      "category": "food",
+      "tones": "HL",
+      "ipa": "/dovi/",
+      "simplified": "do-vi",
+      "source": "ethnography",
+      "difficulty": 8,
+      "cultural": "Traditional dish",
+      "examples": [
+        {
+          "shona": "Ndine dovi",
+          "english": "I have peanut butter stew"
+        },
+        {
+          "shona": "dovi yakanaka",
+          "english": "peanut butter stew is good"
+        },
+        {
+          "shona": "Ndinoda dovi",
+          "english": "I want peanut butter stew"
+        },
+        {
+          "shona": "Ndine dovi",
+          "english": "I have peanut butter stew"
+        },
+        {
+          "shona": "dovi yakanaka",
+          "english": "peanut butter stew is good"
+        },
+        {
+          "shona": "Ndinoda dovi",
+          "english": "I want peanut butter stew"
+        }
+      ],
+      "audioFile": "dovi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mazanje_1751852223800",
+      "shona": "mazanje",
+      "english": "masawu fruits",
+      "category": "food",
+      "tones": "HHL",
+      "ipa": "/mazanje/",
+      "simplified": "ma-za-nje",
+      "source": "ethnography",
+      "difficulty": 8,
+      "cultural": "Traditional fruits",
+      "examples": [
+        {
+          "shona": "Ndine mazanje",
+          "english": "I have masawu fruits"
+        },
+        {
+          "shona": "mazanje yakanaka",
+          "english": "masawu fruits is good"
+        },
+        {
+          "shona": "Ndinoda mazanje",
+          "english": "I want masawu fruits"
+        },
+        {
+          "shona": "Ndine mazanje",
+          "english": "I have masawu fruits"
+        },
+        {
+          "shona": "mazanje yakanaka",
+          "english": "masawu fruits is good"
+        },
+        {
+          "shona": "Ndinoda mazanje",
+          "english": "I want masawu fruits"
+        }
+      ],
+      "audioFile": "mazanje.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mhiripiri_1751852223800",
+      "shona": "mhiripiri",
+      "english": "chili pepper",
+      "category": "food",
+      "tones": "HLHL",
+      "ipa": "/mhiripiri/",
+      "simplified": "mhi-ri-pi-ri",
+      "source": "ethnography",
+      "difficulty": 8,
+      "cultural": "Traditional spicing",
+      "examples": [
+        {
+          "shona": "Ndine mhiripiri",
+          "english": "I have chili pepper"
+        },
+        {
+          "shona": "mhiripiri yakanaka",
+          "english": "chili pepper is good"
+        },
+        {
+          "shona": "Ndinoda mhiripiri",
+          "english": "I want chili pepper"
+        },
+        {
+          "shona": "Ndine mhiripiri",
+          "english": "I have chili pepper"
+        },
+        {
+          "shona": "mhiripiri yakanaka",
+          "english": "chili pepper is good"
+        },
+        {
+          "shona": "Ndinoda mhiripiri",
+          "english": "I want chili pepper"
+        }
+      ],
+      "audioFile": "mhiripiri.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mufushwa_1751852223800",
+      "shona": "mufushwa",
+      "english": "dried vegetables",
+      "category": "food",
+      "tones": "HHL",
+      "ipa": "/mufushwa/",
+      "simplified": "mu-fu-shwa",
+      "source": "ethnography",
+      "difficulty": 8,
+      "cultural": "Traditional preservation",
+      "examples": [
+        {
+          "shona": "Ndine mufushwa",
+          "english": "I have dried vegetables"
+        },
+        {
+          "shona": "mufushwa yakanaka",
+          "english": "dried vegetables is good"
+        },
+        {
+          "shona": "Ndinoda mufushwa",
+          "english": "I want dried vegetables"
+        },
+        {
+          "shona": "Ndine mufushwa",
+          "english": "I have dried vegetables"
+        },
+        {
+          "shona": "mufushwa yakanaka",
+          "english": "dried vegetables is good"
+        },
+        {
+          "shona": "Ndinoda mufushwa",
+          "english": "I want dried vegetables"
+        }
+      ],
+      "audioFile": "mufushwa.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mukaka_1751852223800",
+      "shona": "mukaka",
+      "english": "milk",
+      "category": "food",
+      "tones": "HHL",
+      "ipa": "/mukaka/",
+      "simplified": "mu-ka-ka",
+      "source": "ethnography",
+      "difficulty": 8,
+      "cultural": "Dairy product",
+      "examples": [
+        {
+          "shona": "Ndine mukaka",
+          "english": "I have milk"
+        },
+        {
+          "shona": "mukaka yakanaka",
+          "english": "milk is good"
+        },
+        {
+          "shona": "Ndinoda mukaka",
+          "english": "I want milk"
+        },
+        {
+          "shona": "Ndine mukaka",
+          "english": "I have milk"
+        },
+        {
+          "shona": "mukaka yakanaka",
+          "english": "milk is good"
+        },
+        {
+          "shona": "Ndinoda mukaka",
+          "english": "I want milk"
+        }
+      ],
+      "audioFile": "mukaka.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    }
+  ]
+}

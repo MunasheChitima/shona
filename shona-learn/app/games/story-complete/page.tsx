@@ -408,7 +408,7 @@ export default function StoryCompleteGame() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
-      <Navigation user={user} />
+      <Navigation />
       
       <div className="container mx-auto px-4 py-8">
         {/* Header */}

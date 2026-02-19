@@ -1,0 +1,539 @@
+{
+  "metadata": {
+    "category": "numbers",
+    "totalWords": 10,
+    "created": "2025-07-07T01:37:03.811Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_china_1751852223800",
+      "shona": "china",
+      "english": "four",
+      "category": "numbers",
+      "tones": "HL",
+      "ipa": "/china/",
+      "simplified": "chi-na",
+      "source": "syllabus",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine china",
+          "english": "I have four"
+        },
+        {
+          "shona": "china yakanaka",
+          "english": "four is good"
+        },
+        {
+          "shona": "Ndinoda china",
+          "english": "I want four"
+        },
+        {
+          "shona": "Ndine china",
+          "english": "I have four"
+        },
+        {
+          "shona": "china yakanaka",
+          "english": "four is good"
+        },
+        {
+          "shona": "Ndinoda china",
+          "english": "I want four"
+        },
+        {
+          "shona": "Ndinoda china",
+          "english": "I want four",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "china.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_piri_1751852223800",
+      "shona": "piri",
+      "english": "two",
+      "category": "numbers",
+      "tones": "HL",
+      "ipa": "/piri/",
+      "simplified": "pi-ri",
+      "source": "syllabus",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine piri",
+          "english": "I have two"
+        },
+        {
+          "shona": "piri yakanaka",
+          "english": "two is good"
+        },
+        {
+          "shona": "Ndinoda piri",
+          "english": "I want two"
+        },
+        {
+          "shona": "Ndine piri",
+          "english": "I have two"
+        },
+        {
+          "shona": "piri yakanaka",
+          "english": "two is good"
+        },
+        {
+          "shona": "Ndinoda piri",
+          "english": "I want two"
+        },
+        {
+          "shona": "Ndinoda piri",
+          "english": "I want two",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "piri.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_poshi_1751852223800",
+      "shona": "poshi",
+      "english": "one",
+      "category": "numbers",
+      "tones": "HL",
+      "ipa": "/poshi/",
+      "simplified": "po-shi",
+      "source": "syllabus",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine poshi",
+          "english": "I have one"
+        },
+        {
+          "shona": "poshi yakanaka",
+          "english": "one is good"
+        },
+        {
+          "shona": "Ndinoda poshi",
+          "english": "I want one"
+        },
+        {
+          "shona": "Ndine poshi",
+          "english": "I have one"
+        },
+        {
+          "shona": "poshi yakanaka",
+          "english": "one is good"
+        },
+        {
+          "shona": "Ndinoda poshi",
+          "english": "I want one"
+        },
+        {
+          "shona": "Ndinoda poshi",
+          "english": "I want one",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "poshi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_shanu_1751852223800",
+      "shona": "shanu",
+      "english": "five",
+      "category": "numbers",
+      "tones": "HL",
+      "ipa": "/shanu/",
+      "simplified": "sha-nu",
+      "source": "syllabus",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine shanu",
+          "english": "I have five"
+        },
+        {
+          "shona": "shanu yakanaka",
+          "english": "five is good"
+        },
+        {
+          "shona": "Ndinoda shanu",
+          "english": "I want five"
+        },
+        {
+          "shona": "Ndine shanu",
+          "english": "I have five"
+        },
+        {
+          "shona": "shanu yakanaka",
+          "english": "five is good"
+        },
+        {
+          "shona": "Ndinoda shanu",
+          "english": "I want five"
+        },
+        {
+          "shona": "Ndinoda shanu",
+          "english": "I want five",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "shanu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tatu_1751852223800",
+      "shona": "tatu",
+      "english": "three",
+      "category": "numbers",
+      "tones": "HL",
+      "ipa": "/tatu/",
+      "simplified": "ta-tu",
+      "source": "syllabus",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine tatu",
+          "english": "I have three"
+        },
+        {
+          "shona": "tatu yakanaka",
+          "english": "three is good"
+        },
+        {
+          "shona": "Ndinoda tatu",
+          "english": "I want three"
+        },
+        {
+          "shona": "Ndine tatu",
+          "english": "I have three"
+        },
+        {
+          "shona": "tatu yakanaka",
+          "english": "three is good"
+        },
+        {
+          "shona": "Ndinoda tatu",
+          "english": "I want three"
+        },
+        {
+          "shona": "Ndinoda tatu",
+          "english": "I want three",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "tatu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_gumi_1751852223800",
+      "shona": "gumi",
+      "english": "ten",
+      "category": "numbers",
+      "tones": "HL",
+      "ipa": "/gumi/",
+      "simplified": "gu-mi",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine gumi",
+          "english": "I have ten"
+        },
+        {
+          "shona": "gumi yakanaka",
+          "english": "ten is good"
+        },
+        {
+          "shona": "Ndinoda gumi",
+          "english": "I want ten"
+        },
+        {
+          "shona": "Ndine gumi",
+          "english": "I have ten"
+        },
+        {
+          "shona": "gumi yakanaka",
+          "english": "ten is good"
+        },
+        {
+          "shona": "Ndinoda gumi",
+          "english": "I want ten"
+        },
+        {
+          "shona": "Ndinoda gumi",
+          "english": "I want ten",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "gumi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_nomwe_1751852223800",
+      "shona": "nomwe",
+      "english": "seven",
+      "category": "numbers",
+      "tones": "HL",
+      "ipa": "/nomwe/",
+      "simplified": "no-mwe",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine nomwe",
+          "english": "I have seven"
+        },
+        {
+          "shona": "nomwe yakanaka",
+          "english": "seven is good"
+        },
+        {
+          "shona": "Ndinoda nomwe",
+          "english": "I want seven"
+        },
+        {
+          "shona": "Ndine nomwe",
+          "english": "I have seven"
+        },
+        {
+          "shona": "nomwe yakanaka",
+          "english": "seven is good"
+        },
+        {
+          "shona": "Ndinoda nomwe",
+          "english": "I want seven"
+        },
+        {
+          "shona": "Ndinoda nomwe",
+          "english": "I want seven",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "nomwe.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_pfumbamwe_1751852223800",
+      "shona": "pfumbamwe",
+      "english": "nine",
+      "category": "numbers",
+      "tones": "HHL",
+      "ipa": "/pfumbamwe/",
+      "simplified": "pfu-mba-mwe",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine pfumbamwe",
+          "english": "I have nine"
+        },
+        {
+          "shona": "pfumbamwe yakanaka",
+          "english": "nine is good"
+        },
+        {
+          "shona": "Ndinoda pfumbamwe",
+          "english": "I want nine"
+        },
+        {
+          "shona": "Ndine pfumbamwe",
+          "english": "I have nine"
+        },
+        {
+          "shona": "pfumbamwe yakanaka",
+          "english": "nine is good"
+        },
+        {
+          "shona": "Ndinoda pfumbamwe",
+          "english": "I want nine"
+        },
+        {
+          "shona": "Ndinoda pfumbamwe",
+          "english": "I want nine",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "pfumbamwe.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_sere_1751852223800",
+      "shona": "sere",
+      "english": "eight",
+      "category": "numbers",
+      "tones": "HL",
+      "ipa": "/sere/",
+      "simplified": "se-re",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine sere",
+          "english": "I have eight"
+        },
+        {
+          "shona": "sere yakanaka",
+          "english": "eight is good"
+        },
+        {
+          "shona": "Ndinoda sere",
+          "english": "I want eight"
+        },
+        {
+          "shona": "Ndine sere",
+          "english": "I have eight"
+        },
+        {
+          "shona": "sere yakanaka",
+          "english": "eight is good"
+        },
+        {
+          "shona": "Ndinoda sere",
+          "english": "I want eight"
+        },
+        {
+          "shona": "Ndinoda sere",
+          "english": "I want eight",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "sere.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tanhatu_1751852223800",
+      "shona": "tanhatu",
+      "english": "six",
+      "category": "numbers",
+      "tones": "HHL",
+      "ipa": "/tanhatu/",
+      "simplified": "ta-nha-tu",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine tanhatu",
+          "english": "I have six"
+        },
+        {
+          "shona": "tanhatu yakanaka",
+          "english": "six is good"
+        },
+        {
+          "shona": "Ndinoda tanhatu",
+          "english": "I want six"
+        },
+        {
+          "shona": "Ndine tanhatu",
+          "english": "I have six"
+        },
+        {
+          "shona": "tanhatu yakanaka",
+          "english": "six is good"
+        },
+        {
+          "shona": "Ndinoda tanhatu",
+          "english": "I want six"
+        },
+        {
+          "shona": "Ndinoda tanhatu",
+          "english": "I want six",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "tanhatu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus",
+        "fsi_basic"
+      ]
+    }
+  ]
+}

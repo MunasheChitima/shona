@@ -1,0 +1,424 @@
+{
+  "timestamp": "2025-07-07T07:14:55.228Z",
+  "testResults": [
+    {
+      "type": "word",
+      "text": "muti",
+      "status": "optimized",
+      "recommendations": {
+        "word": "muti",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": []
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "word",
+      "text": "zuva",
+      "status": "optimized",
+      "recommendations": {
+        "word": "zuva",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": []
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "word",
+      "text": "moyo",
+      "status": "optimized",
+      "recommendations": {
+        "word": "moyo",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": []
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "word",
+      "text": "amai",
+      "status": "optimized",
+      "recommendations": {
+        "word": "amai",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": []
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "word",
+      "text": "baba",
+      "status": "optimized",
+      "recommendations": {
+        "word": "baba",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": []
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "word",
+      "text": "svika",
+      "status": "optimized",
+      "recommendations": {
+        "word": "svika",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": [
+          {
+            "type": "whistled_sibilant",
+            "description": "Natural whistled sibilant pronunciation",
+            "recommendation": "Use natural flow without artificial pauses"
+          }
+        ]
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "word",
+      "text": "zvino",
+      "status": "optimized",
+      "recommendations": {
+        "word": "zvino",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": [
+          {
+            "type": "whistled_sibilant",
+            "description": "Natural whistled sibilant pronunciation",
+            "recommendation": "Use natural flow without artificial pauses"
+          }
+        ]
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "word",
+      "text": "mbira",
+      "status": "optimized",
+      "recommendations": {
+        "word": "mbira",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": [
+          {
+            "type": "prenasalized_consonant",
+            "description": "Natural prenasalized consonant flow",
+            "recommendation": "Maintain natural nasal-to-consonant transition"
+          }
+        ]
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "word",
+      "text": "bhazi",
+      "status": "optimized",
+      "recommendations": {
+        "word": "bhazi",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": [
+          {
+            "type": "breathy_consonant",
+            "description": "Natural breathy consonant pronunciation",
+            "recommendation": "Subtle breath emphasis, not exaggerated"
+          }
+        ]
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "word",
+      "text": "ndatenda",
+      "status": "optimized",
+      "recommendations": {
+        "word": "ndatenda",
+        "speed": "slow",
+        "emphasis": "natural",
+        "patterns": [
+          {
+            "type": "prenasalized_consonant",
+            "description": "Natural prenasalized consonant flow",
+            "recommendation": "Maintain natural nasal-to-consonant transition"
+          }
+        ]
+      },
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural"
+      }
+    },
+    {
+      "type": "sentence",
+      "text": "Mangwanani, ndatenda zvikuru",
+      "status": "optimized",
+      "wordCount": 3,
+      "recommendations": [
+        {
+          "word": "Mangwanani,",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": [
+            {
+              "type": "prenasalized_consonant",
+              "description": "Natural prenasalized consonant flow",
+              "recommendation": "Maintain natural nasal-to-consonant transition"
+            }
+          ]
+        },
+        {
+          "word": "ndatenda",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": [
+            {
+              "type": "prenasalized_consonant",
+              "description": "Natural prenasalized consonant flow",
+              "recommendation": "Maintain natural nasal-to-consonant transition"
+            }
+          ]
+        },
+        {
+          "word": "zvikuru",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": [
+            {
+              "type": "whistled_sibilant",
+              "description": "Natural whistled sibilant pronunciation",
+              "recommendation": "Use natural flow without artificial pauses"
+            }
+          ]
+        }
+      ],
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural",
+        "pauses": "minimal"
+      }
+    },
+    {
+      "type": "sentence",
+      "text": "Mvura inonaya",
+      "status": "optimized",
+      "wordCount": 2,
+      "recommendations": [
+        {
+          "word": "Mvura",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": []
+        },
+        {
+          "word": "inonaya",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": []
+        }
+      ],
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural",
+        "pauses": "minimal"
+      }
+    },
+    {
+      "type": "sentence",
+      "text": "Bhazi rinosvika pano",
+      "status": "optimized",
+      "wordCount": 3,
+      "recommendations": [
+        {
+          "word": "Bhazi",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": []
+        },
+        {
+          "word": "rinosvika",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": [
+            {
+              "type": "whistled_sibilant",
+              "description": "Natural whistled sibilant pronunciation",
+              "recommendation": "Use natural flow without artificial pauses"
+            }
+          ]
+        },
+        {
+          "word": "pano",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": []
+        }
+      ],
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural",
+        "pauses": "minimal"
+      }
+    },
+    {
+      "type": "sentence",
+      "text": "Zvino ndinofamba",
+      "status": "optimized",
+      "wordCount": 2,
+      "recommendations": [
+        {
+          "word": "Zvino",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": []
+        },
+        {
+          "word": "ndinofamba",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": [
+            {
+              "type": "prenasalized_consonant",
+              "description": "Natural prenasalized consonant flow",
+              "recommendation": "Maintain natural nasal-to-consonant transition"
+            }
+          ]
+        }
+      ],
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural",
+        "pauses": "minimal"
+      }
+    },
+    {
+      "type": "sentence",
+      "text": "Mhuno yangu inorwadza",
+      "status": "optimized",
+      "wordCount": 3,
+      "recommendations": [
+        {
+          "word": "Mhuno",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": []
+        },
+        {
+          "word": "yangu",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": [
+            {
+              "type": "prenasalized_consonant",
+              "description": "Natural prenasalized consonant flow",
+              "recommendation": "Maintain natural nasal-to-consonant transition"
+            }
+          ]
+        },
+        {
+          "word": "inorwadza",
+          "speed": "slow",
+          "emphasis": "natural",
+          "patterns": []
+        }
+      ],
+      "nativeSettings": {
+        "rate": "85%",
+        "emphasis": "moderate",
+        "flow": "natural",
+        "pauses": "minimal"
+      }
+    }
+  ],
+  "recommendations": {
+    "timestamp": "2025-07-07T07:14:55.227Z",
+    "nativeAnalysis": {
+      "totalFiles": 2,
+      "averageDuration": "609.97",
+      "speedDistribution": {
+        "slow": 2
+      },
+      "emphasisTypes": {
+        "prenasalized_consonant": 2
+      },
+      "timestamp": "2025-07-07T07:13:20.837Z"
+    },
+    "improvements": [
+      "Slower speech rate (85%) based on native speaker analysis",
+      "Natural flow without artificial pauses or breaks",
+      "Maintained word integrity for authentic pronunciation",
+      "Moderate emphasis level for natural speech",
+      "Enhanced voice settings for clarity and consistency",
+      "Special Shona sound handling based on native patterns"
+    ],
+    "voiceSettings": {
+      "stability": 0.75,
+      "similarity_boost": 0.85,
+      "style": 0.4,
+      "use_speaker_boost": true
+    },
+    "ssmlSettings": {
+      "rate": "85%",
+      "pitch": "0%",
+      "volume": "medium",
+      "emphasis": "moderate"
+    },
+    "textProcessing": {
+      "useNaturalFlow": true,
+      "avoidArtificialPauses": true,
+      "maintainWordIntegrity": true
+    }
+  },
+  "summary": {
+    "totalTests": 15,
+    "successRate": 100,
+    "wordsTested": 10,
+    "sentencesTested": 5
+  }
+}

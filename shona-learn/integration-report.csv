@@ -1,0 +1,205 @@
+Section,Type,Count
+Vocabulary,Processed,185
+Vocabulary,Skipped,0
+Vocabulary,Errors,0
+Lessons,Created,0
+Lessons,Skipped,5
+Lessons,Errors,0
+Exercises,Added,0
+Exercises,Errors,0
+
+Vocabulary Details
+Source,Shona,English,Category,Status
+advanced_conversational,ndafara zvikuru,I am very happy,emotions,Processed
+advanced_conversational,mufaro mukuru,great joy,emotions,Processed
+advanced_conversational,kufadzwa,to be pleased/delighted,emotions,Processed
+advanced_conversational,kushungurudzika,to be sad/troubled,emotions,Processed
+advanced_conversational,shungu,sorrow/grief,emotions,Processed
+advanced_conversational,kutsamwa,to be angry,emotions,Processed
+advanced_conversational,kugumbuka,to be frustrated/annoyed,emotions,Processed
+advanced_conversational,kutya,to fear/be afraid,emotions,Processed
+advanced_conversational,kuvhunduka,to be startled/shocked,emotions,Processed
+advanced_conversational,kushamisika,to be surprised,emotions,Processed
+advanced_conversational,ndinofunga kuti,I think that,opinions,Processed
+advanced_conversational,maonero angu ndeekuti,my view is that,opinions,Processed
+advanced_conversational,ndinotenda kuti,I believe that,opinions,Processed
+advanced_conversational,zviri pachena kuti,it's clear that,opinions,Processed
+advanced_conversational,ndinobvumirana newe,I agree with you,opinions,Processed
+advanced_conversational,zvirinani,that's right/correct,opinions,Processed
+advanced_conversational,handina kupikisa,I don't disagree,opinions,Processed
+advanced_conversational,handifungi kudaro,I don't think so,opinions,Processed
+advanced_conversational,ndinopikisa,I disagree,opinions,Processed
+advanced_conversational,handizvo zvandinoona,that's not how I see it,opinions,Processed
+advanced_conversational,ndapota,please,politeness,Processed
+advanced_conversational,dai maibvuma,if you would allow,politeness,Processed
+advanced_conversational,ndinokumbirawo,I kindly request,politeness,Processed
+advanced_conversational,ndinotenda zvikuru,thank you very much,politeness,Processed
+advanced_conversational,ndatenda hangu,I really appreciate it,politeness,Processed
+advanced_conversational,ndine urombo,I'm sorry,politeness,Processed
+advanced_conversational,ndikanganwa,I forgot/made a mistake,politeness,Processed
+advanced_conversational,musandipa mhosva,please don't blame me,politeness,Processed
+advanced_conversational,pakutanga,firstly/at first,discourse,Processed
+advanced_conversational,mushure mezvo,after that/then,discourse,Processed
+advanced_conversational,pakupedzisira,finally/lastly,discourse,Processed
+advanced_conversational,asi,but,discourse,Processed
+advanced_conversational,zvisinei nazvo,nevertheless/regardless,discourse,Processed
+advanced_conversational,kunyangwe zvakadaro,even so/however,discourse,Processed
+advanced_conversational,uyezve,also/and also,discourse,Processed
+advanced_conversational,pamusoro pezvo,furthermore/moreover,discourse,Processed
+advanced_conversational,ndiko kuti,that is to say,discourse,Processed
+advanced_conversational,nemamwe mazwi,in other words,discourse,Processed
+advanced_conversational,maiwe!,oh my!,interjections,Processed
+advanced_conversational,haiwa!,wow!/really!,interjections,Processed
+advanced_conversational,ehe!,oh!/I see!,interjections,Processed
+advanced_conversational,hongu,yes,interjections,Processed
+advanced_conversational,ehe,yeah/yep,interjections,Processed
+advanced_conversational,aaah!,ouch!,interjections,Processed
+professional_technical,bhizinesi,business,business,Processed
+professional_technical,musika,market,business,Processed
+professional_technical,mutengesi,seller/vendor,business,Processed
+professional_technical,mutengi,buyer/customer,business,Processed
+professional_technical,chibvumirano,agreement/contract,business,Processed
+professional_technical,mari,money,business,Processed
+professional_technical,bhangi,bank,business,Processed
+professional_technical,kuchinjisa,to exchange (money),business,Processed
+professional_technical,chikwereti,loan/credit,business,Processed
+professional_technical,mubereko,interest (financial),business,Processed
+professional_technical,mutero,tax,business,Processed
+professional_technical,muzvinabhizinesi,entrepreneur,business,Processed
+professional_technical,kuvamba bhizinesi,to start a business,business,Processed
+professional_technical,purofiti,profit,business,Processed
+professional_technical,kurasikirwa,loss (financial),business,Processed
+professional_technical,kompyuta,computer,technology,Processed
+professional_technical,muchina,machine,technology,Processed
+professional_technical,intaneti,internet,technology,Processed
+professional_technical,nhare,phone,technology,Processed
+professional_technical,nharembozha,mobile phone,technology,Processed
+professional_technical,purogiramu,program/software,technology,Processed
+professional_technical,app,app/application,technology,Processed
+professional_technical,dhata,data,technology,Processed
+professional_technical,webusaiti,website,technology,Processed
+professional_technical,social media,social media,technology,Processed
+professional_technical,kutumira meseji,to send a message,technology,Processed
+professional_technical,kutevera,to follow (social media),technology,Processed
+professional_technical,kupousta,to post,technology,Processed
+professional_technical,chiremba,doctor,medicine,Processed
+professional_technical,mukoti,nurse,medicine,Processed
+professional_technical,chiremba wemazino,dentist,medicine,Processed
+professional_technical,mushandi wehutano,health worker,medicine,Processed
+professional_technical,chipatara,hospital,medicine,Processed
+professional_technical,kiriniki,clinic,medicine,Processed
+professional_technical,femesi,pharmacy,medicine,Processed
+professional_technical,chirwere,disease/illness,medicine,Processed
+professional_technical,musana,fever,medicine,Processed
+professional_technical,kuvhuvhuta,to cough,medicine,Processed
+professional_technical,kurwara musoro,headache,medicine,Processed
+professional_technical,chirwere cheshuga,diabetes,medicine,Processed
+professional_technical,mushonga,medicine/drug,medicine,Processed
+professional_technical,jekiseni,injection,medicine,Processed
+professional_technical,kubaya jekiseni,to give an injection,medicine,Processed
+professional_technical,kurapwa,to be treated,medicine,Processed
+professional_technical,chikoro,school,education,Processed
+professional_technical,yunivhesiti,university,education,Processed
+professional_technical,koriji,college,education,Processed
+professional_technical,chikoro chepuraimari,primary school,education,Processed
+professional_technical,chikoro chesekondari,secondary school,education,Processed
+professional_technical,mudzidzisi,teacher,education,Processed
+professional_technical,mudzidzi,student,education,Processed
+professional_technical,purofesa,professor,education,Processed
+professional_technical,mukuru wechikoro,headmaster/principal,education,Processed
+professional_technical,chidzidzo,lesson/subject,education,Processed
+professional_technical,bvunzo,exam/test,education,Processed
+professional_technical,dhigirii,degree,education,Processed
+professional_technical,satefeketi,certificate,education,Processed
+professional_technical,kudzidza,to study/learn,education,Processed
+professional_technical,hurumende,government,politics,Processed
+professional_technical,mutungamiri,leader,politics,Processed
+professional_technical,mutungamiri wenyika,president,politics,Processed
+professional_technical,paramende,parliament,politics,Processed
+professional_technical,sarudzo,election,politics,Processed
+professional_technical,kuvhota,to vote,politics,Processed
+professional_technical,bato rezvematongerwo,political party,politics,Processed
+professional_technical,kodzero,rights,politics,Processed
+professional_technical,hupfumi,economy/wealth,economics,Processed
+professional_technical,kukura kwehupfumi,economic growth,economics,Processed
+professional_technical,mitengo,prices,economics,Processed
+professional_technical,kukwira kwemitengo,inflation,economics,Processed
+professional_technical,kutengeserana,trade/commerce,economics,Processed
+professional_technical,kunze kwenyika,export/foreign,economics,Processed
+professional_technical,kupinza,to import,economics,Processed
+contemporary_modern,mudhorobha,in the city/urban area,urban_life,Processed
+contemporary_modern,maflats,apartments/flats,urban_life,Processed
+contemporary_modern,kombi,minibus taxi,urban_life,Processed
+contemporary_modern,traffic,traffic,urban_life,Processed
+contemporary_modern,shopping mall,shopping mall,urban_life,Processed
+contemporary_modern,loadshedding,power cuts/loadshedding,urban_life,Processed
+contemporary_modern,mvura yekunwa,drinking water,urban_life,Processed
+contemporary_modern,mushikashika,hustle/informal work,urban_life,Processed
+contemporary_modern,WhatsApp,WhatsApp,social_media,Processed
+contemporary_modern,Facebook,Facebook,social_media,Processed
+contemporary_modern,Twitter,Twitter,social_media,Processed
+contemporary_modern,Instagram,Instagram,social_media,Processed
+contemporary_modern,kulaika,to like (social media),social_media,Processed
+contemporary_modern,kushera,to share,social_media,Processed
+contemporary_modern,kukomenda,to comment,social_media,Processed
+contemporary_modern,status,status update,social_media,Processed
+contemporary_modern,selfie,selfie,social_media,Processed
+contemporary_modern,data bundles,data bundles,technology,Processed
+contemporary_modern,airtime,airtime/phone credit,technology,Processed
+contemporary_modern,kukiya,to go offline/disconnect,technology,Processed
+contemporary_modern,influencer,social media influencer,social_media,Processed
+contemporary_modern,kudanana,to date/be in a relationship,relationships,Processed
+contemporary_modern,mudiwa,loved one/darling,relationships,Processed
+contemporary_modern,boyfriend,boyfriend,relationships,Processed
+contemporary_modern,girlfriend,girlfriend,relationships,Processed
+contemporary_modern,kuroorana,to marry/get married,relationships,Processed
+contemporary_modern,single parent,single parent,relationships,Processed
+contemporary_modern,kurambana,to divorce/separate,relationships,Processed
+contemporary_modern,step-parent,step-parent,relationships,Processed
+contemporary_modern,firimu,movie/film,entertainment,Processed
+contemporary_modern,series,TV series,entertainment,Processed
+contemporary_modern,Netflix,Netflix,entertainment,Processed
+contemporary_modern,DStv,DStv (satellite TV),entertainment,Processed
+contemporary_modern,zimdancehall,Zimbabwean dancehall music,entertainment,Processed
+contemporary_modern,sungura,sungura music,entertainment,Processed
+contemporary_modern,playlist,playlist,entertainment,Processed
+contemporary_modern,kudownloader,to download,entertainment,Processed
+contemporary_modern,bhora,football/soccer,entertainment,Processed
+contemporary_modern,cricket,cricket,entertainment,Processed
+contemporary_modern,gym,gym,entertainment,Processed
+contemporary_modern,fashion,fashion,fashion,Processed
+contemporary_modern,swag,style/swag,fashion,Processed
+contemporary_modern,designer,designer (clothes),fashion,Processed
+contemporary_modern,weave,hair weave/extensions,fashion,Processed
+contemporary_modern,make-up,makeup,fashion,Processed
+contemporary_modern,trending,trending,fashion,Processed
+contemporary_modern,vintage,vintage style,fashion,Processed
+contemporary_modern,Victoria Falls,Victoria Falls,travel,Processed
+contemporary_modern,safari,safari,travel,Processed
+contemporary_modern,hotel,hotel,travel,Processed
+contemporary_modern,lodge,lodge,travel,Processed
+contemporary_modern,kubhuka,to book/reserve,travel,Processed
+contemporary_modern,passport,passport,travel,Processed
+contemporary_modern,visa,visa,travel,Processed
+contemporary_modern,kushanduka kwemamiriro ekunze,climate change,environment,Processed
+contemporary_modern,kusanaya kwemvura,drought,environment,Processed
+contemporary_modern,kupisa kukuru,global warming,environment,Processed
+contemporary_modern,kuchengetedza zvakatipoteredza,environmental conservation,environment,Processed
+contemporary_modern,recycling,recycling,environment,Processed
+contemporary_modern,solar,solar power,environment,Processed
+contemporary_modern,kutema miti,deforestation,environment,Processed
+contemporary_modern,hutano hwepfungwa,mental health,health,Processed
+contemporary_modern,kushushikana,stress/anxiety,health,Processed
+contemporary_modern,kuora moyo,depression,health,Processed
+contemporary_modern,therapy,therapy,health,Processed
+contemporary_modern,yoga,yoga,health,Processed
+contemporary_modern,meditation,meditation,health,Processed
+contemporary_modern,self-care,self-care,health,Processed
+
+Lesson Details
+Title,OrderIndex,Category,Status
+Advanced Greetings and Respect,51,,Skipped
+Complex Family Relationships,52,,Skipped
+Professional Communication,53,,Skipped
+Cultural Ceremonies and Traditions,54,,Skipped
+Advanced Storytelling and Proverbs,55,,Skipped

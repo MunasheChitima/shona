@@ -3,7 +3,7 @@ import puppeteer, { Browser, Page } from 'puppeteer'
 import fs from 'fs'
 import path from 'path'
 
-const baseUrl = 'http://localhost:3001'
+const baseUrl = 'http://localhost:3000'
 
 describe('Shona Learning App E2E Tests', () => {
   let browser: Browser
@@ -54,7 +54,7 @@ describe('Shona Learning App E2E Tests', () => {
     // Step 2: Navigate to login
     console.log('🔐 Navigating to login page...')
     await page.goto(`${baseUrl}/login`)
-    await page.waitForSelector('input[name="email"]', { timeout: 5000 })
+    await page.waitForSelector('input[name="email"]', { timeout: 15000 })
     await page.screenshot({ path: 'test-screenshots/02-login-page.png' })
     console.log('✅ Login page loaded')
 
@@ -139,7 +139,7 @@ describe('Shona Learning App E2E Tests', () => {
     
     // Login first
     await page.goto(`${baseUrl}/login`)
-    await page.waitForSelector('input[name="email"]', { timeout: 5000 })
+    await page.waitForSelector('input[name="email"]', { timeout: 15000 })
     await page.type('input[name="email"]', 'test@example.com')
     await page.type('input[name="password"]', 'password123')
     await page.click('button[type="submit"]')

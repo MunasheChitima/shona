@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "category": "questions",
+    "totalWords": 5,
+    "created": "2025-07-07T01:37:03.811Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_master_comprehensive.json_chii_1751852223801",
+      "shona": "chii",
+      "english": "what",
+      "category": "questions",
+      "tones": "LH",
+      "ipa": "/tʃii/",
+      "simplified": "CHEE-ee",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda chii",
+          "english": "I want what",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "chii.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_kupi_1751852223801",
+      "shona": "kupi",
+      "english": "where",
+      "category": "questions",
+      "tones": "LHL",
+      "ipa": "/kupi/",
+      "simplified": "KOO-pee",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda kupi",
+          "english": "I want where",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "kupi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_sei_1751852223801",
+      "shona": "sei",
+      "english": "how",
+      "category": "questions",
+      "tones": "LH",
+      "ipa": "/sei/",
+      "simplified": "SEH-ee",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda sei",
+          "english": "I want how",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "sei.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_ndiani_1751852223801",
+      "shona": "ndiani",
+      "english": "who",
+      "category": "questions",
+      "tones": "LHL",
+      "ipa": "/ⁿdiani/",
+      "simplified": "ndee-AH-nee",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda ndiani",
+          "english": "I want who",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "ndiani.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    },
+    {
+      "id": "content/vocabulary_master_comprehensive.json_rinhi_1751852223801",
+      "shona": "rinhi",
+      "english": "when",
+      "category": "questions",
+      "tones": "LHL",
+      "ipa": "/rinhi/",
+      "simplified": "REE-nhee",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndinoda rinhi",
+          "english": "I want when",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ],
+      "audioFile": "rinhi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard"
+    }
+  ]
+}

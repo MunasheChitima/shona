@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Fluent & Conversational Level Lesson Plans (Lessons 51-100+)
 // These lessons build upon foundation, intermediate, and advanced levels for true fluency
 
@@ -1106,3 +1107,198 @@ export const fluentLessonsStats = {
   culturalLessons: fluentConversationalLessons.filter(l => l.category === "Cultural").length,
   totalExercises: fluentConversationalLessons.reduce((sum, lesson) => sum + lesson.exercises.length, 0)
 }
+=======
+export const allFluentConversationalLessons = [
+  {
+    id: "lesson_051",
+    title: "Advanced Greetings and Respect",
+    description: "Master complex greeting protocols and respect expressions for different social contexts.",
+    category: "advanced_conversation",
+    xpReward: 25,
+    learningObjectives: [
+      "Master formal and informal greeting protocols",
+      "Understand respect hierarchies in Shona culture",
+      "Practice context-appropriate greetings",
+      "Learn honorific expressions"
+    ],
+    discoveryElements: [
+      "Explore how greetings change with age and status",
+      "Discover regional greeting variations",
+      "Learn about greeting timing and cultural significance"
+    ],
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "What is the most respectful way to greet an elder in Shona?",
+        correctAnswer: "Mangwanani, sekuru/ambuya",
+        options: [
+          "Mangwanani, sekuru/ambuya",
+          "Hi there",
+          "Good morning",
+          "Hello"
+        ],
+        points: 15,
+        intrinsicFeedback: {
+          success: "Excellent! You understand the importance of respect in Shona culture.",
+          improvement: "Remember that respect is shown through proper titles and formal language."
+        },
+        discoveryHint: "Consider the relationship between speaker and listener"
+      },
+      {
+        type: "translation",
+        question: "Translate: 'I greet you with respect'",
+        correctAnswer: "Ndinokukwazisai neruremekedzo",
+        points: 20,
+        intrinsicFeedback: {
+          success: "Perfect! You've mastered the formal greeting structure.",
+          improvement: "Focus on the formal verb ending '-ai' and respect vocabulary."
+        }
+      }
+    ]
+  },
+  {
+    id: "lesson_052",
+    title: "Complex Family Relationships",
+    description: "Navigate intricate family terminology and relationship dynamics in Shona culture.",
+    category: "family_advanced",
+    xpReward: 25,
+    learningObjectives: [
+      "Master extended family terminology",
+      "Understand kinship obligations",
+      "Practice family conversation patterns",
+      "Learn cultural family values"
+    ],
+    discoveryElements: [
+      "Explore how family roles influence language use",
+      "Discover traditional family structures",
+      "Learn about family decision-making processes"
+    ],
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "What does 'mukoma' specifically refer to?",
+        correctAnswer: "Older brother or older male cousin",
+        options: [
+          "Older brother or older male cousin",
+          "Any male relative",
+          "Younger brother",
+          "Father"
+        ],
+        points: 15,
+        intrinsicFeedback: {
+          success: "Excellent! You understand the specific meaning of kinship terms.",
+          improvement: "Remember that Shona kinship terms are more specific than English equivalents."
+        }
+      }
+    ]
+  },
+  {
+    id: "lesson_053",
+    title: "Professional Communication",
+    description: "Master business and professional vocabulary for workplace and formal settings.",
+    category: "professional",
+    xpReward: 30,
+    learningObjectives: [
+      "Learn professional terminology",
+      "Master formal business language",
+      "Practice workplace conversations",
+      "Understand professional etiquette"
+    ],
+    discoveryElements: [
+      "Explore how formality changes in professional settings",
+      "Discover traditional business practices",
+      "Learn about modern workplace integration"
+    ],
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "How would you formally request a meeting in Shona?",
+        correctAnswer: "Ndinoda kusangana nemi",
+        options: [
+          "Ndinoda kusangana nemi",
+          "Let's meet",
+          "I want to see you",
+          "Can we talk?"
+        ],
+        points: 20,
+        intrinsicFeedback: {
+          success: "Perfect! You understand formal professional language.",
+          improvement: "Remember to use formal pronouns and respectful language in professional contexts."
+        }
+      }
+    ]
+  },
+  {
+    id: "lesson_054",
+    title: "Cultural Ceremonies and Traditions",
+    description: "Master vocabulary and expressions for traditional ceremonies and cultural practices.",
+    category: "cultural_traditions",
+    xpReward: 30,
+    learningObjectives: [
+      "Learn ceremony-specific vocabulary",
+      "Understand cultural protocols",
+      "Practice ceremonial language",
+      "Master traditional expressions"
+    ],
+    discoveryElements: [
+      "Explore the significance of different ceremonies",
+      "Discover regional variations in traditions",
+      "Learn about ceremony preparation and participation"
+    ],
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "What is the purpose of 'kurova guva'?",
+        correctAnswer: "Memorial ceremony for ancestors",
+        options: [
+          "Memorial ceremony for ancestors",
+          "Wedding ceremony",
+          "Birth celebration",
+          "Harvest festival"
+        ],
+        points: 20,
+        intrinsicFeedback: {
+          success: "Excellent! You understand the cultural significance of ancestral ceremonies.",
+          improvement: "Remember that ancestral ceremonies are central to Shona spiritual beliefs."
+        }
+      }
+    ]
+  },
+  {
+    id: "lesson_055",
+    title: "Advanced Storytelling and Proverbs",
+    description: "Master the art of storytelling and proverbial wisdom in Shona culture.",
+    category: "storytelling",
+    xpReward: 35,
+    learningObjectives: [
+      "Learn storytelling techniques",
+      "Master proverbial expressions",
+      "Practice narrative structures",
+      "Understand cultural wisdom"
+    ],
+    discoveryElements: [
+      "Explore traditional storytelling methods",
+      "Discover the meaning behind common proverbs",
+      "Learn about story-telling contexts and audiences"
+    ],
+    exercises: [
+      {
+        type: "multiple_choice",
+        question: "What does the proverb 'Chinokanganwa idemo, asi musha unoramba' mean?",
+        correctAnswer: "An axe may be forgotten, but the village remains",
+        options: [
+          "An axe may be forgotten, but the village remains",
+          "Tools are important",
+          "Villages are permanent",
+          "Memory is unreliable"
+        ],
+        points: 25,
+        intrinsicFeedback: {
+          success: "Wonderful! You understand the deep wisdom in Shona proverbs.",
+          improvement: "Proverbs often contain multiple layers of meaning about community and permanence."
+        }
+      }
+    ]
+  }
+];
+>>>>>>> 9a96326 (Vercel-ready: Prisma Postgres, postinstall hook, engines, deployment docs)

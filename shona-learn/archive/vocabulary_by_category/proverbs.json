@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "category": "proverbs",
+    "totalWords": 4,
+    "created": "2025-07-07T01:37:03.813Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_chakafukidza_dzimba_matenga_1751852223800",
+      "shona": "chakafukidza dzimba matenga",
+      "english": "what covers houses is thatch",
+      "category": "proverbs",
+      "tones": "HLHLHLHL",
+      "ipa": "/chakafukidza dzimba matenga/",
+      "simplified": "cha-ka-fu-ki-dza- dzi-mba- ma-te-nga",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Everyone needs shelter/protection",
+      "examples": [
+        {
+          "shona": "Tsumo inoti: chakafukidza dzimba matenga",
+          "english": "The proverb says: what covers houses is thatch"
+        },
+        {
+          "shona": "chakafukidza dzimba matenga - iri tsumo ratinodzidzisa",
+          "english": "what covers houses is thatch - this proverb teaches us"
+        },
+        {
+          "shona": "Tsumo inoti: chakafukidza dzimba matenga",
+          "english": "The proverb says: what covers houses is thatch"
+        },
+        {
+          "shona": "chakafukidza dzimba matenga - iri tsumo ratinodzidzisa",
+          "english": "what covers houses is thatch - this proverb teaches us"
+        }
+      ],
+      "audioFile": "chakafukidza_dzimba_matenga.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kudzidza_hakupi_shame_1751852223800",
+      "shona": "kudzidza hakupi shame",
+      "english": "learning brings no shame",
+      "category": "proverbs",
+      "tones": "HLHLHL",
+      "ipa": "/kudzidza hakupi shame/",
+      "simplified": "ku-dzi-dza- ha-ku-pi- sha-me",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Education is always valuable",
+      "examples": [
+        {
+          "shona": "Tsumo inoti: kudzidza hakupi shame",
+          "english": "The proverb says: learning brings no shame"
+        },
+        {
+          "shona": "kudzidza hakupi shame - iri tsumo ratinodzidzisa",
+          "english": "learning brings no shame - this proverb teaches us"
+        },
+        {
+          "shona": "Tsumo inoti: kudzidza hakupi shame",
+          "english": "The proverb says: learning brings no shame"
+        },
+        {
+          "shona": "kudzidza hakupi shame - iri tsumo ratinodzidzisa",
+          "english": "learning brings no shame - this proverb teaches us"
+        }
+      ],
+      "audioFile": "kudzidza_hakupi_shame.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mwana_wamambo_muranda_1751852223800",
+      "shona": "mwana wamambo muranda",
+      "english": "a king's child is a servant",
+      "category": "proverbs",
+      "tones": "HLHLHL",
+      "ipa": "/mwana wamambo muranda/",
+      "simplified": "mwa-na- wa-ma-mbo- mu-ra-nda",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Everyone must learn humility",
+      "examples": [
+        {
+          "shona": "Tsumo inoti: mwana wamambo muranda",
+          "english": "The proverb says: a king's child is a servant"
+        },
+        {
+          "shona": "mwana wamambo muranda - iri tsumo ratinodzidzisa",
+          "english": "a king's child is a servant - this proverb teaches us"
+        },
+        {
+          "shona": "Tsumo inoti: mwana wamambo muranda",
+          "english": "The proverb says: a king's child is a servant"
+        },
+        {
+          "shona": "mwana wamambo muranda - iri tsumo ratinodzidzisa",
+          "english": "a king's child is a servant - this proverb teaches us"
+        }
+      ],
+      "audioFile": "mwana_wamambo_muranda.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_ukama_hunei_mukombe_1751852223800",
+      "shona": "ukama hunei mukombe",
+      "english": "kinship knows no boundaries",
+      "category": "proverbs",
+      "tones": "HLHLHL",
+      "ipa": "/ukama hunei mukombe/",
+      "simplified": "u-ka-ma- hu-ne-i- mu-ko-mbe",
+      "source": "traditional_wisdom",
+      "difficulty": 3,
+      "cultural": "Family bonds transcend distance",
+      "examples": [
+        {
+          "shona": "Tsumo inoti: ukama hunei mukombe",
+          "english": "The proverb says: kinship knows no boundaries"
+        },
+        {
+          "shona": "ukama hunei mukombe - iri tsumo ratinodzidzisa",
+          "english": "kinship knows no boundaries - this proverb teaches us"
+        },
+        {
+          "shona": "Tsumo inoti: ukama hunei mukombe",
+          "english": "The proverb says: kinship knows no boundaries"
+        },
+        {
+          "shona": "ukama hunei mukombe - iri tsumo ratinodzidzisa",
+          "english": "kinship knows no boundaries - this proverb teaches us"
+        }
+      ],
+      "audioFile": "ukama_hunei_mukombe.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "traditional_wisdom",
+        "traditional_wisdom"
+      ]
+    }
+  ]
+}

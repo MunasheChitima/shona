@@ -1,0 +1,3 @@
+// Move all runtime state and utility functions here from route.ts
+// Export: clients, sendMessage, ContentUpdatePayload, WebSocketMessage, initializeWebSocketServer, etc.
+// ... (copy relevant code from route.ts) ... 

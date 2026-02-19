@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "total": 8,
+    "passed": 8,
+    "failed": 0,
+    "successRate": "100.00"
+  },
+  "tests": [
+    {
+      "name": "User Registration",
+      "status": "PASSED"
+    },
+    {
+      "name": "User Login",
+      "status": "PASSED"
+    },
+    {
+      "name": "Lessons Endpoint",
+      "status": "PASSED"
+    },
+    {
+      "name": "Vocabulary Endpoint",
+      "status": "PASSED"
+    },
+    {
+      "name": "Progress Endpoint",
+      "status": "PASSED"
+    },
+    {
+      "name": "Exercises Endpoint",
+      "status": "PASSED"
+    },
+    {
+      "name": "Authentication Errors",
+      "status": "PASSED"
+    },
+    {
+      "name": "Error Handling",
+      "status": "PASSED"
+    }
+  ],
+  "errors": [],
+  "timestamp": "2025-08-08T01:48:27.525Z"
+}

@@ -1,0 +1,902 @@
+{
+  "metadata": {
+    "category": "community",
+    "totalWords": 20,
+    "created": "2025-07-07T01:37:03.811Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_kubata_mapoka_1751852223800",
+      "shona": "kubata mapoka",
+      "english": "to attend meetings",
+      "category": "community",
+      "tones": "HLHHL",
+      "ipa": "/kubata mapoka/",
+      "simplified": "ku-ba-ta- ma-po-ka",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Community participation",
+      "examples": [
+        {
+          "shona": "Ndinoda kubata mapoka",
+          "english": "I want to attend meetings"
+        },
+        {
+          "shona": "kubata mapoka yakanaka",
+          "english": "to attend meetings is good"
+        },
+        {
+          "shona": "Ndinoda kubata mapoka",
+          "english": "I want to attend meetings"
+        },
+        {
+          "shona": "kubata mapoka yakanaka",
+          "english": "to attend meetings is good"
+        }
+      ],
+      "audioFile": "kubata_mapoka.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_husahwira_1751852223800",
+      "shona": "husahwira",
+      "english": "friendship",
+      "category": "community",
+      "tones": "HHL",
+      "ipa": "/husahwira/",
+      "simplified": "hu-sa-hwi-ra",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Close personal bond",
+      "examples": [
+        {
+          "shona": "Ndinoda husahwira",
+          "english": "I want friendship"
+        },
+        {
+          "shona": "husahwira yakanaka",
+          "english": "friendship is good"
+        },
+        {
+          "shona": "Ndinoda husahwira",
+          "english": "I want friendship"
+        },
+        {
+          "shona": "husahwira yakanaka",
+          "english": "friendship is good"
+        }
+      ],
+      "audioFile": "husahwira.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kubatsirana_1751852223800",
+      "shona": "kubatsirana",
+      "english": "to help each other",
+      "category": "community",
+      "tones": "HLHL",
+      "ipa": "/kubatsirana/",
+      "simplified": "ku-ba-tsi-ra-na",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Mutual assistance",
+      "examples": [
+        {
+          "shona": "Ndinoda kubatsirana",
+          "english": "I want to help each other"
+        },
+        {
+          "shona": "kubatsirana yakanaka",
+          "english": "to help each other is good"
+        },
+        {
+          "shona": "Ndinoda kubatsirana",
+          "english": "I want to help each other"
+        },
+        {
+          "shona": "kubatsirana yakanaka",
+          "english": "to help each other is good"
+        }
+      ],
+      "audioFile": "kubatsirana.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kugovanisa_1751852223800",
+      "shona": "kugovanisa",
+      "english": "to share",
+      "category": "community",
+      "tones": "HLHL",
+      "ipa": "/kugovanisa/",
+      "simplified": "ku-go-va-ni-sa",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Community sharing ethic",
+      "examples": [
+        {
+          "shona": "Ndinoda kugovanisa",
+          "english": "I want to share"
+        },
+        {
+          "shona": "kugovanisa yakanaka",
+          "english": "to share is good"
+        },
+        {
+          "shona": "Ndinoda kugovanisa",
+          "english": "I want to share"
+        },
+        {
+          "shona": "kugovanisa yakanaka",
+          "english": "to share is good"
+        }
+      ],
+      "audioFile": "kugovanisa.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_ukama_1751852223800",
+      "shona": "ukama",
+      "english": "relationship/kinship",
+      "category": "community",
+      "tones": "HHL",
+      "ipa": "/ukama/",
+      "simplified": "u-ka-ma",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Fundamental social bond",
+      "examples": [
+        {
+          "shona": "Ndinoda ukama",
+          "english": "I want relationship/kinship"
+        },
+        {
+          "shona": "ukama yakanaka",
+          "english": "relationship/kinship is good"
+        },
+        {
+          "shona": "Ndinoda ukama",
+          "english": "I want relationship/kinship"
+        },
+        {
+          "shona": "ukama yakanaka",
+          "english": "relationship/kinship is good"
+        },
+        {
+          "shona": "Ndine ukama",
+          "english": "I have relationship/kinship"
+        },
+        {
+          "shona": "ukama yakanaka",
+          "english": "relationship/kinship is good"
+        },
+        {
+          "shona": "Ndinoda ukama",
+          "english": "I want relationship/kinship"
+        }
+      ],
+      "audioFile": "ukama.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kutenda_1751852223800",
+      "shona": "kutenda",
+      "english": "to believe",
+      "category": "community",
+      "tones": "HHL",
+      "ipa": "/kutenda/",
+      "simplified": "ku-te-nda",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kutenda",
+          "english": "I have to believe"
+        },
+        {
+          "shona": "kutenda yakanaka",
+          "english": "to believe is good"
+        },
+        {
+          "shona": "Ndinoda kutenda",
+          "english": "I want to believe"
+        },
+        {
+          "shona": "Ndine kutenda",
+          "english": "I have to believe"
+        },
+        {
+          "shona": "kutenda yakanaka",
+          "english": "to believe is good"
+        },
+        {
+          "shona": "Ndinoda kutenda",
+          "english": "I want to believe"
+        }
+      ],
+      "audioFile": "kutenda.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuyamura_1751852223800",
+      "shona": "kuyamura",
+      "english": "to honor",
+      "category": "community",
+      "tones": "HLHL",
+      "ipa": "/kuyamura/",
+      "simplified": "ku-ya-mu-ra",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kuyamura",
+          "english": "I have to honor"
+        },
+        {
+          "shona": "kuyamura yakanaka",
+          "english": "to honor is good"
+        },
+        {
+          "shona": "Ndinoda kuyamura",
+          "english": "I want to honor"
+        },
+        {
+          "shona": "Ndine kuyamura",
+          "english": "I have to honor"
+        },
+        {
+          "shona": "kuyamura yakanaka",
+          "english": "to honor is good"
+        },
+        {
+          "shona": "Ndinoda kuyamura",
+          "english": "I want to honor"
+        }
+      ],
+      "audioFile": "kuyamura.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_rudo_1751852223800",
+      "shona": "rudo",
+      "english": "love",
+      "category": "community",
+      "tones": "HL",
+      "ipa": "/rudo/",
+      "simplified": "ru-do",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine rudo",
+          "english": "I have love"
+        },
+        {
+          "shona": "rudo yakanaka",
+          "english": "love is good"
+        },
+        {
+          "shona": "Ndinoda rudo",
+          "english": "I want love"
+        },
+        {
+          "shona": "Ndine rudo",
+          "english": "I have love"
+        },
+        {
+          "shona": "rudo yakanaka",
+          "english": "love is good"
+        },
+        {
+          "shona": "Ndinoda rudo",
+          "english": "I want love"
+        }
+      ],
+      "audioFile": "rudo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_rugare_1751852223800",
+      "shona": "rugare",
+      "english": "peace",
+      "category": "community",
+      "tones": "HHL",
+      "ipa": "/rugare/",
+      "simplified": "ru-ga-re",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine rugare",
+          "english": "I have peace"
+        },
+        {
+          "shona": "rugare yakanaka",
+          "english": "peace is good"
+        },
+        {
+          "shona": "Ndinoda rugare",
+          "english": "I want peace"
+        },
+        {
+          "shona": "Ndine rugare",
+          "english": "I have peace"
+        },
+        {
+          "shona": "rugare yakanaka",
+          "english": "peace is good"
+        },
+        {
+          "shona": "Ndinoda rugare",
+          "english": "I want peace"
+        }
+      ],
+      "audioFile": "rugare.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_sangano_1751852223800",
+      "shona": "sangano",
+      "english": "gathering",
+      "category": "community",
+      "tones": "HHL",
+      "ipa": "/sangano/",
+      "simplified": "sa-nga-no",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine sangano",
+          "english": "I have gathering"
+        },
+        {
+          "shona": "sangano yakanaka",
+          "english": "gathering is good"
+        },
+        {
+          "shona": "Ndinoda sangano",
+          "english": "I want gathering"
+        },
+        {
+          "shona": "Ndine sangano",
+          "english": "I have gathering"
+        },
+        {
+          "shona": "sangano yakanaka",
+          "english": "gathering is good"
+        },
+        {
+          "shona": "Ndinoda sangano",
+          "english": "I want gathering"
+        }
+      ],
+      "audioFile": "sangano.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_simba_1751852223800",
+      "shona": "simba",
+      "english": "strength/power",
+      "category": "community",
+      "tones": "HL",
+      "ipa": "/simba/",
+      "simplified": "si-mba",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine simba",
+          "english": "I have strength/power"
+        },
+        {
+          "shona": "simba yakanaka",
+          "english": "strength/power is good"
+        },
+        {
+          "shona": "Ndinoda simba",
+          "english": "I want strength/power"
+        },
+        {
+          "shona": "Ndine simba",
+          "english": "I have strength/power"
+        },
+        {
+          "shona": "simba yakanaka",
+          "english": "strength/power is good"
+        },
+        {
+          "shona": "Ndinoda simba",
+          "english": "I want strength/power"
+        }
+      ],
+      "audioFile": "simba.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tariro_1751852223800",
+      "shona": "tariro",
+      "english": "hope",
+      "category": "community",
+      "tones": "HHL",
+      "ipa": "/tariro/",
+      "simplified": "ta-ri-ro",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine tariro",
+          "english": "I have hope"
+        },
+        {
+          "shona": "tariro yakanaka",
+          "english": "hope is good"
+        },
+        {
+          "shona": "Ndinoda tariro",
+          "english": "I want hope"
+        },
+        {
+          "shona": "Ndine tariro",
+          "english": "I have hope"
+        },
+        {
+          "shona": "tariro yakanaka",
+          "english": "hope is good"
+        },
+        {
+          "shona": "Ndinoda tariro",
+          "english": "I want hope"
+        }
+      ],
+      "audioFile": "tariro.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_upenyu_1751852223800",
+      "shona": "upenyu",
+      "english": "life",
+      "category": "community",
+      "tones": "HHL",
+      "ipa": "/upenyu/",
+      "simplified": "u-pe-nyu",
+      "source": "hymns",
+      "difficulty": 3,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine upenyu",
+          "english": "I have life"
+        },
+        {
+          "shona": "upenyu yakanaka",
+          "english": "life is good"
+        },
+        {
+          "shona": "Ndinoda upenyu",
+          "english": "I want life"
+        },
+        {
+          "shona": "Ndine upenyu",
+          "english": "I have life"
+        },
+        {
+          "shona": "upenyu yakanaka",
+          "english": "life is good"
+        },
+        {
+          "shona": "Ndinoda upenyu",
+          "english": "I want life"
+        }
+      ],
+      "audioFile": "upenyu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "hymns",
+        "hymns"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_dare_1751852223799",
+      "shona": "dare",
+      "english": "court/meeting place",
+      "category": "community",
+      "tones": "HL",
+      "ipa": "/dare/",
+      "simplified": "da-re",
+      "source": "ethnography",
+      "difficulty": 6,
+      "cultural": "Traditional justice system",
+      "examples": [
+        {
+          "shona": "Ndine dare",
+          "english": "I have court/meeting place"
+        },
+        {
+          "shona": "dare yakanaka",
+          "english": "court/meeting place is good"
+        },
+        {
+          "shona": "Ndinoda dare",
+          "english": "I want court/meeting place"
+        },
+        {
+          "shona": "Ndine dare",
+          "english": "I have court/meeting place"
+        },
+        {
+          "shona": "dare yakanaka",
+          "english": "court/meeting place is good"
+        },
+        {
+          "shona": "Ndinoda dare",
+          "english": "I want court/meeting place"
+        }
+      ],
+      "audioFile": "dare.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_dunhu_1751852223800",
+      "shona": "dunhu",
+      "english": "district",
+      "category": "community",
+      "tones": "HL",
+      "ipa": "/dunhu/",
+      "simplified": "du-nhu",
+      "source": "ethnography",
+      "difficulty": 6,
+      "cultural": "Administrative area",
+      "examples": [
+        {
+          "shona": "Ndine dunhu",
+          "english": "I have district"
+        },
+        {
+          "shona": "dunhu yakanaka",
+          "english": "district is good"
+        },
+        {
+          "shona": "Ndinoda dunhu",
+          "english": "I want district"
+        },
+        {
+          "shona": "Ndine dunhu",
+          "english": "I have district"
+        },
+        {
+          "shona": "dunhu yakanaka",
+          "english": "district is good"
+        },
+        {
+          "shona": "Ndinoda dunhu",
+          "english": "I want district"
+        }
+      ],
+      "audioFile": "dunhu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_guta_1751852223800",
+      "shona": "guta",
+      "english": "town/city",
+      "category": "community",
+      "tones": "HL",
+      "ipa": "/guta/",
+      "simplified": "gu-ta",
+      "source": "ethnography",
+      "difficulty": 6,
+      "cultural": "Urban center",
+      "examples": [
+        {
+          "shona": "Ndine guta",
+          "english": "I have town/city"
+        },
+        {
+          "shona": "guta yakanaka",
+          "english": "town/city is good"
+        },
+        {
+          "shona": "Ndinoda guta",
+          "english": "I want town/city"
+        },
+        {
+          "shona": "Ndine guta",
+          "english": "I have town/city"
+        },
+        {
+          "shona": "guta yakanaka",
+          "english": "town/city is good"
+        },
+        {
+          "shona": "Ndinoda guta",
+          "english": "I want town/city"
+        }
+      ],
+      "audioFile": "guta.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mambo_1751852223799",
+      "shona": "mambo",
+      "english": "chief",
+      "category": "community",
+      "tones": "HL",
+      "ipa": "/mambo/",
+      "simplified": "ma-mbo",
+      "source": "ethnography",
+      "difficulty": 6,
+      "cultural": "Traditional leader",
+      "examples": [
+        {
+          "shona": "Ndine mambo",
+          "english": "I have chief"
+        },
+        {
+          "shona": "mambo yakanaka",
+          "english": "chief is good"
+        },
+        {
+          "shona": "Ndinoda mambo",
+          "english": "I want chief"
+        },
+        {
+          "shona": "Ndine mambo",
+          "english": "I have chief"
+        },
+        {
+          "shona": "mambo yakanaka",
+          "english": "chief is good"
+        },
+        {
+          "shona": "Ndinoda mambo",
+          "english": "I want chief"
+        }
+      ],
+      "audioFile": "mambo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mumusha_1751852223800",
+      "shona": "mumusha",
+      "english": "villager",
+      "category": "community",
+      "tones": "HHL",
+      "ipa": "/mumusha/",
+      "simplified": "mu-mu-sha",
+      "source": "ethnography",
+      "difficulty": 6,
+      "cultural": "Rural community member",
+      "examples": [
+        {
+          "shona": "Ndine mumusha",
+          "english": "I have villager"
+        },
+        {
+          "shona": "mumusha yakanaka",
+          "english": "villager is good"
+        },
+        {
+          "shona": "Ndinoda mumusha",
+          "english": "I want villager"
+        },
+        {
+          "shona": "Ndine mumusha",
+          "english": "I have villager"
+        },
+        {
+          "shona": "mumusha yakanaka",
+          "english": "villager is good"
+        },
+        {
+          "shona": "Ndinoda mumusha",
+          "english": "I want villager"
+        }
+      ],
+      "audioFile": "mumusha.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_musha_1751852223799",
+      "shona": "musha",
+      "english": "homestead",
+      "category": "community",
+      "tones": "HL",
+      "ipa": "/musha/",
+      "simplified": "mu-sha",
+      "source": "ethnography",
+      "difficulty": 6,
+      "cultural": "Extended family living area",
+      "examples": [
+        {
+          "shona": "Ndine musha",
+          "english": "I have homestead"
+        },
+        {
+          "shona": "musha yakanaka",
+          "english": "homestead is good"
+        },
+        {
+          "shona": "Ndinoda musha",
+          "english": "I want homestead"
+        },
+        {
+          "shona": "Ndine musha",
+          "english": "I have homestead"
+        },
+        {
+          "shona": "musha yakanaka",
+          "english": "homestead is good"
+        },
+        {
+          "shona": "Ndinoda musha",
+          "english": "I want homestead"
+        }
+      ],
+      "audioFile": "musha.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_vanhu_1751852223800",
+      "shona": "vanhu",
+      "english": "people",
+      "category": "community",
+      "tones": "HL",
+      "ipa": "/vanhu/",
+      "simplified": "va-nhu",
+      "source": "ethnography",
+      "difficulty": 6,
+      "cultural": "Community collective",
+      "examples": [
+        {
+          "shona": "Ndine vanhu",
+          "english": "I have people"
+        },
+        {
+          "shona": "vanhu yakanaka",
+          "english": "people is good"
+        },
+        {
+          "shona": "Ndinoda vanhu",
+          "english": "I want people"
+        },
+        {
+          "shona": "Ndine vanhu",
+          "english": "I have people"
+        },
+        {
+          "shona": "vanhu yakanaka",
+          "english": "people is good"
+        },
+        {
+          "shona": "Ndinoda vanhu",
+          "english": "I want people"
+        }
+      ],
+      "audioFile": "vanhu.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    }
+  ]
+}

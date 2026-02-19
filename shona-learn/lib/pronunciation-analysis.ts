@@ -153,8 +153,8 @@ export class MuturikiriAI {
           phoneme_analyses: [],
           feedback_messages: [],
           error: {
-            code: audioValidation.errorCode,
-            message: ERROR_MESSAGES[audioValidation.errorCode as keyof typeof ERROR_MESSAGES]
+            code: audioValidation.errorCode || 'UNKNOWN_ERROR',
+            message: ERROR_MESSAGES[(audioValidation.errorCode || 'UNKNOWN_ERROR') as keyof typeof ERROR_MESSAGES] || 'An unknown error occurred'
           }
         };
       }

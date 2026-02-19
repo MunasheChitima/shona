@@ -1,0 +1,345 @@
+{
+  "metadata": {
+    "category": "greetings",
+    "totalWords": 8,
+    "created": "2025-07-07T01:37:03.811Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_kwaziwai_1751852223800",
+      "shona": "kwaziwai",
+      "english": "good evening (formal)",
+      "category": "greetings",
+      "tones": "HHL",
+      "ipa": "/kwaziwai/",
+      "simplified": "kwa-zi-wa-i",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Formal evening greeting",
+      "examples": [
+        {
+          "shona": "Ndinoda kwaziwai",
+          "english": "I want good evening (formal)"
+        },
+        {
+          "shona": "kwaziwai yakanaka",
+          "english": "good evening (formal) is good"
+        },
+        {
+          "shona": "Ndinoda kwaziwai",
+          "english": "I want good evening (formal)"
+        },
+        {
+          "shona": "kwaziwai yakanaka",
+          "english": "good evening (formal) is good"
+        }
+      ],
+      "audioFile": "kwaziwai.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mazuva_ano_1751852223800",
+      "shona": "mazuva ano",
+      "english": "these days",
+      "category": "greetings",
+      "tones": "HLHL",
+      "ipa": "/mazuva ano/",
+      "simplified": "ma-zu-va- a-no",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Contemporary greeting expression",
+      "examples": [
+        {
+          "shona": "Ndinoda mazuva ano",
+          "english": "I want these days"
+        },
+        {
+          "shona": "mazuva ano yakanaka",
+          "english": "these days is good"
+        },
+        {
+          "shona": "Ndinoda mazuva ano",
+          "english": "I want these days"
+        },
+        {
+          "shona": "mazuva ano yakanaka",
+          "english": "these days is good"
+        }
+      ],
+      "audioFile": "mazuva_ano.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_rarama_1751852223800",
+      "shona": "rarama",
+      "english": "goodbye (informal)",
+      "category": "greetings",
+      "tones": "HHL",
+      "ipa": "/rarama/",
+      "simplified": "ra-ra-ma",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Casual farewell among peers",
+      "examples": [
+        {
+          "shona": "Ndinoda rarama",
+          "english": "I want goodbye (informal)"
+        },
+        {
+          "shona": "rarama yakanaka",
+          "english": "goodbye (informal) is good"
+        },
+        {
+          "shona": "Ndinoda rarama",
+          "english": "I want goodbye (informal)"
+        },
+        {
+          "shona": "rarama yakanaka",
+          "english": "goodbye (informal) is good"
+        }
+      ],
+      "audioFile": "rarama.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tunoswera_1751852223800",
+      "shona": "tunoswera",
+      "english": "we are fine",
+      "category": "greetings",
+      "tones": "HLHL",
+      "ipa": "/tunoswera/",
+      "simplified": "tu-no-swe-ra",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Collective response showing unity",
+      "examples": [
+        {
+          "shona": "Ndinoda tunoswera",
+          "english": "I want we are fine"
+        },
+        {
+          "shona": "tunoswera yakanaka",
+          "english": "we are fine is good"
+        },
+        {
+          "shona": "Ndinoda tunoswera",
+          "english": "I want we are fine"
+        },
+        {
+          "shona": "tunoswera yakanaka",
+          "english": "we are fine is good"
+        }
+      ],
+      "audioFile": "tunoswera.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chisarai_1751852223800",
+      "shona": "chisarai",
+      "english": "goodbye",
+      "category": "greetings",
+      "tones": "HHL",
+      "ipa": "/chisarai/",
+      "simplified": "chi-sa-ra-i",
+      "source": "ethnography",
+      "difficulty": 2,
+      "cultural": "Formal farewell",
+      "examples": [
+        {
+          "shona": "chisarai shamwari",
+          "english": "goodbye friend"
+        },
+        {
+          "shona": "chisarai, makadii?",
+          "english": "goodbye, how are you?"
+        },
+        {
+          "shona": "chisarai mukoma",
+          "english": "goodbye big brother"
+        },
+        {
+          "shona": "chisarai shamwari",
+          "english": "goodbye friend"
+        },
+        {
+          "shona": "chisarai, makadii?",
+          "english": "goodbye, how are you?"
+        },
+        {
+          "shona": "chisarai mukoma",
+          "english": "goodbye big brother"
+        }
+      ],
+      "audioFile": "chisarai.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_makadii_1751852223800",
+      "shona": "makadii",
+      "english": "how are you?",
+      "category": "greetings",
+      "tones": "HHL",
+      "ipa": "/makadii/",
+      "simplified": "ma-ka-di-i",
+      "source": "ethnography",
+      "difficulty": 2,
+      "cultural": "Standard greeting inquiry",
+      "examples": [
+        {
+          "shona": "makadii shamwari",
+          "english": "how are you? friend"
+        },
+        {
+          "shona": "makadii, makadii?",
+          "english": "how are you?, how are you?"
+        },
+        {
+          "shona": "makadii mukoma",
+          "english": "how are you? big brother"
+        },
+        {
+          "shona": "makadii shamwari",
+          "english": "how are you? friend"
+        },
+        {
+          "shona": "makadii, makadii?",
+          "english": "how are you?, how are you?"
+        },
+        {
+          "shona": "makadii mukoma",
+          "english": "how are you? big brother"
+        }
+      ],
+      "audioFile": "makadii.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mhoro_1751852223800",
+      "shona": "mhoro",
+      "english": "hello (casual)",
+      "category": "greetings",
+      "tones": "HL",
+      "ipa": "/mhoro/",
+      "simplified": "mho-ro",
+      "source": "ethnography",
+      "difficulty": 2,
+      "cultural": "Modern casual greeting",
+      "examples": [
+        {
+          "shona": "mhoro shamwari",
+          "english": "hello (casual) friend"
+        },
+        {
+          "shona": "mhoro, makadii?",
+          "english": "hello (casual), how are you?"
+        },
+        {
+          "shona": "mhoro mukoma",
+          "english": "hello (casual) big brother"
+        },
+        {
+          "shona": "mhoro shamwari",
+          "english": "hello (casual) friend"
+        },
+        {
+          "shona": "mhoro, makadii?",
+          "english": "hello (casual), how are you?"
+        },
+        {
+          "shona": "mhoro mukoma",
+          "english": "hello (casual) big brother"
+        }
+      ],
+      "audioFile": "mhoro.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tiripo_1751852223800",
+      "shona": "tiripo",
+      "english": "we are fine",
+      "category": "greetings",
+      "tones": "HHL",
+      "ipa": "/tiripo/",
+      "simplified": "ti-ri-po",
+      "source": "ethnography",
+      "difficulty": 2,
+      "cultural": "Standard positive response",
+      "examples": [
+        {
+          "shona": "tiripo shamwari",
+          "english": "we are fine friend"
+        },
+        {
+          "shona": "tiripo, makadii?",
+          "english": "we are fine, how are you?"
+        },
+        {
+          "shona": "tiripo mukoma",
+          "english": "we are fine big brother"
+        },
+        {
+          "shona": "tiripo shamwari",
+          "english": "we are fine friend"
+        },
+        {
+          "shona": "tiripo, makadii?",
+          "english": "we are fine, how are you?"
+        },
+        {
+          "shona": "tiripo mukoma",
+          "english": "we are fine big brother"
+        }
+      ],
+      "audioFile": "tiripo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    }
+  ]
+}

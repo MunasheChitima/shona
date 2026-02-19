@@ -1,0 +1,1251 @@
+{
+  "metadata": {
+    "title": "Comprehensive Shona Vocabulary Master Document",
+    "version": "1.0.0",
+    "created": "2025-07-07T01:35:49.143Z",
+    "totalWords": 61,
+    "sources": [
+      "fsi_basic",
+      "ethnography",
+      "cultural_practices",
+      "primary_textbook"
+    ],
+    "pronunciationGuide": "SHONA_PRONUNCIATION_MASTER_GUIDE.md"
+  },
+  "pronunciationGuide": {
+    "reference": "SHONA_PRONUNCIATION_MASTER_GUIDE.md",
+    "summary": "Comprehensive guide to Shona pronunciation including tones, special sounds, and regional variations"
+  },
+  "vocabulary": [
+    {
+      "shona": "mangwanani",
+      "english": "good morning",
+      "category": "greetings",
+      "tones": "LHLHL",
+      "ipa": "/maŋgwanani/",
+      "simplified": "mah-ngwah-NAH-nee",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "cultural": "Standard morning greeting, used until around 10 AM",
+      "pronunciation": "ma-nggwa-na-ni",
+      "audioFile": "mangwanani.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mangwanani",
+          "english": "I want good morning",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "masikati",
+      "english": "good afternoon",
+      "category": "greetings",
+      "tones": "LHLHL",
+      "ipa": "/masikati/",
+      "simplified": "mah-see-KAH-tee",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "cultural": "Used from around 10 AM to sunset",
+      "pronunciation": "ma-si-ka-ti",
+      "audioFile": "masikati.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda masikati",
+          "english": "I want good afternoon",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "manheru",
+      "english": "good evening",
+      "category": "greetings",
+      "tones": "LHLHL",
+      "ipa": "/manheru/",
+      "simplified": "mah-NHEH-roo",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "cultural": "Used after sunset",
+      "pronunciation": "ma-nhe-ru",
+      "audioFile": "manheru.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda manheru",
+          "english": "I want good evening",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "poshi",
+      "english": "one",
+      "category": "numbers",
+      "tones": "LHL",
+      "ipa": "/poʃi/",
+      "simplified": "poh-SHEE",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "pronunciation": "po-shi",
+      "audioFile": "poshi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda poshi",
+          "english": "I want one",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "piri",
+      "english": "two",
+      "category": "numbers",
+      "tones": "LHL",
+      "ipa": "/piri/",
+      "simplified": "pee-REE",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "pronunciation": "pi-ri",
+      "audioFile": "piri.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda piri",
+          "english": "I want two",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "tatu",
+      "english": "three",
+      "category": "numbers",
+      "tones": "LHL",
+      "ipa": "/tatu/",
+      "simplified": "tah-TOO",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "pronunciation": "ta-tu",
+      "audioFile": "tatu.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda tatu",
+          "english": "I want three",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "china",
+      "english": "four",
+      "category": "numbers",
+      "tones": "LHL",
+      "ipa": "/tʃina/",
+      "simplified": "CHEE-nah",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "pronunciation": "chi-na",
+      "audioFile": "china.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda china",
+          "english": "I want four",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "shanu",
+      "english": "five",
+      "category": "numbers",
+      "tones": "LHL",
+      "ipa": "/ʃanu/",
+      "simplified": "SHAH-noo",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "pronunciation": "sha-nu",
+      "audioFile": "shanu.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda shanu",
+          "english": "I want five",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "tanhatu",
+      "english": "six",
+      "category": "numbers",
+      "tones": "LHL",
+      "ipa": "/tanhatu/",
+      "simplified": "tah-NHAH-too",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "ta-nha-tu",
+      "audioFile": "tanhatu.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda tanhatu",
+          "english": "I want six",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "nomwe",
+      "english": "seven",
+      "category": "numbers",
+      "tones": "LHL",
+      "ipa": "/nomwe/",
+      "simplified": "NOH-mweh",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "no-mwe",
+      "audioFile": "nomwe.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda nomwe",
+          "english": "I want seven",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "sere",
+      "english": "eight",
+      "category": "numbers",
+      "tones": "LHL",
+      "ipa": "/sere/",
+      "simplified": "SEH-reh",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "se-re",
+      "audioFile": "sere.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda sere",
+          "english": "I want eight",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "pfumbamwe",
+      "english": "nine",
+      "category": "numbers",
+      "tones": "LHLHL",
+      "ipa": "/pfumbamwe/",
+      "simplified": "pfoo-BAH-mweh",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "pronunciation": "pfu-mba-mwe",
+      "audioFile": "pfumbamwe.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda pfumbamwe",
+          "english": "I want nine",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "gumi",
+      "english": "ten",
+      "category": "numbers",
+      "tones": "LHL",
+      "ipa": "/gumi/",
+      "simplified": "GOO-mee",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "gu-mi",
+      "audioFile": "gumi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda gumi",
+          "english": "I want ten",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "ndatenda",
+      "english": "thank you",
+      "category": "expressions",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdatenda/",
+      "simplified": "ndah-TEN-dah",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "cultural": "Standard expression of gratitude",
+      "pronunciation": "nda-te-nda",
+      "audioFile": "ndatenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndatenda",
+          "english": "I want thank you",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "ndapota",
+      "english": "please",
+      "category": "expressions",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdapota/",
+      "simplified": "ndah-POH-tah",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "nda-po-ta",
+      "audioFile": "ndapota.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndapota",
+          "english": "I want please",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "ndine urombo",
+      "english": "I'm sorry",
+      "category": "expressions",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdine urombo/",
+      "simplified": "ndee-neh oo-ROHM-boh",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "cultural": "Expression of apology or sympathy",
+      "pronunciation": "ndi-ne- u-ro-mbo",
+      "audioFile": "ndine urombo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndine urombo",
+          "english": "I want I'm sorry",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "zvakanaka",
+      "english": "it's good/okay",
+      "category": "expressions",
+      "tones": "LHLHL",
+      "ipa": "/z͎akanaka/",
+      "simplified": "zvah-kah-NAH-kah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "pronunciation": "zva-ka-na-ka",
+      "audioFile": "zvakanaka.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda zvakanaka",
+          "english": "I want it's good/okay",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "hapana",
+      "english": "nothing/no",
+      "category": "expressions",
+      "tones": "LHL",
+      "ipa": "/hapana/",
+      "simplified": "hah-PAH-nah",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "ha-pa-na",
+      "audioFile": "hapana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda hapana",
+          "english": "I want nothing/no",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "ndiani",
+      "english": "who",
+      "category": "questions",
+      "tones": "LHL",
+      "ipa": "/ⁿdiani/",
+      "simplified": "ndee-AH-nee",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "ndi-a-ni",
+      "audioFile": "ndiani.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndiani",
+          "english": "I want who",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "chii",
+      "english": "what",
+      "category": "questions",
+      "tones": "LH",
+      "ipa": "/tʃii/",
+      "simplified": "CHEE-ee",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "pronunciation": "chi-i",
+      "audioFile": "chii.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda chii",
+          "english": "I want what",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "kupi",
+      "english": "where",
+      "category": "questions",
+      "tones": "LHL",
+      "ipa": "/kupi/",
+      "simplified": "KOO-pee",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "pronunciation": "ku-pi",
+      "audioFile": "kupi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda kupi",
+          "english": "I want where",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "rinhi",
+      "english": "when",
+      "category": "questions",
+      "tones": "LHL",
+      "ipa": "/rinhi/",
+      "simplified": "REE-nhee",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "ri-nhi",
+      "audioFile": "rinhi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda rinhi",
+          "english": "I want when",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "sei",
+      "english": "how",
+      "category": "questions",
+      "tones": "LH",
+      "ipa": "/sei/",
+      "simplified": "SEH-ee",
+      "source": "fsi_basic",
+      "difficulty": 1,
+      "pronunciation": "se-i",
+      "audioFile": "sei.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda sei",
+          "english": "I want how",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "ndiri",
+      "english": "I am",
+      "category": "pronouns",
+      "tones": "LHL",
+      "ipa": "/ⁿdiri/",
+      "simplified": "ndee-REE",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "ndi-ri",
+      "audioFile": "ndiri.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndiri",
+          "english": "I want I am",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "uri",
+      "english": "you are (singular)",
+      "category": "pronouns",
+      "tones": "LH",
+      "ipa": "/uri/",
+      "simplified": "OO-ree",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "u-ri",
+      "audioFile": "uri.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda uri",
+          "english": "I want you are (singular)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "ari",
+      "english": "he/she is",
+      "category": "pronouns",
+      "tones": "LH",
+      "ipa": "/ari/",
+      "simplified": "AH-ree",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "a-ri",
+      "audioFile": "ari.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ari",
+          "english": "I want he/she is",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "tiri",
+      "english": "we are",
+      "category": "pronouns",
+      "tones": "LHL",
+      "ipa": "/tiri/",
+      "simplified": "tee-REE",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "ti-ri",
+      "audioFile": "tiri.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda tiri",
+          "english": "I want we are",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "muri",
+      "english": "you are (plural)",
+      "category": "pronouns",
+      "tones": "LHL",
+      "ipa": "/muri/",
+      "simplified": "moo-REE",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "mu-ri",
+      "audioFile": "muri.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda muri",
+          "english": "I want you are (plural)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "vari",
+      "english": "they are",
+      "category": "pronouns",
+      "tones": "LHL",
+      "ipa": "/vari/",
+      "simplified": "vah-REE",
+      "source": "fsi_basic",
+      "difficulty": 2,
+      "pronunciation": "va-ri",
+      "audioFile": "vari.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda vari",
+          "english": "I want they are",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "ndinoda",
+      "english": "I want",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdinoda/",
+      "simplified": "ndee-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "pronunciation": "ndi-no-da",
+      "audioFile": "ndinoda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndinoda",
+          "english": "I want I want",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "unoda",
+      "english": "you want (singular)",
+      "category": "verbs",
+      "tones": "LHL",
+      "ipa": "/unoda/",
+      "simplified": "oo-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "pronunciation": "u-no-da",
+      "audioFile": "unoda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda unoda",
+          "english": "I want you want (singular)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "anoda",
+      "english": "he/she wants",
+      "category": "verbs",
+      "tones": "LHL",
+      "ipa": "/anoda/",
+      "simplified": "ah-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "pronunciation": "a-no-da",
+      "audioFile": "anoda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda anoda",
+          "english": "I want he/she wants",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "tinoda",
+      "english": "we want",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/tinoda/",
+      "simplified": "tee-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "pronunciation": "ti-no-da",
+      "audioFile": "tinoda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda tinoda",
+          "english": "I want we want",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "munoda",
+      "english": "you want (plural)",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/munoda/",
+      "simplified": "moo-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "pronunciation": "mu-no-da",
+      "audioFile": "munoda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda munoda",
+          "english": "I want you want (plural)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "vanoda",
+      "english": "they want",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/vanoda/",
+      "simplified": "vah-NOH-dah",
+      "source": "fsi_basic",
+      "difficulty": 3,
+      "pronunciation": "va-no-da",
+      "audioFile": "vanoda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda vanoda",
+          "english": "I want they want",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "ndiri kuenda",
+      "english": "I am going",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/ⁿdiri kuenda/",
+      "simplified": "ndee-REE koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "pronunciation": "ndi-ri- ku-e-nda",
+      "audioFile": "ndiri kuenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ndiri kuenda",
+          "english": "I want I am going",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "uri kuenda",
+      "english": "you are going (singular)",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/uri kuenda/",
+      "simplified": "OO-ree koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "pronunciation": "u-ri- ku-e-nda",
+      "audioFile": "uri kuenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda uri kuenda",
+          "english": "I want you are going (singular)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "ari kuenda",
+      "english": "he/she is going",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/ari kuenda/",
+      "simplified": "AH-ree koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "pronunciation": "a-ri- ku-e-nda",
+      "audioFile": "ari kuenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda ari kuenda",
+          "english": "I want he/she is going",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "tiri kuenda",
+      "english": "we are going",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/tiri kuenda/",
+      "simplified": "tee-REE koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "pronunciation": "ti-ri- ku-e-nda",
+      "audioFile": "tiri kuenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda tiri kuenda",
+          "english": "I want we are going",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "muri kuenda",
+      "english": "you are going (plural)",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/muri kuenda/",
+      "simplified": "moo-REE koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "pronunciation": "mu-ri- ku-e-nda",
+      "audioFile": "muri kuenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda muri kuenda",
+          "english": "I want you are going (plural)",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "vari kuenda",
+      "english": "they are going",
+      "category": "verbs",
+      "tones": "LHLHL",
+      "ipa": "/vari kuenda/",
+      "simplified": "vah-REE koo-EHN-dah",
+      "source": "fsi_basic",
+      "difficulty": 4,
+      "pronunciation": "va-ri- ku-e-nda",
+      "audioFile": "vari kuenda.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda vari kuenda",
+          "english": "I want they are going",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "mukadzi",
+      "english": "woman/wife",
+      "category": "family",
+      "tones": "LHL",
+      "ipa": "/mukadzi/",
+      "simplified": "moo-KAH-dzee",
+      "source": "ethnography",
+      "difficulty": 2,
+      "cultural": "Respectful term for woman or wife",
+      "pronunciation": "mu-ka-dzi",
+      "audioFile": "mukadzi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mukadzi",
+          "english": "I want woman/wife",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "murume",
+      "english": "man/husband",
+      "category": "family",
+      "tones": "LHL",
+      "ipa": "/murume/",
+      "simplified": "moo-ROO-meh",
+      "source": "ethnography",
+      "difficulty": 2,
+      "cultural": "Respectful term for man or husband",
+      "pronunciation": "mu-ru-me",
+      "audioFile": "murume.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda murume",
+          "english": "I want man/husband",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "vana",
+      "english": "children",
+      "category": "family",
+      "tones": "LHL",
+      "ipa": "/vana/",
+      "simplified": "VAH-nah",
+      "source": "ethnography",
+      "difficulty": 1,
+      "cultural": "Plural form of child",
+      "pronunciation": "va-na",
+      "audioFile": "vana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda vana",
+          "english": "I want children",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "mwana",
+      "english": "child",
+      "category": "family",
+      "tones": "LHL",
+      "ipa": "/mwana/",
+      "simplified": "MWAH-nah",
+      "source": "ethnography",
+      "difficulty": 1,
+      "pronunciation": "mwa-na",
+      "audioFile": "mwana.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mwana",
+          "english": "I want child",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "sadza",
+      "english": "maize porridge",
+      "category": "food",
+      "tones": "LHL",
+      "ipa": "/sadza/",
+      "simplified": "SAH-dzah",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "cultural": "Staple food in Zimbabwe, made from maize meal",
+      "pronunciation": "sa-dza",
+      "audioFile": "sadza.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda sadza",
+          "english": "I want maize porridge",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "nyama",
+      "english": "meat",
+      "category": "food",
+      "tones": "LHL",
+      "ipa": "/ɲama/",
+      "simplified": "NYAH-mah",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "pronunciation": "nya-ma",
+      "audioFile": "nyama.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda nyama",
+          "english": "I want meat",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "muriwo",
+      "english": "vegetables",
+      "category": "food",
+      "tones": "LHLHL",
+      "ipa": "/muriwo/",
+      "simplified": "moo-REE-woh",
+      "source": "cultural_practices",
+      "difficulty": 3,
+      "pronunciation": "mu-ri-wo",
+      "audioFile": "muriwo.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda muriwo",
+          "english": "I want vegetables",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "mvura",
+      "english": "water",
+      "category": "food",
+      "tones": "LHL",
+      "ipa": "/mvura/",
+      "simplified": "MVOO-rah",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "pronunciation": "mvu-ra",
+      "audioFile": "mvura.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mvura",
+          "english": "I want water",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "musoro",
+      "english": "head",
+      "category": "body",
+      "tones": "LHL",
+      "ipa": "/musoro/",
+      "simplified": "moo-SOH-roh",
+      "source": "primary_textbook",
+      "difficulty": 2,
+      "pronunciation": "mu-so-ro",
+      "audioFile": "musoro.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda musoro",
+          "english": "I want head",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "meso",
+      "english": "eyes",
+      "category": "body",
+      "tones": "LHL",
+      "ipa": "/meso/",
+      "simplified": "MEH-soh",
+      "source": "primary_textbook",
+      "difficulty": 2,
+      "pronunciation": "me-so",
+      "audioFile": "meso.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda meso",
+          "english": "I want eyes",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "nzeve",
+      "english": "ears",
+      "category": "body",
+      "tones": "LHL",
+      "ipa": "/ⁿzeve/",
+      "simplified": "ndzeh-VEH",
+      "source": "primary_textbook",
+      "difficulty": 2,
+      "pronunciation": "nze-ve",
+      "audioFile": "nzeve.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda nzeve",
+          "english": "I want ears",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "mukanwa",
+      "english": "mouth",
+      "category": "body",
+      "tones": "LHLHL",
+      "ipa": "/mukanwa/",
+      "simplified": "moo-KAH-nwah",
+      "source": "primary_textbook",
+      "difficulty": 3,
+      "pronunciation": "mu-ka-nwa",
+      "audioFile": "mukanwa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mukanwa",
+          "english": "I want mouth",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "chena",
+      "english": "white",
+      "category": "colors",
+      "tones": "LHL",
+      "ipa": "/tʃena/",
+      "simplified": "CHEH-nah",
+      "source": "primary_textbook",
+      "difficulty": 2,
+      "pronunciation": "che-na",
+      "audioFile": "chena.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda chena",
+          "english": "I want white",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "nhema",
+      "english": "black",
+      "category": "colors",
+      "tones": "LHL",
+      "ipa": "/ɲema/",
+      "simplified": "NYEH-mah",
+      "source": "primary_textbook",
+      "difficulty": 2,
+      "pronunciation": "nye-ma",
+      "audioFile": "nhema.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda nhema",
+          "english": "I want black",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "tsvuku",
+      "english": "red",
+      "category": "colors",
+      "tones": "LHL",
+      "ipa": "/ts͎uku/",
+      "simplified": "TSVOO-koo",
+      "source": "primary_textbook",
+      "difficulty": 3,
+      "pronunciation": "tsvu-ku",
+      "audioFile": "tsvuku.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda tsvuku",
+          "english": "I want red",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "yero",
+      "english": "yellow",
+      "category": "colors",
+      "tones": "LHL",
+      "ipa": "/jero/",
+      "simplified": "YEH-roh",
+      "source": "primary_textbook",
+      "difficulty": 2,
+      "pronunciation": "je-ro",
+      "audioFile": "yero.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda yero",
+          "english": "I want yellow",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "mombe",
+      "english": "cow",
+      "category": "animals",
+      "tones": "LHL",
+      "ipa": "/mombe/",
+      "simplified": "MOHM-beh",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "cultural": "Important animal in Shona culture, symbol of wealth",
+      "pronunciation": "mo-mbe",
+      "audioFile": "mombe.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda mombe",
+          "english": "I want cow",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "imbwa",
+      "english": "dog",
+      "category": "animals",
+      "tones": "LHL",
+      "ipa": "/iᵐbwa/",
+      "simplified": "eem-BWAH",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "pronunciation": "i-mbwa",
+      "audioFile": "imbwa.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda imbwa",
+          "english": "I want dog",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "katsi",
+      "english": "cat",
+      "category": "animals",
+      "tones": "LHL",
+      "ipa": "/katsi/",
+      "simplified": "KAH-tsee",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "pronunciation": "ka-tsi",
+      "audioFile": "katsi.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda katsi",
+          "english": "I want cat",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    },
+    {
+      "shona": "shiri",
+      "english": "bird",
+      "category": "animals",
+      "tones": "LHL",
+      "ipa": "/ʃiri/",
+      "simplified": "SHEE-ree",
+      "source": "cultural_practices",
+      "difficulty": 2,
+      "pronunciation": "shi-ri",
+      "audioFile": "shiri.mp3",
+      "examples": [
+        {
+          "shona": "Ndinoda shiri",
+          "english": "I want bird",
+          "context": "Basic sentence structure",
+          "register": "neutral"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "summary": {
+    "totalTests": 15,
+    "successfulTests": 15,
+    "failedTests": 0,
+    "successRate": "100.0",
+    "timestamp": "2025-07-07T07:33:10.035Z",
+    "voiceId": "xxNsmODXrokvuKnNNrMf"
+  },
+  "results": [
+    {
+      "category": "easy",
+      "word": "baba",
+      "english": "father",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/easy_baba.mp3",
+      "size": 17181,
+      "originalText": "baba",
+      "authenticText": "baba",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "easy",
+      "word": "amai",
+      "english": "mother",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/easy_amai.mp3",
+      "size": 17181,
+      "originalText": "amai",
+      "authenticText": "amai",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "easy",
+      "word": "moyo",
+      "english": "heart",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/easy_moyo.mp3",
+      "size": 17181,
+      "originalText": "moyo",
+      "authenticText": "moyo",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "easy",
+      "word": "zuva",
+      "english": "sun/day",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/easy_zuva.mp3",
+      "size": 17599,
+      "originalText": "zuva",
+      "authenticText": "zuva",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "easy",
+      "word": "muti",
+      "english": "tree",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/easy_muti.mp3",
+      "size": 18435,
+      "originalText": "muti",
+      "authenticText": "muti",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "authentic_hard",
+      "word": "svika",
+      "english": "arrive",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/authentic_svika.mp3",
+      "size": 18435,
+      "originalText": "svika",
+      "authenticText": "svika",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "authentic_hard",
+      "word": "mbira",
+      "english": "thumb piano",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/authentic_mbira.mp3",
+      "size": 17181,
+      "originalText": "mbira",
+      "authenticText": "mbira",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "authentic_hard",
+      "word": "zvino",
+      "english": "now",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/authentic_zvino.mp3",
+      "size": 17599,
+      "originalText": "zvino",
+      "authenticText": "zvino",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "authentic_hard",
+      "word": "bhazi",
+      "english": "bus",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/authentic_bhazi.mp3",
+      "size": 19271,
+      "originalText": "bhazi",
+      "authenticText": "bhazi",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "authentic_hard",
+      "word": "ndatenda",
+      "english": "thank you",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/authentic_ndatenda.mp3",
+      "size": 19271,
+      "originalText": "ndatenda",
+      "authenticText": "ndatenda",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "sentence",
+      "text": "Mangwanani, ndatenda zvikuru.",
+      "english": "Good morning, thank you very much.",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/sentence_Mangwanani__ndatenda_zvikuru_.mp3",
+      "size": 42258,
+      "originalText": "Mangwanani, ndatenda zvikuru.",
+      "authenticText": "Mangwanani, ndatenda zvikuru.",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "sentence",
+      "text": "Bhazi rinosvika pano.",
+      "english": "The bus arrives here.",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/sentence_Bhazi_rinosvika_pano_.mp3",
+      "size": 28884,
+      "originalText": "Bhazi rinosvika pano.",
+      "authenticText": "Bhazi rinosvika pano.",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "sentence",
+      "text": "Mvura inonaya.",
+      "english": "It is raining.",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/sentence_Mvura_inonaya_.mp3",
+      "size": 24286,
+      "originalText": "Mvura inonaya.",
+      "authenticText": "Mvura inonaya.",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "sentence",
+      "text": "Zvino ndinofamba.",
+      "english": "Now I am walking.",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/sentence_Zvino_ndinofamba_.mp3",
+      "size": 26794,
+      "originalText": "Zvino ndinofamba.",
+      "authenticText": "Zvino ndinofamba.",
+      "pronunciation": "natural"
+    },
+    {
+      "category": "sentence",
+      "text": "Mhuno yangu inorwadza.",
+      "english": "My nose hurts.",
+      "success": true,
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/sentence_Mhuno_yangu_inorwadza_.mp3",
+      "size": 31809,
+      "originalText": "Mhuno yangu inorwadza.",
+      "authenticText": "Mhuno yangu inorwadza.",
+      "pronunciation": "natural"
+    }
+  ]
+}

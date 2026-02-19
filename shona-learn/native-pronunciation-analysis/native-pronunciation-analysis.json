@@ -1,0 +1,132 @@
+{
+  "summary": {
+    "totalFiles": 2,
+    "averageDuration": "609.97",
+    "speedDistribution": {
+      "slow": 2
+    },
+    "emphasisTypes": {
+      "prenasalized_consonant": 2
+    },
+    "timestamp": "2025-07-07T07:13:20.837Z"
+  },
+  "analyses": [
+    {
+      "filename": "VP Mnangagwa Shona version - isolated.mp3",
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/sample/VP Mnangagwa Shona version - isolated.mp3",
+      "properties": {
+        "size": 33757653,
+        "sizeKB": "32966.5",
+        "created": "2025-07-07T07:01:42.070Z",
+        "modified": "2025-07-07T07:01:42.095Z",
+        "duration": 843.9402,
+        "codec": "mp3",
+        "sampleRate": "44100",
+        "channels": "1"
+      },
+      "transcription": null,
+      "pronunciation": null,
+      "recommendations": []
+    },
+    {
+      "filename": "WIKITONGUES_ Tatenda speaking Shona - isolated.mp3",
+      "filepath": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/sample/WIKITONGUES_ Tatenda speaking Shona - isolated.mp3",
+      "properties": {
+        "size": 15040350,
+        "sizeKB": "14687.8",
+        "created": "2025-07-07T07:00:01.253Z",
+        "modified": "2025-07-07T07:00:01.261Z",
+        "duration": 376.007625,
+        "codec": "mp3",
+        "sampleRate": "44100",
+        "channels": "1"
+      },
+      "transcription": null,
+      "pronunciation": null,
+      "recommendations": []
+    }
+  ],
+  "pronunciationGuides": [
+    {
+      "word": "VP Mnangagwa Shona version   isolated",
+      "nativeAudio": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/sample/VP Mnangagwa Shona version - isolated.mp3",
+      "duration": 843.9402,
+      "recommendations": {
+        "speed": "slow",
+        "emphasis": "prenasalized_consonant",
+        "naturalPatterns": [
+          {
+            "type": "prenasalized_consonant",
+            "description": "Natural prenasalized consonant flow",
+            "recommendation": "Maintain natural nasal-to-consonant transition"
+          }
+        ]
+      }
+    },
+    {
+      "word": "WIKITONGUES  Tatenda speaking Shona   isolated",
+      "nativeAudio": "/Users/munashe/Documents/Shona App/shona-learn/test-audio/sample/WIKITONGUES_ Tatenda speaking Shona - isolated.mp3",
+      "duration": 376.007625,
+      "recommendations": {
+        "speed": "slow",
+        "emphasis": "prenasalized_consonant",
+        "naturalPatterns": [
+          {
+            "type": "prenasalized_consonant",
+            "description": "Natural prenasalized consonant flow",
+            "recommendation": "Maintain natural nasal-to-consonant transition"
+          }
+        ]
+      }
+    }
+  ],
+  "improvedSettings": [
+    {
+      "word": "VP Mnangagwa Shona version   isolated",
+      "voiceSettings": {
+        "stability": 0.75,
+        "similarity_boost": 0.85,
+        "style": 0.4,
+        "use_speaker_boost": true
+      },
+      "ssmlSettings": {
+        "rate": "85%",
+        "pitch": "0%",
+        "volume": "medium",
+        "emphasis": "moderate"
+      },
+      "textProcessing": {
+        "useNaturalFlow": true,
+        "avoidArtificialPauses": true,
+        "maintainWordIntegrity": true
+      }
+    },
+    {
+      "word": "WIKITONGUES  Tatenda speaking Shona   isolated",
+      "voiceSettings": {
+        "stability": 0.75,
+        "similarity_boost": 0.85,
+        "style": 0.4,
+        "use_speaker_boost": true
+      },
+      "ssmlSettings": {
+        "rate": "85%",
+        "pitch": "0%",
+        "volume": "medium",
+        "emphasis": "moderate"
+      },
+      "textProcessing": {
+        "useNaturalFlow": true,
+        "avoidArtificialPauses": true,
+        "maintainWordIntegrity": true
+      }
+    }
+  ],
+  "recommendations": [
+    "Native speakers tend to pronounce words slower - consider using 85% rate",
+    "Prenasalized consonants should maintain natural nasal-to-consonant flow",
+    "Avoid artificial SSML pauses - let words flow naturally",
+    "Use moderate emphasis level for authentic pronunciation",
+    "Maintain word integrity without breaking into artificial segments"
+  ]
+}

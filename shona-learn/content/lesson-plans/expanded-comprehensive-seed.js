@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const { PrismaClient } = require('@prisma/client')
 const { allFoundationLessons } = require('./foundation-level-lessons')
 const { allIntermediateLessons } = require('./intermediate-level-lessons')
@@ -492,3 +493,8 @@ module.exports = {
   professionalTechnicalVocabulary,
   contemporaryModernVocabulary
 }
+=======
+
+
+
+>>>>>>> 9a96326 (Vercel-ready: Prisma Postgres, postinstall hook, engines, deployment docs)

@@ -1,0 +1,1092 @@
+{
+  "metadata": {
+    "category": "education",
+    "totalWords": 25,
+    "created": "2025-07-07T01:37:03.811Z"
+  },
+  "vocabulary": [
+    {
+      "id": "content/vocabulary_merged.json_chidzidzo_1751852223800",
+      "shona": "chidzidzo",
+      "english": "lesson/teaching",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/chidzidzo/",
+      "simplified": "chi-dzi-dzo",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Knowledge transfer",
+      "examples": [
+        {
+          "shona": "Ndinoda chidzidzo",
+          "english": "I want lesson/teaching"
+        },
+        {
+          "shona": "chidzidzo yakanaka",
+          "english": "lesson/teaching is good"
+        },
+        {
+          "shona": "Ndinoda chidzidzo",
+          "english": "I want lesson/teaching"
+        },
+        {
+          "shona": "chidzidzo yakanaka",
+          "english": "lesson/teaching is good"
+        }
+      ],
+      "audioFile": "chidzidzo.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuwongorora_1751852223800",
+      "shona": "kuwongorora",
+      "english": "to examine",
+      "category": "education",
+      "tones": "HLHL",
+      "ipa": "/kuwongorora/",
+      "simplified": "ku-wo-ngo-ro-ra",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Careful study and analysis",
+      "examples": [
+        {
+          "shona": "Ndinoda kuwongorora",
+          "english": "I want to examine"
+        },
+        {
+          "shona": "kuwongorora yakanaka",
+          "english": "to examine is good"
+        },
+        {
+          "shona": "Ndinoda kuwongorora",
+          "english": "I want to examine"
+        },
+        {
+          "shona": "kuwongorora yakanaka",
+          "english": "to examine is good"
+        }
+      ],
+      "audioFile": "kuwongorora.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mhinduro_1751852223800",
+      "shona": "mhinduro",
+      "english": "answer",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/mhinduro/",
+      "simplified": "mhi-ndu-ro",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Response to inquiry",
+      "examples": [
+        {
+          "shona": "Ndinoda mhinduro",
+          "english": "I want answer"
+        },
+        {
+          "shona": "mhinduro yakanaka",
+          "english": "answer is good"
+        },
+        {
+          "shona": "Ndinoda mhinduro",
+          "english": "I want answer"
+        },
+        {
+          "shona": "mhinduro yakanaka",
+          "english": "answer is good"
+        }
+      ],
+      "audioFile": "mhinduro.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mubvunzo_1751852223800",
+      "shona": "mubvunzo",
+      "english": "question",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/mubvunzo/",
+      "simplified": "mu-bvu-nzo",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Inquiry for learning",
+      "examples": [
+        {
+          "shona": "Ndinoda mubvunzo",
+          "english": "I want question"
+        },
+        {
+          "shona": "mubvunzo yakanaka",
+          "english": "question is good"
+        },
+        {
+          "shona": "Ndinoda mubvunzo",
+          "english": "I want question"
+        },
+        {
+          "shona": "mubvunzo yakanaka",
+          "english": "question is good"
+        }
+      ],
+      "audioFile": "mubvunzo.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_pfudziso_1751852223800",
+      "shona": "pfudziso",
+      "english": "education",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/pfudziso/",
+      "simplified": "pfu-dzi-so",
+      "source": "primary_textbook",
+      "difficulty": 1,
+      "cultural": "Formal learning process",
+      "examples": [
+        {
+          "shona": "Ndinoda pfudziso",
+          "english": "I want education"
+        },
+        {
+          "shona": "pfudziso yakanaka",
+          "english": "education is good"
+        },
+        {
+          "shona": "Ndinoda pfudziso",
+          "english": "I want education"
+        },
+        {
+          "shona": "pfudziso yakanaka",
+          "english": "education is good"
+        }
+      ],
+      "audioFile": "pfudziso.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "primary_textbook",
+        "primary_textbook"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_akadimi_1751852223800",
+      "shona": "akadimi",
+      "english": "academic",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/akadimi/",
+      "simplified": "a-ka-di-mi",
+      "source": "academic_syllabus",
+      "difficulty": 2,
+      "cultural": "Scholarly approach",
+      "examples": [
+        {
+          "shona": "Ndinoda akadimi",
+          "english": "I want academic"
+        },
+        {
+          "shona": "akadimi yakanaka",
+          "english": "academic is good"
+        },
+        {
+          "shona": "Ndinoda akadimi",
+          "english": "I want academic"
+        },
+        {
+          "shona": "akadimi yakanaka",
+          "english": "academic is good"
+        }
+      ],
+      "audioFile": "akadimi.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "academic_syllabus",
+        "academic_syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chinyorwa_1751852223800",
+      "shona": "chinyorwa",
+      "english": "writing",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/chinyorwa/",
+      "simplified": "chi-nyo-rwa",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine chinyorwa",
+          "english": "I have writing"
+        },
+        {
+          "shona": "chinyorwa yakanaka",
+          "english": "writing is good"
+        },
+        {
+          "shona": "Ndinoda chinyorwa",
+          "english": "I want writing"
+        },
+        {
+          "shona": "Ndine chinyorwa",
+          "english": "I have writing"
+        },
+        {
+          "shona": "chinyorwa yakanaka",
+          "english": "writing is good"
+        },
+        {
+          "shona": "Ndinoda chinyorwa",
+          "english": "I want writing"
+        }
+      ],
+      "audioFile": "chinyorwa.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kudzidza_1751852223800",
+      "shona": "kudzidza",
+      "english": "to learn",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/kudzidza/",
+      "simplified": "ku-dzi-dza",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Acquiring knowledge and wisdom",
+      "examples": [
+        {
+          "shona": "Ndinoda kudzidza",
+          "english": "I want to learn"
+        },
+        {
+          "shona": "kudzidza yakanaka",
+          "english": "to learn is good"
+        },
+        {
+          "shona": "Ndinoda kudzidza",
+          "english": "I want to learn"
+        },
+        {
+          "shona": "kudzidza yakanaka",
+          "english": "to learn is good"
+        },
+        {
+          "shona": "Ndine kudzidza",
+          "english": "I have to learn"
+        },
+        {
+          "shona": "kudzidza yakanaka",
+          "english": "to learn is good"
+        },
+        {
+          "shona": "Ndinoda kudzidza",
+          "english": "I want to learn"
+        }
+      ],
+      "audioFile": "kudzidza.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kunyora_1751852223800",
+      "shona": "kunyora",
+      "english": "to write",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/kunyora/",
+      "simplified": "ku-nyo-ra",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kunyora",
+          "english": "I have to write"
+        },
+        {
+          "shona": "kunyora yakanaka",
+          "english": "to write is good"
+        },
+        {
+          "shona": "Ndinoda kunyora",
+          "english": "I want to write"
+        },
+        {
+          "shona": "Ndine kunyora",
+          "english": "I have to write"
+        },
+        {
+          "shona": "kunyora yakanaka",
+          "english": "to write is good"
+        },
+        {
+          "shona": "Ndinoda kunyora",
+          "english": "I want to write"
+        }
+      ],
+      "audioFile": "kunyora.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuratidza_1751852223800",
+      "shona": "kuratidza",
+      "english": "to show/teach",
+      "category": "education",
+      "tones": "HLHL",
+      "ipa": "/kuratidza/",
+      "simplified": "ku-ra-ti-dza",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Sharing knowledge with others",
+      "examples": [
+        {
+          "shona": "Ndinoda kuratidza",
+          "english": "I want to show/teach"
+        },
+        {
+          "shona": "kuratidza yakanaka",
+          "english": "to show/teach is good"
+        },
+        {
+          "shona": "Ndinoda kuratidza",
+          "english": "I want to show/teach"
+        },
+        {
+          "shona": "kuratidza yakanaka",
+          "english": "to show/teach is good"
+        }
+      ],
+      "audioFile": "kuratidza.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kutaura_1751852223800",
+      "shona": "kutaura",
+      "english": "to speak",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/kutaura/",
+      "simplified": "ku-ta-u-ra",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kutaura",
+          "english": "I have to speak"
+        },
+        {
+          "shona": "kutaura yakanaka",
+          "english": "to speak is good"
+        },
+        {
+          "shona": "Ndinoda kutaura",
+          "english": "I want to speak"
+        },
+        {
+          "shona": "Ndine kutaura",
+          "english": "I have to speak"
+        },
+        {
+          "shona": "kutaura yakanaka",
+          "english": "to speak is good"
+        },
+        {
+          "shona": "Ndinoda kutaura",
+          "english": "I want to speak"
+        }
+      ],
+      "audioFile": "kutaura.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuteerera_1751852223800",
+      "shona": "kuteerera",
+      "english": "to listen",
+      "category": "education",
+      "tones": "HHHL",
+      "ipa": "/kuteerera/",
+      "simplified": "ku-te-e-re-ra",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kuteerera",
+          "english": "I have to listen"
+        },
+        {
+          "shona": "kuteerera yakanaka",
+          "english": "to listen is good"
+        },
+        {
+          "shona": "Ndinoda kuteerera",
+          "english": "I want to listen"
+        },
+        {
+          "shona": "Ndine kuteerera",
+          "english": "I have to listen"
+        },
+        {
+          "shona": "kuteerera yakanaka",
+          "english": "to listen is good"
+        },
+        {
+          "shona": "Ndinoda kuteerera",
+          "english": "I want to listen"
+        }
+      ],
+      "audioFile": "kuteerera.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kutevedzera_1751852223800",
+      "shona": "kutevedzera",
+      "english": "to follow/imitate",
+      "category": "education",
+      "tones": "HLHL",
+      "ipa": "/kutevedzera/",
+      "simplified": "ku-te-ve-dze-ra",
+      "source": "language_course",
+      "difficulty": 2,
+      "cultural": "Learning through observation",
+      "examples": [
+        {
+          "shona": "Ndinoda kutevedzera",
+          "english": "I want to follow/imitate"
+        },
+        {
+          "shona": "kutevedzera yakanaka",
+          "english": "to follow/imitate is good"
+        },
+        {
+          "shona": "Ndinoda kutevedzera",
+          "english": "I want to follow/imitate"
+        },
+        {
+          "shona": "kutevedzera yakanaka",
+          "english": "to follow/imitate is good"
+        }
+      ],
+      "audioFile": "kutevedzera.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "language_course",
+        "language_course"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_kuverenga_1751852223800",
+      "shona": "kuverenga",
+      "english": "to read",
+      "category": "education",
+      "tones": "HHHL",
+      "ipa": "/kuverenga/",
+      "simplified": "ku-ve-re-nga",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine kuverenga",
+          "english": "I have to read"
+        },
+        {
+          "shona": "kuverenga yakanaka",
+          "english": "to read is good"
+        },
+        {
+          "shona": "Ndinoda kuverenga",
+          "english": "I want to read"
+        },
+        {
+          "shona": "Ndine kuverenga",
+          "english": "I have to read"
+        },
+        {
+          "shona": "kuverenga yakanaka",
+          "english": "to read is good"
+        },
+        {
+          "shona": "Ndinoda kuverenga",
+          "english": "I want to read"
+        }
+      ],
+      "audioFile": "kuverenga.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mazwi_1751852223800",
+      "shona": "mazwi",
+      "english": "words",
+      "category": "education",
+      "tones": "HL",
+      "ipa": "/mazwi/",
+      "simplified": "ma-zwi",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine mazwi",
+          "english": "I have words"
+        },
+        {
+          "shona": "mazwi yakanaka",
+          "english": "words is good"
+        },
+        {
+          "shona": "Ndinoda mazwi",
+          "english": "I want words"
+        },
+        {
+          "shona": "Ndine mazwi",
+          "english": "I have words"
+        },
+        {
+          "shona": "mazwi yakanaka",
+          "english": "words is good"
+        },
+        {
+          "shona": "Ndinoda mazwi",
+          "english": "I want words"
+        }
+      ],
+      "audioFile": "mazwi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mutauro_1751852223800",
+      "shona": "mutauro",
+      "english": "language",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/mutauro/",
+      "simplified": "mu-ta-u-ro",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine mutauro",
+          "english": "I have language"
+        },
+        {
+          "shona": "mutauro yakanaka",
+          "english": "language is good"
+        },
+        {
+          "shona": "Ndinoda mutauro",
+          "english": "I want language"
+        },
+        {
+          "shona": "Ndine mutauro",
+          "english": "I have language"
+        },
+        {
+          "shona": "mutauro yakanaka",
+          "english": "language is good"
+        },
+        {
+          "shona": "Ndinoda mutauro",
+          "english": "I want language"
+        }
+      ],
+      "audioFile": "mutauro.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mutsara_1751852223800",
+      "shona": "mutsara",
+      "english": "sentence",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/mutsara/",
+      "simplified": "mu-tsa-ra",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine mutsara",
+          "english": "I have sentence"
+        },
+        {
+          "shona": "mutsara yakanaka",
+          "english": "sentence is good"
+        },
+        {
+          "shona": "Ndinoda mutsara",
+          "english": "I want sentence"
+        },
+        {
+          "shona": "Ndine mutsara",
+          "english": "I have sentence"
+        },
+        {
+          "shona": "mutsara yakanaka",
+          "english": "sentence is good"
+        },
+        {
+          "shona": "Ndinoda mutsara",
+          "english": "I want sentence"
+        }
+      ],
+      "audioFile": "mutsara.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_pfudziso_yepamusoro_1751852223800",
+      "shona": "pfudziso yepamusoro",
+      "english": "higher education",
+      "category": "education",
+      "tones": "HLHHL",
+      "ipa": "/pfudziso yepamusoro/",
+      "simplified": "pfu-dzi-so- ye-pa-mu-so-ro",
+      "source": "academic_syllabus",
+      "difficulty": 2,
+      "cultural": "University level learning",
+      "examples": [
+        {
+          "shona": "Ndinoda pfudziso yepamusoro",
+          "english": "I want higher education"
+        },
+        {
+          "shona": "pfudziso yepamusoro yakanaka",
+          "english": "higher education is good"
+        },
+        {
+          "shona": "Ndinoda pfudziso yepamusoro",
+          "english": "I want higher education"
+        },
+        {
+          "shona": "pfudziso yepamusoro yakanaka",
+          "english": "higher education is good"
+        }
+      ],
+      "audioFile": "pfudziso_yepamusoro.mp3",
+      "modern": true,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "academic_syllabus",
+        "academic_syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_pfungwa_1751852223800",
+      "shona": "pfungwa",
+      "english": "idea/thought",
+      "category": "education",
+      "tones": "HL",
+      "ipa": "/pfungwa/",
+      "simplified": "pfu-ngwa",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine pfungwa",
+          "english": "I have idea/thought"
+        },
+        {
+          "shona": "pfungwa yakanaka",
+          "english": "idea/thought is good"
+        },
+        {
+          "shona": "Ndinoda pfungwa",
+          "english": "I want idea/thought"
+        },
+        {
+          "shona": "Ndine pfungwa",
+          "english": "I have idea/thought"
+        },
+        {
+          "shona": "pfungwa yakanaka",
+          "english": "idea/thought is good"
+        },
+        {
+          "shona": "Ndinoda pfungwa",
+          "english": "I want idea/thought"
+        }
+      ],
+      "audioFile": "pfungwa.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_tsamba_1751852223800",
+      "shona": "tsamba",
+      "english": "letter",
+      "category": "education",
+      "tones": "HL",
+      "ipa": "/tsamba/",
+      "simplified": "tsa-mba",
+      "source": "syllabus",
+      "difficulty": 2,
+      "cultural": null,
+      "examples": [
+        {
+          "shona": "Ndine tsamba",
+          "english": "I have letter"
+        },
+        {
+          "shona": "tsamba yakanaka",
+          "english": "letter is good"
+        },
+        {
+          "shona": "Ndinoda tsamba",
+          "english": "I want letter"
+        },
+        {
+          "shona": "Ndine tsamba",
+          "english": "I have letter"
+        },
+        {
+          "shona": "tsamba yakanaka",
+          "english": "letter is good"
+        },
+        {
+          "shona": "Ndinoda tsamba",
+          "english": "I want letter"
+        }
+      ],
+      "audioFile": "tsamba.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "syllabus",
+        "syllabus"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_bhuku_1751852223800",
+      "shona": "bhuku",
+      "english": "book",
+      "category": "education",
+      "tones": "HL",
+      "ipa": "/bhuku/",
+      "simplified": "bhu-ku",
+      "source": "ethnography",
+      "difficulty": 4,
+      "cultural": "Written knowledge",
+      "examples": [
+        {
+          "shona": "Ndine bhuku",
+          "english": "I have book"
+        },
+        {
+          "shona": "bhuku yakanaka",
+          "english": "book is good"
+        },
+        {
+          "shona": "Ndinoda bhuku",
+          "english": "I want book"
+        },
+        {
+          "shona": "Ndine bhuku",
+          "english": "I have book"
+        },
+        {
+          "shona": "bhuku yakanaka",
+          "english": "book is good"
+        },
+        {
+          "shona": "Ndinoda bhuku",
+          "english": "I want book"
+        }
+      ],
+      "audioFile": "bhuku.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_chikoro_1751852223800",
+      "shona": "chikoro",
+      "english": "school",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/chikoro/",
+      "simplified": "chi-ko-ro",
+      "source": "ethnography",
+      "difficulty": 4,
+      "cultural": "Educational institution",
+      "examples": [
+        {
+          "shona": "Ndine chikoro",
+          "english": "I have school"
+        },
+        {
+          "shona": "chikoro yakanaka",
+          "english": "school is good"
+        },
+        {
+          "shona": "Ndinoda chikoro",
+          "english": "I want school"
+        },
+        {
+          "shona": "Ndine chikoro",
+          "english": "I have school"
+        },
+        {
+          "shona": "chikoro yakanaka",
+          "english": "school is good"
+        },
+        {
+          "shona": "Ndinoda chikoro",
+          "english": "I want school"
+        }
+      ],
+      "audioFile": "chikoro.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mudzidzi_1751852223800",
+      "shona": "mudzidzi",
+      "english": "student",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/mudzidzi/",
+      "simplified": "mu-dzi-dzi",
+      "source": "ethnography",
+      "difficulty": 4,
+      "cultural": "Learner",
+      "examples": [
+        {
+          "shona": "Ndine mudzidzi",
+          "english": "I have student"
+        },
+        {
+          "shona": "mudzidzi yakanaka",
+          "english": "student is good"
+        },
+        {
+          "shona": "Ndinoda mudzidzi",
+          "english": "I want student"
+        },
+        {
+          "shona": "Ndine mudzidzi",
+          "english": "I have student"
+        },
+        {
+          "shona": "mudzidzi yakanaka",
+          "english": "student is good"
+        },
+        {
+          "shona": "Ndinoda mudzidzi",
+          "english": "I want student"
+        }
+      ],
+      "audioFile": "mudzidzi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_mudzidzisi_1751852223800",
+      "shona": "mudzidzisi",
+      "english": "teacher",
+      "category": "education",
+      "tones": "HHHL",
+      "ipa": "/mudzidzisi/",
+      "simplified": "mu-dzi-dzi-si",
+      "source": "ethnography",
+      "difficulty": 4,
+      "cultural": "Educator",
+      "examples": [
+        {
+          "shona": "Ndine mudzidzisi",
+          "english": "I have teacher"
+        },
+        {
+          "shona": "mudzidzisi yakanaka",
+          "english": "teacher is good"
+        },
+        {
+          "shona": "Ndinoda mudzidzisi",
+          "english": "I want teacher"
+        },
+        {
+          "shona": "Ndine mudzidzisi",
+          "english": "I have teacher"
+        },
+        {
+          "shona": "mudzidzisi yakanaka",
+          "english": "teacher is good"
+        },
+        {
+          "shona": "Ndinoda mudzidzisi",
+          "english": "I want teacher"
+        }
+      ],
+      "audioFile": "mudzidzisi.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    },
+    {
+      "id": "content/vocabulary_merged.json_ruzivo_1751852223800",
+      "shona": "ruzivo",
+      "english": "knowledge",
+      "category": "education",
+      "tones": "HHL",
+      "ipa": "/ruzivo/",
+      "simplified": "ru-zi-vo",
+      "source": "ethnography",
+      "difficulty": 4,
+      "cultural": "Traditional and modern knowledge",
+      "examples": [
+        {
+          "shona": "Ndine ruzivo",
+          "english": "I have knowledge"
+        },
+        {
+          "shona": "ruzivo yakanaka",
+          "english": "knowledge is good"
+        },
+        {
+          "shona": "Ndinoda ruzivo",
+          "english": "I want knowledge"
+        },
+        {
+          "shona": "Ndine ruzivo",
+          "english": "I have knowledge"
+        },
+        {
+          "shona": "ruzivo yakanaka",
+          "english": "knowledge is good"
+        },
+        {
+          "shona": "Ndinoda ruzivo",
+          "english": "I want knowledge"
+        }
+      ],
+      "audioFile": "ruzivo.mp3",
+      "modern": false,
+      "register": "neutral",
+      "dialect": "standard",
+      "sources": [
+        "ethnography",
+        "ethnography"
+      ]
+    }
+  ]
+}

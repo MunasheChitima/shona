@@ -382,7 +382,7 @@ export default function WordBuilderGame() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-pink-50 to-purple-50">
-      <Navigation user={user} />
+      <Navigation />
       
       <div className="container mx-auto px-4 py-8">
         {/* Header */}

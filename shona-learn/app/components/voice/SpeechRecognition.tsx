@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { FaMicrophone, FaMicrophoneSlash, FaSpinner } from 'react-icons/fa'
 
 interface SpeechRecognitionProps {
@@ -17,54 +17,94 @@ export default function SpeechRecognition({
   const [transcript, setTranscript] = useState('')
   const [confidence, setConfidence] = useState(0)
   const [error, setError] = useState<string | null>(null)
+  const recognitionRef = useRef<any>(null)
 
   useEffect(() => {
+    if (typeof window === 'undefined') {
+      setError('Speech recognition not available in server-side rendering')
+      return
+    }
+
     if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
       setError('Speech recognition not supported in this browser')
+      return
+    }
+
+    // Cleanup on unmount
+    return () => {
+      if (recognitionRef.current) {
+        try {
+          recognitionRef.current.stop()
+        } catch (error) {
+          console.error('Error stopping speech recognition:', error)
+        }
+        recognitionRef.current = null
+      }
     }
   }, [])
 
   const startListening = useCallback(() => {
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
-    const recognition = new SpeechRecognition()
-
-    recognition.continuous = false
-    recognition.interimResults = true
-    recognition.lang = language
-    recognition.maxAlternatives = 3
-
-    recognition.onstart = () => {
-      setIsListening(true)
-      setError(null)
-      setTranscript('')
-    }
-
-    recognition.onresult = (event) => {
-      const current = event.resultIndex
-      const result = event.results[current]
-      const primaryTranscript = result[0].transcript
-      const primaryConfidence = result[0].confidence || 0.9
-
-      setTranscript(primaryTranscript)
-      setConfidence(primaryConfidence)
-
-      if (result.isFinal) {
-        // Calculate pronunciation score
-        const score = calculatePronunciationScore(primaryTranscript, targetPhrase, primaryConfidence)
-        onResult(primaryTranscript, score)
+    try {
+      if (typeof window === 'undefined') {
+        setError('Speech recognition not available in server-side rendering')
+        return
       }
-    }
 
-    recognition.onerror = (event) => {
-      setError(`Error: ${event.error}`)
-      setIsListening(false)
-    }
+      const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
+      if (!SpeechRecognition) {
+        setError('Speech recognition not supported in this browser')
+        return
+      }
 
-    recognition.onend = () => {
-      setIsListening(false)
-    }
+      const recognition = new SpeechRecognition()
+      recognitionRef.current = recognition
 
-    recognition.start()
+      recognition.continuous = false
+      recognition.interimResults = true
+      recognition.lang = language
+      recognition.maxAlternatives = 3
+
+      recognition.onstart = () => {
+        setIsListening(true)
+        setError(null)
+        setTranscript('')
+      }
+
+      recognition.onresult = (event: any) => {
+        try {
+          const current = event.resultIndex
+          const result = event.results[current]
+          const primaryTranscript = result[0].transcript
+          const primaryConfidence = result[0].confidence || 0.9
+
+          setTranscript(primaryTranscript)
+          setConfidence(primaryConfidence)
+
+          if (result.isFinal) {
+            // Calculate pronunciation score
+            const score = calculatePronunciationScore(primaryTranscript, targetPhrase, primaryConfidence)
+            onResult(primaryTranscript, score)
+          }
+        } catch (error) {
+          console.error('Error processing speech result:', error)
+          setError('Error processing speech result')
+        }
+      }
+
+      recognition.onerror = (event: any) => {
+        setError(`Error: ${event.error}`)
+        setIsListening(false)
+      }
+
+      recognition.onend = () => {
+        setIsListening(false)
+      }
+
+      recognition.start()
+    } catch (error) {
+      console.error('Error starting speech recognition:', error)
+      setError('Failed to start speech recognition')
+    }
   }, [language, targetPhrase, onResult])
 
   const calculatePronunciationScore = (

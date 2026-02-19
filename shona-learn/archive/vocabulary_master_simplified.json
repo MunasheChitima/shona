@@ -1,0 +1,2710 @@
+{
+  "metadata": {
+    "title": "Simplified Shona Vocabulary List",
+    "version": "2.0.0",
+    "totalWords": 270,
+    "created": "2025-07-07T01:37:03.810Z"
+  },
+  "vocabulary": [
+    {
+      "shona": "hongu",
+      "english": "yes",
+      "pronunciation": "ho-ngu",
+      "tones": "HL",
+      "category": "basic",
+      "difficulty": 1,
+      "cultural": "Affirmative response",
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kwete",
+      "english": "no",
+      "pronunciation": "kwe-te",
+      "tones": "HL",
+      "category": "basic",
+      "difficulty": 1,
+      "cultural": "Negative response",
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "dumbu",
+      "english": "stomach",
+      "pronunciation": "du-mbu",
+      "tones": "HL",
+      "category": "body",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "manzino",
+      "english": "teeth",
+      "pronunciation": "ma-nzi-no",
+      "tones": "HHL",
+      "category": "body",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "maoko",
+      "english": "hands",
+      "pronunciation": "ma-o-ko",
+      "tones": "HL",
+      "category": "body",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "maziso",
+      "english": "eyes",
+      "pronunciation": "ma-zi-so",
+      "tones": "HHL",
+      "category": "body",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "muromo",
+      "english": "mouth",
+      "pronunciation": "mu-ro-mo",
+      "tones": "HHL",
+      "category": "body",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "musoro",
+      "english": "head",
+      "pronunciation": "mu-so-ro",
+      "tones": "HHL",
+      "category": "body",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "nzeve",
+      "english": "ear",
+      "pronunciation": "nze-ve",
+      "tones": "HL",
+      "category": "body",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "tsoka",
+      "english": "foot",
+      "pronunciation": "tso-ka",
+      "tones": "HL",
+      "category": "body",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "bhuruu",
+      "english": "blue",
+      "pronunciation": "bhu-ru-u",
+      "tones": "HL",
+      "category": "colors",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "chena",
+      "english": "white",
+      "pronunciation": "che-na",
+      "tones": "HL",
+      "category": "colors",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "dema",
+      "english": "black",
+      "pronunciation": "de-ma",
+      "tones": "HL",
+      "category": "colors",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "girini",
+      "english": "green",
+      "pronunciation": "gi-ri-ni",
+      "tones": "HHL",
+      "category": "colors",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "tsvuku",
+      "english": "red",
+      "pronunciation": "tsvu-ku",
+      "tones": "HHL",
+      "category": "colors",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "yero",
+      "english": "yellow",
+      "pronunciation": "ye-ro",
+      "tones": "HL",
+      "category": "colors",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "dudziro",
+      "english": "interpretation",
+      "pronunciation": "du-dzi-ro",
+      "tones": "HHL",
+      "category": "communication",
+      "difficulty": 1,
+      "cultural": "Making meaning clear",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "nhaurirano",
+      "english": "conversation",
+      "pronunciation": "nha-u-ri-ra-no",
+      "tones": "HLHL",
+      "category": "communication",
+      "difficulty": 1,
+      "cultural": "Dialogue and discussion",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "nhevedzano",
+      "english": "storytelling",
+      "pronunciation": "nhe-ve-dza-no",
+      "tones": "HLHL",
+      "category": "communication",
+      "difficulty": 1,
+      "cultural": "Traditional narrative sharing",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "tsananguro",
+      "english": "explanation",
+      "pronunciation": "tsa-na-ngu-ro",
+      "tones": "HLHL",
+      "category": "communication",
+      "difficulty": 1,
+      "cultural": "Clear communication of ideas",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "kubata mapoka",
+      "english": "to attend meetings",
+      "pronunciation": "ku-ba-ta- ma-po-ka",
+      "tones": "HLHHL",
+      "category": "community",
+      "difficulty": 1,
+      "cultural": "Community participation",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "chidzidzo",
+      "english": "lesson/teaching",
+      "pronunciation": "chi-dzi-dzo",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 1,
+      "cultural": "Knowledge transfer",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "kuwongorora",
+      "english": "to examine",
+      "pronunciation": "ku-wo-ngo-ro-ra",
+      "tones": "HLHL",
+      "category": "education",
+      "difficulty": 1,
+      "cultural": "Careful study and analysis",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "mhinduro",
+      "english": "answer",
+      "pronunciation": "mhi-ndu-ro",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 1,
+      "cultural": "Response to inquiry",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "mubvunzo",
+      "english": "question",
+      "pronunciation": "mu-bvu-nzo",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 1,
+      "cultural": "Inquiry for learning",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "pfudziso",
+      "english": "education",
+      "pronunciation": "pfu-dzi-so",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 1,
+      "cultural": "Formal learning process",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "ambuya",
+      "english": "grandmother (maternal)",
+      "pronunciation": "a-mbu-ya",
+      "tones": "HHL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Highly respected female elder",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "baba",
+      "english": "father",
+      "pronunciation": "ba-ba",
+      "tones": "HL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Primary term for father, shows respect",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "babamukuru",
+      "english": "father's elder brother",
+      "pronunciation": "ba-ba-mu-ku-ru",
+      "tones": "HHLLL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Senior male authority",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mai",
+      "english": "mother",
+      "pronunciation": "ma-i",
+      "tones": "HL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Primary term for mother, used with respect",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "mbuya",
+      "english": "grandmother",
+      "pronunciation": "mbu-ya",
+      "tones": "HL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Revered elder, keeper of traditions",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mudzimai",
+      "english": "wife",
+      "pronunciation": "mu-dzi-ma-i",
+      "tones": "HHL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Marriage partnership with mutual respect",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "mukoma",
+      "english": "older brother",
+      "pronunciation": "mu-ko-ma",
+      "tones": "HLL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Respect for older siblings",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mukomana",
+      "english": "boy",
+      "pronunciation": "mu-ko-ma-na",
+      "tones": "HLL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Male child with specific expectations",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "munin'ina",
+      "english": "younger sibling",
+      "pronunciation": "mu-ni-n'i-na",
+      "tones": "HLHL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Younger family member",
+      "source": "ethnography"
+    },
+    {
+      "shona": "murume",
+      "english": "husband/man",
+      "pronunciation": "mu-ru-me",
+      "tones": "HHL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Male head of household",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "musikana",
+      "english": "girl",
+      "pronunciation": "mu-si-ka-na",
+      "tones": "HLL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Female child with traditional roles",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "muzukuru",
+      "english": "grandchild/nephew/niece",
+      "pronunciation": "mu-zu-ku-ru",
+      "tones": "HLHL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Important kinship term",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mwana",
+      "english": "child",
+      "pronunciation": "mwa-na",
+      "tones": "HL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Central to family identity",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "sekuru",
+      "english": "grandfather (maternal)",
+      "pronunciation": "se-ku-ru",
+      "tones": "HLL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Wise elder and cultural keeper",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "tezvara",
+      "english": "father-in-law",
+      "pronunciation": "te-zva-ra",
+      "tones": "HLL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Respect relationship",
+      "source": "ethnography"
+    },
+    {
+      "shona": "vana",
+      "english": "children",
+      "pronunciation": "VAH-nah",
+      "tones": "LHL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Plural form of child",
+      "source": "ethnography"
+    },
+    {
+      "shona": "vatete",
+      "english": "paternal aunt",
+      "pronunciation": "va-te-te",
+      "tones": "HHL",
+      "category": "family",
+      "difficulty": 1,
+      "cultural": "Important female authority",
+      "source": "ethnography"
+    },
+    {
+      "shona": "kwaziwai",
+      "english": "good evening (formal)",
+      "pronunciation": "kwa-zi-wa-i",
+      "tones": "HHL",
+      "category": "greetings",
+      "difficulty": 1,
+      "cultural": "Formal evening greeting",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "mazuva ano",
+      "english": "these days",
+      "pronunciation": "ma-zu-va- a-no",
+      "tones": "HLHL",
+      "category": "greetings",
+      "difficulty": 1,
+      "cultural": "Contemporary greeting expression",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "rarama",
+      "english": "goodbye (informal)",
+      "pronunciation": "ra-ra-ma",
+      "tones": "HHL",
+      "category": "greetings",
+      "difficulty": 1,
+      "cultural": "Casual farewell among peers",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "tunoswera",
+      "english": "we are fine",
+      "pronunciation": "tu-no-swe-ra",
+      "tones": "HLHL",
+      "category": "greetings",
+      "difficulty": 1,
+      "cultural": "Collective response showing unity",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "kuberekerwa",
+      "english": "to be born",
+      "pronunciation": "ku-be-re-ke-rwa",
+      "tones": "HLHL",
+      "category": "life_events",
+      "difficulty": 1,
+      "cultural": "Life beginning ceremony",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "kufa",
+      "english": "to die",
+      "pronunciation": "ku-fa",
+      "tones": "HL",
+      "category": "life_events",
+      "difficulty": 1,
+      "cultural": "Life transition to ancestorhood",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "kuroora",
+      "english": "to marry (for man)",
+      "pronunciation": "ku-ro-o-ra",
+      "tones": "HHL",
+      "category": "life_events",
+      "difficulty": 1,
+      "cultural": "Male marriage action",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "kuroorwa",
+      "english": "to marry (for woman)",
+      "pronunciation": "ku-ro-o-rwa",
+      "tones": "HHL",
+      "category": "life_events",
+      "difficulty": 1,
+      "cultural": "Female marriage experience",
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "china",
+      "english": "four",
+      "pronunciation": "chi-na",
+      "tones": "HL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "piri",
+      "english": "two",
+      "pronunciation": "pi-ri",
+      "tones": "HL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "poshi",
+      "english": "one",
+      "pronunciation": "po-shi",
+      "tones": "HL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "shanu",
+      "english": "five",
+      "pronunciation": "sha-nu",
+      "tones": "HL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "tatu",
+      "english": "three",
+      "pronunciation": "ta-tu",
+      "tones": "HL",
+      "category": "numbers",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "chii",
+      "english": "what",
+      "pronunciation": "CHEE-ee",
+      "tones": "LH",
+      "category": "questions",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "kupi",
+      "english": "where",
+      "pronunciation": "KOO-pee",
+      "tones": "LHL",
+      "category": "questions",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "sei",
+      "english": "how",
+      "pronunciation": "SEH-ee",
+      "tones": "LH",
+      "category": "questions",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "mangwanani",
+      "english": "morning",
+      "pronunciation": "ma-ngwa-na-ni",
+      "tones": "HLHL",
+      "category": "time",
+      "difficulty": 1,
+      "cultural": "Standard morning greeting, used until around 10 AM",
+      "source": "syllabus"
+    },
+    {
+      "shona": "manheru",
+      "english": "evening",
+      "pronunciation": "ma-nhe-ru",
+      "tones": "HHL",
+      "category": "time",
+      "difficulty": 1,
+      "cultural": "Used after sunset",
+      "source": "syllabus"
+    },
+    {
+      "shona": "masikati",
+      "english": "afternoon",
+      "pronunciation": "ma-si-ka-ti",
+      "tones": "HLHL",
+      "category": "time",
+      "difficulty": 1,
+      "cultural": "Used from around 10 AM to sunset",
+      "source": "syllabus"
+    },
+    {
+      "shona": "kubvuma",
+      "english": "to agree",
+      "pronunciation": "ku-bvu-ma",
+      "tones": "HHL",
+      "category": "verbs",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kudya",
+      "english": "to eat",
+      "pronunciation": "ku-dya",
+      "tones": "HL",
+      "category": "verbs",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kufamba",
+      "english": "to walk",
+      "pronunciation": "ku-fa-mba",
+      "tones": "HHL",
+      "category": "verbs",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kugara",
+      "english": "to sit/live",
+      "pronunciation": "ku-ga-ra",
+      "tones": "HHL",
+      "category": "verbs",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kumuka",
+      "english": "to wake up",
+      "pronunciation": "ku-mu-ka",
+      "tones": "HHL",
+      "category": "verbs",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kunwa",
+      "english": "to drink",
+      "pronunciation": "ku-nwa",
+      "tones": "HL",
+      "category": "verbs",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kuramba",
+      "english": "to refuse",
+      "pronunciation": "ku-ra-mba",
+      "tones": "HHL",
+      "category": "verbs",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kurara",
+      "english": "to sleep",
+      "pronunciation": "ku-ra-ra",
+      "tones": "HHL",
+      "category": "verbs",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kutamba",
+      "english": "to play",
+      "pronunciation": "ku-ta-mba",
+      "tones": "HHL",
+      "category": "verbs",
+      "difficulty": 1,
+      "cultural": null,
+      "source": "fsi_filtered"
+    },
+    {
+      "shona": "kushanda",
+      "english": "to work",
+      "pronunciation": "ku-sha-nda",
+      "tones": "HHL",
+      "category": "work",
+      "difficulty": 1,
+      "cultural": "Economic activity",
+      "source": "language_course"
+    },
+    {
+      "shona": "imbwa",
+      "english": "dog",
+      "pronunciation": "eem-BWAH",
+      "tones": "LHL",
+      "category": "animals",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "cultural_practices"
+    },
+    {
+      "shona": "katsi",
+      "english": "cat",
+      "pronunciation": "KAH-tsee",
+      "tones": "LHL",
+      "category": "animals",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "cultural_practices"
+    },
+    {
+      "shona": "mombe",
+      "english": "cow",
+      "pronunciation": "MOHM-beh",
+      "tones": "LHL",
+      "category": "animals",
+      "difficulty": 2,
+      "cultural": "Important animal in Shona culture, symbol of wealth",
+      "source": "cultural_practices"
+    },
+    {
+      "shona": "meso",
+      "english": "eyes",
+      "pronunciation": "MEH-soh",
+      "tones": "LHL",
+      "category": "body",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "nhema",
+      "english": "black",
+      "pronunciation": "NYEH-mah",
+      "tones": "LHL",
+      "category": "colors",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "dhora",
+      "english": "dollar",
+      "pronunciation": "dho-ra",
+      "tones": "HL",
+      "category": "commerce",
+      "difficulty": 2,
+      "cultural": "Modern currency",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "kutengeserana",
+      "english": "to trade/do business",
+      "pronunciation": "ku-te-nge-se-ra-na",
+      "tones": "HLHL",
+      "category": "commerce",
+      "difficulty": 2,
+      "cultural": "Commercial activity",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "mari",
+      "english": "money",
+      "pronunciation": "ma-ri",
+      "tones": "HL",
+      "category": "commerce",
+      "difficulty": 2,
+      "cultural": "Medium of exchange",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "mitengo",
+      "english": "prices",
+      "pronunciation": "mi-te-ngo",
+      "tones": "HHL",
+      "category": "commerce",
+      "difficulty": 2,
+      "cultural": "Market negotiation",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "handingakubatsiri",
+      "english": "I cannot help you",
+      "pronunciation": "ha-ndi-nga-ku-ba-tsi-ri",
+      "tones": "HHLHHL",
+      "category": "communication",
+      "difficulty": 2,
+      "cultural": "Honest limitation",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "kunzwisisa",
+      "english": "to understand",
+      "pronunciation": "ku-nzwi-si-sa",
+      "tones": "HLHL",
+      "category": "communication",
+      "difficulty": 2,
+      "cultural": "Deep comprehension",
+      "source": "language_course"
+    },
+    {
+      "shona": "ndine dambudziko",
+      "english": "I have a problem",
+      "pronunciation": "ndi-ne- da-mbu-dzi-ko",
+      "tones": "HLHHL",
+      "category": "communication",
+      "difficulty": 2,
+      "cultural": "Seeking help",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "ndinokutenda",
+      "english": "I thank you",
+      "pronunciation": "ndi-no-ku-te-nda",
+      "tones": "HLHL",
+      "category": "communication",
+      "difficulty": 2,
+      "cultural": "Gratitude expression",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "zvinotenda",
+      "english": "thank you (formal)",
+      "pronunciation": "zvi-no-te-nda",
+      "tones": "HHL",
+      "category": "communication",
+      "difficulty": 2,
+      "cultural": "Formal gratitude",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "husahwira",
+      "english": "friendship",
+      "pronunciation": "hu-sa-hwi-ra",
+      "tones": "HHL",
+      "category": "community",
+      "difficulty": 2,
+      "cultural": "Close personal bond",
+      "source": "language_course"
+    },
+    {
+      "shona": "kubatsirana",
+      "english": "to help each other",
+      "pronunciation": "ku-ba-tsi-ra-na",
+      "tones": "HLHL",
+      "category": "community",
+      "difficulty": 2,
+      "cultural": "Mutual assistance",
+      "source": "language_course"
+    },
+    {
+      "shona": "kugovanisa",
+      "english": "to share",
+      "pronunciation": "ku-go-va-ni-sa",
+      "tones": "HLHL",
+      "category": "community",
+      "difficulty": 2,
+      "cultural": "Community sharing ethic",
+      "source": "language_course"
+    },
+    {
+      "shona": "ukama",
+      "english": "relationship/kinship",
+      "pronunciation": "u-ka-ma",
+      "tones": "HHL",
+      "category": "community",
+      "difficulty": 2,
+      "cultural": "Fundamental social bond",
+      "source": "language_course"
+    },
+    {
+      "shona": "shiri",
+      "english": "bird",
+      "pronunciation": "shi-ri",
+      "tones": "HL",
+      "category": "culture",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "akadimi",
+      "english": "academic",
+      "pronunciation": "a-ka-di-mi",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": "Scholarly approach",
+      "source": "academic_syllabus"
+    },
+    {
+      "shona": "chinyorwa",
+      "english": "writing",
+      "pronunciation": "chi-nyo-rwa",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "kudzidza",
+      "english": "to learn",
+      "pronunciation": "ku-dzi-dza",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": "Acquiring knowledge and wisdom",
+      "source": "language_course"
+    },
+    {
+      "shona": "kunyora",
+      "english": "to write",
+      "pronunciation": "ku-nyo-ra",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "kuratidza",
+      "english": "to show/teach",
+      "pronunciation": "ku-ra-ti-dza",
+      "tones": "HLHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": "Sharing knowledge with others",
+      "source": "language_course"
+    },
+    {
+      "shona": "kutaura",
+      "english": "to speak",
+      "pronunciation": "ku-ta-u-ra",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "kuteerera",
+      "english": "to listen",
+      "pronunciation": "ku-te-e-re-ra",
+      "tones": "HHHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "kutevedzera",
+      "english": "to follow/imitate",
+      "pronunciation": "ku-te-ve-dze-ra",
+      "tones": "HLHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": "Learning through observation",
+      "source": "language_course"
+    },
+    {
+      "shona": "kuverenga",
+      "english": "to read",
+      "pronunciation": "ku-ve-re-nga",
+      "tones": "HHHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "mazwi",
+      "english": "words",
+      "pronunciation": "ma-zwi",
+      "tones": "HL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "mutauro",
+      "english": "language",
+      "pronunciation": "mu-ta-u-ro",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "mutsara",
+      "english": "sentence",
+      "pronunciation": "mu-tsa-ra",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "pfudziso yepamusoro",
+      "english": "higher education",
+      "pronunciation": "pfu-dzi-so- ye-pa-mu-so-ro",
+      "tones": "HLHHL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": "University level learning",
+      "source": "academic_syllabus"
+    },
+    {
+      "shona": "pfungwa",
+      "english": "idea/thought",
+      "pronunciation": "pfu-ngwa",
+      "tones": "HL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "tsamba",
+      "english": "letter",
+      "pronunciation": "tsa-mba",
+      "tones": "HL",
+      "category": "education",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "hapana",
+      "english": "nothing/no",
+      "pronunciation": "hah-PAH-nah",
+      "tones": "LHL",
+      "category": "expressions",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "ndapota",
+      "english": "please",
+      "pronunciation": "ndah-POH-tah",
+      "tones": "LHLHL",
+      "category": "expressions",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "ndatenda",
+      "english": "thank you",
+      "pronunciation": "ndah-TEN-dah",
+      "tones": "LHLHL",
+      "category": "expressions",
+      "difficulty": 2,
+      "cultural": "Standard expression of gratitude",
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "babamunini",
+      "english": "father's younger brother",
+      "pronunciation": "ba-ba-mu-ni-ni",
+      "tones": "HLHL",
+      "category": "family",
+      "difficulty": 2,
+      "cultural": "Junior paternal authority",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "mbuya vekuwasha",
+      "english": "mother-in-law",
+      "pronunciation": "mbu-ya- ve-ku-wa-sha",
+      "tones": "HLHHL",
+      "category": "family",
+      "difficulty": 2,
+      "cultural": "In-law relationship",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "mukadzi",
+      "english": "woman/wife",
+      "pronunciation": "moo-KAH-dzee",
+      "tones": "LHL",
+      "category": "family",
+      "difficulty": 2,
+      "cultural": "Respectful term for woman or wife",
+      "source": "ethnography"
+    },
+    {
+      "shona": "sekuru vekuwasha",
+      "english": "father-in-law",
+      "pronunciation": "se-ku-ru- ve-ku-wa-sha",
+      "tones": "HLHHL",
+      "category": "family",
+      "difficulty": 2,
+      "cultural": "In-law relationship",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "tete mukuru",
+      "english": "eldest paternal aunt",
+      "pronunciation": "te-te- mu-ku-ru",
+      "tones": "HLHL",
+      "category": "family",
+      "difficulty": 2,
+      "cultural": "Senior female authority",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "nyama",
+      "english": "meat",
+      "pronunciation": "NYAH-mah",
+      "tones": "LHL",
+      "category": "food",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "cultural_practices"
+    },
+    {
+      "shona": "sadza",
+      "english": "staple food/porridge",
+      "pronunciation": "sa-dza",
+      "tones": "HL",
+      "category": "food",
+      "difficulty": 2,
+      "cultural": "Traditional staple food",
+      "source": "ethnography"
+    },
+    {
+      "shona": "chisarai",
+      "english": "goodbye",
+      "pronunciation": "chi-sa-ra-i",
+      "tones": "HHL",
+      "category": "greetings",
+      "difficulty": 2,
+      "cultural": "Formal farewell",
+      "source": "ethnography"
+    },
+    {
+      "shona": "makadii",
+      "english": "how are you?",
+      "pronunciation": "ma-ka-di-i",
+      "tones": "HHL",
+      "category": "greetings",
+      "difficulty": 2,
+      "cultural": "Standard greeting inquiry",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mhoro",
+      "english": "hello (casual)",
+      "pronunciation": "mho-ro",
+      "tones": "HL",
+      "category": "greetings",
+      "difficulty": 2,
+      "cultural": "Modern casual greeting",
+      "source": "ethnography"
+    },
+    {
+      "shona": "tiripo",
+      "english": "we are fine",
+      "pronunciation": "ti-ri-po",
+      "tones": "HHL",
+      "category": "greetings",
+      "difficulty": 2,
+      "cultural": "Standard positive response",
+      "source": "ethnography"
+    },
+    {
+      "shona": "hutano",
+      "english": "health",
+      "pronunciation": "hu-ta-no",
+      "tones": "HHL",
+      "category": "health",
+      "difficulty": 2,
+      "cultural": "Physical and spiritual wellness",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "kupora",
+      "english": "to heal/recover",
+      "pronunciation": "ku-po-ra",
+      "tones": "HHL",
+      "category": "health",
+      "difficulty": 2,
+      "cultural": "Return to wellness",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "kurwara",
+      "english": "to be sick",
+      "pronunciation": "ku-rwa-ra",
+      "tones": "HHL",
+      "category": "health",
+      "difficulty": 2,
+      "cultural": "State of illness",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "mishonga",
+      "english": "medicines",
+      "pronunciation": "mi-sho-nga",
+      "tones": "HHL",
+      "category": "health",
+      "difficulty": 2,
+      "cultural": "Healing substances",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "mvura",
+      "english": "water",
+      "pronunciation": "mvu-ra",
+      "tones": "HL",
+      "category": "nature",
+      "difficulty": 2,
+      "cultural": "Sacred element",
+      "source": "ethnography"
+    },
+    {
+      "shona": "gumi",
+      "english": "ten",
+      "pronunciation": "gu-mi",
+      "tones": "HL",
+      "category": "numbers",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "nomwe",
+      "english": "seven",
+      "pronunciation": "no-mwe",
+      "tones": "HL",
+      "category": "numbers",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "pfumbamwe",
+      "english": "nine",
+      "pronunciation": "pfu-mba-mwe",
+      "tones": "HHL",
+      "category": "numbers",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "sere",
+      "english": "eight",
+      "pronunciation": "se-re",
+      "tones": "HL",
+      "category": "numbers",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "tanhatu",
+      "english": "six",
+      "pronunciation": "ta-nha-tu",
+      "tones": "HHL",
+      "category": "numbers",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "ari",
+      "english": "he/she is",
+      "pronunciation": "AH-ree",
+      "tones": "LH",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "muri",
+      "english": "you are (plural)",
+      "pronunciation": "moo-REE",
+      "tones": "LHL",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "ndiri",
+      "english": "I am",
+      "pronunciation": "ndee-REE",
+      "tones": "LHL",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "tiri",
+      "english": "we are",
+      "pronunciation": "tee-REE",
+      "tones": "LHL",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "uri",
+      "english": "you are (singular)",
+      "pronunciation": "OO-ree",
+      "tones": "LH",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "vari",
+      "english": "they are",
+      "pronunciation": "vah-REE",
+      "tones": "LHL",
+      "category": "pronouns",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "ndiani",
+      "english": "who",
+      "pronunciation": "ndee-AH-nee",
+      "tones": "LHL",
+      "category": "questions",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "rinhi",
+      "english": "when",
+      "pronunciation": "REE-nhee",
+      "tones": "LHL",
+      "category": "questions",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "alleluya",
+      "english": "hallelujah",
+      "pronunciation": "a-lle-lu-ya",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 2,
+      "cultural": "Joyful praise",
+      "source": "religious_hymns"
+    },
+    {
+      "shona": "hosana",
+      "english": "hosanna",
+      "pronunciation": "ho-sa-na",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 2,
+      "cultural": "Praise expression",
+      "source": "religious_hymns"
+    },
+    {
+      "shona": "chino",
+      "english": "now/currently",
+      "pronunciation": "chi-no",
+      "tones": "HL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": "Present moment awareness",
+      "source": "language_course"
+    },
+    {
+      "shona": "gore",
+      "english": "year",
+      "pronunciation": "go-re",
+      "tones": "HL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "husiku",
+      "english": "night",
+      "pronunciation": "hu-si-ku",
+      "tones": "HHL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "mwedzi",
+      "english": "month",
+      "pronunciation": "mwe-dzi",
+      "tones": "HL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "nekuchinjika",
+      "english": "gradually",
+      "pronunciation": "ne-ku-chi-nji-ka",
+      "tones": "HLHL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": "Slow change over time",
+      "source": "language_course"
+    },
+    {
+      "shona": "nguva",
+      "english": "time",
+      "pronunciation": "ngu-va",
+      "tones": "HL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "nguva dzose",
+      "english": "always",
+      "pronunciation": "ngu-va- dzo-se",
+      "tones": "HLHL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": "Continuous time",
+      "source": "language_course"
+    },
+    {
+      "shona": "vhiki",
+      "english": "week",
+      "pronunciation": "vhi-ki",
+      "tones": "HL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "zuva",
+      "english": "day",
+      "pronunciation": "zu-va",
+      "tones": "HL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": null,
+      "source": "syllabus"
+    },
+    {
+      "shona": "zvinhu zvachinja",
+      "english": "things have changed",
+      "pronunciation": "zvi-nhu- zva-chi-nja",
+      "tones": "HLHHL",
+      "category": "time",
+      "difficulty": 2,
+      "cultural": "Acknowledgment of change",
+      "source": "language_course"
+    },
+    {
+      "shona": "chitima",
+      "english": "train",
+      "pronunciation": "chi-ti-ma",
+      "tones": "HHL",
+      "category": "transport",
+      "difficulty": 2,
+      "cultural": "Railway transportation",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "kombi",
+      "english": "minibus",
+      "pronunciation": "ko-mbi",
+      "tones": "HL",
+      "category": "transport",
+      "difficulty": 2,
+      "cultural": "Common urban transport",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "mota",
+      "english": "car",
+      "pronunciation": "mo-ta",
+      "tones": "HL",
+      "category": "transport",
+      "difficulty": 2,
+      "cultural": "Private vehicle",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "ndege",
+      "english": "airplane",
+      "pronunciation": "nde-ge",
+      "tones": "HL",
+      "category": "transport",
+      "difficulty": 2,
+      "cultural": "Air travel",
+      "source": "dictionary_phrasebook"
+    },
+    {
+      "shona": "basa",
+      "english": "work/job",
+      "pronunciation": "ba-sa",
+      "tones": "HL",
+      "category": "work",
+      "difficulty": 2,
+      "cultural": "Employment and livelihood",
+      "source": "language_course"
+    },
+    {
+      "shona": "mukuru",
+      "english": "boss/elder",
+      "pronunciation": "mu-ku-ru",
+      "tones": "HHL",
+      "category": "work",
+      "difficulty": 2,
+      "cultural": "Authority figure",
+      "source": "language_course"
+    },
+    {
+      "shona": "mushandiri",
+      "english": "worker/employee",
+      "pronunciation": "mu-sha-ndi-ri",
+      "tones": "HHL",
+      "category": "work",
+      "difficulty": 2,
+      "cultural": "Person who works",
+      "source": "language_course"
+    },
+    {
+      "shona": "mukanwa",
+      "english": "mouth",
+      "pronunciation": "moo-KAH-nwah",
+      "tones": "LHLHL",
+      "category": "body",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "primary_textbook"
+    },
+    {
+      "shona": "bira remukwerere",
+      "english": "rain ceremony",
+      "pronunciation": "bi-ra- re-mu-kwe-re-re",
+      "tones": "HLHHL",
+      "category": "ceremony",
+      "difficulty": 3,
+      "cultural": "Traditional rain-calling ceremony",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "kudira mvura",
+      "english": "to pour water",
+      "pronunciation": "ku-di-ra- mvu-ra",
+      "tones": "HLHL",
+      "category": "ceremony",
+      "difficulty": 3,
+      "cultural": "Cleansing ritual",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "kupira mhuri",
+      "english": "to pour for family",
+      "pronunciation": "ku-pi-ra- mhu-ri",
+      "tones": "HLHL",
+      "category": "ceremony",
+      "difficulty": 3,
+      "cultural": "Ancestral offering ritual",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "kuraguza midzimu",
+      "english": "to consult ancestors",
+      "pronunciation": "ku-ra-gu-za- mi-dzi-mu",
+      "tones": "HLHHL",
+      "category": "ceremony",
+      "difficulty": 3,
+      "cultural": "Spiritual consultation process",
+      "source": "ethnography_enhanced"
+    },
+    {
+      "shona": "kutenda",
+      "english": "to believe",
+      "pronunciation": "ku-te-nda",
+      "tones": "HHL",
+      "category": "community",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "kuyamura",
+      "english": "to honor",
+      "pronunciation": "ku-ya-mu-ra",
+      "tones": "HLHL",
+      "category": "community",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "rudo",
+      "english": "love",
+      "pronunciation": "ru-do",
+      "tones": "HL",
+      "category": "community",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "rugare",
+      "english": "peace",
+      "pronunciation": "ru-ga-re",
+      "tones": "HHL",
+      "category": "community",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "sangano",
+      "english": "gathering",
+      "pronunciation": "sa-nga-no",
+      "tones": "HHL",
+      "category": "community",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "simba",
+      "english": "strength/power",
+      "pronunciation": "si-mba",
+      "tones": "HL",
+      "category": "community",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "tariro",
+      "english": "hope",
+      "pronunciation": "ta-ri-ro",
+      "tones": "HHL",
+      "category": "community",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "upenyu",
+      "english": "life",
+      "pronunciation": "u-pe-nyu",
+      "tones": "HHL",
+      "category": "community",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "ndine urombo",
+      "english": "I'm sorry",
+      "pronunciation": "ndee-neh oo-ROHM-boh",
+      "tones": "LHLHL",
+      "category": "expressions",
+      "difficulty": 3,
+      "cultural": "Expression of apology or sympathy",
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "zvakanaka",
+      "english": "it's good/okay",
+      "pronunciation": "zvah-kah-NAH-kah",
+      "tones": "LHLHL",
+      "category": "expressions",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "muriwo",
+      "english": "vegetables",
+      "pronunciation": "moo-REE-woh",
+      "tones": "LHLHL",
+      "category": "food",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "cultural_practices"
+    },
+    {
+      "shona": "nhoroondo",
+      "english": "history",
+      "pronunciation": "nho-ro-o-ndo",
+      "tones": "HHL",
+      "category": "history",
+      "difficulty": 3,
+      "cultural": "Record of past events",
+      "source": "historical_sources"
+    },
+    {
+      "shona": "zviyeuchidzo",
+      "english": "monuments",
+      "pronunciation": "zvi-ye-u-chi-dzo",
+      "tones": "HHL",
+      "category": "history",
+      "difficulty": 3,
+      "cultural": "Memorial structures",
+      "source": "historical_sources"
+    },
+    {
+      "shona": "kurwira nyika",
+      "english": "to fight for country",
+      "pronunciation": "ku-rwi-ra- nyi-ka",
+      "tones": "HLHL",
+      "category": "liberation",
+      "difficulty": 3,
+      "cultural": "Patriotic struggle",
+      "source": "liberation_history"
+    },
+    {
+      "shona": "rusununguko",
+      "english": "independence",
+      "pronunciation": "ru-su-nu-ngu-ko",
+      "tones": "HHL",
+      "category": "liberation",
+      "difficulty": 3,
+      "cultural": "Political freedom",
+      "source": "liberation_history"
+    },
+    {
+      "shona": "chakafukidza dzimba matenga",
+      "english": "what covers houses is thatch",
+      "pronunciation": "cha-ka-fu-ki-dza- dzi-mba- ma-te-nga",
+      "tones": "HLHLHLHL",
+      "category": "proverbs",
+      "difficulty": 3,
+      "cultural": "Everyone needs shelter/protection",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "kudzidza hakupi shame",
+      "english": "learning brings no shame",
+      "pronunciation": "ku-dzi-dza- ha-ku-pi- sha-me",
+      "tones": "HLHLHL",
+      "category": "proverbs",
+      "difficulty": 3,
+      "cultural": "Education is always valuable",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "mwana wamambo muranda",
+      "english": "a king's child is a servant",
+      "pronunciation": "mwa-na- wa-ma-mbo- mu-ra-nda",
+      "tones": "HLHLHL",
+      "category": "proverbs",
+      "difficulty": 3,
+      "cultural": "Everyone must learn humility",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "ukama hunei mukombe",
+      "english": "kinship knows no boundaries",
+      "pronunciation": "u-ka-ma- hu-ne-i- mu-ko-mbe",
+      "tones": "HLHLHL",
+      "category": "proverbs",
+      "difficulty": 3,
+      "cultural": "Family bonds transcend distance",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "chechi",
+      "english": "church",
+      "pronunciation": "che-chi",
+      "tones": "HL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": "Christian place of worship",
+      "source": "ethnography"
+    },
+    {
+      "shona": "chipfuva",
+      "english": "prayer",
+      "pronunciation": "chi-pfu-va",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "kereke",
+      "english": "church",
+      "pronunciation": "ke-re-ke",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "kuimba",
+      "english": "to sing",
+      "pronunciation": "ku-i-mba",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "kukomborera",
+      "english": "to bless",
+      "pronunciation": "ku-ko-mbo-re-ra",
+      "tones": "HHLHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "kunamata",
+      "english": "to pray",
+      "pronunciation": "ku-na-ma-ta",
+      "tones": "HLHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "kupfugama",
+      "english": "to kneel",
+      "pronunciation": "ku-pfu-ga-ma",
+      "tones": "HLHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "kurapa",
+      "english": "to heal",
+      "pronunciation": "ku-ra-pa",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": "Traditional healing practice",
+      "source": "ethnography"
+    },
+    {
+      "shona": "kurumbidza",
+      "english": "to praise",
+      "pronunciation": "ku-ru-mbi-dza",
+      "tones": "HLHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "moyo",
+      "english": "heart",
+      "pronunciation": "mo-yo",
+      "tones": "HL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "mudzimu",
+      "english": "ancestral spirit",
+      "pronunciation": "mu-dzi-mu",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": "Traditional spiritual belief",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mufudzi",
+      "english": "pastor",
+      "pronunciation": "mu-fu-dzi",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "mutapa",
+      "english": "medicine",
+      "pronunciation": "mu-ta-pa",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": "Traditional medicine",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mutumwa",
+      "english": "apostle",
+      "pronunciation": "mu-tu-mwa",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "Mwari",
+      "english": "God",
+      "pronunciation": "mwa-ri",
+      "tones": "HL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": "Supreme deity",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mwoya",
+      "english": "spirit",
+      "pronunciation": "mwo-ya",
+      "tones": "HL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "n'anga",
+      "english": "traditional healer",
+      "pronunciation": "n'a-nga",
+      "tones": "HL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": "Spiritual and medical healer",
+      "source": "ethnography"
+    },
+    {
+      "shona": "rufaro",
+      "english": "joy",
+      "pronunciation": "ru-fa-ro",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "rwiyo",
+      "english": "song",
+      "pronunciation": "rwi-yo",
+      "tones": "HL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "svikiro",
+      "english": "spirit medium",
+      "pronunciation": "svi-ki-ro",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": "Communicates with ancestors",
+      "source": "ethnography"
+    },
+    {
+      "shona": "ufambi",
+      "english": "fellowship",
+      "pronunciation": "u-fa-mbi",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "vatengi",
+      "english": "congregation",
+      "pronunciation": "va-te-ngi",
+      "tones": "HHL",
+      "category": "religion",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "hymns"
+    },
+    {
+      "shona": "kuvimba",
+      "english": "trust",
+      "pronunciation": "ku-vi-mba",
+      "tones": "HHL",
+      "category": "values",
+      "difficulty": 3,
+      "cultural": "Confidence in others",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "kuwadzana",
+      "english": "harmony",
+      "pronunciation": "ku-wa-dza-na",
+      "tones": "HHL",
+      "category": "values",
+      "difficulty": 3,
+      "cultural": "Living in peace together",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "ruremekedzo",
+      "english": "respect",
+      "pronunciation": "ru-re-me-ke-dzo",
+      "tones": "HHL",
+      "category": "values",
+      "difficulty": 3,
+      "cultural": "Fundamental social value",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "unyangadzi",
+      "english": "honesty",
+      "pronunciation": "u-nya-nga-dzi",
+      "tones": "HHL",
+      "category": "values",
+      "difficulty": 3,
+      "cultural": "Truthfulness in relationships",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "anoda",
+      "english": "he/she wants",
+      "pronunciation": "ah-NOH-dah",
+      "tones": "LHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "munoda",
+      "english": "you want (plural)",
+      "pronunciation": "moo-NOH-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "ndinoda",
+      "english": "I want",
+      "pronunciation": "ndee-NOH-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "tinoda",
+      "english": "we want",
+      "pronunciation": "tee-NOH-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "unoda",
+      "english": "you want (singular)",
+      "pronunciation": "oo-NOH-dah",
+      "tones": "LHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "vanoda",
+      "english": "they want",
+      "pronunciation": "vah-NOH-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 3,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "hunhu hwakanaka",
+      "english": "good character",
+      "pronunciation": "hu-nhu- hwa-ka-na-ka",
+      "tones": "HLHL",
+      "category": "wisdom",
+      "difficulty": 3,
+      "cultural": "Moral excellence",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "madimikira",
+      "english": "riddles",
+      "pronunciation": "ma-di-mi-ki-ra",
+      "tones": "HHL",
+      "category": "wisdom",
+      "difficulty": 3,
+      "cultural": "Traditional puzzles teaching wisdom",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "pfungwa dzokare",
+      "english": "ancient wisdom",
+      "pronunciation": "pfu-ngwa- dzo-ka-re",
+      "tones": "HLHL",
+      "category": "wisdom",
+      "difficulty": 3,
+      "cultural": "Traditional knowledge",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "tsumo",
+      "english": "proverb",
+      "pronunciation": "tsu-mo",
+      "tones": "HL",
+      "category": "wisdom",
+      "difficulty": 3,
+      "cultural": "Traditional saying with deep meaning",
+      "source": "traditional_wisdom"
+    },
+    {
+      "shona": "kuchera",
+      "english": "to dig",
+      "pronunciation": "ku-che-ra",
+      "tones": "HHL",
+      "category": "archaeology",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "mazimba",
+      "english": "houses",
+      "pronunciation": "ma-zi-mba",
+      "tones": "HHL",
+      "category": "architecture",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "mukombe",
+      "english": "walls",
+      "pronunciation": "mu-ko-mbe",
+      "tones": "HHL",
+      "category": "architecture",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "rusvingo",
+      "english": "wall/fortification",
+      "pronunciation": "ru-svi-ngo",
+      "tones": "HHL",
+      "category": "architecture",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "hunhu",
+      "english": "culture/humanity",
+      "pronunciation": "hu-nhu",
+      "tones": "HL",
+      "category": "culture",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "mbeu",
+      "english": "seed",
+      "pronunciation": "mbe-u",
+      "tones": "HL",
+      "category": "culture",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "mbira",
+      "english": "traditional instrument",
+      "pronunciation": "mbi-ra",
+      "tones": "HL",
+      "category": "culture",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "bhuku",
+      "english": "book",
+      "pronunciation": "bhu-ku",
+      "tones": "HL",
+      "category": "education",
+      "difficulty": 4,
+      "cultural": "Written knowledge",
+      "source": "ethnography"
+    },
+    {
+      "shona": "chikoro",
+      "english": "school",
+      "pronunciation": "chi-ko-ro",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 4,
+      "cultural": "Educational institution",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mudzidzi",
+      "english": "student",
+      "pronunciation": "mu-dzi-dzi",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 4,
+      "cultural": "Learner",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mudzidzisi",
+      "english": "teacher",
+      "pronunciation": "mu-dzi-dzi-si",
+      "tones": "HHHL",
+      "category": "education",
+      "difficulty": 4,
+      "cultural": "Educator",
+      "source": "ethnography"
+    },
+    {
+      "shona": "ruzivo",
+      "english": "knowledge",
+      "pronunciation": "ru-zi-vo",
+      "tones": "HHL",
+      "category": "education",
+      "difficulty": 4,
+      "cultural": "Traditional and modern knowledge",
+      "source": "ethnography"
+    },
+    {
+      "shona": "chikuva",
+      "english": "ruins",
+      "pronunciation": "chi-ku-va",
+      "tones": "HHL",
+      "category": "history",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "nzvimbo",
+      "english": "place",
+      "pronunciation": "nzvi-mbo",
+      "tones": "HHL",
+      "category": "history",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "kare",
+      "english": "long ago",
+      "pronunciation": "ka-re",
+      "tones": "HL",
+      "category": "time",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "makore",
+      "english": "years",
+      "pronunciation": "ma-ko-re",
+      "tones": "HHL",
+      "category": "time",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "gona",
+      "english": "gold",
+      "pronunciation": "go-na",
+      "tones": "HL",
+      "category": "trade",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "kuchinjana",
+      "english": "to trade",
+      "pronunciation": "ku-chi-nja-na",
+      "tones": "HLHL",
+      "category": "trade",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "zvipfuwo",
+      "english": "livestock",
+      "pronunciation": "zvi-pfu-wo",
+      "tones": "HHL",
+      "category": "trade",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "ruins"
+    },
+    {
+      "shona": "ari kuenda",
+      "english": "he/she is going",
+      "pronunciation": "AH-ree koo-EHN-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "muri kuenda",
+      "english": "you are going (plural)",
+      "pronunciation": "moo-REE koo-EHN-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "ndiri kuenda",
+      "english": "I am going",
+      "pronunciation": "ndee-REE koo-EHN-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "tiri kuenda",
+      "english": "we are going",
+      "pronunciation": "tee-REE koo-EHN-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "uri kuenda",
+      "english": "you are going (singular)",
+      "pronunciation": "OO-ree koo-EHN-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "vari kuenda",
+      "english": "they are going",
+      "pronunciation": "vah-REE koo-EHN-dah",
+      "tones": "LHLHL",
+      "category": "verbs",
+      "difficulty": 4,
+      "cultural": null,
+      "source": "fsi_basic"
+    },
+    {
+      "shona": "chiremba",
+      "english": "doctor",
+      "pronunciation": "chi-re-mba",
+      "tones": "HHL",
+      "category": "health",
+      "difficulty": 5,
+      "cultural": "Modern medical doctor",
+      "source": "ethnography"
+    },
+    {
+      "shona": "chirwere",
+      "english": "illness",
+      "pronunciation": "chi-rwe-re",
+      "tones": "HHL",
+      "category": "health",
+      "difficulty": 5,
+      "cultural": "Physical or spiritual sickness",
+      "source": "ethnography"
+    },
+    {
+      "shona": "hurwere",
+      "english": "to be sick",
+      "pronunciation": "hu-rwe-re",
+      "tones": "HHL",
+      "category": "health",
+      "difficulty": 5,
+      "cultural": "State of illness",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mushonga",
+      "english": "medicine",
+      "pronunciation": "mu-sho-nga",
+      "tones": "HHL",
+      "category": "health",
+      "difficulty": 5,
+      "cultural": "Both traditional and modern medicine",
+      "source": "ethnography"
+    },
+    {
+      "shona": "dare",
+      "english": "court/meeting place",
+      "pronunciation": "da-re",
+      "tones": "HL",
+      "category": "community",
+      "difficulty": 6,
+      "cultural": "Traditional justice system",
+      "source": "ethnography"
+    },
+    {
+      "shona": "dunhu",
+      "english": "district",
+      "pronunciation": "du-nhu",
+      "tones": "HL",
+      "category": "community",
+      "difficulty": 6,
+      "cultural": "Administrative area",
+      "source": "ethnography"
+    },
+    {
+      "shona": "guta",
+      "english": "town/city",
+      "pronunciation": "gu-ta",
+      "tones": "HL",
+      "category": "community",
+      "difficulty": 6,
+      "cultural": "Urban center",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mambo",
+      "english": "chief",
+      "pronunciation": "ma-mbo",
+      "tones": "HL",
+      "category": "community",
+      "difficulty": 6,
+      "cultural": "Traditional leader",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mumusha",
+      "english": "villager",
+      "pronunciation": "mu-mu-sha",
+      "tones": "HHL",
+      "category": "community",
+      "difficulty": 6,
+      "cultural": "Rural community member",
+      "source": "ethnography"
+    },
+    {
+      "shona": "musha",
+      "english": "homestead",
+      "pronunciation": "mu-sha",
+      "tones": "HL",
+      "category": "community",
+      "difficulty": 6,
+      "cultural": "Extended family living area",
+      "source": "ethnography"
+    },
+    {
+      "shona": "vanhu",
+      "english": "people",
+      "pronunciation": "va-nhu",
+      "tones": "HL",
+      "category": "community",
+      "difficulty": 6,
+      "cultural": "Community collective",
+      "source": "ethnography"
+    },
+    {
+      "shona": "chikafu",
+      "english": "food",
+      "pronunciation": "chi-ka-fu",
+      "tones": "HHL",
+      "category": "food",
+      "difficulty": 8,
+      "cultural": "Nourishment",
+      "source": "ethnography"
+    },
+    {
+      "shona": "dovi",
+      "english": "peanut butter stew",
+      "pronunciation": "do-vi",
+      "tones": "HL",
+      "category": "food",
+      "difficulty": 8,
+      "cultural": "Traditional dish",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mazanje",
+      "english": "masawu fruits",
+      "pronunciation": "ma-za-nje",
+      "tones": "HHL",
+      "category": "food",
+      "difficulty": 8,
+      "cultural": "Traditional fruits",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mhiripiri",
+      "english": "chili pepper",
+      "pronunciation": "mhi-ri-pi-ri",
+      "tones": "HLHL",
+      "category": "food",
+      "difficulty": 8,
+      "cultural": "Traditional spicing",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mufushwa",
+      "english": "dried vegetables",
+      "pronunciation": "mu-fu-shwa",
+      "tones": "HHL",
+      "category": "food",
+      "difficulty": 8,
+      "cultural": "Traditional preservation",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mukaka",
+      "english": "milk",
+      "pronunciation": "mu-ka-ka",
+      "tones": "HHL",
+      "category": "food",
+      "difficulty": 8,
+      "cultural": "Dairy product",
+      "source": "ethnography"
+    },
+    {
+      "shona": "bira",
+      "english": "spirit ceremony",
+      "pronunciation": "bi-ra",
+      "tones": "HL",
+      "category": "celebration",
+      "difficulty": 9,
+      "cultural": "Traditional religious ceremony",
+      "source": "ethnography"
+    },
+    {
+      "shona": "kurova guva",
+      "english": "memorial ceremony",
+      "pronunciation": "ku-ro-va- gu-va",
+      "tones": "HLHL",
+      "category": "celebration",
+      "difficulty": 9,
+      "cultural": "Ancestral remembrance",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mapira",
+      "english": "first fruits ceremony",
+      "pronunciation": "ma-pi-ra",
+      "tones": "HHL",
+      "category": "celebration",
+      "difficulty": 9,
+      "cultural": "Harvest celebration",
+      "source": "ethnography"
+    },
+    {
+      "shona": "mukwerere",
+      "english": "rain ceremony",
+      "pronunciation": "mu-kwe-re-re",
+      "tones": "HLHL",
+      "category": "celebration",
+      "difficulty": 9,
+      "cultural": "Traditional rain-making",
+      "source": "ethnography"
+    },
+    {
+      "shona": "roora",
+      "english": "bride price",
+      "pronunciation": "ro-o-ra",
+      "tones": "HL",
+      "category": "celebration",
+      "difficulty": 9,
+      "cultural": "Marriage custom",
+      "source": "ethnography"
+    },
+    {
+      "shona": "denga",
+      "english": "sky",
+      "pronunciation": "de-nga",
+      "tones": "HL",
+      "category": "nature",
+      "difficulty": 10,
+      "cultural": "Spiritual realm",
+      "source": "ethnography"
+    },
+    {
+      "shona": "gomo",
+      "english": "mountain",
+      "pronunciation": "go-mo",
+      "tones": "HL",
+      "category": "nature",
+      "difficulty": 10,
+      "cultural": "Sacred places",
+      "source": "ethnography"
+    },
+    {
+      "shona": "ivhu",
+      "english": "soil/earth",
+      "pronunciation": "i-vhu",
+      "tones": "HL",
+      "category": "nature",
+      "difficulty": 10,
+      "cultural": "Connection to ancestors",
+      "source": "ethnography"
+    },
+    {
+      "shona": "muti",
+      "english": "tree",
+      "pronunciation": "mu-ti",
+      "tones": "HL",
+      "category": "nature",
+      "difficulty": 10,
+      "cultural": "Important in traditional culture",
+      "source": "ethnography"
+    },
+    {
+      "shona": "rwizi",
+      "english": "river",
+      "pronunciation": "rwi-zi",
+      "tones": "HL",
+      "category": "nature",
+      "difficulty": 10,
+      "cultural": "Water source",
+      "source": "ethnography"
+    },
+    {
+      "shona": "sango",
+      "english": "forest",
+      "pronunciation": "sa-ngo",
+      "tones": "HL",
+      "category": "nature",
+      "difficulty": 10,
+      "cultural": "Traditional medicine source",
+      "source": "ethnography"
+    }
+  ]
+}

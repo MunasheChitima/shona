@@ -1,0 +1,1006 @@
+{
+  "timestamp": "2025-07-07T03:06:12.265Z",
+  "summary": {
+    "vocabulary": {
+      "processed": 185,
+      "skipped": 0,
+      "errors": 0
+    },
+    "lessons": {
+      "created": 0,
+      "skipped": 5,
+      "errors": 0
+    },
+    "exercises": {
+      "added": 0,
+      "errors": 0
+    }
+  },
+  "details": {
+    "vocabulary": {
+      "advanced_conversational": {
+        "processed": [
+          {
+            "shona": "ndafara zvikuru",
+            "english": "I am very happy",
+            "category": "emotions"
+          },
+          {
+            "shona": "mufaro mukuru",
+            "english": "great joy",
+            "category": "emotions"
+          },
+          {
+            "shona": "kufadzwa",
+            "english": "to be pleased/delighted",
+            "category": "emotions"
+          },
+          {
+            "shona": "kushungurudzika",
+            "english": "to be sad/troubled",
+            "category": "emotions"
+          },
+          {
+            "shona": "shungu",
+            "english": "sorrow/grief",
+            "category": "emotions"
+          },
+          {
+            "shona": "kutsamwa",
+            "english": "to be angry",
+            "category": "emotions"
+          },
+          {
+            "shona": "kugumbuka",
+            "english": "to be frustrated/annoyed",
+            "category": "emotions"
+          },
+          {
+            "shona": "kutya",
+            "english": "to fear/be afraid",
+            "category": "emotions"
+          },
+          {
+            "shona": "kuvhunduka",
+            "english": "to be startled/shocked",
+            "category": "emotions"
+          },
+          {
+            "shona": "kushamisika",
+            "english": "to be surprised",
+            "category": "emotions"
+          },
+          {
+            "shona": "ndinofunga kuti",
+            "english": "I think that",
+            "category": "opinions"
+          },
+          {
+            "shona": "maonero angu ndeekuti",
+            "english": "my view is that",
+            "category": "opinions"
+          },
+          {
+            "shona": "ndinotenda kuti",
+            "english": "I believe that",
+            "category": "opinions"
+          },
+          {
+            "shona": "zviri pachena kuti",
+            "english": "it's clear that",
+            "category": "opinions"
+          },
+          {
+            "shona": "ndinobvumirana newe",
+            "english": "I agree with you",
+            "category": "opinions"
+          },
+          {
+            "shona": "zvirinani",
+            "english": "that's right/correct",
+            "category": "opinions"
+          },
+          {
+            "shona": "handina kupikisa",
+            "english": "I don't disagree",
+            "category": "opinions"
+          },
+          {
+            "shona": "handifungi kudaro",
+            "english": "I don't think so",
+            "category": "opinions"
+          },
+          {
+            "shona": "ndinopikisa",
+            "english": "I disagree",
+            "category": "opinions"
+          },
+          {
+            "shona": "handizvo zvandinoona",
+            "english": "that's not how I see it",
+            "category": "opinions"
+          },
+          {
+            "shona": "ndapota",
+            "english": "please",
+            "category": "politeness"
+          },
+          {
+            "shona": "dai maibvuma",
+            "english": "if you would allow",
+            "category": "politeness"
+          },
+          {
+            "shona": "ndinokumbirawo",
+            "english": "I kindly request",
+            "category": "politeness"
+          },
+          {
+            "shona": "ndinotenda zvikuru",
+            "english": "thank you very much",
+            "category": "politeness"
+          },
+          {
+            "shona": "ndatenda hangu",
+            "english": "I really appreciate it",
+            "category": "politeness"
+          },
+          {
+            "shona": "ndine urombo",
+            "english": "I'm sorry",
+            "category": "politeness"
+          },
+          {
+            "shona": "ndikanganwa",
+            "english": "I forgot/made a mistake",
+            "category": "politeness"
+          },
+          {
+            "shona": "musandipa mhosva",
+            "english": "please don't blame me",
+            "category": "politeness"
+          },
+          {
+            "shona": "pakutanga",
+            "english": "firstly/at first",
+            "category": "discourse"
+          },
+          {
+            "shona": "mushure mezvo",
+            "english": "after that/then",
+            "category": "discourse"
+          },
+          {
+            "shona": "pakupedzisira",
+            "english": "finally/lastly",
+            "category": "discourse"
+          },
+          {
+            "shona": "asi",
+            "english": "but",
+            "category": "discourse"
+          },
+          {
+            "shona": "zvisinei nazvo",
+            "english": "nevertheless/regardless",
+            "category": "discourse"
+          },
+          {
+            "shona": "kunyangwe zvakadaro",
+            "english": "even so/however",
+            "category": "discourse"
+          },
+          {
+            "shona": "uyezve",
+            "english": "also/and also",
+            "category": "discourse"
+          },
+          {
+            "shona": "pamusoro pezvo",
+            "english": "furthermore/moreover",
+            "category": "discourse"
+          },
+          {
+            "shona": "ndiko kuti",
+            "english": "that is to say",
+            "category": "discourse"
+          },
+          {
+            "shona": "nemamwe mazwi",
+            "english": "in other words",
+            "category": "discourse"
+          },
+          {
+            "shona": "maiwe!",
+            "english": "oh my!",
+            "category": "interjections"
+          },
+          {
+            "shona": "haiwa!",
+            "english": "wow!/really!",
+            "category": "interjections"
+          },
+          {
+            "shona": "ehe!",
+            "english": "oh!/I see!",
+            "category": "interjections"
+          },
+          {
+            "shona": "hongu",
+            "english": "yes",
+            "category": "interjections"
+          },
+          {
+            "shona": "ehe",
+            "english": "yeah/yep",
+            "category": "interjections"
+          },
+          {
+            "shona": "aaah!",
+            "english": "ouch!",
+            "category": "interjections"
+          }
+        ],
+        "skipped": [],
+        "errors": []
+      },
+      "professional_technical": {
+        "processed": [
+          {
+            "shona": "bhizinesi",
+            "english": "business",
+            "category": "business"
+          },
+          {
+            "shona": "musika",
+            "english": "market",
+            "category": "business"
+          },
+          {
+            "shona": "mutengesi",
+            "english": "seller/vendor",
+            "category": "business"
+          },
+          {
+            "shona": "mutengi",
+            "english": "buyer/customer",
+            "category": "business"
+          },
+          {
+            "shona": "chibvumirano",
+            "english": "agreement/contract",
+            "category": "business"
+          },
+          {
+            "shona": "mari",
+            "english": "money",
+            "category": "business"
+          },
+          {
+            "shona": "bhangi",
+            "english": "bank",
+            "category": "business"
+          },
+          {
+            "shona": "kuchinjisa",
+            "english": "to exchange (money)",
+            "category": "business"
+          },
+          {
+            "shona": "chikwereti",
+            "english": "loan/credit",
+            "category": "business"
+          },
+          {
+            "shona": "mubereko",
+            "english": "interest (financial)",
+            "category": "business"
+          },
+          {
+            "shona": "mutero",
+            "english": "tax",
+            "category": "business"
+          },
+          {
+            "shona": "muzvinabhizinesi",
+            "english": "entrepreneur",
+            "category": "business"
+          },
+          {
+            "shona": "kuvamba bhizinesi",
+            "english": "to start a business",
+            "category": "business"
+          },
+          {
+            "shona": "purofiti",
+            "english": "profit",
+            "category": "business"
+          },
+          {
+            "shona": "kurasikirwa",
+            "english": "loss (financial)",
+            "category": "business"
+          },
+          {
+            "shona": "kompyuta",
+            "english": "computer",
+            "category": "technology"
+          },
+          {
+            "shona": "muchina",
+            "english": "machine",
+            "category": "technology"
+          },
+          {
+            "shona": "intaneti",
+            "english": "internet",
+            "category": "technology"
+          },
+          {
+            "shona": "nhare",
+            "english": "phone",
+            "category": "technology"
+          },
+          {
+            "shona": "nharembozha",
+            "english": "mobile phone",
+            "category": "technology"
+          },
+          {
+            "shona": "purogiramu",
+            "english": "program/software",
+            "category": "technology"
+          },
+          {
+            "shona": "app",
+            "english": "app/application",
+            "category": "technology"
+          },
+          {
+            "shona": "dhata",
+            "english": "data",
+            "category": "technology"
+          },
+          {
+            "shona": "webusaiti",
+            "english": "website",
+            "category": "technology"
+          },
+          {
+            "shona": "social media",
+            "english": "social media",
+            "category": "technology"
+          },
+          {
+            "shona": "kutumira meseji",
+            "english": "to send a message",
+            "category": "technology"
+          },
+          {
+            "shona": "kutevera",
+            "english": "to follow (social media)",
+            "category": "technology"
+          },
+          {
+            "shona": "kupousta",
+            "english": "to post",
+            "category": "technology"
+          },
+          {
+            "shona": "chiremba",
+            "english": "doctor",
+            "category": "medicine"
+          },
+          {
+            "shona": "mukoti",
+            "english": "nurse",
+            "category": "medicine"
+          },
+          {
+            "shona": "chiremba wemazino",
+            "english": "dentist",
+            "category": "medicine"
+          },
+          {
+            "shona": "mushandi wehutano",
+            "english": "health worker",
+            "category": "medicine"
+          },
+          {
+            "shona": "chipatara",
+            "english": "hospital",
+            "category": "medicine"
+          },
+          {
+            "shona": "kiriniki",
+            "english": "clinic",
+            "category": "medicine"
+          },
+          {
+            "shona": "femesi",
+            "english": "pharmacy",
+            "category": "medicine"
+          },
+          {
+            "shona": "chirwere",
+            "english": "disease/illness",
+            "category": "medicine"
+          },
+          {
+            "shona": "musana",
+            "english": "fever",
+            "category": "medicine"
+          },
+          {
+            "shona": "kuvhuvhuta",
+            "english": "to cough",
+            "category": "medicine"
+          },
+          {
+            "shona": "kurwara musoro",
+            "english": "headache",
+            "category": "medicine"
+          },
+          {
+            "shona": "chirwere cheshuga",
+            "english": "diabetes",
+            "category": "medicine"
+          },
+          {
+            "shona": "mushonga",
+            "english": "medicine/drug",
+            "category": "medicine"
+          },
+          {
+            "shona": "jekiseni",
+            "english": "injection",
+            "category": "medicine"
+          },
+          {
+            "shona": "kubaya jekiseni",
+            "english": "to give an injection",
+            "category": "medicine"
+          },
+          {
+            "shona": "kurapwa",
+            "english": "to be treated",
+            "category": "medicine"
+          },
+          {
+            "shona": "chikoro",
+            "english": "school",
+            "category": "education"
+          },
+          {
+            "shona": "yunivhesiti",
+            "english": "university",
+            "category": "education"
+          },
+          {
+            "shona": "koriji",
+            "english": "college",
+            "category": "education"
+          },
+          {
+            "shona": "chikoro chepuraimari",
+            "english": "primary school",
+            "category": "education"
+          },
+          {
+            "shona": "chikoro chesekondari",
+            "english": "secondary school",
+            "category": "education"
+          },
+          {
+            "shona": "mudzidzisi",
+            "english": "teacher",
+            "category": "education"
+          },
+          {
+            "shona": "mudzidzi",
+            "english": "student",
+            "category": "education"
+          },
+          {
+            "shona": "purofesa",
+            "english": "professor",
+            "category": "education"
+          },
+          {
+            "shona": "mukuru wechikoro",
+            "english": "headmaster/principal",
+            "category": "education"
+          },
+          {
+            "shona": "chidzidzo",
+            "english": "lesson/subject",
+            "category": "education"
+          },
+          {
+            "shona": "bvunzo",
+            "english": "exam/test",
+            "category": "education"
+          },
+          {
+            "shona": "dhigirii",
+            "english": "degree",
+            "category": "education"
+          },
+          {
+            "shona": "satefeketi",
+            "english": "certificate",
+            "category": "education"
+          },
+          {
+            "shona": "kudzidza",
+            "english": "to study/learn",
+            "category": "education"
+          },
+          {
+            "shona": "hurumende",
+            "english": "government",
+            "category": "politics"
+          },
+          {
+            "shona": "mutungamiri",
+            "english": "leader",
+            "category": "politics"
+          },
+          {
+            "shona": "mutungamiri wenyika",
+            "english": "president",
+            "category": "politics"
+          },
+          {
+            "shona": "paramende",
+            "english": "parliament",
+            "category": "politics"
+          },
+          {
+            "shona": "sarudzo",
+            "english": "election",
+            "category": "politics"
+          },
+          {
+            "shona": "kuvhota",
+            "english": "to vote",
+            "category": "politics"
+          },
+          {
+            "shona": "bato rezvematongerwo",
+            "english": "political party",
+            "category": "politics"
+          },
+          {
+            "shona": "kodzero",
+            "english": "rights",
+            "category": "politics"
+          },
+          {
+            "shona": "hupfumi",
+            "english": "economy/wealth",
+            "category": "economics"
+          },
+          {
+            "shona": "kukura kwehupfumi",
+            "english": "economic growth",
+            "category": "economics"
+          },
+          {
+            "shona": "mitengo",
+            "english": "prices",
+            "category": "economics"
+          },
+          {
+            "shona": "kukwira kwemitengo",
+            "english": "inflation",
+            "category": "economics"
+          },
+          {
+            "shona": "kutengeserana",
+            "english": "trade/commerce",
+            "category": "economics"
+          },
+          {
+            "shona": "kunze kwenyika",
+            "english": "export/foreign",
+            "category": "economics"
+          },
+          {
+            "shona": "kupinza",
+            "english": "to import",
+            "category": "economics"
+          }
+        ],
+        "skipped": [],
+        "errors": []
+      },
+      "contemporary_modern": {
+        "processed": [
+          {
+            "shona": "mudhorobha",
+            "english": "in the city/urban area",
+            "category": "urban_life"
+          },
+          {
+            "shona": "maflats",
+            "english": "apartments/flats",
+            "category": "urban_life"
+          },
+          {
+            "shona": "kombi",
+            "english": "minibus taxi",
+            "category": "urban_life"
+          },
+          {
+            "shona": "traffic",
+            "english": "traffic",
+            "category": "urban_life"
+          },
+          {
+            "shona": "shopping mall",
+            "english": "shopping mall",
+            "category": "urban_life"
+          },
+          {
+            "shona": "loadshedding",
+            "english": "power cuts/loadshedding",
+            "category": "urban_life"
+          },
+          {
+            "shona": "mvura yekunwa",
+            "english": "drinking water",
+            "category": "urban_life"
+          },
+          {
+            "shona": "mushikashika",
+            "english": "hustle/informal work",
+            "category": "urban_life"
+          },
+          {
+            "shona": "WhatsApp",
+            "english": "WhatsApp",
+            "category": "social_media"
+          },
+          {
+            "shona": "Facebook",
+            "english": "Facebook",
+            "category": "social_media"
+          },
+          {
+            "shona": "Twitter",
+            "english": "Twitter",
+            "category": "social_media"
+          },
+          {
+            "shona": "Instagram",
+            "english": "Instagram",
+            "category": "social_media"
+          },
+          {
+            "shona": "kulaika",
+            "english": "to like (social media)",
+            "category": "social_media"
+          },
+          {
+            "shona": "kushera",
+            "english": "to share",
+            "category": "social_media"
+          },
+          {
+            "shona": "kukomenda",
+            "english": "to comment",
+            "category": "social_media"
+          },
+          {
+            "shona": "status",
+            "english": "status update",
+            "category": "social_media"
+          },
+          {
+            "shona": "selfie",
+            "english": "selfie",
+            "category": "social_media"
+          },
+          {
+            "shona": "data bundles",
+            "english": "data bundles",
+            "category": "technology"
+          },
+          {
+            "shona": "airtime",
+            "english": "airtime/phone credit",
+            "category": "technology"
+          },
+          {
+            "shona": "kukiya",
+            "english": "to go offline/disconnect",
+            "category": "technology"
+          },
+          {
+            "shona": "influencer",
+            "english": "social media influencer",
+            "category": "social_media"
+          },
+          {
+            "shona": "kudanana",
+            "english": "to date/be in a relationship",
+            "category": "relationships"
+          },
+          {
+            "shona": "mudiwa",
+            "english": "loved one/darling",
+            "category": "relationships"
+          },
+          {
+            "shona": "boyfriend",
+            "english": "boyfriend",
+            "category": "relationships"
+          },
+          {
+            "shona": "girlfriend",
+            "english": "girlfriend",
+            "category": "relationships"
+          },
+          {
+            "shona": "kuroorana",
+            "english": "to marry/get married",
+            "category": "relationships"
+          },
+          {
+            "shona": "single parent",
+            "english": "single parent",
+            "category": "relationships"
+          },
+          {
+            "shona": "kurambana",
+            "english": "to divorce/separate",
+            "category": "relationships"
+          },
+          {
+            "shona": "step-parent",
+            "english": "step-parent",
+            "category": "relationships"
+          },
+          {
+            "shona": "firimu",
+            "english": "movie/film",
+            "category": "entertainment"
+          },
+          {
+            "shona": "series",
+            "english": "TV series",
+            "category": "entertainment"
+          },
+          {
+            "shona": "Netflix",
+            "english": "Netflix",
+            "category": "entertainment"
+          },
+          {
+            "shona": "DStv",
+            "english": "DStv (satellite TV)",
+            "category": "entertainment"
+          },
+          {
+            "shona": "zimdancehall",
+            "english": "Zimbabwean dancehall music",
+            "category": "entertainment"
+          },
+          {
+            "shona": "sungura",
+            "english": "sungura music",
+            "category": "entertainment"
+          },
+          {
+            "shona": "playlist",
+            "english": "playlist",
+            "category": "entertainment"
+          },
+          {
+            "shona": "kudownloader",
+            "english": "to download",
+            "category": "entertainment"
+          },
+          {
+            "shona": "bhora",
+            "english": "football/soccer",
+            "category": "entertainment"
+          },
+          {
+            "shona": "cricket",
+            "english": "cricket",
+            "category": "entertainment"
+          },
+          {
+            "shona": "gym",
+            "english": "gym",
+            "category": "entertainment"
+          },
+          {
+            "shona": "fashion",
+            "english": "fashion",
+            "category": "fashion"
+          },
+          {
+            "shona": "swag",
+            "english": "style/swag",
+            "category": "fashion"
+          },
+          {
+            "shona": "designer",
+            "english": "designer (clothes)",
+            "category": "fashion"
+          },
+          {
+            "shona": "weave",
+            "english": "hair weave/extensions",
+            "category": "fashion"
+          },
+          {
+            "shona": "make-up",
+            "english": "makeup",
+            "category": "fashion"
+          },
+          {
+            "shona": "trending",
+            "english": "trending",
+            "category": "fashion"
+          },
+          {
+            "shona": "vintage",
+            "english": "vintage style",
+            "category": "fashion"
+          },
+          {
+            "shona": "Victoria Falls",
+            "english": "Victoria Falls",
+            "category": "travel"
+          },
+          {
+            "shona": "safari",
+            "english": "safari",
+            "category": "travel"
+          },
+          {
+            "shona": "hotel",
+            "english": "hotel",
+            "category": "travel"
+          },
+          {
+            "shona": "lodge",
+            "english": "lodge",
+            "category": "travel"
+          },
+          {
+            "shona": "kubhuka",
+            "english": "to book/reserve",
+            "category": "travel"
+          },
+          {
+            "shona": "passport",
+            "english": "passport",
+            "category": "travel"
+          },
+          {
+            "shona": "visa",
+            "english": "visa",
+            "category": "travel"
+          },
+          {
+            "shona": "kushanduka kwemamiriro ekunze",
+            "english": "climate change",
+            "category": "environment"
+          },
+          {
+            "shona": "kusanaya kwemvura",
+            "english": "drought",
+            "category": "environment"
+          },
+          {
+            "shona": "kupisa kukuru",
+            "english": "global warming",
+            "category": "environment"
+          },
+          {
+            "shona": "kuchengetedza zvakatipoteredza",
+            "english": "environmental conservation",
+            "category": "environment"
+          },
+          {
+            "shona": "recycling",
+            "english": "recycling",
+            "category": "environment"
+          },
+          {
+            "shona": "solar",
+            "english": "solar power",
+            "category": "environment"
+          },
+          {
+            "shona": "kutema miti",
+            "english": "deforestation",
+            "category": "environment"
+          },
+          {
+            "shona": "hutano hwepfungwa",
+            "english": "mental health",
+            "category": "health"
+          },
+          {
+            "shona": "kushushikana",
+            "english": "stress/anxiety",
+            "category": "health"
+          },
+          {
+            "shona": "kuora moyo",
+            "english": "depression",
+            "category": "health"
+          },
+          {
+            "shona": "therapy",
+            "english": "therapy",
+            "category": "health"
+          },
+          {
+            "shona": "yoga",
+            "english": "yoga",
+            "category": "health"
+          },
+          {
+            "shona": "meditation",
+            "english": "meditation",
+            "category": "health"
+          },
+          {
+            "shona": "self-care",
+            "english": "self-care",
+            "category": "health"
+          }
+        ],
+        "skipped": [],
+        "errors": []
+      }
+    },
+    "lessons": {
+      "created": [],
+      "skipped": [
+        {
+          "title": "Advanced Greetings and Respect",
+          "orderIndex": 51,
+          "reason": "Already exists"
+        },
+        {
+          "title": "Complex Family Relationships",
+          "orderIndex": 52,
+          "reason": "Already exists"
+        },
+        {
+          "title": "Professional Communication",
+          "orderIndex": 53,
+          "reason": "Already exists"
+        },
+        {
+          "title": "Cultural Ceremonies and Traditions",
+          "orderIndex": 54,
+          "reason": "Already exists"
+        },
+        {
+          "title": "Advanced Storytelling and Proverbs",
+          "orderIndex": 55,
+          "reason": "Already exists"
+        }
+      ],
+      "errors": []
+    },
+    "exercises": {
+      "added": [],
+      "errors": []
+    }
+  },
+  "statistics": {
+    "totalLessons": 20,
+    "totalVocabulary": 370,
+    "totalExercises": 23
+  }
+}

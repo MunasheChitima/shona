@@ -1,0 +1,193 @@
+{
+  "summary": {
+    "totalTests": 17,
+    "successfulTests": 17,
+    "failedTests": 0,
+    "successRate": "100.0",
+    "apiCalls": 15,
+    "timestamp": "2025-07-07T06:07:14.393Z"
+  },
+  "details": [
+    {
+      "category": "easy",
+      "word": "baba",
+      "english": "father",
+      "expected": "Simple word with basic sounds",
+      "processed": "baba",
+      "specialSounds": [],
+      "success": true,
+      "notes": "No special sounds detected"
+    },
+    {
+      "category": "easy",
+      "word": "amai",
+      "english": "mother",
+      "expected": "Simple word with basic sounds",
+      "processed": "amai",
+      "specialSounds": [],
+      "success": true,
+      "notes": "No special sounds detected"
+    },
+    {
+      "category": "easy",
+      "word": "moyo",
+      "english": "heart",
+      "expected": "Simple word with basic sounds",
+      "processed": "moyo",
+      "specialSounds": [],
+      "success": true,
+      "notes": "No special sounds detected"
+    },
+    {
+      "category": "easy",
+      "word": "zuva",
+      "english": "sun/day",
+      "expected": "Simple word with basic sounds",
+      "processed": "zuva",
+      "specialSounds": [],
+      "success": true,
+      "notes": "No special sounds detected"
+    },
+    {
+      "category": "easy",
+      "word": "muti",
+      "english": "tree",
+      "expected": "Simple word with basic sounds",
+      "processed": "muti",
+      "specialSounds": [],
+      "success": true,
+      "notes": "No special sounds detected"
+    },
+    {
+      "category": "hard",
+      "word": "svika",
+      "english": "arrive",
+      "expected": "Whistled sibilant sv",
+      "processed": "sveeika",
+      "specialSounds": [
+        "sv"
+      ],
+      "success": true,
+      "notes": "Special sounds: sv"
+    },
+    {
+      "category": "hard",
+      "word": "mbira",
+      "english": "thumb piano",
+      "expected": "Prenasalized consonant mb",
+      "processed": "m-bira",
+      "specialSounds": [
+        "mb"
+      ],
+      "success": true,
+      "notes": "Special sounds: mb"
+    },
+    {
+      "category": "hard",
+      "word": "zvino",
+      "english": "now",
+      "expected": "Whistled sibilant zv",
+      "processed": "zveeino",
+      "specialSounds": [
+        "zv"
+      ],
+      "success": true,
+      "notes": "Special sounds: zv"
+    },
+    {
+      "category": "hard",
+      "word": "bhazi",
+      "english": "bus",
+      "expected": "Breathy consonant bh",
+      "processed": "b-haazi",
+      "specialSounds": [
+        "bh"
+      ],
+      "success": true,
+      "notes": "Special sounds: bh"
+    },
+    {
+      "category": "hard",
+      "word": "ndatenda",
+      "english": "thank you",
+      "expected": "Prenasalized consonant nd",
+      "processed": "n-daten-da",
+      "specialSounds": [
+        "nd"
+      ],
+      "success": true,
+      "notes": "Special sounds: nd"
+    },
+    {
+      "category": "sentence",
+      "text": "Mangwanani, ndatenda zvikuru.",
+      "english": "Good morning, thank you very much.",
+      "expected": "Contains prenasalized consonants and whistled sibilants",
+      "processed": "Mangwanani, n-daten-da zveeikuru.",
+      "specialSounds": [
+        "nd",
+        "zv"
+      ],
+      "success": true,
+      "notes": "Special sounds: nd, zv"
+    },
+    {
+      "category": "sentence",
+      "text": "Bhazi rinosvika pano.",
+      "english": "The bus arrives here.",
+      "expected": "Contains breathy and whistled consonants",
+      "processed": "Bhazi rinosveeika pano.",
+      "specialSounds": [
+        "sv"
+      ],
+      "success": true,
+      "notes": "Special sounds: sv"
+    },
+    {
+      "category": "sentence",
+      "text": "Mvura inonaya.",
+      "english": "It is raining.",
+      "expected": "Contains prenasalized consonant mv",
+      "processed": "Mvura inonaya.",
+      "specialSounds": [],
+      "success": true,
+      "notes": "Special sounds: "
+    },
+    {
+      "category": "sentence",
+      "text": "Zvino ndinofamba.",
+      "english": "Now I am walking.",
+      "expected": "Contains whistled sibilant zv",
+      "processed": "Zvino n-dinofam-ba.",
+      "specialSounds": [
+        "mb",
+        "nd"
+      ],
+      "success": true,
+      "notes": "Special sounds: mb, nd"
+    },
+    {
+      "category": "sentence",
+      "text": "Mhuno yangu inorwadza.",
+      "english": "My nose hurts.",
+      "expected": "Contains breathy consonant mh",
+      "processed": "Mhuno yangu inorwadza.",
+      "specialSounds": [],
+      "success": true,
+      "notes": "Special sounds: "
+    },
+    {
+      "category": "integration",
+      "feature": "voice_settings",
+      "success": true,
+      "notes": "Voice settings properly configured"
+    },
+    {
+      "category": "integration",
+      "feature": "ssml_processing",
+      "success": true,
+      "notes": "SSML processing enabled"
+    }
+  ],
+  "errors": []
+}

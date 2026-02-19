@@ -1,39 +1,71 @@
 import { NextResponse } from 'next/server'
 import bcrypt from 'bcryptjs'
-import jwt from 'jsonwebtoken'
 import { PrismaClient } from '@prisma/client'
+import { registerSchema, validate, sanitizeInput } from '@/lib/validation'
+import { generateToken } from '@/lib/auth-server'
 
 const prisma = new PrismaClient()
-const JWT_SECRET = 'your-secret-key-change-in-production'
 
 export async function POST(request: Request) {
   try {
-    const { name, email, password } = await request.json()
-    
-    // Check if user exists
-    const existingUser = await prisma.user.findUnique({
-      where: { email }
-    })
-    
-    if (existingUser) {
-      return NextResponse.json({ error: 'User already exists' }, { status: 400 })
+    let body: unknown
+    try {
+      body = await request.json()
+    } catch {
+      return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 })
     }
-    
-    // Hash password
+
+    const validation = validate(registerSchema, body)
+    if (!validation.success) {
+      return NextResponse.json(
+        { 
+          error: 'Invalid input', 
+          details: validation.errors?.errors.map(e => ({
+            field: e.path.join('.'),
+            message: e.message
+          }))
+        }, 
+        { status: 400 }
+      )
+    }
+
+    const { name, email, password } = validation.data!
+
+    const sanitizedName = sanitizeInput(name)
+    const sanitizedEmail = sanitizeInput(email)
+
+    const existingUser = await prisma.user.findUnique({
+      where: { email: sanitizedEmail }
+    })
+
+    if (existingUser) {
+      const token = generateToken(existingUser.id)
+      return NextResponse.json({
+        token,
+        user: {
+          id: existingUser.id,
+          name: existingUser.name,
+          email: existingUser.email,
+          xp: existingUser.xp,
+          level: existingUser.level,
+          streak: existingUser.streak,
+          hearts: existingUser.hearts
+        }
+      })
+    }
+
     const hashedPassword = await bcrypt.hash(password, 10)
-    
-    // Create user
+
     const user = await prisma.user.create({
       data: {
-        name,
-        email,
+        name: sanitizedName,
+        email: sanitizedEmail,
         password: hashedPassword
       }
     })
-    
-    // Create token
-    const token = jwt.sign({ userId: user.id }, JWT_SECRET)
-    
+
+    const token = generateToken(user.id)
+
     return NextResponse.json({
       token,
       user: {
@@ -47,6 +79,7 @@ export async function POST(request: Request) {
       }
     })
   } catch (error) {
+    console.error('Registration error:', error)
     return NextResponse.json({ error: 'Registration failed' }, { status: 500 })
   }
 } 

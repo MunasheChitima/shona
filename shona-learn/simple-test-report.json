@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-07-09T11:35:11.359Z",
+  "summary": {
+    "passed": 11,
+    "failed": 1,
+    "total": 12
+  },
+  "details": {
+    "File Structure": {
+      "status": "PASSED",
+      "error": null
+    },
+    "Import Errors": {
+      "status": "PASSED",
+      "error": null
+    },
+    "TypeScript Compilation": {
+      "status": "FAILED",
+      "error": "TypeScript compilation errors:\n__tests__/e2e.test.ts(27,35): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\ntests/autonomous-test-framework/performance-tester.ts(1352,65): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\ntests/autonomous-test-framework/performance-tester.ts(1390,51): error TS7006: Parameter 'r' implicitly has an 'any' type.\ntests/autonomous-test-framework/security-tester.ts(207,40): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\ntests/autonomous-test-framework/security-tester.ts(431,39): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\ntests/autonomous-test-framework/security-tester.ts(1352,64): error TS2352: Conversion of type 'HTMLTextAreaElement' to type 'HTMLInputElement' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.\n  Type 'HTMLTextAreaElement' is missing the following properties from type 'HTMLInputElement': accept, align, alt, capture, and 29 more.\ntests/autonomous-test-framework/test-orchestrator.ts(94,42): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\ntests/autonomous-test-framework/test-orchestrator.ts(370,40): error TS2551: Property 'createBrowserContext' does not exist on type 'Browser'. Did you mean 'defaultBrowserContext'?\n"
+    },
+    "Package Dependencies": {
+      "status": "PASSED",
+      "error": null
+    },
+    "Navigation Component": {
+      "status": "PASSED",
+      "error": null
+    },
+    "Loading States": {
+      "status": "PASSED",
+      "error": null
+    },
+    "Audio Service": {
+      "status": "PASSED",
+      "error": null
+    },
+    "Authentication": {
+      "status": "PASSED",
+      "error": null
+    },
+    "Page Components": {
+      "status": "PASSED",
+      "error": null
+    },
+    "Accessibility": {
+      "status": "PASSED",
+      "error": null
+    },
+    "Build Configuration": {
+      "status": "PASSED",
+      "error": null
+    },
+    "Content Files": {
+      "status": "PASSED",
+      "error": null
+    }
+  }
+}
