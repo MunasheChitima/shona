@@ -13,36 +13,33 @@ export default function LessonCard({ lesson, progress, onClick, locked }: Lesson
   const isCompleted = progress?.completed
   const score = progress?.score || 0
   
+  const unitConfig: Record<string, { emoji: string; color: string }> = {
+    'Unit 1': { emoji: '👋', color: 'from-green-400 to-green-600' },
+    'Unit 2': { emoji: '👨‍👩‍👧‍👦', color: 'from-pink-400 to-pink-600' },
+    'Unit 3': { emoji: '🔢', color: 'from-purple-400 to-purple-600' },
+    'Unit 4': { emoji: '🏠', color: 'from-yellow-400 to-yellow-600' },
+    'Unit 5': { emoji: '🚌', color: 'from-cyan-400 to-cyan-600' },
+    'Unit 6': { emoji: '🏃', color: 'from-red-400 to-red-600' },
+    'Unit 7': { emoji: '💭', color: 'from-indigo-400 to-indigo-600' },
+    'Unit 8': { emoji: '🌍', color: 'from-emerald-400 to-emerald-600' },
+    'Unit 9': { emoji: '🌿', color: 'from-teal-400 to-teal-600' },
+    'Unit 10': { emoji: '🏙️', color: 'from-sky-400 to-sky-600' },
+    'Unit 11': { emoji: '🏛️', color: 'from-red-500 to-red-700' },
+    'Unit 12': { emoji: '🧠', color: 'from-violet-500 to-violet-700' },
+    'Unit 13': { emoji: '🏛️', color: 'from-amber-500 to-amber-700' },
+  }
+
+  const getUnitKey = (category: string) => {
+    const match = category.match(/^Unit \d+/)
+    return match ? match[0] : ''
+  }
+
   const getCategoryEmoji = (category: string) => {
-    switch (category) {
-      case 'Basics': return '👋'
-      case 'Numbers': return '🔢'
-      case 'Family': return '👨‍👩‍👧‍👦'
-      case 'Verbs': return '🏃'
-      case 'Colors': return '🎨'
-      case 'Animals': return '🐾'
-      case 'Food': return '🍽️'
-      case 'Weather': return '🌤️'
-      case 'Time': return '⏰'
-      case 'Travel': return '✈️'
-      default: return '📚'
-    }
+    return unitConfig[getUnitKey(category)]?.emoji || lesson.emoji || '📚'
   }
 
   const getCategoryColor = (category: string) => {
-    switch (category) {
-      case 'Basics': return 'from-green-400 to-green-600'
-      case 'Numbers': return 'from-blue-400 to-blue-600'
-      case 'Family': return 'from-purple-400 to-purple-600'
-      case 'Verbs': return 'from-orange-400 to-orange-600'
-      case 'Colors': return 'from-pink-400 to-pink-600'
-      case 'Animals': return 'from-yellow-400 to-yellow-600'
-      case 'Food': return 'from-red-400 to-red-600'
-      case 'Weather': return 'from-cyan-400 to-cyan-600'
-      case 'Time': return 'from-indigo-400 to-indigo-600'
-      case 'Travel': return 'from-teal-400 to-teal-600'
-      default: return 'from-gray-400 to-gray-600'
-    }
+    return unitConfig[getUnitKey(category)]?.color || lesson.colorScheme?.gradient || 'from-gray-400 to-gray-600'
   }
 
   const getDifficultyColor = (difficulty: string) => {

@@ -1,8 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { FaVolumeUp, FaArrowLeft, FaArrowRight, FaRandom, FaBookOpen, FaLightbulb, FaGlobeAfrica, FaPlay, FaPause } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight, FaRandom, FaBookOpen, FaLightbulb, FaGlobeAfrica, FaPlay, FaPause } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
-import PronunciationText from './shared/PronunciationText'
 import LoadingSpinner from './LoadingSpinner'
 
 interface Flashcard {
@@ -10,15 +9,20 @@ interface Flashcard {
   shona: string
   english: string
   pronunciation: string
-  ipa: string
-  tones: string
+  englishAnchor?: string
+  pronounceDifficulty?: string
   category: string
+  level?: string
+  lessonId?: string
   audioFile?: string
   example: string
   translation: string
-  grammarNotes?: string
   culturalContext?: string
   usageNotes?: string
+  // Legacy fields kept for backwards compatibility
+  ipa?: string
+  tones?: string
+  grammarNotes?: string
   phoneticPronunciation?: string
 }
 
@@ -89,19 +93,15 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
       }
       let filteredCards = data
       if (category) {
-        filteredCards = data.filter((card: Flashcard) => card.category === category)
+        filteredCards = data.filter((card: Flashcard) =>
+          card.category === category || card.level === category
+        )
       }
-      // Add educational content to cards
+      // Ensure each card has an id and proper capitalization
       const enhancedCards = filteredCards.map((card: Flashcard, idx: number) => ({
         ...card,
         id: card.id || `${card.shona || 'card'}_${idx}`,
-        // Fix capitalization - capitalize first letter of Shona word
-        shona: card.shona.charAt(0).toUpperCase() + card.shona.slice(1).toLowerCase(),
-        // Create phonetic pronunciation instead of IPA
-        phoneticPronunciation: createPhoneticPronunciation(card.shona, card.pronunciation),
-        grammarNotes: getGrammarNotes(card.shona, card.category),
-        culturalContext: getCulturalContext(card.shona, card.category),
-        usageNotes: getUsageNotes(card.shona, card.category)
+        shona: card.shona.charAt(0).toUpperCase() + card.shona.slice(1),
       }))
       // Shuffle and limit
       const shuffled = enhancedCards.sort(() => Math.random() - 0.5).slice(0, limit)
@@ -111,66 +111,6 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
       console.error('Error loading flashcards:', error)
       setIsLoading(false)
     }
-  }
-
-  const createPhoneticPronunciation = (word: string, pronunciation: string) => {
-    // Convert complex pronunciation to simple phonetic spelling
-    const phoneticMap: { [key: string]: string } = {
-      'hongu': 'HON-goo',
-      'kwete': 'KWAY-tay',
-      'manzino': 'man-ZEE-no',
-      'maoko': 'mah-OH-ko',
-      'maziso': 'mah-ZEE-so',
-      'dumbu': 'DOOM-boo',
-      'muromo': 'moo-ROH-mo',
-      'baba': 'BAH-bah',
-      'mai': 'MY',
-      'mbuya': 'mm-BOO-yah',
-      'sekuru': 'say-KOO-roo',
-      'mhoro': 'mm-HOH-ro',
-      'babamukuru': 'bah-bah-moo-KOO-roo'
-    }
-    
-    return phoneticMap[word.toLowerCase()] || pronunciation.replace(/[/]/g, '').toUpperCase()
-  }
-
-  const getGrammarNotes = (word: string, category: string) => {
-    const grammarMap: { [key: string]: string } = {
-      'hongu': 'Affirmative response particle. Used to confirm statements.',
-      'kwete': 'Negative response particle. Used to deny or refuse.',
-      'manzino': 'Plural noun (ma- prefix). Singular would be zino.',
-      'maoko': 'Plural noun (ma- prefix). Singular would be ruoko.',
-      'maziso': 'Plural noun (ma- prefix). Singular would be ziso.',
-      'dumbu': 'Singular noun. Part of body vocabulary.',
-      'muromo': 'Singular noun with mu- prefix. Part of body vocabulary.'
-    }
-    return grammarMap[word.toLowerCase()] || `${category} vocabulary word following Shona grammar patterns.`
-  }
-
-  const getCulturalContext = (word: string, category: string) => {
-    const culturalMap: { [key: string]: string } = {
-      'hongu': 'In Shona culture, direct "yes" responses show respect and agreement.',
-      'kwete': 'Polite way to decline. Often accompanied by explanations to maintain harmony.',
-      'manzino': 'Dental health is important in Shona culture. Traditional methods included chewing sticks.',
-      'maoko': 'Hands are significant in Shona culture - used for greetings, work, and artistic expression.',
-      'maziso': 'Eyes are considered windows to the soul in Shona culture. Respect is shown through eye contact.',
-      'dumbu': 'Stomach represents health and well-being in traditional Shona medicine.',
-      'muromo': 'The mouth is sacred in Shona culture - used for speaking wisdom and singing.'
-    }
-    return culturalMap[word.toLowerCase()] || `This ${category} word has cultural significance in Shona tradition.`
-  }
-
-  const getUsageNotes = (word: string, category: string) => {
-    const usageMap: { [key: string]: string } = {
-      'hongu': 'Used in formal and informal settings. Can be emphasized for stronger agreement.',
-      'kwete': 'More polite than "aiwa" (no). Used when declining offers or requests.',
-      'manzino': 'Always used in plural form when referring to teeth collectively.',
-      'maoko': 'Can refer to both hands or arms depending on context.',
-      'maziso': 'Used both literally (physical eyes) and metaphorically (seeing/understanding).',
-      'dumbu': 'Common in health-related conversations and when discussing hunger.',
-      'muromo': 'Used in contexts of speaking, eating, or kissing.'
-    }
-    return usageMap[word.toLowerCase()] || `Commonly used in ${category} contexts and everyday conversation.`
   }
 
   const playAudio = async (audioFile?: string) => {
@@ -259,6 +199,7 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
         })
         newAudio.addEventListener('error', () => {
           setIsPlaying(false)
+          setAudioError('Audio file not found. Using text-to-speech.')
           useBrowserTTS()
         })
         setAudio(newAudio)
@@ -266,10 +207,11 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
         return
       } catch (error) {
         console.error('Local audio error:', error)
+        setAudioError('Audio file not found. Using text-to-speech.')
       }
     }
 
-    // Final fallback to browser TTS
+    // Final fallback to browser TTS when no audio file or file failed
     useBrowserTTS()
   }
 
@@ -403,10 +345,20 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
                 <div className="mb-8 p-6 bg-gradient-to-r from-accent-gold-50 to-accent-gold-100 rounded-2xl border-l-4 border-accent-gold-500">
                   <h3 className="text-accent-gold-700 font-semibold mb-2 text-lg">Pronunciation</h3>
                   <div className="text-center">
-                    <p className="text-2xl font-medium text-accent-gold-800 mb-1">{currentCard.phoneticPronunciation || currentCard.pronunciation}</p>
-                    <p className="text-accent-gold-600 text-sm">Phonetic spelling</p>
-                    {currentCard.tones && (
-                      <p className="text-accent-gold-600 text-sm">Tones: {currentCard.tones}</p>
+                    <p className="text-2xl font-medium text-accent-gold-800 mb-2">{currentCard.pronunciation}</p>
+                    {currentCard.englishAnchor && (
+                      <p className="text-accent-gold-700 text-sm leading-relaxed">{currentCard.englishAnchor}</p>
+                    )}
+                    {currentCard.pronounceDifficulty && (
+                      <span className={`inline-block mt-2 px-3 py-1 rounded-full text-xs font-medium ${
+                        currentCard.pronounceDifficulty === 'easy' ? 'bg-green-100 text-green-700' :
+                        currentCard.pronounceDifficulty === 'medium' ? 'bg-yellow-100 text-yellow-700' :
+                        'bg-red-100 text-red-700'
+                      }`}>
+                        {currentCard.pronounceDifficulty === 'easy' ? 'Familiar sounds' :
+                         currentCard.pronounceDifficulty === 'medium' ? 'New sound combos' :
+                         'Uniquely Shona sounds'}
+                      </span>
                     )}
                   </div>
                 </div>
@@ -503,34 +455,40 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
                 </div>
                 
                 {showEducationalContent && (
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
                     className="mt-6 p-4 bg-gradient-to-r from-accent-green-50 to-accent-blue-50 rounded-xl border border-accent-green-200"
                   >
                     <div className="text-left space-y-3">
-                      <div>
-                        <h4 className="font-semibold text-accent-green-700 flex items-center">
-                          <FaGlobeAfrica className="mr-2" />
-                          Cultural Context
-                        </h4>
-                        <p className="text-sm text-gray-700">{currentCard.culturalContext || 'No cultural context available'}</p>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-accent-blue-700 flex items-center">
-                          <FaBookOpen className="mr-2" />
-                          Grammar Notes
-                        </h4>
-                        <p className="text-sm text-gray-700">{currentCard.grammarNotes || 'No grammar notes available'}</p>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-accent-gold-700 flex items-center">
-                          <FaLightbulb className="mr-2" />
-                          Usage Notes
-                        </h4>
-                        <p className="text-sm text-gray-700">{currentCard.usageNotes || 'No usage notes available'}</p>
-                      </div>
+                      {currentCard.culturalContext && (
+                        <div>
+                          <h4 className="font-semibold text-accent-green-700 flex items-center">
+                            <FaGlobeAfrica className="mr-2" />
+                            Cultural Context
+                          </h4>
+                          <p className="text-sm text-gray-700">{currentCard.culturalContext}</p>
+                        </div>
+                      )}
+                      {currentCard.usageNotes && (
+                        <div>
+                          <h4 className="font-semibold text-accent-gold-700 flex items-center">
+                            <FaLightbulb className="mr-2" />
+                            Usage
+                          </h4>
+                          <p className="text-sm text-gray-700">{currentCard.usageNotes}</p>
+                        </div>
+                      )}
+                      {currentCard.englishAnchor && (
+                        <div>
+                          <h4 className="font-semibold text-accent-blue-700 flex items-center">
+                            <FaBookOpen className="mr-2" />
+                            How to Pronounce
+                          </h4>
+                          <p className="text-sm text-gray-700">{currentCard.englishAnchor}</p>
+                        </div>
+                      )}
                     </div>
                   </motion.div>
                 )}

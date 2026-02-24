@@ -2,513 +2,3548 @@
   "lessons": [
     {
       "id": "lesson-1",
-      "title": "Mhoro, Shamwari! - Hello, Friend!",
-      "description": "Learn basic greetings and how to introduce yourself in Shona culture",
-      "questId": "quest-1",
-      "category": "Cultural Immersion",
+      "title": "Mhoro! — Hello!",
+      "description": "Learn the essential Shona greetings used every day across Zimbabwe",
+      "questId": "quest-first-words",
+      "category": "Unit 1: First Words",
       "orderIndex": 1,
       "level": "beginner",
       "xpReward": 50,
-      "estimatedDuration": 15,
+      "estimatedDuration": 10,
       "learningObjectives": [
-        "Master basic Shona greetings (mhoro, mhoroi, hesi)",
-        "Understand the cultural importance of respectful greetings",
-        "Practice proper pronunciation with audio feedback",
-        "Learn to introduce yourself with confidence"
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
       ],
       "discoveryElements": [
-        "Explore different times of day greetings",
-        "Discover the difference between formal and informal greetings",
-        "Learn about the plural of respect in Shona culture"
+        "Explore vocabulary related to: Mhoro!"
       ],
       "culturalNotes": [
         "In Shona culture, greetings are sacred and show respect",
-        "Always use plural forms when addressing elders or strangers",
-        "The greeting 'mhoroi' shows more respect than 'mhoro'"
+        "Always greet before any conversation — skipping greetings is considered rude"
       ],
       "vocabulary": [
         {
           "shona": "mhoro",
           "english": "hello (informal)",
           "audioFile": "mhoro.mp3",
-          "usage": "Used with friends and people your age",
+          "usage": "Used with friends and peers",
           "example": "Mhoro, shamwari!"
         },
         {
           "shona": "mhoroi",
-          "english": "hello (formal)",
+          "english": "hello (formal/plural)",
           "audioFile": "mhoroi.mp3",
-          "usage": "Used with elders, strangers, or to show respect",
+          "usage": "Used with elders or groups",
           "example": "Mhoroi, mai!"
-        },
-        {
-          "shona": "shamwari",
-          "english": "friend",
-          "audioFile": "shamwari.mp3",
-          "usage": "Common term for friend",
-          "example": "Shamwari yangu"
         },
         {
           "shona": "makadii",
           "english": "how are you (formal)",
           "audioFile": "makadii.mp3",
-          "usage": "Respectful way to ask how someone is",
+          "usage": "Respectful inquiry about wellbeing",
           "example": "Makadii, baba?"
         },
         {
           "shona": "wakadii",
           "english": "how are you (informal)",
           "audioFile": "wakadii.mp3",
-          "usage": "Casual way to ask how someone is",
+          "usage": "Casual check-in with friends",
           "example": "Wakadii, shamwari?"
+        },
+        {
+          "shona": "ndiripo",
+          "english": "I am fine",
+          "audioFile": "ndiripo.mp3",
+          "usage": "Standard response to makadii",
+          "example": "Ndiripo, makadiiko?"
+        },
+        {
+          "shona": "tiripo",
+          "english": "we are fine",
+          "audioFile": "tiripo.mp3",
+          "usage": "Response when speaking for a group",
+          "example": "Tiripo, tatenda."
         }
       ]
     },
     {
       "id": "lesson-2",
-      "title": "Ini Ndinonzi - My Name Is",
-      "description": "Learn to introduce yourself and exchange names in Shona",
-      "questId": "quest-1",
-      "category": "Cultural Immersion",
+      "title": "Ini Ndinonzi... — My Name Is...",
+      "description": "Introduce yourself and ask others their names in Shona",
+      "questId": "quest-first-words",
+      "category": "Unit 1: First Words",
       "orderIndex": 2,
       "level": "beginner",
       "xpReward": 50,
-      "estimatedDuration": 15,
+      "estimatedDuration": 10,
       "learningObjectives": [
-        "Learn to state your name in Shona",
-        "Ask for someone's name politely",
-        "Practice numbers 1-10 for counting and market use",
-        "Understand basic sentence structure"
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
       ],
       "discoveryElements": [
-        "Explore how names carry meaning in Shona culture",
-        "Discover the importance of knowing someone's name",
-        "Learn about traditional Shona naming practices"
+        "Explore vocabulary related to: Ini Ndinonzi..."
       ],
       "culturalNotes": [
-        "Names in Shona culture often have deep meaning",
-        "It's polite to ask for someone's name after greeting",
-        "Numbers are essential for market interactions"
+        "Names in Shona culture carry deep meaning and often reflect circumstances of birth",
+        "It is polite to ask someone's name after greeting them"
       ],
       "vocabulary": [
         {
-          "shona": "zita",
-          "english": "name",
-          "audioFile": "zita.mp3",
-          "usage": "Word for name",
-          "example": "Zita rangu ndinonzi John"
+          "shona": "ini",
+          "english": "I/me",
+          "audioFile": "ini.mp3",
+          "usage": "First person singular pronoun",
+          "example": "Ini ndinonzi Tatenda."
         },
         {
-          "shona": "ini ndinonzi",
-          "english": "my name is",
-          "audioFile": "ini_ndinonzi.mp3",
-          "usage": "How to introduce yourself",
-          "example": "Ini ndinonzi Maria"
+          "shona": "ndinonzi",
+          "english": "my name is / I am called",
+          "audioFile": "ndinonzi.mp3",
+          "usage": "Used to introduce yourself",
+          "example": "Ndinonzi Chipo."
         },
         {
           "shona": "munonzi ani",
           "english": "what is your name (formal)",
           "audioFile": "munonzi_ani.mp3",
-          "usage": "Respectful way to ask someone's name",
+          "usage": "Asking someone's name respectfully",
           "example": "Munonzi ani, mai?"
         },
         {
-          "shona": "motsi",
-          "english": "one",
-          "audioFile": "motsi.mp3",
-          "usage": "Number 1",
-          "example": "Motsi chete"
+          "shona": "zita",
+          "english": "name",
+          "audioFile": "zita.mp3",
+          "usage": "The word for name",
+          "example": "Zita rangu ndiTatenda."
         },
         {
-          "shona": "piri",
-          "english": "two",
-          "audioFile": "piri.mp3",
-          "usage": "Number 2",
-          "example": "Mapiri"
+          "shona": "ndinobva ku",
+          "english": "I come from",
+          "audioFile": "ndinobva_ku.mp3",
+          "usage": "Saying where you are from",
+          "example": "Ndinobva kuHarare."
+        },
+        {
+          "shona": "ndinogara ku",
+          "english": "I live in/at",
+          "audioFile": "ndinogara_ku.mp3",
+          "usage": "Saying where you live",
+          "example": "Ndinogara kuBulawayo."
         }
       ]
     },
     {
       "id": "lesson-3",
-      "title": "Mhuri Yangu - My Family",
-      "description": "Learn family vocabulary and understand Shona family structure",
-      "questId": "quest-2",
-      "category": "Family & Relationships",
+      "title": "Hongu neKwete — Yes and No",
+      "description": "Master essential response words and polite expressions in Shona",
+      "questId": "quest-first-words",
+      "category": "Unit 1: First Words",
       "orderIndex": 3,
       "level": "beginner",
-      "xpReward": 60,
-      "estimatedDuration": 20,
+      "xpReward": 50,
+      "estimatedDuration": 10,
       "learningObjectives": [
-        "Master family member vocabulary",
-        "Understand the Shona extended family system",
-        "Learn possessive pronouns (-angu, -ako)",
-        "Practice noun classes for people (1/2)"
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
       ],
       "discoveryElements": [
-        "Explore the importance of extended family in Shona culture",
-        "Discover different roles within the family structure",
-        "Learn about respect for elders"
+        "Explore vocabulary related to: Hongu neKwete"
       ],
       "culturalNotes": [
-        "Family is central to Shona identity and culture",
-        "Extended family members are considered as close as immediate family",
-        "Respect for elders is fundamental to Shona values"
+        "Politeness is highly valued — always say ndatenda (thank you)",
+        "Pamusoroi is used both as 'excuse me' and to show sympathy"
       ],
       "vocabulary": [
         {
-          "shona": "mhuri",
-          "english": "family",
-          "audioFile": "mhuri.mp3",
-          "usage": "Word for family",
-          "example": "Mhuri yangu"
+          "shona": "hongu",
+          "english": "yes",
+          "audioFile": "hongu.mp3",
+          "usage": "Affirmative response",
+          "example": "Hongu, ndinoda mvura."
         },
         {
-          "shona": "baba",
-          "english": "father",
-          "audioFile": "baba.mp3",
-          "usage": "Word for father, also used as respectful address",
-          "example": "Baba vangu"
+          "shona": "kwete",
+          "english": "no",
+          "audioFile": "kwete.mp3",
+          "usage": "Negative response",
+          "example": "Kwete, handidi."
         },
         {
-          "shona": "amai",
-          "english": "mother",
-          "audioFile": "amai.mp3",
-          "usage": "Word for mother, also used as respectful address",
-          "example": "Amai vangu"
+          "shona": "ndatenda",
+          "english": "thank you",
+          "audioFile": "ndatenda.mp3",
+          "usage": "Expressing gratitude",
+          "example": "Ndatenda zvikuru!"
         },
         {
-          "shona": "mwana",
-          "english": "child",
-          "audioFile": "mwana.mp3",
-          "usage": "Word for child",
-          "example": "Mwana wangu"
+          "shona": "pamusoroi",
+          "english": "excuse me / sorry",
+          "audioFile": "pamusoroi.mp3",
+          "usage": "Apologizing or getting attention",
+          "example": "Pamusoroi, ndapota."
         },
         {
-          "shona": "mukoma",
-          "english": "older brother",
-          "audioFile": "mukoma.mp3",
-          "usage": "Respectful term for older brother",
-          "example": "Mukoma wangu"
+          "shona": "ndapota",
+          "english": "please",
+          "audioFile": "ndapota.mp3",
+          "usage": "Making polite requests",
+          "example": "Ndapota, ndipeiwo mvura."
+        },
+        {
+          "shona": "fambai zvakanaka",
+          "english": "go well (goodbye)",
+          "audioFile": "fambai_zvakanaka.mp3",
+          "usage": "Saying goodbye to someone leaving",
+          "example": "Fambai zvakanaka, shamwari!"
         }
       ]
     },
     {
       "id": "lesson-4",
-      "title": "Vanhu Vemhuri - Family People",
-      "description": "Expand family vocabulary and practice family conversations",
-      "questId": "quest-2",
-      "category": "Family & Relationships",
+      "title": "Chii? Sei? — What? How?",
+      "description": "Learn question words to start asking about the world around you",
+      "questId": "quest-first-words",
+      "category": "Unit 1: First Words",
       "orderIndex": 4,
       "level": "beginner",
-      "xpReward": 60,
-      "estimatedDuration": 20,
+      "xpReward": 50,
+      "estimatedDuration": 10,
       "learningObjectives": [
-        "Learn extended family vocabulary",
-        "Practice describing family relationships",
-        "Master plural forms of family terms",
-        "Understand family hierarchy and respect"
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
       ],
       "discoveryElements": [
-        "Explore traditional family roles and responsibilities",
-        "Discover how family relationships shape social interactions",
-        "Learn about family gatherings and traditions"
+        "Explore vocabulary related to: Chii? Sei?"
       ],
       "culturalNotes": [
-        "Grandparents hold special wisdom and respect",
-        "Family decisions are often made collectively",
-        "Children are taught to respect all family members"
+        "Asking questions shows interest and respect in Shona culture",
+        "Use 'ko' at the start of a sentence to make it a question"
       ],
       "vocabulary": [
         {
-          "shona": "sekuru",
-          "english": "grandfather",
-          "audioFile": "sekuru.mp3",
-          "usage": "Word for grandfather, also respectful address for elderly men",
-          "example": "Sekuru vangu"
+          "shona": "chii",
+          "english": "what",
+          "audioFile": "chii.mp3",
+          "usage": "Asking about things",
+          "example": "Chii ichi?"
         },
         {
-          "shona": "ambuya",
-          "english": "grandmother",
-          "audioFile": "ambuya.mp3",
-          "usage": "Word for grandmother, also respectful address for elderly women",
-          "example": "Ambuya vangu"
+          "shona": "sei",
+          "english": "how / why",
+          "audioFile": "sei.mp3",
+          "usage": "Asking how or why",
+          "example": "Waita sei?"
         },
         {
-          "shona": "hanzvadzi",
-          "english": "sister/brother",
-          "audioFile": "hanzvadzi.mp3",
-          "usage": "General term for siblings",
-          "example": "Hanzvadzi yangu"
+          "shona": "ani",
+          "english": "who",
+          "audioFile": "ani.mp3",
+          "usage": "Asking about people",
+          "example": "Ndiani uyu?"
         },
         {
-          "shona": "mwanakomana",
-          "english": "son",
-          "audioFile": "mwanakomana.mp3",
-          "usage": "Word for son",
-          "example": "Mwanakomana wangu"
+          "shona": "kupi",
+          "english": "where",
+          "audioFile": "kupi.mp3",
+          "usage": "Asking about places",
+          "example": "Uri kupi?"
         },
         {
-          "shona": "mwanasikana",
-          "english": "daughter",
-          "audioFile": "mwanasikana.mp3",
-          "usage": "Word for daughter",
-          "example": "Mwanasikana wangu"
+          "shona": "riini",
+          "english": "when",
+          "audioFile": "riini.mp3",
+          "usage": "Asking about time",
+          "example": "Riini tinoenda?"
+        },
+        {
+          "shona": "nei",
+          "english": "why",
+          "audioFile": "nei.mp3",
+          "usage": "Asking for reasons",
+          "example": "Nei usingauye?"
         }
       ]
     },
     {
       "id": "lesson-5",
-      "title": "Kumusika - At the Market",
-      "description": "Learn market vocabulary, colors, and basic negotiation phrases",
-      "questId": "quest-3",
-      "category": "Practical Communication",
+      "title": "Mhuri Yangu — My Family",
+      "description": "Learn the core family words that every Shona speaker uses daily",
+      "questId": "quest-people",
+      "category": "Unit 2: People Around You",
       "orderIndex": 5,
-      "level": "intermediate",
-      "xpReward": 75,
-      "estimatedDuration": 25,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
       "learningObjectives": [
-        "Master market vocabulary and transactions",
-        "Learn color words and descriptions",
-        "Practice numbers 1-10 in practical contexts",
-        "Understand basic negotiation phrases"
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
       ],
       "discoveryElements": [
-        "Explore traditional Shona markets and their importance",
-        "Discover local foods and traditional crafts",
-        "Learn about bargaining as a social interaction"
+        "Explore vocabulary related to: Mhuri Yangu"
       ],
       "culturalNotes": [
-        "Markets are social centers, not just commercial spaces",
-        "Bargaining is expected and shows engagement",
-        "Respect for vendors and their goods is important"
+        "Family (mhuri) is the foundation of Shona society",
+        "Respect for elders is shown through language and behavior"
+      ],
+      "vocabulary": [
+        {
+          "shona": "baba",
+          "english": "father",
+          "audioFile": "baba.mp3",
+          "usage": "Also used respectfully for older men",
+          "example": "Baba vangu varikupi?"
+        },
+        {
+          "shona": "mai",
+          "english": "mother",
+          "audioFile": "mai.mp3",
+          "usage": "Also used respectfully for older women",
+          "example": "Mai vangu vanobika."
+        },
+        {
+          "shona": "mwana",
+          "english": "child",
+          "audioFile": "mwana.mp3",
+          "usage": "General term for a child",
+          "example": "Mwana ari kurara."
+        },
+        {
+          "shona": "mukoma",
+          "english": "older sibling",
+          "audioFile": "mukoma.mp3",
+          "usage": "Older brother or sister",
+          "example": "Mukoma wangu ari kuchikoro."
+        },
+        {
+          "shona": "hanzvadzi",
+          "english": "sibling (opposite gender)",
+          "audioFile": "hanzvadzi.mp3",
+          "usage": "Brother (if you're female) or sister (if you're male)",
+          "example": "Hanzvadzi yangu iri kuHarare."
+        },
+        {
+          "shona": "mhuri",
+          "english": "family",
+          "audioFile": "mhuri.mp3",
+          "usage": "The word for family",
+          "example": "Mhuri yangu yakakura."
+        }
+      ]
+    },
+    {
+      "id": "lesson-6",
+      "title": "Vanhu Vemhuri — Family Elders",
+      "description": "Learn words for extended family members and elders",
+      "questId": "quest-people",
+      "category": "Unit 2: People Around You",
+      "orderIndex": 6,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Vanhu Vemhuri"
+      ],
+      "culturalNotes": [
+        "Extended family plays a huge role — uncles and aunts are like second parents",
+        "Sekuru and ambuya are deeply respected figures"
+      ],
+      "vocabulary": [
+        {
+          "shona": "sekuru",
+          "english": "grandfather / uncle",
+          "audioFile": "sekuru.mp3",
+          "usage": "Grandfather or mother's brother",
+          "example": "Sekuru vangu vanonditaridza."
+        },
+        {
+          "shona": "ambuya",
+          "english": "grandmother",
+          "audioFile": "ambuya.mp3",
+          "usage": "Grandmother or elder woman",
+          "example": "Ambuya vanobika sadza."
+        },
+        {
+          "shona": "mwanakomana",
+          "english": "son / boy",
+          "audioFile": "mwanakomana.mp3",
+          "usage": "Male child",
+          "example": "Mwanakomana wangu ari kuchikoro."
+        },
+        {
+          "shona": "mwanasikana",
+          "english": "daughter / girl",
+          "audioFile": "mwanasikana.mp3",
+          "usage": "Female child",
+          "example": "Mwanasikana wangu anodzidza."
+        },
+        {
+          "shona": "babamukuru",
+          "english": "uncle (father's elder brother)",
+          "audioFile": "babamukuru.mp3",
+          "usage": "Father's older brother — very respected",
+          "example": "Babamukuru vanouya mangwana."
+        },
+        {
+          "shona": "mainini",
+          "english": "aunt (mother's younger sister)",
+          "audioFile": "mainini.mp3",
+          "usage": "Mother's younger sister",
+          "example": "Mainini vanondida."
+        }
+      ]
+    },
+    {
+      "id": "lesson-7",
+      "title": "Shamwari neMuvakidzani — Friends & Neighbors",
+      "description": "Learn words for people in your social circle beyond family",
+      "questId": "quest-people",
+      "category": "Unit 2: People Around You",
+      "orderIndex": 7,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Shamwari neMuvakidzani"
+      ],
+      "culturalNotes": [
+        "Neighbors (muvakidzani) are treated almost like family",
+        "The Shona proverb says: Musha mukadzi — a home is the woman"
+      ],
+      "vocabulary": [
+        {
+          "shona": "shamwari",
+          "english": "friend",
+          "audioFile": "shamwari.mp3",
+          "usage": "A close friend",
+          "example": "Shamwari yangu yauya."
+        },
+        {
+          "shona": "muvakidzani",
+          "english": "neighbor",
+          "audioFile": "muvakidzani.mp3",
+          "usage": "Person living near you",
+          "example": "Muvakidzani wedu akanaka."
+        },
+        {
+          "shona": "mudzimai",
+          "english": "woman / wife",
+          "audioFile": "mudzimai.mp3",
+          "usage": "Adult woman or wife",
+          "example": "Mudzimai uyu ari kubika."
+        },
+        {
+          "shona": "murume",
+          "english": "man / husband",
+          "audioFile": "murume.mp3",
+          "usage": "Adult man or husband",
+          "example": "Murume ari kushanda."
+        },
+        {
+          "shona": "vana",
+          "english": "children",
+          "audioFile": "vana.mp3",
+          "usage": "Plural of mwana",
+          "example": "Vana vari kutamba."
+        },
+        {
+          "shona": "munhu",
+          "english": "person",
+          "audioFile": "munhu.mp3",
+          "usage": "A single person",
+          "example": "Munhu uyu ndiani?"
+        }
+      ]
+    },
+    {
+      "id": "lesson-8",
+      "title": "Ini, Iwe, Isu — Me, You, Us",
+      "description": "Master Shona pronouns to talk about yourself and others",
+      "questId": "quest-people",
+      "category": "Unit 2: People Around You",
+      "orderIndex": 8,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Ini, Iwe, Isu"
+      ],
+      "culturalNotes": [
+        "Using 'imi' instead of 'iwe' shows respect to elders",
+        "Pronouns change based on respect level — this is key to polite Shona"
+      ],
+      "vocabulary": [
+        {
+          "shona": "ini",
+          "english": "I / me",
+          "audioFile": "ini.mp3",
+          "usage": "First person singular",
+          "example": "Ini ndinoda kudya."
+        },
+        {
+          "shona": "iwe",
+          "english": "you (informal)",
+          "audioFile": "iwe.mp3",
+          "usage": "Casual — for friends and younger people",
+          "example": "Iwe, uya pano!"
+        },
+        {
+          "shona": "imi",
+          "english": "you (formal/plural)",
+          "audioFile": "imi.mp3",
+          "usage": "Respectful or plural you",
+          "example": "Imi munoda chii?"
+        },
+        {
+          "shona": "isu",
+          "english": "we / us",
+          "audioFile": "isu.mp3",
+          "usage": "First person plural",
+          "example": "Isu tinoenda kuchikoro."
+        },
+        {
+          "shona": "ivo",
+          "english": "they / them",
+          "audioFile": "ivo.mp3",
+          "usage": "Third person plural",
+          "example": "Ivo vari kuuya."
+        },
+        {
+          "shona": "iye",
+          "english": "he / she",
+          "audioFile": "iye.mp3",
+          "usage": "Third person singular",
+          "example": "Iye ari pano."
+        }
+      ]
+    },
+    {
+      "id": "lesson-9",
+      "title": "Kuverenga 1-10 — Counting",
+      "description": "Learn to count from 1 to 10 in Shona — essential for markets and daily life",
+      "questId": "quest-numbers-time",
+      "category": "Unit 3: Numbers & Time",
+      "orderIndex": 9,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 10 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Kuverenga 1-10"
+      ],
+      "culturalNotes": [
+        "Numbers are vital at markets — you'll use them every day",
+        "Shona uses a base-10 counting system"
+      ],
+      "vocabulary": [
+        {
+          "shona": "potsi",
+          "english": "one",
+          "audioFile": "potsi.mp3",
+          "usage": "The number 1",
+          "example": "Ndipe potsi."
+        },
+        {
+          "shona": "piri",
+          "english": "two",
+          "audioFile": "piri.mp3",
+          "usage": "The number 2",
+          "example": "Ndipe mapiri."
+        },
+        {
+          "shona": "tatu",
+          "english": "three",
+          "audioFile": "tatu.mp3",
+          "usage": "The number 3",
+          "example": "Vana vatatu."
+        },
+        {
+          "shona": "ina",
+          "english": "four",
+          "audioFile": "ina.mp3",
+          "usage": "The number 4",
+          "example": "Mazuva mana."
+        },
+        {
+          "shona": "shanu",
+          "english": "five",
+          "audioFile": "shanu.mp3",
+          "usage": "The number 5",
+          "example": "Maapuro mashanu."
+        },
+        {
+          "shona": "tanhatu",
+          "english": "six",
+          "audioFile": "tanhatu.mp3",
+          "usage": "The number 6",
+          "example": "Mbudzi tanhatu."
+        },
+        {
+          "shona": "nomwe",
+          "english": "seven",
+          "audioFile": "nomwe.mp3",
+          "usage": "The number 7",
+          "example": "Mazuva manomwe."
+        },
+        {
+          "shona": "sere",
+          "english": "eight",
+          "audioFile": "sere.mp3",
+          "usage": "The number 8",
+          "example": "Masere emakore."
+        },
+        {
+          "shona": "pfumbamwe",
+          "english": "nine",
+          "audioFile": "pfumbamwe.mp3",
+          "usage": "The number 9",
+          "example": "Vana vapfumbamwe."
+        },
+        {
+          "shona": "gumi",
+          "english": "ten",
+          "audioFile": "gumi.mp3",
+          "usage": "The number 10",
+          "example": "Makore gumi."
+        }
+      ]
+    },
+    {
+      "id": "lesson-10",
+      "title": "Nhamba Huru — Big Numbers",
+      "description": "Count beyond 10 — learn bigger numbers for money, age, and quantities",
+      "questId": "quest-numbers-time",
+      "category": "Unit 3: Numbers & Time",
+      "orderIndex": 10,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Nhamba Huru"
+      ],
+      "culturalNotes": [
+        "Knowing big numbers is essential for handling money (mari)",
+        "Zimbabwe uses both Shona and English numbers in daily life"
+      ],
+      "vocabulary": [
+        {
+          "shona": "gumi nerimwe",
+          "english": "eleven",
+          "audioFile": "gumi_nerimwe.mp3",
+          "usage": "10 + 1",
+          "example": "Makore gumi nerimwe."
+        },
+        {
+          "shona": "makumi maviri",
+          "english": "twenty",
+          "audioFile": "makumi_maviri.mp3",
+          "usage": "Two tens",
+          "example": "Makumi maviri emaapuro."
+        },
+        {
+          "shona": "makumi mashanu",
+          "english": "fifty",
+          "audioFile": "makumi_mashanu.mp3",
+          "usage": "Five tens",
+          "example": "Makore makumi mashanu."
+        },
+        {
+          "shona": "zana",
+          "english": "hundred",
+          "audioFile": "zana.mp3",
+          "usage": "The number 100",
+          "example": "Zana revanhu."
+        },
+        {
+          "shona": "chiuru",
+          "english": "thousand",
+          "audioFile": "chiuru.mp3",
+          "usage": "The number 1000",
+          "example": "Chiuru chemari."
+        },
+        {
+          "shona": "nhamba",
+          "english": "number",
+          "audioFile": "nhamba.mp3",
+          "usage": "The word for number",
+          "example": "Nhamba yako ndeipi?"
+        }
+      ]
+    },
+    {
+      "id": "lesson-11",
+      "title": "Nguva — Time",
+      "description": "Talk about times of day, today, tomorrow, and yesterday",
+      "questId": "quest-numbers-time",
+      "category": "Unit 3: Numbers & Time",
+      "orderIndex": 11,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Nguva"
+      ],
+      "culturalNotes": [
+        "Greetings change based on time of day",
+        "Mangwanani is both 'morning' and the morning greeting"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mangwanani",
+          "english": "morning",
+          "audioFile": "mangwanani.mp3",
+          "usage": "Morning / good morning",
+          "example": "Mangwanani, mai!"
+        },
+        {
+          "shona": "masikati",
+          "english": "afternoon",
+          "audioFile": "masikati.mp3",
+          "usage": "Afternoon / good afternoon",
+          "example": "Masikati, baba."
+        },
+        {
+          "shona": "manheru",
+          "english": "evening",
+          "audioFile": "manheru.mp3",
+          "usage": "Evening / good evening",
+          "example": "Manheru, sekuru."
+        },
+        {
+          "shona": "nhasi",
+          "english": "today",
+          "audioFile": "nhasi.mp3",
+          "usage": "This day",
+          "example": "Nhasi tinoenda kumusika."
+        },
+        {
+          "shona": "mangwana",
+          "english": "tomorrow",
+          "audioFile": "mangwana.mp3",
+          "usage": "The next day",
+          "example": "Mangwana ndinouya."
+        },
+        {
+          "shona": "nezuro",
+          "english": "yesterday",
+          "audioFile": "nezuro.mp3",
+          "usage": "The previous day",
+          "example": "Nezuro takaenda kuchikoro."
+        }
+      ]
+    },
+    {
+      "id": "lesson-12",
+      "title": "Mazuva — Days & Seasons",
+      "description": "Learn the days of the week and seasons of the year in Shona",
+      "questId": "quest-numbers-time",
+      "category": "Unit 3: Numbers & Time",
+      "orderIndex": 12,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 7 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mazuva"
+      ],
+      "culturalNotes": [
+        "Shona days of the week are derived from counting",
+        "Agricultural seasons deeply influence Shona life and language"
+      ],
+      "vocabulary": [
+        {
+          "shona": "Muvhuro",
+          "english": "Monday",
+          "audioFile": "muvhuro.mp3",
+          "usage": "First day of the week",
+          "example": "Muvhuro ndinoenda kubasa."
+        },
+        {
+          "shona": "Chipiri",
+          "english": "Tuesday",
+          "audioFile": "chipiri.mp3",
+          "usage": "Second day",
+          "example": "Chipiri tine musangano."
+        },
+        {
+          "shona": "Chitatu",
+          "english": "Wednesday",
+          "audioFile": "chitatu.mp3",
+          "usage": "Third day",
+          "example": "Chitatu ndinoenda kumusika."
+        },
+        {
+          "shona": "China",
+          "english": "Thursday",
+          "audioFile": "china.mp3",
+          "usage": "Fourth day",
+          "example": "China ndinodzidza."
+        },
+        {
+          "shona": "Chishanu",
+          "english": "Friday",
+          "audioFile": "chishanu.mp3",
+          "usage": "Fifth day",
+          "example": "Chishanu tinozorora."
+        },
+        {
+          "shona": "Mugovera",
+          "english": "Saturday",
+          "audioFile": "mugovera.mp3",
+          "usage": "Weekend day",
+          "example": "Mugovera tinoenda kuchurch."
+        },
+        {
+          "shona": "Svondo",
+          "english": "Sunday",
+          "audioFile": "svondo.mp3",
+          "usage": "Day of rest",
+          "example": "Svondo tinopinda chechi."
+        }
+      ]
+    },
+    {
+      "id": "lesson-13",
+      "title": "Zvokudya — Food",
+      "description": "Learn the names of common Zimbabwean foods and drinks",
+      "questId": "quest-daily-life",
+      "category": "Unit 4: Daily Life",
+      "orderIndex": 13,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 7 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Zvokudya"
+      ],
+      "culturalNotes": [
+        "Sadza (thick maize porridge) is the staple food of Zimbabwe",
+        "Meals are often communal — eating together strengthens bonds"
+      ],
+      "vocabulary": [
+        {
+          "shona": "sadza",
+          "english": "thick maize porridge",
+          "audioFile": "sadza.mp3",
+          "usage": "The staple food of Zimbabwe",
+          "example": "Sadza nemuriwo zvakanaka."
+        },
+        {
+          "shona": "nyama",
+          "english": "meat",
+          "audioFile": "nyama.mp3",
+          "usage": "General term for meat",
+          "example": "Ndoda nyama yehuku."
+        },
+        {
+          "shona": "muriwo",
+          "english": "vegetables / relish",
+          "audioFile": "muriwo.mp3",
+          "usage": "Leafy greens served with sadza",
+          "example": "Muriwo uyu wakanaka."
+        },
+        {
+          "shona": "mvura",
+          "english": "water",
+          "audioFile": "mvura.mp3",
+          "usage": "Water — essential word",
+          "example": "Ndoda mvura, ndapota."
+        },
+        {
+          "shona": "mukaka",
+          "english": "milk",
+          "audioFile": "mukaka.mp3",
+          "usage": "Milk for drinking",
+          "example": "Mwana anoda mukaka."
+        },
+        {
+          "shona": "huku",
+          "english": "chicken",
+          "audioFile": "huku.mp3",
+          "usage": "Chicken — very common meat",
+          "example": "Huku iri kubika."
+        },
+        {
+          "shona": "chibage",
+          "english": "maize / corn",
+          "audioFile": "chibage.mp3",
+          "usage": "Maize — basis of sadza",
+          "example": "Chibage chakakura."
+        }
+      ]
+    },
+    {
+      "id": "lesson-14",
+      "title": "Kumba — At Home",
+      "description": "Learn vocabulary for things around the home",
+      "questId": "quest-daily-life",
+      "category": "Unit 4: Daily Life",
+      "orderIndex": 14,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Kumba"
+      ],
+      "culturalNotes": [
+        "The home (musha) is central to Shona identity",
+        "Traditional homes have separate kitchen huts (dare)"
+      ],
+      "vocabulary": [
+        {
+          "shona": "imba",
+          "english": "house",
+          "audioFile": "imba.mp3",
+          "usage": "A building or room",
+          "example": "Imba yangu iri pano."
+        },
+        {
+          "shona": "mukova",
+          "english": "door",
+          "audioFile": "mukova.mp3",
+          "usage": "Door or entrance",
+          "example": "Vhura mukova."
+        },
+        {
+          "shona": "fafitera",
+          "english": "window",
+          "audioFile": "fafitera.mp3",
+          "usage": "Window of a house",
+          "example": "Fafitera rakavhurika."
+        },
+        {
+          "shona": "tafura",
+          "english": "table",
+          "audioFile": "tafura.mp3",
+          "usage": "Table for eating or working",
+          "example": "Isa pamusoro petafura."
+        },
+        {
+          "shona": "mubhedha",
+          "english": "bed",
+          "audioFile": "mubhedha.mp3",
+          "usage": "Bed for sleeping",
+          "example": "Mubhedha wangu wakakura."
+        },
+        {
+          "shona": "kicheni",
+          "english": "kitchen",
+          "audioFile": "kicheni.mp3",
+          "usage": "Kitchen for cooking",
+          "example": "Mai vari mukicheni."
+        }
+      ]
+    },
+    {
+      "id": "lesson-15",
+      "title": "Muviri Wangu — My Body",
+      "description": "Learn the names of body parts — useful for health and descriptions",
+      "questId": "quest-daily-life",
+      "category": "Unit 4: Daily Life",
+      "orderIndex": 15,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 7 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Muviri Wangu"
+      ],
+      "culturalNotes": [
+        "Knowing body parts helps when visiting a chiremba (doctor)",
+        "The heart (moyo) is considered the seat of emotions in Shona culture"
+      ],
+      "vocabulary": [
+        {
+          "shona": "musoro",
+          "english": "head",
+          "audioFile": "musoro.mp3",
+          "usage": "Head",
+          "example": "Musoro wangu uri kurwadza."
+        },
+        {
+          "shona": "maziso",
+          "english": "eyes",
+          "audioFile": "maziso.mp3",
+          "usage": "Eyes (plural)",
+          "example": "Maziso ako akanaka."
+        },
+        {
+          "shona": "nzeve",
+          "english": "ears",
+          "audioFile": "nzeve.mp3",
+          "usage": "Ears",
+          "example": "Nzeve dzangu dzinonzwa."
+        },
+        {
+          "shona": "muromo",
+          "english": "mouth",
+          "audioFile": "muromo.mp3",
+          "usage": "Mouth",
+          "example": "Vhara muromo wako."
+        },
+        {
+          "shona": "maoko",
+          "english": "hands / arms",
+          "audioFile": "maoko.mp3",
+          "usage": "Hands or arms",
+          "example": "Geza maoko ako."
+        },
+        {
+          "shona": "tsoka",
+          "english": "foot / leg",
+          "audioFile": "tsoka.mp3",
+          "usage": "Foot or leg",
+          "example": "Tsoka yangu iri kurwadza."
+        },
+        {
+          "shona": "moyo",
+          "english": "heart",
+          "audioFile": "moyo.mp3",
+          "usage": "Heart — also means courage/spirit",
+          "example": "Moyo wangu uri kufara."
+        }
+      ]
+    },
+    {
+      "id": "lesson-16",
+      "title": "Mavara — Colors",
+      "description": "Learn color words to describe the vibrant world around you",
+      "questId": "quest-daily-life",
+      "category": "Unit 4: Daily Life",
+      "orderIndex": 16,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 7 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mavara"
+      ],
+      "culturalNotes": [
+        "Colors carry symbolic meaning in Shona culture",
+        "The Zimbabwe flag colors each represent something important"
+      ],
+      "vocabulary": [
+        {
+          "shona": "tsvuku",
+          "english": "red",
+          "audioFile": "tsvuku.mp3",
+          "usage": "The color red",
+          "example": "Motokari tsvuku."
+        },
+        {
+          "shona": "chena",
+          "english": "white",
+          "audioFile": "chena.mp3",
+          "usage": "The color white",
+          "example": "Imbwa chena."
+        },
+        {
+          "shona": "dema",
+          "english": "black",
+          "audioFile": "dema.mp3",
+          "usage": "The color black",
+          "example": "Katsi dema."
+        },
+        {
+          "shona": "shava",
+          "english": "brown",
+          "audioFile": "shava.mp3",
+          "usage": "The color brown",
+          "example": "Mbudzi shava."
+        },
+        {
+          "shona": "girini",
+          "english": "green",
+          "audioFile": "girini.mp3",
+          "usage": "The color green",
+          "example": "Muriwo girini."
+        },
+        {
+          "shona": "bhuruu",
+          "english": "blue",
+          "audioFile": "bhuruu.mp3",
+          "usage": "The color blue",
+          "example": "Denga bhuruu."
+        },
+        {
+          "shona": "yero",
+          "english": "yellow",
+          "audioFile": "yero.mp3",
+          "usage": "The color yellow",
+          "example": "Zuva yero."
+        }
+      ]
+    },
+    {
+      "id": "lesson-17",
+      "title": "Kumusika — At the Market",
+      "description": "Learn essential words for shopping at Zimbabwean markets",
+      "questId": "quest-getting-around",
+      "category": "Unit 5: Getting Around",
+      "orderIndex": 17,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Kumusika"
+      ],
+      "culturalNotes": [
+        "Markets (musika) are vibrant social spaces",
+        "Bargaining is expected and part of the fun"
       ],
       "vocabulary": [
         {
           "shona": "musika",
           "english": "market",
           "audioFile": "musika.mp3",
-          "usage": "Word for market",
-          "example": "Ndinoenda kumusika"
+          "usage": "Marketplace",
+          "example": "Tinoenda kumusika."
         },
         {
           "shona": "mari",
           "english": "money",
           "audioFile": "mari.mp3",
-          "usage": "Word for money",
-          "example": "Ndine mari"
+          "usage": "Money / currency",
+          "example": "Ndipe mari yangu."
         },
         {
           "shona": "imarii",
           "english": "how much",
           "audioFile": "imarii.mp3",
-          "usage": "Question to ask price",
-          "example": "Imarii ichi?"
+          "usage": "Asking the price",
+          "example": "Imarii iyi?"
         },
         {
-          "shona": "tsvuku",
-          "english": "red",
-          "audioFile": "tsvuku.mp3",
-          "usage": "Color red",
-          "example": "Chitsvuku"
+          "shona": "kutenga",
+          "english": "to buy",
+          "audioFile": "kutenga.mp3",
+          "usage": "The act of buying",
+          "example": "Ndoda kutenga maapuro."
         },
         {
-          "shona": "chena",
-          "english": "white",
-          "audioFile": "chena.mp3",
-          "usage": "Color white",
-          "example": "Chichena"
+          "shona": "kutengesa",
+          "english": "to sell",
+          "audioFile": "kutengesa.mp3",
+          "usage": "The act of selling",
+          "example": "Ari kutengesa michero."
+        },
+        {
+          "shona": "mutengo",
+          "english": "price",
+          "audioFile": "mutengo.mp3",
+          "usage": "The price of something",
+          "example": "Mutengo wacho ndeupi?"
         }
       ]
     },
     {
-      "id": "lesson-6",
-      "title": "Mazwi Emutauro - Sounds of Language",
-      "description": "Master Shona pronunciation and tone patterns",
-      "questId": "quest-4",
-      "category": "Pronunciation Mastery",
-      "orderIndex": 6,
-      "level": "intermediate",
-      "xpReward": 80,
-      "estimatedDuration": 30,
+      "id": "lesson-18",
+      "title": "Kufamba — Getting Around",
+      "description": "Learn transport and direction words for navigating Zimbabwe",
+      "questId": "quest-getting-around",
+      "category": "Unit 5: Getting Around",
+      "orderIndex": 18,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
       "learningObjectives": [
-        "Master Shona vowel sounds (a, e, i, o, u)",
-        "Practice tone patterns and their meanings",
-        "Learn prenasalized consonants (mb, nd, ng, nz)",
-        "Develop authentic pronunciation habits"
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
       ],
       "discoveryElements": [
-        "Explore the musical nature of Shona language",
-        "Discover how tones change word meanings",
-        "Learn about regional pronunciation variations"
+        "Explore vocabulary related to: Kufamba"
       ],
       "culturalNotes": [
-        "Shona is a tonal language with high and low tones",
-        "Proper pronunciation shows respect for the language",
-        "Each region may have slight pronunciation differences"
+        "Kombis (minibuses) are the main public transport in cities",
+        "Walking is very common in rural areas"
       ],
       "vocabulary": [
         {
-          "shona": "mazwi",
-          "english": "words",
-          "audioFile": "mazwi.mp3",
-          "usage": "Word for words",
-          "example": "Mazwi makuru"
+          "shona": "motokari",
+          "english": "car",
+          "audioFile": "motokari.mp3",
+          "usage": "Automobile",
+          "example": "Motokari yangu itsva."
         },
         {
-          "shona": "mutauro",
-          "english": "language",
-          "audioFile": "mutauro.mp3",
-          "usage": "Word for language",
-          "example": "Mutauro wechiShona"
+          "shona": "bhazi",
+          "english": "bus",
+          "audioFile": "bhazi.mp3",
+          "usage": "Large bus",
+          "example": "Bhazi richasvika riini?"
         },
         {
-          "shona": "mbira",
-          "english": "traditional instrument",
-          "audioFile": "mbira.mp3",
-          "usage": "Traditional Shona instrument",
-          "example": "Ndiri kuridza mbira"
+          "shona": "bhasikoro",
+          "english": "bicycle",
+          "audioFile": "bhasikoro.mp3",
+          "usage": "Bicycle",
+          "example": "Ndinofamba nebhasikoro."
         },
         {
           "shona": "nzira",
-          "english": "path/way",
+          "english": "path / road",
           "audioFile": "nzira.mp3",
-          "usage": "Word for path or way",
-          "example": "Nzira yakanaka"
+          "usage": "A road or path",
+          "example": "Nzira iyi inoenda kupi?"
+        },
+        {
+          "shona": "mugwagwa",
+          "english": "road / street",
+          "audioFile": "mugwagwa.mp3",
+          "usage": "Main road",
+          "example": "Mugwagwa wakakura."
+        },
+        {
+          "shona": "kufamba",
+          "english": "to walk / travel",
+          "audioFile": "kufamba.mp3",
+          "usage": "Walking or traveling",
+          "example": "Ndinoda kufamba."
+        }
+      ]
+    },
+    {
+      "id": "lesson-19",
+      "title": "Mabasa — At Work",
+      "description": "Learn common occupations and workplace vocabulary",
+      "questId": "quest-getting-around",
+      "category": "Unit 5: Getting Around",
+      "orderIndex": 19,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mabasa"
+      ],
+      "culturalNotes": [
+        "Respect titles are important — always address professionals properly",
+        "Teaching and farming are highly respected professions"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mudzidzisi",
+          "english": "teacher",
+          "audioFile": "mudzidzisi.mp3",
+          "usage": "A teacher",
+          "example": "Mudzidzisi wedu akanaka."
+        },
+        {
+          "shona": "chiremba",
+          "english": "doctor",
+          "audioFile": "chiremba.mp3",
+          "usage": "Medical doctor or healer",
+          "example": "Ndinoenda kuchiremba."
+        },
+        {
+          "shona": "murimi",
+          "english": "farmer",
+          "audioFile": "murimi.mp3",
+          "usage": "One who farms",
+          "example": "Murimi ari kumunda."
+        },
+        {
+          "shona": "mupurisa",
+          "english": "police officer",
+          "audioFile": "mupurisa.mp3",
+          "usage": "Police",
+          "example": "Mupurisa ari pano."
+        },
+        {
+          "shona": "basa",
+          "english": "work / job",
+          "audioFile": "basa.mp3",
+          "usage": "Work or employment",
+          "example": "Ndinoenda kubasa."
+        },
+        {
+          "shona": "kushanda",
+          "english": "to work",
+          "audioFile": "kushanda.mp3",
+          "usage": "The act of working",
+          "example": "Ndinoshanda zuva nezuva."
+        }
+      ]
+    },
+    {
+      "id": "lesson-20",
+      "title": "Kudya Panze — Eating Out",
+      "description": "Learn phrases for ordering food and drinks when eating out",
+      "questId": "quest-getting-around",
+      "category": "Unit 5: Getting Around",
+      "orderIndex": 20,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Kudya Panze"
+      ],
+      "culturalNotes": [
+        "Sharing food is a sign of friendship and hospitality",
+        "Tea (tii) is very popular in Zimbabwe, often with lots of sugar"
+      ],
+      "vocabulary": [
+        {
+          "shona": "ndoda",
+          "english": "I want",
+          "audioFile": "ndoda.mp3",
+          "usage": "Expressing a want",
+          "example": "Ndoda sadza."
+        },
+        {
+          "shona": "ndipe",
+          "english": "give me",
+          "audioFile": "ndipe.mp3",
+          "usage": "Requesting something",
+          "example": "Ndipe mvura, ndapota."
+        },
+        {
+          "shona": "tii",
+          "english": "tea",
+          "audioFile": "tii.mp3",
+          "usage": "Tea drink",
+          "example": "Ndoda tii nemukaka."
+        },
+        {
+          "shona": "kofi",
+          "english": "coffee",
+          "audioFile": "kofi.mp3",
+          "usage": "Coffee drink",
+          "example": "Kofi inopisa."
+        },
+        {
+          "shona": "bhiri",
+          "english": "beer",
+          "audioFile": "bhiri.mp3",
+          "usage": "Beer / alcoholic drink",
+          "example": "Ndipe bhiri, ndapota."
+        },
+        {
+          "shona": "zvokudya",
+          "english": "food",
+          "audioFile": "zvokudya.mp3",
+          "usage": "Food in general",
+          "example": "Zvokudya zvagadzirwa."
+        }
+      ]
+    },
+    {
+      "id": "lesson-21",
+      "title": "Zvandinoita — What I Do",
+      "description": "Learn the most common action verbs used in everyday Shona",
+      "questId": "quest-actions",
+      "category": "Unit 6: Doing Things",
+      "orderIndex": 21,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Zvandinoita"
+      ],
+      "culturalNotes": [
+        "Shona verbs start with 'ku-' in their infinitive form",
+        "The verb prefix changes based on who is doing the action"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kuenda",
+          "english": "to go",
+          "audioFile": "kuenda.mp3",
+          "usage": "Going somewhere",
+          "example": "Ndinoenda kuchikoro."
+        },
+        {
+          "shona": "kuuya",
+          "english": "to come",
+          "audioFile": "kuuya.mp3",
+          "usage": "Coming to a place",
+          "example": "Uya pano!"
+        },
+        {
+          "shona": "kudya",
+          "english": "to eat",
+          "audioFile": "kudya.mp3",
+          "usage": "Eating food",
+          "example": "Ndinoda kudya sadza."
+        },
+        {
+          "shona": "kunwa",
+          "english": "to drink",
+          "audioFile": "kunwa.mp3",
+          "usage": "Drinking",
+          "example": "Ndinoda kunwa mvura."
+        },
+        {
+          "shona": "kurara",
+          "english": "to sleep",
+          "audioFile": "kurara.mp3",
+          "usage": "Sleeping",
+          "example": "Ndoda kurara."
+        },
+        {
+          "shona": "kumuka",
+          "english": "to wake up",
+          "audioFile": "kumuka.mp3",
+          "usage": "Waking from sleep",
+          "example": "Ndinomuka mangwanani."
+        }
+      ]
+    },
+    {
+      "id": "lesson-22",
+      "title": "Basa Repamba — Housework",
+      "description": "Learn verbs for daily household activities",
+      "questId": "quest-actions",
+      "category": "Unit 6: Doing Things",
+      "orderIndex": 22,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Basa Repamba"
+      ],
+      "culturalNotes": [
+        "Housework is often shared among family members",
+        "Cooking (kubika) is a valued skill taught from childhood"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kubika",
+          "english": "to cook",
+          "audioFile": "kubika.mp3",
+          "usage": "Cooking food",
+          "example": "Mai vari kubika sadza."
+        },
+        {
+          "shona": "kutsvaira",
+          "english": "to sweep",
+          "audioFile": "kutsvaira.mp3",
+          "usage": "Sweeping the floor",
+          "example": "Tsvaira mumba."
+        },
+        {
+          "shona": "kugeza",
+          "english": "to wash / bathe",
+          "audioFile": "kugeza.mp3",
+          "usage": "Washing yourself or things",
+          "example": "Enda kunogeza."
+        },
+        {
+          "shona": "kuwacha",
+          "english": "to do laundry",
+          "audioFile": "kuwacha.mp3",
+          "usage": "Washing clothes",
+          "example": "Ndiri kuwacha hembe."
+        },
+        {
+          "shona": "kusona",
+          "english": "to sew",
+          "audioFile": "kusona.mp3",
+          "usage": "Sewing clothes",
+          "example": "Ambuya vanosona."
+        },
+        {
+          "shona": "kucheka",
+          "english": "to cut",
+          "audioFile": "kucheka.mp3",
+          "usage": "Cutting things",
+          "example": "Cheka muriwo."
+        }
+      ]
+    },
+    {
+      "id": "lesson-23",
+      "title": "Kudzidza — Learning",
+      "description": "Learn words related to school and education",
+      "questId": "quest-actions",
+      "category": "Unit 6: Doing Things",
+      "orderIndex": 23,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Kudzidza"
+      ],
+      "culturalNotes": [
+        "Education is highly valued in Zimbabwean culture",
+        "Zimbabwe has one of the highest literacy rates in Africa"
+      ],
+      "vocabulary": [
+        {
+          "shona": "chikoro",
+          "english": "school",
+          "audioFile": "chikoro.mp3",
+          "usage": "A school",
+          "example": "Ndinoenda kuchikoro."
+        },
+        {
+          "shona": "mudzidzisi",
+          "english": "teacher",
+          "audioFile": "mudzidzisi.mp3",
+          "usage": "A teacher/educator",
+          "example": "Mudzidzisi ari kudzidzisa."
+        },
+        {
+          "shona": "bhuku",
+          "english": "book",
+          "audioFile": "bhuku.mp3",
+          "usage": "A book",
+          "example": "Ndipe bhuku rangu."
+        },
+        {
+          "shona": "peni",
+          "english": "pen",
+          "audioFile": "peni.mp3",
+          "usage": "Writing instrument",
+          "example": "Ndoda peni."
+        },
+        {
+          "shona": "kudzidza",
+          "english": "to learn / study",
+          "audioFile": "kudzidza.mp3",
+          "usage": "Studying",
+          "example": "Ndinofarira kudzidza chiShona."
+        },
+        {
+          "shona": "ruzivo",
+          "english": "knowledge",
+          "audioFile": "ruzivo.mp3",
+          "usage": "Knowledge or wisdom",
+          "example": "Ruzivo simba."
+        }
+      ]
+    },
+    {
+      "id": "lesson-24",
+      "title": "Kutaura — Communicating",
+      "description": "Learn verbs for communication and perception",
+      "questId": "quest-actions",
+      "category": "Unit 6: Doing Things",
+      "orderIndex": 24,
+      "level": "beginner",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Kutaura"
+      ],
+      "culturalNotes": [
+        "Oral tradition is central to Shona culture — speaking and listening are deeply valued",
+        "Storytelling (ngano) passes wisdom between generations"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kutaura",
+          "english": "to speak / say",
+          "audioFile": "kutaura.mp3",
+          "usage": "Speaking",
+          "example": "Ndinotaura chiShona."
+        },
+        {
+          "shona": "kunzwa",
+          "english": "to hear / feel",
+          "audioFile": "kunzwa.mp3",
+          "usage": "Hearing or feeling",
+          "example": "Ndinozwa kutya."
+        },
+        {
+          "shona": "kuona",
+          "english": "to see",
+          "audioFile": "kuona.mp3",
+          "usage": "Seeing",
+          "example": "Ndinoona gomo."
+        },
+        {
+          "shona": "kuverenga",
+          "english": "to read / count",
+          "audioFile": "kuverenga.mp3",
+          "usage": "Reading or counting",
+          "example": "Ndinoverenga bhuku."
+        },
+        {
+          "shona": "kunyora",
+          "english": "to write",
+          "audioFile": "kunyora.mp3",
+          "usage": "Writing",
+          "example": "Ndiri kunyora tsamba."
+        },
+        {
+          "shona": "kuteerera",
+          "english": "to listen",
+          "audioFile": "kuteerera.mp3",
+          "usage": "Active listening",
+          "example": "Teerera mudzidzisi."
+        }
+      ]
+    },
+    {
+      "id": "lesson-25",
+      "title": "Manzwiro — Feelings",
+      "description": "Express your emotions and ask others how they feel",
+      "questId": "quest-expression",
+      "category": "Unit 7: Expressing Yourself",
+      "orderIndex": 25,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Manzwiro"
+      ],
+      "culturalNotes": [
+        "Emotions are often expressed through proverbs rather than directly",
+        "Community support during hard times is a core value"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kufara",
+          "english": "to be happy",
+          "audioFile": "kufara.mp3",
+          "usage": "Feeling happy",
+          "example": "Ndinofara zvikuru!"
+        },
+        {
+          "shona": "kushungurudzika",
+          "english": "to be sad",
+          "audioFile": "kushungurudzika.mp3",
+          "usage": "Feeling sad",
+          "example": "Ari kushungurudzika."
+        },
+        {
+          "shona": "kutsamwa",
+          "english": "to be angry",
+          "audioFile": "kutsamwa.mp3",
+          "usage": "Feeling angry",
+          "example": "Usatsamwa neni."
+        },
+        {
+          "shona": "kutya",
+          "english": "to be afraid",
+          "audioFile": "kutya.mp3",
+          "usage": "Feeling fear",
+          "example": "Ndinotya nyoka."
+        },
+        {
+          "shona": "rudo",
+          "english": "love",
+          "audioFile": "rudo.mp3",
+          "usage": "Love / affection",
+          "example": "Rudo rwaMwari."
+        },
+        {
+          "shona": "mufaro",
+          "english": "joy / happiness",
+          "audioFile": "mufaro.mp3",
+          "usage": "The state of being happy",
+          "example": "Mufaro mukuru!"
+        }
+      ]
+    },
+    {
+      "id": "lesson-26",
+      "title": "Ndinofunga Kuti — I Think That",
+      "description": "Learn to express opinions and agree or disagree",
+      "questId": "quest-expression",
+      "category": "Unit 7: Expressing Yourself",
+      "orderIndex": 26,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Ndinofunga Kuti"
+      ],
+      "culturalNotes": [
+        "Respectful disagreement is important — use softening words",
+        "Elders' opinions carry extra weight in Shona culture"
+      ],
+      "vocabulary": [
+        {
+          "shona": "ndinofunga",
+          "english": "I think",
+          "audioFile": "ndinofunga.mp3",
+          "usage": "Expressing an opinion",
+          "example": "Ndinofunga kuti zvakanaka."
+        },
+        {
+          "shona": "ndinobvumirana",
+          "english": "I agree",
+          "audioFile": "ndinobvumirana.mp3",
+          "usage": "Agreeing with someone",
+          "example": "Ndinobvumirana newe."
+        },
+        {
+          "shona": "handibvumirane",
+          "english": "I disagree",
+          "audioFile": "handibvumirane.mp3",
+          "usage": "Politely disagreeing",
+          "example": "Handibvumirane nazvo."
+        },
+        {
+          "shona": "maonero",
+          "english": "opinion / perspective",
+          "audioFile": "maonero.mp3",
+          "usage": "A point of view",
+          "example": "Maonero ako ndeapi?"
+        },
+        {
+          "shona": "zvechokwadi",
+          "english": "truly / honestly",
+          "audioFile": "zvechokwadi.mp3",
+          "usage": "Emphasizing truth",
+          "example": "Zvechokwadi ndizvo."
+        },
+        {
+          "shona": "pamwe",
+          "english": "maybe / perhaps",
+          "audioFile": "pamwe.mp3",
+          "usage": "Expressing uncertainty",
+          "example": "Pamwe ndinouya."
+        }
+      ]
+    },
+    {
+      "id": "lesson-27",
+      "title": "Ndine Urombo — I'm Sorry",
+      "description": "Master polite expressions for apologies and deep gratitude",
+      "questId": "quest-expression",
+      "category": "Unit 7: Expressing Yourself",
+      "orderIndex": 27,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Ndine Urombo"
+      ],
+      "culturalNotes": [
+        "Apologizing properly is important for maintaining relationships",
+        "Saying 'ndinotenda zvikuru' (I am very grateful) shows deep respect"
+      ],
+      "vocabulary": [
+        {
+          "shona": "ndine urombo",
+          "english": "I'm sorry",
+          "audioFile": "ndine_urombo.mp3",
+          "usage": "Expressing regret",
+          "example": "Ndine urombo, shamwari."
+        },
+        {
+          "shona": "ndinotenda zvikuru",
+          "english": "thank you very much",
+          "audioFile": "ndinotenda_zvikuru.mp3",
+          "usage": "Deep gratitude",
+          "example": "Ndinotenda zvikuru, mai."
+        },
+        {
+          "shona": "ndapota",
+          "english": "please",
+          "audioFile": "ndapota.mp3",
+          "usage": "Polite request",
+          "example": "Ndapota, ndibatsireiwo."
+        },
+        {
+          "shona": "regai henyu",
+          "english": "excuse me / forgive me",
+          "audioFile": "regai_henyu.mp3",
+          "usage": "Asking for forgiveness",
+          "example": "Regai henyu, ndakanganisa."
+        },
+        {
+          "shona": "hakuna dambudziko",
+          "english": "no problem",
+          "audioFile": "hakuna_dambudziko.mp3",
+          "usage": "Saying it's okay",
+          "example": "Hakuna dambudziko, shamwari."
+        },
+        {
+          "shona": "zvakanaka",
+          "english": "it's fine / alright",
+          "audioFile": "zvakanaka.mp3",
+          "usage": "Saying things are okay",
+          "example": "Zvakanaka, usanetseka."
+        }
+      ]
+    },
+    {
+      "id": "lesson-28",
+      "title": "Zvizhinji! — Expressions",
+      "description": "Learn common everyday expressions that make your Shona natural",
+      "questId": "quest-expression",
+      "category": "Unit 7: Expressing Yourself",
+      "orderIndex": 28,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Zvizhinji!"
+      ],
+      "culturalNotes": [
+        "These expressions are used constantly in daily conversation",
+        "Using them will make you sound more natural"
+      ],
+      "vocabulary": [
+        {
+          "shona": "zvakanaka",
+          "english": "good / okay",
+          "audioFile": "zvakanaka.mp3",
+          "usage": "Agreement or approval",
+          "example": "Zvakanaka, tinoenda."
+        },
+        {
+          "shona": "zvisinei",
+          "english": "anyway / regardless",
+          "audioFile": "zvisinei.mp3",
+          "usage": "Moving on in conversation",
+          "example": "Zvisinei, ita basa."
+        },
+        {
+          "shona": "chokwadi",
+          "english": "truth / really",
+          "audioFile": "chokwadi.mp3",
+          "usage": "Emphasizing truth",
+          "example": "Chokwadi here?"
+        },
+        {
+          "shona": "zvimwe",
+          "english": "some / other things",
+          "audioFile": "zvimwe.mp3",
+          "usage": "Referring to other things",
+          "example": "Zvimwe zvichaita."
+        },
+        {
+          "shona": "chaizvo",
+          "english": "exactly / truly",
+          "audioFile": "chaizvo.mp3",
+          "usage": "Strong agreement",
+          "example": "Chaizvo, ndizvo!"
+        },
+        {
+          "shona": "handizive",
+          "english": "I don't know",
+          "audioFile": "handizive.mp3",
+          "usage": "Expressing lack of knowledge",
+          "example": "Handizive, ndobvunza."
+        }
+      ]
+    },
+    {
+      "id": "lesson-29",
+      "title": "Tsika — Traditions",
+      "description": "Learn about core Shona cultural practices and customs",
+      "questId": "quest-culture",
+      "category": "Unit 8: Culture & Traditions",
+      "orderIndex": 29,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Tsika"
+      ],
+      "culturalNotes": [
+        "Tsika (traditions) guide social behavior and relationships",
+        "Respecting elders and ancestors is fundamental to Shona life"
+      ],
+      "vocabulary": [
+        {
+          "shona": "tsika",
+          "english": "tradition / custom",
+          "audioFile": "tsika.mp3",
+          "usage": "Cultural practices",
+          "example": "Tsika dzedu dzakanaka."
+        },
+        {
+          "shona": "chivanhu",
+          "english": "Shona culture / tradition",
+          "audioFile": "chivanhu.mp3",
+          "usage": "Traditional way of life",
+          "example": "Chivanhu chedu chakadzama."
+        },
+        {
+          "shona": "kurova guva",
+          "english": "bringing home the spirit",
+          "audioFile": "kurova_guva.mp3",
+          "usage": "Ceremony to settle ancestor's spirit",
+          "example": "Tichava nekurova guva."
+        },
+        {
+          "shona": "bira",
+          "english": "spirit ceremony",
+          "audioFile": "bira.mp3",
+          "usage": "Ceremony honoring ancestors",
+          "example": "Bira remudzimu."
+        },
+        {
+          "shona": "hunhu",
+          "english": "humanness / ubuntu",
+          "audioFile": "hunhu.mp3",
+          "usage": "Good character and moral values",
+          "example": "Munhu ane hunhu."
+        },
+        {
+          "shona": "mudzimu",
+          "english": "ancestor spirit",
+          "audioFile": "mudzimu.mp3",
+          "usage": "Spirit of a deceased ancestor",
+          "example": "Mudzimu wedu unotitungamira."
+        }
+      ]
+    },
+    {
+      "id": "lesson-30",
+      "title": "Tsumo — Proverbs",
+      "description": "Learn famous Shona proverbs that carry deep wisdom",
+      "questId": "quest-culture",
+      "category": "Unit 8: Culture & Traditions",
+      "orderIndex": 30,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Tsumo"
+      ],
+      "culturalNotes": [
+        "Proverbs (tsumo) are central to Shona oral tradition",
+        "Using proverbs in speech shows wisdom and education"
+      ],
+      "vocabulary": [
+        {
+          "shona": "tsumo",
+          "english": "proverb",
+          "audioFile": "tsumo.mp3",
+          "usage": "A wise saying",
+          "example": "Tsumo iyi yakanaka."
+        },
+        {
+          "shona": "kurayira",
+          "english": "to advise / teach",
+          "audioFile": "kurayira.mp3",
+          "usage": "Giving guidance",
+          "example": "Sekuru vanorayira vana."
+        },
+        {
+          "shona": "uchenjeri",
+          "english": "wisdom / cleverness",
+          "audioFile": "uchenjeri.mp3",
+          "usage": "Being wise",
+          "example": "Uchenjeri hunobatsira."
+        },
+        {
+          "shona": "ngano",
+          "english": "folktale / story",
+          "audioFile": "ngano.mp3",
+          "usage": "Traditional story",
+          "example": "Ngano dzaSekuru."
+        },
+        {
+          "shona": "chirevo",
+          "english": "saying / expression",
+          "audioFile": "chirevo.mp3",
+          "usage": "A common expression",
+          "example": "Chirevo ichi chii?"
+        },
+        {
+          "shona": "zano",
+          "english": "advice / plan",
+          "audioFile": "zano.mp3",
+          "usage": "Advice given",
+          "example": "Ndipeiwo zano."
+        }
+      ]
+    },
+    {
+      "id": "lesson-31",
+      "title": "Mbira neNgoma — Music & Art",
+      "description": "Explore the rich musical and artistic traditions of Zimbabwe",
+      "questId": "quest-culture",
+      "category": "Unit 8: Culture & Traditions",
+      "orderIndex": 31,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mbira neNgoma"
+      ],
+      "culturalNotes": [
+        "The mbira is considered a sacred instrument that connects the living to ancestors",
+        "Music and dance are inseparable in Shona culture"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mbira",
+          "english": "thumb piano",
+          "audioFile": "mbira.mp3",
+          "usage": "Traditional sacred instrument",
+          "example": "Mbira inoimba zvakanaka."
         },
         {
           "shona": "ngoma",
           "english": "drum",
           "audioFile": "ngoma.mp3",
-          "usage": "Traditional drum",
-          "example": "Ngoma inorira"
-        }
-      ]
-    },
-    {
-      "id": "lesson-7",
-      "title": "Manzwi Matsvuku - Clear Sounds",
-      "description": "Practice consonant clusters and whistled sounds",
-      "questId": "quest-4",
-      "category": "Pronunciation Mastery",
-      "orderIndex": 7,
-      "level": "intermediate",
-      "xpReward": 80,
-      "estimatedDuration": 30,
-      "learningObjectives": [
-        "Master whistled consonants (sv, zv, tsv, dzv)",
-        "Practice breathy consonants (bh, dh, vh)",
-        "Learn consonant clusters and combinations",
-        "Develop muscle memory for difficult sounds"
-      ],
-      "discoveryElements": [
-        "Explore the unique sound system of Shona",
-        "Discover how sounds connect to meaning",
-        "Learn about sound symbolism in Shona"
-      ],
-      "culturalNotes": [
-        "Whistled sounds are unique to Shona and related languages",
-        "Proper pronunciation helps with comprehension",
-        "Practice makes perfect with difficult sounds"
-      ],
-      "vocabulary": [
-        {
-          "shona": "svika",
-          "english": "arrive",
-          "audioFile": "svika.mp3",
-          "usage": "Verb meaning to arrive",
-          "example": "Ndasvika kumba"
+          "usage": "Drum used in ceremonies",
+          "example": "Ridza ngoma!"
         },
-        {
-          "shona": "zvinonzi",
-          "english": "they are called",
-          "audioFile": "zvinonzi.mp3",
-          "usage": "Phrase meaning 'they are called'",
-          "example": "Zvinonzi mufudzi"
-        },
-        {
-          "shona": "tsvaira",
-          "english": "sweep",
-          "audioFile": "tsvaira.mp3",
-          "usage": "Verb meaning to sweep",
-          "example": "Ndinotsvaira imba"
-        },
-        {
-          "shona": "dzvanya",
-          "english": "press",
-          "audioFile": "dzvanya.mp3",
-          "usage": "Verb meaning to press",
-          "example": "Dzvanya button"
-        },
-        {
-          "shona": "vhara",
-          "english": "close",
-          "audioFile": "vhara.mp3",
-          "usage": "Verb meaning to close",
-          "example": "Vhara mukova"
-        }
-      ]
-    },
-    {
-      "id": "lesson-8",
-      "title": "Rwiyo Rwemutauro - The Song of Language",
-      "description": "Master rhythm, stress, and intonation patterns",
-      "questId": "quest-4",
-      "category": "Pronunciation Mastery",
-      "orderIndex": 8,
-      "level": "intermediate",
-      "xpReward": 80,
-      "estimatedDuration": 30,
-      "learningObjectives": [
-        "Master natural rhythm and stress patterns",
-        "Learn question intonation vs. statement intonation",
-        "Practice emotional expression through tone",
-        "Develop conversational flow and naturalness"
-      ],
-      "discoveryElements": [
-        "Explore how rhythm creates meaning in Shona",
-        "Discover the musical qualities of natural speech",
-        "Learn about emotional expression through intonation"
-      ],
-      "culturalNotes": [
-        "Shona has natural rhythm patterns that create beauty",
-        "Emotional expression is important in communication",
-        "Natural flow shows comfort with the language"
-      ],
-      "vocabulary": [
         {
           "shona": "rwiyo",
           "english": "song",
           "audioFile": "rwiyo.mp3",
-          "usage": "Word for song",
-          "example": "Rwiyo rwakanaka"
+          "usage": "A song or hymn",
+          "example": "Rwiyo irwu rwakanaka."
         },
         {
-          "shona": "kurira",
-          "english": "to cry/sound",
-          "audioFile": "kurira.mp3",
-          "usage": "Verb meaning to cry or make sound",
-          "example": "Shiri dziri kurira"
+          "shona": "kutamba",
+          "english": "to dance / play",
+          "audioFile": "kutamba.mp3",
+          "usage": "Dancing or playing",
+          "example": "Vari kutamba."
         },
         {
-          "shona": "kunzwa",
-          "english": "to hear/feel",
-          "audioFile": "kunzwa.mp3",
-          "usage": "Verb meaning to hear or feel",
-          "example": "Ndinozwa rwiyo"
+          "shona": "hosho",
+          "english": "gourd rattles",
+          "audioFile": "hosho.mp3",
+          "usage": "Shakers used with mbira",
+          "example": "Ridza hosho."
         },
         {
-          "shona": "moyo",
-          "english": "heart",
-          "audioFile": "moyo.mp3",
-          "usage": "Word for heart",
-          "example": "Moyo wangu"
+          "shona": "muimbi",
+          "english": "singer",
+          "audioFile": "muimbi.mp3",
+          "usage": "A singer/musician",
+          "example": "Muimbi akaridza."
+        }
+      ]
+    },
+    {
+      "id": "lesson-32",
+      "title": "Mwari naMadzinza — Spirituality",
+      "description": "Learn vocabulary related to Shona spiritual and religious life",
+      "questId": "quest-culture",
+      "category": "Unit 8: Culture & Traditions",
+      "orderIndex": 32,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mwari naMadzinza"
+      ],
+      "culturalNotes": [
+        "Most Zimbabweans blend traditional beliefs with Christianity",
+        "Mwari (God) is recognized in both traditional and Christian contexts"
+      ],
+      "vocabulary": [
+        {
+          "shona": "Mwari",
+          "english": "God",
+          "audioFile": "mwari.mp3",
+          "usage": "The supreme being",
+          "example": "Mwari anoda vanhu vake."
         },
         {
-          "shona": "kufara",
-          "english": "to be happy",
-          "audioFile": "kufara.mp3",
-          "usage": "Verb meaning to be happy",
-          "example": "Ndiri kufara"
+          "shona": "mudzimu",
+          "english": "ancestral spirit",
+          "audioFile": "mudzimu.mp3",
+          "usage": "Spirit of an ancestor",
+          "example": "Mudzimu unotitungamira."
+        },
+        {
+          "shona": "mweya",
+          "english": "spirit / soul",
+          "audioFile": "mweya.mp3",
+          "usage": "Spirit or soul",
+          "example": "Mweya mutsvene."
+        },
+        {
+          "shona": "kutenda",
+          "english": "to believe / faith",
+          "audioFile": "kutenda.mp3",
+          "usage": "Having faith",
+          "example": "Ndinotenda muna Mwari."
+        },
+        {
+          "shona": "kereke",
+          "english": "church",
+          "audioFile": "kereke.mp3",
+          "usage": "Place of worship",
+          "example": "Tinoenda kukereke."
+        },
+        {
+          "shona": "munamato",
+          "english": "prayer",
+          "audioFile": "munamato.mp3",
+          "usage": "A prayer",
+          "example": "Munamato wedu."
+        }
+      ]
+    },
+    {
+      "id": "lesson-33",
+      "title": "Mhuka — Animals",
+      "description": "Learn the names of common animals found in Zimbabwe",
+      "questId": "quest-nature",
+      "category": "Unit 9: Nature & Environment",
+      "orderIndex": 33,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 7 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mhuka"
+      ],
+      "culturalNotes": [
+        "Many Shona clans (madzinza) are named after animals — these are totems",
+        "The fish eagle and elephant are important national symbols"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mombe",
+          "english": "cattle / cow",
+          "audioFile": "mombe.mp3",
+          "usage": "Cattle — a sign of wealth",
+          "example": "Mombe dzangu dzakawanda."
+        },
+        {
+          "shona": "imbwa",
+          "english": "dog",
+          "audioFile": "imbwa.mp3",
+          "usage": "Domestic dog",
+          "example": "Imbwa yangu yakachenjera."
+        },
+        {
+          "shona": "katsi",
+          "english": "cat",
+          "audioFile": "katsi.mp3",
+          "usage": "Domestic cat",
+          "example": "Katsi iri kurara."
+        },
+        {
+          "shona": "huku",
+          "english": "chicken",
+          "audioFile": "huku.mp3",
+          "usage": "Domestic chicken",
+          "example": "Huku dziri kudya."
+        },
+        {
+          "shona": "shiri",
+          "english": "bird",
+          "audioFile": "shiri.mp3",
+          "usage": "Any bird",
+          "example": "Shiri iri kuimba."
+        },
+        {
+          "shona": "nzou",
+          "english": "elephant",
+          "audioFile": "nzou.mp3",
+          "usage": "Elephant — important totem",
+          "example": "Nzou huru."
+        },
+        {
+          "shona": "shumba",
+          "english": "lion",
+          "audioFile": "shumba.mp3",
+          "usage": "Lion — symbol of strength",
+          "example": "Shumba iri kusango."
+        }
+      ]
+    },
+    {
+      "id": "lesson-34",
+      "title": "Zvisikwa — Nature",
+      "description": "Learn words for the natural world — sky, water, mountains",
+      "questId": "quest-nature",
+      "category": "Unit 9: Nature & Environment",
+      "orderIndex": 34,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Zvisikwa"
+      ],
+      "culturalNotes": [
+        "Nature is deeply respected in Shona culture",
+        "Many sacred places are found in natural settings like mountains and rivers"
+      ],
+      "vocabulary": [
+        {
+          "shona": "zuva",
+          "english": "sun / day",
+          "audioFile": "zuva.mp3",
+          "usage": "The sun or a day",
+          "example": "Zuva rakabuda."
+        },
+        {
+          "shona": "mwedzi",
+          "english": "moon / month",
+          "audioFile": "mwedzi.mp3",
+          "usage": "The moon or a month",
+          "example": "Mwedzi uri kupenya."
+        },
+        {
+          "shona": "nyeredzi",
+          "english": "star",
+          "audioFile": "nyeredzi.mp3",
+          "usage": "A star in the sky",
+          "example": "Nyeredzi dzakawanda."
+        },
+        {
+          "shona": "gomo",
+          "english": "mountain / hill",
+          "audioFile": "gomo.mp3",
+          "usage": "A mountain or hill",
+          "example": "Gomo iri rakakura."
+        },
+        {
+          "shona": "rwizi",
+          "english": "river",
+          "audioFile": "rwizi.mp3",
+          "usage": "A river or stream",
+          "example": "Rwizi ruri kuyerera."
+        },
+        {
+          "shona": "muti",
+          "english": "tree",
+          "audioFile": "muti.mp3",
+          "usage": "A tree",
+          "example": "Muti wakakura."
+        }
+      ]
+    },
+    {
+      "id": "lesson-35",
+      "title": "Kurwara neKupora — Health",
+      "description": "Learn essential health vocabulary for visiting the doctor",
+      "questId": "quest-nature",
+      "category": "Unit 9: Nature & Environment",
+      "orderIndex": 35,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Kurwara neKupora"
+      ],
+      "culturalNotes": [
+        "Both traditional healers (n'anga) and modern doctors are consulted",
+        "Health is often discussed using metaphors in Shona"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kurwara",
+          "english": "to be sick",
+          "audioFile": "kurwara.mp3",
+          "usage": "Being ill",
+          "example": "Ndiri kurwara."
+        },
+        {
+          "shona": "kupora",
+          "english": "to recover / heal",
+          "audioFile": "kupora.mp3",
+          "usage": "Getting better",
+          "example": "Ndiri kupora."
+        },
+        {
+          "shona": "chiremba",
+          "english": "doctor",
+          "audioFile": "chiremba.mp3",
+          "usage": "Medical doctor",
+          "example": "Ndinoenda kuchiremba."
+        },
+        {
+          "shona": "mushonga",
+          "english": "medicine",
+          "audioFile": "mushonga.mp3",
+          "usage": "Medicine or remedy",
+          "example": "Nwa mushonga wako."
+        },
+        {
+          "shona": "chipatara",
+          "english": "hospital",
+          "audioFile": "chipatara.mp3",
+          "usage": "Hospital or clinic",
+          "example": "Ari muchipatara."
+        },
+        {
+          "shona": "kurwadziwa",
+          "english": "to be in pain",
+          "audioFile": "kurwadziwa.mp3",
+          "usage": "Feeling pain",
+          "example": "Musoro uri kundirwadziwa."
+        }
+      ]
+    },
+    {
+      "id": "lesson-36",
+      "title": "Mamiriro eKunze — Weather",
+      "description": "Talk about weather and seasons in Shona",
+      "questId": "quest-nature",
+      "category": "Unit 9: Nature & Environment",
+      "orderIndex": 36,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mamiriro eKunze"
+      ],
+      "culturalNotes": [
+        "Farming depends on rain — weather is a frequent topic",
+        "The rainy season (November-March) is vital for agriculture"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kunaya",
+          "english": "to rain",
+          "audioFile": "kunaya.mp3",
+          "usage": "Raining",
+          "example": "Mvura iri kunaya."
+        },
+        {
+          "shona": "kutonhora",
+          "english": "to be cold",
+          "audioFile": "kutonhora.mp3",
+          "usage": "Feeling cold",
+          "example": "Kuri kutonhora nhasi."
+        },
+        {
+          "shona": "kupisa",
+          "english": "to be hot",
+          "audioFile": "kupisa.mp3",
+          "usage": "Being hot",
+          "example": "Kuri kupisa zvikuru."
+        },
+        {
+          "shona": "mhepo",
+          "english": "wind",
+          "audioFile": "mhepo.mp3",
+          "usage": "Wind or breeze",
+          "example": "Mhepo iri kuvhuvhuta."
+        },
+        {
+          "shona": "gore",
+          "english": "cloud / year",
+          "audioFile": "gore.mp3",
+          "usage": "Cloud or year",
+          "example": "Makore ari kuuya."
+        },
+        {
+          "shona": "chando",
+          "english": "cold / winter",
+          "audioFile": "chando.mp3",
+          "usage": "Cold season",
+          "example": "Chando chasvika."
+        }
+      ]
+    },
+    {
+      "id": "lesson-37",
+      "title": "Muguta — In the City",
+      "description": "Navigate urban Zimbabwe with city vocabulary",
+      "questId": "quest-modern-life",
+      "category": "Unit 10: Modern Life",
+      "orderIndex": 37,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Muguta"
+      ],
+      "culturalNotes": [
+        "Harare and Bulawayo are the major cities",
+        "Many people move between urban and rural homes"
+      ],
+      "vocabulary": [
+        {
+          "shona": "guta",
+          "english": "city",
+          "audioFile": "guta.mp3",
+          "usage": "A city or town",
+          "example": "Guta reHarare."
+        },
+        {
+          "shona": "mudhorobha",
+          "english": "town / suburb",
+          "audioFile": "mudhorobha.mp3",
+          "usage": "A town or suburb",
+          "example": "Ndinogara mudhorobha."
+        },
+        {
+          "shona": "chitoro",
+          "english": "shop / store",
+          "audioFile": "chitoro.mp3",
+          "usage": "A shop",
+          "example": "Ndinoenda kuchitoro."
+        },
+        {
+          "shona": "bhangi",
+          "english": "bank",
+          "audioFile": "bhangi.mp3",
+          "usage": "A bank",
+          "example": "Ndinoenda kubhangi."
+        },
+        {
+          "shona": "hofisi",
+          "english": "office",
+          "audioFile": "hofisi.mp3",
+          "usage": "An office",
+          "example": "Ndiri muhofisi."
+        },
+        {
+          "shona": "chipatara",
+          "english": "hospital",
+          "audioFile": "chipatara.mp3",
+          "usage": "Hospital",
+          "example": "Chipatara chiri pedyo."
+        }
+      ]
+    },
+    {
+      "id": "lesson-38",
+      "title": "Tekinoroji — Technology",
+      "description": "Learn technology words used in modern Zimbabwean life",
+      "questId": "quest-modern-life",
+      "category": "Unit 10: Modern Life",
+      "orderIndex": 38,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Tekinoroji"
+      ],
+      "culturalNotes": [
+        "Mobile phones (runhare) have transformed communication in Zimbabwe",
+        "WhatsApp is the dominant messaging platform"
+      ],
+      "vocabulary": [
+        {
+          "shona": "runhare",
+          "english": "telephone / phone",
+          "audioFile": "runhare.mp3",
+          "usage": "Phone or mobile",
+          "example": "Runhare rwangu ruri kurira."
+        },
+        {
+          "shona": "nharembozha",
+          "english": "smartphone",
+          "audioFile": "nharembozha.mp3",
+          "usage": "Smart phone",
+          "example": "Nharembozha yangu itsva."
+        },
+        {
+          "shona": "kompyuta",
+          "english": "computer",
+          "audioFile": "kompyuta.mp3",
+          "usage": "Computer",
+          "example": "Ndiri pakompyuta."
+        },
+        {
+          "shona": "intaneti",
+          "english": "internet",
+          "audioFile": "intaneti.mp3",
+          "usage": "The internet",
+          "example": "Intaneti haina kushanda."
+        },
+        {
+          "shona": "meseji",
+          "english": "message",
+          "audioFile": "meseji.mp3",
+          "usage": "A text message",
+          "example": "Tumira meseji."
+        },
+        {
+          "shona": "data",
+          "english": "data / mobile data",
+          "audioFile": "data.mp3",
+          "usage": "Mobile internet data",
+          "example": "Data yangu yapera."
+        }
+      ]
+    },
+    {
+      "id": "lesson-39",
+      "title": "Shandirai — Social Media",
+      "description": "Learn social media and online communication vocabulary",
+      "questId": "quest-modern-life",
+      "category": "Unit 10: Modern Life",
+      "orderIndex": 39,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Shandirai"
+      ],
+      "culturalNotes": [
+        "Zimbabwe has a vibrant online culture",
+        "Social media plays a key role in news and community organizing"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kushera",
+          "english": "to share (online)",
+          "audioFile": "kushera.mp3",
+          "usage": "Sharing content online",
+          "example": "Kushera mufananidzo."
+        },
+        {
+          "shona": "mufananidzo",
+          "english": "photo / picture",
+          "audioFile": "mufananidzo.mp3",
+          "usage": "A photograph",
+          "example": "Mufananidzo wakanaka."
+        },
+        {
+          "shona": "vhidhiyo",
+          "english": "video",
+          "audioFile": "vhidhiyo.mp3",
+          "usage": "A video",
+          "example": "Tarisai vhidhiyo iyi."
+        },
+        {
+          "shona": "kufonera",
+          "english": "to call (phone)",
+          "audioFile": "kufonera.mp3",
+          "usage": "Making a phone call",
+          "example": "Ndiri kukufonera."
+        },
+        {
+          "shona": "nhau",
+          "english": "news",
+          "audioFile": "nhau.mp3",
+          "usage": "News or information",
+          "example": "Nhau dzeZimbabwe."
+        },
+        {
+          "shona": "tsamba",
+          "english": "letter / email",
+          "audioFile": "tsamba.mp3",
+          "usage": "A letter or email",
+          "example": "Ndanyora tsamba."
+        }
+      ]
+    },
+    {
+      "id": "lesson-40",
+      "title": "Mitambo neVaraidzo — Entertainment",
+      "description": "Talk about sports, music, and entertainment in Shona",
+      "questId": "quest-modern-life",
+      "category": "Unit 10: Modern Life",
+      "orderIndex": 40,
+      "level": "intermediate",
+      "xpReward": 75,
+      "estimatedDuration": 15,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mitambo neVaraidzo"
+      ],
+      "culturalNotes": [
+        "Football (soccer) is the most popular sport",
+        "Sungura and Chimurenga music are beloved genres"
+      ],
+      "vocabulary": [
+        {
+          "shona": "bhora",
+          "english": "ball / football",
+          "audioFile": "bhora.mp3",
+          "usage": "Ball or soccer",
+          "example": "Tinotamba bhora."
+        },
+        {
+          "shona": "mutambo",
+          "english": "game / event",
+          "audioFile": "mutambo.mp3",
+          "usage": "A game or event",
+          "example": "Mutambo wakanaka."
+        },
+        {
+          "shona": "nhepfenyuro",
+          "english": "broadcast / radio",
+          "audioFile": "nhepfenyuro.mp3",
+          "usage": "Radio or broadcast",
+          "example": "Nhepfenyuro yeradio."
+        },
+        {
+          "shona": "firimu",
+          "english": "film / movie",
+          "audioFile": "firimu.mp3",
+          "usage": "A movie",
+          "example": "Firimu iyi yakanaka."
+        },
+        {
+          "shona": "kuvaraidza",
+          "english": "to entertain",
+          "audioFile": "kuvaraidza.mp3",
+          "usage": "Entertainment",
+          "example": "Anotida kuvaraidza."
+        },
+        {
+          "shona": "mukombe",
+          "english": "cup / trophy",
+          "audioFile": "mukombe.mp3",
+          "usage": "A cup or prize",
+          "example": "Vakawana mukombe."
+        }
+      ]
+    },
+    {
+      "id": "lesson-41",
+      "title": "Nyika Yedu — Our Country",
+      "description": "Learn vocabulary about Zimbabwe as a nation and its governance",
+      "questId": "quest-society",
+      "category": "Unit 11: Society & Governance",
+      "orderIndex": 41,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Nyika Yedu"
+      ],
+      "culturalNotes": [
+        "Zimbabwe means 'house of stone' from the Great Zimbabwe ruins",
+        "National pride is strongly expressed in Shona"
+      ],
+      "vocabulary": [
+        {
+          "shona": "nyika",
+          "english": "country / land",
+          "audioFile": "nyika.mp3",
+          "usage": "A country or nation",
+          "example": "Nyika yeZimbabwe."
+        },
+        {
+          "shona": "hurumende",
+          "english": "government",
+          "audioFile": "hurumende.mp3",
+          "usage": "The government",
+          "example": "Hurumende yedu."
+        },
+        {
+          "shona": "mutungamiri",
+          "english": "leader / president",
+          "audioFile": "mutungamiri.mp3",
+          "usage": "A leader",
+          "example": "Mutungamiri wenyika."
+        },
+        {
+          "shona": "munhu wese",
+          "english": "everyone / citizen",
+          "audioFile": "munhu_wese.mp3",
+          "usage": "Every person",
+          "example": "Munhu wese ane kodzero."
+        },
+        {
+          "shona": "mutemo",
+          "english": "law / rule",
+          "audioFile": "mutemo.mp3",
+          "usage": "A law",
+          "example": "Mutemo unofanira kuteverwa."
+        },
+        {
+          "shona": "rusununguko",
+          "english": "freedom / independence",
+          "audioFile": "rusununguko.mp3",
+          "usage": "Freedom",
+          "example": "Rusununguko rweZimbabwe."
+        }
+      ]
+    },
+    {
+      "id": "lesson-42",
+      "title": "Kodzero — Rights",
+      "description": "Learn about rights, voting, and civic participation",
+      "questId": "quest-society",
+      "category": "Unit 11: Society & Governance",
+      "orderIndex": 42,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Kodzero"
+      ],
+      "culturalNotes": [
+        "Zimbabwe gained independence in 1980",
+        "Civic participation is seen as both a right and responsibility"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kodzero",
+          "english": "right / entitlement",
+          "audioFile": "kodzero.mp3",
+          "usage": "A human right",
+          "example": "Kodzero dzevanhu."
+        },
+        {
+          "shona": "kuvhota",
+          "english": "to vote",
+          "audioFile": "kuvhota.mp3",
+          "usage": "Casting a vote",
+          "example": "Ndinovhota mangwana."
+        },
+        {
+          "shona": "kusarudza",
+          "english": "to choose / elect",
+          "audioFile": "kusarudza.mp3",
+          "usage": "Making a choice",
+          "example": "Sarudza zvakanaka."
+        },
+        {
+          "shona": "paramende",
+          "english": "parliament",
+          "audioFile": "paramende.mp3",
+          "usage": "The parliament",
+          "example": "Paramende yeZimbabwe."
+        },
+        {
+          "shona": "runyararo",
+          "english": "peace / harmony",
+          "audioFile": "runyararo.mp3",
+          "usage": "Peace in society",
+          "example": "Tinoda runyararo."
+        },
+        {
+          "shona": "kubatana",
+          "english": "unity / togetherness",
+          "audioFile": "kubatana.mp3",
+          "usage": "Being united",
+          "example": "Kubatana kunokosha."
+        }
+      ]
+    },
+    {
+      "id": "lesson-43",
+      "title": "Nhoroondo — History",
+      "description": "Learn vocabulary about Zimbabwe's rich history",
+      "questId": "quest-society",
+      "category": "Unit 11: Society & Governance",
+      "orderIndex": 43,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Nhoroondo"
+      ],
+      "culturalNotes": [
+        "The Chimurenga wars are central to Zimbabwe's identity",
+        "Oral history (nhoroondo) preserves knowledge across generations"
+      ],
+      "vocabulary": [
+        {
+          "shona": "nhoroondo",
+          "english": "history / story",
+          "audioFile": "nhoroondo.mp3",
+          "usage": "History or account",
+          "example": "Nhoroondo yeZimbabwe."
+        },
+        {
+          "shona": "chimurenga",
+          "english": "liberation struggle",
+          "audioFile": "chimurenga.mp3",
+          "usage": "The independence wars",
+          "example": "Chimurenga chakanga chakaoma."
+        },
+        {
+          "shona": "kurwira",
+          "english": "to fight for",
+          "audioFile": "kurwira.mp3",
+          "usage": "Fighting for something",
+          "example": "Kurwira nyika yedu."
+        },
+        {
+          "shona": "gamba",
+          "english": "hero / brave person",
+          "audioFile": "gamba.mp3",
+          "usage": "A hero",
+          "example": "Magamba enyika yedu."
+        },
+        {
+          "shona": "kare",
+          "english": "long ago / ancient",
+          "audioFile": "kare.mp3",
+          "usage": "In the past",
+          "example": "Kare kare pane nyaya."
+        },
+        {
+          "shona": "nhaka",
+          "english": "heritage / inheritance",
+          "audioFile": "nhaka.mp3",
+          "usage": "Cultural heritage",
+          "example": "Nhaka yedu yakakosha."
+        }
+      ]
+    },
+    {
+      "id": "lesson-44",
+      "title": "Zvemabhizinesi — Business",
+      "description": "Learn business and economic vocabulary for the workplace",
+      "questId": "quest-society",
+      "category": "Unit 11: Society & Governance",
+      "orderIndex": 44,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Zvemabhizinesi"
+      ],
+      "culturalNotes": [
+        "Zimbabwe has a strong entrepreneurial culture",
+        "Informal trading is a major part of the economy"
+      ],
+      "vocabulary": [
+        {
+          "shona": "bhizinesi",
+          "english": "business",
+          "audioFile": "bhizinesi.mp3",
+          "usage": "A business",
+          "example": "Bhizinesi rangu."
+        },
+        {
+          "shona": "musika",
+          "english": "market",
+          "audioFile": "musika.mp3",
+          "usage": "Marketplace",
+          "example": "Musika uri kubuda."
+        },
+        {
+          "shona": "purofiti",
+          "english": "profit",
+          "audioFile": "purofiti.mp3",
+          "usage": "Business profit",
+          "example": "Purofiti yakakura."
+        },
+        {
+          "shona": "mutengi",
+          "english": "customer / buyer",
+          "audioFile": "mutengi.mp3",
+          "usage": "A customer",
+          "example": "Mutengi ari kuuya."
+        },
+        {
+          "shona": "muripo",
+          "english": "payment",
+          "audioFile": "muripo.mp3",
+          "usage": "A payment",
+          "example": "Muripo wasvika."
+        },
+        {
+          "shona": "kutengesa",
+          "english": "to sell",
+          "audioFile": "kutengesa.mp3",
+          "usage": "Selling goods",
+          "example": "Ndiri kutengesa michero."
+        }
+      ]
+    },
+    {
+      "id": "lesson-45",
+      "title": "Pakutanga... — Connecting Ideas",
+      "description": "Learn discourse markers to connect ideas and tell stories fluently",
+      "questId": "quest-complex",
+      "category": "Unit 12: Complex Communication",
+      "orderIndex": 45,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Pakutanga..."
+      ],
+      "culturalNotes": [
+        "Good storytelling (kutaura ngano) is a respected skill",
+        "Using connectors makes your Shona sound more fluent"
+      ],
+      "vocabulary": [
+        {
+          "shona": "pakutanga",
+          "english": "at first / firstly",
+          "audioFile": "pakutanga.mp3",
+          "usage": "Starting a sequence",
+          "example": "Pakutanga, ndakadzidza."
+        },
+        {
+          "shona": "mushure mezvo",
+          "english": "after that",
+          "audioFile": "mushure_mezvo.mp3",
+          "usage": "Then / afterwards",
+          "example": "Mushure mezvo, takaenda."
+        },
+        {
+          "shona": "saka",
+          "english": "so / therefore",
+          "audioFile": "saka.mp3",
+          "usage": "Drawing a conclusion",
+          "example": "Saka ndakaenda kumba."
+        },
+        {
+          "shona": "asi",
+          "english": "but / however",
+          "audioFile": "asi.mp3",
+          "usage": "Contrasting ideas",
+          "example": "Asi handina kumboenda."
+        },
+        {
+          "shona": "uyezve",
+          "english": "also / furthermore",
+          "audioFile": "uyezve.mp3",
+          "usage": "Adding information",
+          "example": "Uyezve, ndine mubvunzo."
+        },
+        {
+          "shona": "nekudaro",
+          "english": "therefore / thus",
+          "audioFile": "nekudaro.mp3",
+          "usage": "Concluding",
+          "example": "Nekudaro, takabudirira."
+        }
+      ]
+    },
+    {
+      "id": "lesson-46",
+      "title": "Dai Ndaiziva — If I Knew",
+      "description": "Learn conditional expressions — if, would, could, might",
+      "questId": "quest-complex",
+      "category": "Unit 12: Complex Communication",
+      "orderIndex": 46,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Dai Ndaiziva"
+      ],
+      "culturalNotes": [
+        "Conditional forms show nuanced thinking in Shona",
+        "These expressions are common in storytelling and planning"
+      ],
+      "vocabulary": [
+        {
+          "shona": "dai",
+          "english": "if (hypothetical)",
+          "audioFile": "dai.mp3",
+          "usage": "If (unreal condition)",
+          "example": "Dai ndaiziva, ndaienda."
+        },
+        {
+          "shona": "kana",
+          "english": "if / when",
+          "audioFile": "kana.mp3",
+          "usage": "If (real condition)",
+          "example": "Kana uchiuya, ndipe shoko."
+        },
+        {
+          "shona": "kudai",
+          "english": "if only / would that",
+          "audioFile": "kudai.mp3",
+          "usage": "Wishing",
+          "example": "Kudai ndaiva nemari."
+        },
+        {
+          "shona": "zvimwe",
+          "english": "perhaps / maybe",
+          "audioFile": "zvimwe.mp3",
+          "usage": "Possibility",
+          "example": "Zvimwe achauya."
+        },
+        {
+          "shona": "ndinogona",
+          "english": "I can / I am able",
+          "audioFile": "ndinogona.mp3",
+          "usage": "Expressing ability",
+          "example": "Ndinogona kutaura chiShona."
+        },
+        {
+          "shona": "ndaida",
+          "english": "I wanted / I would like",
+          "audioFile": "ndaida.mp3",
+          "usage": "Past desire or polite request",
+          "example": "Ndaida kukubatsira."
+        }
+      ]
+    },
+    {
+      "id": "lesson-47",
+      "title": "Ndinofarira — Likes & Interests",
+      "description": "Express preferences, desires, and interests",
+      "questId": "quest-complex",
+      "category": "Unit 12: Complex Communication",
+      "orderIndex": 47,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Ndinofarira"
+      ],
+      "culturalNotes": [
+        "Sharing interests builds social bonds",
+        "It's common to ask about hobbies when getting to know someone"
+      ],
+      "vocabulary": [
+        {
+          "shona": "kufarira",
+          "english": "to like / enjoy",
+          "audioFile": "kufarira.mp3",
+          "usage": "Liking something",
+          "example": "Ndinofarira kuimba."
+        },
+        {
+          "shona": "kushuvira",
+          "english": "to wish / desire",
+          "audioFile": "kushuvira.mp3",
+          "usage": "Wishing for something",
+          "example": "Ndinoshuvira kuenda."
+        },
+        {
+          "shona": "kuda",
+          "english": "to want / love",
+          "audioFile": "kuda.mp3",
+          "usage": "Wanting or loving",
+          "example": "Ndinokuda."
+        },
+        {
+          "shona": "kusada",
+          "english": "to not want / dislike",
+          "audioFile": "kusada.mp3",
+          "usage": "Not wanting",
+          "example": "Handidi kusada chero chii."
+        },
+        {
+          "shona": "chinangwa",
+          "english": "goal / purpose",
+          "audioFile": "chinangwa.mp3",
+          "usage": "A goal or aim",
+          "example": "Chinangwa changu."
+        },
+        {
+          "shona": "hobhi",
+          "english": "hobby",
+          "audioFile": "hobhi.mp3",
+          "usage": "A hobby or pastime",
+          "example": "Hobhi yangu kuruka."
+        }
+      ]
+    },
+    {
+      "id": "lesson-48",
+      "title": "Rugare neHondo — Peace & Conflict",
+      "description": "Learn abstract concepts about peace, conflict, and resolution",
+      "questId": "quest-complex",
+      "category": "Unit 12: Complex Communication",
+      "orderIndex": 48,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Rugare neHondo"
+      ],
+      "culturalNotes": [
+        "Peace-building (kuyanana) is deeply valued",
+        "Traditional courts (dare) resolve community conflicts"
+      ],
+      "vocabulary": [
+        {
+          "shona": "rugare",
+          "english": "peace",
+          "audioFile": "rugare.mp3",
+          "usage": "Peace and calm",
+          "example": "Rugare ngaruve nemi."
+        },
+        {
+          "shona": "hondo",
+          "english": "war / conflict",
+          "audioFile": "hondo.mp3",
+          "usage": "War or fighting",
+          "example": "Hondo yakaguma."
+        },
+        {
+          "shona": "kuyanana",
+          "english": "to reconcile",
+          "audioFile": "kuyanana.mp3",
+          "usage": "Making peace",
+          "example": "Vakayanana."
+        },
+        {
+          "shona": "kubatana",
+          "english": "to unite / join together",
+          "audioFile": "kubatana.mp3",
+          "usage": "Unity",
+          "example": "Kubatana kunokosha."
+        },
+        {
+          "shona": "kutsiura",
+          "english": "to discipline / correct",
+          "audioFile": "kutsiura.mp3",
+          "usage": "Correcting behavior",
+          "example": "Kutsiura mwana."
+        },
+        {
+          "shona": "dare",
+          "english": "court / meeting place",
+          "audioFile": "dare.mp3",
+          "usage": "Traditional court",
+          "example": "Dare revatungamiri."
+        }
+      ]
+    },
+    {
+      "id": "lesson-49",
+      "title": "Mabwe — Great Zimbabwe",
+      "description": "Learn about Zimbabwe's ancient heritage and archaeological wonders",
+      "questId": "quest-deep-culture",
+      "category": "Unit 13: Deeper Culture",
+      "orderIndex": 49,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mabwe"
+      ],
+      "culturalNotes": [
+        "Great Zimbabwe is a UNESCO World Heritage Site",
+        "The stone ruins date back to the 11th century"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mabwe",
+          "english": "stones / rocks",
+          "audioFile": "mabwe.mp3",
+          "usage": "Stones or rocks",
+          "example": "Mabwe makuru eZimbabwe."
+        },
+        {
+          "shona": "nhare",
+          "english": "fortress / stronghold",
+          "audioFile": "nhare.mp3",
+          "usage": "A fortified place",
+          "example": "Nhare yeGreat Zimbabwe."
+        },
+        {
+          "shona": "rusvingo",
+          "english": "wall / enclosure",
+          "audioFile": "rusvingo.mp3",
+          "usage": "A stone wall",
+          "example": "Rusvingo rwakakura."
+        },
+        {
+          "shona": "kuchera",
+          "english": "to dig / excavate",
+          "audioFile": "kuchera.mp3",
+          "usage": "Digging or mining",
+          "example": "Kuchera goridhe."
+        },
+        {
+          "shona": "matongo",
+          "english": "ruins",
+          "audioFile": "matongo.mp3",
+          "usage": "Ancient ruins",
+          "example": "Matongo eGreat Zimbabwe."
+        },
+        {
+          "shona": "chinyakare",
+          "english": "ancient / traditional",
+          "audioFile": "chinyakare.mp3",
+          "usage": "Something ancient",
+          "example": "Tsika dzechinyakare."
+        }
+      ]
+    },
+    {
+      "id": "lesson-50",
+      "title": "Mhemberero — Celebrations",
+      "description": "Learn vocabulary for festivals, celebrations, and ceremonies",
+      "questId": "quest-deep-culture",
+      "category": "Unit 13: Deeper Culture",
+      "orderIndex": 50,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Mhemberero"
+      ],
+      "culturalNotes": [
+        "Celebrations often blend traditional and modern elements",
+        "Music, dance, and food are central to all celebrations"
+      ],
+      "vocabulary": [
+        {
+          "shona": "mhemberero",
+          "english": "celebration / festival",
+          "audioFile": "mhemberero.mp3",
+          "usage": "A celebration",
+          "example": "Mhemberero yakanaka."
+        },
+        {
+          "shona": "mutambo",
+          "english": "ceremony / event",
+          "audioFile": "mutambo.mp3",
+          "usage": "A ceremony or party",
+          "example": "Mutambo wemuchato."
+        },
+        {
+          "shona": "muchato",
+          "english": "wedding",
+          "audioFile": "muchato.mp3",
+          "usage": "A wedding ceremony",
+          "example": "Muchato uri mangwana."
+        },
+        {
+          "shona": "zuva rekuberekwa",
+          "english": "birthday",
+          "audioFile": "zuva_rekuberekwa.mp3",
+          "usage": "Birthday celebration",
+          "example": "Zuva rekuberekwa rangu."
+        },
+        {
+          "shona": "kupemberera",
+          "english": "to celebrate",
+          "audioFile": "kupemberera.mp3",
+          "usage": "The act of celebrating",
+          "example": "Tiri kupemberera."
+        },
+        {
+          "shona": "chipo",
+          "english": "gift / present",
+          "audioFile": "chipo.mp3",
+          "usage": "A gift",
+          "example": "Chipo chakanaka."
+        }
+      ]
+    },
+    {
+      "id": "lesson-51",
+      "title": "Utano Hwepfungwa — Wellbeing",
+      "description": "Learn vocabulary about mental health and emotional wellbeing",
+      "questId": "quest-deep-culture",
+      "category": "Unit 13: Deeper Culture",
+      "orderIndex": 51,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Utano Hwepfungwa"
+      ],
+      "culturalNotes": [
+        "Mental health awareness is growing in Zimbabwe",
+        "Traditional concepts of 'kugutsikana' (contentment) align with modern wellness"
+      ],
+      "vocabulary": [
+        {
+          "shona": "pfungwa",
+          "english": "mind / thoughts",
+          "audioFile": "pfungwa.mp3",
+          "usage": "The mind or thoughts",
+          "example": "Pfungwa dzangu dzakagadzikana."
+        },
+        {
+          "shona": "kushushikana",
+          "english": "to be anxious / stressed",
+          "audioFile": "kushushikana.mp3",
+          "usage": "Feeling stressed",
+          "example": "Ndiri kushushikana."
+        },
+        {
+          "shona": "kugutsikana",
+          "english": "to be content / satisfied",
+          "audioFile": "kugutsikana.mp3",
+          "usage": "Feeling satisfied",
+          "example": "Ndiri kugutsikana."
+        },
+        {
+          "shona": "zorora",
+          "english": "rest / relax",
+          "audioFile": "zorora.mp3",
+          "usage": "Taking a rest",
+          "example": "Zorora zvako."
+        },
+        {
+          "shona": "simba",
+          "english": "strength / power",
+          "audioFile": "simba.mp3",
+          "usage": "Physical or mental strength",
+          "example": "Simba rinobva kuna Mwari."
+        },
+        {
+          "shona": "tariro",
+          "english": "hope",
+          "audioFile": "tariro.mp3",
+          "usage": "Having hope",
+          "example": "Tariro yedu yakasimba."
+        }
+      ]
+    },
+    {
+      "id": "lesson-52",
+      "title": "Kufambisa Nyika — Travel",
+      "description": "Learn travel vocabulary for exploring Zimbabwe and beyond",
+      "questId": "quest-deep-culture",
+      "category": "Unit 13: Deeper Culture",
+      "orderIndex": 52,
+      "level": "advanced",
+      "xpReward": 100,
+      "estimatedDuration": 20,
+      "learningObjectives": [
+        "Learn 6 new Shona words",
+        "Practice pronunciation with audio",
+        "Complete exercises to test understanding"
+      ],
+      "discoveryElements": [
+        "Explore vocabulary related to: Kufambisa Nyika"
+      ],
+      "culturalNotes": [
+        "Zimbabwe has world-famous destinations like Victoria Falls",
+        "Travel broadens understanding — 'kufamba kuziva' (to travel is to know)"
+      ],
+      "vocabulary": [
+        {
+          "shona": "rwendo",
+          "english": "journey / trip",
+          "audioFile": "rwendo.mp3",
+          "usage": "A journey",
+          "example": "Rwendo rwakanaka."
+        },
+        {
+          "shona": "nhandare yendege",
+          "english": "airport",
+          "audioFile": "nhandare_yendege.mp3",
+          "usage": "Airport",
+          "example": "Tinoenda kunhandare yendege."
+        },
+        {
+          "shona": "hotera",
+          "english": "hotel",
+          "audioFile": "hotera.mp3",
+          "usage": "A hotel",
+          "example": "Hotera yakanaka."
+        },
+        {
+          "shona": "pasipoti",
+          "english": "passport",
+          "audioFile": "pasipoti.mp3",
+          "usage": "Travel document",
+          "example": "Pasipoti yangu iri pano."
+        },
+        {
+          "shona": "kushanya",
+          "english": "to visit",
+          "audioFile": "kushanya.mp3",
+          "usage": "Visiting a place",
+          "example": "Ndinoda kushanya Victoria Falls."
+        },
+        {
+          "shona": "kufamba",
+          "english": "to travel / move",
+          "audioFile": "kufamba.mp3",
+          "usage": "Traveling",
+          "example": "Kufamba kuziva."
         }
       ]
     }

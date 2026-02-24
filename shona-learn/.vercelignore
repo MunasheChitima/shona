@@ -8,6 +8,24 @@ yarn-error.log*
 .next/
 out/
 
+# Large media files
+*.mov
+*.mp4
+*.mp3
+*.wav
+
+# Test artifacts
+test-audio/
+test-screenshots/
+AGENT_CONTEXT/
+cursor agent logs/
+archive/
+lighthouse-report*.json
+lighthouse-mobile*.json
+
+# Prisma local DB
+prisma/dev.db*
+
 # Environment variables
 .env
 .env.local

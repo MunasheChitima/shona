@@ -1,0 +1,959 @@
+{
+  "audioDirExists": false,
+  "audioDir": "/Users/munashe/Documents/Coding Projects/Shona App/shona-learn/public/content/audio",
+  "totalReferenced": 190,
+  "missing": [
+    {
+      "shona": "hongu",
+      "english": "yes",
+      "audioFile": "hongu.mp3"
+    },
+    {
+      "shona": "kwete",
+      "english": "no",
+      "audioFile": "kwete.mp3"
+    },
+    {
+      "shona": "dumbu",
+      "english": "stomach",
+      "audioFile": "dumbu.mp3"
+    },
+    {
+      "shona": "manzino",
+      "english": "teeth",
+      "audioFile": "manzino.mp3"
+    },
+    {
+      "shona": "maoko",
+      "english": "hands",
+      "audioFile": "maoko.mp3"
+    },
+    {
+      "shona": "maziso",
+      "english": "eyes",
+      "audioFile": "maziso.mp3"
+    },
+    {
+      "shona": "muromo",
+      "english": "mouth",
+      "audioFile": "muromo.mp3"
+    },
+    {
+      "shona": "musoro",
+      "english": "head",
+      "audioFile": "musoro.mp3"
+    },
+    {
+      "shona": "nzeve",
+      "english": "ear",
+      "audioFile": "nzeve.mp3"
+    },
+    {
+      "shona": "tsoka",
+      "english": "foot",
+      "audioFile": "tsoka.mp3"
+    },
+    {
+      "shona": "bhuruu",
+      "english": "blue",
+      "audioFile": "bhuruu.mp3"
+    },
+    {
+      "shona": "chena",
+      "english": "white",
+      "audioFile": "chena.mp3"
+    },
+    {
+      "shona": "dema",
+      "english": "black",
+      "audioFile": "dema.mp3"
+    },
+    {
+      "shona": "girini",
+      "english": "green",
+      "audioFile": "girini.mp3"
+    },
+    {
+      "shona": "tsvuku",
+      "english": "red",
+      "audioFile": "tsvuku.mp3"
+    },
+    {
+      "shona": "yero",
+      "english": "yellow",
+      "audioFile": "yero.mp3"
+    },
+    {
+      "shona": "dudziro",
+      "english": "interpretation",
+      "audioFile": "dudziro.mp3"
+    },
+    {
+      "shona": "nhaurirano",
+      "english": "conversation",
+      "audioFile": "nhaurirano.mp3"
+    },
+    {
+      "shona": "nhevedzano",
+      "english": "storytelling",
+      "audioFile": "nhevedzano.mp3"
+    },
+    {
+      "shona": "tsananguro",
+      "english": "explanation",
+      "audioFile": "tsananguro.mp3"
+    },
+    {
+      "shona": "kubata mapoka",
+      "english": "to attend meetings",
+      "audioFile": "kubata_mapoka.mp3"
+    },
+    {
+      "shona": "chidzidzo",
+      "english": "lesson/teaching",
+      "audioFile": "chidzidzo.mp3"
+    },
+    {
+      "shona": "kuwongorora",
+      "english": "to examine",
+      "audioFile": "kuwongorora.mp3"
+    },
+    {
+      "shona": "mhinduro",
+      "english": "answer",
+      "audioFile": "mhinduro.mp3"
+    },
+    {
+      "shona": "mubvunzo",
+      "english": "question",
+      "audioFile": "mubvunzo.mp3"
+    },
+    {
+      "shona": "pfudziso",
+      "english": "education",
+      "audioFile": "pfudziso.mp3"
+    },
+    {
+      "shona": "ambuya",
+      "english": "grandmother (maternal)",
+      "audioFile": "ambuya.mp3"
+    },
+    {
+      "shona": "baba",
+      "english": "father",
+      "audioFile": "baba.mp3"
+    },
+    {
+      "shona": "babamukuru",
+      "english": "father's elder brother",
+      "audioFile": "babamukuru.mp3"
+    },
+    {
+      "shona": "mai",
+      "english": "mother",
+      "audioFile": "mai.mp3"
+    },
+    {
+      "shona": "mbuya",
+      "english": "grandmother",
+      "audioFile": "mbuya.mp3"
+    },
+    {
+      "shona": "mudzimai",
+      "english": "wife",
+      "audioFile": "mudzimai.mp3"
+    },
+    {
+      "shona": "mukoma",
+      "english": "older brother",
+      "audioFile": "mukoma.mp3"
+    },
+    {
+      "shona": "mukomana",
+      "english": "boy",
+      "audioFile": "mukomana.mp3"
+    },
+    {
+      "shona": "munin'ina",
+      "english": "younger sibling",
+      "audioFile": "muninina.mp3"
+    },
+    {
+      "shona": "murume",
+      "english": "husband/man",
+      "audioFile": "murume.mp3"
+    },
+    {
+      "shona": "musikana",
+      "english": "girl",
+      "audioFile": "musikana.mp3"
+    },
+    {
+      "shona": "muzukuru",
+      "english": "grandchild/nephew/niece",
+      "audioFile": "muzukuru.mp3"
+    },
+    {
+      "shona": "mwana",
+      "english": "child",
+      "audioFile": "mwana.mp3"
+    },
+    {
+      "shona": "sekuru",
+      "english": "grandfather (maternal)",
+      "audioFile": "sekuru.mp3"
+    },
+    {
+      "shona": "tezvara",
+      "english": "father-in-law",
+      "audioFile": "tezvara.mp3"
+    },
+    {
+      "shona": "vana",
+      "english": "children",
+      "audioFile": "vana.mp3"
+    },
+    {
+      "shona": "vatete",
+      "english": "paternal aunt",
+      "audioFile": "vatete.mp3"
+    },
+    {
+      "shona": "kwaziwai",
+      "english": "good evening (formal)",
+      "audioFile": "kwaziwai.mp3"
+    },
+    {
+      "shona": "mazuva ano",
+      "english": "these days",
+      "audioFile": "mazuva_ano.mp3"
+    },
+    {
+      "shona": "rarama",
+      "english": "goodbye (informal)",
+      "audioFile": "rarama.mp3"
+    },
+    {
+      "shona": "tunoswera",
+      "english": "we are fine",
+      "audioFile": "tunoswera.mp3"
+    },
+    {
+      "shona": "kuberekerwa",
+      "english": "to be born",
+      "audioFile": "kuberekerwa.mp3"
+    },
+    {
+      "shona": "kufa",
+      "english": "to die",
+      "audioFile": "kufa.mp3"
+    },
+    {
+      "shona": "kuroora",
+      "english": "to marry (for man)",
+      "audioFile": "kuroora.mp3"
+    },
+    {
+      "shona": "kuroorwa",
+      "english": "to marry (for woman)",
+      "audioFile": "kuroorwa.mp3"
+    },
+    {
+      "shona": "china",
+      "english": "four",
+      "audioFile": "china.mp3"
+    },
+    {
+      "shona": "piri",
+      "english": "two",
+      "audioFile": "piri.mp3"
+    },
+    {
+      "shona": "poshi",
+      "english": "one",
+      "audioFile": "poshi.mp3"
+    },
+    {
+      "shona": "shanu",
+      "english": "five",
+      "audioFile": "shanu.mp3"
+    },
+    {
+      "shona": "tatu",
+      "english": "three",
+      "audioFile": "tatu.mp3"
+    },
+    {
+      "shona": "chii",
+      "english": "what",
+      "audioFile": "chii.mp3"
+    },
+    {
+      "shona": "kupi",
+      "english": "where",
+      "audioFile": "kupi.mp3"
+    },
+    {
+      "shona": "sei",
+      "english": "how",
+      "audioFile": "sei.mp3"
+    },
+    {
+      "shona": "mangwanani",
+      "english": "morning",
+      "audioFile": "mangwanani.mp3"
+    },
+    {
+      "shona": "manheru",
+      "english": "evening",
+      "audioFile": "manheru.mp3"
+    },
+    {
+      "shona": "masikati",
+      "english": "afternoon",
+      "audioFile": "masikati.mp3"
+    },
+    {
+      "shona": "kubvuma",
+      "english": "to agree",
+      "audioFile": "kubvuma.mp3"
+    },
+    {
+      "shona": "kudya",
+      "english": "to eat",
+      "audioFile": "kudya.mp3"
+    },
+    {
+      "shona": "kufamba",
+      "english": "to walk",
+      "audioFile": "kufamba.mp3"
+    },
+    {
+      "shona": "kugara",
+      "english": "to sit/live",
+      "audioFile": "kugara.mp3"
+    },
+    {
+      "shona": "kumuka",
+      "english": "to wake up",
+      "audioFile": "kumuka.mp3"
+    },
+    {
+      "shona": "kunwa",
+      "english": "to drink",
+      "audioFile": "kunwa.mp3"
+    },
+    {
+      "shona": "kuramba",
+      "english": "to refuse",
+      "audioFile": "kuramba.mp3"
+    },
+    {
+      "shona": "kurara",
+      "english": "to sleep",
+      "audioFile": "kurara.mp3"
+    },
+    {
+      "shona": "kutamba",
+      "english": "to play",
+      "audioFile": "kutamba.mp3"
+    },
+    {
+      "shona": "kushanda",
+      "english": "to work",
+      "audioFile": "kushanda.mp3"
+    },
+    {
+      "shona": "imbwa",
+      "english": "dog",
+      "audioFile": "imbwa.mp3"
+    },
+    {
+      "shona": "katsi",
+      "english": "cat",
+      "audioFile": "katsi.mp3"
+    },
+    {
+      "shona": "mombe",
+      "english": "cow",
+      "audioFile": "mombe.mp3"
+    },
+    {
+      "shona": "meso",
+      "english": "eyes",
+      "audioFile": "meso.mp3"
+    },
+    {
+      "shona": "nhema",
+      "english": "black",
+      "audioFile": "nhema.mp3"
+    },
+    {
+      "shona": "dhora",
+      "english": "dollar",
+      "audioFile": "dhora.mp3"
+    },
+    {
+      "shona": "kutengeserana",
+      "english": "to trade/do business",
+      "audioFile": "kutengeserana.mp3"
+    },
+    {
+      "shona": "mari",
+      "english": "money",
+      "audioFile": "mari.mp3"
+    },
+    {
+      "shona": "mitengo",
+      "english": "prices",
+      "audioFile": "mitengo.mp3"
+    },
+    {
+      "shona": "handingakubatsiri",
+      "english": "I cannot help you",
+      "audioFile": "handingakubatsiri.mp3"
+    },
+    {
+      "shona": "kunzwisisa",
+      "english": "to understand",
+      "audioFile": "kunzwisisa.mp3"
+    },
+    {
+      "shona": "ndine dambudziko",
+      "english": "I have a problem",
+      "audioFile": "ndine_dambudziko.mp3"
+    },
+    {
+      "shona": "ndinokutenda",
+      "english": "I thank you",
+      "audioFile": "ndinokutenda.mp3"
+    },
+    {
+      "shona": "zvinotenda",
+      "english": "thank you (formal)",
+      "audioFile": "zvinotenda.mp3"
+    },
+    {
+      "shona": "husahwira",
+      "english": "friendship",
+      "audioFile": "husahwira.mp3"
+    },
+    {
+      "shona": "kubatsirana",
+      "english": "to help each other",
+      "audioFile": "kubatsirana.mp3"
+    },
+    {
+      "shona": "kugovanisa",
+      "english": "to share",
+      "audioFile": "kugovanisa.mp3"
+    },
+    {
+      "shona": "ukama",
+      "english": "relationship/kinship",
+      "audioFile": "ukama.mp3"
+    },
+    {
+      "shona": "shiri",
+      "english": "bird",
+      "audioFile": "shiri.mp3"
+    },
+    {
+      "shona": "akadimi",
+      "english": "academic",
+      "audioFile": "akadimi.mp3"
+    },
+    {
+      "shona": "chinyorwa",
+      "english": "writing",
+      "audioFile": "chinyorwa.mp3"
+    },
+    {
+      "shona": "kudzidza",
+      "english": "to learn",
+      "audioFile": "kudzidza.mp3"
+    },
+    {
+      "shona": "kunyora",
+      "english": "to write",
+      "audioFile": "kunyora.mp3"
+    },
+    {
+      "shona": "kuratidza",
+      "english": "to show/teach",
+      "audioFile": "kuratidza.mp3"
+    },
+    {
+      "shona": "kutaura",
+      "english": "to speak",
+      "audioFile": "kutaura.mp3"
+    },
+    {
+      "shona": "kuteerera",
+      "english": "to listen",
+      "audioFile": "kuteerera.mp3"
+    },
+    {
+      "shona": "kutevedzera",
+      "english": "to follow/imitate",
+      "audioFile": "kutevedzera.mp3"
+    },
+    {
+      "shona": "kuverenga",
+      "english": "to read",
+      "audioFile": "kuverenga.mp3"
+    },
+    {
+      "shona": "mazwi",
+      "english": "words",
+      "audioFile": "mazwi.mp3"
+    },
+    {
+      "shona": "mutauro",
+      "english": "language",
+      "audioFile": "mutauro.mp3"
+    },
+    {
+      "shona": "mutsara",
+      "english": "sentence",
+      "audioFile": "mutsara.mp3"
+    },
+    {
+      "shona": "pfudziso yepamusoro",
+      "english": "higher education",
+      "audioFile": "pfudziso_yepamusoro.mp3"
+    },
+    {
+      "shona": "pfungwa",
+      "english": "idea/thought",
+      "audioFile": "pfungwa.mp3"
+    },
+    {
+      "shona": "tsamba",
+      "english": "letter",
+      "audioFile": "tsamba.mp3"
+    },
+    {
+      "shona": "hapana",
+      "english": "nothing/no",
+      "audioFile": "hapana.mp3"
+    },
+    {
+      "shona": "ndapota",
+      "english": "please",
+      "audioFile": "ndapota.mp3"
+    },
+    {
+      "shona": "ndatenda",
+      "english": "thank you",
+      "audioFile": "ndatenda.mp3"
+    },
+    {
+      "shona": "babamunini",
+      "english": "father's younger brother",
+      "audioFile": "babamunini.mp3"
+    },
+    {
+      "shona": "mbuya vekuwasha",
+      "english": "mother-in-law",
+      "audioFile": "mbuya_vekuwasha.mp3"
+    },
+    {
+      "shona": "mukadzi",
+      "english": "woman/wife",
+      "audioFile": "mukadzi.mp3"
+    },
+    {
+      "shona": "sekuru vekuwasha",
+      "english": "father-in-law",
+      "audioFile": "sekuru_vekuwasha.mp3"
+    },
+    {
+      "shona": "tete mukuru",
+      "english": "eldest paternal aunt",
+      "audioFile": "tete_mukuru.mp3"
+    },
+    {
+      "shona": "nyama",
+      "english": "meat",
+      "audioFile": "nyama.mp3"
+    },
+    {
+      "shona": "sadza",
+      "english": "staple food/porridge",
+      "audioFile": "sadza.mp3"
+    },
+    {
+      "shona": "chisarai",
+      "english": "goodbye",
+      "audioFile": "chisarai.mp3"
+    },
+    {
+      "shona": "makadii",
+      "english": "how are you?",
+      "audioFile": "makadii.mp3"
+    },
+    {
+      "shona": "mhoro",
+      "english": "hello (casual)",
+      "audioFile": "mhoro.mp3"
+    },
+    {
+      "shona": "tiripo",
+      "english": "we are fine",
+      "audioFile": "tiripo.mp3"
+    },
+    {
+      "shona": "hutano",
+      "english": "health",
+      "audioFile": "hutano.mp3"
+    },
+    {
+      "shona": "kupora",
+      "english": "to heal/recover",
+      "audioFile": "kupora.mp3"
+    },
+    {
+      "shona": "kurwara",
+      "english": "to be sick",
+      "audioFile": "kurwara.mp3"
+    },
+    {
+      "shona": "mishonga",
+      "english": "medicines",
+      "audioFile": "mishonga.mp3"
+    },
+    {
+      "shona": "mvura",
+      "english": "water",
+      "audioFile": "mvura.mp3"
+    },
+    {
+      "shona": "gumi",
+      "english": "ten",
+      "audioFile": "gumi.mp3"
+    },
+    {
+      "shona": "nomwe",
+      "english": "seven",
+      "audioFile": "nomwe.mp3"
+    },
+    {
+      "shona": "pfumbamwe",
+      "english": "nine",
+      "audioFile": "pfumbamwe.mp3"
+    },
+    {
+      "shona": "sere",
+      "english": "eight",
+      "audioFile": "sere.mp3"
+    },
+    {
+      "shona": "tanhatu",
+      "english": "six",
+      "audioFile": "tanhatu.mp3"
+    },
+    {
+      "shona": "ari",
+      "english": "he/she is",
+      "audioFile": "ari.mp3"
+    },
+    {
+      "shona": "muri",
+      "english": "you are (plural)",
+      "audioFile": "muri.mp3"
+    },
+    {
+      "shona": "ndiri",
+      "english": "I am",
+      "audioFile": "ndiri.mp3"
+    },
+    {
+      "shona": "tiri",
+      "english": "we are",
+      "audioFile": "tiri.mp3"
+    },
+    {
+      "shona": "uri",
+      "english": "you are (singular)",
+      "audioFile": "uri.mp3"
+    },
+    {
+      "shona": "vari",
+      "english": "they are",
+      "audioFile": "vari.mp3"
+    },
+    {
+      "shona": "ndiani",
+      "english": "who",
+      "audioFile": "ndiani.mp3"
+    },
+    {
+      "shona": "rinhi",
+      "english": "when",
+      "audioFile": "rinhi.mp3"
+    },
+    {
+      "shona": "alleluya",
+      "english": "hallelujah",
+      "audioFile": "alleluya.mp3"
+    },
+    {
+      "shona": "hosana",
+      "english": "hosanna",
+      "audioFile": "hosana.mp3"
+    },
+    {
+      "shona": "chino",
+      "english": "now/currently",
+      "audioFile": "chino.mp3"
+    },
+    {
+      "shona": "gore",
+      "english": "year",
+      "audioFile": "gore.mp3"
+    },
+    {
+      "shona": "husiku",
+      "english": "night",
+      "audioFile": "husiku.mp3"
+    },
+    {
+      "shona": "mwedzi",
+      "english": "month",
+      "audioFile": "mwedzi.mp3"
+    },
+    {
+      "shona": "nekuchinjika",
+      "english": "gradually",
+      "audioFile": "nekuchinjika.mp3"
+    },
+    {
+      "shona": "nguva",
+      "english": "time",
+      "audioFile": "nguva.mp3"
+    },
+    {
+      "shona": "nguva dzose",
+      "english": "always",
+      "audioFile": "nguva_dzose.mp3"
+    },
+    {
+      "shona": "vhiki",
+      "english": "week",
+      "audioFile": "vhiki.mp3"
+    },
+    {
+      "shona": "zuva",
+      "english": "day",
+      "audioFile": "zuva.mp3"
+    },
+    {
+      "shona": "zvinhu zvachinja",
+      "english": "things have changed",
+      "audioFile": "zvinhu_zvachinja.mp3"
+    },
+    {
+      "shona": "chitima",
+      "english": "train",
+      "audioFile": "chitima.mp3"
+    },
+    {
+      "shona": "kombi",
+      "english": "minibus",
+      "audioFile": "kombi.mp3"
+    },
+    {
+      "shona": "mota",
+      "english": "car",
+      "audioFile": "mota.mp3"
+    },
+    {
+      "shona": "ndege",
+      "english": "airplane",
+      "audioFile": "ndege.mp3"
+    },
+    {
+      "shona": "basa",
+      "english": "work/job",
+      "audioFile": "basa.mp3"
+    },
+    {
+      "shona": "mukuru",
+      "english": "boss/elder",
+      "audioFile": "mukuru.mp3"
+    },
+    {
+      "shona": "mushandiri",
+      "english": "worker/employee",
+      "audioFile": "mushandiri.mp3"
+    },
+    {
+      "shona": "mukanwa",
+      "english": "mouth",
+      "audioFile": "mukanwa.mp3"
+    },
+    {
+      "shona": "bira remukwerere",
+      "english": "rain ceremony",
+      "audioFile": "bira_remukwerere.mp3"
+    },
+    {
+      "shona": "kudira mvura",
+      "english": "to pour water",
+      "audioFile": "kudira_mvura.mp3"
+    },
+    {
+      "shona": "kupira mhuri",
+      "english": "to pour for family",
+      "audioFile": "kupira_mhuri.mp3"
+    },
+    {
+      "shona": "kuraguza midzimu",
+      "english": "to consult ancestors",
+      "audioFile": "kuraguza_midzimu.mp3"
+    },
+    {
+      "shona": "kutenda",
+      "english": "to believe",
+      "audioFile": "kutenda.mp3"
+    },
+    {
+      "shona": "kuyamura",
+      "english": "to honor",
+      "audioFile": "kuyamura.mp3"
+    },
+    {
+      "shona": "rudo",
+      "english": "love",
+      "audioFile": "rudo.mp3"
+    },
+    {
+      "shona": "rugare",
+      "english": "peace",
+      "audioFile": "rugare.mp3"
+    },
+    {
+      "shona": "sangano",
+      "english": "gathering",
+      "audioFile": "sangano.mp3"
+    },
+    {
+      "shona": "simba",
+      "english": "strength/power",
+      "audioFile": "simba.mp3"
+    },
+    {
+      "shona": "tariro",
+      "english": "hope",
+      "audioFile": "tariro.mp3"
+    },
+    {
+      "shona": "upenyu",
+      "english": "life",
+      "audioFile": "upenyu.mp3"
+    },
+    {
+      "shona": "ndine urombo",
+      "english": "I'm sorry",
+      "audioFile": "ndine urombo.mp3"
+    },
+    {
+      "shona": "zvakanaka",
+      "english": "it's good/okay",
+      "audioFile": "zvakanaka.mp3"
+    },
+    {
+      "shona": "muriwo",
+      "english": "vegetables",
+      "audioFile": "muriwo.mp3"
+    },
+    {
+      "shona": "nhoroondo",
+      "english": "history",
+      "audioFile": "nhoroondo.mp3"
+    },
+    {
+      "shona": "zviyeuchidzo",
+      "english": "monuments",
+      "audioFile": "zviyeuchidzo.mp3"
+    },
+    {
+      "shona": "kurwira nyika",
+      "english": "to fight for country",
+      "audioFile": "kurwira_nyika.mp3"
+    },
+    {
+      "shona": "rusununguko",
+      "english": "independence",
+      "audioFile": "rusununguko.mp3"
+    },
+    {
+      "shona": "chakafukidza dzimba matenga",
+      "english": "what covers houses is thatch",
+      "audioFile": "chakafukidza_dzimba_matenga.mp3"
+    },
+    {
+      "shona": "kudzidza hakupi shame",
+      "english": "learning brings no shame",
+      "audioFile": "kudzidza_hakupi_shame.mp3"
+    },
+    {
+      "shona": "mwana wamambo muranda",
+      "english": "a king's child is a servant",
+      "audioFile": "mwana_wamambo_muranda.mp3"
+    },
+    {
+      "shona": "ukama hunei mukombe",
+      "english": "kinship knows no boundaries",
+      "audioFile": "ukama_hunei_mukombe.mp3"
+    },
+    {
+      "shona": "chechi",
+      "english": "church",
+      "audioFile": "chechi.mp3"
+    },
+    {
+      "shona": "chipfuva",
+      "english": "prayer",
+      "audioFile": "chipfuva.mp3"
+    },
+    {
+      "shona": "kereke",
+      "english": "church",
+      "audioFile": "kereke.mp3"
+    },
+    {
+      "shona": "kuimba",
+      "english": "to sing",
+      "audioFile": "kuimba.mp3"
+    },
+    {
+      "shona": "kukomborera",
+      "english": "to bless",
+      "audioFile": "kukomborera.mp3"
+    },
+    {
+      "shona": "kunamata",
+      "english": "to pray",
+      "audioFile": "kunamata.mp3"
+    },
+    {
+      "shona": "kupfugama",
+      "english": "to kneel",
+      "audioFile": "kupfugama.mp3"
+    },
+    {
+      "shona": "kurapa",
+      "english": "to heal",
+      "audioFile": "kurapa.mp3"
+    },
+    {
+      "shona": "kurumbidza",
+      "english": "to praise",
+      "audioFile": "kurumbidza.mp3"
+    }
+  ],
+  "found": 0,
+  "generatedAt": "2026-02-24T02:54:39.726Z"
+}

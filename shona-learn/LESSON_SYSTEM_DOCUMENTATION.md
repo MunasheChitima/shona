@@ -8,9 +8,12 @@ This document describes the comprehensive lesson plan system developed for the S
 
 ### 📁 Content Structure
 
+**Single source of truth:** `lessons_consolidated.json` — used by `/api/lessons` and the Learn page. All lessons must have `exercises` with length > 0 to display.
+
 ```
 shona-learn/content/
-├── lessons.json              # Main lesson definitions
+├── lessons_consolidated.json  # Canonical lessons (79 lessons with exercises)
+├── lessons.json              # Legacy/minimal subset (8 lessons, used by iOS sync)
 ├── exercises.json            # Exercise bank for all lessons
 ├── audio-manifest.json       # Audio file specifications
 ├── cultural_notes.json       # Cultural context and notes
@@ -44,7 +47,7 @@ shona-learn/content/
 
 ### Quest 3: Market Adventures
 - **Focus**: Practical communication, numbers, colors
-- **Lessons**: 2 lessons (lesson-2, lesson-5)
+- **Lessons**: 1 lesson (lesson-5)
 - **Learning Outcomes**: Market transactions, negotiation, practical vocabulary
 - **Cultural Elements**: Markets as social centers, bargaining etiquette
 

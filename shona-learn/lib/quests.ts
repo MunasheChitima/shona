@@ -6,373 +6,249 @@ export interface Quest {
   category: string
   orderIndex: number
   requiredLevel: number
+  level: string
+  emoji: string
   learningObjectives: string[]
-  discoveryElements: string[]
-  collaborativeElements: string[]
-  intrinsicRewards: string[]
-  lessons: string[] // lesson IDs
+  lessons: string[]
 }
 
 export const quests: Quest[] = [
+  // ============ BEGINNER — Units 1-6 ============
   {
-    id: "quest-1",
-    title: "The Village Greeting",
-    description: "Begin your journey by learning to greet people in a Shona village",
-    storyNarrative: "You've just arrived in a beautiful Shona village. The villagers are warm and welcoming, but you need to learn their greetings to connect with them. Each person you meet will teach you something new about Shona culture and language.",
-    category: "Cultural Immersion",
+    id: "quest-first-words",
+    title: "Unit 1: First Words",
+    description: "Learn essential greetings, introductions, and basic responses",
+    storyNarrative: "You've just arrived in Zimbabwe. Start with the words you'll use every single day — hello, thank you, yes, no, and how to ask questions.",
+    category: "First Words",
     orderIndex: 1,
     requiredLevel: 1,
+    level: "beginner",
+    emoji: "👋",
     learningObjectives: [
-      "Master basic Shona greetings",
-      "Understand cultural context of greetings",
-      "Practice pronunciation with confidence"
+      "Greet people formally and informally",
+      "Introduce yourself and ask names",
+      "Say yes, no, please, and thank you",
+      "Ask basic questions with what, how, who, where, when"
     ],
-    discoveryElements: [
-      "Explore different times of day greetings",
-      "Discover regional variations in greetings",
-      "Learn about the importance of respect in Shona culture"
-    ],
-    collaborativeElements: [
-      "Practice greetings with other learners",
-      "Share cultural insights from your background",
-      "Help others with pronunciation"
-    ],
-    intrinsicRewards: [
-      "Feel the joy of connecting with Shona speakers",
-      "Experience cultural understanding",
-      "Build confidence in language learning"
-    ],
-    lessons: ["lesson-1", "lesson-2"]
+    lessons: ["lesson-1", "lesson-2", "lesson-3", "lesson-4"]
   },
   {
-    id: "quest-2",
-    title: "Family Connections",
-    description: "Learn about family relationships and build your Shona family vocabulary",
-    storyNarrative: "A family in the village has invited you to their home. You'll learn about family relationships, which are central to Shona culture. Understanding family terms will help you connect more deeply with the community.",
-    category: "Family & Relationships",
+    id: "quest-people",
+    title: "Unit 2: People Around You",
+    description: "Learn family words, social vocabulary, and pronouns",
+    storyNarrative: "A Shona family invites you into their home. You'll learn who everyone is — from baba (father) to ambuya (grandmother) — and how to talk about yourself and others.",
+    category: "People Around You",
     orderIndex: 2,
     requiredLevel: 2,
+    level: "beginner",
+    emoji: "👨‍👩‍👧‍👦",
     learningObjectives: [
-      "Learn family member terms",
-      "Understand Shona family structure",
-      "Practice using family vocabulary in context"
+      "Name core family members",
+      "Talk about extended family and elders",
+      "Use words for friends and neighbors",
+      "Master Shona pronouns (I, you, we, they)"
     ],
-    discoveryElements: [
-      "Explore extended family relationships",
-      "Discover cultural family values",
-      "Learn about family roles in Shona society"
-    ],
-    collaborativeElements: [
-      "Share your family structure with others",
-      "Practice family conversations together",
-      "Create family trees using Shona terms"
-    ],
-    intrinsicRewards: [
-      "Deepen understanding of Shona culture",
-      "Feel connected to family values",
-      "Build meaningful relationships"
-    ],
-    lessons: ["lesson-3", "lesson-4"]
+    lessons: ["lesson-5", "lesson-6", "lesson-7", "lesson-8"]
   },
   {
-    id: "quest-3",
-    title: "Market Adventures",
-    description: "Navigate a Shona market using numbers, colors, and basic phrases",
-    storyNarrative: "You're exploring a vibrant Shona market where you need to count, identify colors, and negotiate. This real-world scenario will help you apply your language skills in practical situations.",
-    category: "Practical Communication",
+    id: "quest-numbers-time",
+    title: "Unit 3: Numbers & Time",
+    description: "Count from 1-1000, tell time, and learn the calendar",
+    storyNarrative: "At the market you need numbers. Meeting someone? You need time words. This unit gives you the numbers and time vocabulary that unlock daily life.",
+    category: "Numbers & Time",
     orderIndex: 3,
     requiredLevel: 3,
+    level: "beginner",
+    emoji: "🔢",
     learningObjectives: [
-      "Master numbers 1-10 in Shona",
-      "Learn color vocabulary",
-      "Practice basic negotiation phrases"
+      "Count from 1 to 10 confidently",
+      "Use big numbers for money and age",
+      "Talk about morning, afternoon, evening, today, tomorrow",
+      "Name all days of the week"
     ],
-    discoveryElements: [
-      "Explore market culture and traditions",
-      "Discover traditional Shona crafts",
-      "Learn about local foods and products"
-    ],
-    collaborativeElements: [
-      "Role-play market scenarios together",
-      "Share market experiences from your culture",
-      "Practice bargaining as a group"
-    ],
-    intrinsicRewards: [
-      "Experience practical language application",
-      "Feel confident in real-world situations",
-      "Connect with local culture and commerce"
-    ],
-    lessons: ["lesson-2", "lesson-5"]
+    lessons: ["lesson-9", "lesson-10", "lesson-11", "lesson-12"]
   },
   {
-    id: "quest-4",
-    title: "Voice of the Village",
-    description: "Master Shona pronunciation and tones through voice practice",
-    storyNarrative: "The village elders want to teach you the proper way to speak Shona. You'll learn the musical tones and sounds that make Shona unique, connecting you more deeply to the language's soul.",
-    category: "Pronunciation Mastery",
+    id: "quest-daily-life",
+    title: "Unit 4: Daily Life",
+    description: "Learn food, home, body, and color vocabulary",
+    storyNarrative: "Now you can navigate daily life — order sadza at a restaurant, describe your house, visit a doctor, and describe the colorful world around you.",
+    category: "Daily Life",
     orderIndex: 4,
     requiredLevel: 4,
+    level: "beginner",
+    emoji: "🏠",
     learningObjectives: [
-      "Master Shona tone patterns",
-      "Practice prenasalized consonants",
-      "Develop authentic pronunciation"
+      "Name common Zimbabwean foods and drinks",
+      "Describe your home and furniture",
+      "Know body part names for health situations",
+      "Use color words to describe things"
     ],
-    discoveryElements: [
-      "Explore the musical nature of Shona",
-      "Discover how tones change meaning",
-      "Learn about regional pronunciation differences"
-    ],
-    collaborativeElements: [
-      "Practice pronunciation with native speakers",
-      "Record and share pronunciation attempts",
-      "Give and receive constructive feedback"
-    ],
-    intrinsicRewards: [
-      "Feel the rhythm and beauty of Shona",
-      "Build authentic speaking confidence",
-      "Connect with the language's musical heritage"
-    ],
-    lessons: ["lesson-6", "lesson-7", "lesson-8"]
+    lessons: ["lesson-13", "lesson-14", "lesson-15", "lesson-16"]
   },
   {
-    id: "quest-5",
-    title: "The Great Baobab Tree",
-    description: "Discover ancient Shona stories and legends while learning storytelling vocabulary",
-    storyNarrative: "Under the ancient baobab tree, the village storyteller shares traditional tales. You'll learn the art of Shona storytelling while building your vocabulary through captivating legends of ancestors, spirits, and wisdom.",
-    category: "Cultural Heritage",
+    id: "quest-getting-around",
+    title: "Unit 5: Getting Around",
+    description: "Shop at markets, use transport, talk about work, and order food",
+    storyNarrative: "Time to explore! Navigate the market, take a bus, learn about jobs, and order food with confidence. These are the survival skills for getting around Zimbabwe.",
+    category: "Getting Around",
     orderIndex: 5,
     requiredLevel: 5,
+    level: "beginner",
+    emoji: "🚌",
     learningObjectives: [
-      "Learn storytelling vocabulary and phrases",
-      "Understand traditional Shona narratives",
-      "Practice past tense and narrative structures"
+      "Ask prices and shop at markets",
+      "Talk about transport and directions",
+      "Name common occupations",
+      "Order food and drinks"
     ],
-    discoveryElements: [
-      "Explore ancient Shona legends and folktales",
-      "Discover the role of storytelling in Shona culture",
-      "Learn about ancestral wisdom and values"
-    ],
-    collaborativeElements: [
-      "Share stories from your own culture",
-      "Create group storytelling sessions",
-      "Practice retelling traditional tales together"
-    ],
-    intrinsicRewards: [
-      "Connect with ancestral wisdom",
-      "Experience the power of oral tradition",
-      "Feel part of a storytelling community"
-    ],
-    lessons: ["lesson-9", "lesson-10"]
+    lessons: ["lesson-17", "lesson-18", "lesson-19", "lesson-20"]
   },
   {
-    id: "quest-6",
-    title: "Harvest Festival Celebration",
-    description: "Join the village harvest festival and learn about food, celebrations, and community",
-    storyNarrative: "The harvest season has arrived! The village is preparing for a grand celebration. You'll help organize the festival, learning about traditional foods, celebrations, and the importance of community in Shona culture.",
-    category: "Cultural Celebrations",
+    id: "quest-actions",
+    title: "Unit 6: Doing Things",
+    description: "Learn action verbs for daily activities, housework, school, and communication",
+    storyNarrative: "You can name things — now learn to DO things. Go, eat, sleep, cook, read, write. These verbs bring your Shona to life.",
+    category: "Doing Things",
     orderIndex: 6,
     requiredLevel: 6,
+    level: "beginner",
+    emoji: "🏃",
     learningObjectives: [
-      "Learn food and cooking vocabulary",
-      "Understand festival and celebration terms",
-      "Practice expressing gratitude and joy"
+      "Use common daily verbs (go, eat, drink, sleep)",
+      "Describe housework and chores",
+      "Talk about school and learning",
+      "Use communication verbs (speak, hear, read, write)"
     ],
-    discoveryElements: [
-      "Explore traditional Shona foods and recipes",
-      "Discover the significance of harvest celebrations",
-      "Learn about seasonal cycles and agriculture"
-    ],
-    collaborativeElements: [
-      "Plan virtual harvest celebrations together",
-      "Share traditional foods from your culture",
-      "Create collaborative recipe collections"
-    ],
-    intrinsicRewards: [
-      "Feel the joy of community celebration",
-      "Appreciate the connection to nature",
-      "Experience gratitude and abundance"
-    ],
-    lessons: ["lesson-11", "lesson-12", "lesson-13"]
+    lessons: ["lesson-21", "lesson-22", "lesson-23", "lesson-24"]
   },
+  // ============ INTERMEDIATE — Units 7-10 ============
   {
-    id: "quest-7",
-    title: "The Musical Journey",
-    description: "Learn Shona through traditional songs, instruments, and musical expressions",
-    storyNarrative: "The village musicians invite you to join their musical circle. Through traditional Shona songs and instruments like the mbira, you'll discover how music and language intertwine in Shona culture.",
-    category: "Musical Culture",
+    id: "quest-expression",
+    title: "Unit 7: Expressing Yourself",
+    description: "Express feelings, opinions, apologies, and everyday expressions",
+    storyNarrative: "Move beyond basic vocabulary into real self-expression. Share how you feel, what you think, and navigate social situations with grace.",
+    category: "Expressing Yourself",
     orderIndex: 7,
     requiredLevel: 7,
+    level: "intermediate",
+    emoji: "💭",
     learningObjectives: [
-      "Learn musical vocabulary and instruments",
-      "Understand rhythm and melody in Shona",
-      "Practice singing traditional songs"
+      "Express emotions like happiness, sadness, anger",
+      "Share opinions and agree or disagree politely",
+      "Apologize and express deep gratitude",
+      "Use natural everyday expressions"
     ],
-    discoveryElements: [
-      "Explore the sacred mbira and other instruments",
-      "Discover the role of music in Shona ceremonies",
-      "Learn about musical storytelling traditions"
-    ],
-    collaborativeElements: [
-      "Create virtual music circles",
-      "Share musical traditions from your culture",
-      "Practice songs together online"
-    ],
-    intrinsicRewards: [
-      "Experience the spiritual power of music",
-      "Feel connected to cultural rhythms",
-      "Express creativity through song"
-    ],
-    lessons: ["lesson-14", "lesson-15"]
+    lessons: ["lesson-25", "lesson-26", "lesson-27", "lesson-28"]
   },
   {
-    id: "quest-8",
-    title: "The Wisdom Keeper's Challenge",
-    description: "Solve riddles and puzzles using Shona proverbs and traditional wisdom",
-    storyNarrative: "The village's oldest and wisest elder has a challenge for you. Through riddles, proverbs, and word puzzles, you'll unlock the deep wisdom of Shona culture while strengthening your language skills.",
-    category: "Wisdom & Puzzles",
+    id: "quest-culture",
+    title: "Unit 8: Culture & Traditions",
+    description: "Explore Shona traditions, proverbs, music, and spirituality",
+    storyNarrative: "Dive into the heart of Shona culture. Learn about sacred ceremonies, ancient proverbs, the beloved mbira instrument, and the spiritual beliefs that shape daily life.",
+    category: "Culture & Traditions",
     orderIndex: 8,
     requiredLevel: 8,
+    level: "intermediate",
+    emoji: "🌍",
     learningObjectives: [
-      "Learn traditional Shona proverbs",
-      "Understand metaphorical language",
-      "Practice problem-solving in Shona"
+      "Discuss cultural traditions and customs",
+      "Understand and use Shona proverbs",
+      "Talk about music and artistic traditions",
+      "Learn spiritual and religious vocabulary"
     ],
-    discoveryElements: [
-      "Explore the meaning behind proverbs",
-      "Discover cultural values through sayings",
-      "Learn about traditional wisdom teachings"
-    ],
-    collaborativeElements: [
-      "Solve puzzles together in teams",
-      "Share wisdom from your culture",
-      "Create new riddles for other learners"
-    ],
-    intrinsicRewards: [
-      "Feel the satisfaction of solving puzzles",
-      "Gain wisdom from cultural teachings",
-      "Experience intellectual growth"
-    ],
-    lessons: ["lesson-16", "lesson-17", "lesson-18"]
+    lessons: ["lesson-29", "lesson-30", "lesson-31", "lesson-32"]
   },
   {
-    id: "quest-9",
-    title: "The Healing Garden",
-    description: "Learn about traditional medicine and nature vocabulary through herbal wisdom",
-    storyNarrative: "The village healer takes you to their sacred garden where traditional medicines grow. You'll learn about plants, healing practices, and the connection between language and nature in Shona culture.",
-    category: "Nature & Healing",
+    id: "quest-nature",
+    title: "Unit 9: Nature & Environment",
+    description: "Learn about animals, nature, health, and weather",
+    storyNarrative: "Zimbabwe's natural world is breathtaking. Name the animals, describe the landscape, talk about health, and discuss the weather like a local.",
+    category: "Nature & Environment",
     orderIndex: 9,
     requiredLevel: 9,
+    level: "intermediate",
+    emoji: "🌿",
     learningObjectives: [
-      "Learn plant and nature vocabulary",
-      "Understand traditional healing concepts",
-      "Practice describing natural phenomena"
+      "Name common animals and their cultural significance",
+      "Describe the natural world (sun, moon, mountains, rivers)",
+      "Discuss health, illness, and medicine",
+      "Talk about weather and seasons"
     ],
-    discoveryElements: [
-      "Explore traditional medicinal plants",
-      "Discover the role of nature in healing",
-      "Learn about seasonal changes and cycles"
-    ],
-    collaborativeElements: [
-      "Create virtual herb gardens together",
-      "Share healing traditions from your culture",
-      "Discuss environmental conservation"
-    ],
-    intrinsicRewards: [
-      "Connect with nature's healing power",
-      "Feel respect for traditional knowledge",
-      "Experience holistic understanding"
-    ],
-    lessons: ["lesson-19", "lesson-20"]
+    lessons: ["lesson-33", "lesson-34", "lesson-35", "lesson-36"]
   },
   {
-    id: "quest-10",
-    title: "The Master Craftsperson",
-    description: "Learn about traditional crafts and skilled trades while building specialized vocabulary",
-    storyNarrative: "The village's master craftspeople invite you to learn their trades. From pottery to weaving, metalwork to woodcarving, you'll discover the vocabulary of skilled craftsmanship and the pride of traditional arts.",
-    category: "Traditional Crafts",
+    id: "quest-modern-life",
+    title: "Unit 10: Modern Life",
+    description: "Navigate cities, technology, social media, and entertainment",
+    storyNarrative: "Modern Zimbabwe blends tradition with technology. Navigate Harare's streets, talk about your phone, share on social media, and discuss entertainment.",
+    category: "Modern Life",
     orderIndex: 10,
     requiredLevel: 10,
+    level: "intermediate",
+    emoji: "🏙️",
     learningObjectives: [
-      "Learn craft and tool vocabulary",
-      "Understand processes and techniques",
-      "Practice describing skilled work"
+      "Navigate urban environments",
+      "Talk about technology and phones",
+      "Use social media vocabulary",
+      "Discuss sports, music, and entertainment"
     ],
-    discoveryElements: [
-      "Explore traditional Shona crafts and arts",
-      "Discover the cultural significance of craftsmanship",
-      "Learn about trade and apprenticeship systems"
-    ],
-    collaborativeElements: [
-      "Share craft projects and techniques",
-      "Create virtual craft workshops",
-      "Teach others traditional skills"
-    ],
-    intrinsicRewards: [
-      "Feel the pride of creating something beautiful",
-      "Experience mastery through practice",
-      "Connect with generations of craftspeople"
-    ],
-    lessons: ["lesson-21", "lesson-22", "lesson-23"]
+    lessons: ["lesson-37", "lesson-38", "lesson-39", "lesson-40"]
   },
+  // ============ ADVANCED — Units 11-13 ============
   {
-    id: "quest-11",
-    title: "The Dream Interpreter",
-    description: "Explore the spiritual world and learn about dreams, spirits, and ceremonies",
-    storyNarrative: "The village's spiritual leader shares the mysteries of dreams and the spirit world. You'll learn about Shona spiritual beliefs, ceremonies, and the language used to discuss the unseen world.",
-    category: "Spiritual Culture",
+    id: "quest-society",
+    title: "Unit 11: Society & Governance",
+    description: "Discuss Zimbabwe as a nation — government, rights, history, and business",
+    storyNarrative: "Engage with deeper topics. Discuss Zimbabwe's government, citizens' rights, the liberation struggle, and the bustling business world.",
+    category: "Society & Governance",
     orderIndex: 11,
     requiredLevel: 11,
+    level: "advanced",
+    emoji: "🏛️",
     learningObjectives: [
-      "Learn spiritual and ceremonial vocabulary",
-      "Understand cultural beliefs and practices",
-      "Practice discussing abstract concepts"
+      "Talk about your country and government",
+      "Discuss rights, voting, and civic participation",
+      "Learn historical vocabulary about Zimbabwe's past",
+      "Use business and economic vocabulary"
     ],
-    discoveryElements: [
-      "Explore Shona spiritual beliefs and practices",
-      "Discover the role of dreams in culture",
-      "Learn about ancestral connections"
-    ],
-    collaborativeElements: [
-      "Share spiritual traditions respectfully",
-      "Discuss cultural beliefs and values",
-      "Create respectful dialogue about faith"
-    ],
-    intrinsicRewards: [
-      "Feel connected to something greater",
-      "Experience spiritual reflection",
-      "Gain respect for diverse beliefs"
-    ],
-    lessons: ["lesson-24", "lesson-25"]
+    lessons: ["lesson-41", "lesson-42", "lesson-43", "lesson-44"]
   },
   {
-    id: "quest-12",
-    title: "The Modern Village",
-    description: "Bridge traditional and modern life while learning contemporary Shona vocabulary",
-    storyNarrative: "The village is changing with the times. You'll explore how traditional Shona culture adapts to modern life, learning contemporary vocabulary while maintaining cultural roots.",
-    category: "Modern Life",
+    id: "quest-complex",
+    title: "Unit 12: Complex Communication",
+    description: "Connect ideas, use conditionals, express preferences, and discuss abstract concepts",
+    storyNarrative: "Take your Shona to a sophisticated level. Link ideas fluently, express hypotheticals, share preferences, and discuss peace and conflict.",
+    category: "Complex Communication",
     orderIndex: 12,
     requiredLevel: 12,
+    level: "advanced",
+    emoji: "🧠",
     learningObjectives: [
-      "Learn modern technology and life vocabulary",
-      "Understand cultural adaptation and change",
-      "Practice discussing contemporary issues"
+      "Use discourse markers to connect ideas",
+      "Express hypothetical situations with 'if'",
+      "Talk about likes, dislikes, and interests",
+      "Discuss abstract concepts like peace and unity"
     ],
-    discoveryElements: [
-      "Explore how culture evolves with time",
-      "Discover modern expressions in Shona",
-      "Learn about urban vs. rural life"
+    lessons: ["lesson-45", "lesson-46", "lesson-47", "lesson-48"]
+  },
+  {
+    id: "quest-deep-culture",
+    title: "Unit 13: Deeper Culture",
+    description: "Explore Great Zimbabwe, celebrations, wellbeing, and travel",
+    storyNarrative: "Complete your journey with Zimbabwe's deepest cultural treasures. Visit Great Zimbabwe, celebrate at festivals, care for your wellbeing, and plan your travels.",
+    category: "Deeper Culture",
+    orderIndex: 13,
+    requiredLevel: 13,
+    level: "advanced",
+    emoji: "🏛️",
+    learningObjectives: [
+      "Learn about Great Zimbabwe's heritage",
+      "Talk about celebrations and festivals",
+      "Discuss mental health and wellbeing",
+      "Use travel vocabulary"
     ],
-    collaborativeElements: [
-      "Discuss cultural changes in your communities",
-      "Share modern adaptations of traditions",
-      "Create dialogue about preserving culture"
-    ],
-    intrinsicRewards: [
-      "Feel connected to contemporary life",
-      "Experience cultural continuity",
-      "Appreciate adaptation and resilience"
-    ],
-    lessons: ["lesson-26", "lesson-27", "lesson-28"]
+    lessons: ["lesson-49", "lesson-50", "lesson-51", "lesson-52"]
   }
 ]
 
@@ -386,4 +262,4 @@ export const getQuestsByLevel = (level: number): Quest[] => {
 
 export const getNextQuest = (completedQuests: string[]): Quest | undefined => {
   return quests.find(quest => !completedQuests.includes(quest.id))
-} 
+}

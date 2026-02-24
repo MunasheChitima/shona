@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "A guide to Shona sounds for English speakers. Learn these before diving into vocabulary.",
+    "totalLevels": 3
+  },
+  "introduction": "Shona uses the Latin alphabet, so most letters sound like you'd expect. But there are about 12 sound combinations that don't exist in English. This guide teaches them step by step. Master these and you can pronounce ANY Shona word.",
+  "levels": [
+    {
+      "id": "sounds-familiar",
+      "title": "Sounds You Already Know",
+      "description": "These Shona letters sound almost exactly like English. You're already 70% there!",
+      "sounds": [
+        {
+          "sound": "a",
+          "like": "ah",
+          "englishAnchor": "'a' in 'father'",
+          "example": {
+            "shona": "baba",
+            "english": "father",
+            "pronounced": "BAH-bah"
+          },
+          "tip": "Always 'ah', never 'ay' like in 'cake'"
+        },
+        {
+          "sound": "e",
+          "like": "eh",
+          "englishAnchor": "'e' in 'bet'",
+          "example": {
+            "shona": "kwete",
+            "english": "no",
+            "pronounced": "KWEH-teh"
+          },
+          "tip": "Always 'eh', never 'ee' like in 'me'"
+        },
+        {
+          "sound": "i",
+          "like": "ee",
+          "englishAnchor": "'ee' in 'see'",
+          "example": {
+            "shona": "ini",
+            "english": "I/me",
+            "pronounced": "EE-nee"
+          },
+          "tip": "Always 'ee', never 'eye' like in 'mine'"
+        },
+        {
+          "sound": "o",
+          "like": "oh",
+          "englishAnchor": "'o' in 'more'",
+          "example": {
+            "shona": "moyo",
+            "english": "heart",
+            "pronounced": "MOH-yoh"
+          },
+          "tip": "Always 'oh', never 'oo' like in 'moon'"
+        },
+        {
+          "sound": "u",
+          "like": "oo",
+          "englishAnchor": "'oo' in 'moon'",
+          "example": {
+            "shona": "guru",
+            "english": "big",
+            "pronounced": "GOO-roo"
+          },
+          "tip": "Always 'oo', never 'uh' like in 'cup'"
+        },
+        {
+          "sound": "b, d, f, g, h, k, m, n, p, r, s, t, v, w, y, z",
+          "like": "same as English",
+          "englishAnchor": "These sound the same as in English",
+          "example": {
+            "shona": "baba",
+            "english": "father",
+            "pronounced": "BAH-bah"
+          },
+          "tip": "The 'r' is lightly rolled (like Spanish), not the English 'r'"
+        }
+      ]
+    },
+    {
+      "id": "sounds-easy-combos",
+      "title": "Easy Combinations",
+      "description": "These combine familiar sounds in ways English doesn't. Once you hear the pattern, they click fast.",
+      "sounds": [
+        {
+          "sound": "ch",
+          "like": "ch",
+          "englishAnchor": "'ch' in 'church'",
+          "example": {
+            "shona": "chikoro",
+            "english": "school",
+            "pronounced": "chee-KOH-roh"
+          },
+          "tip": "Exactly like English 'ch' — easy!"
+        },
+        {
+          "sound": "sh",
+          "like": "sh",
+          "englishAnchor": "'sh' in 'ship'",
+          "example": {
+            "shona": "shiri",
+            "english": "bird",
+            "pronounced": "SHEE-ree"
+          },
+          "tip": "Exactly like English 'sh'"
+        },
+        {
+          "sound": "dz",
+          "like": "dz",
+          "englishAnchor": "'ds' in 'beds' — but at the START of a word",
+          "example": {
+            "shona": "kudzidza",
+            "english": "to learn",
+            "pronounced": "koo-DZEE-dzah"
+          },
+          "tip": "Say 'beds' and notice the 'dz' at the end. Now put it at the beginning."
+        },
+        {
+          "sound": "ts",
+          "like": "ts",
+          "englishAnchor": "'ts' in 'cats'",
+          "example": {
+            "shona": "tsoka",
+            "english": "foot",
+            "pronounced": "TSOH-kah"
+          },
+          "tip": "Like 'cats' but at the start. Practice: ca-ts → ts-oka"
+        },
+        {
+          "sound": "ng",
+          "like": "ng",
+          "englishAnchor": "'ng' in 'sing'",
+          "example": {
+            "shona": "ngoma",
+            "english": "drum",
+            "pronounced": "NGOH-mah"
+          },
+          "tip": "Same as 'sing' but at the start. Say 'si-ng' then drop the 'si'."
+        },
+        {
+          "sound": "ny",
+          "like": "ny",
+          "englishAnchor": "'ny' in 'canyon'",
+          "example": {
+            "shona": "nyika",
+            "english": "country",
+            "pronounced": "NYEE-kah"
+          },
+          "tip": "Like the 'ny' in 'canyon' or Spanish 'ñ'"
+        },
+        {
+          "sound": "zv",
+          "like": "zv",
+          "englishAnchor": "Say 'z' then immediately 'v' — your lips buzz",
+          "example": {
+            "shona": "zvokudya",
+            "english": "food",
+            "pronounced": "zvoh-KOO-dyah"
+          },
+          "tip": "Start with 'z', let your bottom lip touch your top teeth for the 'v'. Quick combo."
+        },
+        {
+          "sound": "sv",
+          "like": "sv",
+          "englishAnchor": "Say 's' then immediately 'v'",
+          "example": {
+            "shona": "Svondo",
+            "english": "Sunday",
+            "pronounced": "SVOHN-doh"
+          },
+          "tip": "'s' flowing into 'v'. Like starting to say 'seven' but mashing s+v together."
+        }
+      ]
+    },
+    {
+      "id": "sounds-unique",
+      "title": "Uniquely Shona Sounds",
+      "description": "These are the sounds that make Shona special. They don't exist in English, but they're not hard once you know the trick.",
+      "sounds": [
+        {
+          "sound": "mh",
+          "like": "m...h",
+          "englishAnchor": "Hum 'mmm' then breathe out 'h'",
+          "example": {
+            "shona": "mhoro",
+            "english": "hello",
+            "pronounced": "mm-HOH-roh"
+          },
+          "tip": "Close your lips. Hum 'mmm' for a split second. Open into 'h'. It's like a breathy 'm'. Very common — you'll say this every day!",
+          "practice": "Step 1: Hum 'mmm'. Step 2: While humming, push air out through your nose. Step 3: Open into 'horo'. Combined: mm-horo."
+        },
+        {
+          "sound": "nh",
+          "like": "n...h",
+          "englishAnchor": "Say 'n' through your nose, then breathe 'h'",
+          "example": {
+            "shona": "nhasi",
+            "english": "today",
+            "pronounced": "NHAH-see"
+          },
+          "tip": "Like 'mh' but with your tongue on the roof of your mouth (like 'n'). Nasal, then breathy.",
+          "practice": "Step 1: Say 'n'. Step 2: Push air through your nose. Step 3: Open into the vowel. Combined: nh-asi."
+        },
+        {
+          "sound": "bv",
+          "like": "bv",
+          "englishAnchor": "Start saying 'b' but let your lips vibrate into 'v'",
+          "example": {
+            "shona": "bvunzo",
+            "english": "exam",
+            "pronounced": "BVOON-zoh"
+          },
+          "tip": "Your lips start closed (like 'b') then buzz open (like 'v'). It's a buzzy, vibrating 'b'.",
+          "practice": "Step 1: Press lips together for 'b'. Step 2: Instead of popping open, let air buzz through into 'v'. Step 3: It should feel like a vibrating 'b'."
+        },
+        {
+          "sound": "pf",
+          "like": "pf",
+          "englishAnchor": "'pf' in 'Pfizer' — or blowing out a candle with a 'p'",
+          "example": {
+            "shona": "pfungwa",
+            "english": "mind/thoughts",
+            "pronounced": "PFOON-gwah"
+          },
+          "tip": "You actually make this sound in English! Say 'Pfizer' or 'pfft!' (the dismissive sound).",
+          "practice": "Step 1: Press lips together. Step 2: Release with a puff of air that becomes 'f'. Like a quiet spit."
+        },
+        {
+          "sound": "tsv",
+          "like": "ts+v",
+          "englishAnchor": "Start with 'ts' (like 'cats'), then add lip buzz 'v'",
+          "example": {
+            "shona": "tsvuku",
+            "english": "red",
+            "pronounced": "TSVOO-koo"
+          },
+          "tip": "This is just 'ts' + 'v' smashed together. Say 'cats' slowly: ca-ts. Now add a 'v' vibration: ts-v.",
+          "practice": "Step 1: Say 'ts' (like end of 'cats'). Step 2: Let your bottom lip touch top teeth for 'v'. Step 3: Combine fast: tsv-uku."
+        },
+        {
+          "sound": "nz",
+          "like": "nz",
+          "englishAnchor": "'nz' — like the end of 'plans' plus 'z'",
+          "example": {
+            "shona": "nzeve",
+            "english": "ear",
+            "pronounced": "NZEH-veh"
+          },
+          "tip": "Nasal 'n' gliding into 'z'. You do this between words in English: 'in Zealand'.",
+          "practice": "Say 'in' then 'z' without a pause: in-z → nz. Now: nz-eve."
+        },
+        {
+          "sound": "mb",
+          "like": "mb",
+          "englishAnchor": "'mb' in 'timber' — but at the START",
+          "example": {
+            "shona": "mbira",
+            "english": "thumb piano",
+            "pronounced": "MBEE-rah"
+          },
+          "tip": "English has this sound in the middle of words (timber, lumber). Just move it to the front.",
+          "practice": "Say 'timber'. Hear the 'mb'? Now drop 'ti': mb-ira."
+        },
+        {
+          "sound": "nd",
+          "like": "nd",
+          "englishAnchor": "'nd' in 'under' — but at the START",
+          "example": {
+            "shona": "ndiri",
+            "english": "I am",
+            "pronounced": "NDEE-ree"
+          },
+          "tip": "Like 'nd' in 'under' but at the start. Very common — 'ndi-' means 'I'.",
+          "practice": "Say 'under'. Hear the 'nd'? Drop the 'u': nd-iri."
+        }
+      ]
+    }
+  ]
+}
