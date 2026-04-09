@@ -30,7 +30,7 @@ export const quests: Quest[] = [
       "Say yes, no, please, and thank you",
       "Ask basic questions with what, how, who, where, when"
     ],
-    lessons: ["lesson-1", "lesson-2", "lesson-3", "lesson-4"]
+    lessons: ["lesson-1", "lesson-2", "lesson-3", "lesson-4", "lesson-g1"]
   },
   {
     id: "quest-people",
@@ -48,7 +48,7 @@ export const quests: Quest[] = [
       "Use words for friends and neighbors",
       "Master Shona pronouns (I, you, we, they)"
     ],
-    lessons: ["lesson-5", "lesson-6", "lesson-7", "lesson-8"]
+    lessons: ["lesson-5", "lesson-6", "lesson-7", "lesson-8", "lesson-g2"]
   },
   {
     id: "quest-numbers-time",
@@ -84,7 +84,7 @@ export const quests: Quest[] = [
       "Know body part names for health situations",
       "Use color words to describe things"
     ],
-    lessons: ["lesson-13", "lesson-14", "lesson-15", "lesson-16"]
+    lessons: ["lesson-13", "lesson-14", "lesson-15", "lesson-16", "lesson-g7"]
   },
   {
     id: "quest-getting-around",
@@ -120,7 +120,7 @@ export const quests: Quest[] = [
       "Talk about school and learning",
       "Use communication verbs (speak, hear, read, write)"
     ],
-    lessons: ["lesson-21", "lesson-22", "lesson-23", "lesson-24"]
+    lessons: ["lesson-21", "lesson-22", "lesson-23", "lesson-g3", "lesson-24", "lesson-g4"]
   },
   // ============ INTERMEDIATE — Units 7-10 ============
   {
@@ -139,7 +139,15 @@ export const quests: Quest[] = [
       "Apologize and express deep gratitude",
       "Use natural everyday expressions"
     ],
-    lessons: ["lesson-25", "lesson-26", "lesson-27", "lesson-28"]
+    lessons: [
+      "lesson-25",
+      "lesson-26",
+      "lesson-27",
+      "lesson-28",
+      "lesson-g5",
+      "lesson-g6",
+      "lesson-g8",
+    ]
   },
   {
     id: "quest-culture",
