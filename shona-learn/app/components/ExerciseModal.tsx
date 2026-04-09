@@ -1,11 +1,14 @@
 'use client'
 import { useState, useEffect, useCallback } from 'react'
+import Link from 'next/link'
 import { FaTimes, FaHeart, FaStar, FaTrophy, FaArrowRight } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import VoiceExercise from './voice/VoiceExercise'
+import PronunciationPractice from './voice/PronunciationPractice'
 import PronunciationText from './shared/PronunciationText'
 import ErrorBoundary from './ErrorBoundary'
 import { AUDIO_ENABLED } from '@/lib/featureFlags'
+import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 interface ExerciseModalProps {
   lesson: any
@@ -54,13 +57,22 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
   const fetchExercises = async () => {
     if (typeof window === 'undefined') return
     const res = await fetch(`/api/exercises/${lesson.id}`, {
-      headers: {
-        'Authorization': `Bearer ${localStorage.getItem('token')}`
-      }
+      headers: { ...apiAuthHeaders() },
     })
     if (res.ok) {
       const data = await res.json()
-      setExercises(data)
+      // Filter to only exercise types that can be rendered:
+      // - multiple_choice: has options array
+      // - translation: uses text input
+      // - voice: only when audio is enabled
+      // Exclude 'pronunciation' type — no options and no audio UI available
+      const renderable = data.filter((ex: any) =>
+        ex.type === 'multiple_choice' ||
+        ex.type === 'translation' ||
+        ex.type === 'pronunciation' ||
+        (AUDIO_ENABLED && ex.type === 'voice')
+      )
+      setExercises(renderable)
     }
   }
 
@@ -93,7 +105,7 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
       setShowFeedback(true)
       
       if (correct) {
-        setScore(score + currentExercise.points)
+        setScore(score + (currentExercise.points || 0))
       } else {
         setHearts(hearts - 1)
       }
@@ -244,6 +256,10 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
                       word={currentExercise.shonaPhrase}
                       pronunciation={currentExercise.pronunciation || currentExercise.shonaPhrase.replace(/[aeiou]/g, (match: string) => match + '-')}
                       phonetic={currentExercise.phonetic}
+                      englishAnchor={currentExercise.englishAnchor}
+                      soundGuideLinks={currentExercise.soundGuideLinks}
+                      tonePattern={currentExercise.tonePattern}
+                      toneHint={currentExercise.toneHint}
                       size="medium"
                       showDetails={false}
                       className="mb-2"
@@ -262,7 +278,26 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
             
             {/* Answer Options */}
             <div className="space-y-4">
-              {AUDIO_ENABLED && currentExercise.type === 'voice' ? (
+              {currentExercise.type === 'pronunciation' ? (
+                <PronunciationPractice
+                  word={currentExercise.targetWord || ''}
+                  translation={
+                    currentExercise.englishPhrase ||
+                    currentExercise.question ||
+                    'Practice pronunciation'
+                  }
+                  phonetic={currentExercise.pronunciation || currentExercise.phonetic || ''}
+                  tonePattern={currentExercise.tonePattern}
+                  toneHint={currentExercise.toneHint}
+                  englishAnchor={currentExercise.englishAnchor}
+                  soundGuideLinks={currentExercise.soundGuideLinks}
+                  commonMistakeWarning={currentExercise.commonMistakeWarning}
+                  pronounceDifficulty={currentExercise.pronounceDifficulty}
+                  audioFile={currentExercise.audioFile}
+                  allowContinueAnyway
+                  onComplete={(s) => handleAnswer(s)}
+                />
+              ) : AUDIO_ENABLED && currentExercise.type === 'voice' ? (
                 <VoiceExercise
                   exercise={{
                     id: currentExercise.id,
@@ -390,11 +425,24 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
                         </div>
                       )}
                       
-                      {!isCorrect && (
+                      {!isCorrect &&
+                        currentExercise.type !== 'pronunciation' &&
+                        currentExercise.correctAnswer && (
                         <p className="text-red-600 mt-2">
                           Correct answer: <span className="font-bold">{currentExercise.correctAnswer}</span>
                         </p>
                       )}
+
+                      {currentIndex === exercises.length - 1 && lesson?.category ? (
+                        <div className="mt-4 pt-4 border-t border-gray-200">
+                          <Link
+                            href={`/flashcards?category=${encodeURIComponent(lesson.category)}`}
+                            className="inline-flex items-center gap-2 font-semibold text-green-700 hover:text-green-800 underline underline-offset-2"
+                          >
+                            Practice these words with flashcards →
+                          </Link>
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                 </motion.div>

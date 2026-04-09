@@ -1,15 +1,13 @@
 import { NextResponse } from 'next/server'
-import { PrismaClient } from '@prisma/client'
 import { verifyAuth } from '@/lib/auth-server'
+import { awardAchievementIfNew } from '@/lib/achievements/award'
+import { prisma } from '@/lib/prisma'
 import { validate, progressSchema } from '@/lib/validation'
-
-const prisma = new PrismaClient()
 
 async function ensureLessonExists(lessonId: string) {
   const existing = await prisma.lesson.findUnique({ where: { id: lessonId } })
   if (existing) return existing
 
-  // Create a placeholder lesson so user progress can be tracked for ad-hoc IDs
   return prisma.lesson.create({
     data: {
       id: lessonId,
@@ -60,7 +58,16 @@ export async function POST(request: Request) {
 
     const { lessonId, score } = parsed.data!
 
-    // Ensure lesson exists (or create placeholder)
+    const prior = await prisma.userProgress.findUnique({
+      where: {
+        userId_lessonId: {
+          userId,
+          lessonId
+        }
+      }
+    })
+    const newlyCompleted = !prior?.completed
+
     await ensureLessonExists(lessonId)
 
     const progress = await prisma.userProgress.upsert({
@@ -83,7 +90,6 @@ export async function POST(request: Request) {
       }
     })
 
-    // Update user XP based on lesson reward
     const lesson = await prisma.lesson.findUnique({ where: { id: lessonId } })
     if (lesson) {
       await prisma.user.update({
@@ -92,8 +98,44 @@ export async function POST(request: Request) {
       })
     }
 
+    if (newlyCompleted) {
+      const totalDone = await prisma.userProgress.count({
+        where: { userId, completed: true }
+      })
+      if (totalDone === 1) {
+        await awardAchievementIfNew(userId, 'first-lesson')
+      }
+
+      const nextReview = new Date()
+      nextReview.setDate(nextReview.getDate() + 1)
+      await prisma.reviewSchedule.upsert({
+        where: {
+          userId_subjectType_subjectId: {
+            userId,
+            subjectType: 'lesson',
+            subjectId: lessonId
+          }
+        },
+        update: {
+          intervalDays: 1,
+          nextReviewAt: nextReview,
+          lastReviewedAt: new Date()
+        },
+        create: {
+          userId,
+          subjectType: 'lesson',
+          subjectId: lessonId,
+          easeFactor: 2.5,
+          intervalDays: 1,
+          repetitions: 0,
+          nextReviewAt: nextReview,
+          lastReviewedAt: new Date()
+        }
+      })
+    }
+
     return NextResponse.json(progress)
   } catch (error) {
     return NextResponse.json({ error: 'Failed to update progress' }, { status: 500 })
   }
-} 
+}

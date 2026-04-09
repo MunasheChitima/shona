@@ -3,6 +3,9 @@ import fs from 'fs'
 import path from 'path'
 import crypto from 'crypto'
 
+/** Reads filesystem + request headers; must not be statically analyzed as static. */
+export const dynamic = 'force-dynamic'
+
 interface ContentVersion {
   id: string
   version: number
@@ -33,7 +36,6 @@ interface ContentManifest {
 
 export async function GET(request: Request) {
   try {
-    const url = new URL(request.url)
     const platform = request.headers.get('Platform') || 'web'
     const clientVersion = request.headers.get('Client-Version') || '0.0.0'
     

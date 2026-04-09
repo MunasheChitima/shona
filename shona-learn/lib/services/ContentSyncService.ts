@@ -62,7 +62,9 @@ class ContentSyncService {
   constructor(apiBaseUrl: string, platform: string) {
     this.apiBaseUrl = apiBaseUrl
     this.platform = platform
-    this.initializeSync()
+    if (typeof window !== 'undefined') {
+      void this.initializeSync()
+    }
   }
 
   private async initializeSync(): Promise<void> {
@@ -681,6 +683,7 @@ class ContentSyncService {
   }
 
   async clearLocalContent(): Promise<void> {
+    if (typeof window === 'undefined') return
     const contentTypes = ['lessons', 'vocabulary', 'exercises', 'cultural_notes', 'audio']
     
     contentTypes.forEach(contentType => {

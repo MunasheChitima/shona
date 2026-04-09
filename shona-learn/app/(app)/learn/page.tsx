@@ -1,0 +1,507 @@
+'use client'
+import { useState, useEffect, useCallback, Suspense } from 'react'
+import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
+import { ProtectedRoute } from '../../../lib/auth'
+import LessonCard from '../../components/LessonCard'
+import ExerciseModal from '../../components/ExerciseModal'
+import HeartDisplay from '../../components/HeartDisplay'
+import LoadingSpinner from '../../components/LoadingSpinner'
+import ErrorBoundary from '../../components/ErrorBoundary'
+import AuthError from '../../components/AuthError'
+import StageSection, { type PathStage } from '../../components/learning-path/StageSection'
+import CheckpointModal from '../../components/learning-path/CheckpointModal'
+import PathVariantOnboarding from '../../components/learning-path/PathVariantOnboarding'
+import type { LessonRowLesson } from '../../components/learning-path/LessonRow'
+import { useContentChunking } from '@/hooks/useContentChunking'
+import { useErrorHandler } from '@/lib/error-handling'
+import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
+import { apiAuthHeaders } from '@/lib/api-auth-headers'
+
+type LearnLesson = LessonRowLesson & {
+  category: string
+  exercises?: unknown[]
+  questId?: string
+}
+
+type PathEnrollment = {
+  id: string
+  currentUnitId: string | null
+  pathVariant: string
+  startedAt: string
+}
+
+type PathApiResponse = {
+  stages: PathStage[]
+  enrollment: PathEnrollment | null
+}
+
+function variantLearningTip(pathVariant: string | undefined | null): string {
+  switch (pathVariant) {
+    case 'heritage':
+      return 'You can move quickly through familiar greetings—double-down on sounds that still feel tricky.'
+    case 'new_learner':
+      return 'Say new phrases out loud; Shona uses several sounds English rarely does.'
+    case 'partner':
+      return 'Prioritize phrases you will use with family—they stick fastest when they are immediately useful.'
+    default:
+      return ''
+  }
+}
+
+function groupLessonsByCategory(lessons: LearnLesson[]): Record<string, LearnLesson[]> {
+  const m: Record<string, LearnLesson[]> = {}
+  for (const l of lessons) {
+    const c = l.category || 'Uncategorized'
+    if (!m[c]) m[c] = []
+    m[c].push(l)
+  }
+  return m
+}
+
+function findNextLessonId(
+  stages: PathStage[],
+  lessonsByCategory: Record<string, LearnLesson[]>,
+  progress: Record<string, { completed?: boolean; score?: number }>
+): string | null {
+  for (const stage of stages) {
+    for (const unit of stage.units) {
+      if (unit.status === 'locked') continue
+      const cat = unit.lessonId
+      if (!cat) continue
+      const list = lessonsByCategory[cat] || []
+      for (const lesson of list) {
+        if (!progress[lesson.id]?.completed) return lesson.id
+      }
+    }
+  }
+  return null
+}
+
+function LearnContent() {
+  const [selectedLesson, setSelectedLesson] = useState<LearnLesson | null>(null)
+  const [progress, setProgress] = useState<Record<string, { completed?: boolean; score?: number }>>({})
+  const [user, setUser] = useState<any>({})
+  const [questFilter, setQuestFilter] = useState<string | null>(null)
+  const [chunks, setChunks] = useState<any[]>([])
+  const [pathStages, setPathStages] = useState<PathStage[] | null>(null)
+  const [pathEnrollment, setPathEnrollment] = useState<PathEnrollment | null>(null)
+  const [dueReviewCount, setDueReviewCount] = useState(0)
+  const [checkpointUnitId, setCheckpointUnitId] = useState<string | null>(null)
+  const [pathStartSubmitting, setPathStartSubmitting] = useState(false)
+  const [progressionMode, setProgressionMode] = useState(true)
+  const searchParams = useSearchParams()
+  const { handleError } = useErrorHandler()
+
+  const {
+    chunks: lessonChunks,
+    isLoading: lessonsLoading,
+    error: lessonsError,
+    loadChunks: loadLessons,
+  } = useContentChunking({
+    type: 'lesson',
+    autoLoad: false,
+  })
+
+  const finalChunks = chunks.length > 0 ? chunks : lessonChunks
+
+  const getToken = () => (typeof window !== 'undefined' ? localStorage.getItem('token') : null)
+
+  const fetchProgress = useCallback(async () => {
+    try {
+      const token = getToken()
+      if (!token && !BETA_OPEN_ACCESS) return
+
+      const res = await fetch('/api/progress', { headers: { ...apiAuthHeaders() } })
+
+      if (res.ok) {
+        const data = await res.json()
+        const progressMap = data.reduce((acc: any, p: any) => {
+          acc[p.lessonId] = p
+          return acc
+        }, {})
+        setProgress(progressMap)
+      } else if (res.status === 401 && !BETA_OPEN_ACCESS) {
+        handleError(new Error('Authentication expired'))
+        if (typeof window !== 'undefined') {
+          window.location.href = '/login'
+        }
+      }
+    } catch (error) {
+      console.error('Failed to fetch progress:', error)
+      handleError(error)
+    }
+  }, [handleError])
+
+  const fetchDueReviews = useCallback(async () => {
+    try {
+      const token = getToken()
+      if (!token && !BETA_OPEN_ACCESS) return
+      const res = await fetch('/api/reviews/due', {
+        headers: { ...apiAuthHeaders() },
+      })
+      if (!res.ok) return
+      const data = await res.json()
+      const due = Array.isArray(data.due) ? data.due : []
+      setDueReviewCount(due.length)
+    } catch {
+      // non-blocking
+    }
+  }, [])
+
+  const fetchLearningPath = useCallback(async (): Promise<boolean> => {
+    try {
+      const token = getToken()
+      if (!token && !BETA_OPEN_ACCESS) return false
+      const res = await fetch('/api/learning-path?slug=core', {
+        headers: { ...apiAuthHeaders() },
+      })
+      if (res.status === 404) {
+        setPathStages(null)
+        setPathEnrollment(null)
+        setProgressionMode(false)
+        return false
+      }
+      if (!res.ok) {
+        setPathStages(null)
+        setPathEnrollment(null)
+        setProgressionMode(false)
+        return false
+      }
+      const data: PathApiResponse = await res.json()
+      setPathStages(data.stages || [])
+      setPathEnrollment(data.enrollment ?? null)
+      setProgressionMode(true)
+      return true
+    } catch (e) {
+      console.error('Learning path fetch failed:', e)
+      setPathStages(null)
+      setPathEnrollment(null)
+      setProgressionMode(false)
+      return false
+    }
+  }, [])
+
+  const handlePathVariantChoose = async (variant: 'heritage' | 'new_learner' | 'partner' | 'default') => {
+    try {
+      const token = getToken()
+      if (!token && !BETA_OPEN_ACCESS) {
+        handleError(new Error('Authentication required'))
+        return
+      }
+      setPathStartSubmitting(true)
+      const res = await fetch('/api/learning-path/start', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...apiAuthHeaders(),
+        },
+        body: JSON.stringify({ learningPathSlug: 'core', pathVariant: variant }),
+      })
+      if (!res.ok) {
+        handleError(new Error('Could not start learning path'))
+        return
+      }
+      await fetchLearningPath()
+    } catch (e) {
+      handleError(e)
+    } finally {
+      setPathStartSubmitting(false)
+    }
+  }
+
+  useEffect(() => {
+    const init = async () => {
+      if (typeof window !== 'undefined') {
+        const userData = localStorage.getItem('user')
+        if (userData) {
+          setUser(JSON.parse(userData))
+        }
+      }
+
+      const questParam = searchParams.get('quest')
+      if (questParam) {
+        setQuestFilter(questParam)
+      }
+
+      await fetchProgress()
+      await fetchLearningPath()
+      await fetchDueReviews()
+
+      try {
+        await loadLessons()
+      } catch (error) {
+        console.error('Content chunking failed, falling back to original method:', error)
+        await fetchLessons()
+      }
+    }
+
+    init()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams?.toString()])
+
+  const fetchLessons = async () => {
+    try {
+      const token = getToken()
+      if (!token && !BETA_OPEN_ACCESS) return
+
+      const res = await fetch('/api/lessons', {
+        headers: { ...apiAuthHeaders() },
+      })
+
+      if (res.ok) {
+        const data = await res.json()
+        const lessons = data.lessons || []
+        const localChunks = [
+          {
+            id: 'fallback_chunk',
+            type: 'lesson' as const,
+            data: lessons,
+            metadata: { totalChunks: 1, chunkIndex: 0, hasNext: false, hasPrevious: false },
+          },
+        ]
+        setChunks(localChunks)
+      }
+    } catch (error) {
+      console.error('Failed to fetch lessons:', error)
+      handleError(error)
+    }
+  }
+
+  const handleLessonComplete = async (lessonId: string, score: number) => {
+    try {
+      const token = getToken()
+      if (!token && !BETA_OPEN_ACCESS) {
+        handleError(new Error('Authentication required'))
+        return
+      }
+
+      const res = await fetch('/api/progress', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', ...apiAuthHeaders() },
+        body: JSON.stringify({ lessonId, score }),
+      })
+
+      if (res.ok) {
+        if (typeof window !== 'undefined') {
+          const userData = JSON.parse(localStorage.getItem('user') || '{}')
+          userData.xp += score
+          localStorage.setItem('user', JSON.stringify(userData))
+          setUser(userData)
+        }
+        await fetchProgress()
+        await fetchLearningPath()
+        await fetchDueReviews()
+        setSelectedLesson(null)
+      } else {
+        handleError(new Error('Failed to save progress'))
+      }
+    } catch (error) {
+      console.error('Failed to complete lesson:', error)
+      handleError(error)
+    }
+  }
+
+  const lessons = finalChunks.flatMap((chunk) => chunk.data || []) as LearnLesson[]
+
+  if (lessonsLoading) {
+    return <LoadingSpinner fullScreen message="Loading lessons..." />
+  }
+
+  if (lessonsError) {
+    return <AuthError error={lessonsError} onRetry={() => { loadLessons(); fetchProgress(); }} />
+  }
+
+  let validLessons = lessons.filter(
+    (lesson) => lesson && lesson.id && lesson.title && lesson.exercises && lesson.exercises.length > 0
+  )
+
+  if (questFilter) {
+    validLessons = validLessons.filter((lesson) => lesson.questId === questFilter)
+  }
+
+  const lessonsByCategory = groupLessonsByCategory(validLessons)
+  const completedCount = Object.values(progress).filter((p: any) => p?.completed).length
+  const isFirstTimeUser =
+    progressionMode && pathStages && !lessonsLoading && validLessons.length > 0 && completedCount === 0 && !questFilter
+
+  const nextLessonId =
+    progressionMode && pathStages ? findNextLessonId(pathStages, lessonsByCategory, progress) : null
+
+  const firstLessonForWelcome = (() => {
+    if (!pathStages) return validLessons[0] || null
+    for (const st of pathStages) {
+      for (const u of st.units) {
+        if (u.status === 'locked' || !u.lessonId) continue
+        const list = lessonsByCategory[u.lessonId] || []
+        if (list[0]) return list[0]
+      }
+    }
+    return validLessons[0] || null
+  })()
+
+  return (
+    <ErrorBoundary>
+      <ProtectedRoute>
+        <div className="min-h-screen bg-app-surface">
+          <div className="container mx-auto px-4 py-8 max-w-3xl">
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <h1 className="text-4xl font-bold text-gray-800">
+                  {questFilter ? `Quest: ${questFilter}` : 'Learn Shona'}
+                </h1>
+              </div>
+              <HeartDisplay hearts={user?.hearts || 0} />
+            </div>
+
+            {!questFilter && progressionMode && pathStages && !pathEnrollment && !selectedLesson ? (
+              <PathVariantOnboarding
+                onChoose={(v) => void handlePathVariantChoose(v)}
+                dismissing={pathStartSubmitting}
+              />
+            ) : null}
+
+            <div className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50/90 px-4 py-3 text-sm text-emerald-950">
+              <Link href="/sound-guide" className="font-semibold text-emerald-900 underline underline-offset-2">
+                Shona Sound Guide
+              </Link>
+              <span className="text-emerald-900/95">
+                {' '}
+                — how Shona vowels, rhythm, and clusters like mh, sv, nd differ from English. Then try{' '}
+              </span>
+              <Link href="/practice/sounds" className="font-semibold text-emerald-900 underline underline-offset-2">
+                sound drills
+              </Link>
+              <span className="text-emerald-900/95"> for guided repetition.</span>
+            </div>
+
+            {dueReviewCount > 0 && !questFilter ? (
+              <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950">
+                <span className="font-semibold">{dueReviewCount} review due</span>
+                <span className="text-amber-900">
+                  {' '}
+                  — spaced reviews lock in vocabulary. Visit flashcards or redo a recent lesson while it is fresh.
+                </span>
+              </div>
+            ) : null}
+
+            {isFirstTimeUser && firstLessonForWelcome && (
+              <div className="mb-10 bg-gradient-to-r from-green-500 to-emerald-600 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
+                <div className="absolute top-4 right-6 text-6xl opacity-20">🇿🇼</div>
+                <div className="relative z-10 max-w-2xl">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-3">
+                    Mhoro, {user?.name?.split(' ')[0] || 'shamwari'}! 👋 Your Shona learning journey starts here.
+                  </h2>
+                  {variantLearningTip(pathEnrollment?.pathVariant) ? (
+                    <p className="text-white/90 text-sm md:text-base mb-3 max-w-xl">
+                      {variantLearningTip(pathEnrollment?.pathVariant)}
+                    </p>
+                  ) : null}
+                  <button
+                    type="button"
+                    onClick={() => setSelectedLesson(firstLessonForWelcome)}
+                    className="mt-4 bg-white text-green-700 font-bold py-3 px-8 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-200"
+                  >
+                    Start First Lesson →
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {!isFirstTimeUser && completedCount > 0 && !questFilter && (
+              <div className="mb-6 bg-white rounded-2xl px-6 py-4 shadow-soft flex items-center gap-4">
+                <div className="flex-1">
+                  <div className="flex justify-between text-sm text-gray-600 mb-1">
+                    <span className="font-medium">
+                      {completedCount} of {validLessons.length} lessons completed
+                    </span>
+                    <span>
+                      {validLessons.length ? Math.round((completedCount / validLessons.length) * 100) : 0}%
+                    </span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div
+                      className="bg-gradient-to-r from-green-400 to-emerald-500 h-2 rounded-full transition-all duration-700"
+                      style={{
+                        width: `${validLessons.length ? (completedCount / validLessons.length) * 100 : 0}%`,
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {validLessons.length === 0 ? (
+              <div className="text-center text-yellow-600 py-8">
+                No valid lessons available. Please check back later or contact support if this issue persists.
+              </div>
+            ) : progressionMode && pathStages && !questFilter ? (
+              <div className="flex flex-col">
+                {pathStages.map((stage) => {
+                  const stageLocked = stage.units.length > 0 && stage.units.every((u) => u.status === 'locked')
+                  const defaultStageOpen =
+                    !stageLocked &&
+                    stage.units.some(
+                      (u) => u.status === 'completed' || u.status === 'current' || u.status === 'available'
+                    )
+                  return (
+                    <StageSection
+                      key={stage.id}
+                      stage={stage}
+                      lessonsByCategory={lessonsByCategory}
+                      progress={progress}
+                      defaultOpen={defaultStageOpen}
+                      nextLessonId={nextLessonId}
+                      onLessonClick={(l) => setSelectedLesson(l as LearnLesson)}
+                      onCheckpointOpen={(u) => setCheckpointUnitId(u.id)}
+                    />
+                  )
+                })}
+              </div>
+            ) : (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                {validLessons.map((lesson, index) => (
+                  <LessonCard
+                    key={lesson.id}
+                    lesson={lesson}
+                    progress={progress[lesson.id]}
+                    onClick={() => setSelectedLesson(lesson)}
+                    locked={index > 0 && !progress[validLessons[index - 1].id]?.completed}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {selectedLesson && (
+          <ExerciseModal
+            lesson={selectedLesson}
+            onClose={() => setSelectedLesson(null)}
+            onComplete={(score) => handleLessonComplete(selectedLesson.id, score)}
+          />
+        )}
+
+        {checkpointUnitId ? (
+          <CheckpointModal
+            unitId={checkpointUnitId}
+            getToken={getToken}
+            onClose={() => setCheckpointUnitId(null)}
+            onPassed={() => {
+              void fetchLearningPath()
+              void fetchDueReviews()
+            }}
+          />
+        ) : null}
+      </ProtectedRoute>
+    </ErrorBoundary>
+  )
+}
+
+export default function Learn() {
+  return (
+    <Suspense fallback={<LoadingSpinner fullScreen message="Loading..." />}>
+      <LearnContent />
+    </Suspense>
+  )
+}

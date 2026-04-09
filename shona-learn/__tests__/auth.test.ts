@@ -1,6 +1,9 @@
 import { describe, it, expect, vi } from 'vitest'
-import { generateToken, verifyAuth } from '../lib/auth-server'
 import { loginSchema, registerSchema, validate } from '../lib/validation'
+
+vi.mock('@/lib/beta-access', () => ({
+  BETA_OPEN_ACCESS: false,
+}))
 
 // Mock jsonwebtoken
 vi.mock('jsonwebtoken', () => ({
@@ -9,6 +12,8 @@ vi.mock('jsonwebtoken', () => ({
     verify: vi.fn(() => ({ userId: 'test-user-id' }))
   }
 }))
+
+import { generateToken, verifyAuth } from '../lib/auth-server'
 
 describe('Authentication', () => {
   describe('generateToken', () => {

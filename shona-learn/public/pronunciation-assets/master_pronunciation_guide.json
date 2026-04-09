@@ -21,7 +21,8 @@
         {
           "token": "ng",
           "type": "prenasalized",
-          "description": "A prenasalized hard 'g' consonant, not a full separate vowel sound."
+          "description": "Like the 'ng' in 'finger' (not the end of 'singer') — you should feel a hard 'g' right after the nasal. Say 'fi-nger' slowly and carry that cluster into Shona.",
+          "englishAnchor": "Same 'ng' as in 'sing' at syllable starts, but when spelling marks a following /g/, think 'finger' not 'sing-er'."
         }
       ],
       "learning_steps": [
@@ -87,7 +88,8 @@
         {
           "token": "bh",
           "type": "breathy",
-          "description": "KEYWORD: AUDIBLE SIGH. An English 'b' sound with a simultaneous, audible release of air. The 'h' is a feature, not a separate sound."
+          "description": "A 'b' with a puff of breath right on top of it — similar to how some English speakers soften 'b' when whisper-shouting. The 'h' is not a second letter; it colours the whole sound.",
+          "englishAnchor": "Start a normal 'b', but let a little extra breath slip out with it, almost like a quick 'bhuh' without adding a vowel."
         }
       ],
       "learning_steps": [
@@ -112,7 +114,8 @@
         {
           "token": "sv",
           "type": "whistled",
-          "description": "KEYWORD: WHISTLED SIBILANT. A unique high-frequency 's' sound. Visually, lips are slightly rounded/protruded."
+          "description": "Say an English 's', but round your lips slightly as if starting to whistle — that rounding gives Shona /sv/ its bright, high hiss.",
+          "englishAnchor": "Think 's' flowing straight into lip rounding for 'v' — not two separate English sounds."
         }
       ],
       "learning_steps": [
@@ -137,7 +140,8 @@
         {
           "token": "zv",
           "type": "whistled",
-          "description": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding."
+          "description": "The voiced partner of /sv/: a buzzy 'z' made while your lips stay rounded, almost like humming through gently closed teeth.",
+          "englishAnchor": "Start English 'z', keep lip buzz active into 'v' — same trick as /sv/, but voiced."
         }
       ],
       "learning_steps": [
@@ -159,7 +163,14 @@
         "ra"
       ],
       "complexity": 12,
-      "special_sounds": [],
+      "special_sounds": [
+        {
+          "token": "tsv",
+          "type": "affricate-plus-labial",
+          "description": "Say 'ts' as in the end of 'cats', then add the lip buzz of 'v' in the same beat — one crisp cluster, not 't'-'s'-'v'.",
+          "englishAnchor": "ca-ts → keep the blade sound, then slide into lip-teeth contact for 'v' with rounded lips."
+        }
+      ],
       "learning_steps": [
         "1. Study the syllable breakdown: tsva - i - ra",
         "2. Practice each phoneme individually",
@@ -202,7 +213,8 @@
         {
           "token": "mb",
           "type": "prenasalized",
-          "description": "A very brief nasal airflow immediately precedes the 'b' stop within the same syllable."
+          "description": "The 'mb' you hear inside 'timber' — a quick hum through the nose that lands immediately on 'b'. Shona often puts that cluster at the beginning of a syllable.",
+          "englishAnchor": "'mb' as in 'timber', moved to the start: mmm-bee without an extra vowel."
         }
       ],
       "learning_steps": [
@@ -227,7 +239,8 @@
         {
           "token": "nd",
           "type": "prenasalized",
-          "description": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable."
+          "description": "The 'nd' you hear inside 'under' — short nasal lead-in, then the tongue taps for 'd', all in one syllable onset.",
+          "englishAnchor": "'nd' as in 'under', but at the beginning: nnn-dee without saying 'uh' first."
         }
       ],
       "learning_steps": [
@@ -252,7 +265,8 @@
         {
           "token": "ng",
           "type": "prenasalized",
-          "description": "A prenasalized hard 'g' consonant, not a full separate vowel sound."
+          "description": "Like the 'ng' in 'finger' (not the end of 'singer') — you should feel a hard 'g' right after the nasal. Say 'fi-nger' slowly and carry that cluster into Shona.",
+          "englishAnchor": "Same 'ng' as in 'sing' at syllable starts, but when spelling marks a following /g/, think 'finger' not 'sing-er'."
         }
       ],
       "learning_steps": [
@@ -278,12 +292,14 @@
         {
           "token": "nd",
           "type": "prenasalized",
-          "description": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable."
+          "description": "The 'nd' you hear inside 'under' — short nasal lead-in, then the tongue taps for 'd', all in one syllable onset.",
+          "englishAnchor": "'nd' as in 'under', but at the beginning: nnn-dee without saying 'uh' first."
         },
         {
           "token": "nd",
           "type": "prenasalized",
-          "description": "A very brief nasal airflow immediately precedes the 'd' stop within the same syllable."
+          "description": "The 'nd' you hear inside 'under' — short nasal lead-in, then the tongue taps for 'd', all in one syllable onset.",
+          "englishAnchor": "'nd' as in 'under', but at the beginning: nnn-dee without saying 'uh' first."
         }
       ],
       "learning_steps": [
@@ -310,7 +326,8 @@
         {
           "token": "zv",
           "type": "whistled",
-          "description": "KEYWORD: VOICED WHISTLED SIBILANT. Voiced version of sv. High-frequency 'z' with lip rounding."
+          "description": "The voiced partner of /sv/: a buzzy 'z' made while your lips stay rounded, almost like humming through gently closed teeth.",
+          "englishAnchor": "Start English 'z', keep lip buzz active into 'v' — same trick as /sv/, but voiced."
         }
       ],
       "learning_steps": [

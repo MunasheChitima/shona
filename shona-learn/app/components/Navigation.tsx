@@ -1,10 +1,10 @@
 'use client'
 import { useRouter, usePathname } from 'next/navigation'
-import { FaHome, FaBook, FaUser, FaSignOutAlt, FaTrophy, FaUsers, FaBars, FaTimes, FaVolumeUp, FaLayerGroup, FaPalette, FaClone } from 'react-icons/fa'
+import { FaHome, FaBook, FaUser, FaClone, FaHeadphones, FaMicrophone, FaWaveSquare } from 'react-icons/fa'
 import { useState } from 'react'
-import { AUDIO_ENABLED } from '@/lib/featureFlags'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useAuth } from '@/lib/auth'
+import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 
 export default function Navigation() {
   const router = useRouter()
@@ -15,19 +15,17 @@ export default function Navigation() {
 
   const handleLogout = () => {
     logout()
-    router.push('/login')
+    router.push(BETA_OPEN_ACCESS ? '/' : '/login')
   }
 
   const navItems = [
     { href: '/', icon: FaHome, label: 'Home', ariaLabel: 'Go to home page' },
     { href: '/learn', icon: FaBook, label: 'Learn', ariaLabel: 'Go to learning lessons' },
-    { href: '/conversational-lessons', icon: FaUsers, label: 'Conversations', ariaLabel: 'Go to conversational lessons' },
-    { href: '/quests', icon: FaTrophy, label: 'Quests', ariaLabel: 'Go to quests and challenges' },
-    { href: '/profile', icon: FaUser, label: 'Profile', ariaLabel: 'Go to user profile' },
+    { href: '/sound-guide', icon: FaHeadphones, label: 'Sounds', ariaLabel: 'Open Shona Sound Guide' },
+    { href: '/practice/sounds', icon: FaWaveSquare, label: 'Drills', ariaLabel: 'Open pronunciation sound drills' },
+    { href: '/pronunciation', icon: FaMicrophone, label: 'Speak', ariaLabel: 'Open pronunciation practice' },
     { href: '/flashcards', icon: FaClone, label: 'Flashcards', ariaLabel: 'Go to vocabulary flashcards' },
-    ...(AUDIO_ENABLED ? [{ href: '/pronunciation-test', icon: FaVolumeUp, label: 'Pronunciation Test', ariaLabel: 'Go to pronunciation practice' }] : []),
-    { href: '/integrated-vocabulary', icon: FaLayerGroup, label: 'Integrated Vocabulary', ariaLabel: 'Go to integrated vocabulary view' },
-    { href: '/theme-demo', icon: FaPalette, label: 'Theme Demo', ariaLabel: 'Go to theme demonstration' },
+    { href: '/profile', icon: FaUser, label: 'Profile', ariaLabel: 'Go to user profile' },
   ]
 
   const isActive = (href: string) => pathname === href
@@ -73,7 +71,14 @@ export default function Navigation() {
 
           {/* User Menu */}
           <div className="flex items-center space-x-4">
-            {user ? (
+            {BETA_OPEN_ACCESS ? (
+              <div className="text-sm text-gray-600">
+                <span className="font-medium">{user?.name ?? 'Beta tester'}</span>
+                <span className="ml-2 rounded-full bg-amber-100 text-amber-900 px-2 py-0.5 text-xs font-medium">
+                  Open beta
+                </span>
+              </div>
+            ) : user ? (
               <div className="flex items-center space-x-3">
                 <div className="text-sm text-gray-600">
                   <span className="font-medium">{user.name}</span>

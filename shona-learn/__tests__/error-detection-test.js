@@ -2,6 +2,9 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
+/** Puppeteer v22+ removed page.waitForTimeout — use this instead */
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 class ErrorDetectionTester {
   constructor() {
     this.browser = null;
@@ -80,7 +83,7 @@ class ErrorDetectionTester {
     for (const pagePath of pages) {
       try {
         await this.page.goto(`${this.baseUrl}${pagePath}`, { waitUntil: 'networkidle0' });
-        await this.page.waitForTimeout(2000);
+        await delay(2000);
         
         // Check for hydration errors
         const hydrationErrors = await this.page.evaluate(() => {
@@ -132,7 +135,7 @@ class ErrorDetectionTester {
     await this.page.type('input[name="password"]', 'wrongpassword');
     await this.page.click('button[type="submit"]');
     
-    await this.page.waitForTimeout(2000);
+    await delay(2000);
     
     // Check for authentication errors
     const authErrors = this.errors.filter(error => 
@@ -155,7 +158,7 @@ class ErrorDetectionTester {
     const audioButtons = await this.page.$$('[data-testid="pronunciation-audio-button"]');
     if (audioButtons.length > 0) {
       await audioButtons[0].click();
-      await this.page.waitForTimeout(1000);
+      await delay(1000);
     }
     
     // Check for audio-related errors
@@ -182,7 +185,7 @@ class ErrorDetectionTester {
     for (const endpoint of apiEndpoints) {
       try {
         await this.page.goto(`${this.baseUrl}${endpoint}`);
-        await this.page.waitForTimeout(1000);
+        await delay(1000);
       } catch (error) {
         this.errors.push({
           type: 'api_error',
@@ -214,7 +217,7 @@ class ErrorDetectionTester {
     const lessonCards = await this.page.$$('[data-testid="lesson-card"]');
     if (lessonCards.length > 0) {
       await lessonCards[0].click();
-      await this.page.waitForTimeout(1000);
+      await delay(1000);
       
       // Check for modal errors
       const modal = await this.page.$('[data-testid="exercise-modal"]');
@@ -223,7 +226,7 @@ class ErrorDetectionTester {
         const closeButton = await this.page.$('[data-testid="close-modal"]');
         if (closeButton) {
           await closeButton.click();
-          await this.page.waitForTimeout(500);
+          await delay(500);
         }
       }
     }
@@ -250,13 +253,13 @@ class ErrorDetectionTester {
     const mobileMenuButton = await this.page.$('button svg');
     if (mobileMenuButton) {
       await mobileMenuButton.click();
-      await this.page.waitForTimeout(1000);
+      await delay(1000);
       
       // Test mobile navigation
       const mobileNavLinks = await this.page.$$('nav.md\\:hidden a');
       if (mobileNavLinks.length > 0) {
         await mobileNavLinks[0].click();
-        await this.page.waitForTimeout(1000);
+        await delay(1000);
       }
     }
     

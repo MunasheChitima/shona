@@ -18,6 +18,30 @@ export const progressSchema = z.object({
   score: z.number().min(0).max(100, 'Score must be between 0 and 100')
 })
 
+export const learningPathStartSchema = z.object({
+  learningPathSlug: z.string().min(1, 'Learning path slug is required'),
+  pathVariant: z.enum(['default', 'heritage', 'new_learner', 'partner']).optional()
+})
+
+export const checkpointAttemptSchema = z.object({
+  answers: z.record(z.string(), z.number().int().min(0))
+})
+
+export const reviewCompleteSchema = z.object({
+  subjectType: z.string().min(1, 'Subject type is required'),
+  subjectId: z.string().min(1, 'Subject id is required'),
+  quality: z.number().int().min(0).max(5, 'Quality must be between 0 and 5')
+})
+
+export const reviewScheduleSchema = z.object({
+  subjectType: z.string().min(1, 'Subject type is required'),
+  subjectId: z.string().min(1, 'Subject id is required'),
+  easeFactor: z.number().min(1.3).optional(),
+  intervalDays: z.number().int().min(1).optional(),
+  repetitions: z.number().int().min(0).optional(),
+  nextReviewAt: z.string().datetime().optional()
+})
+
 // Generic validation function
 export function validate<T>(schema: z.ZodSchema<T>, data: unknown): { success: boolean; data?: T; errors?: z.ZodError } {
   try {

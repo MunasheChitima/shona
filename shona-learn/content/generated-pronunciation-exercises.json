@@ -1,1 +1,76 @@
-[]
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Standalone pronunciation drills — minimal pairs, sound isolation, rhythm, and progressive difficulty (see PRONUNCIATION_MODULE_REVIEW.md Priority 8).",
+    "source": "curriculum-aligned"
+  },
+  "exercises": [
+    {
+      "id": "pe-sound-dz-1",
+      "type": "sound_isolation",
+      "title": "Isolate: dz",
+      "focusSound": "dz",
+      "englishAnchor": "'ds' in 'beds' — including at the start of a syllable",
+      "instruction": "Say English 'beds' and hold the final 'dz'. Now start a syllable with that same cluster — no vowel before it.",
+      "practiceWords": [
+        { "shona": "kudzidza", "english": "to learn", "audioFile": "kudzidza.mp3" },
+        { "shona": "mudzidzi", "english": "student", "audioFile": "mudzidzi.mp3" }
+      ]
+    },
+    {
+      "id": "pe-sound-mh-1",
+      "type": "sound_isolation",
+      "title": "Isolate: mh (breathy m)",
+      "focusSound": "mh",
+      "instruction": "Hum through closed lips, then open into a breathy 'h' without separating m and h.",
+      "practiceWords": [
+        { "shona": "mhoro", "english": "hello (informal)", "audioFile": "mhoro.mp3" },
+        { "shona": "mhoroi", "english": "hello (formal/plural)", "audioFile": "mhoroi.mp3" }
+      ]
+    },
+    {
+      "id": "pe-sound-sv-1",
+      "type": "sound_isolation",
+      "title": "Isolate: sv (whistled hiss)",
+      "focusSound": "sv",
+      "instruction": "Round your lips slightly, then produce a grooved 's' that flows into lip-teeth 'v'. The whistle comes from lip rounding during the friction.",
+      "practiceWords": [
+        { "shona": "svika", "english": "arrive", "audioFile": "svika.mp3" },
+        { "shona": "Svondo", "english": "Sunday", "audioFile": "svondo.mp3" }
+      ]
+    },
+    {
+      "id": "pe-ng-onset-1",
+      "type": "repetition_drill",
+      "title": "Clean onset: word-initial ng",
+      "note": "English speakers often add 'uh' before word-initial ng. Repeat until you can start on the nasal with no lead-in vowel.",
+      "words": [
+        { "shona": "ngoma", "english": "drum", "audioFile": "ngoma.mp3" },
+        { "shona": "mangwanani", "english": "good morning", "audioFile": "mangwanani.mp3" }
+      ]
+    },
+    {
+      "id": "pe-rhythm-1",
+      "type": "rhythm",
+      "title": "Even syllable timing",
+      "instruction": "Shona is more syllable-timed than English. Tap a steady beat and give each syllable the same weight — do not smash unstressed syllables.",
+      "phrase": {
+        "shona": "makumi maviri",
+        "english": "twenty",
+        "syllables": ["ma", "ku", "mi", "ma", "vi", "ri"],
+        "audioFile": "makumi_maviri.mp3"
+      }
+    },
+    {
+      "id": "pe-progressive-1",
+      "type": "progressive_difficulty",
+      "title": "Prenasalized clusters: easy → harder",
+      "wordSteps": [
+        { "shona": "nda", "gloss": "prefix chunk (I / focus)", "cluster": "nd" },
+        { "shona": "ndiri", "gloss": "I am", "audioFile": "ndiri.mp3" },
+        { "shona": "ndinonzi", "gloss": "my name is", "audioFile": "ndinonzi.mp3" },
+        { "shona": "ndatenda", "gloss": "thank you", "audioFile": "ndatenda.mp3" }
+      ]
+    }
+  ]
+}

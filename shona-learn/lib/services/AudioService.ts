@@ -1,4 +1,13 @@
-// Audio service for handling TTS and audio playback
+/**
+ * Audio playback for lesson / pronunciation UI.
+ *
+ * Resolution order in `playAudio`: optional ElevenLabs (when key + text), then static file via `audioFile`
+ * path passed from callers (typically relative filename resolved by UI as `/content/audio/<file>`), then
+ * browser `speechSynthesis` when `fallbackToBrowserTTS` is true.
+ *
+ * The repo often ships without mp3 assets under `public/content/audio/`; missing files are non-fatal because
+ * TTS fallback still runs when `text` is supplied. Add bundled mp3s there to improve fidelity offline.
+ */
 
 export interface AudioServiceConfig {
   elevenLabsApiKey?: string

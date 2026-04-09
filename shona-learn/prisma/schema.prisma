@@ -30,6 +30,11 @@ model User {
   flashcards    Flashcard[]
   srsProgress   SRSProgress[]
   notificationPreferences NotificationPreference?
+  learningPathEnrollments UserLearningPath[]
+  unitProgress            UserUnitProgress[]
+  reviewSchedules         ReviewSchedule[]
+  checkpointAttempts      UserCheckpointAttempt[]
+  userAchievements        UserAchievement[]
 }
 
 model Lesson {
@@ -46,6 +51,7 @@ model Lesson {
   learningObjectives String?  // JSON string of learning objectives
   discoveryElements String?   // JSON string of exploration prompts
   flashcards    Flashcard[]
+  pathUnits     Unit[]
 }
 
 model Quest {
@@ -225,4 +231,154 @@ model NotificationLog {
   deviceToken String?
   success     Boolean  @default(true)
   errorMessage String?
+}
+
+model LearningPath {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  pathType  String   @default("default")
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  stages    Stage[]
+  enrollments UserLearningPath[]
+}
+
+model Stage {
+  id             String   @id @default(cuid())
+  learningPathId String
+  title          String
+  description    String?
+  orderIndex     Int
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  learningPath   LearningPath @relation(fields: [learningPathId], references: [id], onDelete: Cascade)
+  units          Unit[]
+
+  @@unique([learningPathId, orderIndex])
+}
+
+model Unit {
+  id          String   @id @default(cuid())
+  stageId     String
+  lessonId    String?
+  title       String
+  description String?
+  unitType    String   @default("lesson") // lesson, checkpoint, review_hub
+  orderIndex  Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  stage       Stage    @relation(fields: [stageId], references: [id], onDelete: Cascade)
+  lesson      Lesson?  @relation(fields: [lessonId], references: [id], onDelete: SetNull)
+  prerequisites UnitPrerequisite[] @relation("UnitPrerequisites")
+  requiredBy     UnitPrerequisite[] @relation("UnitRequiredBy")
+  checkpoint     Checkpoint?
+  userProgress   UserUnitProgress[]
+  currentForEnrollments UserLearningPath[] @relation("CurrentUnit")
+
+  @@unique([stageId, orderIndex])
+}
+
+model UnitPrerequisite {
+  id             String @id @default(cuid())
+  unitId         String
+  requiresUnitId String
+  unit           Unit   @relation("UnitPrerequisites", fields: [unitId], references: [id], onDelete: Cascade)
+  requiresUnit   Unit   @relation("UnitRequiredBy", fields: [requiresUnitId], references: [id], onDelete: Cascade)
+
+  @@unique([unitId, requiresUnitId])
+}
+
+model UserLearningPath {
+  id             String   @id @default(cuid())
+  userId         String
+  learningPathId String
+  currentUnitId  String?
+  pathVariant    String   @default("default")
+  startedAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  learningPath   LearningPath @relation(fields: [learningPathId], references: [id], onDelete: Cascade)
+  currentUnit    Unit?    @relation("CurrentUnit", fields: [currentUnitId], references: [id], onDelete: SetNull)
+
+  @@unique([userId, learningPathId])
+}
+
+model UserUnitProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  unitId      String
+  completed   Boolean  @default(false)
+  score       Int?
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  unit        Unit     @relation(fields: [unitId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, unitId])
+}
+
+model ReviewSchedule {
+  id            String   @id @default(cuid())
+  userId        String
+  subjectType   String
+  subjectId     String
+  easeFactor    Float    @default(2.5)
+  intervalDays  Int      @default(1)
+  repetitions   Int      @default(0)
+  reviewCount   Int      @default(0)
+  lastQuality   Int      @default(0)
+  lastReviewedAt DateTime?
+  nextReviewAt  DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, subjectType, subjectId])
+}
+
+model Checkpoint {
+  id           String   @id @default(cuid())
+  unitId       String   @unique
+  title        String
+  passingScore Int      @default(70)
+  questionData String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  unit         Unit     @relation(fields: [unitId], references: [id], onDelete: Cascade)
+  attempts     UserCheckpointAttempt[]
+}
+
+model UserCheckpointAttempt {
+  id           String   @id @default(cuid())
+  userId       String
+  checkpointId String
+  scorePercent Int
+  passed       Boolean
+  answersJson  String?
+  createdAt    DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  checkpoint   Checkpoint @relation(fields: [checkpointId], references: [id], onDelete: Cascade)
+}
+
+model Achievement {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  title       String
+  description String?
+  createdAt   DateTime @default(now())
+  userAchievements UserAchievement[]
+}
+
+model UserAchievement {
+  id            String   @id @default(cuid())
+  userId        String
+  achievementId String
+  awardedAt     DateTime @default(now())
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, achievementId])
 }

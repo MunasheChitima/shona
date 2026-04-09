@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
-import { FaVolumeUp, FaInfoCircle } from 'react-icons/fa'
+import Link from 'next/link'
+import { FaVolumeUp, FaInfoCircle, FaTimes, FaLeaf } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import { audioService } from '@/lib/services/AudioService'
 
@@ -10,10 +11,21 @@ interface PronunciationTextProps {
   phonetic?: string
   syllables?: string
   tonePattern?: string
+  /** Syllable-by-syllable English anchoring (matches flashcards / lessons). */
+  englishAnchor?: string
+  toneHint?: string
+  /** Tokens linking to Sound Guide sections, e.g. ["mh","nd"]. */
+  soundGuideLinks?: string[]
   audioFile?: string
   size?: 'small' | 'medium' | 'large'
   showDetails?: boolean
+  /** Collapsible “how to say it” / tone / sound-guide hints (default true when data exists). */
+  showEnglishAnchor?: boolean
   className?: string
+}
+
+function soundGuideHash(token: string) {
+  return `sound-${encodeURIComponent(token.replace(/[^a-z0-9]/gi, '-'))}`
 }
 
 export default function PronunciationText({
@@ -22,13 +34,22 @@ export default function PronunciationText({
   phonetic,
   syllables,
   tonePattern,
+  englishAnchor,
+  toneHint,
+  soundGuideLinks = [],
   audioFile,
   size = 'medium',
   showDetails = true,
+  showEnglishAnchor,
   className = ''
 }: PronunciationTextProps) {
   const [showPhonetic, setShowPhonetic] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
+  const [dismissedHint, setDismissedHint] = useState(false)
+
+  const showAnchorBlock =
+    (showEnglishAnchor ?? true) &&
+    !!(englishAnchor || (toneHint && tonePattern) || (soundGuideLinks && soundGuideLinks.length > 0))
 
   const sizeClasses = {
     small: {
@@ -105,7 +126,7 @@ export default function PronunciationText({
             </div>
           </div>
           
-          {showDetails && (phonetic || syllables || tonePattern) && (
+          {showDetails && (phonetic || syllables || tonePattern || englishAnchor) && (
             <button
               onClick={() => setShowPhonetic(!showPhonetic)}
               className="text-blue-600 hover:text-blue-800 p-1 rounded transition-colors"
@@ -127,6 +148,14 @@ export default function PronunciationText({
               className="mt-3 pt-3 border-t border-blue-200"
             >
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+                {englishAnchor && (
+                  <div className="md:col-span-3">
+                    <div className="text-blue-600 font-medium mb-1">English anchor</div>
+                    <div className={`text-blue-900 leading-relaxed ${currentSize.phonetic}`}>
+                      {englishAnchor}
+                    </div>
+                  </div>
+                )}
                 {phonetic && (
                   <div>
                     <div className="text-blue-600 font-medium mb-1">Phonetic</div>
@@ -151,6 +180,9 @@ export default function PronunciationText({
                     <div className={`text-blue-800 font-mono ${currentSize.phonetic}`}>
                       {tonePattern}
                     </div>
+                    {toneHint && (
+                      <p className="text-blue-700/90 mt-1 text-xs leading-snug">{toneHint}</p>
+                    )}
                   </div>
                 )}
               </div>
@@ -159,12 +191,66 @@ export default function PronunciationText({
         </AnimatePresence>
       </div>
 
+      {showAnchorBlock && !dismissedHint && (
+        <motion.div
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-2 rounded-lg border border-emerald-200 bg-emerald-50/90 p-3 text-sm text-emerald-900"
+        >
+          <div className="flex justify-between gap-2">
+            <div className="font-medium text-emerald-800 flex items-center gap-2">
+              <FaLeaf className="shrink-0 opacity-80" aria-hidden />
+              How to say it
+            </div>
+            <button
+              type="button"
+              onClick={() => setDismissedHint(true)}
+              className="text-emerald-700 hover:text-emerald-900 p-1 rounded"
+              aria-label="Dismiss pronunciation hints"
+            >
+              <FaTimes />
+            </button>
+          </div>
+          {englishAnchor && (
+            <p className="mt-2 text-emerald-900/95 leading-relaxed whitespace-pre-wrap">{englishAnchor}</p>
+          )}
+          {tonePattern && toneHint && (
+            <p className="mt-2 text-xs text-emerald-800">
+              <span className="font-semibold">Tone ({tonePattern}):</span> {toneHint}
+            </p>
+          )}
+          {soundGuideLinks.length > 0 && (
+            <div className="mt-2 flex flex-wrap gap-2">
+              {soundGuideLinks.map((s) => (
+                <Link
+                  key={s}
+                  href={`/sound-guide#${soundGuideHash(s)}`}
+                  className="inline-flex items-center rounded-full bg-white/90 px-2.5 py-0.5 text-xs font-medium text-emerald-800 ring-1 ring-emerald-200 hover:bg-emerald-100"
+                >
+                  Sound: {s}
+                </Link>
+              ))}
+            </div>
+          )}
+          <p className="mt-2 text-xs text-emerald-800/80">
+            <Link href="/sound-guide" className="underline underline-offset-2 font-medium">
+              Open full Sound Guide
+            </Link>
+          </p>
+        </motion.div>
+      )}
+
       {/* Tone pattern visualization */}
       {tonePattern && showDetails && (
         <div className="tone-pattern mt-2">
           <div className="text-xs text-gray-600 mb-1">Tone Pattern</div>
           <div className="flex items-center space-x-1">
-            {tonePattern.split('-').map((tone, index) => (
+            {tonePattern
+              .replace(/[^HhLl]/g, '')
+              .split('')
+              .filter(Boolean)
+              .map((t) => t.toUpperCase())
+              .map((tone, index) => (
               <div key={index} className="flex flex-col items-center">
                 <div 
                   className={`

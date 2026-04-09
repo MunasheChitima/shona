@@ -1,6 +1,7 @@
 'use client'
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
 import { useRouter } from 'next/navigation'
+import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 
 interface User {
   id: string
@@ -25,9 +26,20 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
+const BETA_GUEST_USER: User = {
+  id: 'beta-guest',
+  name: 'Beta tester',
+  email: 'beta@shona-learn.local',
+  xp: 0,
+  level: 1,
+  streak: 0,
+  hearts: 5,
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [isLoading, setIsLoading] = useState(true)
+  const [authBanner, setAuthBanner] = useState<string | null>(null)
   const router = useRouter()
 
   useEffect(() => {
@@ -46,6 +58,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const checkAuthOnLoad = async () => {
     try {
+      if (typeof window !== 'undefined' && BETA_OPEN_ACCESS) {
+        const userData = localStorage.getItem('user')
+        const token = localStorage.getItem('token')
+        if (userData && token) {
+          try {
+            const parsed = JSON.parse(userData) as User
+            setUser(parsed)
+          } catch {
+            setUser(BETA_GUEST_USER)
+            localStorage.setItem('user', JSON.stringify(BETA_GUEST_USER))
+          }
+        } else {
+          setUser(BETA_GUEST_USER)
+          localStorage.setItem('user', JSON.stringify(BETA_GUEST_USER))
+        }
+        setIsLoading(false)
+        return
+      }
       if (typeof window !== 'undefined') {
         const token = localStorage.getItem('token')
         const userData = localStorage.getItem('user')
@@ -89,12 +119,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   const validateToken = async (token: string): Promise<boolean> => {
+    if (BETA_OPEN_ACCESS) return true
     try {
       const response = await fetch('/api/auth/validate', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
       })
+      if (response.status === 401) {
+        if (typeof window !== 'undefined') {
+          localStorage.removeItem('token')
+          localStorage.removeItem('user')
+          setUser(null)
+          setAuthBanner('Session expired — please log in again.')
+          setTimeout(() => {
+            setAuthBanner(null)
+            router.push('/login')
+          }, 3200)
+        }
+        return false
+      }
       return response.ok
     } catch (error) {
       console.error('Token validation failed:', error)
@@ -138,6 +182,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           localStorage.setItem('token', data.token)
           localStorage.setItem('user', JSON.stringify(data.user))
         }
+        setAuthBanner(null)
         setUser(data.user)
         return { success: true }
       } else {
@@ -165,6 +210,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           localStorage.setItem('token', data.token)
           localStorage.setItem('user', JSON.stringify(data.user))
         }
+        setAuthBanner(null)
         setUser(data.user)
         return { success: true }
       } else {
@@ -209,6 +255,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   return (
     <AuthContext.Provider value={value}>
+      {authBanner ? (
+        <div
+          role="alert"
+          className="fixed top-0 left-0 right-0 z-[100] bg-amber-100 text-amber-900 text-center py-3 px-4 text-sm font-medium border-b border-amber-200"
+        >
+          {authBanner}
+        </div>
+      ) : null}
       {children}
     </AuthContext.Provider>
   )
@@ -226,6 +280,10 @@ export function useAuth() {
 export function ProtectedRoute({ children }: { children: ReactNode }) {
   const { isAuthenticated, isLoading, checkAuth } = useAuth()
   const router = useRouter()
+
+  if (BETA_OPEN_ACCESS) {
+    return <>{children}</>
+  }
   const [authChecked, setAuthChecked] = useState(false)
 
   useEffect(() => {

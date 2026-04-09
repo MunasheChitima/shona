@@ -5,6 +5,8 @@ import { FaTrophy, FaFire, FaStar, FaBook, FaEdit, FaSave, FaTimes } from 'react
 import { motion } from 'framer-motion'
 import LoadingSpinner from '../../components/LoadingSpinner'
 import ErrorBoundary from '../../components/ErrorBoundary'
+import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
+import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 const FLASHCARD_PRACTICE_KEY = 'flashcard_practice_v1'
 
@@ -116,15 +118,16 @@ export default function Profile() {
       setEditedName(userData.name ?? '')
 
       const token = typeof window !== 'undefined' ? localStorage.getItem('token') : ''
-      if (!token) {
+      if (!token && !BETA_OPEN_ACCESS) {
         setIsLoading(false)
         return
       }
 
+      const headers = { ...apiAuthHeaders() }
       const [progressRes, pathRes, lessonsRes] = await Promise.all([
-        fetch('/api/progress', { headers: { Authorization: `Bearer ${token}` } }),
-        fetch('/api/learning-path/progress?slug=core', { headers: { Authorization: `Bearer ${token}` } }),
-        fetch('/api/lessons', { headers: { Authorization: `Bearer ${token}` } }),
+        fetch('/api/progress', { headers }),
+        fetch('/api/learning-path/progress?slug=core', { headers }),
+        fetch('/api/lessons', { headers }),
       ])
 
       let progressData: { completed?: boolean; lessonId: string }[] = []

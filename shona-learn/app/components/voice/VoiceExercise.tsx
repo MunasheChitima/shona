@@ -41,8 +41,14 @@ export default function VoiceExercise({ exercise, onComplete }: VoiceExercisePro
             <PronunciationPractice
               word={word.shona}
               translation={word.english}
-              phonetic={word.phonetic}
+              phonetic={word.phonetic || word.pronunciation || ''}
               tonePattern={word.tonePattern}
+              toneHint={word.toneHint}
+              englishAnchor={word.englishAnchor}
+              soundGuideLinks={word.soundGuideLinks}
+              commonMistakeWarning={word.commonMistakeWarning}
+              pronounceDifficulty={word.pronounceDifficulty}
+              audioFile={word.audioFile}
               onComplete={handleStepComplete}
             />
           )

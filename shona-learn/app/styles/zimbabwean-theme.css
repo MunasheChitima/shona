@@ -205,6 +205,10 @@
   --gradient-green: linear-gradient(135deg, #009739 0%, #4ade80 100%);
   --gradient-flag: linear-gradient(135deg, #009739 0%, #fce300 25%, #ef3340 50%, #000000 75%, #ffffff 100%);
   --gradient-zimbabwe: linear-gradient(135deg, #009739 0%, #fce300 50%, #ef3340 100%);
+  /* Hero: rich deep Zimbabwean green — readable with white text everywhere */
+  --gradient-hero: linear-gradient(160deg, #002d12 0%, #005c2d 45%, #009739 100%);
+  /* App surface: warm earth cream to soft green — replaces generic mint-blue on inner pages */
+  --gradient-surface: linear-gradient(135deg, #faf7f2 0%, #f0fdf4 100%);
 }
 
 /* Base Styles */
@@ -279,6 +283,8 @@ body {
 .bg-gradient-green { background: var(--gradient-green); }
 .bg-gradient-flag { background: var(--gradient-flag); }
 .bg-gradient-zimbabwe { background: var(--gradient-zimbabwe); }
+.bg-gradient-hero { background: var(--gradient-hero); }
+.bg-app-surface { background: var(--gradient-surface); }
 
 /* Zimbabwean Flag Color Utilities */
 .text-flag-green { color: #009739; }

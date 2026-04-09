@@ -1,0 +1,35 @@
+{
+  "description": "Maps consolidated lesson categories (Unit 1: First Words …) to LEARNING_EXPERIENCE_ARCHITECTURE.md stages. Category keys must match lessons_consolidated.json and prisma Unit.lessonId.",
+  "stages": [
+    {
+      "stageOrder": 1,
+      "architectureLabel": "Foundation",
+      "categories": ["Unit 1: First Words", "Unit 2: People Around You", "Unit 3: Numbers & Time"]
+    },
+    {
+      "stageOrder": 2,
+      "architectureLabel": "Connection",
+      "categories": ["Unit 4: Daily Life", "Unit 5: Getting Around"]
+    },
+    {
+      "stageOrder": 3,
+      "architectureLabel": "Expression",
+      "categories": ["Unit 6: Doing Things", "Unit 7: Expressing Yourself"]
+    },
+    {
+      "stageOrder": 4,
+      "architectureLabel": "Conversation",
+      "categories": ["Unit 8: Culture & Traditions", "Unit 9: Nature & Environment"]
+    },
+    {
+      "stageOrder": 5,
+      "architectureLabel": "Culture",
+      "categories": ["Unit 10: Modern Life", "Unit 11: Society & Governance"]
+    },
+    {
+      "stageOrder": 6,
+      "architectureLabel": "Mastery",
+      "categories": ["Unit 12: Complex Communication", "Unit 13: Deeper Culture"]
+    }
+  ]
+}

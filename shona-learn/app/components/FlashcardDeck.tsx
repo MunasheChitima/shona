@@ -1,8 +1,15 @@
 'use client'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { FaArrowLeft, FaArrowRight, FaRandom, FaBookOpen, FaLightbulb, FaGlobeAfrica, FaPlay, FaPause } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import LoadingSpinner from './LoadingSpinner'
+import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
+import { apiAuthHeaders } from '@/lib/api-auth-headers'
+
+function soundGuideHash(token: string) {
+  return `sound-${encodeURIComponent(token.replace(/[^a-z0-9]/gi, '-'))}`
+}
 
 interface Flashcard {
   id: string
@@ -11,6 +18,9 @@ interface Flashcard {
   pronunciation: string
   englishAnchor?: string
   pronounceDifficulty?: string
+  soundGuideLinks?: string[]
+  tonePattern?: string
+  toneHint?: string
   category: string
   level?: string
   lessonId?: string
@@ -29,6 +39,24 @@ interface Flashcard {
 interface FlashcardDeckProps {
   category?: string
   limit?: number
+}
+
+const FLASHCARD_PRACTICE_KEY = 'flashcard_practice_v1'
+
+function recordFlashcardPractice(category: string | undefined, cardId: string) {
+  if (typeof window === 'undefined' || !category || !cardId) return
+  try {
+    const raw = localStorage.getItem(FLASHCARD_PRACTICE_KEY)
+    const map: Record<string, string[]> = raw ? JSON.parse(raw) : {}
+    if (!Array.isArray(map[category])) map[category] = []
+    if (!map[category].includes(cardId)) {
+      map[category].push(cardId)
+      localStorage.setItem(FLASHCARD_PRACTICE_KEY, JSON.stringify(map))
+      window.dispatchEvent(new Event('flashcard-practice'))
+    }
+  } catch {
+    /* ignore */
+  }
 }
 
 export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckProps) {
@@ -66,29 +94,25 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
       if (typeof window !== 'undefined') {
         token = localStorage.getItem('token')
       }
-      // Only try API if we have a token
-      if (token) {
+      // Load from static file first — it has the correct Unit-based categories
+      try {
+        const staticResponse = await fetch('/flashcards.json')
+        const staticData = await staticResponse.json()
+        data = staticData.flashcards || []
+      } catch (staticError) {
+        console.error('Failed to load static flashcards:', staticError)
+      }
+      // If static file yielded nothing, try API as fallback
+      if (data.length === 0 && (token || BETA_OPEN_ACCESS)) {
         try {
           const response = await fetch('/api/vocabulary', {
-            headers: {
-              'Authorization': `Bearer ${token}`
-            }
+            headers: { ...apiAuthHeaders() },
           })
           if (response.ok) {
             data = await response.json()
           }
         } catch (apiError) {
-          console.log('API call failed, using static data fallback')
-        }
-      }
-      // If no data from API (or no token), fallback to static data
-      if (data.length === 0) {
-        try {
-          const staticResponse = await fetch('/flashcards.json')
-          const staticData = await staticResponse.json()
-          data = staticData.flashcards || []
-        } catch (staticError) {
-          console.error('Failed to load static flashcards:', staticError)
+          console.log('API call also failed')
         }
       }
       let filteredCards = data
@@ -112,6 +136,13 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
       setIsLoading(false)
     }
   }
+
+  useEffect(() => {
+    const card = flashcards[currentIndex]
+    if (card?.id && category) {
+      recordFlashcardPractice(category, card.id)
+    }
+  }, [currentIndex, category, flashcards])
 
   const playAudio = async (audioFile?: string) => {
     if (typeof window === 'undefined') return
@@ -359,6 +390,25 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
                          currentCard.pronounceDifficulty === 'medium' ? 'New sound combos' :
                          'Uniquely Shona sounds'}
                       </span>
+                    )}
+                    {currentCard.tonePattern && currentCard.toneHint && (
+                      <p className="text-accent-gold-800 text-xs mt-3 max-w-md mx-auto leading-relaxed">
+                        <span className="font-semibold">Tone {currentCard.tonePattern}: </span>
+                        {currentCard.toneHint}
+                      </p>
+                    )}
+                    {currentCard.soundGuideLinks && currentCard.soundGuideLinks.length > 0 && (
+                      <div className="mt-4 flex flex-wrap justify-center gap-2">
+                        {currentCard.soundGuideLinks.map((s) => (
+                          <Link
+                            key={s}
+                            href={`/sound-guide#${soundGuideHash(s)}`}
+                            className="text-xs rounded-full bg-white/80 px-3 py-1 font-medium text-accent-gold-900 ring-1 ring-accent-gold-300 hover:bg-accent-gold-50"
+                          >
+                            Sound Guide: {s}
+                          </Link>
+                        ))}
+                      </div>
                     )}
                   </div>
                 </div>

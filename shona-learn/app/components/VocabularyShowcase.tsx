@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react'
 import { FaSearch, FaPlay, FaBook, FaGlobe } from 'react-icons/fa'
 import LoadingSpinner from './LoadingSpinner'
+import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
+import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 interface VocabularyWord {
   id: string
@@ -34,16 +36,14 @@ export default function VocabularyShowcase() {
   const fetchVocabulary = async () => {
     try {
       const token = localStorage.getItem('token')
-      if (!token) {
+      if (!token && !BETA_OPEN_ACCESS) {
         setError('Please log in to view vocabulary')
         setLoading(false)
         return
       }
 
       const response = await fetch('/api/vocabulary', {
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
+        headers: { ...apiAuthHeaders() },
       })
 
       if (!response.ok) {

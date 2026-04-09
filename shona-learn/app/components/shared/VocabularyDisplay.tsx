@@ -13,6 +13,10 @@ interface VocabularyItem {
   phonetic?: string
   syllables?: string
   tonePattern?: string
+  toneHint?: string
+  englishAnchor?: string
+  pronounceDifficulty?: string
+  soundGuideLinks?: string[]
   audioFile?: string
   usage?: string
   example?: string
@@ -113,15 +117,35 @@ function VocabularyCard({
         <div className="flex-1">
           <PronunciationText
             word={item.shona}
-            pronunciation={item.pronunciation}
+            pronunciation={item.pronunciation || item.shona}
             phonetic={item.phonetic}
             syllables={item.syllables}
             tonePattern={item.tonePattern}
+            toneHint={item.toneHint}
+            englishAnchor={item.englishAnchor}
+            soundGuideLinks={item.soundGuideLinks}
             audioFile={item.audioFile}
             size="medium"
             showDetails={false}
           />
           <p className="text-lg text-gray-600 mt-2">{item.english}</p>
+          {item.pronounceDifficulty && (
+            <span
+              className={`inline-block mt-1 px-2 py-0.5 rounded-full text-xs font-medium ${
+                item.pronounceDifficulty === 'easy'
+                  ? 'bg-green-100 text-green-800'
+                  : item.pronounceDifficulty === 'medium'
+                    ? 'bg-amber-100 text-amber-900'
+                    : 'bg-red-100 text-red-800'
+              }`}
+            >
+              {item.pronounceDifficulty === 'easy'
+                ? 'Familiar sounds'
+                : item.pronounceDifficulty === 'medium'
+                  ? 'New sound combos'
+                  : 'Uniquely Shona sounds'}
+            </span>
+          )}
         </div>
         
         <button

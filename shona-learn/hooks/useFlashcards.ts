@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { audioService } from '@/lib/services/AudioService'
 import { enhanceFlashcard } from '@/lib/flashcard-utils'
+import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
+import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 export interface Flashcard {
   id: string
@@ -49,13 +51,11 @@ export function useFlashcards({ category, limit = 10 }: UseFlashcardsOptions) {
         token = localStorage.getItem('token')
       }
       
-      // Try API first if we have a token
-      if (token) {
+      // Try API first if we have a token (or open beta anonymous API access)
+      if (token || BETA_OPEN_ACCESS) {
         try {
           const response = await fetch('/api/vocabulary', {
-            headers: {
-              'Authorization': `Bearer ${token}`
-            }
+            headers: { ...apiAuthHeaders() },
           })
           if (response.ok) {
             data = await response.json()

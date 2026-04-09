@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
+import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 interface PaginationInfo {
   page: number
@@ -43,9 +44,7 @@ export function usePaginatedLessons(initialLimit: number = 10): UsePaginatedLess
       if (search) params.append('search', search)
 
       const res = await fetch(`/api/lessons?${params}`, {
-        headers: {
-          'Authorization': `Bearer ${localStorage.getItem('token')}`
-        }
+        headers: { ...apiAuthHeaders() },
       })
 
       if (!res.ok) {

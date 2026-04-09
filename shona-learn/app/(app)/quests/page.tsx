@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { FaMap, FaCompass, FaStar, FaBookOpen } from 'react-icons/fa'
 import { quests, getQuestsByLevel, Quest } from '../../../lib/quests'
+import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 
 export default function Quests() {
   const router = useRouter()
@@ -15,10 +16,12 @@ export default function Quests() {
   useEffect(() => {
     const userData = localStorage.getItem('user')
     if (!userData) {
-      router.push('/login')
-      return
+      if (!BETA_OPEN_ACCESS) {
+        router.push('/login')
+        return
+      }
     }
-    const userObj = JSON.parse(userData)
+    const userObj = userData ? JSON.parse(userData) : { name: 'Beta tester', xp: 0 }
     setUser(userObj)
     const level = Math.floor(userObj.xp / 100) + 1
     setUserLevel(level)

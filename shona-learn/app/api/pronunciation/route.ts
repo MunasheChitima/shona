@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createMuturikiriAI } from '@/lib/pronunciation-analysis';
-import { writeFile } from 'fs/promises';
+import { writeFile, unlink } from 'fs/promises';
 import { join } from 'path';
 import { tmpdir } from 'os';
 
@@ -62,9 +62,9 @@ export async function POST(request: NextRequest) {
 
     // Clean up temporary file
     try {
-      await writeFile(tempFilePath, ''); // Clear the file
+      await unlink(tempFilePath);
     } catch (cleanupError) {
-      console.warn('Failed to cleanup temporary audio file:', cleanupError);
+      console.warn('Failed to delete temporary audio file:', cleanupError);
     }
 
     // Return analysis result

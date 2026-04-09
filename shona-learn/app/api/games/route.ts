@@ -1,23 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { PrismaClient } from '@prisma/client'
+import { verifyAuth } from '@/lib/auth-server'
 
 const prisma = new PrismaClient()
-
-const verifyAuth = async (request: NextRequest) => {
-  const token = request.headers.get('Authorization')?.replace('Bearer ', '')
-  if (!token) return null
-  
-  try {
-    // In a real app, you'd verify the JWT token here
-    // For now, we'll use a simple approach
-    const user = await prisma.user.findFirst({
-      where: { email: 'test@example.com' } // This would be extracted from token
-    })
-    return user?.id
-  } catch (error) {
-    return null
-  }
-}
 
 export async function POST(request: NextRequest) {
   try {
