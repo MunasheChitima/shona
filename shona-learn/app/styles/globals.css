@@ -19,7 +19,6 @@
   --gradient-primary: var(--gradient-sunrise);
   --gradient-secondary: var(--gradient-earth);
   --gradient-accent: var(--gradient-gold);
-  --gradient-hero: var(--gradient-sunrise);
   --shadow-soft: var(--shadow-md);
   --shadow-medium: var(--shadow-lg);
   --shadow-large: var(--shadow-xl);
@@ -33,7 +32,7 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -192,7 +191,7 @@ html {
 }
 
 .interactive-card:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-large);
 }
 
@@ -253,4 +252,41 @@ html {
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
+}
+
+/* Marketing landing — layered mesh over hero gradient (flag colours, subtle) */
+.landing-hero-mesh {
+  background:
+    radial-gradient(ellipse 90% 55% at 15% 20%, rgba(252, 227, 0, 0.14), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 92% 18%, rgba(239, 51, 64, 0.1), transparent 50%),
+    radial-gradient(ellipse 60% 45% at 75% 88%, rgba(13, 138, 237, 0.08), transparent 55%),
+    var(--gradient-hero);
+}
+
+@keyframes landing-shimmer-line {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+}
+
+.landing-shimmer-accent::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.12) 45%,
+    transparent 70%
+  );
+  animation: landing-shimmer-line 7s ease-in-out infinite;
+  pointer-events: none;
 }
