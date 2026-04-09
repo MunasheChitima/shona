@@ -1,6 +1,3 @@
-'use client'
-
-import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 const FEATURES = [
@@ -49,21 +46,6 @@ const STEPS = [
 ] as const
 
 export default function Home() {
-  const [user, setUser] = useState<{ name: string } | null>(null)
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-    try {
-      const raw = localStorage.getItem('user')
-      if (raw) setUser(JSON.parse(raw))
-    } catch {
-      setUser(null)
-    }
-  }, [])
-
-  const firstName = user?.name?.trim().split(/\s+/)[0]
-
   return (
     <div className="min-h-screen text-white">
       {/* Background */}
@@ -84,34 +66,12 @@ export default function Home() {
             </span>
           </Link>
           <nav className="flex items-center gap-2 sm:gap-3" aria-label="Primary">
-            {mounted && user ? (
-              <>
-                <span className="hidden text-sm text-white/70 sm:inline">
-                  Mhoro{firstName ? `, ${firstName}` : ''}
-                </span>
-                <Link
-                  href="/learn"
-                  className="rounded-full bg-[#fce300] px-4 py-2 text-sm font-bold text-[#001f0d] shadow-lg shadow-black/20 transition hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Continue
-                </Link>
-              </>
-            ) : (
-              <>
-                <Link
-                  href="/login"
-                  className="rounded-full px-3 py-2 text-sm font-semibold text-white/90 transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Sign in
-                </Link>
-                <Link
-                  href="/register"
-                  className="rounded-full bg-[#fce300] px-4 py-2 text-sm font-bold text-[#001f0d] shadow-lg shadow-black/20 transition hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Start free
-                </Link>
-              </>
-            )}
+            <Link
+              href="/learn"
+              className="rounded-full bg-[#fce300] px-4 py-2 text-sm font-bold text-[#001f0d] shadow-lg shadow-black/20 transition hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Start learning
+            </Link>
           </nav>
         </div>
       </header>
@@ -148,29 +108,12 @@ export default function Home() {
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-                  {mounted && user ? (
-                    <Link
-                      href="/learn"
-                      className="inline-flex items-center justify-center rounded-2xl bg-[#fce300] px-8 py-4 text-base font-bold text-[#001f0d] shadow-xl shadow-black/25 transition hover:-translate-y-0.5 hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                    >
-                      Pick up where you left off →
-                    </Link>
-                  ) : (
-                    <>
-                      <Link
-                        href="/register"
-                        className="inline-flex items-center justify-center rounded-2xl bg-[#fce300] px-8 py-4 text-base font-bold text-[#001f0d] shadow-xl shadow-black/25 transition hover:-translate-y-0.5 hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                      >
-                        Start learning — free
-                      </Link>
-                      <Link
-                        href="/login"
-                        className="inline-flex items-center justify-center rounded-2xl border border-white/25 bg-white/5 px-8 py-4 text-base font-semibold text-white backdrop-blur-sm transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                      >
-                        I already have an account
-                      </Link>
-                    </>
-                  )}
+                  <Link
+                    href="/learn"
+                    className="inline-flex items-center justify-center rounded-2xl bg-[#fce300] px-8 py-4 text-base font-bold text-[#001f0d] shadow-xl shadow-black/25 transition hover:-translate-y-0.5 hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                  >
+                    Start learning — free
+                  </Link>
                 </div>
 
                 <p className="mt-6 text-sm text-white/55">
@@ -323,32 +266,14 @@ export default function Home() {
             <p className="mt-4 text-lg text-white/90">
               Start with one greeting. Let the sound of Shona feel familiar again — or for the first time, on purpose.
             </p>
-            {!user && (
-              <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                <Link
-                  href="/register"
-                  className="inline-flex items-center justify-center rounded-2xl bg-[#fce300] px-10 py-4 text-base font-bold text-[#001f0d] shadow-xl shadow-black/20 transition hover:-translate-y-0.5 hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Create free account
-                </Link>
-                <Link
-                  href="/login"
-                  className="inline-flex items-center justify-center rounded-2xl border border-white/35 bg-white/10 px-10 py-4 text-base font-semibold backdrop-blur-sm transition hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Sign in instead
-                </Link>
-              </div>
-            )}
-            {mounted && user && (
-              <div className="mt-10">
-                <Link
-                  href="/learn"
-                  className="inline-flex items-center justify-center rounded-2xl bg-[#fce300] px-10 py-4 text-base font-bold text-[#001f0d] shadow-xl shadow-black/20 transition hover:-translate-y-0.5 hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Go to your lessons →
-                </Link>
-              </div>
-            )}
+            <div className="mt-10">
+              <Link
+                href="/learn"
+                className="inline-flex items-center justify-center rounded-2xl bg-[#fce300] px-10 py-4 text-base font-bold text-[#001f0d] shadow-xl shadow-black/20 transition hover:-translate-y-0.5 hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Jump in and start learning
+              </Link>
+            </div>
           </div>
         </section>
       </main>
@@ -361,17 +286,15 @@ export default function Home() {
             ChiShona chinoshamisa — beautiful Shona.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link href="/register" className="font-medium text-white/80 hover:text-[#fce300]">
-              Register
+            <Link href="/learn" className="font-medium text-white/80 hover:text-[#fce300]">
+              Learn
             </Link>
-            <Link href="/login" className="font-medium text-white/80 hover:text-[#fce300]">
-              Sign in
+            <Link href="/flashcards" className="font-medium text-white/80 hover:text-[#fce300]">
+              Flashcards
             </Link>
-            {mounted && user && (
-              <Link href="/learn" className="font-medium text-white/80 hover:text-[#fce300]">
-                Learn
-              </Link>
-            )}
+            <Link href="/games" className="font-medium text-white/80 hover:text-[#fce300]">
+              Games
+            </Link>
           </div>
         </div>
       </footer>

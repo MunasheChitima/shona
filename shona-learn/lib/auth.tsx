@@ -276,75 +276,7 @@ export function useAuth() {
   return context
 }
 
-// Protected route component with better error handling
+// Protected route component — open beta bypasses auth entirely
 export function ProtectedRoute({ children }: { children: ReactNode }) {
-  const { isAuthenticated, isLoading, checkAuth } = useAuth()
-  const router = useRouter()
-
-  if (BETA_OPEN_ACCESS) {
-    return <>{children}</>
-  }
-  const [authChecked, setAuthChecked] = useState(false)
-
-  useEffect(() => {
-    // Force completion after 3 seconds to prevent infinite loading
-    const forceComplete = setTimeout(() => {
-      setAuthChecked(true)
-    }, 3000)
-    
-    return () => clearTimeout(forceComplete)
-  }, [])
-
-  if (isLoading && !authChecked) {
-    return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-green-500 mx-auto mb-4"></div>
-          <p className="text-gray-600">Checking authentication...</p>
-        </div>
-      </div>
-    )
-  }
-
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
-        <div className="flex items-center justify-center min-h-screen p-4">
-          <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md text-center">
-            <div className="mb-6">
-              <div className="text-6xl mb-4">🔒</div>
-              <h1 className="text-2xl font-bold text-gray-800 mb-2">Authentication Required</h1>
-              <p className="text-gray-600 mb-6">
-                Please sign in or create an account to access the Shona learning lessons.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <button
-                onClick={() => router.push('/login')}
-                className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105"
-              >
-                Sign In
-              </button>
-              <button
-                onClick={() => router.push('/register')}
-                className="w-full bg-white border-2 border-green-500 text-green-600 hover:bg-green-50 font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105"
-              >
-                Create Account
-              </button>
-            </div>
-            <div className="mt-6">
-              <button
-                onClick={() => router.push('/')}
-                className="text-green-600 hover:text-green-700 font-medium hover:underline transition-colors"
-              >
-                ← Back to Home
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
   return <>{children}</>
 } 

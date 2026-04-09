@@ -3,20 +3,10 @@ import { useRouter, usePathname } from 'next/navigation'
 import { FaHome, FaBook, FaUser, FaClone, FaHeadphones, FaMicrophone, FaWaveSquare } from 'react-icons/fa'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useAuth } from '@/lib/auth'
-import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
-
 export default function Navigation() {
   const router = useRouter()
   const pathname = usePathname()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
-  const { user, logout } = useAuth()
-
-  const handleLogout = () => {
-    logout()
-    router.push(BETA_OPEN_ACCESS ? '/' : '/login')
-  }
 
   const navItems = [
     { href: '/', icon: FaHome, label: 'Home', ariaLabel: 'Go to home page' },
@@ -71,45 +61,11 @@ export default function Navigation() {
 
           {/* User Menu */}
           <div className="flex items-center space-x-4">
-            {BETA_OPEN_ACCESS ? (
-              <div className="text-sm text-gray-600">
-                <span className="font-medium">{user?.name ?? 'Beta tester'}</span>
-                <span className="ml-2 rounded-full bg-amber-100 text-amber-900 px-2 py-0.5 text-xs font-medium">
-                  Open beta
-                </span>
-              </div>
-            ) : user ? (
-              <div className="flex items-center space-x-3">
-                <div className="text-sm text-gray-600">
-                  <span className="font-medium">{user.name}</span>
-                  <span className="ml-2">Level {Math.floor((user.xp || 0) / 100) + 1}</span>
-                </div>
-                <button
-                  onClick={handleLogout}
-                  className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-xl text-sm font-medium transition-colors"
-                  aria-label="Logout from account"
-                >
-                  Logout
-                </button>
-              </div>
-            ) : (
-              <div className="flex items-center space-x-2">
-                <button
-                  onClick={() => router.push('/login')}
-                  className="px-4 py-2 text-gray-600 hover:text-gray-800 font-medium transition-colors"
-                  aria-label="Go to login page"
-                >
-                  Login
-                </button>
-                <button
-                  onClick={() => router.push('/register')}
-                  className="px-4 py-2 bg-gradient-zimbabwe text-white rounded-xl font-medium transition-all duration-200 hover:shadow-medium"
-                  aria-label="Go to registration page"
-                >
-                  Sign Up
-                </button>
-              </div>
-            )}
+            <div className="text-sm text-gray-600">
+              <span className="rounded-full bg-amber-100 text-amber-900 px-2 py-0.5 text-xs font-medium">
+                Open beta
+              </span>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
