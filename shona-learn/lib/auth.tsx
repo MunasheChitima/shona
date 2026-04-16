@@ -36,6 +36,12 @@ const BETA_GUEST_USER: User = {
   hearts: 5,
 }
 
+interface BetaIdentity {
+  email: string
+  password: string
+  name: string
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
   const [isLoading, setIsLoading] = useState(true)
@@ -56,6 +62,80 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => clearTimeout(fallbackTimeout)
   }, [isLoading])
 
+  const getOrCreateBetaIdentity = (): BetaIdentity | null => {
+    if (typeof window === 'undefined') return null
+    const key = 'betaIdentity'
+    const existing = localStorage.getItem(key)
+    if (existing) {
+      try {
+        const parsed = JSON.parse(existing) as BetaIdentity
+        if (parsed.email && parsed.password && parsed.name) return parsed
+      } catch {
+        // fall through to regenerate identity
+      }
+    }
+
+    const id = `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`
+    const identity: BetaIdentity = {
+      email: `beta+${id}@shona-learn.local`,
+      password: `beta-${id}`,
+      name: `Beta Tester ${id.slice(-4)}`
+    }
+    localStorage.setItem(key, JSON.stringify(identity))
+    return identity
+  }
+
+  const ensureBetaSession = async (): Promise<User | null> => {
+    if (typeof window === 'undefined') return null
+    const identity = getOrCreateBetaIdentity()
+    if (!identity) return null
+
+    const payload = {
+      email: identity.email,
+      password: identity.password
+    }
+
+    try {
+      const loginRes = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+
+      if (loginRes.ok) {
+        const loginData = await loginRes.json()
+        localStorage.setItem('token', loginData.token)
+        localStorage.setItem('user', JSON.stringify(loginData.user))
+        return loginData.user as User
+      }
+    } catch {
+      // If login fails, try registration flow.
+    }
+
+    try {
+      const registerRes = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: identity.name,
+          email: identity.email,
+          password: identity.password
+        })
+      })
+
+      if (registerRes.ok) {
+        const registerData = await registerRes.json()
+        localStorage.setItem('token', registerData.token)
+        localStorage.setItem('user', JSON.stringify(registerData.user))
+        return registerData.user as User
+      }
+    } catch {
+      // Fall back to guest user below.
+    }
+
+    return null
+  }
+
   const checkAuthOnLoad = async () => {
     try {
       if (typeof window !== 'undefined' && BETA_OPEN_ACCESS) {
@@ -66,12 +146,22 @@ export function AuthProvider({ children }: { children: ReactNode }) {
             const parsed = JSON.parse(userData) as User
             setUser(parsed)
           } catch {
+            const betaUser = await ensureBetaSession()
+            if (betaUser) {
+              setUser(betaUser)
+            } else {
+              setUser(BETA_GUEST_USER)
+              localStorage.setItem('user', JSON.stringify(BETA_GUEST_USER))
+            }
+          }
+        } else {
+          const betaUser = await ensureBetaSession()
+          if (betaUser) {
+            setUser(betaUser)
+          } else {
             setUser(BETA_GUEST_USER)
             localStorage.setItem('user', JSON.stringify(BETA_GUEST_USER))
           }
-        } else {
-          setUser(BETA_GUEST_USER)
-          localStorage.setItem('user', JSON.stringify(BETA_GUEST_USER))
         }
         setIsLoading(false)
         return
