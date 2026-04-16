@@ -16,7 +16,6 @@ export async function POST(request: NextRequest) {
     // Calculate XP based on game type and difficulty
     const gameXPMap: Record<string, number> = {
       'memory-match': 20,
-      'rhythm-tones': 30,
       'story-complete': 25,
       'cultural-quiz': 35,
       'word-builder': 40
