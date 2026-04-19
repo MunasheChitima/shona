@@ -339,6 +339,15 @@ final class Flashcard {
     var nextReviewDate: Date
     var repetitionCount: Int
     var easeFactor: Double
+    var pronunciation: String?
+    var phonetic: String?
+    var tonePattern: String?
+    var context: String?
+    var srsProgress: SRSProgress?
+    
+    // Computed properties for compatibility
+    var shonaText: String { front }
+    var englishText: String { back }
     
     init(id: String = UUID().uuidString,
          category: String,
@@ -353,7 +362,11 @@ final class Flashcard {
          lastReviewed: Date? = nil,
          nextReviewDate: Date = Date(),
          repetitionCount: Int = 0,
-         easeFactor: Double = 2.5) {
+         easeFactor: Double = 2.5,
+         pronunciation: String? = nil,
+         phonetic: String? = nil,
+         tonePattern: String? = nil,
+         context: String? = nil) {
         self.id = id
         self.category = category
         self.front = front
@@ -368,6 +381,11 @@ final class Flashcard {
         self.nextReviewDate = nextReviewDate
         self.repetitionCount = repetitionCount
         self.easeFactor = easeFactor
+        self.pronunciation = pronunciation
+        self.phonetic = phonetic
+        self.tonePattern = tonePattern
+        self.context = context
+        self.srsProgress = nil
     }
 }
 
