@@ -1,13 +1,16 @@
 import { NextResponse } from 'next/server'
 import { verifyAuth } from '@/lib/auth-server'
+import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 import fs from 'fs'
 import path from 'path'
 
 export async function GET(request: Request) {
   try {
-    const userId = await verifyAuth(request)
-    if (!userId) {
-      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    if (!BETA_OPEN_ACCESS) {
+      const userId = await verifyAuth(request)
+      if (!userId) {
+        return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+      }
     }
     
     // Get query parameters for pagination
