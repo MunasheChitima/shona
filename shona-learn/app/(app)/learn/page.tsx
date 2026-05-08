@@ -244,8 +244,8 @@ function LearnContent() {
     try {
       const token = getToken()
       if (!token && !BETA_OPEN_ACCESS) return
-
-      const res = await fetch('/api/lessons', {
+      const endpoint = !token && BETA_OPEN_ACCESS ? '/api/lessons/public' : '/api/lessons'
+      const res = await fetch(endpoint, {
         headers: { ...apiAuthHeaders() },
       })
 
