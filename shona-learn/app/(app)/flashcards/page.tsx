@@ -1,29 +1,41 @@
 'use client'
 import React, { useState, useEffect, Suspense, useMemo } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
+import useSWR from 'swr'
 import FlashcardDeck from '../../components/FlashcardDeck'
 import ErrorBoundary from '../../components/ErrorBoundary'
 import { FaArrowLeft, FaLock } from 'react-icons/fa'
 import LoadingSpinner from '../../components/LoadingSpinner'
 import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
-import { apiAuthHeaders } from '@/lib/api-auth-headers'
+
+// SWR keys — kept identical to /learn /quests /profile so cross-page
+// navigation reuses the in-memory cache.
+const PROGRESS_KEY = '/api/progress'
+const LESSONS_KEY = '/api/lessons'
+const FLASHCARDS_META_KEY = '/flashcards.json'
+
+const flashcardsFetcher = async (url: string) => {
+  const r = await fetch(url)
+  if (!r.ok) throw new Error('failed')
+  return r.json()
+}
 
 const FLASHCARD_PRACTICE_KEY = 'flashcard_practice_v1'
 
 const categories = [
-  { id: 'Unit 1: First Words', name: 'First Words', level: 'beginner', color: 'from-green-400 to-green-600' },
-  { id: 'Unit 2: People Around You', name: 'People', level: 'beginner', color: 'from-pink-400 to-pink-600' },
-  { id: 'Unit 3: Numbers & Time', name: 'Numbers & Time', level: 'beginner', color: 'from-purple-400 to-purple-600' },
-  { id: 'Unit 4: Daily Life', name: 'Daily Life', level: 'beginner', color: 'from-yellow-400 to-yellow-600' },
-  { id: 'Unit 5: Getting Around', name: 'Getting Around', level: 'beginner', color: 'from-cyan-400 to-cyan-600' },
-  { id: 'Unit 6: Doing Things', name: 'Doing Things', level: 'beginner', color: 'from-red-400 to-red-600' },
-  { id: 'Unit 7: Expressing Yourself', name: 'Expressing Yourself', level: 'intermediate', color: 'from-indigo-400 to-indigo-600' },
-  { id: 'Unit 8: Culture & Traditions', name: 'Culture', level: 'intermediate', color: 'from-emerald-400 to-emerald-600' },
-  { id: 'Unit 9: Nature & Environment', name: 'Nature', level: 'intermediate', color: 'from-teal-400 to-teal-600' },
-  { id: 'Unit 10: Modern Life', name: 'Modern Life', level: 'intermediate', color: 'from-sky-400 to-sky-600' },
-  { id: 'Unit 11: Society & Governance', name: 'Society', level: 'advanced', color: 'from-red-500 to-red-700' },
-  { id: 'Unit 12: Complex Communication', name: 'Complex Shona', level: 'advanced', color: 'from-violet-500 to-violet-700' },
-  { id: 'Unit 13: Deeper Culture', name: 'Deep Culture', level: 'advanced', color: 'from-amber-500 to-amber-700' },
+  { id: 'Unit 1: First Words', name: 'first words', level: 'beginner', color: 'from-green-400 to-green-600' },
+  { id: 'Unit 2: People Around You', name: 'people', level: 'beginner', color: 'from-pink-400 to-pink-600' },
+  { id: 'Unit 3: Numbers & Time', name: 'numbers & time', level: 'beginner', color: 'from-purple-400 to-purple-600' },
+  { id: 'Unit 4: Daily Life', name: 'daily life', level: 'beginner', color: 'from-yellow-400 to-yellow-600' },
+  { id: 'Unit 5: Getting Around', name: 'getting around', level: 'beginner', color: 'from-cyan-400 to-cyan-600' },
+  { id: 'Unit 6: Doing Things', name: 'doing things', level: 'beginner', color: 'from-red-400 to-red-600' },
+  { id: 'Unit 7: Expressing Yourself', name: 'expressing yourself', level: 'intermediate', color: 'from-indigo-400 to-indigo-600' },
+  { id: 'Unit 8: Culture & Traditions', name: 'culture', level: 'intermediate', color: 'from-emerald-400 to-emerald-600' },
+  { id: 'Unit 9: Nature & Environment', name: 'nature', level: 'intermediate', color: 'from-teal-400 to-teal-600' },
+  { id: 'Unit 10: Modern Life', name: 'modern life', level: 'intermediate', color: 'from-sky-400 to-sky-600' },
+  { id: 'Unit 11: Society & Governance', name: 'society', level: 'advanced', color: 'from-red-500 to-red-700' },
+  { id: 'Unit 12: Complex Communication', name: 'complex shona', level: 'advanced', color: 'from-violet-500 to-violet-700' },
+  { id: 'Unit 13: Deeper Culture', name: 'deep culture', level: 'advanced', color: 'from-amber-500 to-amber-700' },
 ]
 
 function readPracticeIds(categoryId: string): number {
@@ -43,12 +55,7 @@ function FlashcardsInner() {
   const searchParams = useSearchParams()
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
   const [user, setUser] = useState<any>(null)
-  const [isLoading, setIsLoading] = useState(true)
-  const [unlockAll, setUnlockAll] = useState(false)
-  const [unlockedByLesson, setUnlockedByLesson] = useState<Set<string>>(() => new Set())
-  const [cardTotals, setCardTotals] = useState<Record<string, number>>({})
   const [practiceRev, setPracticeRev] = useState(0)
-  const [gatingReady, setGatingReady] = useState(false)
 
   useEffect(() => {
     const cat = searchParams.get('category')
@@ -58,82 +65,62 @@ function FlashcardsInner() {
   }, [searchParams])
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const userData = localStorage.getItem('user')
-      if (userData) {
-        try {
-          setUser(JSON.parse(userData))
-        } catch (error) {
-          console.error('Error parsing user data:', error)
-          setUser({ name: 'Beta tester', xp: 0 })
-        }
-      } else {
+    if (typeof window === 'undefined') return
+    const userData = localStorage.getItem('user')
+    if (userData) {
+      try {
+        setUser(JSON.parse(userData))
+      } catch {
         setUser({ name: 'Beta tester', xp: 0 })
       }
+    } else {
+      setUser({ name: 'Beta tester', xp: 0 })
     }
-    setIsLoading(false)
   }, [])
 
-  useEffect(() => {
-    const loadMeta = async () => {
-      try {
-        const res = await fetch('/flashcards.json')
-        if (!res.ok) return
-        const data = await res.json()
-        const cards = data.flashcards || []
-        const totals: Record<string, number> = {}
-        for (const c of cards) {
-          const cat = c.category
-          if (!cat) continue
-          totals[cat] = (totals[cat] || 0) + 1
-        }
-        setCardTotals(totals)
-      } catch {
-        /* ignore */
-      }
-    }
-    loadMeta()
-  }, [])
+  // /flashcards.json is a static asset, so it deserves its own fetcher
+  // (the default SWR fetcher adds `credentials: 'include'` which is
+  // unnecessary for public assets).
+  const { data: flashMeta } = useSWR<{ flashcards?: Array<{ category?: string }> }>(
+    FLASHCARDS_META_KEY,
+    flashcardsFetcher
+  )
 
-  useEffect(() => {
-    const loadGating = async () => {
-      try {
-        const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null
-        if (!token && !BETA_OPEN_ACCESS) {
-          setUnlockAll(true)
-          return
-        }
-        const headers = { ...apiAuthHeaders() }
-        const [progRes, lessRes] = await Promise.all([
-          fetch('/api/progress', { headers }),
-          fetch('/api/lessons', { headers }),
-        ])
-        if (!progRes.ok || !lessRes.ok) {
-          setUnlockAll(true)
-          return
-        }
-        const progress = await progRes.json()
-        const completedLessonIds = new Set(
-          progress.filter((p: { completed?: boolean; lessonId?: string }) => p.completed).map((p: { lessonId: string }) => p.lessonId)
-        )
-        const lessData = await lessRes.json()
-        const lessons = lessData.lessons || []
-        const unlocked = new Set<string>()
-        for (const lesson of lessons) {
-          if (lesson?.category && completedLessonIds.has(lesson.id)) {
-            unlocked.add(lesson.category)
-          }
-        }
-        setUnlockedByLesson(unlocked)
-        setUnlockAll(false)
-      } catch {
-        setUnlockAll(true)
-      } finally {
-        setGatingReady(true)
+  // These two share SWR keys with /learn, /profile, /quests so the data
+  // is already in cache by the time the user clicks here.
+  const hasToken = typeof window !== 'undefined' && !!localStorage.getItem('token')
+  const shouldGate = hasToken || !BETA_OPEN_ACCESS
+  const { data: progressData, error: progressErr, isLoading: progressLoading } = useSWR<Array<{ lessonId?: string; completed?: boolean }>>(
+    shouldGate ? PROGRESS_KEY : null
+  )
+  const { data: lessonsResp, error: lessonsErr, isLoading: lessonsLoading } = useSWR<{ lessons?: Array<{ id?: string; category?: string }> }>(
+    shouldGate ? LESSONS_KEY : null
+  )
+
+  const cardTotals = useMemo<Record<string, number>>(() => {
+    const totals: Record<string, number> = {}
+    for (const c of flashMeta?.flashcards || []) {
+      if (!c?.category) continue
+      totals[c.category] = (totals[c.category] || 0) + 1
+    }
+    return totals
+  }, [flashMeta])
+
+  const gatingReady = !shouldGate || (!progressLoading && !lessonsLoading)
+  // If either gating fetch failed, fall back to unlock-all so the page
+  // is still usable (matches the previous try/catch behavior).
+  const unlockAll = !shouldGate || !!progressErr || !!lessonsErr
+  const unlockedByLesson = useMemo<Set<string>>(() => {
+    const s = new Set<string>()
+    if (unlockAll) return s
+    const completedIds = new Set((progressData || []).filter((p) => p?.completed).map((p) => p.lessonId))
+    for (const lesson of lessonsResp?.lessons || []) {
+      if (lesson?.category && lesson?.id && completedIds.has(lesson.id)) {
+        s.add(lesson.category)
       }
     }
-    loadGating()
-  }, [])
+    return s
+  }, [unlockAll, progressData, lessonsResp])
 
   useEffect(() => {
     if (!gatingReady || unlockAll) return
@@ -156,8 +143,8 @@ function FlashcardsInner() {
 
   void practiceRev
 
-  if (isLoading) {
-    return <LoadingSpinner fullScreen message="Loading flashcards..." />
+  if (user === null) {
+    return <LoadingSpinner fullScreen message="loading flashcards..." />
   }
 
   const renderCategoryCard = (category: (typeof categories)[0]) => {
@@ -174,46 +161,37 @@ function FlashcardsInner() {
         type="button"
         disabled={!unlocked}
         onClick={() => unlocked && setSelectedCategory(category.id)}
-        className={`rounded-2xl p-5 shadow-soft border text-left transition-all duration-300 relative
-          ${unlocked ? 'bg-white/80 backdrop-blur-sm border-white/20 hover:shadow-large hover:-translate-y-1' : 'bg-gray-100/90 border-gray-200 opacity-75 cursor-not-allowed'}
+        className={`rounded-2xl p-6 border text-left transition-colors relative
+          ${unlocked ? 'bg-white/80 backdrop-blur border-stone-200 hover:border-stone-300' : 'bg-stone-50 border-stone-200 opacity-60 cursor-not-allowed'}
         `}
       >
-        <div className={`w-full h-2 rounded-full bg-gradient-to-r ${category.color} mb-3 ${!unlocked ? 'opacity-40' : ''}`} />
         <div className="flex items-start justify-between gap-2">
-          <h3 className="text-lg font-semibold text-gray-800">{category.name}</h3>
-          {!unlocked ? <FaLock className="text-gray-400 mt-1 flex-shrink-0" aria-hidden /> : null}
+          <h3 className="text-lg font-medium tracking-tight text-stone-900 lowercase">{category.name}</h3>
+          {!unlocked ? <FaLock className="text-stone-400 mt-1 flex-shrink-0 w-3 h-3" aria-hidden /> : null}
           {unlocked && isNew ? (
-            <span className="text-xs font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">New!</span>
+            <span className="text-xs font-medium bg-stone-100 text-stone-700 px-2 py-0.5 rounded-full lowercase">new</span>
           ) : null}
         </div>
-        <p
-          className={`text-sm font-medium mt-1 ${
-            category.level === 'beginner'
-              ? 'text-green-600'
-              : category.level === 'intermediate'
-                ? 'text-blue-600'
-                : 'text-red-600'
-          }`}
-        >
-          {category.level.charAt(0).toUpperCase() + category.level.slice(1)}
+        <p className="text-sm font-medium mt-1 text-stone-500 lowercase">
+          {category.level}
         </p>
         {total > 0 ? (
-          <div className="mt-3">
-            <div className="flex justify-between text-xs text-gray-600 mb-1">
-              <span>
+          <div className="mt-4">
+            <div className="flex justify-between text-xs text-stone-500 mb-1.5">
+              <span className="lowercase">
                 {practicedDisplay}/{total} cards practiced
               </span>
-              <span>{pct}%</span>
+              <span className="tabular-nums">{pct}%</span>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-1.5">
+            <div className="w-full bg-stone-100 rounded-full h-1">
               <div
-                className={`h-1.5 rounded-full bg-gradient-to-r ${category.color} transition-all duration-500`}
+                className="h-1 rounded-full bg-emerald-600 transition-all duration-500"
                 style={{ width: `${pct}%` }}
               />
             </div>
           </div>
         ) : (
-          <p className="mt-2 text-xs text-gray-500">Loading deck size…</p>
+          <p className="mt-3 text-xs text-stone-400 lowercase">loading deck size…</p>
         )}
       </button>
     )
@@ -222,30 +200,28 @@ function FlashcardsInner() {
   return (
     <ErrorBoundary>
       <div className="min-h-screen bg-[#fffdf7]">
-        <div className="container mx-auto px-4 py-8">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Shona Flashcards</h1>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Practice Shona vocabulary with interactive flashcards. Tap to flip, listen to pronunciation, and master the language!
-            </p>
+        <div className="container mx-auto px-6 py-12 max-w-5xl">
+          <div className="mb-12">
+            <h1 className="text-3xl md:text-4xl font-medium tracking-tight text-stone-900 lowercase">flashcards</h1>
+            <p className="mt-2 text-stone-500 text-sm">tap to flip. tap a deck to start.</p>
           </div>
 
           {!selectedCategory ? (
-            <div className="max-w-4xl mx-auto space-y-8">
+            <div className="space-y-12">
               <section>
-                <h2 className="text-2xl font-bold text-gray-800 mb-4">Beginner</h2>
+                <h2 className="text-xl md:text-2xl font-medium tracking-tight text-stone-900 mb-5 lowercase">beginner</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {categories.filter((c) => c.level === 'beginner').map(renderCategoryCard)}
                 </div>
               </section>
               <section>
-                <h2 className="text-2xl font-bold text-gray-800 mb-4">Intermediate</h2>
+                <h2 className="text-xl md:text-2xl font-medium tracking-tight text-stone-900 mb-5 lowercase">intermediate</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {categories.filter((c) => c.level === 'intermediate').map(renderCategoryCard)}
                 </div>
               </section>
               <section>
-                <h2 className="text-2xl font-bold text-gray-800 mb-4">Advanced</h2>
+                <h2 className="text-xl md:text-2xl font-medium tracking-tight text-stone-900 mb-5 lowercase">advanced</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {categories.filter((c) => c.level === 'advanced').map(renderCategoryCard)}
                 </div>
@@ -253,21 +229,21 @@ function FlashcardsInner() {
             </div>
           ) : (
             <div>
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center justify-between mb-8">
                 <button
                   type="button"
                   onClick={() => {
                     setSelectedCategory(null)
                     router.push('/flashcards', { scroll: false })
                   }}
-                  className="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-stone-700 hover:text-stone-900 transition-colors lowercase"
                 >
-                  <FaArrowLeft />
-                  <span>Back to Categories</span>
+                  <FaArrowLeft className="w-3 h-3" />
+                  <span>back to categories</span>
                 </button>
 
-                <h2 className="text-2xl font-bold text-gray-800">
-                  {categories.find((c) => c.id === selectedCategory)?.name} Flashcards
+                <h2 className="text-xl md:text-2xl font-medium tracking-tight text-stone-900 lowercase">
+                  {categories.find((c) => c.id === selectedCategory)?.name}
                 </h2>
               </div>
 
@@ -282,7 +258,7 @@ function FlashcardsInner() {
 
 export default function Flashcards() {
   return (
-    <Suspense fallback={<LoadingSpinner fullScreen message="Loading flashcards..." />}>
+    <Suspense fallback={<LoadingSpinner fullScreen message="loading flashcards..." />}>
       <FlashcardsInner />
     </Suspense>
   )

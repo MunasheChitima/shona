@@ -2,8 +2,16 @@ import './styles/globals.css'
 import { Inter } from 'next/font/google'
 import { AuthProvider } from '../lib/auth'
 import ErrorBoundary from './components/ErrorBoundary'
+import SWRProvider from './components/SWRProvider'
+import ServiceWorker from './components/ServiceWorker'
 
-const inter = Inter({ subsets: ['latin'] })
+// `display: 'swap'` avoids FOIT (Flash of Invisible Text); the variable
+// is consumed by tailwind.config.js so `font-sans` resolves to Inter.
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
 
 export const metadata = {
   title: 'Shona — The language of home',
@@ -17,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -32,8 +40,11 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ErrorBoundary>
-          <AuthProvider>{children}</AuthProvider>
+          <SWRProvider>
+            <AuthProvider>{children}</AuthProvider>
+          </SWRProvider>
         </ErrorBoundary>
+        <ServiceWorker />
       </body>
     </html>
   )

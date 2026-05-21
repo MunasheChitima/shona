@@ -1,17 +1,20 @@
 'use client'
 import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { FaMap, FaCompass, FaStar, FaBookOpen } from 'react-icons/fa'
+import useSWR from 'swr'
 import { quests, getQuestsByLevel, Quest } from '../../../lib/quests'
+
+// IMPORTANT: this key is intentionally identical to the one the /learn
+// page uses so SWR de-dupes the network call across pages. The first page
+// to mount fetches; subsequent pages hit the cache and render instantly.
+const LESSONS_MANIFEST_KEY = '/api/lessons/public?manifest=1&limit=100'
+const PROGRESS_KEY = '/api/progress'
 
 export default function Quests() {
   const router = useRouter()
   const [user, setUser] = useState<any>(null)
   const [userLevel, setUserLevel] = useState(1)
   const [selectedQuest, setSelectedQuest] = useState<Quest | null>(null)
-  const [lessonTitleMap, setLessonTitleMap] = useState<Record<string, string>>({})
-  const [totalLessons, setTotalLessons] = useState<number | null>(null)
-  const [progressLessons, setProgressLessons] = useState<Set<string>>(() => new Set())
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -24,50 +27,34 @@ export default function Quests() {
     }
   }, [])
 
-  useEffect(() => {
-    let cancelled = false
-    ;(async () => {
-      try {
-        const res = await fetch('/api/lessons/public?limit=100')
-        if (!res.ok) return
-        const data = await res.json()
-        if (cancelled) return
-        const lessons: Array<{ id?: string; title?: string }> = data.lessons || []
-        const map: Record<string, string> = {}
-        for (const l of lessons) {
-          if (l?.id && l?.title) map[l.id] = l.title
-        }
-        setLessonTitleMap(map)
-        if (typeof data?.totalLessons === 'number') {
-          setTotalLessons(data.totalLessons)
-        } else {
-          setTotalLessons(lessons.length || null)
-        }
-      } catch {
-        /* ignore */
-      }
-    })()
-    return () => {
-      cancelled = true
-    }
-  }, [])
+  // Lessons manifest (just id/title/etc) — shared with /learn page.
+  const { data: lessonsData } = useSWR<{ lessons?: Array<{ id?: string; title?: string }>; totalLessons?: number }>(
+    LESSONS_MANIFEST_KEY
+  )
+  // Progress list — shared with /learn and /profile.
+  const { data: progressData } = useSWR<Array<{ lessonId?: string; completed?: boolean }>>(PROGRESS_KEY)
 
-  useEffect(() => {
-    ;(async () => {
-      try {
-        const res = await fetch('/api/progress')
-        if (!res.ok) return
-        const data = await res.json()
-        const ids = new Set<string>()
-        for (const p of data || []) {
-          if (p?.completed && p?.lessonId) ids.add(p.lessonId)
-        }
-        setProgressLessons(ids)
-      } catch {
-        /* ignore */
-      }
-    })()
-  }, [])
+  const lessonTitleMap = useMemo(() => {
+    const map: Record<string, string> = {}
+    for (const l of lessonsData?.lessons || []) {
+      if (l?.id && l?.title) map[l.id] = l.title
+    }
+    return map
+  }, [lessonsData])
+
+  const totalLessons = useMemo(() => {
+    if (typeof lessonsData?.totalLessons === 'number') return lessonsData.totalLessons
+    if (Array.isArray(lessonsData?.lessons)) return lessonsData!.lessons!.length
+    return null
+  }, [lessonsData])
+
+  const progressLessons = useMemo(() => {
+    const s = new Set<string>()
+    for (const p of progressData || []) {
+      if (p?.completed && p?.lessonId) s.add(p.lessonId)
+    }
+    return s
+  }, [progressData])
 
   const completedQuestIds = useMemo(() => {
     const result: string[] = []
@@ -85,24 +72,6 @@ export default function Quests() {
     router.push(`/learn?quest=${quest.id}`)
   }
 
-  const getLevelColor = (level: string) => {
-    switch (level) {
-      case 'beginner': return 'from-green-400 to-green-600'
-      case 'intermediate': return 'from-blue-400 to-blue-600'
-      case 'advanced': return 'from-red-500 to-red-700'
-      default: return 'from-gray-400 to-gray-600'
-    }
-  }
-
-  const getLevelBadgeColor = (level: string) => {
-    switch (level) {
-      case 'beginner': return 'bg-green-100 text-green-700'
-      case 'intermediate': return 'bg-blue-100 text-blue-700'
-      case 'advanced': return 'bg-red-100 text-red-700'
-      default: return 'bg-gray-100 text-gray-700'
-    }
-  }
-
   if (!user) return null
 
   const beginnerQuests = availableQuests.filter(q => q.level === 'beginner')
@@ -112,14 +81,14 @@ export default function Quests() {
   const renderQuestGroup = (title: string, groupQuests: Quest[], level: string) => {
     if (groupQuests.length === 0) return null
     return (
-      <div className="mb-10">
-        <div className="flex items-center space-x-3 mb-4">
-          <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
-          <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getLevelBadgeColor(level)}`}>
+      <div className="mb-12">
+        <div className="flex items-center gap-3 mb-5">
+          <h2 className="text-xl md:text-2xl font-medium tracking-tight text-stone-900 lowercase">{title}</h2>
+          <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-stone-100 text-stone-600 lowercase">
             {level}
           </span>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {groupQuests.map((quest) => {
             const isCompleted = completedQuestIds.includes(quest.id)
             const isAvailable = quest.requiredLevel <= userLevel
@@ -127,56 +96,51 @@ export default function Quests() {
             return (
               <div
                 key={quest.id}
-                className={`relative group cursor-pointer ${isCompleted ? 'opacity-75' : ''}`}
+                className={`relative cursor-pointer rounded-2xl border bg-white/80 backdrop-blur p-6 transition-colors ${
+                  isCompleted
+                    ? 'border-emerald-600 opacity-90'
+                    : isAvailable
+                      ? 'border-stone-200 hover:border-stone-300'
+                      : 'border-stone-200 opacity-60'
+                }`}
                 onClick={() => setSelectedQuest(quest)}
               >
-                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-amber-100/40 hover:shadow-large transition-all duration-300 h-full">
-                  <div className="absolute top-4 right-4">
-                    {isCompleted ? (
-                      <div className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                        <FaStar className="inline mr-1" /> Completed
-                      </div>
-                    ) : isAvailable ? (
-                      <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                        <FaCompass className="inline mr-1" /> Available
-                      </div>
-                    ) : (
-                      <div className="bg-gray-400 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                        Level {quest.requiredLevel}
-                      </div>
-                    )}
-                  </div>
-
-                  <div className={`w-14 h-14 rounded-2xl flex items-center justify-center bg-gradient-to-r ${getLevelColor(quest.level)} mb-4`}>
-                    <span className="text-2xl">{quest.emoji}</span>
-                  </div>
-
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{quest.title}</h3>
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">{quest.description}</p>
-
-                  <div className="flex items-center text-xs text-gray-500 mb-4">
-                    <FaBookOpen className="mr-2" />
-                    {quest.lessons.length} lessons
-                  </div>
-
-                  {isAvailable && !isCompleted && (
-                    <button
-                      className={`w-full bg-gradient-to-r ${getLevelColor(quest.level)} text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 hover:scale-105`}
-                      onClick={(e: React.MouseEvent) => {
-                        e.stopPropagation()
-                        handleStartQuest(quest)
-                      }}
-                    >
-                      Begin Quest
-                    </button>
-                  )}
-
-                  {isCompleted && (
-                    <div className="w-full bg-green-100 text-green-700 font-semibold py-3 px-4 rounded-xl text-center">
-                      Completed!
-                    </div>
+                <div className="flex items-start justify-between mb-4">
+                  <span className="text-3xl">{quest.emoji}</span>
+                  {isCompleted ? (
+                    <span className="text-xs font-medium text-emerald-700 lowercase">completed</span>
+                  ) : isAvailable ? (
+                    <span className="text-xs font-medium text-stone-500 lowercase">available</span>
+                  ) : (
+                    <span className="text-xs font-medium text-stone-400 lowercase">level {quest.requiredLevel}</span>
                   )}
                 </div>
+
+                <h3 className="text-lg font-medium tracking-tight text-stone-900 mb-2 lowercase">{quest.title}</h3>
+                <p className="text-stone-700 mb-4 text-sm leading-relaxed">{quest.description}</p>
+
+                <div className="text-xs text-stone-500 mb-4 lowercase">
+                  {quest.lessons.length} lessons
+                </div>
+
+                {isAvailable && !isCompleted && (
+                  <button
+                    type="button"
+                    className="w-full bg-stone-900 text-white font-medium py-2.5 px-4 rounded-full hover:bg-stone-800 transition-colors lowercase"
+                    onClick={(e: React.MouseEvent) => {
+                      e.stopPropagation()
+                      handleStartQuest(quest)
+                    }}
+                  >
+                    begin quest
+                  </button>
+                )}
+
+                {isCompleted && (
+                  <div className="w-full bg-emerald-50 text-emerald-700 font-medium py-2.5 px-4 rounded-full text-center lowercase">
+                    completed
+                  </div>
+                )}
               </div>
             )
           })}
@@ -187,97 +151,90 @@ export default function Quests() {
 
   return (
     <div className="min-h-screen bg-[#fffdf7]">
-      <div className="container mx-auto px-4 py-8">
-        <div className="mb-8">
-          <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-amber-100/40">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="p-3 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl">
-                <FaMap className="text-white text-2xl" />
-              </div>
-              <div>
-                <h1 className="text-3xl font-bold text-gray-800">Your Learning Journey</h1>
-                <p className="text-gray-600">{quests.length} units across beginner, intermediate, and advanced levels</p>
-              </div>
-            </div>
+      <div className="container mx-auto px-6 py-12 max-w-5xl">
+        <div className="mb-12">
+          <h1 className="text-3xl md:text-4xl font-medium tracking-tight text-stone-900 lowercase">your journey</h1>
+          <p className="mt-2 text-stone-500 text-sm lowercase">{quests.length} units across beginner, intermediate, and advanced levels</p>
 
-            <div className="grid md:grid-cols-3 gap-4">
-              <div className="text-center p-4 bg-gradient-to-r from-green-100 to-green-200 rounded-xl">
-                <div className="text-2xl font-bold text-green-700">{userLevel}</div>
-                <div className="text-sm text-green-600">Current Level</div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-r from-emerald-100 to-emerald-200 rounded-xl">
-                <div className="text-2xl font-bold text-emerald-700">{completedQuestIds.length}/{quests.length}</div>
-                <div className="text-sm text-emerald-600">Units Completed</div>
-              </div>
-              <div className="text-center p-4 bg-gradient-to-r from-amber-100 to-amber-200 rounded-xl">
-                <div className="text-2xl font-bold text-amber-700">
-                  {totalLessons === null ? <span className="inline-block w-8 h-6 bg-amber-200 rounded animate-pulse" /> : totalLessons}
-                </div>
-                <div className="text-sm text-amber-700">Total Lessons</div>
-              </div>
+          <div className="mt-8 grid md:grid-cols-3 gap-4">
+            <div className="rounded-2xl border border-stone-200 bg-white/80 backdrop-blur p-6">
+              <p className="text-3xl font-medium tracking-tight text-stone-900 tabular-nums">{userLevel}</p>
+              <p className="mt-1 text-sm text-stone-500 lowercase">current level</p>
+            </div>
+            <div className="rounded-2xl border border-stone-200 bg-white/80 backdrop-blur p-6">
+              <p className="text-3xl font-medium tracking-tight text-stone-900 tabular-nums">
+                {completedQuestIds.length}<span className="text-stone-400">/{quests.length}</span>
+              </p>
+              <p className="mt-1 text-sm text-stone-500 lowercase">units completed</p>
+            </div>
+            <div className="rounded-2xl border border-stone-200 bg-white/80 backdrop-blur p-6">
+              <p className="text-3xl font-medium tracking-tight text-stone-900 tabular-nums">
+                {totalLessons === null ? <span className="inline-block w-8 h-7 bg-stone-100 rounded animate-pulse" /> : totalLessons}
+              </p>
+              <p className="mt-1 text-sm text-stone-500 lowercase">total lessons</p>
             </div>
           </div>
         </div>
 
-        {renderQuestGroup('Beginner', beginnerQuests, 'beginner')}
-        {renderQuestGroup('Intermediate', intermediateQuests, 'intermediate')}
-        {renderQuestGroup('Advanced', advancedQuests, 'advanced')}
+        {renderQuestGroup('beginner', beginnerQuests, 'beginner')}
+        {renderQuestGroup('intermediate', intermediateQuests, 'intermediate')}
+        {renderQuestGroup('advanced', advancedQuests, 'advanced')}
 
         {selectedQuest && (
           <div
-            className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
+            className="fixed inset-0 bg-stone-900/50 backdrop-blur-sm flex items-center justify-center p-4 z-50"
             onClick={() => setSelectedQuest(null)}
           >
             <div
-              className="bg-white rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+              className="bg-white rounded-2xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-stone-200"
               onClick={(e: React.MouseEvent) => e.stopPropagation()}
             >
               <div className="flex justify-between items-start mb-6">
-                <div className="flex items-center space-x-3">
-                  <span className="text-4xl">{selectedQuest.emoji}</span>
+                <div className="flex items-center gap-3">
+                  <span className="text-3xl">{selectedQuest.emoji}</span>
                   <div>
-                    <h2 className="text-2xl font-bold text-gray-800">{selectedQuest.title}</h2>
-                    <span className={`inline-block mt-1 px-3 py-1 rounded-full text-xs font-semibold ${getLevelBadgeColor(selectedQuest.level)}`}>
+                    <h2 className="text-xl md:text-2xl font-medium tracking-tight text-stone-900 lowercase">{selectedQuest.title}</h2>
+                    <span className="inline-block mt-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-stone-100 text-stone-600 lowercase">
                       {selectedQuest.level}
                     </span>
                   </div>
                 </div>
                 <button
                   onClick={() => setSelectedQuest(null)}
-                  className="text-gray-400 hover:text-gray-600 text-2xl"
-                  aria-label="Close quest details"
+                  className="text-stone-400 hover:text-stone-700 text-2xl"
+                  aria-label="close quest details"
                 >
                   &times;
                 </button>
               </div>
 
-              <div className="bg-gradient-to-r from-emerald-50 to-amber-50 rounded-2xl p-6 mb-6">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">The Story</h3>
-                <p className="text-gray-700 leading-relaxed">{selectedQuest.storyNarrative}</p>
+              <div className="rounded-2xl border border-stone-200 bg-[#fffdf7] p-6 mb-6">
+                <h3 className="text-xs font-medium uppercase tracking-wider text-stone-500 mb-3">the story</h3>
+                <p className="text-stone-700 leading-relaxed">{selectedQuest.storyNarrative}</p>
               </div>
 
               <div className="mb-6">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">What You&apos;ll Learn</h3>
+                <h3 className="text-xs font-medium uppercase tracking-wider text-stone-500 mb-3">what you&apos;ll learn</h3>
                 <ul className="space-y-2">
                   {selectedQuest.learningObjectives.map((objective, index) => (
-                    <li key={index} className="flex items-start">
-                      <FaStar className="text-yellow-500 mt-1 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700">{objective}</span>
+                    <li key={index} className="flex items-start text-stone-700">
+                      <span className="text-emerald-600 mt-1 mr-3 flex-shrink-0">·</span>
+                      <span>{objective}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div className="mb-6">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">
-                  {selectedQuest.lessons.length} Lessons
+                <h3 className="text-xs font-medium uppercase tracking-wider text-stone-500 mb-3">
+                  {selectedQuest.lessons.length} lessons
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {selectedQuest.lessons.map((lessonId) => {
                     const title = lessonTitleMap[lessonId]
-                    const label = title || 'Lesson'
+                    const label = title || 'lesson'
                     return (
-                      <span key={lessonId} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+                      <span key={lessonId} className="px-3 py-1 bg-stone-100 text-stone-700 rounded-full text-sm lowercase">
                         {label}
                       </span>
                     )
@@ -285,20 +242,22 @@ export default function Quests() {
                 </div>
               </div>
 
-              <div className="flex space-x-4">
+              <div className="flex gap-3">
                 {selectedQuest.requiredLevel <= userLevel && !completedQuestIds.includes(selectedQuest.id) && (
                   <button
-                    className={`flex-1 bg-gradient-to-r ${getLevelColor(selectedQuest.level)} text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105`}
+                    type="button"
+                    className="flex-1 bg-stone-900 text-white font-medium py-3 px-6 rounded-full hover:bg-stone-800 transition-colors lowercase"
                     onClick={() => handleStartQuest(selectedQuest)}
                   >
-                    Begin Quest
+                    begin quest
                   </button>
                 )}
                 <button
-                  className="px-6 py-3 border border-gray-300 text-gray-700 rounded-xl hover:bg-gray-50 transition-colors"
+                  type="button"
+                  className="px-6 py-3 text-stone-700 hover:text-stone-900 rounded-full transition-colors lowercase"
                   onClick={() => setSelectedQuest(null)}
                 >
-                  Close
+                  close
                 </button>
               </div>
             </div>

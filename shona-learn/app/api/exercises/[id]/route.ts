@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { verifyAuth } from '@/lib/auth-server'
-import fs from 'fs'
+import { promises as fsp } from 'fs'
 import path from 'path'
 
 export async function GET(
@@ -17,11 +17,14 @@ export async function GET(
 
     const lessonsPath = path.join(process.cwd(), 'content', 'lessons_consolidated.json')
 
-    if (!fs.existsSync(lessonsPath)) {
+    let raw: string
+    try {
+      raw = await fsp.readFile(lessonsPath, 'utf8')
+    } catch {
       return NextResponse.json({ error: 'Lessons file not found' }, { status: 404 })
     }
 
-    const lessonsData = JSON.parse(fs.readFileSync(lessonsPath, 'utf8'))
+    const lessonsData = JSON.parse(raw)
     const lessons = lessonsData.lessons || []
 
     const lesson = lessons.find((l: any) => l.id === id)

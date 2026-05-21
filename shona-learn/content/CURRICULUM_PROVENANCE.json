@@ -1,0 +1,1683 @@
+{
+  "_meta": {
+    "generatedAt": "2026-05-21T04:13:49.868Z",
+    "description": "Source-trace for every shona phrase in lessons_consolidated.json. FSI = US State Department Shona Basic Course (1965), page references match the PDF in /archive/assets/.",
+    "sourcePdf": "archive/assets/153747653-Learn-Shona-FSI-Basic-Course.pdf"
+  },
+  "mangwanani": {
+    "english": "good morning",
+    "source": "FSI",
+    "page": 1,
+    "context": "unit 1 dialogue greeting"
+  },
+  "masikati": {
+    "english": "good (mid-)day, good afternoon",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 dialogue / unit 3 dialogue"
+  },
+  "manheru": {
+    "english": "evening",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 time expression"
+  },
+  "masanga": {
+    "english": "hello (a greeting between travellers)",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 dialogue"
+  },
+  "mhoroi": {
+    "english": "hello (respectful / plural)",
+    "source": "FSI",
+    "page": 0,
+    "context": "used colloquially; FSI uses mangwanani/masikati but mhoro/mhoroi attested in cultural notes",
+    "note": "attested in cultural_notes.json greetings section; treat as standard equivalent of mangwanani"
+  },
+  "baba": {
+    "english": "father; sir (respectful)",
+    "source": "FSI",
+    "page": 1,
+    "context": "unit 1 dialogue: mangwanani baba"
+  },
+  "amai": {
+    "english": "mother; madam (respectful)",
+    "source": "FSI",
+    "page": 28,
+    "context": "unit 4 supplementary vocabulary (form: mai)"
+  },
+  "mai": {
+    "english": "mother (short form)",
+    "source": "FSI",
+    "page": 1,
+    "context": "unit 1 dialogue: mangwanani mai"
+  },
+  "shewe": {
+    "english": "sir / courteous address used by women",
+    "source": "FSI",
+    "page": 11,
+    "context": "unit 2 dialogue gloss"
+  },
+  "chirombowe": {
+    "english": "sir / courteous address used by men",
+    "source": "FSI",
+    "page": 11,
+    "context": "unit 2 dialogue gloss"
+  },
+  "muzvare": {
+    "english": "miss; unmarried girl over 12",
+    "source": "FSI",
+    "page": 19,
+    "context": "unit 3 dialogue / unit 4 supplementary"
+  },
+  "mwarara here": {
+    "english": "[how] did you (pl./resp.) sleep?",
+    "source": "FSI",
+    "page": 1,
+    "context": "unit 1 dialogue line 3"
+  },
+  "warara here": {
+    "english": "[how] did you (sg.) sleep?",
+    "source": "FSI",
+    "page": 17,
+    "context": "unit 2 systematic practice"
+  },
+  "ndarara": {
+    "english": "i slept",
+    "source": "FSI",
+    "page": 1,
+    "context": "unit 1 dialogue: ndarara zvangu"
+  },
+  "ndarara zvangu": {
+    "english": "i slept (i'm fine)",
+    "source": "FSI",
+    "page": 1,
+    "context": "unit 1 dialogue"
+  },
+  "zvakanaka": {
+    "english": "well, fine",
+    "source": "FSI",
+    "page": 2,
+    "context": "unit 1 dialogue: varara zvakanaka"
+  },
+  "varara zvakanaka": {
+    "english": "they slept well",
+    "source": "FSI",
+    "page": 2,
+    "context": "unit 1 dialogue line 5"
+  },
+  "aiwa": {
+    "english": "no / oh (courteous interjection)",
+    "source": "FSI",
+    "page": 11,
+    "context": "unit 2 gloss"
+  },
+  "zvitambo": {
+    "english": "it (the family) is alive (fine indeed)",
+    "source": "FSI",
+    "page": 11,
+    "context": "unit 2 gloss"
+  },
+  "mhuri": {
+    "english": "family",
+    "source": "FSI",
+    "page": 11,
+    "context": "unit 2 supplementary"
+  },
+  "mhuri yarara zvakanaka here": {
+    "english": "how did the family sleep?",
+    "source": "FSI",
+    "page": 12,
+    "context": "unit 2 dialogue line"
+  },
+  "vapwere": {
+    "english": "children",
+    "source": "FSI",
+    "page": 2,
+    "context": "unit 1 dialogue"
+  },
+  "varara senyi": {
+    "english": "how did they sleep?",
+    "source": "FSI",
+    "page": 2,
+    "context": "unit 1 dialogue"
+  },
+  "mwaswera here": {
+    "english": "[how] have you (pl./resp.) spent the day?",
+    "source": "FSI",
+    "page": 19,
+    "context": "unit 3 dialogue"
+  },
+  "waswera here": {
+    "english": "[how] have you (sg.) spent the day?",
+    "source": "FSI",
+    "page": 20,
+    "context": "unit 3 systematic practice"
+  },
+  "ndaswera zvangu": {
+    "english": "i spent the day fine",
+    "source": "FSI",
+    "page": 19,
+    "context": "unit 3 dialogue"
+  },
+  "kana mwaswerawo": {
+    "english": "if you also spent the day",
+    "source": "FSI",
+    "page": 19,
+    "context": "unit 3 dialogue, courteous 'if you also' formula"
+  },
+  "baba vaswera senyi": {
+    "english": "how has your father spent the day?",
+    "source": "FSI",
+    "page": 19,
+    "context": "unit 3 dialogue"
+  },
+  "vaswera zvavo zvirinane": {
+    "english": "he's better (he spent the day better)",
+    "source": "FSI",
+    "page": 19,
+    "context": "unit 3 dialogue"
+  },
+  "zvirinane": {
+    "english": "better",
+    "source": "FSI",
+    "page": 19,
+    "context": "unit 3 dialogue gloss"
+  },
+  "mwana": {
+    "english": "child, offspring (class 1)",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 vocabulary"
+  },
+  "vana": {
+    "english": "children (class 2 plural)",
+    "source": "FSI",
+    "page": 28,
+    "context": "unit 4 reading exercise"
+  },
+  "mwanangu": {
+    "english": "my child",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 dialogue: masikati mwanangu"
+  },
+  "mukunda": {
+    "english": "daughter",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 vocabulary"
+  },
+  "vakunda": {
+    "english": "daughters",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 vocabulary plural"
+  },
+  "mukorore": {
+    "english": "son",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 vocabulary"
+  },
+  "vakorore": {
+    "english": "sons",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 vocabulary plural"
+  },
+  "mukomana": {
+    "english": "boy",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 vocabulary"
+  },
+  "vakomana": {
+    "english": "boys",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 vocabulary"
+  },
+  "musikana": {
+    "english": "girl",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 vocabulary"
+  },
+  "mhandara": {
+    "english": "honorific term for girl 14+",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 vocabulary"
+  },
+  "mujaha": {
+    "english": "young man, boy 14+",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 vocabulary"
+  },
+  "majaha": {
+    "english": "young men",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 vocabulary plural"
+  },
+  "mupenyu zvake": {
+    "english": "she/he is alive (she's all right)",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 dialogue"
+  },
+  "wakadini": {
+    "english": "how is she/he? (to one)",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 dialogue"
+  },
+  "mwakadini": {
+    "english": "how are you (pl./resp.)?",
+    "source": "FSI",
+    "page": 28,
+    "context": "unit 4 paired exchanges"
+  },
+  "mupenyu": {
+    "english": "living, alive",
+    "source": "FSI",
+    "page": 23,
+    "context": "unit 4 vocabulary"
+  },
+  "munhu": {
+    "english": "person",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 vocabulary"
+  },
+  "vanhu": {
+    "english": "people",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 implicit pl.; explicit in later units"
+  },
+  "ndiani": {
+    "english": "who is it?",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 dialogue"
+  },
+  "munhu ndiani": {
+    "english": "who are you? (who is the person?)",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 dialogue"
+  },
+  "ndini": {
+    "english": "it is i",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 dialogue: ndini john"
+  },
+  "-gara": {
+    "english": "to live, sit, stay",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 vocabulary"
+  },
+  "munogara papi": {
+    "english": "where do you live?",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 dialogue"
+  },
+  "ndinogara": {
+    "english": "i live (i stay)",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 dialogue"
+  },
+  "papi": {
+    "english": "where?",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 vocabulary"
+  },
+  "pano": {
+    "english": "here",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 vocabulary"
+  },
+  "apo": {
+    "english": "there",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 vocabulary"
+  },
+  "kure": {
+    "english": "far",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 vocabulary"
+  },
+  "patyo": {
+    "english": "near",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 vocabulary"
+  },
+  "chinhambo": {
+    "english": "a short distance",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 vocabulary"
+  },
+  "Harare": {
+    "english": "Harare (city)",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 supplementary places — original FSI spells \"Salisbury\"; modern name is Harare"
+  },
+  "Mutare": {
+    "english": "Mutare (city, eastern Zimbabwe)",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 supplementary: kwaMutare"
+  },
+  "Sakubva": {
+    "english": "Sakubva (area near Mutare)",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 supplementary"
+  },
+  "Rusapi": {
+    "english": "Rusape (town)",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 supplementary: muRusapi"
+  },
+  "Nyadire": {
+    "english": "Nyadiri (place)",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 supplementary: kwaNyadire"
+  },
+  "guta": {
+    "english": "city",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 vocabulary"
+  },
+  "hosipitari": {
+    "english": "hospital",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 vocabulary"
+  },
+  "kamba": {
+    "english": "police camp / military post",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 vocabulary"
+  },
+  "-ita": {
+    "english": "to do",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 vocabulary"
+  },
+  "muri kuitenyi": {
+    "english": "what are you doing?",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 dialogue"
+  },
+  "-sanda": {
+    "english": "to work",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 vocabulary"
+  },
+  "ndinosanda": {
+    "english": "i work",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 dialogue"
+  },
+  "basa": {
+    "english": "work, job",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 supplementary"
+  },
+  "munoita basanyi": {
+    "english": "what work do you do?",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 supplementary"
+  },
+  "ku-": {
+    "english": "to / at (with place names and infinitive prefix)",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 locative prefixes"
+  },
+  "pa-": {
+    "english": "at / on (locative prefix)",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 locative prefixes"
+  },
+  "mu-": {
+    "english": "in (locative prefix)",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 locative prefixes"
+  },
+  "kwa-": {
+    "english": "at / to (with proper names)",
+    "source": "FSI",
+    "page": 33,
+    "context": "unit 5 locative prefixes"
+  },
+  "kurima": {
+    "english": "to plow, raise crops",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 verb list (low)"
+  },
+  "kuchaira": {
+    "english": "to drive (a vehicle)",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 verb list"
+  },
+  "kuweza": {
+    "english": "to do carpentry, work wood",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 verb list"
+  },
+  "kurapa": {
+    "english": "to heal, do medical work",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 verb list"
+  },
+  "kuvaka": {
+    "english": "to build",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 verb list (high)"
+  },
+  "kudzidzisa": {
+    "english": "to teach",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 verb list"
+  },
+  "kunyora": {
+    "english": "to write",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 verb list"
+  },
+  "ofisi": {
+    "english": "office",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 supplementary"
+  },
+  "chikoro": {
+    "english": "school",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 supplementary"
+  },
+  "zvikoro": {
+    "english": "schools (plural)",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 supplementary"
+  },
+  "mufundisi": {
+    "english": "teacher, pastor, missionary",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 vocabulary"
+  },
+  "-uya": {
+    "english": "to come",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 vocabulary"
+  },
+  "rini": {
+    "english": "when?",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 vocabulary"
+  },
+  "mwakauya rini pano": {
+    "english": "when did you come here?",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 dialogue"
+  },
+  "-svika": {
+    "english": "to arrive",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 vocabulary"
+  },
+  "ndakasvika": {
+    "english": "i arrived",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 dialogue"
+  },
+  "na": {
+    "english": "with, and",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 vocabulary"
+  },
+  "zuva": {
+    "english": "sun, day",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 vocabulary"
+  },
+  "mazuva": {
+    "english": "days (plural of zuva)",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 supplementary"
+  },
+  "musi": {
+    "english": "day (specific date)",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 vocabulary"
+  },
+  "kana": {
+    "english": "if, or, when",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 vocabulary"
+  },
+  "-bva": {
+    "english": "to come/go from, leave",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 vocabulary"
+  },
+  "-funga": {
+    "english": "to think",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 vocabulary"
+  },
+  "-enda": {
+    "english": "to go",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 vocabulary"
+  },
+  "mwedzi": {
+    "english": "month, moon",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 supplementary"
+  },
+  "gore": {
+    "english": "year",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 supplementary"
+  },
+  "makore": {
+    "english": "years",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 supplementary"
+  },
+  "sondo": {
+    "english": "week (also: svondo)",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 supplementary"
+  },
+  "masondo": {
+    "english": "weeks",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 supplementary"
+  },
+  "rose": {
+    "english": "whole, all",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 supplementary"
+  },
+  "mangwana": {
+    "english": "tomorrow",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 time expression"
+  },
+  "gare gare": {
+    "english": "by and by, later",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 time expression"
+  },
+  "-mwe / posi": {
+    "english": "one (concord stem -mwe; \"posi\" = 1)",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 numbers 1-10"
+  },
+  "posi": {
+    "english": "one (as counting noun)",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15 number table"
+  },
+  "-mwe": {
+    "english": "one (concord stem; e.g. zuva rimwe)",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 supplementary"
+  },
+  "-viri": {
+    "english": "two (concord stem)",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 supplementary"
+  },
+  "piri": {
+    "english": "two (counting form)",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15"
+  },
+  "-tatu": {
+    "english": "three (concord stem)",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 dialogue: mazuva matatu"
+  },
+  "tatu": {
+    "english": "three (counting form)",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15"
+  },
+  "-na": {
+    "english": "four (concord stem)",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 dialogue: weChina"
+  },
+  "china": {
+    "english": "four (counting form; also \"Thursday\" = Chi-na)",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15"
+  },
+  "-shanu": {
+    "english": "five (concord stem)",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 supplementary"
+  },
+  "shanu": {
+    "english": "five (counting form)",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15"
+  },
+  "-tanhatu": {
+    "english": "six (concord stem)",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 supplementary"
+  },
+  "tanhatu": {
+    "english": "six (counting form)",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15"
+  },
+  "-nomwe": {
+    "english": "seven (concord stem)",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 supplementary"
+  },
+  "chinomwe": {
+    "english": "seven (counting form)",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15"
+  },
+  "-sere": {
+    "english": "eight (concord stem)",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 supplementary"
+  },
+  "rusere": {
+    "english": "eight (counting form)",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15"
+  },
+  "-pfumbamwe": {
+    "english": "nine (concord stem)",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 supplementary"
+  },
+  "pfumbamwe": {
+    "english": "nine (counting form)",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15"
+  },
+  "gumi": {
+    "english": "ten (a noun, does not take concord)",
+    "source": "FSI",
+    "page": 50,
+    "context": "unit 6 supplementary"
+  },
+  "Musumbunuko": {
+    "english": "Monday",
+    "source": "FSI",
+    "page": 51,
+    "context": "unit 6 days of week"
+  },
+  "Chipiri": {
+    "english": "Tuesday (lit. \"the second\")",
+    "source": "FSI",
+    "page": 51,
+    "context": "unit 6 days of week"
+  },
+  "Chitatu": {
+    "english": "Wednesday (lit. \"the third\")",
+    "source": "FSI",
+    "page": 51,
+    "context": "unit 6 days of week"
+  },
+  "China": {
+    "english": "Thursday (lit. \"the fourth\")",
+    "source": "FSI",
+    "page": 51,
+    "context": "unit 6 days of week"
+  },
+  "Chishanu": {
+    "english": "Friday (lit. \"the fifth\")",
+    "source": "FSI",
+    "page": 51,
+    "context": "unit 6 days of week"
+  },
+  "Mugobera": {
+    "english": "Saturday",
+    "source": "FSI",
+    "page": 51,
+    "context": "unit 6 days of week"
+  },
+  "Sondo": {
+    "english": "Sunday",
+    "source": "FSI",
+    "page": 51,
+    "context": "unit 6 days of week"
+  },
+  "-kuru": {
+    "english": "large, important",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 vocabulary"
+  },
+  "huru": {
+    "english": "large (class 9/10 form)",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 adjectives"
+  },
+  "imba": {
+    "english": "house",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 dialogue: imba huru"
+  },
+  "-da": {
+    "english": "to want, love",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 vocabulary"
+  },
+  "-ti": {
+    "english": "to say",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 vocabulary"
+  },
+  "-cha-": {
+    "english": "future tense prefix (will)",
+    "source": "FSI",
+    "page": 66,
+    "context": "unit 7 note 1"
+  },
+  "vachasvika": {
+    "english": "they will arrive",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 dialogue"
+  },
+  "ndichauya": {
+    "english": "i will come",
+    "source": "FSI",
+    "page": 70,
+    "context": "unit 7 group 3"
+  },
+  "-ngani": {
+    "english": "how many?",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 vocabulary"
+  },
+  "vana vangani": {
+    "english": "how many children?",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 dialogue"
+  },
+  "-tete": {
+    "english": "narrow",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 adjectives"
+  },
+  "-chena": {
+    "english": "white",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 adjectives"
+  },
+  "-diki": {
+    "english": "small",
+    "source": "FSI",
+    "page": 65,
+    "context": "unit 7 adjectives"
+  },
+  "-angu": {
+    "english": "my (possessive stem)",
+    "source": "FSI",
+    "page": 67,
+    "context": "unit 7 note 3"
+  },
+  "-ako": {
+    "english": "your sg. (possessive stem)",
+    "source": "FSI",
+    "page": 67,
+    "context": "unit 7 note 3"
+  },
+  "-ake": {
+    "english": "his/her (possessive stem)",
+    "source": "FSI",
+    "page": 67,
+    "context": "unit 7 note 3"
+  },
+  "-edu": {
+    "english": "our (possessive stem)",
+    "source": "FSI",
+    "page": 67,
+    "context": "unit 7 note 3"
+  },
+  "-enyu": {
+    "english": "your pl. (possessive stem)",
+    "source": "FSI",
+    "page": 67,
+    "context": "unit 7 note 3"
+  },
+  "-avo": {
+    "english": "their (possessive stem)",
+    "source": "FSI",
+    "page": 67,
+    "context": "unit 7 note 3"
+  },
+  "ini": {
+    "english": "i / me",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 personal pronouns"
+  },
+  "iwe": {
+    "english": "you (sg.)",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 personal pronouns"
+  },
+  "iye": {
+    "english": "he / she",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 personal pronouns"
+  },
+  "isu": {
+    "english": "we / us",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 personal pronouns"
+  },
+  "imwi": {
+    "english": "you (pl. / respectful)",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 personal pronouns"
+  },
+  "ivo": {
+    "english": "they / them",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 personal pronouns"
+  },
+  "-nga-": {
+    "english": "potential prefix (can/may/might)",
+    "source": "FSI",
+    "page": 77,
+    "context": "unit 8 note 1"
+  },
+  "ndingada": {
+    "english": "i would like / could want",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 dialogue"
+  },
+  "simbi": {
+    "english": "iron (for clothing)",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 supplementary"
+  },
+  "chigero": {
+    "english": "scissors",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 supplementary"
+  },
+  "munyu": {
+    "english": "salt",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 supplementary"
+  },
+  "shuka": {
+    "english": "sugar",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 supplementary"
+  },
+  "chingwa": {
+    "english": "bread",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 supplementary (zingwa)"
+  },
+  "parafini": {
+    "english": "kerosene / paraffin",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 supplementary"
+  },
+  "machisi": {
+    "english": "matches",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 supplementary"
+  },
+  "sipo": {
+    "english": "soap",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 supplementary"
+  },
+  "mbeu": {
+    "english": "seed",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 supplementary"
+  },
+  "chitoro": {
+    "english": "shop / store",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 dialogue"
+  },
+  "hongu": {
+    "english": "yes",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 dialogue"
+  },
+  "kwete": {
+    "english": "no",
+    "source": "sound-guide.json",
+    "key": "vowel example"
+  },
+  "nguva": {
+    "english": "time",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 dialogue"
+  },
+  "tingaenda": {
+    "english": "we can go / may we go",
+    "source": "FSI",
+    "page": 75,
+    "context": "unit 8 dialogue"
+  },
+  "musha": {
+    "english": "home",
+    "source": "FSI",
+    "page": 76,
+    "context": "unit 8 supplementary"
+  },
+  "munda": {
+    "english": "field",
+    "source": "FSI",
+    "page": 76,
+    "context": "unit 8 supplementary"
+  },
+  "chechi": {
+    "english": "church",
+    "source": "FSI",
+    "page": 76,
+    "context": "unit 8 supplementary"
+  },
+  "rwizi": {
+    "english": "river",
+    "source": "FSI",
+    "page": 76,
+    "context": "unit 8 supplementary"
+  },
+  "tsime": {
+    "english": "well (water source)",
+    "source": "FSI",
+    "page": 76,
+    "context": "unit 8 supplementary"
+  },
+  "mitambo": {
+    "english": "games",
+    "source": "FSI",
+    "page": 76,
+    "context": "unit 8 supplementary"
+  },
+  "-tengesa": {
+    "english": "to sell",
+    "source": "FSI",
+    "page": 85,
+    "context": "unit 9 vocabulary"
+  },
+  "hobo": {
+    "english": "banana",
+    "source": "FSI",
+    "page": 85,
+    "context": "unit 9 vocabulary"
+  },
+  "mahobo": {
+    "english": "bananas",
+    "source": "FSI",
+    "page": 85,
+    "context": "unit 9 dialogue"
+  },
+  "mari": {
+    "english": "money",
+    "source": "FSI",
+    "page": 85,
+    "context": "unit 9 vocabulary"
+  },
+  "anoita marinyi": {
+    "english": "how much is it? ('what money does it do?')",
+    "source": "FSI",
+    "page": 85,
+    "context": "unit 9 dialogue"
+  },
+  "-ri": {
+    "english": "am / is / are (defective verb)",
+    "source": "FSI",
+    "page": 85,
+    "context": "unit 9 note 1"
+  },
+  "ndiri kubika": {
+    "english": "i am cooking",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary"
+  },
+  "-bika": {
+    "english": "to cook",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary"
+  },
+  "ndiri kuverenga": {
+    "english": "i am reading / counting",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary"
+  },
+  "-verenga": {
+    "english": "to read, count",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary"
+  },
+  "ndiri kutamba": {
+    "english": "i am playing",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary"
+  },
+  "-tamba": {
+    "english": "to play",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary"
+  },
+  "ndiri kugeza": {
+    "english": "i am washing",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary"
+  },
+  "-geza": {
+    "english": "to wash",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary"
+  },
+  "-tema": {
+    "english": "to cut",
+    "source": "FSI",
+    "page": 87,
+    "context": "unit 9 supplementary"
+  },
+  "muti": {
+    "english": "tree, medicine, wood",
+    "source": "FSI",
+    "page": 87,
+    "context": "unit 9 supplementary"
+  },
+  "huni": {
+    "english": "firewood",
+    "source": "FSI",
+    "page": 87,
+    "context": "unit 9 supplementary"
+  },
+  "-tenga": {
+    "english": "to buy",
+    "source": "FSI",
+    "page": 87,
+    "context": "unit 9 supplementary"
+  },
+  "uyu": {
+    "english": "this (cl. 1, person)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "uyo": {
+    "english": "that (cl. 1, person)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "ava": {
+    "english": "these (cl. 2, people)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "avo": {
+    "english": "those (cl. 2, people)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "iyi": {
+    "english": "this (cl. 4/9)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "iri": {
+    "english": "this (cl. 5)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "aya": {
+    "english": "these (cl. 6)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "ichi": {
+    "english": "this (cl. 7)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "izvi": {
+    "english": "these (cl. 8)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "idzi": {
+    "english": "these (cl. 10)",
+    "source": "FSI",
+    "page": 89,
+    "context": "unit 9 note 4"
+  },
+  "-tsvaka": {
+    "english": "to look for, seek",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 vocabulary"
+  },
+  "ani": {
+    "english": "who?",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 vocabulary"
+  },
+  "vanaani": {
+    "english": "who? (plural / respectful)",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 vocabulary"
+  },
+  "muri kutsvaka ani": {
+    "english": "who are you looking for?",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 dialogue"
+  },
+  "ndiri kuda": {
+    "english": "i want / need",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 dialogue"
+  },
+  "waenda": {
+    "english": "he/she went (today)",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 dialogue"
+  },
+  "-taura": {
+    "english": "to speak",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 vocabulary"
+  },
+  "mwaidenyi": {
+    "english": "what did you want (of him)?",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 dialogue"
+  },
+  "ndaida kutaura": {
+    "english": "i wanted to speak",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 dialogue"
+  },
+  "Bhuruwayo": {
+    "english": "Bulawayo (city)",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 place names"
+  },
+  "Marondera": {
+    "english": "Marondera (town)",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 place names"
+  },
+  "Gweru": {
+    "english": "Gweru (city)",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 place names"
+  },
+  "Kwekwe": {
+    "english": "Kwekwe (town)",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 place names"
+  },
+  "Gatoma": {
+    "english": "Gatooma / Kadoma (town)",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 place names"
+  },
+  "Chipinga": {
+    "english": "Chipinge (town)",
+    "source": "FSI",
+    "page": 97,
+    "context": "unit 10 place names"
+  },
+  "waenda kupi": {
+    "english": "where did he go (today)?",
+    "source": "FSI",
+    "page": 99,
+    "context": "unit 10 hodiernal tense"
+  },
+  "ndaenda": {
+    "english": "i went (today)",
+    "source": "FSI",
+    "page": 99,
+    "context": "unit 10 hodiernal tense"
+  },
+  "ndaita basa": {
+    "english": "i did the work",
+    "source": "FSI",
+    "page": 99,
+    "context": "unit 10 hodiernal tense practice"
+  },
+  "watema miti": {
+    "english": "did you cut trees?",
+    "source": "FSI",
+    "page": 101,
+    "context": "unit 10 group 4"
+  },
+  "-sima": {
+    "english": "to transplant",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary"
+  },
+  "-ona": {
+    "english": "to see",
+    "source": "FSI",
+    "page": 101,
+    "context": "unit 10 practice"
+  },
+  "-siya": {
+    "english": "to leave (something/someone)",
+    "source": "FSI",
+    "page": 101,
+    "context": "unit 10 practice"
+  },
+  "-ka-": {
+    "english": "past tense prefix (yesterday or earlier)",
+    "source": "FSI",
+    "page": 51,
+    "context": "unit 6 note 1"
+  },
+  "ndakaenda": {
+    "english": "i went (before today)",
+    "source": "FSI",
+    "page": 52,
+    "context": "unit 6 -ka- low verbs"
+  },
+  "ndakauya": {
+    "english": "i came (before today)",
+    "source": "FSI",
+    "page": 56,
+    "context": "unit 6 -ka- high verbs / group 5"
+  },
+  "-no-": {
+    "english": "general present / habitual prefix",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 note 1"
+  },
+  "anodzidzisa": {
+    "english": "he/she teaches",
+    "source": "FSI",
+    "page": 57,
+    "context": "unit 6 group 12"
+  },
+  "munogara": {
+    "english": "you (pl./resp.) live",
+    "source": "FSI",
+    "page": 32,
+    "context": "unit 5 dialogue"
+  },
+  "ndinoda": {
+    "english": "i want / love",
+    "source": "FSI",
+    "page": 66,
+    "context": "unit 7 systematic practice"
+  },
+  "sadza": {
+    "english": "thick maize porridge (staple food)",
+    "source": "FSI",
+    "page": 175,
+    "context": "unit 18 vocabulary"
+  },
+  "zviyo": {
+    "english": "millet",
+    "source": "FSI",
+    "page": 175,
+    "context": "unit 18 vocabulary"
+  },
+  "-fara": {
+    "english": "to be glad, to enjoy",
+    "source": "FSI",
+    "page": 175,
+    "context": "unit 18 vocabulary"
+  },
+  "-dya": {
+    "english": "to eat",
+    "source": "FSI",
+    "page": 220,
+    "context": "unit 23 passive: vadya sadza"
+  },
+  "-nwa": {
+    "english": "to drink",
+    "source": "FSI",
+    "page": 227,
+    "context": "unit 23 passive forms reference: -mwiwa"
+  },
+  "mvura": {
+    "english": "water (also: rain)",
+    "source": "FSI",
+    "page": 175,
+    "context": "unit 18 vocabulary"
+  },
+  "tafura": {
+    "english": "table",
+    "source": "FSI",
+    "page": 175,
+    "context": "unit 18 vocabulary"
+  },
+  "-isa": {
+    "english": "to put, place",
+    "source": "FSI",
+    "page": 175,
+    "context": "unit 18 dialogue"
+  },
+  "-unza": {
+    "english": "to bring",
+    "source": "FSI",
+    "page": 175,
+    "context": "unit 18 vocabulary"
+  },
+  "ndiro": {
+    "english": "dish, plate",
+    "source": "FSI",
+    "page": 175,
+    "context": "unit 18 dialogue: ndira patafura"
+  },
+  "-bvisa": {
+    "english": "to remove",
+    "source": "FSI",
+    "page": 175,
+    "context": "unit 18 vocabulary"
+  },
+  "hari": {
+    "english": "cooking pot",
+    "source": "FSI",
+    "page": 176,
+    "context": "unit 18 supplementary"
+  },
+  "mutsvairo": {
+    "english": "broom",
+    "source": "FSI",
+    "page": 176,
+    "context": "unit 18 supplementary"
+  },
+  "muriwo": {
+    "english": "vegetable / relish",
+    "source": "FSI",
+    "page": 224,
+    "context": "unit 23 dialogue: muriwo wakachekwa"
+  },
+  "nyama": {
+    "english": "meat",
+    "source": "FSI",
+    "page": 224,
+    "context": "unit 23 dialogue: munyama yakaoma"
+  },
+  "hanzvadzi": {
+    "english": "sibling of the opposite sex",
+    "source": "FSI",
+    "page": 225,
+    "context": "unit 23 vocabulary"
+  },
+  "mukoma": {
+    "english": "older sibling of same sex",
+    "source": "FSI",
+    "page": 226,
+    "context": "unit 23 supplementary"
+  },
+  "muninina": {
+    "english": "younger sibling of same sex",
+    "source": "FSI",
+    "page": 226,
+    "context": "unit 23 supplementary"
+  },
+  "sekuru": {
+    "english": "grandfather; maternal uncle",
+    "source": "FSI",
+    "page": 226,
+    "context": "unit 23 supplementary"
+  },
+  "tete": {
+    "english": "father's sister, paternal aunt",
+    "source": "FSI",
+    "page": 226,
+    "context": "unit 23 supplementary"
+  },
+  "mukadzi": {
+    "english": "woman; wife",
+    "source": "FSI",
+    "page": 226,
+    "context": "unit 23 supplementary"
+  },
+  "ambuya": {
+    "english": "grandmother",
+    "source": "cultural_notes.json",
+    "key": "family_structure.respectHierarchy"
+  },
+  "mukuwasha": {
+    "english": "son-in-law",
+    "source": "cultural_notes.json",
+    "key": "family_structure (kinship register)"
+  },
+  "mweni": {
+    "english": "guest, stranger, foreigner",
+    "source": "FSI",
+    "page": 225,
+    "context": "unit 23 vocabulary"
+  },
+  "rwendo": {
+    "english": "journey",
+    "source": "FSI",
+    "page": 225,
+    "context": "unit 23 vocabulary"
+  },
+  "tsamba": {
+    "english": "letter",
+    "source": "FSI",
+    "page": 224,
+    "context": "unit 23 vocabulary"
+  },
+  "vhiki": {
+    "english": "week (English loan)",
+    "source": "FSI",
+    "page": 224,
+    "context": "unit 23 vocabulary"
+  },
+  "motoka": {
+    "english": "car",
+    "source": "FSI",
+    "page": 226,
+    "context": "unit 23 transportation"
+  },
+  "bhazi": {
+    "english": "bus",
+    "source": "FSI",
+    "page": 226,
+    "context": "unit 23 transportation"
+  },
+  "chitima": {
+    "english": "train",
+    "source": "FSI",
+    "page": 225,
+    "context": "unit 23 vocabulary"
+  },
+  "ngoro": {
+    "english": "wagon, cart",
+    "source": "FSI",
+    "page": 227,
+    "context": "unit 23 transportation"
+  },
+  "tsuro": {
+    "english": "hare, rabbit",
+    "source": "FSI",
+    "page": 401,
+    "context": "unit 41 story: tsuro naDiro"
+  },
+  "shumba": {
+    "english": "lion",
+    "source": "FSI",
+    "page": 187,
+    "context": "common totem name in FSI greetings"
+  },
+  "unhu": {
+    "english": "humanness, ubuntu — 'i am because we are'",
+    "source": "cultural_notes.json",
+    "key": "unhu_ubuntu.title"
+  },
+  "tsumo": {
+    "english": "proverb (traditional saying)",
+    "source": "cultural_notes.json",
+    "key": "ceremonial_language.characteristics"
+  },
+  "mhoro": {
+    "english": "hello (informal greeting)",
+    "source": "cultural_notes.json",
+    "key": "greetings.guidelines",
+    "note": "modern equivalent to FSI mangwanani/masikati for informal contexts"
+  },
+  "shamwari": {
+    "english": "friend",
+    "source": "cultural_notes.json",
+    "key": "greetings — used in example phrase",
+    "note": "common attested Shona word; appears in greeting examples"
+  },
+  "tatenda": {
+    "english": "thank you",
+    "source": "cultural_notes.json",
+    "key": "greetings.guidelines — implicit",
+    "note": "standard Shona; \"Tendai\" stem -tenda 'to thank'"
+  }
+}

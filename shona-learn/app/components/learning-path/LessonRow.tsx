@@ -47,25 +47,27 @@ export default function LessonRow({
       disabled={isLocked}
       onClick={() => !isLocked && onClick()}
       className={`w-full min-h-[44px] flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-colors border
-        ${isLocked ? 'bg-gray-50 border-gray-100 text-gray-400 cursor-not-allowed' : ''}
-        ${!isLocked && completed ? 'bg-green-50 border-green-100 text-gray-700' : ''}
-        ${!isLocked && !completed && isNext ? 'bg-white border-green-400 ring-2 ring-green-200 shadow-sm' : ''}
-        ${!isLocked && !completed && !isNext ? 'bg-white border-gray-200 hover:bg-gray-50' : ''}
+        ${isLocked ? 'bg-stone-50 border-stone-200 text-stone-400 cursor-not-allowed' : ''}
+        ${!isLocked && completed ? 'bg-white border-stone-200 text-stone-600' : ''}
+        ${!isLocked && !completed && isNext ? 'bg-white border-emerald-600' : ''}
+        ${!isLocked && !completed && !isNext ? 'bg-white border-stone-200 hover:border-stone-300' : ''}
       `}
     >
-      <span className="flex-shrink-0 w-8 flex justify-center">
-        {isLocked ? <FaLock className="text-gray-400" /> : null}
-        {!isLocked && completed ? <FaCheck className="text-green-600" /> : null}
-        {!isLocked && !completed && !isNext ? <span className="text-gray-400 text-sm">○</span> : null}
-        {!isLocked && !completed && isNext ? <span className="text-green-600 font-bold">▶</span> : null}
+      <span className="flex-shrink-0 w-6 flex justify-center">
+        {isLocked ? <FaLock className="text-stone-400 w-3 h-3" /> : null}
+        {!isLocked && completed ? <FaCheck className="text-emerald-600 w-3 h-3" /> : null}
+        {!isLocked && !completed && !isNext ? <span className="text-stone-300 text-sm">○</span> : null}
+        {!isLocked && !completed && isNext ? <span className="text-emerald-600">●</span> : null}
       </span>
-      <span className={`flex-1 font-medium ${completed ? 'text-gray-500' : 'text-gray-800'}`}>{lesson.title}</span>
+      <span className={`flex-1 font-medium lowercase ${completed ? 'text-stone-500' : 'text-stone-900'}`}>
+        {lesson.title}
+      </span>
       {completed && !isLocked ? (
-        <span className="text-sm text-green-700 font-semibold tabular-nums">{score}%</span>
+        <span className="text-sm text-emerald-700 font-medium tabular-nums">{score}%</span>
       ) : null}
       {!completed && isNext && !isLocked ? (
-        <span className="text-sm font-bold text-white bg-gradient-to-r from-green-500 to-green-600 px-3 py-1.5 rounded-xl">
-          {resumable ? 'Continue' : 'Start'}
+        <span className="text-xs font-medium text-white bg-stone-900 px-3 py-1.5 rounded-full lowercase">
+          {resumable ? 'continue' : 'start'}
         </span>
       ) : null}
     </button>

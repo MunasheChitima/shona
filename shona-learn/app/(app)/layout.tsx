@@ -37,15 +37,13 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       </main>
       <footer
         role="contentinfo"
-        className="bg-white/80 backdrop-blur-sm border-t border-amber-100/40 py-8 mt-16"
+        className="border-t border-stone-200 bg-[#fffdf7]/60 py-10 mt-20"
       >
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-600">
-            © 2025 Shona Learning App. Learn the beautiful language of Zimbabwe.
-          </p>
-          <p className="text-sm text-gray-500 mt-2">
-            Made with love for Shona language preservation and education.
-          </p>
+        <div className="container mx-auto px-6 max-w-5xl">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-stone-500">
+            <p>© 2025 shona learn</p>
+            <p>built with care for shona language &amp; culture.</p>
+          </div>
         </div>
       </footer>
 

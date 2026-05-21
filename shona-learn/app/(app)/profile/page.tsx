@@ -1,11 +1,13 @@
 'use client'
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useMemo } from 'react'
+import useSWR from 'swr'
 import { ProtectedRoute } from '../../../lib/auth'
 import { FaTrophy, FaFire, FaStar, FaBook, FaEdit, FaSave, FaTimes } from 'react-icons/fa'
-import { motion } from 'framer-motion'
+// The profile page only used framer-motion for a handful of one-shot
+// fade-in panels. Tailwind's `animate-slide-in-up` keyframes give us the
+// same effect without shipping the framer-motion runtime to this page.
 import LoadingSpinner from '../../components/LoadingSpinner'
 import ErrorBoundary from '../../components/ErrorBoundary'
-import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 const FLASHCARD_PRACTICE_KEY = 'flashcard_practice_v1'
 
@@ -46,6 +48,14 @@ function countFlashcardPractice(): number {
   }
 }
 
+// Shared SWR keys — these MUST match the keys used by sibling pages
+// (/learn, /quests) so navigating between pages reuses the cached data
+// instead of re-fetching. That's the bulk of the perceived speedup.
+const PROGRESS_KEY = '/api/progress'
+const LESSONS_KEY = '/api/lessons'
+const PUBLIC_LESSONS_KEY = '/api/lessons/public?manifest=1&limit=100'
+const PATH_PROGRESS_KEY = '/api/learning-path/progress?slug=core'
+
 export default function Profile() {
   const [user, setUser] = useState<{
     name?: string
@@ -55,140 +65,72 @@ export default function Profile() {
     longestStreak?: number
     createdAt?: string
   } | null>(null)
-  const [pathProgress, setPathProgress] = useState<PathProgressApi | null>(null)
-  const [completedLessons, setCompletedLessons] = useState(0)
-  const [totalLessons, setTotalLessons] = useState<number | null>(null)
-  const [achievements, setAchievements] = useState<AchievementRow[]>([])
-  const [isLoading, setIsLoading] = useState(true)
   const [isEditing, setIsEditing] = useState(false)
   const [editedName, setEditedName] = useState('')
 
-  const computeAchievements = useCallback(
-    (completedLessonCount: number, firstUnitDone: boolean, firstStageDone: boolean, flashN: number, streak: number) => {
-      setAchievements([
-        {
-          code: 'first-lesson',
-          title: 'First Steps',
-          description: 'Complete your first lesson',
-          icon: '👣',
-          unlocked: completedLessonCount >= 1,
-        },
-        {
-          code: 'first-unit',
-          title: 'Unit Master',
-          description: 'Complete all lessons in a unit',
-          icon: '🎓',
-          unlocked: firstUnitDone,
-        },
-        {
-          code: 'first-stage',
-          title: 'Stage Champion',
-          description: 'Complete an entire stage',
-          icon: '🏆',
-          unlocked: firstStageDone,
-        },
-        {
-          code: 'flashcard-50',
-          title: 'Vocabulary Builder',
-          description: 'Practice 50 flashcards',
-          icon: '🃏',
-          unlocked: flashN >= 50,
-        },
-        {
-          code: 'week-streak',
-          title: 'Dedicated Learner',
-          description: '7-day learning streak',
-          icon: '🔥',
-          unlocked: streak >= 7,
-        },
-      ])
-    },
-    []
+  // Read local user once. We don't put it in SWR because it's pure
+  // localStorage — there's no network round-trip to skip.
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    try {
+      const ud = JSON.parse(localStorage.getItem('user') || '{}')
+      setUser(ud)
+      setEditedName(ud?.name ?? '')
+    } catch {
+      setUser({})
+    }
+  }, [])
+
+  const { data: progressData, isLoading: progressLoading } = useSWR<Array<{ completed?: boolean; lessonId: string }>>(PROGRESS_KEY)
+  const { data: lessonsResp, isLoading: lessonsLoading } = useSWR<{ lessons?: Array<{ id?: string; category?: string }> }>(LESSONS_KEY)
+  const { data: publicLessonsResp, isLoading: publicLessonsLoading } = useSWR<{ lessons?: any[]; totalLessons?: number }>(PUBLIC_LESSONS_KEY)
+  const { data: pathProgress } = useSWR<PathProgressApi>(PATH_PROGRESS_KEY)
+
+  const completedLessons = useMemo(
+    () => (progressData || []).filter((p) => p?.completed).length,
+    [progressData]
   )
 
-  const fetchUserData = async () => {
-    setIsLoading(true)
-    try {
-      let userData: NonNullable<typeof user> = {}
-      if (typeof window !== 'undefined') {
-        userData = JSON.parse(localStorage.getItem('user') || '{}')
-      }
-      setUser(userData)
-      setEditedName(userData.name ?? '')
+  const totalLessons = useMemo<number | null>(() => {
+    if (typeof publicLessonsResp?.totalLessons === 'number') return publicLessonsResp.totalLessons
+    if (Array.isArray(publicLessonsResp?.lessons)) return publicLessonsResp!.lessons!.length
+    const lessons = lessonsResp?.lessons || []
+    return lessons.length || null
+  }, [publicLessonsResp, lessonsResp])
 
-      const headers = { ...apiAuthHeaders() }
-      const [progressRes, pathRes, lessonsRes, publicLessonsRes] = await Promise.all([
-        fetch('/api/progress', { headers }),
-        fetch('/api/learning-path/progress?slug=core', { headers }),
-        fetch('/api/lessons', { headers }),
-        fetch('/api/lessons/public?limit=100'),
-      ])
-
-      let progressData: { completed?: boolean; lessonId: string }[] = []
-      if (progressRes.ok) {
-        progressData = await progressRes.json()
-      }
-      const done = progressData.filter((p) => p.completed).length
-
-      let lessons: { id?: string; category?: string }[] = []
-      if (lessonsRes.ok) {
-        const ld = await lessonsRes.json()
-        lessons = ld.lessons || []
-      }
-
-      // Prefer authoritative total from public lessons endpoint.
-      let total: number | null = null
-      if (publicLessonsRes.ok) {
-        const pld = await publicLessonsRes.json()
-        if (typeof pld?.totalLessons === 'number') {
-          total = pld.totalLessons
-        } else if (Array.isArray(pld?.lessons)) {
-          total = pld.lessons.length
-        }
-      }
-      if (!total) total = lessons.length || null
-      setCompletedLessons(done)
-      setTotalLessons(total)
-
-      if (pathRes.ok) {
-        const pp = await pathRes.json()
-        setPathProgress(pp)
-        const stage1 = pp.stages?.[0]
-        const firstStageDone =
-          !!stage1 && stage1.totalUnits > 0 && stage1.completedUnits >= stage1.totalUnits
-
-        const completedIds = new Set(
-          progressData.filter((p) => p.completed).map((p) => p.lessonId)
-        )
-        const byCat: Record<string, string[]> = {}
-        for (const l of lessons) {
-          if (!l?.category || !l?.id) continue
-          if (!byCat[l.category]) byCat[l.category] = []
-          byCat[l.category].push(l.id)
-        }
-        let firstUnitDone = false
-        for (const ids of Object.values(byCat)) {
-          if (ids.length > 0 && ids.every((id) => completedIds.has(id))) {
-            firstUnitDone = true
-            break
-          }
-        }
-
-        computeAchievements(done, firstUnitDone, firstStageDone, countFlashcardPractice(), userData?.streak || 0)
-      } else {
-        computeAchievements(done, false, false, countFlashcardPractice(), userData?.streak || 0)
-      }
-    } catch (error) {
-      console.error('Failed to fetch user data:', error)
-    } finally {
-      setIsLoading(false)
+  const achievements = useMemo<AchievementRow[]>(() => {
+    const done = completedLessons
+    const lessons = lessonsResp?.lessons || []
+    const completedIds = new Set((progressData || []).filter((p) => p?.completed).map((p) => p.lessonId))
+    // First-unit: any category fully completed.
+    const byCat: Record<string, string[]> = {}
+    for (const l of lessons) {
+      if (!l?.category || !l?.id) continue
+      ;(byCat[l.category] ||= []).push(l.id)
     }
-  }
+    let firstUnitDone = false
+    for (const ids of Object.values(byCat)) {
+      if (ids.length > 0 && ids.every((id) => completedIds.has(id))) {
+        firstUnitDone = true
+        break
+      }
+    }
+    const stage1 = pathProgress?.stages?.[0]
+    const firstStageDone = !!stage1 && stage1.totalUnits > 0 && stage1.completedUnits >= stage1.totalUnits
+    const flashN = countFlashcardPractice()
+    const streak = user?.streak || 0
+    return [
+      { code: 'first-lesson', title: 'First Steps', description: 'Complete your first lesson', icon: '👣', unlocked: done >= 1 },
+      { code: 'first-unit', title: 'Unit Master', description: 'Complete all lessons in a unit', icon: '🎓', unlocked: firstUnitDone },
+      { code: 'first-stage', title: 'Stage Champion', description: 'Complete an entire stage', icon: '🏆', unlocked: firstStageDone },
+      { code: 'flashcard-50', title: 'Vocabulary Builder', description: 'Practice 50 flashcards', icon: '🃏', unlocked: flashN >= 50 },
+      { code: 'week-streak', title: 'Dedicated Learner', description: '7-day learning streak', icon: '🔥', unlocked: streak >= 7 },
+    ]
+  }, [completedLessons, lessonsResp, progressData, pathProgress, user])
 
-  useEffect(() => {
-    fetchUserData()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  // We only block on the first fetch. SWR will keep the data fresh
+  // silently after that, so back-navigations are instant.
+  const isLoading = user === null || progressLoading || lessonsLoading || publicLessonsLoading
 
   const handleSaveName = async () => {
     const updatedUser = { ...user, name: editedName }
@@ -255,10 +197,8 @@ export default function Profile() {
       <ProtectedRoute>
         <div className="min-h-screen bg-[#fffdf7]">
           <div className="container mx-auto px-4 py-8 max-w-5xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="bg-white rounded-3xl shadow-xl p-8 mb-8"
+            <div
+              className="bg-white rounded-3xl shadow-xl p-8 mb-8 animate-slide-in-up"
             >
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 <div className="relative flex-shrink-0">
@@ -314,11 +254,9 @@ export default function Profile() {
                       </span>
                     </div>
                     <div className="w-full max-w-md mx-auto md:mx-0 bg-gray-200 rounded-full h-3">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: `${getProgressToNextLevel()}%` }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className="bg-gradient-to-r from-green-400 to-blue-500 h-full rounded-full"
+                      <div
+                        className="bg-gradient-to-r from-green-400 to-blue-500 h-full rounded-full transition-[width] duration-1000"
+                        style={{ width: `${getProgressToNextLevel()}%` }}
                       />
                     </div>
                   </div>
@@ -335,15 +273,12 @@ export default function Profile() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             <div className="grid lg:grid-cols-2 gap-8">
               <div className="space-y-6">
-                <motion.div
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 }}
-                  className="bg-white rounded-3xl shadow-lg p-6"
+                <div
+                  className="bg-white rounded-3xl shadow-lg p-6 animate-slide-in-up"
                 >
                   <h2 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
                     <FaBook className="text-green-600" />
@@ -366,13 +301,10 @@ export default function Profile() {
                       }}
                     />
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.15 }}
-                  className="bg-white rounded-3xl shadow-lg p-6"
+                <div
+                  className="bg-white rounded-3xl shadow-lg p-6 animate-slide-in-up"
                 >
                   <h2 className="text-lg font-bold text-gray-800 mb-4">Lessons</h2>
                   {totalLessons === null ? (
@@ -397,14 +329,11 @@ export default function Profile() {
                       </div>
                     </>
                   )}
-                </motion.div>
+                </div>
               </div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="bg-white rounded-3xl shadow-lg p-6"
+              <div
+                className="bg-white rounded-3xl shadow-lg p-6 animate-slide-in-up"
               >
                 <h2 className="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
                   <FaTrophy className="text-yellow-500" />
@@ -426,7 +355,7 @@ export default function Profile() {
                     </li>
                   ))}
                 </ul>
-              </motion.div>
+              </div>
             </div>
 
             <div className="mt-10 text-center">

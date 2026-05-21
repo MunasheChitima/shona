@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        // Wired up via next/font in app/layout.tsx — sets `--font-inter`
+        // on <html> with display=swap to avoid FOIT. Keeps system fallbacks
+        // for the brief preload window.
+        sans: ['var(--font-inter)', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+      },
       colors: {
         primary: {
           50: '#fef7f0',

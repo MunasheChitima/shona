@@ -1,7 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { motion } from 'framer-motion'
+// Replaced framer-motion's `motion.div` + `whileHover/whileTap` micro
+// effects with CSS transitions. Same feel, no extra runtime.
 import { FaGamepad, FaMemory, FaBook, FaQuestion, FaFire, FaStar, FaCrown } from 'react-icons/fa'
 export default function GamesPage() {
   const router = useRouter()
@@ -94,17 +95,14 @@ export default function GamesPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-2xl px-6 py-3 shadow-lg border border-white/20 mb-6"
+          <div
+            className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-2xl px-6 py-3 shadow-lg border border-white/20 mb-6 animate-slide-in-up"
           >
             <FaGamepad className="text-3xl text-purple-600" />
             <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Shona Learning Games
             </h1>
-          </motion.div>
+          </div>
           
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Learn Shona through fun and engaging mini-games. Earn XP, unlock achievements, and master the language!
@@ -158,13 +156,10 @@ export default function GamesPage() {
 
         {/* Games Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {games.map((game, index) => (
-            <motion.div
+          {games.map((game) => (
+            <div
               key={game.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={`bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-white/20 transition-all duration-300 group ${game.comingSoon ? 'opacity-60 cursor-not-allowed' : 'hover:shadow-xl cursor-pointer'}`}
+              className={`bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-white/20 transition-all duration-300 group animate-slide-in-up ${game.comingSoon ? 'opacity-60 cursor-not-allowed' : 'hover:shadow-xl cursor-pointer'}`}
               onClick={() => !game.comingSoon && router.push(game.route)}
             >
               {/* Game Icon */}
@@ -214,15 +209,13 @@ export default function GamesPage() {
                   Coming Soon
                 </div>
               ) : (
-                <motion.button
-                  className={`w-full mt-4 py-3 bg-gradient-to-r ${game.color} text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300`}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                <button
+                  className={`w-full mt-4 py-3 bg-gradient-to-r ${game.color} text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]`}
                 >
                   Play Now
-                </motion.button>
+                </button>
               )}
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

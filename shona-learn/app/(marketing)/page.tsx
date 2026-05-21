@@ -1,46 +1,43 @@
 import Link from 'next/link'
 
 const HERO_WORDS = [
-  { shona: 'Mhoro', english: 'Hello', color: 'from-[#009739] to-[#fce300]' },
-  { shona: 'Masikati', english: 'Good day', color: 'from-[#fce300] to-[#ef3340]' },
-  { shona: 'Makorokoto', english: 'Congratulations', color: 'from-[#0d8aed] to-[#009739]' },
+  { shona: 'mhoro', english: 'hello' },
+  { shona: 'masikati', english: 'good day' },
+  { shona: 'manheru', english: 'good evening' },
+  { shona: 'mhoroi', english: 'greetings to you' },
 ] as const
 
 const VALUE_PILLARS = [
   {
-    title: 'Language with lineage',
-    shona: 'Mutauro une midzi',
+    title: 'language with lineage',
+    shona: 'mutauro une midzi',
     description:
-      'Every phrase is taught with history, social context, and the respect patterns that make Shona feel truly alive.',
+      'every phrase is taught with history, social context, and the respect patterns that make shona feel truly alive.',
     span: 'md:col-span-2',
-    accent: 'from-[#fce300]/25 via-transparent to-transparent',
     icon: '🪘',
   },
   {
-    title: 'Diaspora confidence',
-    shona: 'Kumba kuri mumoyo',
+    title: 'diaspora confidence',
+    shona: 'kumba kuri mumoyo',
     description:
-      'Built for people who heard Shona growing up and now want to read and write with confidence at home, weddings, and family calls.',
+      'built for people who heard shona growing up and want to read and write with confidence at home, weddings, and family calls.',
     span: 'md:col-span-1',
-    accent: 'from-[#ef3340]/20 via-transparent to-transparent',
     icon: '🌍',
   },
   {
-    title: 'Spaced-repetition flashcards',
-    shona: 'Kudzokorora',
+    title: 'spaced-repetition flashcards',
+    shona: 'kudzokorora',
     description:
-      'Vocabulary decks organised by unit and difficulty so words you learn today stick around long enough to use tomorrow.',
+      'vocabulary decks organised by unit and difficulty so words you learn today stick around long enough to use tomorrow.',
     span: 'md:col-span-1',
-    accent: 'from-[#0d8aed]/20 via-transparent to-transparent',
     icon: '🃏',
   },
   {
-    title: 'Progress you can feel',
-    shona: 'Kufambira mberi',
+    title: 'progress you can feel',
+    shona: 'kufambira mberi',
     description:
-      'Micro-lessons, quests, and cultural quiz games stack into real language ability even when you only have ten minutes.',
+      'micro-lessons, quests, and cultural quiz games stack into real language ability even when you only have ten minutes.',
     span: 'md:col-span-2',
-    accent: 'from-emerald-400/20 via-transparent to-transparent',
     icon: '⚡',
   },
 ] as const
@@ -48,173 +45,142 @@ const VALUE_PILLARS = [
 const EXPERIENCE_STEPS = [
   {
     step: '01',
-    title: 'Enter the courtyard',
-    body: 'Start with everyday greetings and bite-sized lessons that feel welcoming from the first tap.',
+    title: 'enter the courtyard',
+    body: 'start with everyday greetings and bite-sized lessons that feel welcoming from the first tap.',
   },
   {
     step: '02',
-    title: 'Build your vocabulary',
-    body: 'Move through curated units with flashcards, translation practice, and culturally grounded examples.',
+    title: 'build your vocabulary',
+    body: 'move through curated units with flashcards, translation practice, and culturally grounded examples.',
   },
   {
     step: '03',
-    title: 'Play and reinforce',
-    body: 'Memory match, cultural quizzes, and story-completion games turn what you learned into something you remember.',
+    title: 'play and reinforce',
+    body: 'memory match, cultural quizzes, and story-completion games turn what you learned into something you remember.',
   },
 ] as const
 
 const IMPACT_METRICS = [
-  { value: '5-10 min', label: 'daily sessions', tone: 'text-[#fce300]' },
-  { value: 'Culture-led', label: 'lesson design', tone: 'text-[#7dd3fc]' },
-  { value: 'Spaced repetition', label: 'built in', tone: 'text-[#86efac]' },
+  { value: '5-10 min', label: 'daily sessions' },
+  { value: 'culture-led', label: 'lesson design' },
+  { value: 'spaced repetition', label: 'built in' },
 ] as const
 
 const CULTURE_NOTES = [
-  'Respect forms that shift how greetings work across generations.',
-  'Food, family, and ceremony vocabulary used in real Zimbabwean life.',
-  'Story-driven memory games that make language emotionally memorable.',
+  'respect forms that shift how greetings work across generations.',
+  'food, family, and ceremony vocabulary used in real zimbabwean life.',
+  'story-driven memory games that make language emotionally memorable.',
 ] as const
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-x-clip bg-[#fffdf7] text-[#1c1917]">
-      <div className="pointer-events-none fixed inset-0 -z-30 bg-[radial-gradient(circle_at_top,_#fff7d6_0%,_#fffdf7_45%,_#fffaf0_100%)]" aria-hidden />
-      <div className="pointer-events-none fixed inset-0 opacity-[0.06] flag-stripes -z-20" aria-hidden />
-      <div
-        className="pointer-events-none fixed -top-40 left-1/2 h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-[#fce300]/30 blur-[120px] -z-10"
-        aria-hidden
-      />
-
-      <header className="sticky top-0 z-50 border-b border-[#e7dcc8]/80 bg-[#fffdf7]/90 backdrop-blur-xl">
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen overflow-x-clip bg-[#fffdf7] text-stone-900">
+      <header className="sticky top-0 z-50 border-b border-stone-200 bg-[#fffdf7]/90 backdrop-blur-xl">
+        <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-6">
           <Link
             href="/"
-            className="group flex items-center gap-2 font-bold tracking-tight text-[#1f2937] transition hover:text-[#0f5132]"
+            className="group flex items-center gap-2 tracking-tight text-stone-900 transition hover:text-stone-700"
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white text-lg ring-1 ring-[#e9dcc0] shadow-sm transition group-hover:ring-[#fce300]/80">
+            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-white text-base ring-1 ring-stone-200">
               🇿🇼
             </span>
-            <span className="text-sm sm:text-base">
-              Shona Learn<span className="text-[#78716c] font-medium"> · ChiShona</span>
-            </span>
+            <span className="text-sm font-medium sm:text-base">shona learn</span>
           </Link>
-          <nav className="flex items-center gap-2 sm:gap-3" aria-label="Primary">
+          <nav className="flex items-center gap-3" aria-label="Primary">
             <Link
               href="/learn"
-              className="rounded-full bg-[#0f5132] px-4 py-2 text-sm font-bold text-white shadow-lg shadow-[#0f5132]/20 transition hover:bg-[#12643f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f5132]"
+              className="rounded-full bg-stone-900 px-5 py-2 text-sm font-medium text-white transition hover:bg-stone-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900"
             >
-              Start learning
+              start learning
             </Link>
           </nav>
         </div>
       </header>
 
       <main>
-        <section className="relative overflow-hidden px-4 pb-24 pt-10 sm:px-6 sm:pt-14 lg:px-8 lg:pb-28">
-          <div className="relative mx-auto max-w-7xl">
-            <div className="pointer-events-none absolute -left-24 top-10 h-64 w-64 rounded-full bg-[#fce300]/40 blur-3xl" aria-hidden />
-            <div className="grid items-center gap-14 lg:grid-cols-[1.12fr_0.88fr] lg:gap-12">
-              <div className="animate-slide-in-up max-w-2xl lg:max-w-none">
-                <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-[#fff5d6] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-[#0f5132] ring-1 ring-[#ead8a6]">
-                  <span aria-hidden>✶</span>
-                  Zimbabwean soul, sunlit design
-                  <span className="text-[#78716c] normal-case font-medium">· ChiShona chinodada</span>
+        <section className="relative px-6 pb-24 pt-16 lg:pb-28 lg:pt-20">
+          <div className="relative mx-auto max-w-6xl">
+            <div className="grid items-center gap-16 lg:grid-cols-[1.12fr_0.88fr] lg:gap-12">
+              <div className="max-w-2xl lg:max-w-none">
+                <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white/70 px-3 py-1 text-xs font-medium tracking-wide text-stone-600">
+                  open beta · built with care
                 </p>
-                <h1 className="font-black leading-[1.02] tracking-tight text-[clamp(2.2rem,5.3vw,4rem)] text-[#1f2937]">
-                  A breathtaking way to{' '}
-                  <span className="relative inline-block">
-                    <span className="relative z-10 bg-gradient-to-r from-[#0f5132] via-[#009739] to-[#e11d48] bg-clip-text text-transparent">
-                      feel and speak Shona
-                    </span>
-                    <span
-                      className="absolute -bottom-1 left-0 right-0 h-1 rounded-full bg-gradient-to-r from-[#009739] via-[#fce300] to-[#ef3340]"
-                      aria-hidden
-                    />
-                  </span>{' '}
-                  with pride, rhythm, and joy.
+                <h1 className="text-4xl font-medium leading-[1.05] tracking-tight text-stone-900 sm:text-5xl md:text-6xl">
+                  learn shona the way it&apos;s actually spoken.
                 </h1>
-                <p className="mt-6 text-lg leading-relaxed text-[#4b5563] sm:text-xl">
-                  This is not another generic language app. It is a bright, modern Zimbabwean learning journey built
-                  for diaspora families, global learners, and anyone ready to sound natural.
+                <p className="mt-6 text-lg leading-relaxed text-stone-700">
+                  structured lessons, real phrases, cultural depth. built for diaspora families,
+                  global learners, and anyone ready to sound natural.
                 </p>
 
-                <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
                   <Link
                     href="/learn"
-                    className="inline-flex items-center justify-center rounded-2xl bg-[#0f5132] px-8 py-4 text-base font-bold text-white shadow-xl shadow-[#0f5132]/20 transition hover:-translate-y-0.5 hover:bg-[#12643f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f5132]"
+                    className="inline-flex items-center justify-center rounded-full bg-stone-900 px-6 py-3 text-base font-medium text-white transition hover:bg-stone-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900"
                   >
-                    Begin your Shona journey
+                    begin your journey
                   </Link>
                   <Link
                     href="/games"
-                    className="inline-flex items-center justify-center rounded-2xl border border-[#d6c9ae] bg-white px-8 py-4 text-base font-semibold text-[#1f2937] shadow-sm transition hover:bg-[#fff6dd] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f5132]"
+                    className="inline-flex items-center justify-center text-base font-medium text-stone-900 underline-offset-4 hover:underline"
                   >
-                    Explore cultural games
+                    explore the games
                   </Link>
                 </div>
 
-                <div className="mt-10 grid gap-4 sm:grid-cols-3">
+                <div className="mt-14 grid gap-4 sm:grid-cols-3">
                   {IMPACT_METRICS.map((metric) => (
-                    <div key={metric.label} className="rounded-2xl border border-[#eadfca] bg-white px-4 py-3 shadow-sm">
-                      <p className={`text-xl font-black ${metric.tone}`}>{metric.value}</p>
-                      <p className="text-sm text-[#6b7280]">{metric.label}</p>
+                    <div key={metric.label} className="rounded-2xl border border-stone-200 bg-white/80 px-4 py-4 backdrop-blur">
+                      <p className="text-lg font-medium tracking-tight text-stone-900">{metric.value}</p>
+                      <p className="mt-1 text-sm text-stone-500">{metric.label}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="animate-slide-in-right relative mx-auto w-full max-w-md lg:mr-0 lg:ml-auto lg:max-w-lg">
-                <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-[#fce300]/40 via-[#fffdf7] to-[#ef3340]/20 blur-2xl" aria-hidden />
-                <div className="relative space-y-4 rounded-3xl border border-[#e9dcc0] bg-white/95 p-5 shadow-2xl shadow-[#b9a06a]/20 sm:p-6">
-                  <div className="rounded-2xl border border-[#eadfca] bg-[#fffaf0] p-4">
-                    <p className="text-xs font-bold uppercase tracking-wider text-[#0f5132]">Phrases you will learn</p>
+              <div className="relative mx-auto w-full max-w-md lg:mr-0 lg:ml-auto lg:max-w-lg">
+                <div className="relative space-y-4 rounded-2xl border border-stone-200 bg-white/80 p-6 backdrop-blur">
+                  <div className="rounded-xl border border-stone-200 bg-[#fffdf7] p-4">
+                    <p className="text-xs font-medium uppercase tracking-wider text-stone-500">phrases you&apos;ll learn</p>
                     <div className="mt-3 space-y-2">
                       {HERO_WORDS.map((word) => (
-                        <div key={word.shona} className="flex items-center justify-between rounded-xl bg-white px-3 py-2 ring-1 ring-[#efe3cc]">
+                        <div key={word.shona} className="flex items-center justify-between rounded-lg bg-white px-3 py-2 ring-1 ring-stone-100">
                           <div>
-                            <p className="font-serif text-xl font-semibold text-[#1f2937]">{word.shona}</p>
-                            <p className="text-xs text-[#6b7280]">{word.english}</p>
+                            <p className="text-lg font-medium tracking-tight text-stone-900">{word.shona}</p>
+                            <p className="text-xs text-stone-500">{word.english}</p>
                           </div>
-                          <span
-                            className={`h-2.5 w-16 rounded-full bg-gradient-to-r ${word.color}`}
-                            aria-hidden
-                          />
+                          <span className="h-1.5 w-12 rounded-full bg-emerald-600" aria-hidden />
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  <div className="rounded-2xl border border-[#eadfca] bg-[#fffaf0] p-4">
+                  <div className="rounded-xl border border-stone-200 bg-[#fffdf7] p-4">
                     <div className="flex items-center justify-between">
-                      <p className="text-sm font-semibold text-[#1f2937]">Lesson progress</p>
-                      <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-700">
-                        Tracked
+                      <p className="text-sm font-medium text-stone-900">lesson progress</p>
+                      <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-700">
+                        tracked
                       </span>
                     </div>
-                    <div className="mt-3 h-2 overflow-hidden rounded-full bg-[#ece7d8]">
-                      <div className="h-full w-3/4 rounded-full bg-gradient-to-r from-[#009739] via-[#fce300] to-[#ef3340]" />
+                    <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-stone-100">
+                      <div className="h-full w-3/4 rounded-full bg-emerald-600" />
                     </div>
-                    <p className="mt-2 text-xs text-[#6b7280]">Bite-sized units, quests, and reviews keep you moving.</p>
+                    <p className="mt-2 text-xs text-stone-500">bite-sized units, quests, and reviews keep you moving.</p>
                   </div>
 
                   <div className="grid grid-cols-2 gap-3">
                     <Link
                       href="/learn"
-                      className="rounded-xl border border-[#e2d7bf] bg-white px-3 py-2 text-center text-sm font-semibold text-[#1f2937] transition hover:bg-[#fff6dd]"
+                      className="rounded-lg border border-stone-200 bg-white px-3 py-2 text-center text-sm font-medium text-stone-900 transition hover:border-stone-300"
                     >
-                      Lessons
+                      lessons
                     </Link>
                     <Link
                       href="/flashcards"
-                      className="rounded-xl border border-[#e2d7bf] bg-white px-3 py-2 text-center text-sm font-semibold text-[#1f2937] transition hover:bg-[#fff6dd]"
+                      className="rounded-lg border border-stone-200 bg-white px-3 py-2 text-center text-sm font-medium text-stone-900 transition hover:border-stone-300"
                     >
-                      Flashcards
+                      flashcards
                     </Link>
-                  </div>
-
-                  <div className="flex items-center gap-3 text-xs text-[#6b7280]">
-                    <span className="h-2 w-2 animate-pulse rounded-full bg-[#22c55e]" aria-hidden />
-                    Crafted for momentum, not pressure.
                   </div>
                 </div>
               </div>
@@ -222,50 +188,40 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-y border-[#eadfca] bg-white/80 py-4">
-          <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-4 text-center text-sm text-[#57534e] sm:text-base">
-            <span className="font-semibold text-[#0f5132]">Zimbabwean identity</span>
-            <span className="hidden sm:inline text-[#c4b08a]" aria-hidden>
-              ·
-            </span>
-            <span>Family-centered vocabulary</span>
-            <span className="hidden sm:inline text-[#c4b08a]" aria-hidden>
-              ·
-            </span>
-            <span>Bite-sized daily lessons</span>
-            <span className="hidden sm:inline text-[#c4b08a]" aria-hidden>
-              ·
-            </span>
-            <span>Culture woven into every lesson</span>
+        <section className="border-y border-stone-200 bg-white/60 py-5">
+          <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-6 text-center text-sm text-stone-600">
+            <span className="font-medium text-stone-900">zimbabwean identity</span>
+            <span className="hidden text-stone-300 sm:inline" aria-hidden>·</span>
+            <span>family-centered vocabulary</span>
+            <span className="hidden text-stone-300 sm:inline" aria-hidden>·</span>
+            <span>bite-sized daily lessons</span>
+            <span className="hidden text-stone-300 sm:inline" aria-hidden>·</span>
+            <span>culture in every lesson</span>
           </div>
         </section>
 
-        <section className="bg-[#fff8eb] px-4 py-24 text-[#1c1917] sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-black tracking-tight text-[#1f2937] sm:text-4xl">Bright, alive, and rooted in Zimbabwe</h2>
-              <p className="mt-4 text-lg text-[#57534e]">
-                Every section is designed to feel warm and premium while honoring authentic language and culture.
+        <section className="px-6 py-24">
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-2xl">
+              <h2 className="text-3xl font-medium tracking-tight text-stone-900 md:text-4xl">bright, alive, and rooted in zimbabwe.</h2>
+              <p className="mt-4 text-lg text-stone-700">
+                every section is designed to feel warm and intentional while honoring authentic language and culture.
               </p>
             </div>
             <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {VALUE_PILLARS.map((f) => (
                 <article
                   key={f.title}
-                  className={`group relative overflow-hidden rounded-3xl border border-[#e7dcc8] bg-white p-6 shadow-md transition duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8 ${f.span}`}
+                  className={`group relative rounded-2xl border border-stone-200 bg-white/80 p-8 backdrop-blur transition-colors hover:border-stone-300 ${f.span}`}
                 >
-                  <div
-                    className={`pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-gradient-to-br ${f.accent} blur-2xl transition duration-500 group-hover:opacity-100`}
-                    aria-hidden
-                  />
-                  <div className="relative flex items-start gap-4">
-                    <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-[#f5f5f4] text-2xl ring-1 ring-[#e7e5e4]">
+                  <div className="flex items-start gap-4">
+                    <span className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-stone-100 text-xl">
                       {f.icon}
                     </span>
                     <div>
-                      <h3 className="text-xl font-bold text-[#1f2937]">{f.title}</h3>
-                      <p className="mt-1 font-serif text-sm italic text-[#0f5132]">{f.shona}</p>
-                      <p className="mt-3 leading-relaxed text-[#57534e]">{f.description}</p>
+                      <h3 className="text-lg font-medium tracking-tight text-stone-900">{f.title}</h3>
+                      <p className="mt-1 text-sm italic text-emerald-700">{f.shona}</p>
+                      <p className="mt-3 leading-relaxed text-stone-700">{f.description}</p>
                     </div>
                   </div>
                 </article>
@@ -274,32 +230,34 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-gradient-to-b from-[#fff8eb] to-[#fffdf7] px-4 py-24 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
-            <h2 className="text-center text-3xl font-black tracking-tight text-[#1f2937] sm:text-4xl">A journey built like a story</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-[#57534e]">
-              Every stage is designed to move you from listening to fluent expression without losing joy.
-            </p>
-            <ol className="mt-14 grid gap-8 md:grid-cols-3">
+        <section className="px-6 py-24">
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="text-3xl font-medium tracking-tight text-stone-900 md:text-4xl">a journey built like a story.</h2>
+              <p className="mt-4 text-lg text-stone-700">
+                every stage moves you from listening to fluent expression without losing joy.
+              </p>
+            </div>
+            <ol className="mt-14 grid gap-6 md:grid-cols-3">
               {EXPERIENCE_STEPS.map((s) => (
                 <li
                   key={s.step}
-                  className="relative rounded-3xl border border-[#e7dcc8] bg-white p-8 shadow-md"
+                  className="relative rounded-2xl border border-stone-200 bg-white/80 p-8 backdrop-blur"
                 >
-                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0f5132] text-lg font-black text-[#fce300]">
+                  <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-stone-900 text-sm font-medium text-white">
                     {s.step}
                   </span>
-                  <h3 className="mt-5 text-xl font-bold text-[#1f2937]">{s.title}</h3>
-                  <p className="mt-2 leading-relaxed text-[#57534e]">{s.body}</p>
+                  <h3 className="mt-5 text-lg font-medium tracking-tight text-stone-900">{s.title}</h3>
+                  <p className="mt-2 leading-relaxed text-stone-700">{s.body}</p>
                 </li>
               ))}
             </ol>
 
-            <div className="mt-12 rounded-3xl border border-[#e7dcc8] bg-white p-8 shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-widest text-[#0f5132]">Culture notes inside the curriculum</p>
+            <div className="mt-12 rounded-2xl border border-stone-200 bg-white/80 p-8 backdrop-blur">
+              <p className="text-xs font-medium uppercase tracking-widest text-emerald-700">culture notes inside the curriculum</p>
               <div className="mt-5 grid gap-4 md:grid-cols-3">
                 {CULTURE_NOTES.map((note) => (
-                  <p key={note} className="rounded-2xl bg-[#fff8eb] p-4 text-sm leading-relaxed text-[#57534e]">
+                  <p key={note} className="rounded-xl border border-stone-100 bg-[#fffdf7] p-4 text-sm leading-relaxed text-stone-700">
                     {note}
                   </p>
                 ))}
@@ -308,59 +266,58 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-t border-[#e7dcc8] bg-[#fffdf7] px-4 py-16 text-[#1f2937] sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <blockquote className="font-serif text-2xl font-medium leading-snug sm:text-3xl">
-              Mutauro unobatanidza mwoyo —{' '}
-              <span className="text-[#0f5132]">language is where hearts meet and recognize each other.</span>
+        <section className="border-t border-stone-200 px-6 py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <blockquote className="text-2xl font-medium leading-snug tracking-tight text-stone-900 md:text-3xl">
+              mutauro unobatanidza mwoyo —{' '}
+              <span className="text-emerald-700">language is where hearts meet and recognize each other.</span>
             </blockquote>
-            <p className="mt-6 text-[#6b7280]">
-              Shona Learn is built for presence, pride, and true connection, not empty streaks or shallow memorization.
+            <p className="mt-6 text-stone-600">
+              shona learn is built for presence, pride, and true connection, not empty streaks or shallow memorization.
             </p>
           </div>
         </section>
 
-        <section className="relative overflow-hidden bg-gradient-to-r from-[#0f5132] via-[#009739] to-[#007a32] px-4 py-20 text-white sm:px-6 lg:px-8">
-          <div className="absolute inset-0 opacity-15 flag-stripes" aria-hidden />
-          <div className="relative mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-black tracking-tight sm:text-4xl">Ready for a bold new way to learn Shona?</h2>
-            <p className="mt-4 text-lg text-white/90">
-              Step into a premium Zimbabwean learning experience and make your next conversation the one you are proud of.
+        <section className="px-6 py-20">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-stone-200 bg-white/80 p-12 text-center backdrop-blur">
+            <h2 className="text-3xl font-medium tracking-tight text-stone-900 md:text-4xl">ready to start?</h2>
+            <p className="mt-4 text-lg text-stone-700">
+              step into a learning experience built for the way shona is actually spoken.
             </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="/learn"
-                className="inline-flex items-center justify-center rounded-2xl bg-[#fce300] px-10 py-4 text-base font-bold text-[#0a3b25] shadow-xl shadow-black/20 transition hover:-translate-y-0.5 hover:bg-[#fff48a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="inline-flex items-center justify-center rounded-full bg-stone-900 px-8 py-3 text-base font-medium text-white transition hover:bg-stone-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900"
               >
-                Start learning now
+                start learning now
               </Link>
               <Link
                 href="/flashcards"
-                className="inline-flex items-center justify-center rounded-2xl border border-white/35 bg-white/15 px-10 py-4 text-base font-bold text-white transition hover:bg-white/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="inline-flex items-center justify-center text-base font-medium text-stone-900 underline-offset-4 hover:underline"
               >
-                Try a flashcard deck
+                try a flashcard deck
               </Link>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="border-t border-[#e7dcc8] bg-[#f9f2df] px-4 py-10 text-sm text-[#57534e] sm:px-6 lg:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 sm:flex-row">
+      <footer className="border-t border-stone-200 bg-[#fffdf7] px-6 py-10 text-sm text-stone-600">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 sm:flex-row">
           <p className="text-center sm:text-left">
-            <span className="font-semibold text-[#1f2937]">Shona Learn</span>
-            <span className="text-[#9a8f78]"> · </span>
-            ChiShona chinoshamisa — beautiful Shona.
+            <span className="font-medium text-stone-900">shona learn</span>
+            <span className="text-stone-400"> · </span>
+            built with care for shona language and culture.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link href="/learn" className="font-medium text-[#1f2937] hover:text-[#0f5132]">
-              Learn
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            <Link href="/learn" className="text-stone-700 hover:text-stone-900">
+              lessons
             </Link>
-            <Link href="/flashcards" className="font-medium text-[#1f2937] hover:text-[#0f5132]">
-              Flashcards
+            <Link href="/flashcards" className="text-stone-700 hover:text-stone-900">
+              flashcards
             </Link>
-            <Link href="/games" className="font-medium text-[#1f2937] hover:text-[#0f5132]">
-              Games
+            <Link href="/games" className="text-stone-700 hover:text-stone-900">
+              games
             </Link>
           </div>
         </div>

@@ -1,6 +1,9 @@
 'use client'
-import { FaLock, FaCheck, FaStar, FaPlay } from 'react-icons/fa'
-import { motion } from 'framer-motion'
+import { FaLock, FaCheck, FaPlay } from 'react-icons/fa'
+// The card only used framer-motion for a single mount fade-in. We replace
+// it with Tailwind's `animate-slide-in-up` keyframes (configured in
+// tailwind.config.js) so the lesson grid renders without paying the
+// framer-motion runtime cost on every card.
 
 interface LessonCardProps {
   lesson: any
@@ -12,25 +15,25 @@ interface LessonCardProps {
 export default function LessonCard({ lesson, progress, onClick, locked }: LessonCardProps) {
   const isCompleted = progress?.completed
   const score = progress?.score || 0
-  
-  const unitConfig: Record<string, { emoji: string; color: string }> = {
-    'Unit 1': { emoji: '👋', color: 'from-green-400 to-green-600' },
-    'Unit 2': { emoji: '👨‍👩‍👧‍👦', color: 'from-pink-400 to-pink-600' },
-    'Unit 3': { emoji: '🔢', color: 'from-purple-400 to-purple-600' },
-    'Unit 4': { emoji: '🏠', color: 'from-yellow-400 to-yellow-600' },
-    'Unit 5': { emoji: '🚌', color: 'from-cyan-400 to-cyan-600' },
-    'Unit 6': { emoji: '🏃', color: 'from-red-400 to-red-600' },
-    'Unit 7': { emoji: '💭', color: 'from-indigo-400 to-indigo-600' },
-    'Unit 8': { emoji: '🌍', color: 'from-emerald-400 to-emerald-600' },
-    'Unit 9': { emoji: '🌿', color: 'from-teal-400 to-teal-600' },
-    'Unit 10': { emoji: '🏙️', color: 'from-sky-400 to-sky-600' },
-    'Unit 11': { emoji: '🏛️', color: 'from-red-500 to-red-700' },
-    'Unit 12': { emoji: '🧠', color: 'from-violet-500 to-violet-700' },
-    'Unit 13': { emoji: '🏛️', color: 'from-amber-500 to-amber-700' },
+
+  const unitConfig: Record<string, { emoji: string }> = {
+    'Unit 1': { emoji: '👋' },
+    'Unit 2': { emoji: '👨‍👩‍👧‍👦' },
+    'Unit 3': { emoji: '🔢' },
+    'Unit 4': { emoji: '🏠' },
+    'Unit 5': { emoji: '🚌' },
+    'Unit 6': { emoji: '🏃' },
+    'Unit 7': { emoji: '💭' },
+    'Unit 8': { emoji: '🌍' },
+    'Unit 9': { emoji: '🌿' },
+    'Unit 10': { emoji: '🏙️' },
+    'Unit 11': { emoji: '🏛️' },
+    'Unit 12': { emoji: '🧠' },
+    'Unit 13': { emoji: '🏛️' },
   }
 
   const getUnitKey = (category: string) => {
-    const match = category.match(/^Unit \d+/)
+    const match = category?.match(/^Unit \d+/)
     return match ? match[0] : ''
   }
 
@@ -38,145 +41,75 @@ export default function LessonCard({ lesson, progress, onClick, locked }: Lesson
     return unitConfig[getUnitKey(category)]?.emoji || lesson.emoji || '📚'
   }
 
-  const getCategoryColor = (category: string) => {
-    return unitConfig[getUnitKey(category)]?.color || lesson.colorScheme?.gradient || 'from-gray-400 to-gray-600'
-  }
-
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty?.toLowerCase()) {
-      case 'easy': return 'bg-green-100 text-green-700 border-green-200'
-      case 'medium': return 'bg-yellow-100 text-yellow-700 border-yellow-200'
-      case 'hard': return 'bg-red-100 text-red-700 border-red-200'
-      default: return 'bg-blue-100 text-blue-700 border-blue-200'
-    }
-  }
-
   return (
-    <motion.div
+    <div
       onClick={!locked ? onClick : undefined}
       className={`
-        relative bg-white/90 backdrop-blur-sm rounded-2xl shadow-soft p-6 cursor-pointer
-        border border-white/20 overflow-hidden
-        ${locked ? 'opacity-60 cursor-not-allowed' : 'interactive-card'}
-        ${isCompleted ? 'ring-2 ring-green-500 ring-opacity-50' : ''}
+        relative rounded-2xl p-6 cursor-pointer transition-colors animate-slide-in-up
+        border bg-white/80 backdrop-blur
+        ${locked
+          ? 'border-stone-200 opacity-60 cursor-not-allowed'
+          : isCompleted
+            ? 'border-emerald-600 hover:border-emerald-700'
+            : 'border-stone-200 hover:border-stone-300'}
       `}
       data-testid="lesson-card"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      whileHover={!locked ? { 
-        y: -2,
-        transition: { duration: 0.2 }
-      } : {}}
     >
-      {/* Background gradient overlay */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${getCategoryColor(lesson.category)} opacity-5`} />
-      
       {/* Lock overlay */}
       {locked && (
-        <motion.div 
-          className="absolute inset-0 flex items-center justify-center bg-black/20 backdrop-blur-sm rounded-2xl z-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-        >
+        <div className="absolute inset-0 flex items-center justify-center bg-stone-900/10 backdrop-blur-[2px] rounded-2xl z-10">
           <div className="text-center">
-            <FaLock className="text-4xl text-white mb-2" />
-            <p className="text-white font-semibold">Complete previous lesson</p>
+            <FaLock className="text-2xl text-stone-500 mb-2 mx-auto" />
+            <p className="text-stone-700 font-medium text-sm lowercase">complete previous lesson</p>
           </div>
-        </motion.div>
+        </div>
       )}
-      
+
       {/* Completion badge */}
       {isCompleted && (
-        <motion.div 
-          className="absolute top-3 right-3 z-10"
-          initial={{ scale: 0, rotate: -180 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-        >
-          <div className="bg-green-500 text-white rounded-full p-2 shadow-medium">
-            <FaCheck className="text-sm" />
+        <div className="absolute top-4 right-4 z-10">
+          <div className="bg-emerald-600 text-white rounded-full p-1.5">
+            <FaCheck className="text-xs" />
           </div>
-        </motion.div>
+        </div>
       )}
-      
+
       {/* Category emoji */}
-      <div className="text-5xl mb-4 relative z-10">
-        {getCategoryEmoji(lesson.category)}
-      </div>
-      
+      <div className="text-4xl mb-4">{getCategoryEmoji(lesson.category)}</div>
+
       {/* Lesson title */}
-      <h3 className="text-xl font-bold mb-2 text-gray-800 relative z-10">
+      <h3 className="text-lg font-medium tracking-tight mb-2 text-stone-900 lowercase">
         {lesson.title}
       </h3>
-      
+
       {/* Lesson description */}
-      <p className="text-gray-600 mb-4 leading-relaxed relative z-10">
+      <p className="text-stone-600 text-sm mb-4 leading-relaxed">
         {lesson.description}
       </p>
-      
-      {/* Difficulty badge */}
-      {lesson.difficulty && (
-        <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold border mb-4 ${getDifficultyColor(lesson.difficulty)}`}>
-          {lesson.difficulty}
-        </div>
-      )}
-      
+
       {/* Bottom section */}
-      <div className="flex justify-between items-center relative z-10">
-        <div className="flex items-center space-x-2">
-          <FaPlay className="text-green-500 text-sm" />
-          <span className="text-sm text-gray-500 font-medium">
-            {lesson.exercises?.length || 5} exercises
-          </span>
+      <div className="flex justify-between items-center">
+        <div className="flex items-center gap-2 text-sm text-stone-500">
+          <FaPlay className="text-stone-400 text-xs" />
+          <span className="lowercase">{lesson.exercises?.length || 5} exercises</span>
         </div>
-        
-        {/* Stars for completed lessons */}
+
         {isCompleted && (
-          <motion.div 
-            className="flex items-center space-x-1"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 }}
-          >
-            {[...Array(3)].map((_, i) => (
-              <FaStar
-                key={i}
-                className={`text-sm ${i < Math.floor(score / 33) ? 'text-yellow-400' : 'text-gray-300'}`}
-              />
-            ))}
-            <span className="text-xs text-gray-500 ml-1">
-              {score}%
-            </span>
-          </motion.div>
+          <span className="text-sm text-emerald-700 font-medium tabular-nums">{score}%</span>
         )}
       </div>
-      
+
       {/* Progress bar for completed lessons */}
       {isCompleted && (
-        <motion.div 
-          className="mt-3 relative z-10"
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-        >
-          <div className="bg-gray-200 rounded-full h-2 overflow-hidden">
+        <div className="mt-4">
+          <div className="bg-stone-100 rounded-full h-1 overflow-hidden">
             <div
-              className="bg-gradient-to-r from-green-400 to-green-600 h-full transition-all duration-1000"
+              className="bg-emerald-600 h-full transition-all duration-700"
               style={{ width: `${score}%` }}
             />
           </div>
-        </motion.div>
+        </div>
       )}
-      
-      {/* Hover effect for non-locked cards */}
-      {!locked && (
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-2xl opacity-0"
-          whileHover={{ opacity: 1 }}
-          transition={{ duration: 0.2 }}
-        />
-      )}
-    </motion.div>
+    </div>
   )
-} 
+}
