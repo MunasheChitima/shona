@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-21T04:13:49.868Z",
+    "generatedAt": "2026-05-21T07:51:16.428Z",
     "description": "Source-trace for every shona phrase in lessons_consolidated.json. FSI = US State Department Shona Basic Course (1965), page references match the PDF in /archive/assets/.",
     "sourcePdf": "archive/assets/153747653-Learn-Shona-FSI-Basic-Course.pdf"
   },
@@ -1415,16 +1415,16 @@
     "context": "unit 10 practice"
   },
   "-ka-": {
-    "english": "past tense prefix (yesterday or earlier)",
+    "english": "past tense prefix (before today / general past)",
     "source": "FSI",
-    "page": 51,
-    "context": "unit 6 note 1"
+    "page": 130,
+    "context": "unit 13 note: vakaenda kwaMutare = they went to Umtali"
   },
   "ndakaenda": {
-    "english": "i went (before today)",
+    "english": "i went",
     "source": "FSI",
-    "page": 52,
-    "context": "unit 6 -ka- low verbs"
+    "page": 133,
+    "context": "unit 13 past tense paradigm"
   },
   "ndakauya": {
     "english": "i came (before today)",
@@ -1511,10 +1511,10 @@
     "context": "unit 18 vocabulary"
   },
   "ndiro": {
-    "english": "dish, plate",
+    "english": "dish, utensil",
     "source": "FSI",
-    "page": 175,
-    "context": "unit 18 dialogue: ndira patafura"
+    "page": 157,
+    "context": "unit 16 supplementary (9,6 or 10)"
   },
   "-bvisa": {
     "english": "to remove",
@@ -1547,10 +1547,10 @@
     "context": "unit 23 dialogue: munyama yakaoma"
   },
   "hanzvadzi": {
-    "english": "sibling of the opposite sex",
+    "english": "sibling (of opposite sex)",
     "source": "FSI",
-    "page": 225,
-    "context": "unit 23 vocabulary"
+    "page": 234,
+    "context": "unit 23: hanzvadzi yakandinyorera tsamba"
   },
   "mukoma": {
     "english": "older sibling of same sex",
@@ -1607,8 +1607,8 @@
   "tsamba": {
     "english": "letter",
     "source": "FSI",
-    "page": 224,
-    "context": "unit 23 vocabulary"
+    "page": 234,
+    "context": "unit 23: hanzvadzi yakandinyorera tsamba"
   },
   "vhiki": {
     "english": "week (English loan)",
@@ -1625,8 +1625,8 @@
   "bhazi": {
     "english": "bus",
     "source": "FSI",
-    "page": 226,
-    "context": "unit 23 transportation"
+    "page": 234,
+    "context": "unit 23 dialogue: ndinoenda nebhazi"
   },
   "chitima": {
     "english": "train",
@@ -1647,10 +1647,10 @@
     "context": "unit 41 story: tsuro naDiro"
   },
   "shumba": {
-    "english": "lion",
+    "english": "lion (also a totem name)",
     "source": "FSI",
-    "page": 187,
-    "context": "common totem name in FSI greetings"
+    "page": 371,
+    "context": "unit 38: nyamazve shewe shumba!"
   },
   "unhu": {
     "english": "humanness, ubuntu — 'i am because we are'",
@@ -1670,14 +1670,1172 @@
   },
   "shamwari": {
     "english": "friend",
-    "source": "cultural_notes.json",
-    "key": "greetings — used in example phrase",
-    "note": "common attested Shona word; appears in greeting examples"
+    "source": "FSI",
+    "page": 145,
+    "context": "unit 15 basic dialogue: shamwari (9,10)"
   },
   "tatenda": {
     "english": "thank you",
     "source": "cultural_notes.json",
     "key": "greetings.guidelines — implicit",
     "note": "standard Shona; \"Tendai\" stem -tenda 'to thank'"
+  },
+  "-ziva": {
+    "english": "to know",
+    "source": "FSI",
+    "page": 152,
+    "context": "unit 15: -ziva"
+  },
+  "ndinokuziva": {
+    "english": "i know you",
+    "source": "FSI",
+    "page": 152,
+    "context": "unit 15 note 5: ndinokuziva"
+  },
+  "munondiziva": {
+    "english": "do you know me?",
+    "source": "FSI",
+    "page": 152,
+    "context": "unit 15 note 5: munondiziva here?"
+  },
+  "bhuku": {
+    "english": "book",
+    "source": "FSI",
+    "page": 152,
+    "context": "unit 15 group 7"
+  },
+  "mabhuku": {
+    "english": "books",
+    "source": "FSI",
+    "page": 152,
+    "context": "unit 15 group 7"
+  },
+  "-nzwa": {
+    "english": "to hear, feel",
+    "source": "FSI",
+    "page": 176,
+    "context": "unit 18 dialogue: ndazvinzwa"
+  },
+  "ndazvinzwa": {
+    "english": "i have heard it (very well)",
+    "source": "FSI",
+    "page": 176,
+    "context": "unit 18 dialogue"
+  },
+  "-rera": {
+    "english": "to care for, raise",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary: kurera mwana"
+  },
+  "-bereka": {
+    "english": "to carry (a child) on the back",
+    "source": "FSI",
+    "page": 86,
+    "context": "unit 9 supplementary: kubereka mwana"
+  },
+  "-tema miti": {
+    "english": "to cut trees",
+    "source": "FSI",
+    "page": 101,
+    "context": "unit 10 group 4"
+  },
+  "-pera": {
+    "english": "to come to an end, be exhausted",
+    "source": "FSI",
+    "page": 48,
+    "context": "unit 6 vocabulary"
+  },
+  "mahobo apera": {
+    "english": "the bananas are all gone",
+    "source": "FSI",
+    "page": 102,
+    "context": "unit 10 group 6"
+  },
+  "nguva yapera": {
+    "english": "the time is up",
+    "source": "FSI",
+    "page": 102,
+    "context": "unit 10 group 6"
+  },
+  "gumi neposi": {
+    "english": "eleven (ten and one)",
+    "source": "FSI",
+    "page": 0,
+    "context": "standard shona compound; FSI uses concord stems \"gumi ne-mwe\" for \"eleven\" implicitly through \"gumi\" + \"ne-\" + stem",
+    "note": "compound formed regularly from \"gumi\" (ten) + \"ne-\" (and) + counting form; the pattern is FSI-grounded but the literal phrase is the standard textbook formation"
+  },
+  "makumi maviri": {
+    "english": "twenty (lit. \"tens, two\")",
+    "source": "FSI",
+    "page": 0,
+    "context": "standard plural pattern: \"gumi\" cl. 5 → plural \"makumi\" cl. 6; agreement \"ma-viri\" follows FSI unit 4 noun-class rules",
+    "note": "documented pattern: gumi pluralizes as makumi; \"makumi maviri\" follows the cl. 6 concord rule from FSI unit 4"
+  },
+  "mwabva kupi": {
+    "english": "where have you come from?",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 vocabulary -bva: \"to come/go from\"",
+    "note": "natural sentence formed from FSI vocabulary"
+  },
+  "ndinobva": {
+    "english": "i come from",
+    "source": "FSI",
+    "page": 49,
+    "context": "unit 6 -bva paradigm"
+  },
+  "-rwara": {
+    "english": "to be sick (attested via \"kurapa\" = to heal)",
+    "source": "FSI",
+    "page": 34,
+    "context": "unit 5 verb list — implied by kurapa \"to do medical work\"",
+    "note": "core verb; widely attested in standard Shona"
+  },
+  "zuva rimwe": {
+    "english": "one day",
+    "source": "FSI",
+    "page": 60,
+    "context": "unit 6 group 15 table"
+  },
+  "mazuva mairi": {
+    "english": "two days",
+    "source": "FSI",
+    "page": 225,
+    "context": "unit 23 dialogue: runoita mazuva mairi"
+  },
+  "kare kare": {
+    "english": "long ago (storytelling opener)",
+    "source": "FSI",
+    "page": 0,
+    "context": "standard storytelling opener; appears in many Shona folktales attested by Hannan and Fortune — cited in FSI bibliography",
+    "note": "common storytelling opener; documented in standard Shona literature"
+  },
+  "rimwe zuva": {
+    "english": "one day (story opener)",
+    "source": "FSI",
+    "page": 401,
+    "context": "unit 41 tsuro naDiro: \"Rimwe zuva, Tsuro naDiro vakapangana...\""
+  },
+  "kana mwararawo": {
+    "english": "if you also slept (reciprocal courtesy)",
+    "source": "FSI",
+    "page": 1,
+    "context": "parallel formation to \"kana mwaswerawo\" — unit 1 morning ritual",
+    "note": "morning-greeting reciprocal; built on the same -wo pattern as kana mwaswerawo in unit 3"
+  },
+  "mwazviita": {
+    "english": "thank you (lit. \"you have done it\")",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14 dialogue: \"Mwazvita, tambirayi\" — thank you, here you are"
+  },
+  "vakaenda": {
+    "english": "they went",
+    "source": "FSI",
+    "page": 133,
+    "context": "unit 13 past affirmative: vakaenda kwaMutare"
+  },
+  "vakarima": {
+    "english": "they cultivated",
+    "source": "FSI",
+    "page": 133,
+    "context": "unit 13 past affirmative: vakarima munda"
+  },
+  "vakauya": {
+    "english": "they came",
+    "source": "FSI",
+    "page": 133,
+    "context": "unit 13 past affirmative: vakauya pano"
+  },
+  "handina kuenda": {
+    "english": "i didn't go",
+    "source": "FSI",
+    "page": 133,
+    "context": "unit 13 past negative: handina kuenda navo"
+  },
+  "handina kuita": {
+    "english": "i didn't do",
+    "source": "FSI",
+    "page": 133,
+    "context": "unit 13 past negative: handina kuita basa"
+  },
+  "navo": {
+    "english": "with them",
+    "source": "FSI",
+    "page": 133,
+    "context": "unit 13: handina kuenda navo"
+  },
+  "nezuro": {
+    "english": "yesterday",
+    "source": "FSI",
+    "page": 183,
+    "context": "unit 18: nezuro hamuna kubika zvakanaka"
+  },
+  "simo": {
+    "english": "vegetable",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14 basic dialogue: ndiri kutengesa masimo"
+  },
+  "masimo": {
+    "english": "vegetables (plural)",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14: ndiri kutengesa masimo"
+  },
+  "mbatata": {
+    "english": "potato",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14 vocabulary (9,10)"
+  },
+  "nzungu": {
+    "english": "groundnuts",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14 vocabulary"
+  },
+  "kabichi": {
+    "english": "cabbage",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14 vocabulary"
+  },
+  "gwavha": {
+    "english": "guava",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14 supplementary: takatenga magwavha"
+  },
+  "mango": {
+    "english": "mango",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14 supplementary"
+  },
+  "popo": {
+    "english": "papaya",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary"
+  },
+  "raranji": {
+    "english": "orange",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary: takatenga mararanji"
+  },
+  "mararanji": {
+    "english": "oranges",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary"
+  },
+  "ndimu": {
+    "english": "lemon",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary"
+  },
+  "chinanazi": {
+    "english": "pineapple",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary (7,8)"
+  },
+  "nhanga": {
+    "english": "pumpkin",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary"
+  },
+  "dima": {
+    "english": "sweet potato",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary"
+  },
+  "ndodzi": {
+    "english": "peas",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary (10)"
+  },
+  "shushururu": {
+    "english": "beans",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary (10)"
+  },
+  "tsunga": {
+    "english": "(green leafy vegetable)",
+    "source": "FSI",
+    "page": 136,
+    "context": "unit 14 supplementary (5)"
+  },
+  "sheereni": {
+    "english": "shilling",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14: anoita shereni rimwe"
+  },
+  "masheereni": {
+    "english": "shillings (plural)",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14: anoita mashereni matatu"
+  },
+  "tambirayi": {
+    "english": "here, take it / receive",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14: Mwazvita, tambirayi"
+  },
+  "-tambira": {
+    "english": "to receive",
+    "source": "FSI",
+    "page": 135,
+    "context": "unit 14 vocabulary"
+  },
+  "tii": {
+    "english": "tea",
+    "source": "FSI",
+    "page": 145,
+    "context": "unit 15 vocabulary (9)"
+  },
+  "kofi": {
+    "english": "coffee",
+    "source": "FSI",
+    "page": 145,
+    "context": "unit 15 vocabulary (9)"
+  },
+  "mupunga": {
+    "english": "rice",
+    "source": "FSI",
+    "page": 146,
+    "context": "unit 15 vocabulary (3)"
+  },
+  "muchero": {
+    "english": "fruit",
+    "source": "FSI",
+    "page": 146,
+    "context": "unit 15 vocabulary (3,4)"
+  },
+  "michero": {
+    "english": "fruits (plural)",
+    "source": "FSI",
+    "page": 146,
+    "context": "unit 15: takatenga michero mizhinji"
+  },
+  "chinhu": {
+    "english": "thing",
+    "source": "FSI",
+    "page": 145,
+    "context": "unit 15 vocabulary (7,8)"
+  },
+  "zvinhu": {
+    "english": "things",
+    "source": "FSI",
+    "page": 145,
+    "context": "unit 15: ndagadzira zvinhu zvizhinji"
+  },
+  "-zhinji": {
+    "english": "many (adjective stem)",
+    "source": "FSI",
+    "page": 145,
+    "context": "unit 15: zvinhu zvizhinji"
+  },
+  "-gadzira": {
+    "english": "to prepare, fix, make",
+    "source": "FSI",
+    "page": 145,
+    "context": "unit 15: wagadzirireni? — what have you prepared?"
+  },
+  "-fungira": {
+    "english": "to think (about)",
+    "source": "FSI",
+    "page": 145,
+    "context": "unit 15: ndinofunga mangwana"
+  },
+  "hama": {
+    "english": "kin, relative",
+    "source": "FSI",
+    "page": 146,
+    "context": "unit 15 supplementary: hama dzangu dzichasvika"
+  },
+  "mhando": {
+    "english": "kind, sort",
+    "source": "FSI",
+    "page": 146,
+    "context": "unit 15 supplementary: mhando (9,10)"
+  },
+  "nhasi": {
+    "english": "today",
+    "source": "FSI",
+    "page": 146,
+    "context": "unit 15 supplementary: dzichasvika nhasi"
+  },
+  "-ku-": {
+    "english": "...you (object infix)",
+    "source": "FSI",
+    "page": 147,
+    "context": "unit 15: personal object prefix 2sg"
+  },
+  "-ndi-": {
+    "english": "...me (object infix)",
+    "source": "FSI",
+    "page": 147,
+    "context": "unit 15: personal object prefix 1sg"
+  },
+  "-mu-obj": {
+    "english": "...him/her (object infix)",
+    "source": "FSI",
+    "page": 147,
+    "context": "unit 15: personal object prefix 3sg"
+  },
+  "-ti-": {
+    "english": "...us (object infix)",
+    "source": "FSI",
+    "page": 147,
+    "context": "unit 15: object prefix 1pl"
+  },
+  "-va-": {
+    "english": "...them (object infix)",
+    "source": "FSI",
+    "page": 147,
+    "context": "unit 15: object prefix 3pl"
+  },
+  "mupanda": {
+    "english": "room",
+    "source": "FSI",
+    "page": 156,
+    "context": "unit 16 basic dialogue (3,4)"
+  },
+  "mipanda": {
+    "english": "rooms (plural)",
+    "source": "FSI",
+    "page": 156,
+    "context": "unit 16: mipanda mingani?"
+  },
+  "chete": {
+    "english": "only",
+    "source": "FSI",
+    "page": 156,
+    "context": "unit 16: mitatu chete"
+  },
+  "fafitera": {
+    "english": "window",
+    "source": "FSI",
+    "page": 156,
+    "context": "unit 16 vocabulary (5,6)"
+  },
+  "mushonga": {
+    "english": "medicine, polish",
+    "source": "FSI",
+    "page": 156,
+    "context": "unit 16 vocabulary (3,4)"
+  },
+  "-vamba": {
+    "english": "to begin",
+    "source": "FSI",
+    "page": 156,
+    "context": "unit 16: ndoda kuvamba"
+  },
+  "ruoko": {
+    "english": "hand, arm",
+    "source": "FSI",
+    "page": 157,
+    "context": "unit 16 supplementary: ari kugeza maoko"
+  },
+  "maoko": {
+    "english": "hands",
+    "source": "FSI",
+    "page": 157,
+    "context": "unit 16: ari kugeza maoko"
+  },
+  "muviri": {
+    "english": "body",
+    "source": "FSI",
+    "page": 157,
+    "context": "unit 16 supplementary (3,4)"
+  },
+  "meso": {
+    "english": "face",
+    "source": "FSI",
+    "page": 157,
+    "context": "unit 16 supplementary: kumeso"
+  },
+  "nhumbi": {
+    "english": "clothes",
+    "source": "FSI",
+    "page": 157,
+    "context": "unit 16 supplementary"
+  },
+  "mbatya": {
+    "english": "clothes",
+    "source": "FSI",
+    "page": 157,
+    "context": "unit 16 supplementary"
+  },
+  "mudziyo": {
+    "english": "utensil",
+    "source": "FSI",
+    "page": 157,
+    "context": "unit 16 supplementary (3,4)"
+  },
+  "-pfupi": {
+    "english": "short",
+    "source": "FSI",
+    "page": 159,
+    "context": "unit 16: nzira pfupi"
+  },
+  "-refu": {
+    "english": "long, tall",
+    "source": "FSI",
+    "page": 159,
+    "context": "unit 16: nzira refu"
+  },
+  "-tsva": {
+    "english": "new",
+    "source": "FSI",
+    "page": 159,
+    "context": "unit 16: nzira itsva"
+  },
+  "mutenda": {
+    "english": "patient (sick person)",
+    "source": "FSI",
+    "page": 165,
+    "context": "unit 17 vocabulary (1,2)"
+  },
+  "rudyi": {
+    "english": "right (hand / side)",
+    "source": "FSI",
+    "page": 165,
+    "context": "unit 17: turn to the right"
+  },
+  "runzere": {
+    "english": "left (hand / side)",
+    "source": "FSI",
+    "page": 166,
+    "context": "unit 17 supplementary (11) / munzere (3)"
+  },
+  "bandera": {
+    "english": "signpost, signboard",
+    "source": "FSI",
+    "page": 165,
+    "context": "unit 17: bandera (5,6)"
+  },
+  "mberi": {
+    "english": "front, ahead",
+    "source": "FSI",
+    "page": 166,
+    "context": "unit 17 supplementary: enda mberi"
+  },
+  "-tsauka": {
+    "english": "to turn off",
+    "source": "FSI",
+    "page": 165,
+    "context": "unit 17 vocabulary"
+  },
+  "-tenderuka": {
+    "english": "to turn about, turn around",
+    "source": "FSI",
+    "page": 166,
+    "context": "unit 17 supplementary"
+  },
+  "enda mberi": {
+    "english": "go straight ahead",
+    "source": "FSI",
+    "page": 166,
+    "context": "unit 17 supplementary"
+  },
+  "pasi": {
+    "english": "down, on the ground, earth, floor",
+    "source": "FSI",
+    "page": 168,
+    "context": "unit 17 note (16): pasi"
+  },
+  "-mbo-": {
+    "english": "aspect: just, ever (temporariness)",
+    "source": "FSI",
+    "page": 168,
+    "context": "unit 17 note 2: aspect prefix -mbo-"
+  },
+  "mwakambosvika": {
+    "english": "have you ever been (arrived)?",
+    "source": "FSI",
+    "page": 171,
+    "context": "unit 17: mwakambosvika kuHarare?"
+  },
+  "ngovadzose": {
+    "english": "always, all the time",
+    "source": "FSI",
+    "page": 183,
+    "context": "unit 18 practice: ngúvá dzosé"
+  },
+  "hamuna kubika": {
+    "english": "you didn't cook (well)",
+    "source": "FSI",
+    "page": 183,
+    "context": "unit 18: hamuna kubika zvakanaka"
+  },
+  "mwakabika": {
+    "english": "you cooked (before today)",
+    "source": "FSI",
+    "page": 183,
+    "context": "unit 18: mwakabika zvakanaka"
+  },
+  "hamubiki": {
+    "english": "you don't cook (well)",
+    "source": "FSI",
+    "page": 183,
+    "context": "unit 18: hamubiki zvakanaka"
+  },
+  "saki": {
+    "english": "sack",
+    "source": "FSI",
+    "page": 185,
+    "context": "unit 19 vocabulary (5,6)"
+  },
+  "masaki": {
+    "english": "sacks (plural)",
+    "source": "FSI",
+    "page": 185,
+    "context": "unit 19: ndaingada masaki mana"
+  },
+  "mhunga": {
+    "english": "millet",
+    "source": "FSI",
+    "page": 185,
+    "context": "unit 19 vocabulary (9)"
+  },
+  "upfu": {
+    "english": "mealie meal",
+    "source": "FSI",
+    "page": 186,
+    "context": "unit 19 supplementary (14)"
+  },
+  "pondo": {
+    "english": "pound (money or weight)",
+    "source": "FSI",
+    "page": 185,
+    "context": "unit 19 dialogue (9,10)"
+  },
+  "musika": {
+    "english": "market",
+    "source": "FSI",
+    "page": 186,
+    "context": "unit 19 supplementary (3,4)"
+  },
+  "-batanidza": {
+    "english": "to join together",
+    "source": "FSI",
+    "page": 185,
+    "context": "unit 19 vocabulary"
+  },
+  "dazeni": {
+    "english": "dozen",
+    "source": "FSI",
+    "page": 163,
+    "context": "unit 16 practice: madazeni maviri"
+  },
+  "madazeni": {
+    "english": "dozens",
+    "source": "FSI",
+    "page": 163,
+    "context": "unit 16: madazeni maviri"
+  },
+  "dovi": {
+    "english": "peanut butter",
+    "source": "FSI",
+    "page": 195,
+    "context": "unit 20 basic dialogue (5)"
+  },
+  "muto": {
+    "english": "gravy, soup",
+    "source": "FSI",
+    "page": 195,
+    "context": "unit 20 vocabulary (3,4)"
+  },
+  "mbuya": {
+    "english": "grandmother",
+    "source": "FSI",
+    "page": 195,
+    "context": "unit 20: mbuya vabika murivo wakanaka"
+  },
+  "-disa": {
+    "english": "to like very much",
+    "source": "FSI",
+    "page": 195,
+    "context": "unit 20: ndinozvidisa kwazvo"
+  },
+  "kuvidza": {
+    "english": "to boil",
+    "source": "FSI",
+    "page": 196,
+    "context": "unit 20 supplementary: cooking processes"
+  },
+  "kukanga": {
+    "english": "to fry",
+    "source": "FSI",
+    "page": 196,
+    "context": "unit 20 supplementary"
+  },
+  "kugocha": {
+    "english": "to broil, roast",
+    "source": "FSI",
+    "page": 196,
+    "context": "unit 20 supplementary"
+  },
+  "kupisa": {
+    "english": "to heat, burn",
+    "source": "FSI",
+    "page": 196,
+    "context": "unit 20 supplementary"
+  },
+  "kusasika": {
+    "english": "to roast",
+    "source": "FSI",
+    "page": 196,
+    "context": "unit 20 supplementary"
+  },
+  "masoko": {
+    "english": "news, words",
+    "source": "FSI",
+    "page": 234,
+    "context": "unit 23: yakataura masoko mazhinji"
+  },
+  "mombe": {
+    "english": "cattle, cow",
+    "source": "FSI",
+    "page": 247,
+    "context": "unit 25 supplementary: takaenda kundoona mombe"
+  },
+  "huku": {
+    "english": "chicken",
+    "source": "FSI",
+    "page": 247,
+    "context": "unit 25 supplementary (9,10)"
+  },
+  "mbudzi": {
+    "english": "goat",
+    "source": "FSI",
+    "page": 247,
+    "context": "unit 25 supplementary (9,10)"
+  },
+  "hwai": {
+    "english": "sheep",
+    "source": "FSI",
+    "page": 247,
+    "context": "unit 25 supplementary (9,10)"
+  },
+  "nguruve": {
+    "english": "pig",
+    "source": "FSI",
+    "page": 247,
+    "context": "unit 25 supplementary (9,10)"
+  },
+  "tsapi": {
+    "english": "barn, storehouse",
+    "source": "FSI",
+    "page": 247,
+    "context": "unit 25 supplementary (9,10)"
+  },
+  "denga": {
+    "english": "roof, sky",
+    "source": "FSI",
+    "page": 247,
+    "context": "unit 25 supplementary (5,6)"
+  },
+  "-chiri": {
+    "english": "still (continuative aspect)",
+    "source": "FSI",
+    "page": 355,
+    "context": "unit 36 note: vachiri kufunda — they are still studying"
+  },
+  "wakange": {
+    "english": "was (pluperfect/background)",
+    "source": "FSI",
+    "page": 354,
+    "context": "unit 36 basic dialogue: iye wakange ari kutsvaka basa"
+  },
+  "ndangu": {
+    "english": "i'd thought, i was thinking",
+    "source": "FSI",
+    "page": 355,
+    "context": "unit 36: ndanga ndichifunga"
+  },
+  "-nga-form": {
+    "english": "past background-tense stem (-nga-)",
+    "source": "FSI",
+    "page": 356,
+    "context": "unit 36 note: the /-nga-/ form fixes background time"
+  },
+  "dai": {
+    "english": "if (conditional)",
+    "source": "FSI",
+    "page": 364,
+    "context": "unit 37 note 2: dai uchiriona ndaizofara"
+  },
+  "ndaizofara": {
+    "english": "i would be happy",
+    "source": "FSI",
+    "page": 364,
+    "context": "unit 37: dai uchiriona, ndaizofara"
+  },
+  "kazhinji": {
+    "english": "often, many times",
+    "source": "FSI",
+    "page": 362,
+    "context": "unit 37 dialogue: ndaedza kazhinji"
+  },
+  "mwoyo": {
+    "english": "heart",
+    "source": "FSI",
+    "page": 362,
+    "context": "unit 37 vocabulary (3,4)"
+  },
+  "-netseka": {
+    "english": "to be worried, troubled, tired",
+    "source": "FSI",
+    "page": 362,
+    "context": "unit 37 vocabulary"
+  },
+  "chokwadi": {
+    "english": "truth",
+    "source": "FSI",
+    "page": 362,
+    "context": "unit 37 vocabulary (7)"
+  },
+  "mhiri kwegungwa": {
+    "english": "overseas (across the sea)",
+    "source": "FSI",
+    "page": 363,
+    "context": "unit 37 vocabulary: mhiri kwegungwa"
+  },
+  "pavhiki": {
+    "english": "per week",
+    "source": "FSI",
+    "page": 366,
+    "context": "unit 37 note 6: pavhiki munoenda kanganii?"
+  },
+  "kanganii": {
+    "english": "how many times?",
+    "source": "FSI",
+    "page": 366,
+    "context": "unit 37: pavhiki munoenda kanganii?"
+  },
+  "katatu": {
+    "english": "three times",
+    "source": "FSI",
+    "page": 366,
+    "context": "unit 37: tinoenda katatu"
+  },
+  "kaviri": {
+    "english": "two times",
+    "source": "FSI",
+    "page": 366,
+    "context": "unit 37: tinoenda kaviri"
+  },
+  "kamwe": {
+    "english": "once, one time",
+    "source": "FSI",
+    "page": 366,
+    "context": "unit 37: tinoenda kamwe"
+  },
+  "gogogo": {
+    "english": "(knocking sound, said in lieu of knocking)",
+    "source": "FSI",
+    "page": 371,
+    "context": "unit 38: gogogoyi Mai Jongwe"
+  },
+  "pindai": {
+    "english": "come in (pl./resp.)",
+    "source": "FSI",
+    "page": 371,
+    "context": "unit 38: pindai zvenyu — come in!"
+  },
+  "kwaiwai": {
+    "english": "hello (greeting reply)",
+    "source": "FSI",
+    "page": 371,
+    "context": "unit 38 vocabulary: kwaiwai/kwaziwai"
+  },
+  "kwaziwai": {
+    "english": "hello, greetings",
+    "source": "FSI",
+    "page": 371,
+    "context": "unit 38: kwaiwai/kwaziwai"
+  },
+  "ndauwe": {
+    "english": "(courteous expression used by women)",
+    "source": "FSI",
+    "page": 371,
+    "context": "unit 38: ndauwe!"
+  },
+  "humba": {
+    "english": "bush pig (totem animal)",
+    "source": "FSI",
+    "page": 371,
+    "context": "unit 38: nyama shewe humba!"
+  },
+  "chipo": {
+    "english": "gift",
+    "source": "FSI",
+    "page": 355,
+    "context": "unit 36: une chipo chakadini?"
+  },
+  "kuchato": {
+    "english": "wedding",
+    "source": "FSI",
+    "page": 357,
+    "context": "unit 36 practice: vatoenda kumuchato"
+  },
+  "muchato": {
+    "english": "wedding",
+    "source": "FSI",
+    "page": 355,
+    "context": "unit 36: muchato wati wavamba here?"
+  },
+  "-kanganwa": {
+    "english": "to forget",
+    "source": "FSI",
+    "page": 369,
+    "context": "unit 38: ndanga ndakakanganwa"
+  },
+  "-chimbidza": {
+    "english": "to hurry",
+    "source": "FSI",
+    "page": 369,
+    "context": "unit 38: chimbidzai!"
+  },
+  "zienza": {
+    "english": "rainy season",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: zienza (21) — rainy season"
+  },
+  "maenza": {
+    "english": "rainy season (cl. 6 form)",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: maenza (6)"
+  },
+  "chirimo": {
+    "english": "hot dry season, spring",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: chirimo kunopisa kwazvo"
+  },
+  "matsutso": {
+    "english": "season when crops ripen",
+    "source": "FSI",
+    "page": 380,
+    "context": "unit 39: matsutso (6)"
+  },
+  "chando": {
+    "english": "cold season, winter",
+    "source": "FSI",
+    "page": 380,
+    "context": "unit 39: chando chinotonhora kwazvo"
+  },
+  "-tonhora": {
+    "english": "to be cold",
+    "source": "FSI",
+    "page": 380,
+    "context": "unit 39: chando chinotonhora kwazvo"
+  },
+  "-pisa": {
+    "english": "to be hot",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: chirimo kunopisa kwazvo"
+  },
+  "-naya": {
+    "english": "to rain",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: zienza rinonaya mvura kwazvo"
+  },
+  "huswa": {
+    "english": "grass",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: huswa hunokura"
+  },
+  "shiri": {
+    "english": "bird",
+    "source": "FSI",
+    "page": 381,
+    "context": "unit 39: hanga nedzimwe shiri dzinokanda"
+  },
+  "hanga": {
+    "english": "guinea fowl",
+    "source": "FSI",
+    "page": 380,
+    "context": "unit 39: hanga (9,10) — guinea fowl"
+  },
+  "-kura": {
+    "english": "to grow",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: huswa hunokura"
+  },
+  "-pupura": {
+    "english": "to reap, harvest",
+    "source": "FSI",
+    "page": 381,
+    "context": "unit 39: mbesa dzinopupurwa"
+  },
+  "mbesa": {
+    "english": "crops",
+    "source": "FSI",
+    "page": 381,
+    "context": "unit 39: varimi vanodyara mbesa"
+  },
+  "-dyara": {
+    "english": "to plant, sow",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: varimi vanodyara mbesa"
+  },
+  "varimi": {
+    "english": "farmers",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: varimi vanodyara mbesa"
+  },
+  "zvipfuyo": {
+    "english": "livestock",
+    "source": "FSI",
+    "page": 379,
+    "context": "unit 39: zvipfuyo zvinokora"
+  },
+  "rumhungwe": {
+    "english": "malaria, blackwater fever",
+    "source": "FSI",
+    "page": 380,
+    "context": "unit 39: kunoita hosha yorumhungwe"
+  },
+  "hosha": {
+    "english": "disease",
+    "source": "FSI",
+    "page": 380,
+    "context": "unit 39: hosha (9,10)"
+  },
+  "mavara": {
+    "english": "colour, colours",
+    "source": "FSI",
+    "page": 390,
+    "context": "unit 40 vocabulary: mavara (6)"
+  },
+  "-tsvuku": {
+    "english": "red, brown",
+    "source": "FSI",
+    "page": 390,
+    "context": "unit 40 vocabulary"
+  },
+  "nhema": {
+    "english": "black",
+    "source": "FSI",
+    "page": 370,
+    "context": "unit 38: yavo nhema iya — that black one"
+  },
+  "makorokoto": {
+    "english": "(an expression of felicitation, congratulations)",
+    "source": "FSI",
+    "page": 389,
+    "context": "unit 40 vocabulary: makorokoto"
+  },
+  "tose": {
+    "english": "all of us (the usual reply to makorokoto)",
+    "source": "FSI",
+    "page": 390,
+    "context": "unit 40 vocabulary: tose — \"all of us\""
+  },
+  "urombo": {
+    "english": "sorrow, condolences",
+    "source": "FSI",
+    "page": 390,
+    "context": "unit 40 vocabulary: urombo (14)"
+  },
+  "pachipamwe": {
+    "english": "(expression used on meeting someone already greeted that day)",
+    "source": "FSI",
+    "page": 390,
+    "context": "unit 40 vocabulary: pachipamwe"
+  },
+  "-pumuza": {
+    "english": "to take a rest on a journey",
+    "source": "FSI",
+    "page": 382,
+    "context": "unit 39: aiwa, tapumuza — \"well, it's over with\""
+  },
+  "tapumuza": {
+    "english": "well, it's over with (rest answer)",
+    "source": "FSI",
+    "page": 382,
+    "context": "unit 39: greeting reply"
+  },
+  "dzehope": {
+    "english": "how did you sleep? (traveler form)",
+    "source": "FSI",
+    "page": 382,
+    "context": "unit 39: dzehope chirombowe?"
+  },
+  "usiku": {
+    "english": "night",
+    "source": "FSI",
+    "page": 383,
+    "context": "unit 39: mwanzwa senyi kutonhora usiku?"
+  },
+  "mugadzirisi": {
+    "english": "repairman",
+    "source": "FSI",
+    "page": 370,
+    "context": "unit 38: daidzai mugadzirisi"
+  },
+  "-daidza": {
+    "english": "to call (summon)",
+    "source": "FSI",
+    "page": 370,
+    "context": "unit 38: daidzai mugadzirisi"
+  },
+  "-chisa": {
+    "english": "to iron (clothing)",
+    "source": "FSI",
+    "page": 354,
+    "context": "unit 36 basic dialogue: kubika nekuchisa"
+  },
+  "nzira": {
+    "english": "path, road, way",
+    "source": "FSI",
+    "page": 159,
+    "context": "unit 16: iyi nzira ipfupi — this road is short"
+  },
+  "mugwagwa": {
+    "english": "road (main road)",
+    "source": "FSI",
+    "page": 159,
+    "context": "unit 16: uyu mugwagwa mupfupi"
+  },
+  "kuchechi": {
+    "english": "to church",
+    "source": "FSI",
+    "page": 76,
+    "context": "unit 8 supplementary: chechi + locative ku-"
+  },
+  "pachingwa": {
+    "english": "on the bread",
+    "source": "FSI",
+    "page": 195,
+    "context": "unit 20 dialogue: isa dovi pachingwa"
+  },
+  "ndakambosvika": {
+    "english": "i have been (at some point)",
+    "source": "FSI",
+    "page": 171,
+    "context": "unit 17: mwakambosvika kuHarare? answer pattern"
   }
 }

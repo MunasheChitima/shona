@@ -1,8 +1,8 @@
 {
   "metadata": {
     "version": "7.0.0-fsi",
-    "lastUpdated": "2026-05-21T04:13:49.867Z",
-    "totalLessons": 48,
+    "lastUpdated": "2026-05-21T07:51:16.428Z",
+    "totalLessons": 78,
     "totalUnits": 13,
     "source": "FSI Shona Basic Course (1965) + cultural_notes.json",
     "sourcePdf": "archive/assets/153747653-Learn-Shona-FSI-Basic-Course.pdf",
@@ -14,7 +14,7 @@
       "lowercase_aesthetic",
       "every_phrase_traceable"
     ],
-    "description": "48-lesson curriculum grounded in the FSI Shona Basic Course. Each lesson has 6+ mixed exercises (multiple_choice, translation, fill_blank, matching, order_sentence) and a skill-outcome description (\"i can ...\"). All shona phrases trace to CURRICULUM_PROVENANCE.json.",
+    "description": "78-lesson curriculum grounded in the FSI Shona Basic Course. Each lesson has 6+ mixed exercises (multiple_choice, translation, fill_blank, matching, order_sentence) and a skill-outcome description (\"i can ...\"). All shona phrases trace to CURRICULUM_PROVENANCE.json.",
     "topicCategories": {
       "Unit 1: First Words": {
         "description": "Unit 1: First Words — built from FSI dialogues and vocabulary",
@@ -25,7 +25,9 @@
           "lesson-2",
           "lesson-3",
           "lesson-4",
-          "lesson-5"
+          "lesson-5",
+          "lesson-49",
+          "lesson-50"
         ]
       },
       "Unit 2: People Around You": {
@@ -37,7 +39,9 @@
           "lesson-7",
           "lesson-8",
           "lesson-9",
-          "lesson-10"
+          "lesson-10",
+          "lesson-51",
+          "lesson-52"
         ]
       },
       "Unit 3: Numbers & Time": {
@@ -50,7 +54,10 @@
           "lesson-13",
           "lesson-14",
           "lesson-15",
-          "lesson-16"
+          "lesson-16",
+          "lesson-53",
+          "lesson-54",
+          "lesson-76"
         ]
       },
       "Unit 4: Daily Life": {
@@ -61,7 +68,12 @@
           "lesson-17",
           "lesson-18",
           "lesson-19",
-          "lesson-20"
+          "lesson-20",
+          "lesson-55",
+          "lesson-56",
+          "lesson-68",
+          "lesson-69",
+          "lesson-72"
         ]
       },
       "Unit 5: Getting Around": {
@@ -73,7 +85,11 @@
           "lesson-22",
           "lesson-23",
           "lesson-24",
-          "lesson-25"
+          "lesson-25",
+          "lesson-57",
+          "lesson-70",
+          "lesson-71",
+          "lesson-74"
         ]
       },
       "Unit 6: Doing Things": {
@@ -84,7 +100,10 @@
           "lesson-26",
           "lesson-27",
           "lesson-28",
-          "lesson-29"
+          "lesson-29",
+          "lesson-58",
+          "lesson-63",
+          "lesson-64"
         ]
       },
       "Unit 7: Expressing Yourself": {
@@ -95,7 +114,11 @@
           "lesson-30",
           "lesson-31",
           "lesson-32",
-          "lesson-33"
+          "lesson-33",
+          "lesson-59",
+          "lesson-65",
+          "lesson-66",
+          "lesson-67"
         ]
       },
       "Unit 8: Culture & Traditions": {
@@ -106,7 +129,8 @@
           "lesson-34",
           "lesson-35",
           "lesson-36",
-          "lesson-37"
+          "lesson-37",
+          "lesson-60"
         ]
       },
       "Unit 9: Nature & Environment": {
@@ -115,7 +139,9 @@
         "color": "from-emerald-400 to-emerald-600",
         "lessons": [
           "lesson-38",
-          "lesson-39"
+          "lesson-39",
+          "lesson-73",
+          "lesson-77"
         ]
       },
       "Unit 10: Modern Life": {
@@ -142,7 +168,8 @@
         "color": "from-emerald-400 to-emerald-600",
         "lessons": [
           "lesson-44",
-          "lesson-45"
+          "lesson-45",
+          "lesson-75"
         ]
       },
       "Unit 13: Deeper Culture": {
@@ -152,7 +179,10 @@
         "lessons": [
           "lesson-46",
           "lesson-47",
-          "lesson-48"
+          "lesson-48",
+          "lesson-61",
+          "lesson-78",
+          "lesson-62"
         ]
       }
     },
@@ -3225,7 +3255,7 @@
         },
         {
           "shona": "ndiro",
-          "english": "dish, plate",
+          "english": "dish, utensil",
           "pronunciation": ""
         },
         {
@@ -5900,7 +5930,7 @@
       "vocabulary": [
         {
           "shona": "-ka-",
-          "english": "past tense prefix (yesterday or earlier)",
+          "english": "past tense prefix (before today / general past)",
           "pronunciation": ""
         },
         {
@@ -5915,7 +5945,7 @@
         },
         {
           "shona": "ndakaenda",
-          "english": "i went (before today)",
+          "english": "i went",
           "pronunciation": ""
         },
         {
@@ -6078,7 +6108,7 @@
         },
         {
           "shona": "hanzvadzi",
-          "english": "sibling of the opposite sex",
+          "english": "sibling (of opposite sex)",
           "pronunciation": ""
         }
       ],
@@ -6803,7 +6833,7 @@
       "vocabulary": [
         {
           "shona": "shumba",
-          "english": "lion",
+          "english": "lion (also a totem name)",
           "pronunciation": ""
         },
         {
@@ -8345,7 +8375,7 @@
       "vocabulary": [
         {
           "shona": "shumba",
-          "english": "lion",
+          "english": "lion (also a totem name)",
           "pronunciation": ""
         },
         {
@@ -8666,6 +8696,5271 @@
           "explanation": {
             "correct": "correct — \"tsuro naDiro vakaenda kumunda\" means \"the hare and Diro went to the field\".",
             "incorrect": "the correct order is: \"tsuro naDiro vakaenda kumunda\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-49",
+      "title": "reply when you're not feeling great",
+      "description": "i can answer a \"how are you?\" honestly when i'm not at my best",
+      "questId": "quest-first-words",
+      "category": "Unit 1: First Words",
+      "orderIndex": 49,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can answer a \"how are you?\" honestly when i'm not at my best",
+      "learningObjectives": [
+        "gain skill: i can answer a \"how are you?\" honestly when i'm not at my best"
+      ],
+      "discoveryElements": [
+        "mwarara here",
+        "ndarara zvangu",
+        "mhuri"
+      ],
+      "culturalNotes": [
+        "fsi unit 3 includes \"aiwa, ndarara zvangu zvirinane\" — literally \"no, i slept fine, better\" — a polite acknowledgment that one isn't perfectly well but is improving. shona conversation honors honesty wrapped in respect."
+      ],
+      "vocabulary": [
+        {
+          "shona": "mwarara here",
+          "english": "[how] did you (pl./resp.) sleep?",
+          "pronunciation": ""
+        },
+        {
+          "shona": "ndarara zvangu",
+          "english": "i slept (i'm fine)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mhuri",
+          "english": "family",
+          "pronunciation": ""
+        },
+        {
+          "shona": "aiwa",
+          "english": "no / oh (courteous interjection)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "zvirinane",
+          "english": "better",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-49-ex-1",
+          "type": "translation",
+          "question": "aiwa, ndarara zvangu zvirinane",
+          "correctAnswer": "oh, i slept (better, fine now)",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"oh, i slept (better, fine now)\".",
+            "incorrect": "the expected answer is \"oh, i slept (better, fine now)\"."
+          }
+        },
+        {
+          "id": "lesson-49-ex-2",
+          "type": "multiple_choice",
+          "question": "\"zvirinane\" implies:",
+          "correctAnswer": "better (than before; recovering)",
+          "options": [
+            "better (than before; recovering)",
+            "identical",
+            "much worse",
+            "the same"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"better (than before; recovering)\".",
+            "incorrect": "the answer is \"better (than before; recovering)\". try again."
+          }
+        },
+        {
+          "id": "lesson-49-ex-3",
+          "type": "fill_blank",
+          "question": "aiwa, ___ zvangu zvirinane. (i slept fine)",
+          "correctAnswer": "ndarara",
+          "englishGloss": "i slept fine",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"ndarara\".",
+            "incorrect": "the blank is \"ndarara\". the sentence means: i slept fine."
+          }
+        },
+        {
+          "id": "lesson-49-ex-4",
+          "type": "multiple_choice",
+          "question": "starting a reply with \"aiwa\" signals:",
+          "correctAnswer": "gentle politeness — \"oh, well...\"",
+          "options": [
+            "a goodbye",
+            "agreement",
+            "flat refusal",
+            "gentle politeness — \"oh, well...\""
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"gentle politeness — \"oh, well...\"\".",
+            "incorrect": "the answer is \"gentle politeness — \"oh, well...\"\". try again."
+          }
+        },
+        {
+          "id": "lesson-49-ex-5",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"oh, i slept better\"",
+          "tokens": [
+            "aiwa",
+            "ndarara",
+            "zvirinane"
+          ],
+          "correctOrder": [
+            "aiwa",
+            "ndarara",
+            "zvirinane"
+          ],
+          "englishGloss": "oh, i slept better",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"aiwa ndarara zvirinane\" means \"oh, i slept better\".",
+            "incorrect": "the correct order is: \"aiwa ndarara zvirinane\"."
+          }
+        },
+        {
+          "id": "lesson-49-ex-6",
+          "type": "translation",
+          "question": "mhuri yarara zvakanaka",
+          "correctAnswer": "the family slept well",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"the family slept well\".",
+            "incorrect": "the expected answer is \"the family slept well\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-50",
+      "title": "practicing the full ritual",
+      "description": "i can complete a four-turn greeting with an elder confidently",
+      "questId": "quest-first-words",
+      "category": "Unit 1: First Words",
+      "orderIndex": 50,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can complete a four-turn greeting with an elder confidently",
+      "learningObjectives": [
+        "gain skill: i can complete a four-turn greeting with an elder confidently"
+      ],
+      "discoveryElements": [
+        "mangwanani",
+        "baba",
+        "mai"
+      ],
+      "culturalNotes": [
+        "a full greeting moves: 1) hello + title, 2) \"how did you sleep?\", 3) acknowledgment + reciprocal \"and you?\", 4) \"how is the family / children?\".",
+        "each turn deserves a genuine pause and reply. the slowness IS the respect."
+      ],
+      "vocabulary": [
+        {
+          "shona": "mangwanani",
+          "english": "good morning",
+          "pronunciation": ""
+        },
+        {
+          "shona": "baba",
+          "english": "father; sir (respectful)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mai",
+          "english": "mother (short form)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mwarara here",
+          "english": "[how] did you (pl./resp.) sleep?",
+          "pronunciation": ""
+        },
+        {
+          "shona": "ndarara zvangu",
+          "english": "i slept (i'm fine)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kana mwararawo",
+          "english": "if you also slept (reciprocal courtesy)",
+          "pronunciation": "",
+          "usageNote": "morning-greeting reciprocal; built on the same -wo pattern as kana mwaswerawo in unit 3"
+        },
+        {
+          "shona": "mhuri",
+          "english": "family",
+          "pronunciation": ""
+        },
+        {
+          "shona": "vapwere",
+          "english": "children",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-50-ex-1",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"good morning, sir\"",
+          "tokens": [
+            "baba",
+            "mangwanani"
+          ],
+          "correctOrder": [
+            "mangwanani",
+            "baba"
+          ],
+          "englishGloss": "good morning, sir",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"mangwanani baba\" means \"good morning, sir\".",
+            "incorrect": "the correct order is: \"mangwanani baba\"."
+          }
+        },
+        {
+          "id": "lesson-50-ex-2",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"did you sleep?\"",
+          "tokens": [
+            "here",
+            "mwarara"
+          ],
+          "correctOrder": [
+            "mwarara",
+            "here"
+          ],
+          "englishGloss": "did you sleep?",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"mwarara here\" means \"did you sleep?\".",
+            "incorrect": "the correct order is: \"mwarara here\"."
+          }
+        },
+        {
+          "id": "lesson-50-ex-3",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i slept fine, if you also slept\"",
+          "tokens": [
+            "kana",
+            "mwararawo",
+            "ndarara",
+            "zvangu"
+          ],
+          "correctOrder": [
+            "ndarara",
+            "zvangu",
+            "kana",
+            "mwararawo"
+          ],
+          "englishGloss": "i slept fine, if you also slept",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndarara zvangu kana mwararawo\" means \"i slept fine, if you also slept\".",
+            "incorrect": "the correct order is: \"ndarara zvangu kana mwararawo\"."
+          }
+        },
+        {
+          "id": "lesson-50-ex-4",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"did the family sleep well?\"",
+          "tokens": [
+            "here",
+            "mhuri",
+            "yarara",
+            "zvakanaka"
+          ],
+          "correctOrder": [
+            "mhuri",
+            "yarara",
+            "zvakanaka",
+            "here"
+          ],
+          "englishGloss": "did the family sleep well?",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"mhuri yarara zvakanaka here\" means \"did the family sleep well?\".",
+            "incorrect": "the correct order is: \"mhuri yarara zvakanaka here\"."
+          }
+        },
+        {
+          "id": "lesson-50-ex-5",
+          "type": "multiple_choice",
+          "question": "what is the literal translation of \"kana mwararawo\"?",
+          "correctAnswer": "if you also slept (a courteous reciprocal)",
+          "options": [
+            "i slept very badly",
+            "if you also slept (a courteous reciprocal)",
+            "no, i did not sleep",
+            "where did you sleep?"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"if you also slept (a courteous reciprocal)\".",
+            "incorrect": "the answer is \"if you also slept (a courteous reciprocal)\". try again."
+          }
+        },
+        {
+          "id": "lesson-50-ex-6",
+          "type": "multiple_choice",
+          "question": "how many distinct exchanges does a full traditional greeting usually have?",
+          "correctAnswer": "3-4 (you, family, children, journey)",
+          "options": [
+            "1 only",
+            "3-4 (you, family, children, journey)",
+            "6+",
+            "depends on weather"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"3-4 (you, family, children, journey)\".",
+            "incorrect": "the answer is \"3-4 (you, family, children, journey)\". try again."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-51",
+      "title": "asking where someone is from",
+      "description": "i can ask and answer \"where are you from?\"",
+      "questId": "quest-people",
+      "category": "Unit 2: People Around You",
+      "orderIndex": 51,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can ask and answer \"where are you from?\"",
+      "learningObjectives": [
+        "gain skill: i can ask and answer \"where are you from?\""
+      ],
+      "discoveryElements": [
+        "-bva",
+        "ndinobva",
+        "mwabva kupi"
+      ],
+      "culturalNotes": [
+        "fsi unit 6 vocabulary includes \"-bva\" (to come/go from). combining with locative \"kupi\" (where?) gives \"mwabva kupi?\" — \"where have you come from?\"."
+      ],
+      "vocabulary": [
+        {
+          "shona": "-bva",
+          "english": "to come/go from, leave",
+          "pronunciation": ""
+        },
+        {
+          "shona": "ndinobva",
+          "english": "i come from",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mwabva kupi",
+          "english": "where have you come from?",
+          "pronunciation": "",
+          "usageNote": "natural sentence formed from FSI vocabulary"
+        },
+        {
+          "shona": "Harare",
+          "english": "Harare (city)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "Mutare",
+          "english": "Mutare (city, eastern Zimbabwe)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "Bhuruwayo",
+          "english": "Bulawayo (city)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kwa-",
+          "english": "at / to (with proper names)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-51-ex-1",
+          "type": "translation",
+          "question": "mwabva kupi?",
+          "correctAnswer": "where have you come from?",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"where have you come from?\".",
+            "incorrect": "the expected answer is \"where have you come from?\"."
+          }
+        },
+        {
+          "id": "lesson-51-ex-2",
+          "type": "fill_blank",
+          "question": "ndinobva ___ Harare. (i come from Harare)",
+          "correctAnswer": "ku",
+          "englishGloss": "i come from Harare",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"ku\".",
+            "incorrect": "the blank is \"ku\". the sentence means: i come from Harare."
+          }
+        },
+        {
+          "id": "lesson-51-ex-3",
+          "type": "multiple_choice",
+          "question": "\"-bva\" means:",
+          "correctAnswer": "to come from, leave",
+          "options": [
+            "to arrive",
+            "to come from, leave",
+            "to enter",
+            "to stay"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"to come from, leave\".",
+            "incorrect": "the answer is \"to come from, leave\". try again."
+          }
+        },
+        {
+          "id": "lesson-51-ex-4",
+          "type": "translation",
+          "question": "ndinobva kuMutare",
+          "correctAnswer": "i come from Mutare",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i come from Mutare\".",
+            "incorrect": "the expected answer is \"i come from Mutare\"."
+          }
+        },
+        {
+          "id": "lesson-51-ex-5",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i come from Harare\"",
+          "tokens": [
+            "kuHarare",
+            "ndinobva"
+          ],
+          "correctOrder": [
+            "ndinobva",
+            "kuHarare"
+          ],
+          "englishGloss": "i come from Harare",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndinobva kuHarare\" means \"i come from Harare\".",
+            "incorrect": "the correct order is: \"ndinobva kuHarare\"."
+          }
+        },
+        {
+          "id": "lesson-51-ex-6",
+          "type": "multiple_choice",
+          "question": "which prefix do you use with proper city names like Harare?",
+          "correctAnswer": "ku- (or kwa-)",
+          "options": [
+            "ku- (or kwa-)",
+            "mu-",
+            "na-",
+            "pa-"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"ku- (or kwa-)\".",
+            "incorrect": "the answer is \"ku- (or kwa-)\". try again."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-52",
+      "title": "meeting a child — masikati mwanangu",
+      "description": "i can address a younger person warmly and politely",
+      "questId": "quest-people",
+      "category": "Unit 2: People Around You",
+      "orderIndex": 52,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can address a younger person warmly and politely",
+      "learningObjectives": [
+        "gain skill: i can address a younger person warmly and politely"
+      ],
+      "discoveryElements": [
+        "masikati",
+        "mwanangu",
+        "mwana"
+      ],
+      "culturalNotes": [
+        "fsi unit 4 dialogue opens with an adult greeting a child: \"masikati mwanangu\" — \"good day, my child\". calling any younger person \"mwanangu\" expresses warmth.",
+        "a child answers an elder with \"masikati baba\" (good day, sir) — using the elder's honorific title regardless of literal relationship."
+      ],
+      "vocabulary": [
+        {
+          "shona": "masikati",
+          "english": "good (mid-)day, good afternoon",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mwanangu",
+          "english": "my child",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mwana",
+          "english": "child, offspring (class 1)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mukunda",
+          "english": "daughter",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mukorore",
+          "english": "son",
+          "pronunciation": ""
+        },
+        {
+          "shona": "wakadini",
+          "english": "how is she/he? (to one)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mupenyu zvake",
+          "english": "she/he is alive (she's all right)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-52-ex-1",
+          "type": "translation",
+          "question": "masikati mwanangu",
+          "correctAnswer": "good day, my child",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"good day, my child\".",
+            "incorrect": "the expected answer is \"good day, my child\"."
+          }
+        },
+        {
+          "id": "lesson-52-ex-2",
+          "type": "translation",
+          "question": "wakadini mukunda?",
+          "correctAnswer": "how is your daughter? (or: how are you, my daughter?)",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"how is your daughter? (or: how are you, my daughter?)\".",
+            "incorrect": "the expected answer is \"how is your daughter? (or: how are you, my daughter?)\"."
+          }
+        },
+        {
+          "id": "lesson-52-ex-3",
+          "type": "multiple_choice",
+          "question": "\"mupenyu zvake\" means:",
+          "correctAnswer": "she/he is fine (\"alive, in his/her way\")",
+          "options": [
+            "she/he has gone home",
+            "she/he is asleep",
+            "she/he is fine (\"alive, in his/her way\")",
+            "she/he is hungry"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"she/he is fine (\"alive, in his/her way\")\".",
+            "incorrect": "the answer is \"she/he is fine (\"alive, in his/her way\")\". try again."
+          }
+        },
+        {
+          "id": "lesson-52-ex-4",
+          "type": "fill_blank",
+          "question": "masikati ___ . (greeting a young child)",
+          "correctAnswer": "mwanangu",
+          "englishGloss": "good day, my child",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"mwanangu\".",
+            "incorrect": "the blank is \"mwanangu\". the sentence means: good day, my child."
+          }
+        },
+        {
+          "id": "lesson-52-ex-5",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "mwanangu",
+              "english": "my child (warm address)"
+            },
+            {
+              "shona": "mukunda",
+              "english": "daughter"
+            },
+            {
+              "shona": "mukorore",
+              "english": "son"
+            },
+            {
+              "shona": "wakadini",
+              "english": "how are you / how is she/he?"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-52-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"good day, my child\"",
+          "tokens": [
+            "masikati",
+            "mwanangu"
+          ],
+          "correctOrder": [
+            "masikati",
+            "mwanangu"
+          ],
+          "englishGloss": "good day, my child",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"masikati mwanangu\" means \"good day, my child\".",
+            "incorrect": "the correct order is: \"masikati mwanangu\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-53",
+      "title": "big numbers — counting past ten",
+      "description": "i can form numbers above ten using \"gumi\" plus the small numbers",
+      "questId": "quest-numbers-time",
+      "category": "Unit 3: Numbers & Time",
+      "orderIndex": 53,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can form numbers above ten using \"gumi\" plus the small numbers",
+      "learningObjectives": [
+        "gain skill: i can form numbers above ten using \"gumi\" plus the small numbers"
+      ],
+      "discoveryElements": [
+        "gumi",
+        "gumi neposi",
+        "makumi maviri"
+      ],
+      "culturalNotes": [
+        "\"gumi\" (ten) takes \"ne-\" (with / and) plus the counting form to build 11-19: \"gumi neposi\" (11), \"gumi nepiri\" (12), \"gumi netatu\" (13). twenty is \"makumi maviri\" (lit. \"tens, two\") — the plural of gumi is makumi."
+      ],
+      "vocabulary": [
+        {
+          "shona": "gumi",
+          "english": "ten (a noun, does not take concord)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "gumi neposi",
+          "english": "eleven (ten and one)",
+          "pronunciation": "",
+          "usageNote": "compound formed regularly from \"gumi\" (ten) + \"ne-\" (and) + counting form; the pattern is FSI-grounded but the literal phrase is the standard textbook formation"
+        },
+        {
+          "shona": "makumi maviri",
+          "english": "twenty (lit. \"tens, two\")",
+          "pronunciation": "",
+          "usageNote": "documented pattern: gumi pluralizes as makumi; \"makumi maviri\" follows the cl. 6 concord rule from FSI unit 4"
+        },
+        {
+          "shona": "piri",
+          "english": "two (counting form)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "tatu",
+          "english": "three (counting form)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "na",
+          "english": "with, and",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-53-ex-1",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "gumi",
+              "english": "ten"
+            },
+            {
+              "shona": "gumi neposi",
+              "english": "eleven"
+            },
+            {
+              "shona": "makumi maviri",
+              "english": "twenty"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-53-ex-2",
+          "type": "multiple_choice",
+          "question": "how is \"twelve\" formed?",
+          "correctAnswer": "gumi nepiri (ten and two)",
+          "options": [
+            "gumi nepiri (ten and two)",
+            "makumi mapiri",
+            "piri gumi",
+            "pirigumi"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"gumi nepiri (ten and two)\".",
+            "incorrect": "the answer is \"gumi nepiri (ten and two)\". try again."
+          }
+        },
+        {
+          "id": "lesson-53-ex-3",
+          "type": "fill_blank",
+          "question": "makumi ma___ (thirty — three tens)",
+          "correctAnswer": "tatu",
+          "englishGloss": "thirty",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"tatu\".",
+            "incorrect": "the blank is \"tatu\". the sentence means: thirty."
+          }
+        },
+        {
+          "id": "lesson-53-ex-4",
+          "type": "multiple_choice",
+          "question": "the plural of \"gumi\" used for \"tens\" is:",
+          "correctAnswer": "makumi",
+          "options": [
+            "makumi",
+            "migumi",
+            "vigumi",
+            "zvigumi"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"makumi\".",
+            "incorrect": "the answer is \"makumi\". try again."
+          }
+        },
+        {
+          "id": "lesson-53-ex-5",
+          "type": "translation",
+          "question": "makumi maviri",
+          "correctAnswer": "twenty",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"twenty\".",
+            "incorrect": "the expected answer is \"twenty\"."
+          }
+        },
+        {
+          "id": "lesson-53-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"eleven (ten and one)\"",
+          "tokens": [
+            "gumi",
+            "neposi"
+          ],
+          "correctOrder": [
+            "gumi",
+            "neposi"
+          ],
+          "englishGloss": "eleven (ten and one)",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"gumi neposi\" means \"eleven (ten and one)\".",
+            "incorrect": "the correct order is: \"gumi neposi\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-54",
+      "title": "how long? how many days?",
+      "description": "i can ask how long someone has stayed and answer in days, weeks, months",
+      "questId": "quest-numbers-time",
+      "category": "Unit 3: Numbers & Time",
+      "orderIndex": 54,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can ask how long someone has stayed and answer in days, weeks, months",
+      "learningObjectives": [
+        "gain skill: i can ask how long someone has stayed and answer in days, weeks, months"
+      ],
+      "discoveryElements": [
+        "mazuva",
+        "masondo",
+        "mwedzi"
+      ],
+      "culturalNotes": [
+        "fsi unit 6 dialogue: \"ndaane mazuva matatu ndava pano\" — \"i have been here for three days\". this construction (the verb + a time-amount + \"ndava pano\") is the standard way to talk about duration."
+      ],
+      "vocabulary": [
+        {
+          "shona": "mazuva",
+          "english": "days (plural of zuva)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "masondo",
+          "english": "weeks",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mwedzi",
+          "english": "month, moon",
+          "pronunciation": ""
+        },
+        {
+          "shona": "zuva rimwe",
+          "english": "one day",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mazuva mairi",
+          "english": "two days",
+          "pronunciation": ""
+        },
+        {
+          "shona": "rini",
+          "english": "when?",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-pera",
+          "english": "to come to an end, be exhausted",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-54-ex-1",
+          "type": "translation",
+          "question": "mazuva mairi",
+          "correctAnswer": "two days",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"two days\".",
+            "incorrect": "the expected answer is \"two days\"."
+          }
+        },
+        {
+          "id": "lesson-54-ex-2",
+          "type": "translation",
+          "question": "mazuva matatu",
+          "correctAnswer": "three days",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"three days\".",
+            "incorrect": "the expected answer is \"three days\"."
+          }
+        },
+        {
+          "id": "lesson-54-ex-3",
+          "type": "fill_blank",
+          "question": "masondo ma___ (four weeks)",
+          "correctAnswer": "na",
+          "englishGloss": "four weeks",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"na\".",
+            "incorrect": "the blank is \"na\". the sentence means: four weeks."
+          }
+        },
+        {
+          "id": "lesson-54-ex-4",
+          "type": "multiple_choice",
+          "question": "\"-pera\" means:",
+          "correctAnswer": "to come to an end, run out",
+          "options": [
+            "to come to an end, run out",
+            "to continue",
+            "to repeat",
+            "to start"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"to come to an end, run out\".",
+            "incorrect": "the answer is \"to come to an end, run out\". try again."
+          }
+        },
+        {
+          "id": "lesson-54-ex-5",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"five days\"",
+          "tokens": [
+            "mashanu",
+            "mazuva"
+          ],
+          "correctOrder": [
+            "mazuva",
+            "mashanu"
+          ],
+          "englishGloss": "five days",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"mazuva mashanu\" means \"five days\".",
+            "incorrect": "the correct order is: \"mazuva mashanu\"."
+          }
+        },
+        {
+          "id": "lesson-54-ex-6",
+          "type": "translation",
+          "question": "mwedzi mitatu",
+          "correctAnswer": "three months",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"three months\".",
+            "incorrect": "the expected answer is \"three months\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-55",
+      "title": "verbs of eating, drinking, cooking",
+      "description": "i can describe a meal happening right now",
+      "questId": "quest-daily-life",
+      "category": "Unit 4: Daily Life",
+      "orderIndex": 55,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can describe a meal happening right now",
+      "learningObjectives": [
+        "gain skill: i can describe a meal happening right now"
+      ],
+      "discoveryElements": [
+        "-dya",
+        "-nwa",
+        "-bika"
+      ],
+      "culturalNotes": [
+        "\"ndiri kudya\" — \"i am eating\" — uses the present continuous (-ri + ku- + verb) introduced in lesson 27."
+      ],
+      "vocabulary": [
+        {
+          "shona": "-dya",
+          "english": "to eat",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-nwa",
+          "english": "to drink",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-bika",
+          "english": "to cook",
+          "pronunciation": ""
+        },
+        {
+          "shona": "sadza",
+          "english": "thick maize porridge (staple food)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mvura",
+          "english": "water (also: rain)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "muriwo",
+          "english": "vegetable / relish",
+          "pronunciation": ""
+        },
+        {
+          "shona": "nyama",
+          "english": "meat",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-55-ex-1",
+          "type": "translation",
+          "question": "ndiri kudya sadza",
+          "correctAnswer": "i am eating sadza",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i am eating sadza\".",
+            "incorrect": "the expected answer is \"i am eating sadza\"."
+          }
+        },
+        {
+          "id": "lesson-55-ex-2",
+          "type": "translation",
+          "question": "ndiri kunwa mvura",
+          "correctAnswer": "i am drinking water",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i am drinking water\".",
+            "incorrect": "the expected answer is \"i am drinking water\"."
+          }
+        },
+        {
+          "id": "lesson-55-ex-3",
+          "type": "fill_blank",
+          "question": "mai vari ku___ sadza. (mother is cooking sadza)",
+          "correctAnswer": "bika",
+          "englishGloss": "mother is cooking sadza",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"bika\".",
+            "incorrect": "the blank is \"bika\". the sentence means: mother is cooking sadza."
+          }
+        },
+        {
+          "id": "lesson-55-ex-4",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "-dya",
+              "english": "to eat"
+            },
+            {
+              "shona": "-nwa",
+              "english": "to drink"
+            },
+            {
+              "shona": "-bika",
+              "english": "to cook"
+            },
+            {
+              "shona": "sadza",
+              "english": "maize porridge"
+            },
+            {
+              "shona": "muriwo",
+              "english": "relish"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-55-ex-5",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i am drinking water\"",
+          "tokens": [
+            "kunwa",
+            "mvura",
+            "ndiri"
+          ],
+          "correctOrder": [
+            "ndiri",
+            "kunwa",
+            "mvura"
+          ],
+          "englishGloss": "i am drinking water",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndiri kunwa mvura\" means \"i am drinking water\".",
+            "incorrect": "the correct order is: \"ndiri kunwa mvura\"."
+          }
+        },
+        {
+          "id": "lesson-55-ex-6",
+          "type": "multiple_choice",
+          "question": "to say \"i am eating right now\", you use:",
+          "correctAnswer": "ndiri ku- + dya (= ndiri kudya)",
+          "options": [
+            "ndakadya only",
+            "ndichadya",
+            "ndinodya only",
+            "ndiri ku- + dya (= ndiri kudya)"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"ndiri ku- + dya (= ndiri kudya)\".",
+            "incorrect": "the answer is \"ndiri ku- + dya (= ndiri kudya)\". try again."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-56",
+      "title": "caring for children",
+      "description": "i can describe caring for and carrying a child",
+      "questId": "quest-daily-life",
+      "category": "Unit 4: Daily Life",
+      "orderIndex": 56,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can describe caring for and carrying a child",
+      "learningObjectives": [
+        "gain skill: i can describe caring for and carrying a child"
+      ],
+      "discoveryElements": [
+        "-rera",
+        "-bereka",
+        "mwana"
+      ],
+      "culturalNotes": [
+        "fsi unit 9 lists \"kurera mwana\" (to care for a child) and \"kubereka mwana\" (to carry a child on the back). these are central daily-life verbs."
+      ],
+      "vocabulary": [
+        {
+          "shona": "-rera",
+          "english": "to care for, raise",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-bereka",
+          "english": "to carry (a child) on the back",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mwana",
+          "english": "child, offspring (class 1)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "vana",
+          "english": "children (class 2 plural)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mai",
+          "english": "mother (short form)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "amai",
+          "english": "mother; madam (respectful)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-56-ex-1",
+          "type": "translation",
+          "question": "ndiri kurera mwana",
+          "correctAnswer": "i am caring for the child",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i am caring for the child\".",
+            "incorrect": "the expected answer is \"i am caring for the child\"."
+          }
+        },
+        {
+          "id": "lesson-56-ex-2",
+          "type": "fill_blank",
+          "question": "mai vari ku___ mwana. (mother is carrying the child on her back)",
+          "correctAnswer": "bereka",
+          "englishGloss": "mother is carrying the child",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"bereka\".",
+            "incorrect": "the blank is \"bereka\". the sentence means: mother is carrying the child."
+          }
+        },
+        {
+          "id": "lesson-56-ex-3",
+          "type": "multiple_choice",
+          "question": "\"-rera\" means:",
+          "correctAnswer": "to care for, raise",
+          "options": [
+            "to care for, raise",
+            "to feed",
+            "to scold",
+            "to teach"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"to care for, raise\".",
+            "incorrect": "the answer is \"to care for, raise\". try again."
+          }
+        },
+        {
+          "id": "lesson-56-ex-4",
+          "type": "multiple_choice",
+          "question": "\"-bereka\" specifically means:",
+          "correctAnswer": "to carry (a child) on the back",
+          "options": [
+            "to carry (a child) on the back",
+            "to feed",
+            "to give birth to",
+            "to play with"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"to carry (a child) on the back\".",
+            "incorrect": "the answer is \"to carry (a child) on the back\". try again."
+          }
+        },
+        {
+          "id": "lesson-56-ex-5",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "-rera",
+              "english": "to care for / raise"
+            },
+            {
+              "shona": "-bereka",
+              "english": "to carry on the back"
+            },
+            {
+              "shona": "mwana",
+              "english": "child"
+            },
+            {
+              "shona": "vana",
+              "english": "children"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-56-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"mother is caring for the child\"",
+          "tokens": [
+            "kurera",
+            "mai",
+            "mwana",
+            "vari"
+          ],
+          "correctOrder": [
+            "mai",
+            "vari",
+            "kurera",
+            "mwana"
+          ],
+          "englishGloss": "mother is caring for the child",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"mai vari kurera mwana\" means \"mother is caring for the child\".",
+            "incorrect": "the correct order is: \"mai vari kurera mwana\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-57",
+      "title": "asking the price; counting bananas",
+      "description": "i can buy something and ask the total in shona",
+      "questId": "quest-getting-around",
+      "category": "Unit 5: Getting Around",
+      "orderIndex": 57,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can buy something and ask the total in shona",
+      "learningObjectives": [
+        "gain skill: i can buy something and ask the total in shona"
+      ],
+      "discoveryElements": [
+        "mari",
+        "anoita marinyi",
+        "mahobo"
+      ],
+      "culturalNotes": [
+        "fsi unit 9 is built around bargaining for bananas: \"ndingaona madazeni maviri\" — \"i'll take two dozen\". markets are social spaces in zimbabwe; bargaining is part of the relationship."
+      ],
+      "vocabulary": [
+        {
+          "shona": "mari",
+          "english": "money",
+          "pronunciation": ""
+        },
+        {
+          "shona": "anoita marinyi",
+          "english": "how much is it? ('what money does it do?')",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mahobo",
+          "english": "bananas",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-tenga",
+          "english": "to buy",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-tengesa",
+          "english": "to sell",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-mwe",
+          "english": "one (concord stem; e.g. zuva rimwe)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-viri",
+          "english": "two (concord stem)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-tatu",
+          "english": "three (concord stem)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-57-ex-1",
+          "type": "translation",
+          "question": "anoita marinyi?",
+          "correctAnswer": "how much is it?",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"how much is it?\".",
+            "incorrect": "the expected answer is \"how much is it?\"."
+          }
+        },
+        {
+          "id": "lesson-57-ex-2",
+          "type": "translation",
+          "question": "mahobo matatu",
+          "correctAnswer": "three bananas",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"three bananas\".",
+            "incorrect": "the expected answer is \"three bananas\"."
+          }
+        },
+        {
+          "id": "lesson-57-ex-3",
+          "type": "fill_blank",
+          "question": "ndingada mahobo ma___ . (i want five bananas)",
+          "correctAnswer": "shanu",
+          "englishGloss": "i want five bananas",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"shanu\".",
+            "incorrect": "the blank is \"shanu\". the sentence means: i want five bananas."
+          }
+        },
+        {
+          "id": "lesson-57-ex-4",
+          "type": "multiple_choice",
+          "question": "which verb means \"to buy\"?",
+          "correctAnswer": "-tenga",
+          "options": [
+            "-rapa",
+            "-tenga",
+            "-tengesa",
+            "-tora"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"-tenga\".",
+            "incorrect": "the answer is \"-tenga\". try again."
+          }
+        },
+        {
+          "id": "lesson-57-ex-5",
+          "type": "multiple_choice",
+          "question": "which verb means \"to sell\"?",
+          "correctAnswer": "-tengesa",
+          "options": [
+            "-tenga",
+            "-tengesa",
+            "-tora",
+            "-vaka"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"-tengesa\".",
+            "incorrect": "the answer is \"-tengesa\". try again."
+          }
+        },
+        {
+          "id": "lesson-57-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i would like five bananas\"",
+          "tokens": [
+            "mahobo",
+            "mashanu",
+            "ndingada"
+          ],
+          "correctOrder": [
+            "ndingada",
+            "mahobo",
+            "mashanu"
+          ],
+          "englishGloss": "i would like five bananas",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndingada mahobo mashanu\" means \"i would like five bananas\".",
+            "incorrect": "the correct order is: \"ndingada mahobo mashanu\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-58",
+      "title": "noun classes — full overview",
+      "description": "i can identify which noun class a common shona noun belongs to",
+      "questId": "quest-actions",
+      "category": "Unit 6: Doing Things",
+      "orderIndex": 58,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can identify which noun class a common shona noun belongs to",
+      "learningObjectives": [
+        "gain skill: i can identify which noun class a common shona noun belongs to"
+      ],
+      "discoveryElements": [
+        "munhu",
+        "vanhu",
+        "muti"
+      ],
+      "culturalNotes": [
+        "memorize one example noun per class as an anchor. class 1/2: munhu/vanhu. class 3/4: muti/miti. class 5/6: zuva/mazuva. class 7/8: chikoro/zvikoro. class 9/10: imba/dzimba.",
+        "the noun class determines almost every other word in a sentence: subject prefixes, possessives, demonstratives, adjective forms."
+      ],
+      "vocabulary": [
+        {
+          "shona": "munhu",
+          "english": "person",
+          "pronunciation": ""
+        },
+        {
+          "shona": "vanhu",
+          "english": "people",
+          "pronunciation": ""
+        },
+        {
+          "shona": "muti",
+          "english": "tree, medicine, wood",
+          "pronunciation": ""
+        },
+        {
+          "shona": "zuva",
+          "english": "sun, day",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mazuva",
+          "english": "days (plural of zuva)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "chikoro",
+          "english": "school",
+          "pronunciation": ""
+        },
+        {
+          "shona": "zvikoro",
+          "english": "schools (plural)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "imba",
+          "english": "house",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-58-ex-1",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "munhu (cl. 1)",
+              "english": "person"
+            },
+            {
+              "shona": "muti (cl. 3)",
+              "english": "tree"
+            },
+            {
+              "shona": "zuva (cl. 5)",
+              "english": "day, sun"
+            },
+            {
+              "shona": "chikoro (cl. 7)",
+              "english": "school"
+            },
+            {
+              "shona": "imba (cl. 9)",
+              "english": "house"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-58-ex-2",
+          "type": "multiple_choice",
+          "question": "which class do most \"people\" nouns belong to?",
+          "correctAnswer": "class 1 / 2 (mu- / va-)",
+          "options": [
+            "class 1 / 2 (mu- / va-)",
+            "class 5 / 6",
+            "class 7 / 8",
+            "class 9 / 10"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"class 1 / 2 (mu- / va-)\".",
+            "incorrect": "the answer is \"class 1 / 2 (mu- / va-)\". try again."
+          }
+        },
+        {
+          "id": "lesson-58-ex-3",
+          "type": "multiple_choice",
+          "question": "which class typically covers diminutives and languages?",
+          "correctAnswer": "class 7 / 8 (chi- / zvi-)",
+          "options": [
+            "class 1 / 2",
+            "class 3 / 4",
+            "class 5 / 6",
+            "class 7 / 8 (chi- / zvi-)"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"class 7 / 8 (chi- / zvi-)\".",
+            "incorrect": "the answer is \"class 7 / 8 (chi- / zvi-)\". try again."
+          }
+        },
+        {
+          "id": "lesson-58-ex-4",
+          "type": "fill_blank",
+          "question": "the plural of \"zuva\" (day) is ___ . ",
+          "correctAnswer": "mazuva",
+          "englishGloss": "days",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"mazuva\".",
+            "incorrect": "the blank is \"mazuva\". the sentence means: days."
+          }
+        },
+        {
+          "id": "lesson-58-ex-5",
+          "type": "multiple_choice",
+          "question": "why do noun classes matter?",
+          "correctAnswer": "they govern every agreement in the sentence",
+          "options": [
+            "they are optional decoration",
+            "they govern every agreement in the sentence",
+            "they only matter for plural forms",
+            "they only matter in writing"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"they govern every agreement in the sentence\".",
+            "incorrect": "the answer is \"they govern every agreement in the sentence\". try again."
+          }
+        },
+        {
+          "id": "lesson-58-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"three people\"",
+          "tokens": [
+            "vanhu",
+            "vatatu"
+          ],
+          "correctOrder": [
+            "vanhu",
+            "vatatu"
+          ],
+          "englishGloss": "three people",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"vanhu vatatu\" means \"three people\".",
+            "incorrect": "the correct order is: \"vanhu vatatu\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-59",
+      "title": "knowing and being known",
+      "description": "i can say \"i know\" and \"do you know me?\" with the right object prefix",
+      "questId": "quest-expression",
+      "category": "Unit 7: Expressing Yourself",
+      "orderIndex": 59,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can say \"i know\" and \"do you know me?\" with the right object prefix",
+      "learningObjectives": [
+        "gain skill: i can say \"i know\" and \"do you know me?\" with the right object prefix"
+      ],
+      "discoveryElements": [
+        "-ziva",
+        "ndinokuziva",
+        "munondiziva"
+      ],
+      "culturalNotes": [
+        "fsi unit 15 introduces object prefixes inside the verb: ndi- (me), ku- (you), mu- (him/her), ti- (us), vha- (you pl.), va- (them). \"ndi-no-ku-ziva\" = \"i know you\"."
+      ],
+      "vocabulary": [
+        {
+          "shona": "-ziva",
+          "english": "to know",
+          "pronunciation": ""
+        },
+        {
+          "shona": "ndinokuziva",
+          "english": "i know you",
+          "pronunciation": ""
+        },
+        {
+          "shona": "munondiziva",
+          "english": "do you know me?",
+          "pronunciation": ""
+        },
+        {
+          "shona": "munhu",
+          "english": "person",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mhuri",
+          "english": "family",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-59-ex-1",
+          "type": "translation",
+          "question": "ndinokuziva",
+          "correctAnswer": "i know you",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i know you\".",
+            "incorrect": "the expected answer is \"i know you\"."
+          }
+        },
+        {
+          "id": "lesson-59-ex-2",
+          "type": "translation",
+          "question": "munondiziva here?",
+          "correctAnswer": "do you know me?",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"do you know me?\".",
+            "incorrect": "the expected answer is \"do you know me?\"."
+          }
+        },
+        {
+          "id": "lesson-59-ex-3",
+          "type": "fill_blank",
+          "question": "a___ ziva. (he/she knows me)",
+          "correctAnswer": "nondi",
+          "englishGloss": "he/she knows me",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"nondi\".",
+            "incorrect": "the blank is \"nondi\". the sentence means: he/she knows me."
+          }
+        },
+        {
+          "id": "lesson-59-ex-4",
+          "type": "multiple_choice",
+          "question": "where does the object prefix go in a shona verb?",
+          "correctAnswer": "between the tense prefix and the verb stem",
+          "options": [
+            "after the final vowel",
+            "at the very end",
+            "before the subject prefix",
+            "between the tense prefix and the verb stem"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"between the tense prefix and the verb stem\".",
+            "incorrect": "the answer is \"between the tense prefix and the verb stem\". try again."
+          }
+        },
+        {
+          "id": "lesson-59-ex-5",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "-ndi-",
+              "english": "...me (object)"
+            },
+            {
+              "shona": "-ku-",
+              "english": "...you (object)"
+            },
+            {
+              "shona": "-mu-",
+              "english": "...him/her (object)"
+            },
+            {
+              "shona": "-va-",
+              "english": "...them (object)"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-59-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i know you very well\"",
+          "tokens": [
+            "kwazvo",
+            "ndinokuziva"
+          ],
+          "correctOrder": [
+            "ndinokuziva",
+            "kwazvo"
+          ],
+          "englishGloss": "i know you very well",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndinokuziva kwazvo\" means \"i know you very well\".",
+            "incorrect": "the correct order is: \"ndinokuziva kwazvo\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-60",
+      "title": "asking after a journey",
+      "description": "i can ask \"where have you come from?\" and welcome a traveler",
+      "questId": "quest-culture",
+      "category": "Unit 8: Culture & Traditions",
+      "orderIndex": 60,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can ask \"where have you come from?\" and welcome a traveler",
+      "learningObjectives": [
+        "gain skill: i can ask \"where have you come from?\" and welcome a traveler"
+      ],
+      "discoveryElements": [
+        "mwabva kupi",
+        "-bva",
+        "rwendo"
+      ],
+      "culturalNotes": [
+        "fsi unit 23 has a dialogue welcoming a visiting brother who travelled two days by train from Bulawayo. the host's questions about the journey, the means of transport, and the duration are themselves part of the welcome.",
+        "\"mweni\" — guest / stranger / foreigner — is honored. \"mune mwenisu!\" — \"oh, you have a guest then!\" — opens the welcoming script."
+      ],
+      "vocabulary": [
+        {
+          "shona": "mwabva kupi",
+          "english": "where have you come from?",
+          "pronunciation": "",
+          "usageNote": "natural sentence formed from FSI vocabulary"
+        },
+        {
+          "shona": "-bva",
+          "english": "to come/go from, leave",
+          "pronunciation": ""
+        },
+        {
+          "shona": "rwendo",
+          "english": "journey",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mweni",
+          "english": "guest, stranger, foreigner",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mazuva mairi",
+          "english": "two days",
+          "pronunciation": ""
+        },
+        {
+          "shona": "chitima",
+          "english": "train",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-60-ex-1",
+          "type": "translation",
+          "question": "mwabva kupi?",
+          "correctAnswer": "where have you come from?",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"where have you come from?\".",
+            "incorrect": "the expected answer is \"where have you come from?\"."
+          }
+        },
+        {
+          "id": "lesson-60-ex-2",
+          "type": "translation",
+          "question": "rwendo runoita mazuva mairi",
+          "correctAnswer": "the journey takes two days",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"the journey takes two days\".",
+            "incorrect": "the expected answer is \"the journey takes two days\"."
+          }
+        },
+        {
+          "id": "lesson-60-ex-3",
+          "type": "multiple_choice",
+          "question": "\"mweni\" means:",
+          "correctAnswer": "guest, stranger, foreigner",
+          "options": [
+            "colleague",
+            "enemy",
+            "family member",
+            "guest, stranger, foreigner"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"guest, stranger, foreigner\".",
+            "incorrect": "the answer is \"guest, stranger, foreigner\". try again."
+          }
+        },
+        {
+          "id": "lesson-60-ex-4",
+          "type": "fill_blank",
+          "question": "ndabva ku___ . (i have come from Bulawayo)",
+          "correctAnswer": "Bhuruwayo",
+          "englishGloss": "i have come from Bulawayo",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"Bhuruwayo\".",
+            "incorrect": "the blank is \"Bhuruwayo\". the sentence means: i have come from Bulawayo."
+          }
+        },
+        {
+          "id": "lesson-60-ex-5",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "rwendo",
+              "english": "journey"
+            },
+            {
+              "shona": "mweni",
+              "english": "guest / stranger"
+            },
+            {
+              "shona": "chitima",
+              "english": "train"
+            },
+            {
+              "shona": "mwabva kupi",
+              "english": "where have you come from?"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-60-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i came by train\"",
+          "tokens": [
+            "ndauya",
+            "nechitima"
+          ],
+          "correctOrder": [
+            "ndauya",
+            "nechitima"
+          ],
+          "englishGloss": "i came by train",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndauya nechitima\" means \"i came by train\".",
+            "incorrect": "the correct order is: \"ndauya nechitima\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-61",
+      "title": "storytelling — once upon a time",
+      "description": "i can recognize how shona stories begin and identify the storyteller's frame",
+      "questId": "quest-deep-culture",
+      "category": "Unit 13: Deeper Culture",
+      "orderIndex": 61,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can recognize how shona stories begin and identify the storyteller's frame",
+      "learningObjectives": [
+        "gain skill: i can recognize how shona stories begin and identify the storyteller's frame"
+      ],
+      "discoveryElements": [
+        "rimwe zuva",
+        "kare kare",
+        "tsuro"
+      ],
+      "culturalNotes": [
+        "shona folktales open with \"rimwe zuva...\" (\"one day...\") or \"kare kare...\" (\"long, long ago...\"). these openers signal a moral tale (ngano) — fictional but truth-bearing.",
+        "the trickster tsuro is the most common protagonist. his wit is admired but his lessons usually warn about deception."
+      ],
+      "vocabulary": [
+        {
+          "shona": "rimwe zuva",
+          "english": "one day (story opener)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kare kare",
+          "english": "long ago (storytelling opener)",
+          "pronunciation": "",
+          "usageNote": "common storytelling opener; documented in standard Shona literature"
+        },
+        {
+          "shona": "tsuro",
+          "english": "hare, rabbit",
+          "pronunciation": ""
+        },
+        {
+          "shona": "tsumo",
+          "english": "proverb (traditional saying)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-ti",
+          "english": "to say",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-61-ex-1",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "kare kare",
+              "english": "long, long ago"
+            },
+            {
+              "shona": "rimwe zuva",
+              "english": "one day"
+            },
+            {
+              "shona": "tsuro",
+              "english": "the hare (trickster)"
+            },
+            {
+              "shona": "tsumo",
+              "english": "proverb"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-61-ex-2",
+          "type": "multiple_choice",
+          "question": "how do shona folktales typically begin?",
+          "correctAnswer": "with \"rimwe zuva...\" or \"kare kare...\"",
+          "options": [
+            "with \"rimwe zuva...\" or \"kare kare...\"",
+            "with a date",
+            "with a riddle",
+            "with a song"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"with \"rimwe zuva...\" or \"kare kare...\"\".",
+            "incorrect": "the answer is \"with \"rimwe zuva...\" or \"kare kare...\"\". try again."
+          }
+        },
+        {
+          "id": "lesson-61-ex-3",
+          "type": "translation",
+          "question": "rimwe zuva tsuro naDiro",
+          "correctAnswer": "one day the hare and Diro",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"one day the hare and Diro\".",
+            "incorrect": "the expected answer is \"one day the hare and Diro\"."
+          }
+        },
+        {
+          "id": "lesson-61-ex-4",
+          "type": "multiple_choice",
+          "question": "a tsumo (proverb) functions as:",
+          "correctAnswer": "compressed moral wisdom passed across generations",
+          "options": [
+            "a counting rhyme",
+            "a song lyric",
+            "a wedding vow",
+            "compressed moral wisdom passed across generations"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"compressed moral wisdom passed across generations\".",
+            "incorrect": "the answer is \"compressed moral wisdom passed across generations\". try again."
+          }
+        },
+        {
+          "id": "lesson-61-ex-5",
+          "type": "fill_blank",
+          "question": "___ zuva, tsuro... (one day, the hare...)",
+          "correctAnswer": "rimwe",
+          "englishGloss": "one day, the hare...",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"rimwe\".",
+            "incorrect": "the blank is \"rimwe\". the sentence means: one day, the hare...."
+          }
+        },
+        {
+          "id": "lesson-61-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"one day, the hare and Diro\"",
+          "tokens": [
+            "naDiro",
+            "rimwe",
+            "tsuro",
+            "zuva"
+          ],
+          "correctOrder": [
+            "rimwe",
+            "zuva",
+            "tsuro",
+            "naDiro"
+          ],
+          "englishGloss": "one day, the hare and Diro",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"rimwe zuva tsuro naDiro\" means \"one day, the hare and Diro\".",
+            "incorrect": "the correct order is: \"rimwe zuva tsuro naDiro\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-63",
+      "title": "past tense with -ka- — what they did",
+      "description": "i can talk about what someone did (before today) using the -ka- past",
+      "questId": "quest-actions",
+      "category": "Unit 6: Doing Things",
+      "orderIndex": 62,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can talk about what someone did (before today) using the -ka- past",
+      "learningObjectives": [
+        "gain skill: i can talk about what someone did (before today) using the -ka- past"
+      ],
+      "discoveryElements": [
+        "-ka-",
+        "vakaenda",
+        "vakarima"
+      ],
+      "culturalNotes": [
+        "fsi unit 13 introduces /-ka-/ as the past tense for events before today. \"vakaenda kwaMutare\" — \"they went to Mutare\". the prefix slot is right after the subject (va-ka-enda).",
+        "this is different from the past-of-today tense you saw in lesson 33. shona makes a sharper distinction than english between \"what happened today\" and \"what happened before today\"."
+      ],
+      "vocabulary": [
+        {
+          "shona": "-ka-",
+          "english": "past tense prefix (before today / general past)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "vakaenda",
+          "english": "they went",
+          "pronunciation": ""
+        },
+        {
+          "shona": "vakarima",
+          "english": "they cultivated",
+          "pronunciation": ""
+        },
+        {
+          "shona": "vakauya",
+          "english": "they came",
+          "pronunciation": ""
+        },
+        {
+          "shona": "ndakaenda",
+          "english": "i went",
+          "pronunciation": ""
+        },
+        {
+          "shona": "Mutare",
+          "english": "Mutare (city, eastern Zimbabwe)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "munda",
+          "english": "field",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-63-ex-1",
+          "type": "translation",
+          "question": "vakaenda kwaMutare",
+          "correctAnswer": "they went to Mutare",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"they went to Mutare\".",
+            "incorrect": "the expected answer is \"they went to Mutare\"."
+          }
+        },
+        {
+          "id": "lesson-63-ex-2",
+          "type": "translation",
+          "question": "vakarima munda",
+          "correctAnswer": "they cultivated the field",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"they cultivated the field\".",
+            "incorrect": "the expected answer is \"they cultivated the field\"."
+          }
+        },
+        {
+          "id": "lesson-63-ex-3",
+          "type": "fill_blank",
+          "question": "nda___enda kwaHarare. (i went to Harare — before today)",
+          "correctAnswer": "ka",
+          "englishGloss": "i went to Harare",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"ka\".",
+            "incorrect": "the blank is \"ka\". the sentence means: i went to Harare."
+          }
+        },
+        {
+          "id": "lesson-63-ex-4",
+          "type": "multiple_choice",
+          "question": "the prefix /-ka-/ marks:",
+          "correctAnswer": "past actions that happened before today",
+          "options": [
+            "actions happening right now",
+            "commands",
+            "future actions",
+            "past actions that happened before today"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"past actions that happened before today\".",
+            "incorrect": "the answer is \"past actions that happened before today\". try again."
+          }
+        },
+        {
+          "id": "lesson-63-ex-5",
+          "type": "multiple_choice",
+          "question": "where does /-ka-/ go in the verb?",
+          "correctAnswer": "between the subject prefix and the verb stem",
+          "options": [
+            "after the final vowel",
+            "at the very end",
+            "at the very start",
+            "between the subject prefix and the verb stem"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"between the subject prefix and the verb stem\".",
+            "incorrect": "the answer is \"between the subject prefix and the verb stem\". try again."
+          }
+        },
+        {
+          "id": "lesson-63-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"they came here\"",
+          "tokens": [
+            "pano",
+            "vakauya"
+          ],
+          "correctOrder": [
+            "vakauya",
+            "pano"
+          ],
+          "englishGloss": "they came here",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"vakauya pano\" means \"they came here\".",
+            "incorrect": "the correct order is: \"vakauya pano\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-64",
+      "title": "past negative — what i didn't do",
+      "description": "i can deny that something happened — \"i didn't go with them\"",
+      "questId": "quest-actions",
+      "category": "Unit 6: Doing Things",
+      "orderIndex": 63,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can deny that something happened — \"i didn't go with them\"",
+      "learningObjectives": [
+        "gain skill: i can deny that something happened — \"i didn't go with them\""
+      ],
+      "discoveryElements": [
+        "handina kuenda",
+        "handina kuita",
+        "navo"
+      ],
+      "culturalNotes": [
+        "fsi unit 13 pairs every past affirmative with a negative. \"vakaenda kwaMutare\" → \"handina kuenda navo\" — \"they went to Mutare / i didn't go with them\". the negative uses \"handina\" + the infinitive.",
+        "note the structure: handi-na ku-enda = \"i don't have going\" — literally \"i lack the having-gone\". shona builds negation from a sense of absence."
+      ],
+      "vocabulary": [
+        {
+          "shona": "handina kuenda",
+          "english": "i didn't go",
+          "pronunciation": ""
+        },
+        {
+          "shona": "handina kuita",
+          "english": "i didn't do",
+          "pronunciation": ""
+        },
+        {
+          "shona": "navo",
+          "english": "with them",
+          "pronunciation": ""
+        },
+        {
+          "shona": "basa",
+          "english": "work, job",
+          "pronunciation": ""
+        },
+        {
+          "shona": "vakaenda",
+          "english": "they went",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-ka-",
+          "english": "past tense prefix (before today / general past)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "Mutare",
+          "english": "Mutare (city, eastern Zimbabwe)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-64-ex-1",
+          "type": "translation",
+          "question": "handina kuenda navo",
+          "correctAnswer": "i didn't go with them",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i didn't go with them\".",
+            "incorrect": "the expected answer is \"i didn't go with them\"."
+          }
+        },
+        {
+          "id": "lesson-64-ex-2",
+          "type": "translation",
+          "question": "handina kuita basa",
+          "correctAnswer": "i didn't do the work",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i didn't do the work\".",
+            "incorrect": "the expected answer is \"i didn't do the work\"."
+          }
+        },
+        {
+          "id": "lesson-64-ex-3",
+          "type": "multiple_choice",
+          "question": "\"handina kuita basa\" — which word means \"didn't\"?",
+          "correctAnswer": "handina ku- (negative + infinitive)",
+          "options": [
+            "basa",
+            "handina ku- (negative + infinitive)",
+            "kuita",
+            "ndaenda"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"handina ku- (negative + infinitive)\".",
+            "incorrect": "the answer is \"handina ku- (negative + infinitive)\". try again."
+          }
+        },
+        {
+          "id": "lesson-64-ex-4",
+          "type": "fill_blank",
+          "question": "___ kuenda. (i didn't go)",
+          "correctAnswer": "handina",
+          "englishGloss": "i didn't go",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"handina\".",
+            "incorrect": "the blank is \"handina\". the sentence means: i didn't go."
+          }
+        },
+        {
+          "id": "lesson-64-ex-5",
+          "type": "multiple_choice",
+          "question": "to say \"we didn't come\", the prefix changes to:",
+          "correctAnswer": "hatina ku-",
+          "options": [
+            "handina ku-",
+            "hatina ku-",
+            "hauna ku-",
+            "havana ku-"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"hatina ku-\".",
+            "incorrect": "the answer is \"hatina ku-\". try again."
+          }
+        },
+        {
+          "id": "lesson-64-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i didn't go with them\"",
+          "tokens": [
+            "handina",
+            "kuenda",
+            "navo"
+          ],
+          "correctOrder": [
+            "handina",
+            "kuenda",
+            "navo"
+          ],
+          "englishGloss": "i didn't go with them",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"handina kuenda navo\" means \"i didn't go with them\".",
+            "incorrect": "the correct order is: \"handina kuenda navo\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-65",
+      "title": "object infixes — knowing you, helping me",
+      "description": "i can drop \"you / me / her\" into a verb instead of saying it separately",
+      "questId": "quest-expression",
+      "category": "Unit 7: Expressing Yourself",
+      "orderIndex": 64,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can drop \"you / me / her\" into a verb instead of saying it separately",
+      "learningObjectives": [
+        "gain skill: i can drop \"you / me / her\" into a verb instead of saying it separately"
+      ],
+      "discoveryElements": [
+        "-ziva",
+        "ndinokuziva",
+        "munondiziva"
+      ],
+      "culturalNotes": [
+        "fsi unit 15 introduces OBJECT prefixes — small syllables that go INSIDE the verb. \"ndi-no-ku-ziva\" = \"i-now-you-know\" = \"i know you\".",
+        "each object has its own prefix: -ndi- (me), -ku- (you sg.), -mu- (him/her), -ti- (us), -mu- pl. (you pl.), -va- (them). shona prefers to tuck the object inside the verb rather than tack it on at the end."
+      ],
+      "vocabulary": [
+        {
+          "shona": "-ziva",
+          "english": "to know",
+          "pronunciation": ""
+        },
+        {
+          "shona": "ndinokuziva",
+          "english": "i know you",
+          "pronunciation": ""
+        },
+        {
+          "shona": "munondiziva",
+          "english": "do you know me?",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-ndi-",
+          "english": "...me (object infix)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-ku-",
+          "english": "...you (object infix)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-mu-obj",
+          "english": "...him/her (object infix)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-ti-",
+          "english": "...us (object infix)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-va-",
+          "english": "...them (object infix)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-65-ex-1",
+          "type": "translation",
+          "question": "ndinokuziva",
+          "correctAnswer": "i know you",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i know you\".",
+            "incorrect": "the expected answer is \"i know you\"."
+          }
+        },
+        {
+          "id": "lesson-65-ex-2",
+          "type": "translation",
+          "question": "munondiziva here?",
+          "correctAnswer": "do you know me?",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"do you know me?\".",
+            "incorrect": "the expected answer is \"do you know me?\"."
+          }
+        },
+        {
+          "id": "lesson-65-ex-3",
+          "type": "fill_blank",
+          "question": "ndino___ziva. (i know him/her)",
+          "correctAnswer": "mu",
+          "englishGloss": "i know him/her",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"mu\".",
+            "incorrect": "the blank is \"mu\". the sentence means: i know him/her."
+          }
+        },
+        {
+          "id": "lesson-65-ex-4",
+          "type": "multiple_choice",
+          "question": "the object prefix sits:",
+          "correctAnswer": "between the tense marker and the verb stem",
+          "options": [
+            "at the start of the word",
+            "at the very end",
+            "before the subject prefix",
+            "between the tense marker and the verb stem"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"between the tense marker and the verb stem\".",
+            "incorrect": "the answer is \"between the tense marker and the verb stem\". try again."
+          }
+        },
+        {
+          "id": "lesson-65-ex-5",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "-ndi-",
+              "english": "...me"
+            },
+            {
+              "shona": "-ku-",
+              "english": "...you (sg.)"
+            },
+            {
+              "shona": "-mu-",
+              "english": "...him/her"
+            },
+            {
+              "shona": "-ti-",
+              "english": "...us"
+            },
+            {
+              "shona": "-va-",
+              "english": "...them"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-65-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i know you very well\"",
+          "tokens": [
+            "kwazvo",
+            "ndinokuziva"
+          ],
+          "correctOrder": [
+            "ndinokuziva",
+            "kwazvo"
+          ],
+          "englishGloss": "i know you very well",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndinokuziva kwazvo\" means \"i know you very well\".",
+            "incorrect": "the correct order is: \"ndinokuziva kwazvo\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-66",
+      "title": "kumusika — at the vegetable market",
+      "description": "i can ask for vegetables and quantities at a roadside market",
+      "questId": "quest-expression",
+      "category": "Unit 7: Expressing Yourself",
+      "orderIndex": 65,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can ask for vegetables and quantities at a roadside market",
+      "learningObjectives": [
+        "gain skill: i can ask for vegetables and quantities at a roadside market"
+      ],
+      "discoveryElements": [
+        "simo",
+        "masimo",
+        "mbatata"
+      ],
+      "culturalNotes": [
+        "fsi unit 14 opens with \"ndiri kutengesa masimo\" — \"i am selling vegetables\". roadside vegetable markets are a daily fact of life across zimbabwe.",
+        "bargaining is polite, not adversarial. you might say \"muri kunyanya kani\" — \"you're overcharging a little\" — and the seller will laugh and adjust. tone matters more than the words."
+      ],
+      "vocabulary": [
+        {
+          "shona": "simo",
+          "english": "vegetable",
+          "pronunciation": ""
+        },
+        {
+          "shona": "masimo",
+          "english": "vegetables (plural)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mbatata",
+          "english": "potato",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kabichi",
+          "english": "cabbage",
+          "pronunciation": ""
+        },
+        {
+          "shona": "nzungu",
+          "english": "groundnuts",
+          "pronunciation": ""
+        },
+        {
+          "shona": "musika",
+          "english": "market",
+          "pronunciation": ""
+        },
+        {
+          "shona": "ndingada",
+          "english": "i would like / could want",
+          "pronunciation": ""
+        },
+        {
+          "shona": "sheereni",
+          "english": "shilling",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-66-ex-1",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "mbatata",
+              "english": "potato"
+            },
+            {
+              "shona": "kabichi",
+              "english": "cabbage"
+            },
+            {
+              "shona": "nzungu",
+              "english": "groundnuts (peanuts)"
+            },
+            {
+              "shona": "simo",
+              "english": "vegetable"
+            },
+            {
+              "shona": "musika",
+              "english": "market"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-66-ex-2",
+          "type": "translation",
+          "question": "ndingada kabichi",
+          "correctAnswer": "i'd like some cabbage",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i'd like some cabbage\".",
+            "incorrect": "the expected answer is \"i'd like some cabbage\"."
+          }
+        },
+        {
+          "id": "lesson-66-ex-3",
+          "type": "translation",
+          "question": "anoita sheereni rimwe",
+          "correctAnswer": "it's one shilling",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"it's one shilling\".",
+            "incorrect": "the expected answer is \"it's one shilling\"."
+          }
+        },
+        {
+          "id": "lesson-66-ex-4",
+          "type": "fill_blank",
+          "question": "ndiri kutengesa ___ . (i am selling vegetables)",
+          "correctAnswer": "masimo",
+          "englishGloss": "i am selling vegetables",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"masimo\".",
+            "incorrect": "the blank is \"masimo\". the sentence means: i am selling vegetables."
+          }
+        },
+        {
+          "id": "lesson-66-ex-5",
+          "type": "multiple_choice",
+          "question": "\"mbatata\" belongs to which noun class?",
+          "correctAnswer": "class 9/10 — singular and plural look the same",
+          "options": [
+            "class 1/2",
+            "class 5/6",
+            "class 7/8",
+            "class 9/10 — singular and plural look the same"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"class 9/10 — singular and plural look the same\".",
+            "incorrect": "the answer is \"class 9/10 — singular and plural look the same\". try again."
+          }
+        },
+        {
+          "id": "lesson-66-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i'd like potatoes\"",
+          "tokens": [
+            "mbatata",
+            "ndingada"
+          ],
+          "correctOrder": [
+            "ndingada",
+            "mbatata"
+          ],
+          "englishGloss": "i'd like potatoes",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndingada mbatata\" means \"i'd like potatoes\".",
+            "incorrect": "the correct order is: \"ndingada mbatata\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-67",
+      "title": "fruits and michero",
+      "description": "i can name common fruits and ask for many or few",
+      "questId": "quest-expression",
+      "category": "Unit 7: Expressing Yourself",
+      "orderIndex": 66,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can name common fruits and ask for many or few",
+      "learningObjectives": [
+        "gain skill: i can name common fruits and ask for many or few"
+      ],
+      "discoveryElements": [
+        "muchero",
+        "michero",
+        "mango"
+      ],
+      "culturalNotes": [
+        "fsi unit 14 supplementary lists tropical fruits common across zimbabwe: mango, popo (papaya), raranji (orange), chinanazi (pineapple).",
+        "\"michero\" is class 3/4 plural — same class as \"muti\" (tree). this is because fruits come from trees: the grammar follows the relationship."
+      ],
+      "vocabulary": [
+        {
+          "shona": "muchero",
+          "english": "fruit",
+          "pronunciation": ""
+        },
+        {
+          "shona": "michero",
+          "english": "fruits (plural)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mango",
+          "english": "mango",
+          "pronunciation": ""
+        },
+        {
+          "shona": "popo",
+          "english": "papaya",
+          "pronunciation": ""
+        },
+        {
+          "shona": "raranji",
+          "english": "orange",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mararanji",
+          "english": "oranges",
+          "pronunciation": ""
+        },
+        {
+          "shona": "chinanazi",
+          "english": "pineapple",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-zhinji",
+          "english": "many (adjective stem)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-67-ex-1",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "mango",
+              "english": "mango"
+            },
+            {
+              "shona": "popo",
+              "english": "papaya"
+            },
+            {
+              "shona": "raranji",
+              "english": "orange"
+            },
+            {
+              "shona": "chinanazi",
+              "english": "pineapple"
+            },
+            {
+              "shona": "michero",
+              "english": "fruits"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-67-ex-2",
+          "type": "translation",
+          "question": "takatenga michero mizhinji",
+          "correctAnswer": "we bought many fruits",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"we bought many fruits\".",
+            "incorrect": "the expected answer is \"we bought many fruits\"."
+          }
+        },
+        {
+          "id": "lesson-67-ex-3",
+          "type": "fill_blank",
+          "question": "mararanji ma___ (many oranges)",
+          "correctAnswer": "zhinji",
+          "englishGloss": "many oranges",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"zhinji\".",
+            "incorrect": "the blank is \"zhinji\". the sentence means: many oranges."
+          }
+        },
+        {
+          "id": "lesson-67-ex-4",
+          "type": "multiple_choice",
+          "question": "\"michero\" is the plural of:",
+          "correctAnswer": "muchero (fruit)",
+          "options": [
+            "mucheka (cloth)",
+            "muchero (fruit)",
+            "mukomana (boy)",
+            "munda (field)"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"muchero (fruit)\".",
+            "incorrect": "the answer is \"muchero (fruit)\". try again."
+          }
+        },
+        {
+          "id": "lesson-67-ex-5",
+          "type": "multiple_choice",
+          "question": "which fruit belongs to noun class 7/8?",
+          "correctAnswer": "chinanazi (the \"chi-\" prefix marks class 7)",
+          "options": [
+            "chinanazi (the \"chi-\" prefix marks class 7)",
+            "mango",
+            "popo",
+            "raranji"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"chinanazi (the \"chi-\" prefix marks class 7)\".",
+            "incorrect": "the answer is \"chinanazi (the \"chi-\" prefix marks class 7)\". try again."
+          }
+        },
+        {
+          "id": "lesson-67-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"many fruits\"",
+          "tokens": [
+            "michero",
+            "mizhinji"
+          ],
+          "correctOrder": [
+            "michero",
+            "mizhinji"
+          ],
+          "englishGloss": "many fruits",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"michero mizhinji\" means \"many fruits\".",
+            "incorrect": "the correct order is: \"michero mizhinji\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-68",
+      "title": "the rooms of an imba",
+      "description": "i can describe a house — its rooms, windows, doors",
+      "questId": "quest-daily-life",
+      "category": "Unit 4: Daily Life",
+      "orderIndex": 67,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can describe a house — its rooms, windows, doors",
+      "learningObjectives": [
+        "gain skill: i can describe a house — its rooms, windows, doors"
+      ],
+      "discoveryElements": [
+        "imba",
+        "mupanda",
+        "mipanda"
+      ],
+      "culturalNotes": [
+        "fsi unit 16 dialogue: \"imba yangu idiki. ine mipanda mingani? mitatu chete.\" — \"my house is small. how many rooms does it have? only three.\"",
+        "in shona, \"imba\" (class 9) takes the plural \"dzimba\" (class 10). but \"mupanda\" (room, class 3) takes the plural \"mipanda\" (class 4). different classes = different plurals, even for parts of the same object."
+      ],
+      "vocabulary": [
+        {
+          "shona": "imba",
+          "english": "house",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mupanda",
+          "english": "room",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mipanda",
+          "english": "rooms (plural)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "fafitera",
+          "english": "window",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-diki",
+          "english": "small",
+          "pronunciation": ""
+        },
+        {
+          "shona": "huru",
+          "english": "large (class 9/10 form)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "chete",
+          "english": "only",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-ngani",
+          "english": "how many?",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-68-ex-1",
+          "type": "translation",
+          "question": "imba yangu idiki",
+          "correctAnswer": "my house is small",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"my house is small\".",
+            "incorrect": "the expected answer is \"my house is small\"."
+          }
+        },
+        {
+          "id": "lesson-68-ex-2",
+          "type": "translation",
+          "question": "ine mipanda mingani?",
+          "correctAnswer": "how many rooms does it have?",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"how many rooms does it have?\".",
+            "incorrect": "the expected answer is \"how many rooms does it have?\"."
+          }
+        },
+        {
+          "id": "lesson-68-ex-3",
+          "type": "fill_blank",
+          "question": "mitatu ___ . (only three)",
+          "correctAnswer": "chete",
+          "englishGloss": "only three",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"chete\".",
+            "incorrect": "the blank is \"chete\". the sentence means: only three."
+          }
+        },
+        {
+          "id": "lesson-68-ex-4",
+          "type": "multiple_choice",
+          "question": "\"fafitera\" means:",
+          "correctAnswer": "window",
+          "options": [
+            "door",
+            "floor",
+            "roof",
+            "window"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"window\".",
+            "incorrect": "the answer is \"window\". try again."
+          }
+        },
+        {
+          "id": "lesson-68-ex-5",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "imba",
+              "english": "house"
+            },
+            {
+              "shona": "mupanda",
+              "english": "room"
+            },
+            {
+              "shona": "mipanda",
+              "english": "rooms"
+            },
+            {
+              "shona": "fafitera",
+              "english": "window"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-68-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"a big house\"",
+          "tokens": [
+            "huru",
+            "imba"
+          ],
+          "correctOrder": [
+            "imba",
+            "huru"
+          ],
+          "englishGloss": "a big house",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"imba huru\" means \"a big house\".",
+            "incorrect": "the correct order is: \"imba huru\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-69",
+      "title": "describing — long, short, new",
+      "description": "i can describe an object with simple adjectives and the right class agreement",
+      "questId": "quest-daily-life",
+      "category": "Unit 4: Daily Life",
+      "orderIndex": 68,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can describe an object with simple adjectives and the right class agreement",
+      "learningObjectives": [
+        "gain skill: i can describe an object with simple adjectives and the right class agreement"
+      ],
+      "discoveryElements": [
+        "-pfupi",
+        "-refu",
+        "-tsva"
+      ],
+      "culturalNotes": [
+        "fsi unit 16 drills adjectives with class agreement. \"iyi nzira ipfupi\" — \"this road is short\". the \"i-\" on \"ipfupi\" is the class 9 concord.",
+        "the same stem -pfupi takes different prefixes depending on the noun: i-pfupi (cl. 9), mu-pfupi (cl. 1/3), ma-pfupi (cl. 6). the stem is constant — the prefix changes."
+      ],
+      "vocabulary": [
+        {
+          "shona": "-pfupi",
+          "english": "short",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-refu",
+          "english": "long, tall",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-tsva",
+          "english": "new",
+          "pronunciation": ""
+        },
+        {
+          "shona": "nzira",
+          "english": "path, road, way",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mugwagwa",
+          "english": "road (main road)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "imba",
+          "english": "house",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-diki",
+          "english": "small",
+          "pronunciation": ""
+        },
+        {
+          "shona": "huru",
+          "english": "large (class 9/10 form)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-69-ex-1",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "-pfupi",
+              "english": "short"
+            },
+            {
+              "shona": "-refu",
+              "english": "long, tall"
+            },
+            {
+              "shona": "-tsva",
+              "english": "new"
+            },
+            {
+              "shona": "-diki",
+              "english": "small"
+            },
+            {
+              "shona": "huru",
+              "english": "large (cl. 9/10)"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-69-ex-2",
+          "type": "translation",
+          "question": "iyi nzira ipfupi",
+          "correctAnswer": "this road is short",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"this road is short\".",
+            "incorrect": "the expected answer is \"this road is short\"."
+          }
+        },
+        {
+          "id": "lesson-69-ex-3",
+          "type": "fill_blank",
+          "question": "iyi nzira i___ (this road is new)",
+          "correctAnswer": "tsva",
+          "englishGloss": "this road is new",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"tsva\".",
+            "incorrect": "the blank is \"tsva\". the sentence means: this road is new."
+          }
+        },
+        {
+          "id": "lesson-69-ex-4",
+          "type": "multiple_choice",
+          "question": "the prefix on the adjective is determined by:",
+          "correctAnswer": "the noun class of the noun it describes",
+          "options": [
+            "how long the noun is",
+            "the noun class of the noun it describes",
+            "the speaker's age",
+            "the time of day"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"the noun class of the noun it describes\".",
+            "incorrect": "the answer is \"the noun class of the noun it describes\". try again."
+          }
+        },
+        {
+          "id": "lesson-69-ex-5",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"a big house\"",
+          "tokens": [
+            "huru",
+            "imba"
+          ],
+          "correctOrder": [
+            "imba",
+            "huru"
+          ],
+          "englishGloss": "a big house",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"imba huru\" means \"a big house\".",
+            "incorrect": "the correct order is: \"imba huru\"."
+          }
+        },
+        {
+          "id": "lesson-69-ex-6",
+          "type": "multiple_choice",
+          "question": "\"iyi nzira irefu\" means:",
+          "correctAnswer": "this road is long",
+          "options": [
+            "this is a new road",
+            "this is a small road",
+            "this road is long",
+            "this road is short"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"this road is long\".",
+            "incorrect": "the answer is \"this road is long\". try again."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-70",
+      "title": "asking for directions — bandera rokutanga",
+      "description": "i can follow simple directions: turn right, turn left, go straight",
+      "questId": "quest-getting-around",
+      "category": "Unit 5: Getting Around",
+      "orderIndex": 69,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can follow simple directions: turn right, turn left, go straight",
+      "learningObjectives": [
+        "gain skill: i can follow simple directions: turn right, turn left, go straight"
+      ],
+      "discoveryElements": [
+        "rudyi",
+        "runzere",
+        "mberi"
+      ],
+      "culturalNotes": [
+        "fsi unit 17 dialogue: \"bandera rokutanga, mwotsauka kurudyi\" — \"at the first sign, turn right\". the structure: [signpost] [first] + verb + [direction].",
+        "in shona, \"rudyi\" (right) and \"runzere\" (left) take the locative prefix ku-: kurudyi, kurunzere. directions are always somewhere you head TO."
+      ],
+      "vocabulary": [
+        {
+          "shona": "rudyi",
+          "english": "right (hand / side)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "runzere",
+          "english": "left (hand / side)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mberi",
+          "english": "front, ahead",
+          "pronunciation": ""
+        },
+        {
+          "shona": "bandera",
+          "english": "signpost, signboard",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-tsauka",
+          "english": "to turn off",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-tenderuka",
+          "english": "to turn about, turn around",
+          "pronunciation": ""
+        },
+        {
+          "shona": "enda mberi",
+          "english": "go straight ahead",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-70-ex-1",
+          "type": "translation",
+          "question": "bandera rokutanga mwotsauka kurudyi",
+          "correctAnswer": "at the first sign, turn right",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"at the first sign, turn right\".",
+            "incorrect": "the expected answer is \"at the first sign, turn right\"."
+          }
+        },
+        {
+          "id": "lesson-70-ex-2",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "rudyi",
+              "english": "right (hand/side)"
+            },
+            {
+              "shona": "runzere",
+              "english": "left (hand/side)"
+            },
+            {
+              "shona": "mberi",
+              "english": "front, ahead"
+            },
+            {
+              "shona": "bandera",
+              "english": "signpost, signboard"
+            },
+            {
+              "shona": "-tsauka",
+              "english": "to turn off"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-70-ex-3",
+          "type": "multiple_choice",
+          "question": "\"enda mberi\" means:",
+          "correctAnswer": "go straight ahead",
+          "options": [
+            "come back",
+            "go straight ahead",
+            "stop here",
+            "turn left"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"go straight ahead\".",
+            "incorrect": "the answer is \"go straight ahead\". try again."
+          }
+        },
+        {
+          "id": "lesson-70-ex-4",
+          "type": "fill_blank",
+          "question": "tenderuka ku___ . (turn to the left)",
+          "correctAnswer": "runzere",
+          "englishGloss": "turn to the left",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"runzere\".",
+            "incorrect": "the blank is \"runzere\". the sentence means: turn to the left."
+          }
+        },
+        {
+          "id": "lesson-70-ex-5",
+          "type": "multiple_choice",
+          "question": "directions in shona take which locative prefix?",
+          "correctAnswer": "ku- (toward / at a place)",
+          "options": [
+            "ku- (toward / at a place)",
+            "mu- (inside)",
+            "na- (with)",
+            "pa- (on)"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"ku- (toward / at a place)\".",
+            "incorrect": "the answer is \"ku- (toward / at a place)\". try again."
+          }
+        },
+        {
+          "id": "lesson-70-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"go straight ahead\"",
+          "tokens": [
+            "enda",
+            "mberi"
+          ],
+          "correctOrder": [
+            "enda",
+            "mberi"
+          ],
+          "englishGloss": "go straight ahead",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"enda mberi\" means \"go straight ahead\".",
+            "incorrect": "the correct order is: \"enda mberi\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-71",
+      "title": "have you ever been? — mwakambosvika",
+      "description": "i can ask \"have you ever been to X?\" and answer briefly",
+      "questId": "quest-getting-around",
+      "category": "Unit 5: Getting Around",
+      "orderIndex": 70,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can ask \"have you ever been to X?\" and answer briefly",
+      "learningObjectives": [
+        "gain skill: i can ask \"have you ever been to X?\" and answer briefly"
+      ],
+      "discoveryElements": [
+        "-mbo-",
+        "mwakambosvika",
+        "-svika"
+      ],
+      "culturalNotes": [
+        "fsi unit 17 note 2 introduces /-mbo-/ — an aspect prefix meaning \"ever\", \"just briefly\", or \"at some point\". \"mwakambosvika kuHarare?\" — \"have you ever been to Harare?\".",
+        "the prefix communicates lack of insistence — a casual \"have you ever happened to...\" rather than a heavy \"did you...\"."
+      ],
+      "vocabulary": [
+        {
+          "shona": "-mbo-",
+          "english": "aspect: just, ever (temporariness)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mwakambosvika",
+          "english": "have you ever been (arrived)?",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-svika",
+          "english": "to arrive",
+          "pronunciation": ""
+        },
+        {
+          "shona": "Mutare",
+          "english": "Mutare (city, eastern Zimbabwe)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "Harare",
+          "english": "Harare (city)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "Bhuruwayo",
+          "english": "Bulawayo (city)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kwa-",
+          "english": "at / to (with proper names)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-71-ex-1",
+          "type": "translation",
+          "question": "mwakambosvika kuHarare?",
+          "correctAnswer": "have you ever been to Harare?",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"have you ever been to Harare?\".",
+            "incorrect": "the expected answer is \"have you ever been to Harare?\"."
+          }
+        },
+        {
+          "id": "lesson-71-ex-2",
+          "type": "multiple_choice",
+          "question": "the /-mbo-/ prefix conveys:",
+          "correctAnswer": "casualness — \"ever\", \"just\", \"at some point\"",
+          "options": [
+            "casualness — \"ever\", \"just\", \"at some point\"",
+            "commands",
+            "future certainty",
+            "urgency"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"casualness — \"ever\", \"just\", \"at some point\"\".",
+            "incorrect": "the answer is \"casualness — \"ever\", \"just\", \"at some point\"\". try again."
+          }
+        },
+        {
+          "id": "lesson-71-ex-3",
+          "type": "fill_blank",
+          "question": "mwaka___svika kwaMutare?",
+          "correctAnswer": "mbo",
+          "englishGloss": "have you ever been to Mutare?",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"mbo\".",
+            "incorrect": "the blank is \"mbo\". the sentence means: have you ever been to Mutare?."
+          }
+        },
+        {
+          "id": "lesson-71-ex-4",
+          "type": "multiple_choice",
+          "question": "the polite reply to \"mwakambosvika kuHarare?\" if yes is:",
+          "correctAnswer": "hongu, ndakambosvika",
+          "options": [
+            "hongu, ndakambosvika",
+            "kwete kwete",
+            "mangwanani",
+            "ndauwe"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"hongu, ndakambosvika\".",
+            "incorrect": "the answer is \"hongu, ndakambosvika\". try again."
+          }
+        },
+        {
+          "id": "lesson-71-ex-5",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "Mutare",
+              "english": "Mutare (city)"
+            },
+            {
+              "shona": "Harare",
+              "english": "Harare (capital)"
+            },
+            {
+              "shona": "Bhuruwayo",
+              "english": "Bulawayo"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-71-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"have you ever been to Harare?\"",
+          "tokens": [
+            "here",
+            "kuHarare",
+            "mwakambosvika"
+          ],
+          "correctOrder": [
+            "mwakambosvika",
+            "here",
+            "kuHarare"
+          ],
+          "englishGloss": "have you ever been to Harare?",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"mwakambosvika here kuHarare\" means \"have you ever been to Harare?\".",
+            "incorrect": "the correct order is: \"mwakambosvika here kuHarare\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-72",
+      "title": "cooking processes — kubika, kukanga, kugocha",
+      "description": "i can name how a dish is being prepared",
+      "questId": "quest-daily-life",
+      "category": "Unit 4: Daily Life",
+      "orderIndex": 71,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can name how a dish is being prepared",
+      "learningObjectives": [
+        "gain skill: i can name how a dish is being prepared"
+      ],
+      "discoveryElements": [
+        "-bika",
+        "kuvidza",
+        "kukanga"
+      ],
+      "culturalNotes": [
+        "fsi unit 20 supplementary lists cooking processes: kubika (cook), kuvidza (boil), kukanga (fry), kugocha (broil/roast), kupisa (heat). each verb pairs with specific foods.",
+        "sadza is \"cooked\" (kubika), not boiled. nzungu (groundnuts) are roasted (kukanga). water is boiled (kuvidza). using the wrong cooking verb sounds odd, like saying \"i fried the rice\" in english when you mean \"boiled\"."
+      ],
+      "vocabulary": [
+        {
+          "shona": "-bika",
+          "english": "to cook",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kuvidza",
+          "english": "to boil",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kukanga",
+          "english": "to fry",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kugocha",
+          "english": "to broil, roast",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kupisa",
+          "english": "to heat, burn",
+          "pronunciation": ""
+        },
+        {
+          "shona": "dovi",
+          "english": "peanut butter",
+          "pronunciation": ""
+        },
+        {
+          "shona": "muto",
+          "english": "gravy, soup",
+          "pronunciation": ""
+        },
+        {
+          "shona": "sadza",
+          "english": "thick maize porridge (staple food)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-72-ex-1",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "kubika",
+              "english": "to cook (general)"
+            },
+            {
+              "shona": "kuvidza",
+              "english": "to boil"
+            },
+            {
+              "shona": "kukanga",
+              "english": "to fry / dry-roast"
+            },
+            {
+              "shona": "kugocha",
+              "english": "to broil / roast"
+            },
+            {
+              "shona": "kupisa",
+              "english": "to heat, burn"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-72-ex-2",
+          "type": "multiple_choice",
+          "question": "how do you \"cook\" sadza?",
+          "correctAnswer": "kubika",
+          "options": [
+            "kubika",
+            "kugocha",
+            "kukanga",
+            "kuvidza"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"kubika\".",
+            "incorrect": "the answer is \"kubika\". try again."
+          }
+        },
+        {
+          "id": "lesson-72-ex-3",
+          "type": "multiple_choice",
+          "question": "how are groundnuts (nzungu) typically prepared?",
+          "correctAnswer": "kukanga (dry-roasted in a pan)",
+          "options": [
+            "kubika",
+            "kukanga (dry-roasted in a pan)",
+            "kupisa",
+            "kuvidza"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"kukanga (dry-roasted in a pan)\".",
+            "incorrect": "the answer is \"kukanga (dry-roasted in a pan)\". try again."
+          }
+        },
+        {
+          "id": "lesson-72-ex-4",
+          "type": "fill_blank",
+          "question": "mai vari ku___ nyama. (mother is roasting meat)",
+          "correctAnswer": "gocha",
+          "englishGloss": "mother is roasting meat",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"gocha\".",
+            "incorrect": "the blank is \"gocha\". the sentence means: mother is roasting meat."
+          }
+        },
+        {
+          "id": "lesson-72-ex-5",
+          "type": "translation",
+          "question": "isa dovi pachingwa",
+          "correctAnswer": "put peanut butter on the bread",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"put peanut butter on the bread\".",
+            "incorrect": "the expected answer is \"put peanut butter on the bread\"."
+          }
+        },
+        {
+          "id": "lesson-72-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i am cooking sadza\"",
+          "tokens": [
+            "kubika",
+            "ndiri",
+            "sadza"
+          ],
+          "correctOrder": [
+            "ndiri",
+            "kubika",
+            "sadza"
+          ],
+          "englishGloss": "i am cooking sadza",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndiri kubika sadza\" means \"i am cooking sadza\".",
+            "incorrect": "the correct order is: \"ndiri kubika sadza\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-73",
+      "title": "animals around the home",
+      "description": "i can name farm animals you'll see in a shona homestead",
+      "questId": "quest-nature",
+      "category": "Unit 9: Nature & Environment",
+      "orderIndex": 72,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can name farm animals you'll see in a shona homestead",
+      "learningObjectives": [
+        "gain skill: i can name farm animals you'll see in a shona homestead"
+      ],
+      "discoveryElements": [
+        "mombe",
+        "huku",
+        "mbudzi"
+      ],
+      "culturalNotes": [
+        "fsi unit 25 lists the homestead animals: mombe (cattle), huku (chicken), mbudzi (goat), hwai (sheep), nguruve (pig). almost all are class 9/10 — singular and plural look identical.",
+        "mombe (cattle) hold special cultural weight. they are wealth, dowry (roora), and signs of family standing. a man with many mombe is munhu mukuru — an important person."
+      ],
+      "vocabulary": [
+        {
+          "shona": "mombe",
+          "english": "cattle, cow",
+          "pronunciation": ""
+        },
+        {
+          "shona": "huku",
+          "english": "chicken",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mbudzi",
+          "english": "goat",
+          "pronunciation": ""
+        },
+        {
+          "shona": "hwai",
+          "english": "sheep",
+          "pronunciation": ""
+        },
+        {
+          "shona": "nguruve",
+          "english": "pig",
+          "pronunciation": ""
+        },
+        {
+          "shona": "tsapi",
+          "english": "barn, storehouse",
+          "pronunciation": ""
+        },
+        {
+          "shona": "shiri",
+          "english": "bird",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-73-ex-1",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "mombe",
+              "english": "cattle, cow"
+            },
+            {
+              "shona": "huku",
+              "english": "chicken"
+            },
+            {
+              "shona": "mbudzi",
+              "english": "goat"
+            },
+            {
+              "shona": "hwai",
+              "english": "sheep"
+            },
+            {
+              "shona": "nguruve",
+              "english": "pig"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-73-ex-2",
+          "type": "multiple_choice",
+          "question": "mombe (cattle) carry which cultural weight?",
+          "correctAnswer": "wealth and roora (dowry) — markers of family standing",
+          "options": [
+            "none",
+            "only used for racing",
+            "they are taboo",
+            "wealth and roora (dowry) — markers of family standing"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"wealth and roora (dowry) — markers of family standing\".",
+            "incorrect": "the answer is \"wealth and roora (dowry) — markers of family standing\". try again."
+          }
+        },
+        {
+          "id": "lesson-73-ex-3",
+          "type": "fill_blank",
+          "question": "takaenda kundoona ___ . (we went to see the cattle)",
+          "correctAnswer": "mombe",
+          "englishGloss": "we went to see the cattle",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"mombe\".",
+            "incorrect": "the blank is \"mombe\". the sentence means: we went to see the cattle."
+          }
+        },
+        {
+          "id": "lesson-73-ex-4",
+          "type": "multiple_choice",
+          "question": "most farm animals belong to noun class:",
+          "correctAnswer": "9/10 (no plural prefix change)",
+          "options": [
+            "1/2",
+            "5/6",
+            "7/8",
+            "9/10 (no plural prefix change)"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"9/10 (no plural prefix change)\".",
+            "incorrect": "the answer is \"9/10 (no plural prefix change)\". try again."
+          }
+        },
+        {
+          "id": "lesson-73-ex-5",
+          "type": "translation",
+          "question": "tsapi ine huku zhinji",
+          "correctAnswer": "the barn has many chickens",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"the barn has many chickens\".",
+            "incorrect": "the expected answer is \"the barn has many chickens\"."
+          }
+        },
+        {
+          "id": "lesson-73-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"we went to see the goats\"",
+          "tokens": [
+            "kundoona",
+            "mbudzi",
+            "takaenda"
+          ],
+          "correctOrder": [
+            "takaenda",
+            "kundoona",
+            "mbudzi"
+          ],
+          "englishGloss": "we went to see the goats",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"takaenda kundoona mbudzi\" means \"we went to see the goats\".",
+            "incorrect": "the correct order is: \"takaenda kundoona mbudzi\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-74",
+      "title": "travelling by bus and train",
+      "description": "i can describe a journey — how, how long, how much",
+      "questId": "quest-getting-around",
+      "category": "Unit 5: Getting Around",
+      "orderIndex": 73,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can describe a journey — how, how long, how much",
+      "learningObjectives": [
+        "gain skill: i can describe a journey — how, how long, how much"
+      ],
+      "discoveryElements": [
+        "bhazi",
+        "chitima",
+        "rwendo"
+      ],
+      "culturalNotes": [
+        "fsi unit 23 practice: \"rwendo rweBhuruwayo runoita marinyi?\" — \"how much does the trip to Bulawayo cost?\". note that \"rwendo\" (cl. 11) takes a \"ru-\" concord: \"rwendo runoita...\".",
+        "a journey is asked about in three pieces: cost (anoita marinyi?), duration (rinotora nguva yakadini?), and means (unoenda senyi?). all three together = a proper welcome."
+      ],
+      "vocabulary": [
+        {
+          "shona": "bhazi",
+          "english": "bus",
+          "pronunciation": ""
+        },
+        {
+          "shona": "chitima",
+          "english": "train",
+          "pronunciation": ""
+        },
+        {
+          "shona": "rwendo",
+          "english": "journey",
+          "pronunciation": ""
+        },
+        {
+          "shona": "pondo",
+          "english": "pound (money or weight)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-svika",
+          "english": "to arrive",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mazuva mairi",
+          "english": "two days",
+          "pronunciation": ""
+        },
+        {
+          "shona": "Bhuruwayo",
+          "english": "Bulawayo (city)",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-74-ex-1",
+          "type": "translation",
+          "question": "rwendo rweBhuruwayo runoita marinyi?",
+          "correctAnswer": "how much does the trip to Bulawayo cost?",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"how much does the trip to Bulawayo cost?\".",
+            "incorrect": "the expected answer is \"how much does the trip to Bulawayo cost?\"."
+          }
+        },
+        {
+          "id": "lesson-74-ex-2",
+          "type": "translation",
+          "question": "ndinoenda nebhazi",
+          "correctAnswer": "i'm going by bus",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"i'm going by bus\".",
+            "incorrect": "the expected answer is \"i'm going by bus\"."
+          }
+        },
+        {
+          "id": "lesson-74-ex-3",
+          "type": "fill_blank",
+          "question": "runoita ___ ina. (it costs four pounds)",
+          "correctAnswer": "pondo",
+          "englishGloss": "it costs four pounds",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"pondo\".",
+            "incorrect": "the blank is \"pondo\". the sentence means: it costs four pounds."
+          }
+        },
+        {
+          "id": "lesson-74-ex-4",
+          "type": "multiple_choice",
+          "question": "\"chitima\" means:",
+          "correctAnswer": "train",
+          "options": [
+            "car",
+            "cart",
+            "plane",
+            "train"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"train\".",
+            "incorrect": "the answer is \"train\". try again."
+          }
+        },
+        {
+          "id": "lesson-74-ex-5",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "bhazi",
+              "english": "bus"
+            },
+            {
+              "shona": "chitima",
+              "english": "train"
+            },
+            {
+              "shona": "rwendo",
+              "english": "journey"
+            },
+            {
+              "shona": "pondo",
+              "english": "pound (money or weight)"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-74-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"i'm going by train\"",
+          "tokens": [
+            "ndinoenda",
+            "nechitima"
+          ],
+          "correctOrder": [
+            "ndinoenda",
+            "nechitima"
+          ],
+          "englishGloss": "i'm going by train",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"ndinoenda nechitima\" means \"i'm going by train\".",
+            "incorrect": "the correct order is: \"ndinoenda nechitima\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-75",
+      "title": "conditional dai — if it were possible",
+      "description": "i can say \"if only...\" or \"if X happened, then i would Y\"",
+      "questId": "quest-complex",
+      "category": "Unit 12: Complex Communication",
+      "orderIndex": 74,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can say \"if only...\" or \"if X happened, then i would Y\"",
+      "learningObjectives": [
+        "gain skill: i can say \"if only...\" or \"if X happened, then i would Y\""
+      ],
+      "discoveryElements": [
+        "dai",
+        "ndaizofara",
+        "-da"
+      ],
+      "culturalNotes": [
+        "fsi unit 37 introduces /dai/ — the conditional. \"dai uchiriona, ndaizofara\" — \"if you saw it, i would be happy\". it sets up a hypothetical situation.",
+        "shona uses /dai/ for both real conditions (\"if it rains\") and unreal ones (\"if i were rich\"). context — not grammar — tells you which is meant."
+      ],
+      "vocabulary": [
+        {
+          "shona": "dai",
+          "english": "if (conditional)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "ndaizofara",
+          "english": "i would be happy",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-da",
+          "english": "to want, love",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mari",
+          "english": "money",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kazhinji",
+          "english": "often, many times",
+          "pronunciation": ""
+        },
+        {
+          "shona": "chokwadi",
+          "english": "truth",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-75-ex-1",
+          "type": "translation",
+          "question": "dai uchiriona, ndaizofara",
+          "correctAnswer": "if you saw it, i would be happy",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"if you saw it, i would be happy\".",
+            "incorrect": "the expected answer is \"if you saw it, i would be happy\"."
+          }
+        },
+        {
+          "id": "lesson-75-ex-2",
+          "type": "multiple_choice",
+          "question": "\"dai\" begins a:",
+          "correctAnswer": "conditional (\"if...\") clause",
+          "options": [
+            "a greeting",
+            "a question about the past",
+            "command",
+            "conditional (\"if...\") clause"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"conditional (\"if...\") clause\".",
+            "incorrect": "the answer is \"conditional (\"if...\") clause\". try again."
+          }
+        },
+        {
+          "id": "lesson-75-ex-3",
+          "type": "fill_blank",
+          "question": "___ ndine mari, ndaizotenga. (if i had money, i would buy)",
+          "correctAnswer": "dai",
+          "englishGloss": "if i had money, i would buy",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"dai\".",
+            "incorrect": "the blank is \"dai\". the sentence means: if i had money, i would buy."
+          }
+        },
+        {
+          "id": "lesson-75-ex-4",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "dai",
+              "english": "if (conditional)"
+            },
+            {
+              "shona": "ndaizofara",
+              "english": "i would be happy"
+            },
+            {
+              "shona": "chokwadi",
+              "english": "truth"
+            },
+            {
+              "shona": "kazhinji",
+              "english": "often, many times"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-75-ex-5",
+          "type": "multiple_choice",
+          "question": "the response to \"dai...\" typically uses:",
+          "correctAnswer": "a verb with the future-conditional prefix -izo-",
+          "options": [
+            "a command form",
+            "a verb with the future-conditional prefix -izo-",
+            "nothing at all",
+            "the present tense"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"a verb with the future-conditional prefix -izo-\".",
+            "incorrect": "the answer is \"a verb with the future-conditional prefix -izo-\". try again."
+          }
+        },
+        {
+          "id": "lesson-75-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"if you wanted, i would help you\"",
+          "tokens": [
+            "dai",
+            "ndaikubatsira",
+            "uchida"
+          ],
+          "correctOrder": [
+            "dai",
+            "uchida",
+            "ndaikubatsira"
+          ],
+          "englishGloss": "if you wanted, i would help you",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"dai uchida ndaikubatsira\" means \"if you wanted, i would help you\".",
+            "incorrect": "the correct order is: \"dai uchida ndaikubatsira\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-76",
+      "title": "how often? — pavhiki katatu",
+      "description": "i can say how many times per week i do something",
+      "questId": "quest-numbers-time",
+      "category": "Unit 3: Numbers & Time",
+      "orderIndex": 75,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can say how many times per week i do something",
+      "learningObjectives": [
+        "gain skill: i can say how many times per week i do something"
+      ],
+      "discoveryElements": [
+        "pavhiki",
+        "kanganii",
+        "katatu"
+      ],
+      "culturalNotes": [
+        "fsi unit 37 note 6 builds frequency expressions with the prefix /ka-/. \"pavhiki munoenda kanganii?\" — \"how many times per week do you go?\". the answer: \"katatu\" (3 times), \"kaviri\" (2 times), \"kamwe\" (once).",
+        "note the pattern: ka- + number-stem. kamwe, kaviri, katatu, kana, kashanu. it builds neatly off the counting stems you already know."
+      ],
+      "vocabulary": [
+        {
+          "shona": "pavhiki",
+          "english": "per week",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kanganii",
+          "english": "how many times?",
+          "pronunciation": ""
+        },
+        {
+          "shona": "katatu",
+          "english": "three times",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kaviri",
+          "english": "two times",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kamwe",
+          "english": "once, one time",
+          "pronunciation": ""
+        },
+        {
+          "shona": "chitoro",
+          "english": "shop / store",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kuchechi",
+          "english": "to church",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-76-ex-1",
+          "type": "translation",
+          "question": "pavhiki munoenda kanganii?",
+          "correctAnswer": "how many times per week do you go?",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"how many times per week do you go?\".",
+            "incorrect": "the expected answer is \"how many times per week do you go?\"."
+          }
+        },
+        {
+          "id": "lesson-76-ex-2",
+          "type": "translation",
+          "question": "tinoenda katatu",
+          "correctAnswer": "we go three times",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"we go three times\".",
+            "incorrect": "the expected answer is \"we go three times\"."
+          }
+        },
+        {
+          "id": "lesson-76-ex-3",
+          "type": "fill_blank",
+          "question": "tinoenda ka___ . (we go twice)",
+          "correctAnswer": "viri",
+          "englishGloss": "we go twice",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"viri\".",
+            "incorrect": "the blank is \"viri\". the sentence means: we go twice."
+          }
+        },
+        {
+          "id": "lesson-76-ex-4",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "kamwe",
+              "english": "once"
+            },
+            {
+              "shona": "kaviri",
+              "english": "twice"
+            },
+            {
+              "shona": "katatu",
+              "english": "three times"
+            },
+            {
+              "shona": "pavhiki",
+              "english": "per week"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-76-ex-5",
+          "type": "multiple_choice",
+          "question": "the prefix that turns a number into \"X times\" is:",
+          "correctAnswer": "ka-",
+          "options": [
+            "ka-",
+            "ma-",
+            "va-",
+            "zvi-"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"ka-\".",
+            "incorrect": "the answer is \"ka-\". try again."
+          }
+        },
+        {
+          "id": "lesson-76-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"we go three times per week\"",
+          "tokens": [
+            "katatu",
+            "pavhiki",
+            "tinoenda"
+          ],
+          "correctOrder": [
+            "tinoenda",
+            "katatu",
+            "pavhiki"
+          ],
+          "englishGloss": "we go three times per week",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"tinoenda katatu pavhiki\" means \"we go three times per week\".",
+            "incorrect": "the correct order is: \"tinoenda katatu pavhiki\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-77",
+      "title": "seasons in mashonaland",
+      "description": "i can name the four shona seasons and what happens in each",
+      "questId": "quest-nature",
+      "category": "Unit 9: Nature & Environment",
+      "orderIndex": 76,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can name the four shona seasons and what happens in each",
+      "learningObjectives": [
+        "gain skill: i can name the four shona seasons and what happens in each"
+      ],
+      "discoveryElements": [
+        "zienza",
+        "chirimo",
+        "matsutso"
+      ],
+      "culturalNotes": [
+        "fsi unit 39 names the four shona seasons: zienza (rains, nov-mar), matsutso (ripening, apr-may), chando (cold/winter, jun-jul), chirimo (hot dry, aug-oct). they do not map onto european seasons — there is no \"spring\".",
+        "every season has its work. in zienza you plant (-dyara mbesa). in matsutso crops ripen. in chando you wear warm clothes. in chirimo you wait for rain. the language tracks the agricultural year."
+      ],
+      "vocabulary": [
+        {
+          "shona": "zienza",
+          "english": "rainy season",
+          "pronunciation": ""
+        },
+        {
+          "shona": "chirimo",
+          "english": "hot dry season, spring",
+          "pronunciation": ""
+        },
+        {
+          "shona": "matsutso",
+          "english": "season when crops ripen",
+          "pronunciation": ""
+        },
+        {
+          "shona": "chando",
+          "english": "cold season, winter",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-naya",
+          "english": "to rain",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mvura",
+          "english": "water (also: rain)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-pisa",
+          "english": "to be hot",
+          "pronunciation": ""
+        },
+        {
+          "shona": "-tonhora",
+          "english": "to be cold",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-77-ex-1",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "zienza",
+              "english": "rainy season (nov-mar)"
+            },
+            {
+              "shona": "matsutso",
+              "english": "ripening season (apr-may)"
+            },
+            {
+              "shona": "chando",
+              "english": "cold season / winter (jun-jul)"
+            },
+            {
+              "shona": "chirimo",
+              "english": "hot dry season (aug-oct)"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-77-ex-2",
+          "type": "translation",
+          "question": "zienza rinonaya mvura kwazvo",
+          "correctAnswer": "[in] zienza it rains a lot",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"[in] zienza it rains a lot\".",
+            "incorrect": "the expected answer is \"[in] zienza it rains a lot\"."
+          }
+        },
+        {
+          "id": "lesson-77-ex-3",
+          "type": "fill_blank",
+          "question": "___ kunopisa kwazvo. (the hot dry season is very hot)",
+          "correctAnswer": "chirimo",
+          "englishGloss": "[in] chirimo it is very hot",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"chirimo\".",
+            "incorrect": "the blank is \"chirimo\". the sentence means: [in] chirimo it is very hot."
+          }
+        },
+        {
+          "id": "lesson-77-ex-4",
+          "type": "multiple_choice",
+          "question": "zimbabwe has how many seasons in the shona reckoning?",
+          "correctAnswer": "four — zienza, matsutso, chando, chirimo",
+          "options": [
+            "four — zienza, matsutso, chando, chirimo",
+            "three",
+            "twelve months only",
+            "two (rains and dry)"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"four — zienza, matsutso, chando, chirimo\".",
+            "incorrect": "the answer is \"four — zienza, matsutso, chando, chirimo\". try again."
+          }
+        },
+        {
+          "id": "lesson-77-ex-5",
+          "type": "multiple_choice",
+          "question": "which season is for planting crops?",
+          "correctAnswer": "zienza — the rains",
+          "options": [
+            "chando",
+            "chirimo",
+            "matsutso",
+            "zienza — the rains"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"zienza — the rains\".",
+            "incorrect": "the answer is \"zienza — the rains\". try again."
+          }
+        },
+        {
+          "id": "lesson-77-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"it rains in zienza\"",
+          "tokens": [
+            "inonaya",
+            "muzienza",
+            "mvura"
+          ],
+          "correctOrder": [
+            "mvura",
+            "inonaya",
+            "muzienza"
+          ],
+          "englishGloss": "it rains in zienza",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"mvura inonaya muzienza\" means \"it rains in zienza\".",
+            "incorrect": "the correct order is: \"mvura inonaya muzienza\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-78",
+      "title": "visiting — gogogo and proper greeting",
+      "description": "i can announce myself at a doorway and exchange a respectful first greeting",
+      "questId": "quest-deep-culture",
+      "category": "Unit 13: Deeper Culture",
+      "orderIndex": 77,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can announce myself at a doorway and exchange a respectful first greeting",
+      "learningObjectives": [
+        "gain skill: i can announce myself at a doorway and exchange a respectful first greeting"
+      ],
+      "discoveryElements": [
+        "gogogo",
+        "pindai",
+        "kwaziwai"
+      ],
+      "culturalNotes": [
+        "fsi unit 38 documents how a shona person enters a home. you don't knock — you say \"gogogo\" aloud at the doorway. the host replies \"pindai\" (come in). only then do you step inside.",
+        "a deeper greeting acknowledges the host's totem. fsi shows: \"nyamazve shewe shumba!\" — \"greetings, sir, lion-clan!\" — said when greeting someone whose mutupo is shumba. addressing a person by their totem honors their whole lineage."
+      ],
+      "vocabulary": [
+        {
+          "shona": "gogogo",
+          "english": "(knocking sound, said in lieu of knocking)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "pindai",
+          "english": "come in (pl./resp.)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "kwaziwai",
+          "english": "hello, greetings",
+          "pronunciation": ""
+        },
+        {
+          "shona": "shumba",
+          "english": "lion (also a totem name)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "ndauwe",
+          "english": "(courteous expression used by women)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mbuya",
+          "english": "grandmother",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mwoyo",
+          "english": "heart",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-78-ex-1",
+          "type": "multiple_choice",
+          "question": "how do you announce yourself at a shona doorway?",
+          "correctAnswer": "by saying \"gogogo\" aloud",
+          "options": [
+            "by clearing your throat",
+            "by knocking three times",
+            "by ringing a bell",
+            "by saying \"gogogo\" aloud"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"by saying \"gogogo\" aloud\".",
+            "incorrect": "the answer is \"by saying \"gogogo\" aloud\". try again."
+          }
+        },
+        {
+          "id": "lesson-78-ex-2",
+          "type": "translation",
+          "question": "pindai zvenyu",
+          "correctAnswer": "come in!",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"come in!\".",
+            "incorrect": "the expected answer is \"come in!\"."
+          }
+        },
+        {
+          "id": "lesson-78-ex-3",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "gogogo",
+              "english": "(the spoken \"knock\")"
+            },
+            {
+              "shona": "pindai",
+              "english": "come in (pl./resp.)"
+            },
+            {
+              "shona": "kwaziwai",
+              "english": "hello, greetings"
+            },
+            {
+              "shona": "shumba",
+              "english": "lion (and a common totem)"
+            },
+            {
+              "shona": "ndauwe",
+              "english": "(courteous reply, used by women)"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-78-ex-4",
+          "type": "multiple_choice",
+          "question": "greeting someone by their totem name (e.g. \"shumba\") honors:",
+          "correctAnswer": "their entire lineage and ancestral clan",
+          "options": [
+            "only that specific person",
+            "only the animal itself",
+            "their entire lineage and ancestral clan",
+            "their occupation"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"their entire lineage and ancestral clan\".",
+            "incorrect": "the answer is \"their entire lineage and ancestral clan\". try again."
+          }
+        },
+        {
+          "id": "lesson-78-ex-5",
+          "type": "fill_blank",
+          "question": "___ Mai Jongwe. (\"knock-knock\", Mrs. Jongwe)",
+          "correctAnswer": "gogogo",
+          "englishGloss": "(knock-knock), Mrs. Jongwe",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"gogogo\".",
+            "incorrect": "the blank is \"gogogo\". the sentence means: (knock-knock), Mrs. Jongwe."
+          }
+        },
+        {
+          "id": "lesson-78-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"come in!\"",
+          "tokens": [
+            "pindai",
+            "zvenyu"
+          ],
+          "correctOrder": [
+            "pindai",
+            "zvenyu"
+          ],
+          "englishGloss": "come in!",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"pindai zvenyu\" means \"come in!\".",
+            "incorrect": "the correct order is: \"pindai zvenyu\"."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lesson-62",
+      "title": "closing a conversation — goodbye and thanks",
+      "description": "i can end a conversation politely and thank someone properly",
+      "questId": "quest-deep-culture",
+      "category": "Unit 13: Deeper Culture",
+      "orderIndex": 78,
+      "level": "beginner",
+      "difficulty": "easy",
+      "xpReward": 50,
+      "estimatedDuration": 10,
+      "emoji": "📘",
+      "skillOutcome": "i can end a conversation politely and thank someone properly",
+      "learningObjectives": [
+        "gain skill: i can end a conversation politely and thank someone properly"
+      ],
+      "discoveryElements": [
+        "tatenda",
+        "-siya",
+        "mwazviita"
+      ],
+      "culturalNotes": [
+        "fsi unit 9 closes the market dialogue with \"mwazviita, tamusiya\" — \"thank you (you have done it); we leave you\". departing politely matters as much as greeting politely.",
+        "\"tatenda\" is the modern everyday \"thank you\" — from the verb \"-tenda\" (to thank). it appears widely outside the FSI text but is universally attested."
+      ],
+      "vocabulary": [
+        {
+          "shona": "tatenda",
+          "english": "thank you",
+          "pronunciation": "",
+          "usageNote": "standard Shona; \"Tendai\" stem -tenda 'to thank'"
+        },
+        {
+          "shona": "-siya",
+          "english": "to leave (something/someone)",
+          "pronunciation": ""
+        },
+        {
+          "shona": "mwazviita",
+          "english": "thank you (lit. \"you have done it\")",
+          "pronunciation": ""
+        },
+        {
+          "shona": "shamwari",
+          "english": "friend",
+          "pronunciation": ""
+        }
+      ],
+      "exercises": [
+        {
+          "id": "lesson-62-ex-1",
+          "type": "translation",
+          "question": "tatenda",
+          "correctAnswer": "thank you",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"thank you\".",
+            "incorrect": "the expected answer is \"thank you\"."
+          }
+        },
+        {
+          "id": "lesson-62-ex-2",
+          "type": "translation",
+          "question": "mwazviita",
+          "correctAnswer": "thank you (lit. \"you have done it\")",
+          "acceptableAnswers": [],
+          "direction": "shona_to_english",
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"thank you (lit. \"you have done it\")\".",
+            "incorrect": "the expected answer is \"thank you (lit. \"you have done it\")\"."
+          }
+        },
+        {
+          "id": "lesson-62-ex-3",
+          "type": "multiple_choice",
+          "question": "\"-siya\" means:",
+          "correctAnswer": "to leave (someone or something)",
+          "options": [
+            "to greet",
+            "to leave (someone or something)",
+            "to return",
+            "to stay"
+          ],
+          "points": 10,
+          "difficulty": "easy",
+          "explanation": {
+            "correct": "correct — \"to leave (someone or something)\".",
+            "incorrect": "the answer is \"to leave (someone or something)\". try again."
+          }
+        },
+        {
+          "id": "lesson-62-ex-4",
+          "type": "fill_blank",
+          "question": "tatenda, ___ . (thank you, friend)",
+          "correctAnswer": "shamwari",
+          "englishGloss": "thank you, friend",
+          "acceptableAnswers": [],
+          "points": 12,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — the blank is \"shamwari\".",
+            "incorrect": "the blank is \"shamwari\". the sentence means: thank you, friend."
+          }
+        },
+        {
+          "id": "lesson-62-ex-5",
+          "type": "matching",
+          "question": "match each shona word to its english meaning.",
+          "pairs": [
+            {
+              "shona": "tatenda",
+              "english": "thank you"
+            },
+            {
+              "shona": "mwazviita",
+              "english": "thank you (formal — \"you've done it\")"
+            },
+            {
+              "shona": "-siya",
+              "english": "to leave"
+            },
+            {
+              "shona": "shamwari",
+              "english": "friend"
+            }
+          ],
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "all pairs matched correctly.",
+            "incorrect": "check your matches — review the vocabulary list above."
+          }
+        },
+        {
+          "id": "lesson-62-ex-6",
+          "type": "order_sentence",
+          "question": "arrange the words to mean: \"thank you, friend\"",
+          "tokens": [
+            "shamwari",
+            "tatenda"
+          ],
+          "correctOrder": [
+            "tatenda",
+            "shamwari"
+          ],
+          "englishGloss": "thank you, friend",
+          "points": 15,
+          "difficulty": "medium",
+          "explanation": {
+            "correct": "correct — \"tatenda shamwari\" means \"thank you, friend\".",
+            "incorrect": "the correct order is: \"tatenda shamwari\"."
           }
         }
       ]

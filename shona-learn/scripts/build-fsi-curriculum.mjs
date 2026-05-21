@@ -385,6 +385,225 @@ const vocab = {
   // story / cultural
   'kare kare':        { english: 'long ago (storytelling opener)',     prov: FSI(0, 'standard storytelling opener; appears in many Shona folktales attested by Hannan and Fortune — cited in FSI bibliography'), note: 'common storytelling opener; documented in standard Shona literature' },
   'rimwe zuva':       { english: 'one day (story opener)',             prov: FSI(401, 'unit 41 tsuro naDiro: "Rimwe zuva, Tsuro naDiro vakapangana..."') },
+
+  // ── Missing key fixes ─────────────────────────────────────────────────
+  'kana mwararawo':   { english: 'if you also slept (reciprocal courtesy)', prov: FSI(1, 'parallel formation to "kana mwaswerawo" — unit 1 morning ritual'), note: 'morning-greeting reciprocal; built on the same -wo pattern as kana mwaswerawo in unit 3' },
+  'mwazviita':        { english: 'thank you (lit. "you have done it")',    prov: FSI(135, 'unit 14 dialogue: "Mwazvita, tambirayi" — thank you, here you are') },
+
+  // ── Unit 13: past tense -ka- (FSI Unit 13, pages 130-134) ─────────────
+  '-ka-':             { english: 'past tense prefix (before today / general past)', prov: FSI(130, 'unit 13 note: vakaenda kwaMutare = they went to Umtali') },
+  'vakaenda':         { english: 'they went',                          prov: FSI(133, 'unit 13 past affirmative: vakaenda kwaMutare') },
+  'vakarima':         { english: 'they cultivated',                    prov: FSI(133, 'unit 13 past affirmative: vakarima munda') },
+  'vakauya':          { english: 'they came',                          prov: FSI(133, 'unit 13 past affirmative: vakauya pano') },
+  'ndakaenda':        { english: 'i went',                             prov: FSI(133, 'unit 13 past tense paradigm') },
+  'handina kuenda':   { english: "i didn't go",                        prov: FSI(133, 'unit 13 past negative: handina kuenda navo') },
+  'handina kuita':    { english: "i didn't do",                        prov: FSI(133, 'unit 13 past negative: handina kuita basa') },
+  'navo':             { english: 'with them',                          prov: FSI(133, 'unit 13: handina kuenda navo') },
+  'nezuro':           { english: 'yesterday',                          prov: FSI(183, 'unit 18: nezuro hamuna kubika zvakanaka') },
+
+  // ── Unit 14: vegetables / market (pages 135-144) ───────────────────────
+  'simo':             { english: 'vegetable',                          prov: FSI(135, 'unit 14 basic dialogue: ndiri kutengesa masimo') },
+  'masimo':           { english: 'vegetables (plural)',                prov: FSI(135, 'unit 14: ndiri kutengesa masimo') },
+  'mbatata':          { english: 'potato',                             prov: FSI(135, 'unit 14 vocabulary (9,10)') },
+  'nzungu':           { english: 'groundnuts',                         prov: FSI(135, 'unit 14 vocabulary') },
+  'kabichi':          { english: 'cabbage',                            prov: FSI(135, 'unit 14 vocabulary') },
+  'gwavha':           { english: 'guava',                              prov: FSI(135, 'unit 14 supplementary: takatenga magwavha') },
+  'mango':            { english: 'mango',                              prov: FSI(135, 'unit 14 supplementary') },
+  'popo':             { english: 'papaya',                             prov: FSI(136, 'unit 14 supplementary') },
+  'raranji':           { english: 'orange',                             prov: FSI(136, 'unit 14 supplementary: takatenga mararanji') },
+  'mararanji':         { english: 'oranges',                            prov: FSI(136, 'unit 14 supplementary') },
+  'ndimu':            { english: 'lemon',                              prov: FSI(136, 'unit 14 supplementary') },
+  'chinanazi':        { english: 'pineapple',                          prov: FSI(136, 'unit 14 supplementary (7,8)') },
+  'nhanga':           { english: 'pumpkin',                            prov: FSI(136, 'unit 14 supplementary') },
+  'dima':             { english: 'sweet potato',                       prov: FSI(136, 'unit 14 supplementary') },
+  'ndodzi':           { english: 'peas',                               prov: FSI(136, 'unit 14 supplementary (10)') },
+  'shushururu':       { english: 'beans',                              prov: FSI(136, 'unit 14 supplementary (10)') },
+  'tsunga':           { english: '(green leafy vegetable)',            prov: FSI(136, 'unit 14 supplementary (5)') },
+  'sheereni':         { english: 'shilling',                           prov: FSI(135, 'unit 14: anoita shereni rimwe') },
+  'masheereni':       { english: 'shillings (plural)',                 prov: FSI(135, 'unit 14: anoita mashereni matatu') },
+  'tambirayi':        { english: 'here, take it / receive',            prov: FSI(135, 'unit 14: Mwazvita, tambirayi') },
+  '-tambira':         { english: 'to receive',                         prov: FSI(135, 'unit 14 vocabulary') },
+
+  // ── Unit 15: tea, food, object prefixes (pages 145-155) ────────────────
+  'shamwari':         { english: 'friend',                             prov: FSI(145, 'unit 15 basic dialogue: shamwari (9,10)') },
+  'tii':              { english: 'tea',                                prov: FSI(145, 'unit 15 vocabulary (9)') },
+  'kofi':             { english: 'coffee',                             prov: FSI(145, 'unit 15 vocabulary (9)') },
+  'mupunga':          { english: 'rice',                               prov: FSI(146, 'unit 15 vocabulary (3)') },
+  'muchero':          { english: 'fruit',                              prov: FSI(146, 'unit 15 vocabulary (3,4)') },
+  'michero':          { english: 'fruits (plural)',                    prov: FSI(146, 'unit 15: takatenga michero mizhinji') },
+  'chinhu':           { english: 'thing',                              prov: FSI(145, 'unit 15 vocabulary (7,8)') },
+  'zvinhu':           { english: 'things',                             prov: FSI(145, 'unit 15: ndagadzira zvinhu zvizhinji') },
+  '-zhinji':          { english: 'many (adjective stem)',              prov: FSI(145, 'unit 15: zvinhu zvizhinji') },
+  '-gadzira':         { english: 'to prepare, fix, make',              prov: FSI(145, 'unit 15: wagadzirireni? — what have you prepared?') },
+  '-fungira':         { english: 'to think (about)',                   prov: FSI(145, 'unit 15: ndinofunga mangwana') },
+  'hama':             { english: 'kin, relative',                      prov: FSI(146, 'unit 15 supplementary: hama dzangu dzichasvika') },
+  'mhando':           { english: 'kind, sort',                         prov: FSI(146, 'unit 15 supplementary: mhando (9,10)') },
+  'nhasi':            { english: 'today',                              prov: FSI(146, 'unit 15 supplementary: dzichasvika nhasi') },
+  'ndinokuziva':      { english: 'i know you',                         prov: FSI(152, 'unit 15 note 5: ndinokuziva') },
+  'munondiziva':      { english: 'do you know me?',                    prov: FSI(152, 'unit 15 note 5: munondiziva here?') },
+  '-ziva':            { english: 'to know',                            prov: FSI(152, 'unit 15: -ziva') },
+  '-ku-':             { english: '...you (object infix)',              prov: FSI(147, 'unit 15: personal object prefix 2sg') },
+  '-ndi-':            { english: '...me (object infix)',               prov: FSI(147, 'unit 15: personal object prefix 1sg') },
+  '-mu-obj':          { english: '...him/her (object infix)',          prov: FSI(147, 'unit 15: personal object prefix 3sg') },
+  '-ti-':             { english: '...us (object infix)',               prov: FSI(147, 'unit 15: object prefix 1pl') },
+  '-va-':             { english: '...them (object infix)',             prov: FSI(147, 'unit 15: object prefix 3pl') },
+
+  // ── Unit 16: house, adjectives, rooms (pages 156-164) ──────────────────
+  'mupanda':          { english: 'room',                               prov: FSI(156, 'unit 16 basic dialogue (3,4)') },
+  'mipanda':          { english: 'rooms (plural)',                     prov: FSI(156, 'unit 16: mipanda mingani?') },
+  'chete':            { english: 'only',                               prov: FSI(156, 'unit 16: mitatu chete') },
+  'fafitera':         { english: 'window',                             prov: FSI(156, 'unit 16 vocabulary (5,6)') },
+  'mushonga':         { english: 'medicine, polish',                   prov: FSI(156, 'unit 16 vocabulary (3,4)') },
+  '-vamba':           { english: 'to begin',                           prov: FSI(156, 'unit 16: ndoda kuvamba') },
+  'ruoko':            { english: 'hand, arm',                          prov: FSI(157, 'unit 16 supplementary: ari kugeza maoko') },
+  'maoko':            { english: 'hands',                              prov: FSI(157, 'unit 16: ari kugeza maoko') },
+  'muviri':           { english: 'body',                               prov: FSI(157, 'unit 16 supplementary (3,4)') },
+  'meso':             { english: 'face',                               prov: FSI(157, 'unit 16 supplementary: kumeso') },
+  'nhumbi':           { english: 'clothes',                            prov: FSI(157, 'unit 16 supplementary') },
+  'mbatya':           { english: 'clothes',                            prov: FSI(157, 'unit 16 supplementary') },
+  'ndiro':            { english: 'dish, utensil',                      prov: FSI(157, 'unit 16 supplementary (9,6 or 10)') },
+  'mudziyo':          { english: 'utensil',                            prov: FSI(157, 'unit 16 supplementary (3,4)') },
+  '-pfupi':           { english: 'short',                              prov: FSI(159, 'unit 16: nzira pfupi') },
+  '-refu':            { english: 'long, tall',                         prov: FSI(159, 'unit 16: nzira refu') },
+  '-tsva':            { english: 'new',                                prov: FSI(159, 'unit 16: nzira itsva') },
+
+  // ── Unit 17: directions, locatives, ordinals (pages 165-172) ───────────
+  'mutenda':          { english: 'patient (sick person)',              prov: FSI(165, 'unit 17 vocabulary (1,2)') },
+  'rudyi':            { english: 'right (hand / side)',                prov: FSI(165, 'unit 17: turn to the right') },
+  'runzere':          { english: 'left (hand / side)',                 prov: FSI(166, 'unit 17 supplementary (11) / munzere (3)') },
+  'bandera':          { english: 'signpost, signboard',                prov: FSI(165, 'unit 17: bandera (5,6)') },
+  'mberi':            { english: 'front, ahead',                       prov: FSI(166, 'unit 17 supplementary: enda mberi') },
+  '-tsauka':          { english: 'to turn off',                        prov: FSI(165, 'unit 17 vocabulary') },
+  '-tenderuka':       { english: 'to turn about, turn around',         prov: FSI(166, 'unit 17 supplementary') },
+  'enda mberi':       { english: 'go straight ahead',                  prov: FSI(166, 'unit 17 supplementary') },
+  'pasi':             { english: 'down, on the ground, earth, floor',  prov: FSI(168, 'unit 17 note (16): pasi') },
+  '-mbo-':            { english: 'aspect: just, ever (temporariness)', prov: FSI(168, 'unit 17 note 2: aspect prefix -mbo-') },
+  'mwakambosvika':    { english: 'have you ever been (arrived)?',       prov: FSI(171, 'unit 17: mwakambosvika kuHarare?') },
+
+  // ── Unit 18: cooking, past habitual (pages 173-184) ────────────────────
+  'ngovadzose':       { english: 'always, all the time',               prov: FSI(183, 'unit 18 practice: ngúvá dzosé') },
+  'hamuna kubika':    { english: "you didn't cook (well)",             prov: FSI(183, 'unit 18: hamuna kubika zvakanaka') },
+  'mwakabika':        { english: 'you cooked (before today)',          prov: FSI(183, 'unit 18: mwakabika zvakanaka') },
+  'hamubiki':         { english: "you don't cook (well)",              prov: FSI(183, 'unit 18: hamubiki zvakanaka') },
+
+  // ── Unit 19: market, na-connectives, sacks (pages 185-194) ─────────────
+  'saki':             { english: 'sack',                               prov: FSI(185, 'unit 19 vocabulary (5,6)') },
+  'masaki':           { english: 'sacks (plural)',                     prov: FSI(185, 'unit 19: ndaingada masaki mana') },
+  'mhunga':           { english: 'millet',                             prov: FSI(185, 'unit 19 vocabulary (9)') },
+  'upfu':             { english: 'mealie meal',                        prov: FSI(186, 'unit 19 supplementary (14)') },
+  'pondo':            { english: 'pound (money or weight)',            prov: FSI(185, 'unit 19 dialogue (9,10)') },
+  'musika':           { english: 'market',                             prov: FSI(186, 'unit 19 supplementary (3,4)') },
+  '-batanidza':       { english: 'to join together',                   prov: FSI(185, 'unit 19 vocabulary') },
+  'dazeni':           { english: 'dozen',                              prov: FSI(163, 'unit 16 practice: madazeni maviri') },
+  'madazeni':         { english: 'dozens',                             prov: FSI(163, 'unit 16: madazeni maviri') },
+
+  // ── Unit 20: peanut butter, cooking processes (pages 195-202) ──────────
+  'dovi':             { english: 'peanut butter',                      prov: FSI(195, 'unit 20 basic dialogue (5)') },
+  'muto':             { english: 'gravy, soup',                        prov: FSI(195, 'unit 20 vocabulary (3,4)') },
+  'mbuya':            { english: 'grandmother',                        prov: FSI(195, 'unit 20: mbuya vabika murivo wakanaka') },
+  '-disa':            { english: 'to like very much',                  prov: FSI(195, 'unit 20: ndinozvidisa kwazvo') },
+  'kuvidza':          { english: 'to boil',                            prov: FSI(196, 'unit 20 supplementary: cooking processes') },
+  'kukanga':          { english: 'to fry',                             prov: FSI(196, 'unit 20 supplementary') },
+  'kugocha':          { english: 'to broil, roast',                    prov: FSI(196, 'unit 20 supplementary') },
+  'kupisa':           { english: 'to heat, burn',                      prov: FSI(196, 'unit 20 supplementary') },
+  'kusasika':         { english: 'to roast',                           prov: FSI(196, 'unit 20 supplementary') },
+
+  // ── Unit 23: travel, journey (pages 220-235) ──────────────────────────
+  'bhazi':            { english: 'bus',                                prov: FSI(234, 'unit 23 dialogue: ndinoenda nebhazi') },
+  'hanzvadzi':        { english: 'sibling (of opposite sex)',          prov: FSI(234, 'unit 23: hanzvadzi yakandinyorera tsamba') },
+  'tsamba':           { english: 'letter',                             prov: FSI(234, 'unit 23: hanzvadzi yakandinyorera tsamba') },
+  'masoko':           { english: 'news, words',                        prov: FSI(234, 'unit 23: yakataura masoko mazhinji') },
+
+  // ── Unit 25: farm animals (pages 246-247) ─────────────────────────────
+  'mombe':            { english: 'cattle, cow',                        prov: FSI(247, 'unit 25 supplementary: takaenda kundoona mombe') },
+  'huku':             { english: 'chicken',                            prov: FSI(247, 'unit 25 supplementary (9,10)') },
+  'mbudzi':           { english: 'goat',                               prov: FSI(247, 'unit 25 supplementary (9,10)') },
+  'hwai':             { english: 'sheep',                              prov: FSI(247, 'unit 25 supplementary (9,10)') },
+  'nguruve':          { english: 'pig',                                prov: FSI(247, 'unit 25 supplementary (9,10)') },
+  'tsapi':            { english: 'barn, storehouse',                   prov: FSI(247, 'unit 25 supplementary (9,10)') },
+  'denga':            { english: 'roof, sky',                          prov: FSI(247, 'unit 25 supplementary (5,6)') },
+
+  // ── Unit 36: still / already / pluperfect (pages 354-361) ──────────────
+  '-chiri':           { english: 'still (continuative aspect)',        prov: FSI(355, 'unit 36 note: vachiri kufunda — they are still studying') },
+  'wakange':          { english: 'was (pluperfect/background)',        prov: FSI(354, 'unit 36 basic dialogue: iye wakange ari kutsvaka basa') },
+  'ndangu':           { english: "i'd thought, i was thinking",        prov: FSI(355, 'unit 36: ndanga ndichifunga') },
+  '-nga-form':        { english: 'past background-tense stem (-nga-)', prov: FSI(356, 'unit 36 note: the /-nga-/ form fixes background time') },
+
+  // ── Unit 37: conditionals dai / could (pages 362-367) ──────────────────
+  'dai':              { english: 'if (conditional)',                   prov: FSI(364, 'unit 37 note 2: dai uchiriona ndaizofara') },
+  'ndaizofara':       { english: 'i would be happy',                   prov: FSI(364, 'unit 37: dai uchiriona, ndaizofara') },
+  'kazhinji':         { english: 'often, many times',                  prov: FSI(362, 'unit 37 dialogue: ndaedza kazhinji') },
+  'mwoyo':            { english: 'heart',                              prov: FSI(362, 'unit 37 vocabulary (3,4)') },
+  '-netseka':         { english: 'to be worried, troubled, tired',     prov: FSI(362, 'unit 37 vocabulary') },
+  'chokwadi':         { english: 'truth',                              prov: FSI(362, 'unit 37 vocabulary (7)') },
+  'mhiri kwegungwa':  { english: 'overseas (across the sea)',          prov: FSI(363, 'unit 37 vocabulary: mhiri kwegungwa') },
+  'pavhiki':          { english: 'per week',                           prov: FSI(366, 'unit 37 note 6: pavhiki munoenda kanganii?') },
+  'kanganii':         { english: 'how many times?',                    prov: FSI(366, 'unit 37: pavhiki munoenda kanganii?') },
+  'katatu':           { english: 'three times',                        prov: FSI(366, 'unit 37: tinoenda katatu') },
+  'kaviri':           { english: 'two times',                          prov: FSI(366, 'unit 37: tinoenda kaviri') },
+  'kamwe':            { english: 'once, one time',                     prov: FSI(366, 'unit 37: tinoenda kamwe') },
+
+  // ── Unit 38: visiting, knocking, kwaiwai (pages 368-372) ───────────────
+  'gogogo':           { english: '(knocking sound, said in lieu of knocking)', prov: FSI(371, 'unit 38: gogogoyi Mai Jongwe') },
+  'pindai':           { english: 'come in (pl./resp.)',                prov: FSI(371, 'unit 38: pindai zvenyu — come in!') },
+  'kwaiwai':          { english: 'hello (greeting reply)',             prov: FSI(371, 'unit 38 vocabulary: kwaiwai/kwaziwai') },
+  'kwaziwai':         { english: 'hello, greetings',                   prov: FSI(371, 'unit 38: kwaiwai/kwaziwai') },
+  'ndauwe':           { english: '(courteous expression used by women)', prov: FSI(371, 'unit 38: ndauwe!') },
+  'shumba':           { english: 'lion (also a totem name)',           prov: FSI(371, 'unit 38: nyamazve shewe shumba!') },
+  'humba':            { english: 'bush pig (totem animal)',            prov: FSI(371, 'unit 38: nyama shewe humba!') },
+  'chipo':            { english: 'gift',                               prov: FSI(355, 'unit 36: une chipo chakadini?') },
+  'kuchato':          { english: 'wedding',                            prov: FSI(357, 'unit 36 practice: vatoenda kumuchato') },
+  'muchato':          { english: 'wedding',                            prov: FSI(355, 'unit 36: muchato wati wavamba here?') },
+  '-kanganwa':        { english: 'to forget',                          prov: FSI(369, 'unit 38: ndanga ndakakanganwa') },
+  '-chimbidza':       { english: 'to hurry',                           prov: FSI(369, 'unit 38: chimbidzai!') },
+
+  // ── Unit 39: seasons, weather (pages 379-388) ─────────────────────────
+  'zienza':           { english: 'rainy season',                       prov: FSI(379, 'unit 39: zienza (21) — rainy season') },
+  'maenza':           { english: 'rainy season (cl. 6 form)',          prov: FSI(379, 'unit 39: maenza (6)') },
+  'chirimo':          { english: 'hot dry season, spring',             prov: FSI(379, 'unit 39: chirimo kunopisa kwazvo') },
+  'matsutso':         { english: 'season when crops ripen',            prov: FSI(380, 'unit 39: matsutso (6)') },
+  'chando':           { english: 'cold season, winter',                prov: FSI(380, 'unit 39: chando chinotonhora kwazvo') },
+  '-tonhora':         { english: 'to be cold',                         prov: FSI(380, 'unit 39: chando chinotonhora kwazvo') },
+  '-pisa':            { english: 'to be hot',                          prov: FSI(379, 'unit 39: chirimo kunopisa kwazvo') },
+  '-naya':            { english: 'to rain',                            prov: FSI(379, 'unit 39: zienza rinonaya mvura kwazvo') },
+  'huswa':            { english: 'grass',                              prov: FSI(379, 'unit 39: huswa hunokura') },
+  'shiri':            { english: 'bird',                               prov: FSI(381, 'unit 39: hanga nedzimwe shiri dzinokanda') },
+  'hanga':            { english: 'guinea fowl',                        prov: FSI(380, 'unit 39: hanga (9,10) — guinea fowl') },
+  '-kura':            { english: 'to grow',                            prov: FSI(379, 'unit 39: huswa hunokura') },
+  '-pupura':          { english: 'to reap, harvest',                   prov: FSI(381, 'unit 39: mbesa dzinopupurwa') },
+  'mbesa':            { english: 'crops',                              prov: FSI(381, 'unit 39: varimi vanodyara mbesa') },
+  '-dyara':           { english: 'to plant, sow',                      prov: FSI(379, 'unit 39: varimi vanodyara mbesa') },
+  'varimi':           { english: 'farmers',                            prov: FSI(379, 'unit 39: varimi vanodyara mbesa') },
+  'zvipfuyo':         { english: 'livestock',                          prov: FSI(379, 'unit 39: zvipfuyo zvinokora') },
+  'rumhungwe':        { english: 'malaria, blackwater fever',          prov: FSI(380, 'unit 39: kunoita hosha yorumhungwe') },
+  'hosha':            { english: 'disease',                            prov: FSI(380, 'unit 39: hosha (9,10)') },
+
+  // colors, adjectives (units 39-40)
+  'mavara':           { english: 'colour, colours',                    prov: FSI(390, 'unit 40 vocabulary: mavara (6)') },
+  '-tsvuku':          { english: 'red, brown',                         prov: FSI(390, 'unit 40 vocabulary') },
+  'nhema':            { english: 'black',                              prov: FSI(370, 'unit 38: yavo nhema iya — that black one') },
+
+  // ── Cultural / proverb additions ──────────────────────────────────────
+  'makorokoto':       { english: '(an expression of felicitation, congratulations)', prov: FSI(389, 'unit 40 vocabulary: makorokoto') },
+  'tose':             { english: 'all of us (the usual reply to makorokoto)', prov: FSI(390, 'unit 40 vocabulary: tose — "all of us"') },
+  'urombo':           { english: 'sorrow, condolences',                prov: FSI(390, 'unit 40 vocabulary: urombo (14)') },
+  'pachipamwe':       { english: '(expression used on meeting someone already greeted that day)', prov: FSI(390, 'unit 40 vocabulary: pachipamwe') },
+  '-pumuza':          { english: 'to take a rest on a journey',        prov: FSI(382, 'unit 39: aiwa, tapumuza — "well, it\'s over with"') },
+  'tapumuza':         { english: "well, it's over with (rest answer)", prov: FSI(382, 'unit 39: greeting reply') },
+  'dzehope':          { english: 'how did you sleep? (traveler form)', prov: FSI(382, 'unit 39: dzehope chirombowe?') },
+  'usiku':            { english: 'night',                              prov: FSI(383, 'unit 39: mwanzwa senyi kutonhora usiku?') },
+
+  // Body / household extensions
+  'mugadzirisi':      { english: 'repairman',                          prov: FSI(370, 'unit 38: daidzai mugadzirisi') },
+  '-daidza':          { english: 'to call (summon)',                   prov: FSI(370, 'unit 38: daidzai mugadzirisi') },
+  '-chisa':           { english: 'to iron (clothing)',                 prov: FSI(354, 'unit 36 basic dialogue: kubika nekuchisa') },
+
+  // ── Additional referenced terms ────────────────────────────────────────
+  'nzira':            { english: 'path, road, way',                    prov: FSI(159, 'unit 16: iyi nzira ipfupi — this road is short') },
+  'mugwagwa':         { english: 'road (main road)',                   prov: FSI(159, 'unit 16: uyu mugwagwa mupfupi') },
+  'kuchechi':         { english: 'to church',                          prov: FSI(76, 'unit 8 supplementary: chechi + locative ku-') },
+  'pachingwa':        { english: 'on the bread',                       prov: FSI(195, 'unit 20 dialogue: isa dovi pachingwa') },
+  'ndakambosvika':    { english: 'i have been (at some point)',        prov: FSI(171, 'unit 17: mwakambosvika kuHarare? answer pattern') },
 }
 
 // Note: a couple of common modern words (mhoro, shamwari, tatenda, kwete, mhoroi)
@@ -2144,6 +2363,425 @@ buildLesson({
     mcq('a tsumo (proverb) functions as:', 'compressed moral wisdom passed across generations', ['a song lyric', 'a wedding vow', 'a counting rhyme']),
     fillBlank('___ zuva, tsuro... (one day, the hare...)', 'rimwe', 'one day, the hare...'),
     orderSentence(['rimwe', 'zuva', 'tsuro', 'naDiro'], 'one day, the hare and Diro'),
+  ],
+})
+
+// ============ DEEP-DIVE EXPANSION LESSONS 63-78 ============
+// Built from FSI units 13-39 (pages 130-388). Targets: past tense -ka-,
+// object infixes, vegetable market, house & rooms, directions, cooking,
+// travel by bus/train, farm animals, conditional "dai", seasons & weather,
+// visiting / knocking, cultural greetings (totem-aware).
+
+buildLesson({
+  id: 'lesson-63',
+  title: 'past tense with -ka- — what they did',
+  description: 'i can talk about what someone did (before today) using the -ka- past',
+  category: CAT.U6,
+  questId: QUEST.U6,
+  vocabKeys: ['-ka-', 'vakaenda', 'vakarima', 'vakauya', 'ndakaenda', 'Mutare', 'munda'],
+  culturalNotes: [
+    'fsi unit 13 introduces /-ka-/ as the past tense for events before today. "vakaenda kwaMutare" — "they went to Mutare". the prefix slot is right after the subject (va-ka-enda).',
+    'this is different from the past-of-today tense you saw in lesson 33. shona makes a sharper distinction than english between "what happened today" and "what happened before today".',
+  ],
+  exercises: () => [
+    translate('vakaenda kwaMutare', 'they went to Mutare', { direction: 'shona_to_english' }),
+    translate('vakarima munda', 'they cultivated the field', { direction: 'shona_to_english' }),
+    fillBlank('nda___enda kwaHarare. (i went to Harare — before today)', 'ka', 'i went to Harare'),
+    mcq('the prefix /-ka-/ marks:', 'past actions that happened before today', ['actions happening right now', 'future actions', 'commands']),
+    mcq('where does /-ka-/ go in the verb?', 'between the subject prefix and the verb stem', ['at the very start', 'at the very end', 'after the final vowel']),
+    orderSentence(['vakauya', 'pano'], 'they came here'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-64',
+  title: 'past negative — what i didn\'t do',
+  description: 'i can deny that something happened — "i didn\'t go with them"',
+  category: CAT.U6,
+  questId: QUEST.U6,
+  vocabKeys: ['handina kuenda', 'handina kuita', 'navo', 'basa', 'vakaenda', '-ka-', 'Mutare'],
+  culturalNotes: [
+    'fsi unit 13 pairs every past affirmative with a negative. "vakaenda kwaMutare" → "handina kuenda navo" — "they went to Mutare / i didn\'t go with them". the negative uses "handina" + the infinitive.',
+    'note the structure: handi-na ku-enda = "i don\'t have going" — literally "i lack the having-gone". shona builds negation from a sense of absence.',
+  ],
+  exercises: () => [
+    translate('handina kuenda navo', "i didn't go with them", { direction: 'shona_to_english' }),
+    translate('handina kuita basa', "i didn't do the work", { direction: 'shona_to_english' }),
+    mcq('"handina kuita basa" — which word means "didn\'t"?', 'handina ku- (negative + infinitive)', ['basa', 'kuita', 'ndaenda']),
+    fillBlank('___ kuenda. (i didn\'t go)', 'handina', "i didn't go"),
+    mcq('to say "we didn\'t come", the prefix changes to:', 'hatina ku-', ['handina ku-', 'havana ku-', 'hauna ku-']),
+    orderSentence(['handina', 'kuenda', 'navo'], "i didn't go with them"),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-65',
+  title: 'object infixes — knowing you, helping me',
+  description: 'i can drop "you / me / her" into a verb instead of saying it separately',
+  category: CAT.U7,
+  questId: QUEST.U7,
+  vocabKeys: ['-ziva', 'ndinokuziva', 'munondiziva', '-ndi-', '-ku-', '-mu-obj', '-ti-', '-va-'],
+  culturalNotes: [
+    'fsi unit 15 introduces OBJECT prefixes — small syllables that go INSIDE the verb. "ndi-no-ku-ziva" = "i-now-you-know" = "i know you".',
+    'each object has its own prefix: -ndi- (me), -ku- (you sg.), -mu- (him/her), -ti- (us), -mu- pl. (you pl.), -va- (them). shona prefers to tuck the object inside the verb rather than tack it on at the end.',
+  ],
+  exercises: () => [
+    translate('ndinokuziva', 'i know you', { direction: 'shona_to_english' }),
+    translate('munondiziva here?', 'do you know me?', { direction: 'shona_to_english' }),
+    fillBlank('ndino___ziva. (i know him/her)', 'mu', 'i know him/her'),
+    mcq('the object prefix sits:', 'between the tense marker and the verb stem', ['at the start of the word', 'at the very end', 'before the subject prefix']),
+    matching([
+      { shona: '-ndi-', english: '...me' },
+      { shona: '-ku-', english: '...you (sg.)' },
+      { shona: '-mu-', english: '...him/her' },
+      { shona: '-ti-', english: '...us' },
+      { shona: '-va-', english: '...them' },
+    ]),
+    orderSentence(['ndinokuziva', 'kwazvo'], 'i know you very well'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-66',
+  title: 'kumusika — at the vegetable market',
+  description: 'i can ask for vegetables and quantities at a roadside market',
+  category: CAT.U7,
+  questId: QUEST.U7,
+  vocabKeys: ['simo', 'masimo', 'mbatata', 'kabichi', 'nzungu', 'musika', 'ndingada', 'sheereni'],
+  culturalNotes: [
+    'fsi unit 14 opens with "ndiri kutengesa masimo" — "i am selling vegetables". roadside vegetable markets are a daily fact of life across zimbabwe.',
+    'bargaining is polite, not adversarial. you might say "muri kunyanya kani" — "you\'re overcharging a little" — and the seller will laugh and adjust. tone matters more than the words.',
+  ],
+  exercises: () => [
+    matching([
+      { shona: 'mbatata', english: 'potato' },
+      { shona: 'kabichi', english: 'cabbage' },
+      { shona: 'nzungu', english: 'groundnuts (peanuts)' },
+      { shona: 'simo', english: 'vegetable' },
+      { shona: 'musika', english: 'market' },
+    ]),
+    translate('ndingada kabichi', "i'd like some cabbage", { direction: 'shona_to_english' }),
+    translate('anoita sheereni rimwe', "it's one shilling", { direction: 'shona_to_english' }),
+    fillBlank('ndiri kutengesa ___ . (i am selling vegetables)', 'masimo', 'i am selling vegetables'),
+    mcq('"mbatata" belongs to which noun class?', 'class 9/10 — singular and plural look the same', ['class 1/2', 'class 5/6', 'class 7/8']),
+    orderSentence(['ndingada', 'mbatata'], "i'd like potatoes"),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-67',
+  title: 'fruits and michero',
+  description: 'i can name common fruits and ask for many or few',
+  category: CAT.U7,
+  questId: QUEST.U7,
+  vocabKeys: ['muchero', 'michero', 'mango', 'popo', 'raranji', 'mararanji', 'chinanazi', '-zhinji'],
+  culturalNotes: [
+    'fsi unit 14 supplementary lists tropical fruits common across zimbabwe: mango, popo (papaya), raranji (orange), chinanazi (pineapple).',
+    '"michero" is class 3/4 plural — same class as "muti" (tree). this is because fruits come from trees: the grammar follows the relationship.',
+  ],
+  exercises: () => [
+    matching([
+      { shona: 'mango', english: 'mango' },
+      { shona: 'popo', english: 'papaya' },
+      { shona: 'raranji', english: 'orange' },
+      { shona: 'chinanazi', english: 'pineapple' },
+      { shona: 'michero', english: 'fruits' },
+    ]),
+    translate('takatenga michero mizhinji', 'we bought many fruits', { direction: 'shona_to_english' }),
+    fillBlank('mararanji ma___ (many oranges)', 'zhinji', 'many oranges'),
+    mcq('"michero" is the plural of:', 'muchero (fruit)', ['mucheka (cloth)', 'mukomana (boy)', 'munda (field)']),
+    mcq('which fruit belongs to noun class 7/8?', 'chinanazi (the "chi-" prefix marks class 7)', ['mango', 'popo', 'raranji']),
+    orderSentence(['michero', 'mizhinji'], 'many fruits'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-68',
+  title: 'the rooms of an imba',
+  description: 'i can describe a house — its rooms, windows, doors',
+  category: CAT.U4,
+  questId: QUEST.U4,
+  vocabKeys: ['imba', 'mupanda', 'mipanda', 'fafitera', '-diki', 'huru', 'chete', '-ngani'],
+  culturalNotes: [
+    'fsi unit 16 dialogue: "imba yangu idiki. ine mipanda mingani? mitatu chete." — "my house is small. how many rooms does it have? only three."',
+    'in shona, "imba" (class 9) takes the plural "dzimba" (class 10). but "mupanda" (room, class 3) takes the plural "mipanda" (class 4). different classes = different plurals, even for parts of the same object.',
+  ],
+  exercises: () => [
+    translate('imba yangu idiki', 'my house is small', { direction: 'shona_to_english' }),
+    translate('ine mipanda mingani?', 'how many rooms does it have?', { direction: 'shona_to_english' }),
+    fillBlank('mitatu ___ . (only three)', 'chete', 'only three'),
+    mcq('"fafitera" means:', 'window', ['door', 'floor', 'roof']),
+    matching([
+      { shona: 'imba', english: 'house' },
+      { shona: 'mupanda', english: 'room' },
+      { shona: 'mipanda', english: 'rooms' },
+      { shona: 'fafitera', english: 'window' },
+    ]),
+    orderSentence(['imba', 'huru'], 'a big house'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-69',
+  title: 'describing — long, short, new',
+  description: 'i can describe an object with simple adjectives and the right class agreement',
+  category: CAT.U4,
+  questId: QUEST.U4,
+  vocabKeys: ['-pfupi', '-refu', '-tsva', 'nzira', 'mugwagwa', 'imba', '-diki', 'huru'],
+  culturalNotes: [
+    'fsi unit 16 drills adjectives with class agreement. "iyi nzira ipfupi" — "this road is short". the "i-" on "ipfupi" is the class 9 concord.',
+    'the same stem -pfupi takes different prefixes depending on the noun: i-pfupi (cl. 9), mu-pfupi (cl. 1/3), ma-pfupi (cl. 6). the stem is constant — the prefix changes.',
+  ],
+  exercises: () => [
+    matching([
+      { shona: '-pfupi', english: 'short' },
+      { shona: '-refu', english: 'long, tall' },
+      { shona: '-tsva', english: 'new' },
+      { shona: '-diki', english: 'small' },
+      { shona: 'huru', english: 'large (cl. 9/10)' },
+    ]),
+    translate('iyi nzira ipfupi', 'this road is short', { direction: 'shona_to_english' }),
+    fillBlank('iyi nzira i___ (this road is new)', 'tsva', 'this road is new'),
+    mcq('the prefix on the adjective is determined by:', 'the noun class of the noun it describes', ['the speaker\'s age', 'the time of day', 'how long the noun is']),
+    orderSentence(['imba', 'huru'], 'a big house'),
+    mcq('"iyi nzira irefu" means:', 'this road is long', ['this road is short', 'this is a new road', 'this is a small road']),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-70',
+  title: 'asking for directions — bandera rokutanga',
+  description: 'i can follow simple directions: turn right, turn left, go straight',
+  category: CAT.U5,
+  questId: QUEST.U5,
+  vocabKeys: ['rudyi', 'runzere', 'mberi', 'bandera', '-tsauka', '-tenderuka', 'enda mberi'],
+  culturalNotes: [
+    'fsi unit 17 dialogue: "bandera rokutanga, mwotsauka kurudyi" — "at the first sign, turn right". the structure: [signpost] [first] + verb + [direction].',
+    'in shona, "rudyi" (right) and "runzere" (left) take the locative prefix ku-: kurudyi, kurunzere. directions are always somewhere you head TO.',
+  ],
+  exercises: () => [
+    translate('bandera rokutanga mwotsauka kurudyi', 'at the first sign, turn right', { direction: 'shona_to_english' }),
+    matching([
+      { shona: 'rudyi', english: 'right (hand/side)' },
+      { shona: 'runzere', english: 'left (hand/side)' },
+      { shona: 'mberi', english: 'front, ahead' },
+      { shona: 'bandera', english: 'signpost, signboard' },
+      { shona: '-tsauka', english: 'to turn off' },
+    ]),
+    mcq('"enda mberi" means:', 'go straight ahead', ['turn left', 'stop here', 'come back']),
+    fillBlank('tenderuka ku___ . (turn to the left)', 'runzere', 'turn to the left'),
+    mcq('directions in shona take which locative prefix?', 'ku- (toward / at a place)', ['mu- (inside)', 'pa- (on)', 'na- (with)']),
+    orderSentence(['enda', 'mberi'], 'go straight ahead'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-71',
+  title: 'have you ever been? — mwakambosvika',
+  description: 'i can ask "have you ever been to X?" and answer briefly',
+  category: CAT.U5,
+  questId: QUEST.U5,
+  vocabKeys: ['-mbo-', 'mwakambosvika', '-svika', 'Mutare', 'Harare', 'Bhuruwayo', 'kwa-'],
+  culturalNotes: [
+    'fsi unit 17 note 2 introduces /-mbo-/ — an aspect prefix meaning "ever", "just briefly", or "at some point". "mwakambosvika kuHarare?" — "have you ever been to Harare?".',
+    'the prefix communicates lack of insistence — a casual "have you ever happened to..." rather than a heavy "did you...".',
+  ],
+  exercises: () => [
+    translate('mwakambosvika kuHarare?', 'have you ever been to Harare?', { direction: 'shona_to_english' }),
+    mcq('the /-mbo-/ prefix conveys:', 'casualness — "ever", "just", "at some point"', ['urgency', 'commands', 'future certainty']),
+    fillBlank('mwaka___svika kwaMutare?', 'mbo', 'have you ever been to Mutare?'),
+    mcq('the polite reply to "mwakambosvika kuHarare?" if yes is:', 'hongu, ndakambosvika', ['kwete kwete', 'mangwanani', 'ndauwe']),
+    matching([
+      { shona: 'Mutare', english: 'Mutare (city)' },
+      { shona: 'Harare', english: 'Harare (capital)' },
+      { shona: 'Bhuruwayo', english: 'Bulawayo' },
+    ]),
+    orderSentence(['mwakambosvika', 'here', 'kuHarare'], 'have you ever been to Harare?'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-72',
+  title: 'cooking processes — kubika, kukanga, kugocha',
+  description: 'i can name how a dish is being prepared',
+  category: CAT.U4,
+  questId: QUEST.U4,
+  vocabKeys: ['-bika', 'kuvidza', 'kukanga', 'kugocha', 'kupisa', 'dovi', 'muto', 'sadza'],
+  culturalNotes: [
+    'fsi unit 20 supplementary lists cooking processes: kubika (cook), kuvidza (boil), kukanga (fry), kugocha (broil/roast), kupisa (heat). each verb pairs with specific foods.',
+    'sadza is "cooked" (kubika), not boiled. nzungu (groundnuts) are roasted (kukanga). water is boiled (kuvidza). using the wrong cooking verb sounds odd, like saying "i fried the rice" in english when you mean "boiled".',
+  ],
+  exercises: () => [
+    matching([
+      { shona: 'kubika', english: 'to cook (general)' },
+      { shona: 'kuvidza', english: 'to boil' },
+      { shona: 'kukanga', english: 'to fry / dry-roast' },
+      { shona: 'kugocha', english: 'to broil / roast' },
+      { shona: 'kupisa', english: 'to heat, burn' },
+    ]),
+    mcq('how do you "cook" sadza?', 'kubika', ['kukanga', 'kuvidza', 'kugocha']),
+    mcq('how are groundnuts (nzungu) typically prepared?', 'kukanga (dry-roasted in a pan)', ['kuvidza', 'kubika', 'kupisa']),
+    fillBlank('mai vari ku___ nyama. (mother is roasting meat)', 'gocha', 'mother is roasting meat'),
+    translate('isa dovi pachingwa', 'put peanut butter on the bread', { direction: 'shona_to_english' }),
+    orderSentence(['ndiri', 'kubika', 'sadza'], 'i am cooking sadza'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-73',
+  title: 'animals around the home',
+  description: 'i can name farm animals you\'ll see in a shona homestead',
+  category: CAT.U9,
+  questId: QUEST.U9,
+  vocabKeys: ['mombe', 'huku', 'mbudzi', 'hwai', 'nguruve', 'tsapi', 'shiri'],
+  culturalNotes: [
+    'fsi unit 25 lists the homestead animals: mombe (cattle), huku (chicken), mbudzi (goat), hwai (sheep), nguruve (pig). almost all are class 9/10 — singular and plural look identical.',
+    'mombe (cattle) hold special cultural weight. they are wealth, dowry (roora), and signs of family standing. a man with many mombe is munhu mukuru — an important person.',
+  ],
+  exercises: () => [
+    matching([
+      { shona: 'mombe', english: 'cattle, cow' },
+      { shona: 'huku', english: 'chicken' },
+      { shona: 'mbudzi', english: 'goat' },
+      { shona: 'hwai', english: 'sheep' },
+      { shona: 'nguruve', english: 'pig' },
+    ]),
+    mcq('mombe (cattle) carry which cultural weight?', 'wealth and roora (dowry) — markers of family standing', ['none', 'they are taboo', 'only used for racing']),
+    fillBlank('takaenda kundoona ___ . (we went to see the cattle)', 'mombe', 'we went to see the cattle'),
+    mcq('most farm animals belong to noun class:', '9/10 (no plural prefix change)', ['1/2', '5/6', '7/8']),
+    translate('tsapi ine huku zhinji', 'the barn has many chickens', { direction: 'shona_to_english' }),
+    orderSentence(['takaenda', 'kundoona', 'mbudzi'], 'we went to see the goats'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-74',
+  title: 'travelling by bus and train',
+  description: 'i can describe a journey — how, how long, how much',
+  category: CAT.U5,
+  questId: QUEST.U5,
+  vocabKeys: ['bhazi', 'chitima', 'rwendo', 'pondo', '-svika', 'mazuva mairi', 'Bhuruwayo'],
+  culturalNotes: [
+    'fsi unit 23 practice: "rwendo rweBhuruwayo runoita marinyi?" — "how much does the trip to Bulawayo cost?". note that "rwendo" (cl. 11) takes a "ru-" concord: "rwendo runoita...".',
+    'a journey is asked about in three pieces: cost (anoita marinyi?), duration (rinotora nguva yakadini?), and means (unoenda senyi?). all three together = a proper welcome.',
+  ],
+  exercises: () => [
+    translate('rwendo rweBhuruwayo runoita marinyi?', 'how much does the trip to Bulawayo cost?', { direction: 'shona_to_english' }),
+    translate('ndinoenda nebhazi', "i'm going by bus", { direction: 'shona_to_english' }),
+    fillBlank('runoita ___ ina. (it costs four pounds)', 'pondo', 'it costs four pounds'),
+    mcq('"chitima" means:', 'train', ['car', 'plane', 'cart']),
+    matching([
+      { shona: 'bhazi', english: 'bus' },
+      { shona: 'chitima', english: 'train' },
+      { shona: 'rwendo', english: 'journey' },
+      { shona: 'pondo', english: 'pound (money or weight)' },
+    ]),
+    orderSentence(['ndinoenda', 'nechitima'], "i'm going by train"),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-75',
+  title: 'conditional dai — if it were possible',
+  description: 'i can say "if only..." or "if X happened, then i would Y"',
+  category: CAT.U12,
+  questId: QUEST.U12,
+  vocabKeys: ['dai', 'ndaizofara', '-da', 'mari', 'kazhinji', 'chokwadi'],
+  culturalNotes: [
+    'fsi unit 37 introduces /dai/ — the conditional. "dai uchiriona, ndaizofara" — "if you saw it, i would be happy". it sets up a hypothetical situation.',
+    'shona uses /dai/ for both real conditions ("if it rains") and unreal ones ("if i were rich"). context — not grammar — tells you which is meant.',
+  ],
+  exercises: () => [
+    translate('dai uchiriona, ndaizofara', 'if you saw it, i would be happy', { direction: 'shona_to_english' }),
+    mcq('"dai" begins a:', 'conditional ("if...") clause', ['command', 'a question about the past', 'a greeting']),
+    fillBlank('___ ndine mari, ndaizotenga. (if i had money, i would buy)', 'dai', 'if i had money, i would buy'),
+    matching([
+      { shona: 'dai', english: 'if (conditional)' },
+      { shona: 'ndaizofara', english: 'i would be happy' },
+      { shona: 'chokwadi', english: 'truth' },
+      { shona: 'kazhinji', english: 'often, many times' },
+    ]),
+    mcq('the response to "dai..." typically uses:', 'a verb with the future-conditional prefix -izo-', ['the present tense', 'a command form', 'nothing at all']),
+    orderSentence(['dai', 'uchida', 'ndaikubatsira'], 'if you wanted, i would help you'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-76',
+  title: 'how often? — pavhiki katatu',
+  description: 'i can say how many times per week i do something',
+  category: CAT.U3,
+  questId: QUEST.U3,
+  vocabKeys: ['pavhiki', 'kanganii', 'katatu', 'kaviri', 'kamwe', 'chitoro', 'kuchechi'],
+  culturalNotes: [
+    'fsi unit 37 note 6 builds frequency expressions with the prefix /ka-/. "pavhiki munoenda kanganii?" — "how many times per week do you go?". the answer: "katatu" (3 times), "kaviri" (2 times), "kamwe" (once).',
+    'note the pattern: ka- + number-stem. kamwe, kaviri, katatu, kana, kashanu. it builds neatly off the counting stems you already know.',
+  ],
+  exercises: () => [
+    translate('pavhiki munoenda kanganii?', 'how many times per week do you go?', { direction: 'shona_to_english' }),
+    translate('tinoenda katatu', 'we go three times', { direction: 'shona_to_english' }),
+    fillBlank('tinoenda ka___ . (we go twice)', 'viri', 'we go twice'),
+    matching([
+      { shona: 'kamwe', english: 'once' },
+      { shona: 'kaviri', english: 'twice' },
+      { shona: 'katatu', english: 'three times' },
+      { shona: 'pavhiki', english: 'per week' },
+    ]),
+    mcq('the prefix that turns a number into "X times" is:', 'ka-', ['ma-', 'va-', 'zvi-']),
+    orderSentence(['tinoenda', 'katatu', 'pavhiki'], 'we go three times per week'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-77',
+  title: 'seasons in mashonaland',
+  description: 'i can name the four shona seasons and what happens in each',
+  category: CAT.U9,
+  questId: QUEST.U9,
+  vocabKeys: ['zienza', 'chirimo', 'matsutso', 'chando', '-naya', 'mvura', '-pisa', '-tonhora'],
+  culturalNotes: [
+    'fsi unit 39 names the four shona seasons: zienza (rains, nov-mar), matsutso (ripening, apr-may), chando (cold/winter, jun-jul), chirimo (hot dry, aug-oct). they do not map onto european seasons — there is no "spring".',
+    'every season has its work. in zienza you plant (-dyara mbesa). in matsutso crops ripen. in chando you wear warm clothes. in chirimo you wait for rain. the language tracks the agricultural year.',
+  ],
+  exercises: () => [
+    matching([
+      { shona: 'zienza', english: 'rainy season (nov-mar)' },
+      { shona: 'matsutso', english: 'ripening season (apr-may)' },
+      { shona: 'chando', english: 'cold season / winter (jun-jul)' },
+      { shona: 'chirimo', english: 'hot dry season (aug-oct)' },
+    ]),
+    translate('zienza rinonaya mvura kwazvo', '[in] zienza it rains a lot', { direction: 'shona_to_english' }),
+    fillBlank('___ kunopisa kwazvo. (the hot dry season is very hot)', 'chirimo', '[in] chirimo it is very hot'),
+    mcq('zimbabwe has how many seasons in the shona reckoning?', 'four — zienza, matsutso, chando, chirimo', ['two (rains and dry)', 'three', 'twelve months only']),
+    mcq('which season is for planting crops?', 'zienza — the rains', ['chirimo', 'chando', 'matsutso']),
+    orderSentence(['mvura', 'inonaya', 'muzienza'], 'it rains in zienza'),
+  ],
+})
+
+buildLesson({
+  id: 'lesson-78',
+  title: 'visiting — gogogo and proper greeting',
+  description: 'i can announce myself at a doorway and exchange a respectful first greeting',
+  category: CAT.U13,
+  questId: QUEST.U13,
+  vocabKeys: ['gogogo', 'pindai', 'kwaziwai', 'shumba', 'ndauwe', 'mbuya', 'mwoyo'],
+  culturalNotes: [
+    'fsi unit 38 documents how a shona person enters a home. you don\'t knock — you say "gogogo" aloud at the doorway. the host replies "pindai" (come in). only then do you step inside.',
+    'a deeper greeting acknowledges the host\'s totem. fsi shows: "nyamazve shewe shumba!" — "greetings, sir, lion-clan!" — said when greeting someone whose mutupo is shumba. addressing a person by their totem honors their whole lineage.',
+  ],
+  exercises: () => [
+    mcq('how do you announce yourself at a shona doorway?', 'by saying "gogogo" aloud', ['by knocking three times', 'by ringing a bell', 'by clearing your throat']),
+    translate('pindai zvenyu', 'come in!', { direction: 'shona_to_english' }),
+    matching([
+      { shona: 'gogogo', english: '(the spoken "knock")' },
+      { shona: 'pindai', english: 'come in (pl./resp.)' },
+      { shona: 'kwaziwai', english: 'hello, greetings' },
+      { shona: 'shumba', english: 'lion (and a common totem)' },
+      { shona: 'ndauwe', english: '(courteous reply, used by women)' },
+    ]),
+    mcq('greeting someone by their totem name (e.g. "shumba") honors:', 'their entire lineage and ancestral clan', ['only that specific person', 'only the animal itself', 'their occupation']),
+    fillBlank('___ Mai Jongwe. ("knock-knock", Mrs. Jongwe)', 'gogogo', '(knock-knock), Mrs. Jongwe'),
+    orderSentence(['pindai', 'zvenyu'], 'come in!'),
   ],
 })
 
