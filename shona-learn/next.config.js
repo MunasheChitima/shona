@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
 
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['react-icons', 'framer-motion'],
   },
 
@@ -19,6 +18,35 @@ const nextConfig = {
   async headers() {
     return [
       {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: blob:; font-src 'self' fonts.gstatic.com data:; connect-src 'self';",
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=()',
+          },
+        ],
+      },
+      {
         source: '/content/:path*',
         headers: [
           {
@@ -32,7 +60,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=3600, stale-while-revalidate=86400',
+            value: 'private, no-cache, no-store, must-revalidate',
           },
         ],
       },

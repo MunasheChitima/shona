@@ -165,8 +165,5 @@ tmp/
 # SQLite journal
 *.db-journal
 
-# Lock files (let Vercel generate fresh)
-shona-learn/package-lock.json
-
 # Env files in nested dirs
 *.env.local
