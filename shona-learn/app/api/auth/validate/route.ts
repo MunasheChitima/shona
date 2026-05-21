@@ -14,7 +14,7 @@ export async function GET(request: Request) {
       userId 
     }, { status: 200 })
   } catch (error) {
-    console.error('Token validation error:', error)
+    console.error('validate GET error:', (error as Error)?.message)
     return NextResponse.json({ error: 'Token validation failed' }, { status: 401 })
   }
-} 
+}

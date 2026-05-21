@@ -1,7 +1,7 @@
 'use client'
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react'
 import { useRouter } from 'next/navigation'
-import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
+import { BETA_OPEN_ACCESS, BETA_COOKIE_NAME } from '@/lib/beta-access'
 
 interface User {
   id: string
@@ -19,27 +19,52 @@ interface AuthContextType {
   isLoading: boolean
   login: (email: string, password: string) => Promise<{ success: boolean; error?: string }>
   register: (name: string, email: string, password: string) => Promise<{ success: boolean; error?: string }>
-  logout: () => void
+  logout: () => Promise<void>
   updateUser: (updates: Partial<User>) => void
   checkAuth: () => Promise<boolean>
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
-const BETA_GUEST_USER: User = {
-  id: 'beta-guest',
-  name: 'Beta tester',
-  email: 'beta@shona-learn.local',
-  xp: 0,
-  level: 1,
-  streak: 0,
-  hearts: 5,
+const USER_STORAGE_KEY = 'user'
+
+function readCookie(name: string): string | null {
+  if (typeof document === 'undefined') return null
+  const parts = document.cookie.split(';')
+  for (const part of parts) {
+    const eq = part.indexOf('=')
+    if (eq < 0) continue
+    const k = part.slice(0, eq).trim()
+    if (k === name) {
+      return decodeURIComponent(part.slice(eq + 1).trim())
+    }
+  }
+  return null
 }
 
-interface BetaIdentity {
-  email: string
-  password: string
-  name: string
+function writeCookie(name: string, value: string, maxAgeSec: number): void {
+  if (typeof document === 'undefined') return
+  const secure = typeof window !== 'undefined' && window.location.protocol === 'https:' ? '; secure' : ''
+  document.cookie = `${name}=${encodeURIComponent(value)}; path=/; max-age=${maxAgeSec}; samesite=lax${secure}`
+}
+
+function generateUuid(): string {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID()
+  }
+  // Very lightweight fallback for environments without crypto.randomUUID.
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+    const r = (Math.random() * 16) | 0
+    const v = c === 'x' ? r : (r & 0x3) | 0x8
+    return v.toString(16)
+  })
+}
+
+function ensureBetaCookie(): void {
+  if (!BETA_OPEN_ACCESS) return
+  const existing = readCookie(BETA_COOKIE_NAME)
+  if (existing) return
+  writeCookie(BETA_COOKIE_NAME, generateUuid(), 60 * 60 * 24 * 365) // 1 year
 }
 
 export function AuthProvider({ children }: { children: ReactNode }) {
@@ -48,211 +73,93 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [authBanner, setAuthBanner] = useState<string | null>(null)
   const router = useRouter()
 
+  // Run exactly once on mount — never re-run as isLoading flips.
   useEffect(() => {
-    checkAuthOnLoad()
-    
-    // Fallback timeout to prevent infinite loading
-    const fallbackTimeout = setTimeout(() => {
-      if (isLoading) {
-        console.warn('Auth check taking too long, forcing completion')
-        setIsLoading(false)
-      }
-    }, 3000) // 3 second fallback
-    
-    return () => clearTimeout(fallbackTimeout)
-  }, [isLoading])
+    let cancelled = false
 
-  const getOrCreateBetaIdentity = (): BetaIdentity | null => {
-    if (typeof window === 'undefined') return null
-    const key = 'betaIdentity'
-    const existing = localStorage.getItem(key)
-    if (existing) {
+    const init = async () => {
       try {
-        const parsed = JSON.parse(existing) as BetaIdentity
-        if (parsed.email && parsed.password && parsed.name) return parsed
-      } catch {
-        // fall through to regenerate identity
-      }
-    }
+        if (typeof window === 'undefined') return
 
-    const id = `${Date.now()}-${Math.random().toString(36).slice(2, 10)}`
-    const identity: BetaIdentity = {
-      email: `beta+${id}@shona-learn.local`,
-      password: `beta-${id}`,
-      name: `Beta Tester ${id.slice(-4)}`
-    }
-    localStorage.setItem(key, JSON.stringify(identity))
-    return identity
-  }
+        // For open beta, make sure the visitor has a stable UUID cookie so
+        // the server can hydrate them to a per-visitor user row.
+        ensureBetaCookie()
 
-  const ensureBetaSession = async (): Promise<User | null> => {
-    if (typeof window === 'undefined') return null
-    const identity = getOrCreateBetaIdentity()
-    if (!identity) return null
-
-    const payload = {
-      email: identity.email,
-      password: identity.password
-    }
-
-    try {
-      const loginRes = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      })
-
-      if (loginRes.ok) {
-        const loginData = await loginRes.json()
-        localStorage.setItem('token', loginData.token)
-        localStorage.setItem('user', JSON.stringify(loginData.user))
-        return loginData.user as User
-      }
-    } catch {
-      // If login fails, try registration flow.
-    }
-
-    try {
-      const registerRes = await fetch('/api/auth/register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: identity.name,
-          email: identity.email,
-          password: identity.password
-        })
-      })
-
-      if (registerRes.ok) {
-        const registerData = await registerRes.json()
-        localStorage.setItem('token', registerData.token)
-        localStorage.setItem('user', JSON.stringify(registerData.user))
-        return registerData.user as User
-      }
-    } catch {
-      // Fall back to guest user below.
-    }
-
-    return null
-  }
-
-  const checkAuthOnLoad = async () => {
-    try {
-      if (typeof window !== 'undefined' && BETA_OPEN_ACCESS) {
-        const userData = localStorage.getItem('user')
-        const token = localStorage.getItem('token')
-        if (userData && token) {
+        // Hydrate UI immediately from cached profile (NOT auth-of-record).
+        const cached = localStorage.getItem(USER_STORAGE_KEY)
+        if (cached) {
           try {
-            const parsed = JSON.parse(userData) as User
-            setUser(parsed)
+            const parsed = JSON.parse(cached) as User
+            if (!cancelled) setUser(parsed)
           } catch {
-            const betaUser = await ensureBetaSession()
-            if (betaUser) {
-              setUser(betaUser)
-            } else {
-              setUser(BETA_GUEST_USER)
-              localStorage.setItem('user', JSON.stringify(BETA_GUEST_USER))
-            }
-          }
-        } else {
-          const betaUser = await ensureBetaSession()
-          if (betaUser) {
-            setUser(betaUser)
-          } else {
-            setUser(BETA_GUEST_USER)
-            localStorage.setItem('user', JSON.stringify(BETA_GUEST_USER))
+            localStorage.removeItem(USER_STORAGE_KEY)
           }
         }
-        setIsLoading(false)
-        return
-      }
-      if (typeof window !== 'undefined') {
-        const token = localStorage.getItem('token')
-        const userData = localStorage.getItem('user')
-        
-        if (token && userData) {
-          try {
-            const parsedUser = JSON.parse(userData)
-            // Set user immediately from localStorage
-            setUser(parsedUser)
-            
-            // Validate token in background (don't block UI)
-            setTimeout(() => {
-              validateToken(token).then(isValid => {
-                if (!isValid) {
-                  localStorage.removeItem('token')
-                  localStorage.removeItem('user')
-                  setUser(null)
-                }
-              }).catch(error => {
-                console.error('Background token validation failed:', error)
-                localStorage.removeItem('token')
-                localStorage.removeItem('user')
-                setUser(null)
-              })
-            }, 1000) // Delay validation to not block UI
-          } catch (error) {
-            console.error('Failed to parse user data:', error)
-            localStorage.removeItem('token')
-            localStorage.removeItem('user')
-          }
-        }
-      }
-    } catch (error) {
-      console.error('Auth check failed:', error)
-    } finally {
-      // Always set loading to false after a short delay
-      setTimeout(() => {
-        setIsLoading(false)
-      }, 100)
-    }
-  }
 
-  const validateToken = async (token: string): Promise<boolean> => {
+        // Validate against the server using the cookie. If we have no user
+        // yet and the server accepts us, take the userId at face value but
+        // keep using cached profile for UI fields we don't get back here.
+        try {
+          const res = await fetch('/api/auth/validate', {
+            credentials: 'include',
+          })
+          if (cancelled) return
+          if (res.status === 401) {
+            localStorage.removeItem(USER_STORAGE_KEY)
+            setUser(null)
+          }
+          // If 200 we keep whatever we hydrated. No /api/auth/me endpoint
+          // exists; the existing cached profile is good enough for UI.
+        } catch {
+          // Network error — keep cached user, don't log out.
+        }
+      } finally {
+        if (!cancelled) setIsLoading(false)
+      }
+    }
+
+    init()
+    return () => {
+      cancelled = true
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const validateToken = async (): Promise<boolean> => {
     if (BETA_OPEN_ACCESS) return true
     try {
-      const response = await fetch('/api/auth/validate', {
-        headers: {
-          'Authorization': `Bearer ${token}`
-        }
-      })
+      const response = await fetch('/api/auth/validate', { credentials: 'include' })
       if (response.status === 401) {
         if (typeof window !== 'undefined') {
-          localStorage.removeItem('token')
-          localStorage.removeItem('user')
+          localStorage.removeItem(USER_STORAGE_KEY)
           setUser(null)
           setAuthBanner('Session expired — please log in again.')
           setTimeout(() => {
             setAuthBanner(null)
-            router.push('/login')
+            router.push('/')
           }, 3200)
         }
         return false
       }
       return response.ok
     } catch (error) {
-      console.error('Token validation failed:', error)
+      console.error('validateToken error:', (error as Error)?.message)
       return false
     }
   }
 
   const checkAuth = async (): Promise<boolean> => {
     if (typeof window === 'undefined') return false
-    
-    const token = localStorage.getItem('token')
-    if (!token) return false
-    
     try {
-      const isValid = await validateToken(token)
+      const isValid = await validateToken()
       if (!isValid) {
-        localStorage.removeItem('token')
-        localStorage.removeItem('user')
+        localStorage.removeItem(USER_STORAGE_KEY)
         setUser(null)
         return false
       }
       return true
     } catch (error) {
-      console.error('Auth check failed:', error)
+      console.error('checkAuth error:', (error as Error)?.message)
       return false
     }
   }
@@ -261,26 +168,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       const res = await fetch('/api/auth/login', {
         method: 'POST',
+        credentials: 'include',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
       })
-      
+
       const data = await res.json()
-      
+
       if (res.ok) {
-        if (typeof window !== 'undefined') {
-          localStorage.setItem('token', data.token)
-          localStorage.setItem('user', JSON.stringify(data.user))
+        if (typeof window !== 'undefined' && data.user) {
+          // Cache the profile for fast UI hydration. The actual auth lives in
+          // the HttpOnly cookie set server-side.
+          localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(data.user))
         }
         setAuthBanner(null)
         setUser(data.user)
         return { success: true }
-      } else {
-        console.error('Login failed:', data.error)
-        return { success: false, error: data.error || 'Login failed' }
       }
+      return { success: false, error: data.error || 'Login failed' }
     } catch (error) {
-      console.error('Login error:', error)
+      console.error('login error:', (error as Error)?.message)
       return { success: false, error: 'Network error. Please try again.' }
     }
   }
@@ -289,34 +196,39 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     try {
       const res = await fetch('/api/auth/register', {
         method: 'POST',
+        credentials: 'include',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password })
       })
-      
+
       const data = await res.json()
-      
+
       if (res.ok) {
-        if (typeof window !== 'undefined') {
-          localStorage.setItem('token', data.token)
-          localStorage.setItem('user', JSON.stringify(data.user))
+        if (typeof window !== 'undefined' && data.user) {
+          localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(data.user))
         }
         setAuthBanner(null)
         setUser(data.user)
         return { success: true }
-      } else {
-        console.error('Registration failed:', data.error)
-        return { success: false, error: data.error || 'Registration failed' }
       }
+      return { success: false, error: data.error || 'Registration failed' }
     } catch (error) {
-      console.error('Registration error:', error)
+      console.error('register error:', (error as Error)?.message)
       return { success: false, error: 'Network error. Please try again.' }
     }
   }
 
-  const logout = () => {
+  const logout = async () => {
+    try {
+      await fetch('/api/auth/logout', {
+        method: 'POST',
+        credentials: 'include',
+      })
+    } catch (error) {
+      console.error('logout error:', (error as Error)?.message)
+    }
     if (typeof window !== 'undefined') {
-      localStorage.removeItem('token')
-      localStorage.removeItem('user')
+      localStorage.removeItem(USER_STORAGE_KEY)
     }
     setUser(null)
     router.push('/')
@@ -327,7 +239,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       const updatedUser = { ...user, ...updates }
       setUser(updatedUser)
       if (typeof window !== 'undefined') {
-        localStorage.setItem('user', JSON.stringify(updatedUser))
+        localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(updatedUser))
       }
     }
   }
@@ -366,7 +278,19 @@ export function useAuth() {
   return context
 }
 
-// Protected route component — open beta bypasses auth entirely
+// Protected route: if there's no signed-in user and we're not in open beta,
+// kick the visitor back to the marketing landing page (there is no /login).
 export function ProtectedRoute({ children }: { children: ReactNode }) {
+  const { user, isLoading } = useAuth()
+  const router = useRouter()
+
+  useEffect(() => {
+    if (isLoading) return
+    if (BETA_OPEN_ACCESS) return
+    if (!user) router.replace('/')
+  }, [user, isLoading, router])
+
+  if (isLoading) return null
+  if (!BETA_OPEN_ACCESS && !user) return null
   return <>{children}</>
-} 
+}

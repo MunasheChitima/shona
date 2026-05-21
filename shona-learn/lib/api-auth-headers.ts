@@ -1,7 +1,9 @@
-/** Use on client fetches to `/api/*` that call verifyAuth: omit header when no JWT so open beta can use the server anonymous user. */
+/**
+ * Same-origin requests now authenticate via the HttpOnly `shona_session`
+ * cookie set by /api/auth/{login,register}. The cookie is sent automatically,
+ * so an explicit Authorization header is no longer required. We keep this
+ * helper around as a no-op so existing call sites don't break.
+ */
 export function apiAuthHeaders(): HeadersInit {
-  if (typeof window === 'undefined') return {}
-  const token = localStorage.getItem('token')
-  if (token) return { Authorization: `Bearer ${token}` }
   return {}
 }

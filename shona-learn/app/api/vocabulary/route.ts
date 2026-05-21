@@ -1,8 +1,17 @@
 import { NextResponse } from 'next/server'
-import { PrismaClient } from '@prisma/client'
+import { prisma } from '@/lib/prisma'
 import { verifyAuth } from '@/lib/auth-server'
 
-const prisma = new PrismaClient()
+// Tolerant JSON parser for DB fields — a single malformed row shouldn't 500
+// the whole listing endpoint.
+function safeJsonParse<T>(s: string | null | undefined, fallback: T): T {
+  if (!s) return fallback
+  try {
+    return JSON.parse(s) as T
+  } catch {
+    return fallback
+  }
+}
 
 export async function GET(request: Request) {
   try {
@@ -10,32 +19,35 @@ export async function GET(request: Request) {
     if (!userId) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
-    
+
     const vocabulary = await prisma.vocabularyItem.findMany({
       orderBy: { category: 'asc' }
     })
-    
+
     // Transform to flashcard format
-    const flashcards = vocabulary.map(item => ({
-      id: item.id,
-      shona: item.shona,
-      english: item.english,
-      pronunciation: item.pronunciation || '',
-      ipa: `/${item.shona}/`,
-      tones: item.tones || 'HL',
-      category: item.category,
-      audioFile: item.audioFile,
-      example: item.examples ? JSON.parse(item.examples)[0] || `${item.shona} ndizvo` : `${item.shona} ndizvo`,
-      translation: item.examples ? JSON.parse(item.examples)[1] || `This is ${item.english}` : `This is ${item.english}`,
-      grammarNotes: getGrammarNotes(item.shona, item.category),
-      culturalContext: getCulturalContext(item.shona, item.category),
-      usageNotes: getUsageNotes(item.shona, item.category)
-    }))
-    
+    const flashcards = vocabulary.map(item => {
+      const examples = safeJsonParse<string[]>(item.examples, [])
+      return {
+        id: item.id,
+        shona: item.shona,
+        english: item.english,
+        pronunciation: item.pronunciation || '',
+        ipa: `/${item.shona}/`,
+        tones: item.tones || 'HL',
+        category: item.category,
+        audioFile: item.audioFile,
+        example: examples[0] || `${item.shona} ndizvo`,
+        translation: examples[1] || `This is ${item.english}`,
+        grammarNotes: getGrammarNotes(item.shona, item.category),
+        culturalContext: getCulturalContext(item.shona, item.category),
+        usageNotes: getUsageNotes(item.shona, item.category)
+      }
+    })
+
     return NextResponse.json(flashcards)
   } catch (error) {
-    console.error('Error:', error)
-    return NextResponse.json({ error: 'Failed to fetch vocabulary' }, { status: 500 })
+    console.error('vocabulary GET error:', (error as Error)?.message)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
 

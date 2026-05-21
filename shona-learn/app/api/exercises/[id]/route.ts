@@ -54,8 +54,8 @@ export async function GET(
 
     return NextResponse.json(enhancedExercises)
   } catch (error) {
-    console.error('Error:', error);
-    return NextResponse.json({ error: 'Failed to fetch exercises' }, { status: 500 })
+    console.error('exercises GET error:', (error as Error)?.message)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
 

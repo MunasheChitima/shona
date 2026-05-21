@@ -65,7 +65,7 @@ export async function GET(request: Request) {
       }
     })
   } catch (error) {
-    console.error('Error fetching lessons:', error)
-    return NextResponse.json({ error: 'Failed to fetch lessons' }, { status: 500 })
+    console.error('lessons GET error:', (error as Error)?.message)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
-} 
+}

@@ -4,24 +4,6 @@ import { awardAchievementIfNew } from '@/lib/achievements/award'
 import { prisma } from '@/lib/prisma'
 import { validate, progressSchema } from '@/lib/validation'
 
-async function ensureLessonExists(lessonId: string) {
-  const existing = await prisma.lesson.findUnique({ where: { id: lessonId } })
-  if (existing) return existing
-
-  return prisma.lesson.create({
-    data: {
-      id: lessonId,
-      title: `Lesson ${lessonId}`,
-      description: 'Auto-created placeholder lesson for progress tracking',
-      category: 'Uncategorized',
-      orderIndex: 999999,
-      xpReward: 10,
-      learningObjectives: JSON.stringify(['Auto-generated lesson placeholder']),
-      discoveryElements: JSON.stringify(['Auto-generated lesson placeholder'])
-    }
-  })
-}
-
 export async function GET(request: Request) {
   try {
     const userId = await verifyAuth(request)
@@ -33,7 +15,8 @@ export async function GET(request: Request) {
     })
     return NextResponse.json(progress)
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to fetch progress' }, { status: 500 })
+    console.error('progress GET error:', (error as Error)?.message)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
 
@@ -57,6 +40,17 @@ export async function POST(request: Request) {
     }
 
     const { lessonId, score } = parsed.data!
+    // Clamp score to [0, 100] defensively — schema also validates but a single
+    // source of truth here keeps create/update paths consistent.
+    const safeScore = Math.max(0, Math.min(100, Number(score) || 0))
+
+    // Refuse to operate on a lessonId that doesn't already exist. The previous
+    // implementation auto-created Lesson rows from arbitrary client input,
+    // which let anyone pollute the lesson catalog and farm XP.
+    const lesson = await prisma.lesson.findUnique({ where: { id: lessonId } })
+    if (!lesson) {
+      return NextResponse.json({ error: 'Lesson not found' }, { status: 404 })
+    }
 
     const prior = await prisma.userProgress.findUnique({
       where: {
@@ -68,8 +62,6 @@ export async function POST(request: Request) {
     })
     const newlyCompleted = !prior?.completed
 
-    await ensureLessonExists(lessonId)
-
     const progress = await prisma.userProgress.upsert({
       where: {
         userId_lessonId: {
@@ -79,24 +71,21 @@ export async function POST(request: Request) {
       },
       update: {
         completed: true,
-        score: Math.max(score, 0),
+        score: safeScore,
         completedAt: new Date()
       },
       create: {
         userId,
         lessonId,
         completed: true,
-        score
+        score: safeScore
       }
     })
 
-    const lesson = await prisma.lesson.findUnique({ where: { id: lessonId } })
-    if (lesson) {
-      await prisma.user.update({
-        where: { id: userId },
-        data: { xp: { increment: lesson.xpReward } }
-      })
-    }
+    await prisma.user.update({
+      where: { id: userId },
+      data: { xp: { increment: lesson.xpReward } }
+    })
 
     if (newlyCompleted) {
       const totalDone = await prisma.userProgress.count({
@@ -136,6 +125,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json(progress)
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to update progress' }, { status: 500 })
+    console.error('progress POST error:', (error as Error)?.message)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
