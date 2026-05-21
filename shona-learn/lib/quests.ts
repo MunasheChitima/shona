@@ -30,7 +30,7 @@ export const quests: Quest[] = [
       "Say yes, no, please, and thank you",
       "Ask basic questions with what, how, who, where, when"
     ],
-    lessons: ["lesson-1", "lesson-2", "lesson-3", "lesson-4", "lesson-g1"]
+    lessons: ["lesson-1", "lesson-2", "lesson-3", "lesson-4", "lesson-5", "lesson-49", "lesson-50"]
   },
   {
     id: "quest-people",
@@ -48,7 +48,7 @@ export const quests: Quest[] = [
       "Use words for friends and neighbors",
       "Master Shona pronouns (I, you, we, they)"
     ],
-    lessons: ["lesson-5", "lesson-6", "lesson-7", "lesson-8", "lesson-g2"]
+    lessons: ["lesson-6", "lesson-7", "lesson-8", "lesson-9", "lesson-10", "lesson-51", "lesson-52"]
   },
   {
     id: "quest-numbers-time",
@@ -66,7 +66,7 @@ export const quests: Quest[] = [
       "Talk about morning, afternoon, evening, today, tomorrow",
       "Name all days of the week"
     ],
-    lessons: ["lesson-9", "lesson-10", "lesson-11", "lesson-12"]
+    lessons: ["lesson-11", "lesson-12", "lesson-13", "lesson-14", "lesson-15", "lesson-16", "lesson-53", "lesson-54", "lesson-76"]
   },
   {
     id: "quest-daily-life",
@@ -84,7 +84,7 @@ export const quests: Quest[] = [
       "Know body part names for health situations",
       "Use color words to describe things"
     ],
-    lessons: ["lesson-13", "lesson-14", "lesson-15", "lesson-16", "lesson-g7"]
+    lessons: ["lesson-17", "lesson-18", "lesson-19", "lesson-20", "lesson-55", "lesson-56", "lesson-68", "lesson-69", "lesson-72"]
   },
   {
     id: "quest-getting-around",
@@ -102,7 +102,7 @@ export const quests: Quest[] = [
       "Name common occupations",
       "Order food and drinks"
     ],
-    lessons: ["lesson-17", "lesson-18", "lesson-19", "lesson-20"]
+    lessons: ["lesson-21", "lesson-22", "lesson-23", "lesson-24", "lesson-25", "lesson-57", "lesson-70", "lesson-71", "lesson-74"]
   },
   {
     id: "quest-actions",
@@ -120,7 +120,7 @@ export const quests: Quest[] = [
       "Talk about school and learning",
       "Use communication verbs (speak, hear, read, write)"
     ],
-    lessons: ["lesson-21", "lesson-22", "lesson-23", "lesson-g3", "lesson-24", "lesson-g4"]
+    lessons: ["lesson-26", "lesson-27", "lesson-28", "lesson-29", "lesson-58", "lesson-63", "lesson-64"]
   },
   // ============ INTERMEDIATE — Units 7-10 ============
   {
@@ -139,15 +139,7 @@ export const quests: Quest[] = [
       "Apologize and express deep gratitude",
       "Use natural everyday expressions"
     ],
-    lessons: [
-      "lesson-25",
-      "lesson-26",
-      "lesson-27",
-      "lesson-28",
-      "lesson-g5",
-      "lesson-g6",
-      "lesson-g8",
-    ]
+    lessons: ["lesson-30", "lesson-31", "lesson-32", "lesson-33", "lesson-59", "lesson-65", "lesson-66", "lesson-67"]
   },
   {
     id: "quest-culture",
@@ -165,7 +157,7 @@ export const quests: Quest[] = [
       "Talk about music and artistic traditions",
       "Learn spiritual and religious vocabulary"
     ],
-    lessons: ["lesson-29", "lesson-30", "lesson-31", "lesson-32"]
+    lessons: ["lesson-34", "lesson-35", "lesson-36", "lesson-37", "lesson-60"]
   },
   {
     id: "quest-nature",
@@ -183,7 +175,7 @@ export const quests: Quest[] = [
       "Discuss health, illness, and medicine",
       "Talk about weather and seasons"
     ],
-    lessons: ["lesson-33", "lesson-34", "lesson-35", "lesson-36"]
+    lessons: ["lesson-38", "lesson-39", "lesson-73", "lesson-77"]
   },
   {
     id: "quest-modern-life",
@@ -201,7 +193,7 @@ export const quests: Quest[] = [
       "Use social media vocabulary",
       "Discuss sports, music, and entertainment"
     ],
-    lessons: ["lesson-37", "lesson-38", "lesson-39", "lesson-40"]
+    lessons: ["lesson-40", "lesson-41"]
   },
   // ============ ADVANCED — Units 11-13 ============
   {
@@ -220,7 +212,7 @@ export const quests: Quest[] = [
       "Learn historical vocabulary about Zimbabwe's past",
       "Use business and economic vocabulary"
     ],
-    lessons: ["lesson-41", "lesson-42", "lesson-43", "lesson-44"]
+    lessons: ["lesson-42", "lesson-43"]
   },
   {
     id: "quest-complex",
@@ -238,7 +230,7 @@ export const quests: Quest[] = [
       "Talk about likes, dislikes, and interests",
       "Discuss abstract concepts like peace and unity"
     ],
-    lessons: ["lesson-45", "lesson-46", "lesson-47", "lesson-48"]
+    lessons: ["lesson-44", "lesson-45", "lesson-75"]
   },
   {
     id: "quest-deep-culture",
@@ -256,7 +248,7 @@ export const quests: Quest[] = [
       "Discuss mental health and wellbeing",
       "Use travel vocabulary"
     ],
-    lessons: ["lesson-49", "lesson-50", "lesson-51", "lesson-52"]
+    lessons: ["lesson-46", "lesson-47", "lesson-48", "lesson-61", "lesson-62", "lesson-78"]
   }
 ]
 
