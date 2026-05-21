@@ -1,9 +1,6 @@
 'use client'
-import { FaLock, FaCheck, FaPlay } from 'react-icons/fa'
-// The card only used framer-motion for a single mount fade-in. We replace
-// it with Tailwind's `animate-slide-in-up` keyframes (configured in
-// tailwind.config.js) so the lesson grid renders without paying the
-// framer-motion runtime cost on every card.
+import { useEffect, useState } from 'react'
+import { FaLock, FaCheck } from 'react-icons/fa'
 
 interface LessonCardProps {
   lesson: any
@@ -16,100 +13,106 @@ export default function LessonCard({ lesson, progress, onClick, locked }: Lesson
   const isCompleted = progress?.completed
   const score = progress?.score || 0
 
-  const unitConfig: Record<string, { emoji: string }> = {
-    'Unit 1': { emoji: '👋' },
-    'Unit 2': { emoji: '👨‍👩‍👧‍👦' },
-    'Unit 3': { emoji: '🔢' },
-    'Unit 4': { emoji: '🏠' },
-    'Unit 5': { emoji: '🚌' },
-    'Unit 6': { emoji: '🏃' },
-    'Unit 7': { emoji: '💭' },
-    'Unit 8': { emoji: '🌍' },
-    'Unit 9': { emoji: '🌿' },
-    'Unit 10': { emoji: '🏙️' },
-    'Unit 11': { emoji: '🏛️' },
-    'Unit 12': { emoji: '🧠' },
-    'Unit 13': { emoji: '🏛️' },
-  }
+  // Reading localStorage during render would mismatch SSR; resolve after mount.
+  const [inProgress, setInProgress] = useState(false)
+  useEffect(() => {
+    if (isCompleted) return
+    try {
+      setInProgress(!!localStorage.getItem(`lesson_${lesson.id}_progress`))
+    } catch {
+      /* ignore */
+    }
+  }, [lesson.id, isCompleted])
 
-  const getUnitKey = (category: string) => {
-    const match = category?.match(/^Unit \d+/)
-    return match ? match[0] : ''
-  }
-
-  const getCategoryEmoji = (category: string) => {
-    return unitConfig[getUnitKey(category)]?.emoji || lesson.emoji || '📚'
-  }
+  const num = typeof lesson.orderIndex === 'number' ? lesson.orderIndex : null
+  const vocab = Array.isArray(lesson.vocabulary) ? lesson.vocabulary : []
+  const previewWords = vocab.slice(0, 3)
+  const moreCount = Math.max(0, vocab.length - previewWords.length)
+  const exerciseCount = lesson.exercises?.length ?? null
+  const xp = lesson.xpReward ?? null
 
   return (
-    <div
+    <button
+      type="button"
       onClick={!locked ? onClick : undefined}
-      className={`
-        relative rounded-2xl p-6 cursor-pointer transition-colors animate-slide-in-up
-        border bg-white/80 backdrop-blur
-        ${locked
-          ? 'border-stone-200 opacity-60 cursor-not-allowed'
-          : isCompleted
-            ? 'border-emerald-600 hover:border-emerald-700'
-            : 'border-stone-200 hover:border-stone-300'}
-      `}
+      disabled={locked}
       data-testid="lesson-card"
+      className={`group relative flex w-full flex-col text-left rounded-2xl p-6 border transition-all duration-200 animate-slide-in-up
+        ${locked
+          ? 'border-stone-200 bg-stone-50/60 cursor-not-allowed'
+          : isCompleted
+            ? 'border-emerald-200 bg-white hover:border-emerald-300 hover:shadow-sm cursor-pointer'
+            : 'border-stone-200 bg-white hover:border-stone-300 hover:shadow-[0_2px_16px_rgba(0,0,0,0.04)] hover:-translate-y-0.5 cursor-pointer'}`}
     >
-      {/* Lock overlay */}
-      {locked && (
-        <div className="absolute inset-0 flex items-center justify-center bg-stone-900/10 backdrop-blur-[2px] rounded-2xl z-10">
-          <div className="text-center">
-            <FaLock className="text-2xl text-stone-500 mb-2 mx-auto" />
-            <p className="text-stone-700 font-medium text-sm lowercase">complete previous lesson</p>
-          </div>
-        </div>
-      )}
+      {/* top row: sequence badge + status */}
+      <div className="flex items-start justify-between mb-4">
+        <span
+          className={`inline-flex h-8 w-8 items-center justify-center rounded-full text-sm font-medium tabular-nums
+            ${locked
+              ? 'bg-stone-100 text-stone-400'
+              : isCompleted
+                ? 'bg-emerald-600 text-white'
+                : 'bg-stone-900 text-white'}`}
+        >
+          {isCompleted ? <FaCheck className="text-xs" /> : num ?? '·'}
+        </span>
 
-      {/* Completion badge */}
-      {isCompleted && (
-        <div className="absolute top-4 right-4 z-10">
-          <div className="bg-emerald-600 text-white rounded-full p-1.5">
-            <FaCheck className="text-xs" />
-          </div>
-        </div>
-      )}
+        {locked ? (
+          <FaLock className="mt-1.5 text-stone-300" />
+        ) : isCompleted ? (
+          <span className="mt-1 text-sm font-medium tabular-nums text-emerald-700">{score}%</span>
+        ) : inProgress ? (
+          <span className="mt-1.5 rounded-full bg-amber-50 px-2 py-0.5 text-xs font-medium lowercase text-amber-700">
+            in progress
+          </span>
+        ) : null}
+      </div>
 
-      {/* Category emoji */}
-      <div className="text-4xl mb-4">{getCategoryEmoji(lesson.category)}</div>
-
-      {/* Lesson title */}
-      <h3 className="text-lg font-medium tracking-tight mb-2 text-stone-900 lowercase">
+      {/* title */}
+      <h3 className="mb-1.5 text-lg font-medium tracking-tight lowercase text-stone-900">
         {lesson.title}
       </h3>
 
-      {/* Lesson description */}
-      <p className="text-stone-600 text-sm mb-4 leading-relaxed">
+      {/* skill outcome */}
+      <p className="mb-4 line-clamp-2 text-sm leading-relaxed text-stone-500">
         {lesson.description}
       </p>
 
-      {/* Bottom section */}
-      <div className="flex justify-between items-center">
-        <div className="flex items-center gap-2 text-sm text-stone-500">
-          <FaPlay className="text-stone-400 text-xs" />
-          <span className="lowercase">{lesson.exercises?.length || 5} exercises</span>
-        </div>
-
-        {isCompleted && (
-          <span className="text-sm text-emerald-700 font-medium tabular-nums">{score}%</span>
-        )}
-      </div>
-
-      {/* Progress bar for completed lessons */}
-      {isCompleted && (
-        <div className="mt-4">
-          <div className="bg-stone-100 rounded-full h-1 overflow-hidden">
-            <div
-              className="bg-emerald-600 h-full transition-all duration-700"
-              style={{ width: `${score}%` }}
-            />
-          </div>
+      {/* vocabulary preview — the words you'll actually learn */}
+      {previewWords.length > 0 && (
+        <div className="mb-5 flex flex-wrap gap-1.5">
+          {previewWords.map((v: any, i: number) => (
+            <span
+              key={i}
+              className="inline-flex items-center rounded-lg bg-stone-100 px-2.5 py-1 text-sm text-stone-700 group-hover:bg-stone-50"
+            >
+              {v.shona}
+            </span>
+          ))}
+          {moreCount > 0 && (
+            <span className="inline-flex items-center px-1.5 py-1 text-sm text-stone-400">
+              +{moreCount} more
+            </span>
+          )}
         </div>
       )}
-    </div>
+
+      {/* footer meta — pinned to the bottom for an even grid */}
+      <div className="mt-auto flex items-center gap-2 text-xs lowercase text-stone-400">
+        {exerciseCount != null && <span>{exerciseCount} exercises</span>}
+        {exerciseCount != null && xp != null && <span className="text-stone-300">·</span>}
+        {xp != null && <span>{xp} xp</span>}
+      </div>
+
+      {/* completion progress */}
+      {isCompleted && (
+        <div className="mt-4 h-1 overflow-hidden rounded-full bg-stone-100">
+          <div
+            className="h-full bg-emerald-500 transition-all duration-700"
+            style={{ width: `${score}%` }}
+          />
+        </div>
+      )}
+    </button>
   )
 }

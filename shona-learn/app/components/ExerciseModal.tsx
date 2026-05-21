@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect, useCallback, useRef } from 'react'
 import Link from 'next/link'
-import { FaTimes, FaTrophy } from 'react-icons/fa'
+import { FaTimes, FaArrowRight } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import ErrorBoundary from './ErrorBoundary'
 import { apiAuthHeaders } from '@/lib/api-auth-headers'
@@ -48,26 +48,38 @@ function writeSavedIndex(lessonId: string, index: number) {
 
 export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseModalProps) {
   const [exercises, setExercises] = useState<any[]>([])
+  const [loadingExercises, setLoadingExercises] = useState(true)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState('')
+  const [typed, setTyped] = useState('')
   const [showFeedback, setShowFeedback] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
   const [score, setScore] = useState(0)
   const [showResults, setShowResults] = useState(false)
   const indexHydratedRef = useRef(false)
 
-  // Confirm-before-close: only ask if there's session progress.
+  // Resuming a lesson skips straight to the quiz; a fresh open shows the
+  // "what you'll learn" intro first.
+  const [phase, setPhase] = useState<'intro' | 'quiz'>(() =>
+    readSavedIndex(lesson.id) > 0 ? 'quiz' : 'intro'
+  )
+
+  const vocab: any[] = Array.isArray(lesson.vocabulary) ? lesson.vocabulary : []
+  const culturalNote: string | undefined = Array.isArray(lesson.culturalNotes)
+    ? lesson.culturalNotes[0]
+    : undefined
+
   const requestClose = useCallback(() => {
-    if (currentIndex > 0 && !showResults) {
-      const ok = typeof window === 'undefined'
-        ? true
-        : window.confirm('Leave this lesson? Your spot will be saved so you can resume later.')
+    if (phase === 'quiz' && currentIndex > 0 && !showResults) {
+      const ok =
+        typeof window === 'undefined'
+          ? true
+          : window.confirm('leave this lesson? your spot is saved so you can pick up where you left off.')
       if (!ok) return
     }
     onClose()
-  }, [currentIndex, showResults, onClose])
+  }, [phase, currentIndex, showResults, onClose])
 
-  // ESC closes (with confirm)
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') requestClose()
@@ -79,30 +91,28 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
   useEffect(() => {
     const fetchExercises = async () => {
       if (typeof window === 'undefined') return
-      const res = await fetch(`/api/exercises/${lesson.id}`, {
-        headers: { ...apiAuthHeaders() },
-      })
-      if (res.ok) {
-        const data = await res.json()
-        const renderable = data.filter((ex: any) =>
-          ex.type === 'multiple_choice' ||
-          ex.type === 'translation' ||
-          ex.type === 'fill_blank'
-        )
-        setExercises(renderable)
+      try {
+        const res = await fetch(`/api/exercises/${lesson.id}`, { headers: { ...apiAuthHeaders() } })
+        if (res.ok) {
+          const data = await res.json()
+          const renderable = data.filter(
+            (ex: any) =>
+              ex.type === 'multiple_choice' || ex.type === 'translation' || ex.type === 'fill_blank'
+          )
+          setExercises(renderable)
+        }
+      } finally {
+        setLoadingExercises(false)
       }
     }
     fetchExercises()
   }, [lesson.id])
 
-  // Restore saved index once exercises are loaded.
   useEffect(() => {
     if (indexHydratedRef.current) return
     if (exercises.length === 0) return
     const saved = readSavedIndex(lesson.id)
-    if (saved > 0 && saved < exercises.length) {
-      setCurrentIndex(saved)
-    }
+    if (saved > 0 && saved < exercises.length) setCurrentIndex(saved)
     indexHydratedRef.current = true
   }, [exercises.length, lesson.id])
 
@@ -115,334 +125,333 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
   const advance = (nextIndex: number) => {
     setCurrentIndex(nextIndex)
     setSelectedAnswer('')
+    setTyped('')
     setShowFeedback(false)
     writeSavedIndex(lesson.id, nextIndex)
   }
 
-  const handleAnswer = (answer: string | number) => {
-    if (typeof answer === 'number') {
-      const newScore = score + answer
-      setScore(newScore)
-      setIsCorrect(answer >= 80)
-      setShowFeedback(true)
-      setTimeout(() => {
-        if (currentIndex < exercises.length - 1) {
-          advance(currentIndex + 1)
-        } else {
-          finish(newScore)
-        }
-      }, 1500)
-      return
-    }
+  const currentExercise = exercises[currentIndex]
 
+  const handleAnswer = (answer: string) => {
     setSelectedAnswer(answer)
-    const correct = answer === currentExercise.correctAnswer
+    const correct =
+      answer.trim().toLowerCase() === String(currentExercise.correctAnswer).trim().toLowerCase()
     setIsCorrect(correct)
     setShowFeedback(true)
-    const newScore = correct ? score + (currentExercise.points || 0) : score
+    const newScore = correct ? score + (currentExercise.points || 10) : score
     if (correct) setScore(newScore)
 
     setTimeout(() => {
-      if (currentIndex < exercises.length - 1) {
-        advance(currentIndex + 1)
-      } else {
-        finish(newScore)
-      }
-    }, 1500)
+      if (currentIndex < exercises.length - 1) advance(currentIndex + 1)
+      else finish(newScore)
+    }, 1600)
   }
 
-  if (exercises.length === 0) {
-    return (
-      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-        <div className="bg-white rounded-3xl p-8 text-center max-w-sm shadow-2xl">
-          <div className="text-4xl mb-4">📚</div>
-          <p className="text-gray-700 font-medium mb-4">Loading exercises…</p>
-          <button
-            type="button"
-            onClick={onClose}
-            className="text-sm text-gray-500 hover:text-gray-700 underline"
-          >
-            Cancel
-          </button>
-        </div>
+  // ── shared shell ──────────────────────────────────────────────
+  const Shell = ({ children }: { children: React.ReactNode }) => (
+    <ErrorBoundary>
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/40 p-4 backdrop-blur-sm modal-backdrop"
+        data-testid="exercise-modal"
+        onClick={(e) => {
+          if ((e.target as HTMLElement).classList.contains('modal-backdrop')) requestClose()
+        }}
+      >
+        <motion.div
+          initial={{ scale: 0.96, opacity: 0, y: 24 }}
+          animate={{ scale: 1, opacity: 1, y: 0 }}
+          exit={{ scale: 0.96, opacity: 0, y: 24 }}
+          transition={{ duration: 0.2, ease: 'easeOut' }}
+          className="max-h-[92vh] w-full max-w-2xl overflow-y-auto rounded-3xl border border-stone-200 bg-[#fffdf7] shadow-xl"
+          data-testid="exercise-content"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {children}
+        </motion.div>
       </div>
+    </ErrorBoundary>
+  )
+
+  // ── loading ───────────────────────────────────────────────────
+  if (loadingExercises && phase === 'quiz') {
+    return (
+      <Shell>
+        <div className="p-10 text-center">
+          <div className="mx-auto mb-4 h-8 w-8 animate-spin rounded-full border-2 border-stone-200 border-t-stone-900" />
+          <p className="lowercase text-stone-500">loading lesson…</p>
+        </div>
+      </Shell>
     )
   }
 
-  const currentExercise = exercises[currentIndex]
+  // ── intro: "here's what you'll learn" ─────────────────────────
+  if (phase === 'intro') {
+    return (
+      <Shell>
+        <div className="p-8">
+          <div className="mb-6 flex items-start justify-between">
+            <button
+              type="button"
+              onClick={requestClose}
+              aria-label="close lesson"
+              className="rounded-full p-2 text-stone-400 transition-colors hover:bg-stone-100 hover:text-stone-600"
+            >
+              <FaTimes />
+            </button>
+            {typeof lesson.xpReward === 'number' && (
+              <span className="lowercase text-sm text-stone-400">{lesson.xpReward} xp</span>
+            )}
+          </div>
 
+          {typeof lesson.orderIndex === 'number' && (
+            <p className="mb-1 lowercase text-sm text-stone-400">lesson {lesson.orderIndex}</p>
+          )}
+          <h2 className="text-2xl font-medium tracking-tight lowercase text-stone-900">
+            {lesson.title}
+          </h2>
+          {lesson.description && (
+            <p className="mt-2 leading-relaxed text-stone-500">{lesson.description}</p>
+          )}
+
+          {vocab.length > 0 && (
+            <div className="mt-8">
+              <p className="mb-3 lowercase text-sm font-medium text-stone-400">words you'll learn</p>
+              <div className="divide-y divide-stone-100 overflow-hidden rounded-2xl border border-stone-200 bg-white">
+                {vocab.map((v: any, i: number) => (
+                  <div key={i} className="flex items-baseline justify-between gap-4 px-5 py-4">
+                    <div className="min-w-0">
+                      <p className="text-lg font-medium text-stone-900">{v.shona}</p>
+                      <p className="truncate text-sm text-stone-500">{v.english}</p>
+                    </div>
+                    {v.pronunciation && (
+                      <span className="shrink-0 font-mono text-sm text-emerald-700">{v.pronunciation}</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {culturalNote && (
+            <div className="mt-6 rounded-2xl border border-amber-100 bg-amber-50/60 px-5 py-4">
+              <p className="text-sm leading-relaxed text-amber-900">{culturalNote}</p>
+            </div>
+          )}
+
+          <button
+            type="button"
+            onClick={() => setPhase('quiz')}
+            className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-stone-900 px-8 py-4 lowercase font-medium text-white transition-colors hover:bg-stone-800"
+          >
+            start lesson <FaArrowRight className="text-sm" />
+          </button>
+        </div>
+      </Shell>
+    )
+  }
+
+  // ── empty exercise set ────────────────────────────────────────
+  if (exercises.length === 0) {
+    return (
+      <Shell>
+        <div className="p-10 text-center">
+          <p className="mb-4 lowercase text-stone-600">no exercises are available for this lesson yet.</p>
+          <button
+            type="button"
+            onClick={onClose}
+            className="lowercase text-sm text-stone-500 underline underline-offset-4 hover:text-stone-700"
+          >
+            close
+          </button>
+        </div>
+      </Shell>
+    )
+  }
+
+  // ── quiz ──────────────────────────────────────────────────────
   let options: string[] = []
   try {
     const optionsData = currentExercise.options || '[]'
     if (typeof optionsData === 'string') {
-      if (optionsData.startsWith('[') || optionsData.startsWith('{')) {
-        options = JSON.parse(optionsData)
-      } else {
-        options = optionsData.includes(',')
-          ? optionsData.split(',').map((o: string) => o.trim())
-          : [optionsData]
-      }
+      options =
+        optionsData.startsWith('[') || optionsData.startsWith('{')
+          ? JSON.parse(optionsData)
+          : optionsData.includes(',')
+            ? optionsData.split(',').map((o: string) => o.trim())
+            : [optionsData]
     } else if (Array.isArray(optionsData)) {
       options = optionsData
-    } else {
-      options = []
     }
-  } catch (error) {
-    console.warn('Error parsing exercise options:', error)
-    const fallbackOptions = currentExercise.options || ''
-    options = fallbackOptions.includes(',')
-      ? fallbackOptions.split(',').map((o: string) => o.trim())
-      : [fallbackOptions]
+  } catch {
+    options = []
   }
 
   const progress = ((currentIndex + 1) / exercises.length) * 100
+  const isLast = currentIndex === exercises.length - 1
+  const isTranslation = currentExercise.type === 'translation'
 
   return (
-    <ErrorBoundary>
-      <div
-        className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50 modal-backdrop"
-        data-testid="exercise-modal"
-        onClick={(e) => {
-          if ((e.target as HTMLElement).classList.contains('modal-backdrop')) {
-            requestClose()
-          }
-        }}
-      >
-        <motion.div
-          initial={{ scale: 0.9, opacity: 0, y: 50 }}
-          animate={{ scale: 1, opacity: 1, y: 0 }}
-          exit={{ scale: 0.9, opacity: 0, y: 50 }}
-          className="bg-white/95 backdrop-blur-sm rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-white/20"
-          data-testid="exercise-content"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <div className="p-8">
-            {/* Header */}
-            <div className="flex justify-between items-center mb-8">
-              <motion.button
-                type="button"
-                onClick={requestClose}
-                className="text-gray-500 hover:text-gray-700 p-2 rounded-full hover:bg-gray-100 transition-colors"
-                data-testid="close-modal"
-                aria-label="Close lesson"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <FaTimes className="text-2xl" />
-              </motion.button>
-
-              <div className="flex items-center space-x-4">
-                <div className="flex items-center space-x-2">
-                  <FaTrophy className="text-yellow-500 text-xl" />
-                  <span className="text-xl font-bold text-gray-800">{score}</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Progress Bar */}
-            <div className="mb-8">
-              <div className="flex justify-between items-center mb-2">
-                <span className="text-sm text-gray-600">
-                  Question {currentIndex + 1} of {exercises.length}
-                </span>
-                <span className="text-sm text-gray-600">
-                  {Math.round(progress)}% Complete
-                </span>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-2">
-                <motion.div
-                  className="bg-gradient-to-r from-green-500 to-blue-500 h-2 rounded-full"
-                  initial={{ width: 0 }}
-                  animate={{ width: `${progress}%` }}
-                  transition={{ duration: 0.5 }}
-                />
-              </div>
-            </div>
-
-            {/* Question Section */}
+    <Shell>
+      <div className="p-8">
+        {/* top bar: close · progress · xp */}
+        <div className="mb-7 flex items-center gap-4">
+          <button
+            type="button"
+            onClick={requestClose}
+            aria-label="close lesson"
+            data-testid="close-modal"
+            className="rounded-full p-2 text-stone-400 transition-colors hover:bg-stone-100 hover:text-stone-600"
+          >
+            <FaTimes />
+          </button>
+          <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-stone-200">
             <motion.div
-              className="mb-8"
-              key={currentIndex}
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
+              className="h-full rounded-full bg-emerald-500"
+              initial={{ width: 0 }}
+              animate={{ width: `${progress}%` }}
               transition={{ duration: 0.4 }}
-            >
-              <div className="bg-gradient-to-r from-accent-green-50 to-accent-blue-50 rounded-2xl p-6 border border-accent-green-100">
-                <h2 className="text-2xl font-bold mb-4 text-gray-800">{currentExercise.question}</h2>
-
-                {currentExercise.grammarNotes && (
-                  <div className="bg-white rounded-xl p-4 mb-4 border border-accent-gold-200">
-                    <h3 className="text-lg font-semibold text-accent-gold-700 mb-2 flex items-center">
-                      📚 Grammar Notes
-                    </h3>
-                    <p className="text-gray-700">{currentExercise.grammarNotes}</p>
-                  </div>
-                )}
-
-                {currentExercise.culturalContext && (
-                  <div className="bg-white rounded-xl p-4 mb-4 border border-accent-green-200">
-                    <h3 className="text-lg font-semibold text-accent-green-700 mb-2 flex items-center">
-                      🌍 Cultural Context
-                    </h3>
-                    <p className="text-gray-700">{currentExercise.culturalContext}</p>
-                  </div>
-                )}
-
-                {currentExercise.shonaPhrase && (
-                  <div className="bg-white rounded-xl p-4 mb-4 border border-blue-200">
-                    <p className="text-sm text-gray-500 mb-1">Shona</p>
-                    <p className="text-xl font-bold text-gray-800">{currentExercise.shonaPhrase}</p>
-                    {currentExercise.pronunciation && (
-                      <p className="text-sm text-gray-500 mt-1">[{currentExercise.pronunciation}]</p>
-                    )}
-                  </div>
-                )}
-
-                {currentExercise.englishPhrase && currentExercise.type !== 'translation' && (
-                  <div className="bg-white rounded-xl p-4 border border-blue-200">
-                    <p className="text-sm text-gray-500 mb-1">English</p>
-                    <p className="text-xl font-bold text-gray-800">{currentExercise.englishPhrase}</p>
-                  </div>
-                )}
-              </div>
-            </motion.div>
-
-            {/* Answer Options */}
-            <div className="space-y-4">
-              {currentExercise.type === 'translation' ? (
-                <div className="space-y-4">
-                  <input
-                    type="text"
-                    className="w-full p-4 border-2 border-gray-200 rounded-xl text-lg focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-200 transition-all"
-                    placeholder="Type your answer here..."
-                    onKeyPress={(e) => {
-                      if (e.key === 'Enter' && e.currentTarget.value) {
-                        handleAnswer(e.currentTarget.value)
-                      }
-                    }}
-                    disabled={showFeedback}
-                  />
-                  <motion.button
-                    className="w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-8 rounded-xl shadow-medium"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => {
-                      const input = document.querySelector('input') as HTMLInputElement
-                      if (input?.value) {
-                        handleAnswer(input.value)
-                      }
-                    }}
-                    disabled={showFeedback}
-                  >
-                    Submit Answer
-                  </motion.button>
-                </div>
-              ) : options.length === 0 ? (
-                <div className="text-center py-8">
-                  <p className="text-gray-600 mb-4">No answer options available for this exercise.</p>
-                  <motion.button
-                    onClick={() => handleAnswer('skip')}
-                    className="px-6 py-3 bg-gray-500 text-white rounded-xl hover:bg-gray-600 transition-colors"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    Skip This Question
-                  </motion.button>
-                </div>
-              ) : (
-                options.map((option: string, index: number) => (
-                  <motion.button
-                    key={index}
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => handleAnswer(option)}
-                    disabled={showFeedback}
-                    data-testid="answer-option"
-                    className={`
-                      w-full p-6 rounded-xl text-left text-lg font-medium transition-all shadow-soft
-                      ${showFeedback && option === currentExercise.correctAnswer
-                        ? 'bg-gradient-to-r from-green-100 to-green-200 border-2 border-green-500 text-green-700 shadow-medium'
-                        : showFeedback && option === selectedAnswer && !isCorrect
-                        ? 'bg-gradient-to-r from-red-100 to-red-200 border-2 border-red-500 text-red-700 shadow-medium'
-                        : 'bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-gray-300 text-gray-700 hover:shadow-medium'
-                      }
-                    `}
-                  >
-                    {option}
-                  </motion.button>
-                ))
-              )}
-            </div>
-
-            {/* Feedback Section */}
-            <AnimatePresence>
-              {showFeedback && (
-                <motion.div
-                  initial={{ opacity: 0, y: 20, scale: 0.9 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: -20, scale: 0.9 }}
-                  className={`mt-6 p-6 rounded-2xl ${isCorrect ? 'bg-gradient-to-r from-green-100 to-green-200 border border-green-300' : 'bg-gradient-to-r from-red-100 to-red-200 border border-red-300'}`}
-                  data-testid={isCorrect ? 'success-message' : 'error-message'}
-                >
-                  <div className="flex items-start space-x-3">
-                    <div className={`text-3xl ${isCorrect ? 'text-green-600' : 'text-red-600'} mt-1`}>
-                      {isCorrect ? '🎉' : '💪'}
-                    </div>
-                    <div className="flex-1">
-                      <p className={`font-bold text-lg ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
-                        {isCorrect ? 'Excellent! You got it right!' : "Keep trying! You're learning!"}
-                      </p>
-
-                      {currentExercise.explanation && (
-                        <div className="mt-3 p-4 bg-white/80 rounded-xl border border-gray-200">
-                          <p className={`text-sm ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
-                            {isCorrect ? currentExercise.explanation.correct : currentExercise.explanation.incorrect}
-                          </p>
-                        </div>
-                      )}
-
-                      {currentExercise.culturalNote && (
-                        <div className="mt-3 p-4 bg-blue-50 rounded-xl border border-blue-200">
-                          <h4 className="text-sm font-semibold text-blue-700 mb-1">🌍 Cultural Insight</h4>
-                          <p className="text-sm text-blue-600">{currentExercise.culturalNote}</p>
-                        </div>
-                      )}
-
-                      {!isCorrect && currentExercise.retryHint && (
-                        <div className="mt-3 p-4 bg-yellow-50 rounded-xl border border-yellow-200">
-                          <h4 className="text-sm font-semibold text-yellow-700 mb-1">💡 Learning Tip</h4>
-                          <p className="text-sm text-yellow-600">{currentExercise.retryHint}</p>
-                        </div>
-                      )}
-
-                      {!isCorrect && currentExercise.correctAnswer && (
-                        <p className="text-red-600 mt-2">
-                          Correct answer: <span className="font-bold">{currentExercise.correctAnswer}</span>
-                        </p>
-                      )}
-
-                      {currentIndex === exercises.length - 1 && lesson?.category ? (
-                        <div className="mt-4 pt-4 border-t border-gray-200">
-                          <Link
-                            href={`/flashcards?category=${encodeURIComponent(lesson.category)}`}
-                            className="inline-flex items-center gap-2 font-semibold text-green-700 hover:text-green-800 underline underline-offset-2"
-                          >
-                            Practice these words with flashcards →
-                          </Link>
-                        </div>
-                      ) : null}
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-
-            <div className="mt-6 text-center text-sm text-gray-500">
-              <p>Press ESC or tap outside to leave (your spot is saved)</p>
-            </div>
+            />
           </div>
+          <span className="shrink-0 lowercase text-sm tabular-nums text-stone-400">{score} xp</span>
+        </div>
+
+        {/* question */}
+        <motion.div
+          key={currentIndex}
+          initial={{ opacity: 0, x: 16 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.25 }}
+        >
+          <p className="mb-2 lowercase text-sm text-stone-400">
+            question {currentIndex + 1} of {exercises.length}
+          </p>
+          <h2 className="text-xl font-medium leading-snug tracking-tight text-stone-900">
+            {currentExercise.question}
+          </h2>
+
+          {currentExercise.shonaPhrase && (
+            <div className="mt-5 rounded-2xl border border-stone-200 bg-white px-5 py-4">
+              <p className="text-2xl font-medium text-stone-900">{currentExercise.shonaPhrase}</p>
+              {currentExercise.pronunciation && (
+                <p className="mt-1 font-mono text-sm text-emerald-700">{currentExercise.pronunciation}</p>
+              )}
+            </div>
+          )}
+
+          {currentExercise.englishPhrase && !isTranslation && (
+            <div className="mt-5 rounded-2xl border border-stone-200 bg-white px-5 py-4">
+              <p className="text-xl font-medium text-stone-900">{currentExercise.englishPhrase}</p>
+            </div>
+          )}
         </motion.div>
+
+        {/* answers */}
+        <div className="mt-7 space-y-3">
+          {isTranslation ? (
+            <>
+              <input
+                type="text"
+                value={typed}
+                onChange={(e) => setTyped(e.target.value)}
+                disabled={showFeedback}
+                placeholder="type your answer"
+                className="w-full rounded-xl border border-stone-200 bg-white px-4 py-4 text-lg lowercase outline-none transition-colors placeholder:text-stone-300 focus:border-emerald-500"
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && typed.trim() && !showFeedback) handleAnswer(typed)
+                }}
+              />
+              <button
+                type="button"
+                onClick={() => typed.trim() && !showFeedback && handleAnswer(typed)}
+                disabled={showFeedback || !typed.trim()}
+                className="w-full rounded-full bg-stone-900 px-8 py-4 lowercase font-medium text-white transition-colors hover:bg-stone-800 disabled:opacity-40"
+              >
+                check
+              </button>
+            </>
+          ) : options.length === 0 ? (
+            <button
+              type="button"
+              onClick={() => handleAnswer('skip')}
+              className="w-full rounded-full bg-stone-200 px-8 py-4 lowercase font-medium text-stone-700 transition-colors hover:bg-stone-300"
+            >
+              skip this question
+            </button>
+          ) : (
+            options.map((option: string, index: number) => {
+              const correctOpt = showFeedback && option === currentExercise.correctAnswer
+              const wrongOpt = showFeedback && option === selectedAnswer && !isCorrect
+              return (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => !showFeedback && handleAnswer(option)}
+                  disabled={showFeedback}
+                  data-testid="answer-option"
+                  className={`w-full rounded-xl border px-5 py-4 text-left text-lg transition-all
+                    ${correctOpt
+                      ? 'border-emerald-600 bg-emerald-50 text-emerald-800'
+                      : wrongOpt
+                        ? 'border-rose-500 bg-rose-50 text-rose-700'
+                        : 'border-stone-200 bg-white text-stone-800 hover:border-stone-300 disabled:opacity-60'}`}
+                >
+                  {option}
+                </button>
+              )
+            })
+          )}
+        </div>
+
+        {/* feedback */}
+        <AnimatePresence>
+          {showFeedback && (
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              className={`mt-6 rounded-2xl border px-5 py-4 ${
+                isCorrect ? 'border-emerald-200 bg-emerald-50/70' : 'border-rose-200 bg-rose-50/70'
+              }`}
+              data-testid={isCorrect ? 'success-message' : 'error-message'}
+            >
+              <p className={`lowercase font-medium ${isCorrect ? 'text-emerald-800' : 'text-rose-700'}`}>
+                {isCorrect ? 'correct' : 'not quite'}
+              </p>
+
+              {currentExercise.explanation && (
+                <p className={`mt-1 text-sm leading-relaxed ${isCorrect ? 'text-emerald-700' : 'text-rose-600'}`}>
+                  {isCorrect ? currentExercise.explanation.correct : currentExercise.explanation.incorrect}
+                </p>
+              )}
+
+              {!isCorrect && currentExercise.correctAnswer && (
+                <p className="mt-2 text-sm text-stone-600">
+                  answer: <span className="font-medium text-stone-900">{currentExercise.correctAnswer}</span>
+                </p>
+              )}
+
+              {currentExercise.culturalNote && (
+                <p className="mt-3 border-t border-black/5 pt-3 text-sm leading-relaxed text-stone-600">
+                  {currentExercise.culturalNote}
+                </p>
+              )}
+
+              {isLast && lesson?.category && (
+                <Link
+                  href={`/flashcards?category=${encodeURIComponent(lesson.category)}`}
+                  className="mt-3 inline-flex items-center gap-1.5 lowercase text-sm font-medium text-emerald-700 underline underline-offset-4 hover:text-emerald-800"
+                >
+                  practice these words with flashcards <FaArrowRight className="text-xs" />
+                </Link>
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        <p className="mt-6 text-center lowercase text-xs text-stone-400">
+          press esc or tap outside to leave — your spot is saved
+        </p>
       </div>
-    </ErrorBoundary>
+    </Shell>
   )
 }
