@@ -17,8 +17,7 @@ export async function POST(request: NextRequest) {
     const gameXPMap: Record<string, number> = {
       'memory-match': 20,
       'story-complete': 25,
-      'cultural-quiz': 35,
-      'word-builder': 40
+      'cultural-quiz': 35
     }
     const baseXP = gameXPMap[gameId] || 20
     

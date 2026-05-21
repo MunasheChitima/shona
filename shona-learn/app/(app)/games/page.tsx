@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { FaGamepad, FaMemory, FaMusic, FaBook, FaQuestion, FaPuzzlePiece, FaFire, FaStar, FaCrown } from 'react-icons/fa'
+import { FaGamepad, FaMemory, FaBook, FaQuestion, FaFire, FaStar, FaCrown } from 'react-icons/fa'
 import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 
 export default function GamesPage() {
@@ -43,18 +43,6 @@ export default function GamesPage() {
       comingSoon: false
     },
     {
-      id: 'rhythm-tones',
-      title: 'Rhythm Tones',
-      description: 'Master Shona pronunciation with rhythm gameplay',
-      icon: FaMusic,
-      color: 'from-blue-400 to-cyan-500',
-      difficulty: 'Medium',
-      xpReward: 30,
-      route: '/games/rhythm-tones',
-      category: 'Pronunciation',
-      comingSoon: true
-    },
-    {
       id: 'story-complete',
       title: 'Story Complete',
       description: 'Complete stories using vocabulary from lessons',
@@ -64,7 +52,7 @@ export default function GamesPage() {
       xpReward: 25,
       route: '/games/story-complete',
       category: 'Comprehension',
-      comingSoon: true
+      comingSoon: false
     },
     {
       id: 'cultural-quiz',
@@ -76,19 +64,7 @@ export default function GamesPage() {
       xpReward: 35,
       route: '/games/cultural-quiz',
       category: 'Culture',
-      comingSoon: true
-    },
-    {
-      id: 'word-builder',
-      title: 'Word Builder',
-      description: 'Build Shona words using morphology',
-      icon: FaPuzzlePiece,
-      color: 'from-red-400 to-pink-500',
-      difficulty: 'Hard',
-      xpReward: 40,
-      route: '/games/word-builder',
-      category: 'Grammar',
-      comingSoon: true
+      comingSoon: false
     }
   ]
 

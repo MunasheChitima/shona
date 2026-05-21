@@ -13,7 +13,6 @@ import StageSection, { type PathStage } from '../../components/learning-path/Sta
 import CheckpointModal from '../../components/learning-path/CheckpointModal'
 import PathVariantOnboarding from '../../components/learning-path/PathVariantOnboarding'
 import type { LessonRowLesson } from '../../components/learning-path/LessonRow'
-import { useContentChunking } from '@/hooks/useContentChunking'
 import { useErrorHandler } from '@/lib/error-handling'
 import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 import { apiAuthHeaders } from '@/lib/api-auth-headers'
@@ -84,6 +83,8 @@ function LearnContent() {
   const [user, setUser] = useState<any>({})
   const [questFilter, setQuestFilter] = useState<string | null>(null)
   const [chunks, setChunks] = useState<any[]>([])
+  const [lessonsLoading, setLessonsLoading] = useState(true)
+  const [lessonsError, setLessonsError] = useState<unknown>(null)
   const [pathStages, setPathStages] = useState<PathStage[] | null>(null)
   const [pathEnrollment, setPathEnrollment] = useState<PathEnrollment | null>(null)
   const [dueReviewCount, setDueReviewCount] = useState(0)
@@ -93,17 +94,7 @@ function LearnContent() {
   const searchParams = useSearchParams()
   const { handleError } = useErrorHandler()
 
-  const {
-    chunks: lessonChunks,
-    isLoading: lessonsLoading,
-    error: lessonsError,
-    loadChunks: loadLessons,
-  } = useContentChunking({
-    type: 'lesson',
-    autoLoad: false,
-  })
-
-  const finalChunks = chunks.length > 0 ? chunks : lessonChunks
+  const finalChunks = chunks
 
   const getToken = () => (typeof window !== 'undefined' ? localStorage.getItem('token') : null)
 
@@ -227,13 +218,7 @@ function LearnContent() {
       await fetchProgress()
       await fetchLearningPath()
       await fetchDueReviews()
-
-      try {
-        await loadLessons()
-      } catch (error) {
-        console.error('Content chunking failed, falling back to original method:', error)
-        await fetchLessons()
-      }
+      await fetchLessons()
     }
 
     init()
@@ -242,8 +227,13 @@ function LearnContent() {
 
   const fetchLessons = async () => {
     try {
+      setLessonsLoading(true)
+      setLessonsError(null)
       const token = getToken()
-      if (!token && !BETA_OPEN_ACCESS) return
+      if (!token && !BETA_OPEN_ACCESS) {
+        setLessonsLoading(false)
+        return
+      }
 
       const res = await fetch('/api/lessons', {
         headers: { ...apiAuthHeaders() },
@@ -252,19 +242,23 @@ function LearnContent() {
       if (res.ok) {
         const data = await res.json()
         const lessons = data.lessons || []
-        const localChunks = [
+        setChunks([
           {
-            id: 'fallback_chunk',
+            id: 'lessons_chunk',
             type: 'lesson' as const,
             data: lessons,
             metadata: { totalChunks: 1, chunkIndex: 0, hasNext: false, hasPrevious: false },
           },
-        ]
-        setChunks(localChunks)
+        ])
+      } else {
+        setLessonsError(new Error(`Failed to fetch lessons (${res.status})`))
       }
     } catch (error) {
       console.error('Failed to fetch lessons:', error)
+      setLessonsError(error)
       handleError(error)
+    } finally {
+      setLessonsLoading(false)
     }
   }
 
@@ -302,14 +296,14 @@ function LearnContent() {
     }
   }
 
-  const lessons = finalChunks.flatMap((chunk) => chunk.data || []) as LearnLesson[]
+  const lessons = finalChunks.flatMap((chunk: any) => chunk.data || []) as LearnLesson[]
 
   if (lessonsLoading) {
     return <LoadingSpinner fullScreen message="Loading lessons..." />
   }
 
   if (lessonsError) {
-    return <AuthError error={lessonsError} onRetry={() => { loadLessons(); fetchProgress(); }} />
+    return <AuthError error={(lessonsError as Error)?.message || 'Failed to load lessons'} onRetry={() => { fetchLessons(); fetchProgress(); }} />
   }
 
   let validLessons = lessons.filter(
@@ -360,20 +354,6 @@ function LearnContent() {
                 dismissing={pathStartSubmitting}
               />
             ) : null}
-
-            <div className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50/90 px-4 py-3 text-sm text-emerald-950">
-              <Link href="/sound-guide" className="font-semibold text-emerald-900 underline underline-offset-2">
-                Shona Sound Guide
-              </Link>
-              <span className="text-emerald-900/95">
-                {' '}
-                — how Shona vowels, rhythm, and clusters like mh, sv, nd differ from English. Then try{' '}
-              </span>
-              <Link href="/practice/sounds" className="font-semibold text-emerald-900 underline underline-offset-2">
-                sound drills
-              </Link>
-              <span className="text-emerald-900/95"> for guided repetition.</span>
-            </div>
 
             {dueReviewCount > 0 && !questFilter ? (
               <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950">

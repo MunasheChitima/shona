@@ -1,15 +1,10 @@
 'use client'
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { FaArrowLeft, FaArrowRight, FaRandom, FaBookOpen, FaLightbulb, FaGlobeAfrica, FaPlay, FaPause } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight, FaRandom, FaBookOpen, FaLightbulb, FaGlobeAfrica } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
 import LoadingSpinner from './LoadingSpinner'
 import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 import { apiAuthHeaders } from '@/lib/api-auth-headers'
-
-function soundGuideHash(token: string) {
-  return `sound-${encodeURIComponent(token.replace(/[^a-z0-9]/gi, '-'))}`
-}
 
 interface Flashcard {
   id: string
@@ -18,13 +13,11 @@ interface Flashcard {
   pronunciation: string
   englishAnchor?: string
   pronounceDifficulty?: string
-  soundGuideLinks?: string[]
   tonePattern?: string
   toneHint?: string
   category: string
   level?: string
   lessonId?: string
-  audioFile?: string
   example: string
   translation: string
   culturalContext?: string
@@ -64,26 +57,10 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isFlipped, setIsFlipped] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
-  const [audio, setAudio] = useState<HTMLAudioElement | null>(null)
-  const [isPlaying, setIsPlaying] = useState(false)
   const [showEducationalContent, setShowEducationalContent] = useState(false)
-  const [audioError, setAudioError] = useState<string | null>(null)
 
   useEffect(() => {
     loadFlashcards()
-    
-    // Cleanup on unmount
-    return () => {
-      if (audio) {
-        audio.pause()
-        audio.removeEventListener('ended', () => setAudio(null))
-        setAudio(null)
-      }
-      // Cancel any ongoing speech synthesis
-      if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-        window.speechSynthesis.cancel()
-      }
-    }
   }, [category, limit])
 
   const loadFlashcards = async () => {
@@ -144,130 +121,6 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
     }
   }, [currentIndex, category, flashcards])
 
-  const playAudio = async (audioFile?: string) => {
-    if (typeof window === 'undefined') return
-    setAudioError(null)
-    
-    if (isPlaying) {
-      if (audio) {
-        audio.pause()
-        setIsPlaying(false)
-        setAudio(null)
-      }
-      return
-    }
-
-    const currentCard = flashcards[currentIndex]
-    if (!currentCard) return
-
-    // Try ElevenLabs first
-    const apiKey = process.env.NEXT_PUBLIC_ELEVENLABS_API_KEY
-    if (apiKey) {
-      try {
-        setIsPlaying(true)
-        const response = await fetch('https://api.elevenlabs.io/v1/text-to-speech/EXAVITQu4vr4xnSDxMaL', {
-          method: 'POST',
-          headers: {
-            'xi-api-key': apiKey,
-            'Content-Type': 'application/json',
-            'Accept': 'audio/mpeg'
-          },
-          body: JSON.stringify({
-            text: currentCard.shona,
-            model_id: 'eleven_multilingual_v2',
-            voice_settings: {
-              stability: 0.75,
-              similarity_boost: 0.85,
-              style: 0.4,
-              use_speaker_boost: true
-            }
-          })
-        })
-
-        if (response.ok) {
-          const audioBlob = await response.blob()
-          const audioUrl = URL.createObjectURL(audioBlob)
-          const newAudio = new Audio(audioUrl)
-          
-          newAudio.addEventListener('ended', () => {
-            setIsPlaying(false)
-            setAudio(null)
-            URL.revokeObjectURL(audioUrl)
-          })
-          
-          newAudio.addEventListener('error', () => {
-            setIsPlaying(false)
-            setAudioError('ElevenLabs audio failed. Using fallback.')
-            fallbackToTTS()
-          })
-          
-          setAudio(newAudio)
-          await newAudio.play()
-          return
-        }
-      } catch (error) {
-        console.error('ElevenLabs error:', error)
-        setIsPlaying(false)
-        setAudioError('ElevenLabs unavailable. Using fallback.')
-      }
-    }
-
-    // Fallback to local audio file or TTS
-    fallbackToTTS()
-  }
-
-  const fallbackToTTS = async () => {
-    const currentCard = flashcards[currentIndex]
-    if (!currentCard) return
-
-    // Try local audio file first
-    if (currentCard.audioFile) {
-      try {
-        const newAudio = new Audio(`/content/audio/${currentCard.audioFile}`)
-        newAudio.addEventListener('ended', () => {
-          setIsPlaying(false)
-          setAudio(null)
-        })
-        newAudio.addEventListener('error', () => {
-          setIsPlaying(false)
-          setAudioError('Audio file not found. Using text-to-speech.')
-          useBrowserTTS()
-        })
-        setAudio(newAudio)
-        await newAudio.play()
-        return
-      } catch (error) {
-        console.error('Local audio error:', error)
-        setAudioError('Audio file not found. Using text-to-speech.')
-      }
-    }
-
-    // Final fallback to browser TTS when no audio file or file failed
-    useBrowserTTS()
-  }
-
-  const useBrowserTTS = () => {
-    const currentCard = flashcards[currentIndex]
-    if (!currentCard) return
-
-    if ('speechSynthesis' in window) {
-      setAudioError('Using browser text-to-speech (limited quality)')
-      const utterance = new SpeechSynthesisUtterance(currentCard.shona)
-      utterance.lang = 'en-US' // Use English for better pronunciation
-      utterance.rate = 0.8
-      utterance.pitch = 1.0
-      utterance.onstart = () => setIsPlaying(true)
-      utterance.onend = () => setIsPlaying(false)
-      utterance.onerror = () => {
-        setIsPlaying(false)
-        setAudioError('Audio playback failed')
-      }
-      speechSynthesis.speak(utterance)
-    } else {
-      setAudioError('Audio not supported on this device')
-    }
-  }
-
   const nextCard = () => {
     setIsFlipped(false)
     setShowEducationalContent(false)
@@ -311,12 +164,6 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
 
   return (
     <div className="max-w-2xl mx-auto">
-      {audioError && (
-        <div className="text-center text-yellow-600 mb-4 p-3 bg-yellow-50 rounded-lg">
-          {audioError}
-        </div>
-      )}
-      
       {/* Progress indicator */}
       <div className="flex items-center justify-between mb-6">
         <div className="text-sm text-gray-600">
@@ -397,38 +244,6 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
                         {currentCard.toneHint}
                       </p>
                     )}
-                    {currentCard.soundGuideLinks && currentCard.soundGuideLinks.length > 0 && (
-                      <div className="mt-4 flex flex-wrap justify-center gap-2">
-                        {currentCard.soundGuideLinks.map((s) => (
-                          <Link
-                            key={s}
-                            href={`/sound-guide#${soundGuideHash(s)}`}
-                            className="text-xs rounded-full bg-white/80 px-3 py-1 font-medium text-accent-gold-900 ring-1 ring-accent-gold-300 hover:bg-accent-gold-50"
-                          >
-                            Sound Guide: {s}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
-
-                {/* Audio Section - Boxed at bottom */}
-                <div className="p-4 bg-gray-50 rounded-2xl border-2 border-gray-200">
-                  <div className="flex items-center justify-center">
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        playAudio(currentCard.audioFile)
-                      }}
-                      disabled={isPlaying}
-                      className="flex items-center space-x-3 px-6 py-3 bg-accent-green text-white rounded-xl hover:bg-accent-green-600 transition-colors disabled:opacity-50"
-                    >
-                      {isPlaying ? <FaPause /> : <FaPlay />}
-                      <span className="font-medium">
-                        {isPlaying ? 'Playing...' : 'Play Audio'}
-                      </span>
-                    </button>
                   </div>
                 </div>
 
@@ -443,7 +258,7 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 className="p-8 min-h-[500px]"
-                style={{ 
+                style={{
                   backfaceVisibility: 'hidden',
                   transform: 'rotateY(180deg)'
                 }}
@@ -471,25 +286,6 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
                   </div>
                 </div>
 
-                {/* Audio Section - Boxed at bottom */}
-                <div className="p-4 bg-gray-50 rounded-2xl border-2 border-gray-200">
-                  <div className="flex items-center justify-center">
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        playAudio(currentCard.audioFile)
-                      }}
-                      disabled={isPlaying}
-                      className="flex items-center space-x-3 px-6 py-3 bg-accent-green text-white rounded-xl hover:bg-accent-green-600 transition-colors disabled:opacity-50"
-                    >
-                      {isPlaying ? <FaPause /> : <FaPlay />}
-                      <span className="font-medium">
-                        {isPlaying ? 'Playing...' : 'Play Audio'}
-                      </span>
-                    </button>
-                  </div>
-                </div>
-
                 {/* Educational Content Toggle */}
                 <div className="text-center mt-6">
                   <button
@@ -503,7 +299,7 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
                     <span>Learn More</span>
                   </button>
                 </div>
-                
+
                 {showEducationalContent && (
                   <motion.div
                     initial={{ opacity: 0, height: 0 }}
@@ -561,7 +357,7 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
           <FaArrowLeft />
           <span>Previous</span>
         </button>
-        
+
         <button
           onClick={nextCard}
           className="flex items-center space-x-2 px-6 py-3 bg-accent-green hover:bg-accent-green-600 text-white rounded-xl shadow-lg transition-all"
@@ -572,4 +368,4 @@ export default function FlashcardDeck({ category, limit = 10 }: FlashcardDeckPro
       </div>
     </div>
   )
-} 
+}

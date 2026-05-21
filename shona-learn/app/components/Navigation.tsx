@@ -1,6 +1,6 @@
 'use client'
 import { useRouter, usePathname } from 'next/navigation'
-import { FaHome, FaBook, FaUser, FaClone, FaHeadphones, FaMicrophone, FaWaveSquare } from 'react-icons/fa'
+import { FaBook, FaUser, FaClone, FaGamepad, FaScroll } from 'react-icons/fa'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 export default function Navigation() {
@@ -9,12 +9,10 @@ export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const navItems = [
-    { href: '/', icon: FaHome, label: 'Home', ariaLabel: 'Go to home page' },
-    { href: '/learn', icon: FaBook, label: 'Learn', ariaLabel: 'Go to learning lessons' },
-    { href: '/sound-guide', icon: FaHeadphones, label: 'Sounds', ariaLabel: 'Open Shona Sound Guide' },
-    { href: '/practice/sounds', icon: FaWaveSquare, label: 'Drills', ariaLabel: 'Open pronunciation sound drills' },
-    { href: '/pronunciation', icon: FaMicrophone, label: 'Speak', ariaLabel: 'Open pronunciation practice' },
+    { href: '/learn', icon: FaBook, label: 'Lessons', ariaLabel: 'Go to learning lessons' },
     { href: '/flashcards', icon: FaClone, label: 'Flashcards', ariaLabel: 'Go to vocabulary flashcards' },
+    { href: '/games', icon: FaGamepad, label: 'Games', ariaLabel: 'Go to learning games' },
+    { href: '/quests', icon: FaScroll, label: 'Quests', ariaLabel: 'Go to quests' },
     { href: '/profile', icon: FaUser, label: 'Profile', ariaLabel: 'Go to user profile' },
   ]
 

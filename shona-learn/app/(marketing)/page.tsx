@@ -20,25 +20,25 @@ const VALUE_PILLARS = [
     title: 'Diaspora confidence',
     shona: 'Kumba kuri mumoyo',
     description:
-      'Built for people who heard Shona growing up and now want to speak with confidence at home, weddings, and family calls.',
+      'Built for people who heard Shona growing up and now want to read and write with confidence at home, weddings, and family calls.',
     span: 'md:col-span-1',
     accent: 'from-[#ef3340]/20 via-transparent to-transparent',
     icon: '🌍',
   },
   {
-    title: 'Pronunciation studio',
-    shona: 'Kudzidzira matauriro',
+    title: 'Spaced-repetition flashcards',
+    shona: 'Kudzokorora',
     description:
-      'Train rhythm, tone, and articulation with guided audio loops designed around real Zimbabwean speaking patterns.',
+      'Vocabulary decks organised by unit and difficulty so words you learn today stick around long enough to use tomorrow.',
     span: 'md:col-span-1',
     accent: 'from-[#0d8aed]/20 via-transparent to-transparent',
-    icon: '🎙️',
+    icon: '🃏',
   },
   {
     title: 'Progress you can feel',
     shona: 'Kufambira mberi',
     description:
-      'Micro-lessons, quests, and memory games stack into speaking ability even when you only have ten minutes.',
+      'Micro-lessons, quests, and cultural quiz games stack into real language ability even when you only have ten minutes.',
     span: 'md:col-span-2',
     accent: 'from-emerald-400/20 via-transparent to-transparent',
     icon: '⚡',
@@ -49,24 +49,24 @@ const EXPERIENCE_STEPS = [
   {
     step: '01',
     title: 'Enter the courtyard',
-    body: 'Start with everyday greetings and confidence-building listening drills that feel welcoming from the first tap.',
+    body: 'Start with everyday greetings and bite-sized lessons that feel welcoming from the first tap.',
   },
   {
     step: '02',
-    title: 'Build your voice',
-    body: 'Combine pronunciation studio, guided conversation practice, and culturally grounded vocabulary to sound natural.',
+    title: 'Build your vocabulary',
+    body: 'Move through curated units with flashcards, translation practice, and culturally grounded examples.',
   },
   {
     step: '03',
-    title: 'Speak with pride',
-    body: 'Unlock story games and real-life phrase missions designed for family moments, travel, and community spaces.',
+    title: 'Play and reinforce',
+    body: 'Memory match, cultural quizzes, and story-completion games turn what you learned into something you remember.',
   },
 ] as const
 
 const IMPACT_METRICS = [
   { value: '5-10 min', label: 'daily sessions', tone: 'text-[#fce300]' },
-  { value: 'Audio-first', label: 'speaking flow', tone: 'text-[#7dd3fc]' },
-  { value: 'Culture-led', label: 'lesson design', tone: 'text-[#86efac]' },
+  { value: 'Culture-led', label: 'lesson design', tone: 'text-[#7dd3fc]' },
+  { value: 'Spaced repetition', label: 'built in', tone: 'text-[#86efac]' },
 ] as const
 
 const CULTURE_NOTES = [
@@ -167,7 +167,7 @@ export default function Home() {
                 <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-[#fce300]/40 via-[#fffdf7] to-[#ef3340]/20 blur-2xl" aria-hidden />
                 <div className="relative space-y-4 rounded-3xl border border-[#e9dcc0] bg-white/95 p-5 shadow-2xl shadow-[#b9a06a]/20 sm:p-6">
                   <div className="rounded-2xl border border-[#eadfca] bg-[#fffaf0] p-4">
-                    <p className="text-xs font-bold uppercase tracking-wider text-[#0f5132]">Live phrase stream</p>
+                    <p className="text-xs font-bold uppercase tracking-wider text-[#0f5132]">Phrases you will learn</p>
                     <div className="mt-3 space-y-2">
                       {HERO_WORDS.map((word) => (
                         <div key={word.shona} className="flex items-center justify-between rounded-xl bg-white px-3 py-2 ring-1 ring-[#efe3cc]">
@@ -186,23 +186,23 @@ export default function Home() {
 
                   <div className="rounded-2xl border border-[#eadfca] bg-[#fffaf0] p-4">
                     <div className="flex items-center justify-between">
-                      <p className="text-sm font-semibold text-[#1f2937]">Rhythm and tone tracker</p>
+                      <p className="text-sm font-semibold text-[#1f2937]">Lesson progress</p>
                       <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-700">
-                        Active
+                        Tracked
                       </span>
                     </div>
                     <div className="mt-3 h-2 overflow-hidden rounded-full bg-[#ece7d8]">
                       <div className="h-full w-3/4 rounded-full bg-gradient-to-r from-[#009739] via-[#fce300] to-[#ef3340]" />
                     </div>
-                    <p className="mt-2 text-xs text-[#6b7280]">You are sounding more natural every session.</p>
+                    <p className="mt-2 text-xs text-[#6b7280]">Bite-sized units, quests, and reviews keep you moving.</p>
                   </div>
 
                   <div className="grid grid-cols-2 gap-3">
                     <Link
-                      href="/pronunciation"
+                      href="/learn"
                       className="rounded-xl border border-[#e2d7bf] bg-white px-3 py-2 text-center text-sm font-semibold text-[#1f2937] transition hover:bg-[#fff6dd]"
                     >
-                      Pronunciation lab
+                      Lessons
                     </Link>
                     <Link
                       href="/flashcards"
@@ -232,7 +232,7 @@ export default function Home() {
             <span className="hidden sm:inline text-[#c4b08a]" aria-hidden>
               ·
             </span>
-            <span>Voice rhythm coaching</span>
+            <span>Bite-sized daily lessons</span>
             <span className="hidden sm:inline text-[#c4b08a]" aria-hidden>
               ·
             </span>
@@ -335,10 +335,10 @@ export default function Home() {
                 Start learning now
               </Link>
               <Link
-                href="/pronunciation"
+                href="/flashcards"
                 className="inline-flex items-center justify-center rounded-2xl border border-white/35 bg-white/15 px-10 py-4 text-base font-bold text-white transition hover:bg-white/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Train pronunciation
+                Try a flashcard deck
               </Link>
             </div>
           </div>
