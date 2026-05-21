@@ -1,4 +1,5 @@
 'use client'
+import { useEffect, useState } from 'react'
 import { FaLock, FaCheck } from 'react-icons/fa'
 
 export type LessonRowLesson = {
@@ -16,6 +17,18 @@ type LessonRowProps = {
   onClick: () => void
 }
 
+function hasSavedProgress(lessonId: string): boolean {
+  if (typeof window === 'undefined') return false
+  try {
+    const raw = localStorage.getItem(`lesson_${lessonId}_progress`)
+    if (!raw) return false
+    const n = parseInt(raw, 10)
+    return Number.isFinite(n) && n > 0
+  } catch {
+    return false
+  }
+}
+
 export default function LessonRow({
   lesson,
   completed,
@@ -24,6 +37,10 @@ export default function LessonRow({
   isNext,
   onClick,
 }: LessonRowProps) {
+  const [resumable, setResumable] = useState(false)
+  useEffect(() => {
+    if (!completed) setResumable(hasSavedProgress(lesson.id))
+  }, [lesson.id, completed])
   return (
     <button
       type="button"
@@ -48,7 +65,7 @@ export default function LessonRow({
       ) : null}
       {!completed && isNext && !isLocked ? (
         <span className="text-sm font-bold text-white bg-gradient-to-r from-green-500 to-green-600 px-3 py-1.5 rounded-xl">
-          {score > 0 ? 'Continue' : 'Start'}
+          {resumable ? 'Continue' : 'Start'}
         </span>
       ) : null}
     </button>

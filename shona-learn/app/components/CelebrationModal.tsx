@@ -8,9 +8,18 @@ interface CelebrationModalProps {
   score: number
   lessonTitle: string
   onClose: () => void
+  onNextLesson?: () => void
+  nextLessonTitle?: string
 }
 
-export default function CelebrationModal({ isOpen, score, lessonTitle, onClose }: CelebrationModalProps) {
+export default function CelebrationModal({
+  isOpen,
+  score,
+  lessonTitle,
+  onClose,
+  onNextLesson,
+  nextLessonTitle,
+}: CelebrationModalProps) {
   const [showConfetti, setShowConfetti] = useState(false)
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
 
@@ -198,16 +207,39 @@ export default function CelebrationModal({ isOpen, score, lessonTitle, onClose }
                   )}
                 </motion.div>
 
-                {/* Continue button */}
-                <motion.button
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1 }}
-                  onClick={onClose}
-                  className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-4 rounded-xl hover:opacity-90 transition-opacity"
-                >
-                  Continue Learning
-                </motion.button>
+                {/* Action buttons */}
+                {onNextLesson ? (
+                  <div className="space-y-3">
+                    <motion.button
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 1 }}
+                      onClick={onNextLesson}
+                      className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-4 rounded-xl hover:opacity-90 transition-opacity"
+                    >
+                      {nextLessonTitle ? `Next lesson: ${nextLessonTitle} →` : 'Next lesson →'}
+                    </motion.button>
+                    <motion.button
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 1.05 }}
+                      onClick={onClose}
+                      className="w-full bg-white border-2 border-gray-200 text-gray-700 font-semibold py-3 rounded-xl hover:bg-gray-50 transition-colors"
+                    >
+                      Back to lessons
+                    </motion.button>
+                  </div>
+                ) : (
+                  <motion.button
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1 }}
+                    onClick={onClose}
+                    className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-4 rounded-xl hover:opacity-90 transition-opacity"
+                  >
+                    Continue Learning
+                  </motion.button>
+                )}
               </div>
             </motion.div>
           </motion.div>

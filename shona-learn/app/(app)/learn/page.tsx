@@ -5,16 +5,13 @@ import { useSearchParams } from 'next/navigation'
 import { ProtectedRoute } from '../../../lib/auth'
 import LessonCard from '../../components/LessonCard'
 import ExerciseModal from '../../components/ExerciseModal'
-import HeartDisplay from '../../components/HeartDisplay'
+import CelebrationModal from '../../components/CelebrationModal'
 import LoadingSpinner from '../../components/LoadingSpinner'
 import ErrorBoundary from '../../components/ErrorBoundary'
-import AuthError from '../../components/AuthError'
 import StageSection, { type PathStage } from '../../components/learning-path/StageSection'
 import CheckpointModal from '../../components/learning-path/CheckpointModal'
-import PathVariantOnboarding from '../../components/learning-path/PathVariantOnboarding'
 import type { LessonRowLesson } from '../../components/learning-path/LessonRow'
 import { useErrorHandler } from '@/lib/error-handling'
-import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 type LearnLesson = LessonRowLesson & {
@@ -59,20 +56,31 @@ function groupLessonsByCategory(lessons: LearnLesson[]): Record<string, LearnLes
 }
 
 function findNextLessonId(
-  stages: PathStage[],
+  stages: PathStage[] | null,
   lessonsByCategory: Record<string, LearnLesson[]>,
-  progress: Record<string, { completed?: boolean; score?: number }>
+  validLessons: LearnLesson[],
+  progress: Record<string, { completed?: boolean; score?: number }>,
+  excludeLessonId?: string
 ): string | null {
-  for (const stage of stages) {
-    for (const unit of stage.units) {
-      if (unit.status === 'locked') continue
-      const cat = unit.lessonId
-      if (!cat) continue
-      const list = lessonsByCategory[cat] || []
-      for (const lesson of list) {
-        if (!progress[lesson.id]?.completed) return lesson.id
+  if (stages && stages.length > 0) {
+    for (const stage of stages) {
+      for (const unit of stage.units) {
+        if (unit.status === 'locked') continue
+        const cat = unit.lessonId
+        if (!cat) continue
+        const list = lessonsByCategory[cat] || []
+        for (const lesson of list) {
+          if (lesson.id === excludeLessonId) continue
+          if (!progress[lesson.id]?.completed) return lesson.id
+        }
       }
     }
+    return null
+  }
+  // Fallback: flat order
+  for (const lesson of validLessons) {
+    if (lesson.id === excludeLessonId) continue
+    if (!progress[lesson.id]?.completed) return lesson.id
   }
   return null
 }
@@ -89,8 +97,12 @@ function LearnContent() {
   const [pathEnrollment, setPathEnrollment] = useState<PathEnrollment | null>(null)
   const [dueReviewCount, setDueReviewCount] = useState(0)
   const [checkpointUnitId, setCheckpointUnitId] = useState<string | null>(null)
-  const [pathStartSubmitting, setPathStartSubmitting] = useState(false)
   const [progressionMode, setProgressionMode] = useState(true)
+  const [celebrate, setCelebrate] = useState<{
+    score: number
+    lessonTitle: string
+    completedLessonId: string
+  } | null>(null)
   const searchParams = useSearchParams()
   const { handleError } = useErrorHandler()
 
@@ -100,9 +112,6 @@ function LearnContent() {
 
   const fetchProgress = useCallback(async () => {
     try {
-      const token = getToken()
-      if (!token && !BETA_OPEN_ACCESS) return
-
       const res = await fetch('/api/progress', { headers: { ...apiAuthHeaders() } })
 
       if (res.ok) {
@@ -112,22 +121,14 @@ function LearnContent() {
           return acc
         }, {})
         setProgress(progressMap)
-      } else if (res.status === 401 && !BETA_OPEN_ACCESS) {
-        handleError(new Error('Authentication expired'))
-        if (typeof window !== 'undefined') {
-          window.location.href = '/login'
-        }
       }
     } catch (error) {
       console.error('Failed to fetch progress:', error)
-      handleError(error)
     }
-  }, [handleError])
+  }, [])
 
   const fetchDueReviews = useCallback(async () => {
     try {
-      const token = getToken()
-      if (!token && !BETA_OPEN_ACCESS) return
       const res = await fetch('/api/reviews/due', {
         headers: { ...apiAuthHeaders() },
       })
@@ -142,18 +143,10 @@ function LearnContent() {
 
   const fetchLearningPath = useCallback(async (): Promise<boolean> => {
     try {
-      const token = getToken()
-      if (!token && !BETA_OPEN_ACCESS) return false
       const res = await fetch('/api/learning-path?slug=core', {
         headers: { ...apiAuthHeaders() },
       })
-      if (res.status === 404) {
-        setPathStages(null)
-        setPathEnrollment(null)
-        setProgressionMode(false)
-        return false
-      }
-      if (!res.ok) {
+      if (res.status === 404 || !res.ok) {
         setPathStages(null)
         setPathEnrollment(null)
         setProgressionMode(false)
@@ -173,40 +166,16 @@ function LearnContent() {
     }
   }, [])
 
-  const handlePathVariantChoose = async (variant: 'heritage' | 'new_learner' | 'partner' | 'default') => {
-    try {
-      const token = getToken()
-      if (!token && !BETA_OPEN_ACCESS) {
-        handleError(new Error('Authentication required'))
-        return
-      }
-      setPathStartSubmitting(true)
-      const res = await fetch('/api/learning-path/start', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          ...apiAuthHeaders(),
-        },
-        body: JSON.stringify({ learningPathSlug: 'core', pathVariant: variant }),
-      })
-      if (!res.ok) {
-        handleError(new Error('Could not start learning path'))
-        return
-      }
-      await fetchLearningPath()
-    } catch (e) {
-      handleError(e)
-    } finally {
-      setPathStartSubmitting(false)
-    }
-  }
-
   useEffect(() => {
     const init = async () => {
       if (typeof window !== 'undefined') {
         const userData = localStorage.getItem('user')
         if (userData) {
-          setUser(JSON.parse(userData))
+          try {
+            setUser(JSON.parse(userData))
+          } catch {
+            /* ignore */
+          }
         }
       }
 
@@ -229,11 +198,6 @@ function LearnContent() {
     try {
       setLessonsLoading(true)
       setLessonsError(null)
-      const token = getToken()
-      if (!token && !BETA_OPEN_ACCESS) {
-        setLessonsLoading(false)
-        return
-      }
 
       const res = await fetch('/api/lessons', {
         headers: { ...apiAuthHeaders() },
@@ -262,14 +226,8 @@ function LearnContent() {
     }
   }
 
-  const handleLessonComplete = async (lessonId: string, score: number) => {
+  const handleLessonComplete = async (lessonId: string, lessonTitle: string, score: number) => {
     try {
-      const token = getToken()
-      if (!token && !BETA_OPEN_ACCESS) {
-        handleError(new Error('Authentication required'))
-        return
-      }
-
       const res = await fetch('/api/progress', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', ...apiAuthHeaders() },
@@ -279,7 +237,7 @@ function LearnContent() {
       if (res.ok) {
         if (typeof window !== 'undefined') {
           const userData = JSON.parse(localStorage.getItem('user') || '{}')
-          userData.xp += score
+          userData.xp = (userData.xp || 0) + score
           localStorage.setItem('user', JSON.stringify(userData))
           setUser(userData)
         }
@@ -287,12 +245,18 @@ function LearnContent() {
         await fetchLearningPath()
         await fetchDueReviews()
         setSelectedLesson(null)
+        setCelebrate({ score, lessonTitle, completedLessonId: lessonId })
       } else {
-        handleError(new Error('Failed to save progress'))
+        // Even on failure, still show celebration so progress feels real;
+        // surface the error via toast/log but don't block the UX.
+        console.warn('Progress POST failed:', res.status)
+        setSelectedLesson(null)
+        setCelebrate({ score, lessonTitle, completedLessonId: lessonId })
       }
     } catch (error) {
       console.error('Failed to complete lesson:', error)
-      handleError(error)
+      setSelectedLesson(null)
+      setCelebrate({ score, lessonTitle, completedLessonId: lessonId })
     }
   }
 
@@ -303,7 +267,24 @@ function LearnContent() {
   }
 
   if (lessonsError) {
-    return <AuthError error={(lessonsError as Error)?.message || 'Failed to load lessons'} onRetry={() => { fetchLessons(); fetchProgress(); }} />
+    return (
+      <div className="min-h-screen bg-[#fffdf7] flex items-center justify-center px-4">
+        <div className="max-w-md text-center bg-white rounded-3xl p-8 shadow-soft border border-amber-100">
+          <div className="text-5xl mb-4">📡</div>
+          <h2 className="text-xl font-bold text-gray-800 mb-2">We&apos;re loading your lessons</h2>
+          <p className="text-gray-600 mb-6">
+            We couldn&apos;t reach the lesson server. Try again in a moment.
+          </p>
+          <button
+            type="button"
+            onClick={() => { fetchLessons(); fetchProgress(); }}
+            className="bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold px-6 py-3 rounded-xl hover:opacity-90"
+          >
+            Retry
+          </button>
+        </div>
+      </div>
+    )
   }
 
   let validLessons = lessons.filter(
@@ -319,8 +300,7 @@ function LearnContent() {
   const isFirstTimeUser =
     progressionMode && pathStages && !lessonsLoading && validLessons.length > 0 && completedCount === 0 && !questFilter
 
-  const nextLessonId =
-    progressionMode && pathStages ? findNextLessonId(pathStages, lessonsByCategory, progress) : null
+  const nextLessonId = findNextLessonId(pathStages, lessonsByCategory, validLessons, progress)
 
   const firstLessonForWelcome = (() => {
     if (!pathStages) return validLessons[0] || null
@@ -334,10 +314,18 @@ function LearnContent() {
     return validLessons[0] || null
   })()
 
+  // For celebration "next lesson" calculation, exclude the lesson just completed.
+  const nextAfterCompletedId = celebrate
+    ? findNextLessonId(pathStages, lessonsByCategory, validLessons, progress, celebrate.completedLessonId)
+    : null
+  const nextAfterCompletedLesson = nextAfterCompletedId
+    ? validLessons.find((l) => l.id === nextAfterCompletedId) || null
+    : null
+
   return (
     <ErrorBoundary>
       <ProtectedRoute>
-        <div className="min-h-screen bg-app-surface">
+        <div className="min-h-screen bg-[#fffdf7]">
           <div className="container mx-auto px-4 py-8 max-w-3xl">
             <div className="flex items-center justify-between mb-8">
               <div>
@@ -345,14 +333,21 @@ function LearnContent() {
                   {questFilter ? `Quest: ${questFilter}` : 'Learn Shona'}
                 </h1>
               </div>
-              <HeartDisplay hearts={user?.hearts || 0} />
             </div>
 
             {!questFilter && progressionMode && pathStages && !pathEnrollment && !selectedLesson ? (
-              <PathVariantOnboarding
-                onChoose={(v) => void handlePathVariantChoose(v)}
-                dismissing={pathStartSubmitting}
-              />
+              <div className="mb-6 rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900 flex flex-wrap items-center gap-3">
+                <span>
+                  <span className="font-semibold">Tip:</span> You can pick a learning style (heritage, new learner,
+                  partner) anytime from your profile.
+                </span>
+                <Link
+                  href="/profile"
+                  className="text-emerald-800 underline font-semibold whitespace-nowrap"
+                >
+                  Choose your learning style →
+                </Link>
+              </div>
             ) : null}
 
             {dueReviewCount > 0 && !questFilter ? (
@@ -412,8 +407,17 @@ function LearnContent() {
             )}
 
             {validLessons.length === 0 ? (
-              <div className="text-center text-yellow-600 py-8">
-                No valid lessons available. Please check back later or contact support if this issue persists.
+              <div className="text-center bg-white rounded-3xl p-8 shadow-soft border border-amber-100 max-w-md mx-auto">
+                <div className="text-5xl mb-4">📚</div>
+                <h3 className="font-bold text-gray-800 mb-2">We&apos;re loading your lessons</h3>
+                <p className="text-gray-600 mb-4">Try refreshing in a moment.</p>
+                <button
+                  type="button"
+                  onClick={() => { fetchLessons(); fetchProgress(); }}
+                  className="bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold px-6 py-3 rounded-xl hover:opacity-90"
+                >
+                  Retry
+                </button>
               </div>
             ) : progressionMode && pathStages && !questFilter ? (
               <div className="flex flex-col">
@@ -458,9 +462,29 @@ function LearnContent() {
           <ExerciseModal
             lesson={selectedLesson}
             onClose={() => setSelectedLesson(null)}
-            onComplete={(score) => handleLessonComplete(selectedLesson.id, score)}
+            onComplete={(score) =>
+              handleLessonComplete(selectedLesson.id, selectedLesson.title, score)
+            }
           />
         )}
+
+        {celebrate ? (
+          <CelebrationModal
+            isOpen={!!celebrate}
+            score={celebrate.score}
+            lessonTitle={celebrate.lessonTitle}
+            onClose={() => setCelebrate(null)}
+            onNextLesson={
+              nextAfterCompletedLesson
+                ? () => {
+                    setCelebrate(null)
+                    setSelectedLesson(nextAfterCompletedLesson)
+                  }
+                : undefined
+            }
+            nextLessonTitle={nextAfterCompletedLesson?.title}
+          />
+        ) : null}
 
         {checkpointUnitId ? (
           <CheckpointModal

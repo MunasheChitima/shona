@@ -5,7 +5,6 @@ import { FaTrophy, FaFire, FaStar, FaBook, FaEdit, FaSave, FaTimes } from 'react
 import { motion } from 'framer-motion'
 import LoadingSpinner from '../../components/LoadingSpinner'
 import ErrorBoundary from '../../components/ErrorBoundary'
-import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 const FLASHCARD_PRACTICE_KEY = 'flashcard_practice_v1'
@@ -58,7 +57,7 @@ export default function Profile() {
   } | null>(null)
   const [pathProgress, setPathProgress] = useState<PathProgressApi | null>(null)
   const [completedLessons, setCompletedLessons] = useState(0)
-  const [totalLessons, setTotalLessons] = useState(60)
+  const [totalLessons, setTotalLessons] = useState<number | null>(null)
   const [achievements, setAchievements] = useState<AchievementRow[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [isEditing, setIsEditing] = useState(false)
@@ -117,17 +116,12 @@ export default function Profile() {
       setUser(userData)
       setEditedName(userData.name ?? '')
 
-      const token = typeof window !== 'undefined' ? localStorage.getItem('token') : ''
-      if (!token && !BETA_OPEN_ACCESS) {
-        setIsLoading(false)
-        return
-      }
-
       const headers = { ...apiAuthHeaders() }
-      const [progressRes, pathRes, lessonsRes] = await Promise.all([
+      const [progressRes, pathRes, lessonsRes, publicLessonsRes] = await Promise.all([
         fetch('/api/progress', { headers }),
         fetch('/api/learning-path/progress?slug=core', { headers }),
         fetch('/api/lessons', { headers }),
+        fetch('/api/lessons/public?limit=100'),
       ])
 
       let progressData: { completed?: boolean; lessonId: string }[] = []
@@ -141,7 +135,18 @@ export default function Profile() {
         const ld = await lessonsRes.json()
         lessons = ld.lessons || []
       }
-      const total = lessons.length || 60
+
+      // Prefer authoritative total from public lessons endpoint.
+      let total: number | null = null
+      if (publicLessonsRes.ok) {
+        const pld = await publicLessonsRes.json()
+        if (typeof pld?.totalLessons === 'number') {
+          total = pld.totalLessons
+        } else if (Array.isArray(pld?.lessons)) {
+          total = pld.lessons.length
+        }
+      }
+      if (!total) total = lessons.length || null
       setCompletedLessons(done)
       setTotalLessons(total)
 
@@ -212,14 +217,43 @@ export default function Profile() {
   if (isLoading) {
     return <LoadingSpinner fullScreen message="Loading profile..." />
   }
-  if (!user || typeof user !== 'object' || !user?.name) {
-    return <div className="text-center text-red-600 py-8">Failed to load user profile. Please try again.</div>
+
+  const displayName = user?.name || 'Beta Learner'
+  const displayInitial = displayName[0]?.toUpperCase() || 'U'
+
+  const resetProgress = () => {
+    if (typeof window === 'undefined') return
+    const ok = window.confirm(
+      'Reset local progress? This clears your onboarding state and any in-progress lesson saves on this device. Server progress is not affected yet.'
+    )
+    if (!ok) return
+    try {
+      // Targeted clears so we don't blow away unrelated keys.
+      const keys: string[] = []
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i)
+        if (!k) continue
+        if (
+          k === 'shona_onboarded' ||
+          k === FLASHCARD_PRACTICE_KEY ||
+          k === 'gameProgress' ||
+          k.startsWith('lesson_')
+        ) {
+          keys.push(k)
+        }
+      }
+      keys.forEach((k) => localStorage.removeItem(k))
+      // TODO: call /api/user/reset once the endpoint exists.
+    } catch {
+      /* ignore */
+    }
+    window.location.reload()
   }
 
   return (
     <ErrorBoundary>
       <ProtectedRoute>
-        <div className="min-h-screen bg-app-surface">
+        <div className="min-h-screen bg-[#fffdf7]">
           <div className="container mx-auto px-4 py-8 max-w-5xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -229,7 +263,7 @@ export default function Profile() {
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 <div className="relative flex-shrink-0">
                   <div className="w-28 h-28 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
-                    <span className="text-white text-4xl font-bold">{user?.name?.[0]?.toUpperCase() || 'U'}</span>
+                    <span className="text-white text-4xl font-bold">{displayInitial}</span>
                   </div>
                   <div className="absolute -bottom-2 -right-2 bg-yellow-400 rounded-full p-2">
                     <span className="text-lg">🇿🇼</span>
@@ -263,7 +297,7 @@ export default function Profile() {
                       </>
                     ) : (
                       <>
-                        <h1 className="text-2xl md:text-3xl font-bold text-gray-800">{user?.name || 'Learner'}</h1>
+                        <h1 className="text-2xl md:text-3xl font-bold text-gray-800">{displayName}</h1>
                         <button type="button" onClick={() => setIsEditing(true)} className="text-gray-500 hover:text-gray-700 p-2" aria-label="Edit name">
                           <FaEdit />
                         </button>
@@ -341,18 +375,28 @@ export default function Profile() {
                   className="bg-white rounded-3xl shadow-lg p-6"
                 >
                   <h2 className="text-lg font-bold text-gray-800 mb-4">Lessons</h2>
-                  <p className="text-2xl font-bold text-gray-800 mb-2">
-                    {completedLessons} / {totalLessons}
-                  </p>
-                  <p className="text-sm text-gray-600 mb-3">Lessons completed</p>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div
-                      className="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full"
-                      style={{
-                        width: `${totalLessons ? Math.round((completedLessons / totalLessons) * 100) : 0}%`,
-                      }}
-                    />
-                  </div>
+                  {totalLessons === null ? (
+                    <div className="space-y-2 animate-pulse">
+                      <div className="h-8 w-24 bg-gray-200 rounded"></div>
+                      <div className="h-4 w-32 bg-gray-100 rounded"></div>
+                      <div className="h-2 w-full bg-gray-200 rounded-full"></div>
+                    </div>
+                  ) : (
+                    <>
+                      <p className="text-2xl font-bold text-gray-800 mb-2">
+                        {completedLessons} / {totalLessons}
+                      </p>
+                      <p className="text-sm text-gray-600 mb-3">Lessons completed</p>
+                      <div className="w-full bg-gray-200 rounded-full h-2">
+                        <div
+                          className="bg-gradient-to-r from-green-400 to-blue-500 h-2 rounded-full"
+                          style={{
+                            width: `${totalLessons ? Math.round((completedLessons / totalLessons) * 100) : 0}%`,
+                          }}
+                        />
+                      </div>
+                    </>
+                  )}
                 </motion.div>
               </div>
 
@@ -383,6 +427,16 @@ export default function Profile() {
                   ))}
                 </ul>
               </motion.div>
+            </div>
+
+            <div className="mt-10 text-center">
+              <button
+                type="button"
+                onClick={resetProgress}
+                className="text-xs text-gray-500 underline hover:text-gray-700"
+              >
+                Reset progress on this device
+              </button>
             </div>
           </div>
         </div>

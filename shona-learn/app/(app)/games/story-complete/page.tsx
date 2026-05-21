@@ -4,7 +4,6 @@ import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import CelebrationModal from '../../../components/CelebrationModal'
 import { FaArrowLeft, FaCheck, FaTimes, FaLightbulb, FaRedo, FaClock, FaStar, FaBook } from 'react-icons/fa'
-import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 interface StoryBlank {
@@ -237,15 +236,15 @@ export default function StoryCompleteGame() {
   ]
 
   useEffect(() => {
-    const userData = localStorage.getItem('user')
+    const userData = typeof window !== 'undefined' ? localStorage.getItem('user') : null
     if (!userData) {
-      if (!BETA_OPEN_ACCESS) {
-        router.push('/login')
-        return
-      }
       setUser({ name: 'Beta tester', xp: 0 })
     } else {
-      setUser(JSON.parse(userData))
+      try {
+        setUser(JSON.parse(userData))
+      } catch {
+        setUser({ name: 'Beta tester', xp: 0 })
+      }
     }
   }, [])
 
@@ -412,7 +411,7 @@ export default function StoryCompleteGame() {
   if (!user) return null
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
+    <div className="min-h-screen bg-[#fffdf7]">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">

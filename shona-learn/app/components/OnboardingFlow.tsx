@@ -1,140 +1,148 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaArrowRight, FaBook, FaMicrophone, FaTrophy, FaUsers, FaCheck } from 'react-icons/fa'
+import { FaArrowRight, FaBook, FaTrophy, FaUsers, FaCheck } from 'react-icons/fa'
 
 interface OnboardingFlowProps {
   onComplete: () => void
 }
 
-const steps = [
-  {
-    id: 1,
-    title: "Welcome to Learn Shona! 🇿🇼",
-    description: "Start your journey to mastering Zimbabwe's beautiful language",
-    icon: FaBook,
-    content: (
-      <div className="text-center">
-        <div className="text-6xl mb-4">🎉</div>
-        <p className="text-lg text-gray-700">
-          Join thousands of learners discovering the rich culture and language of Zimbabwe.
-        </p>
-      </div>
-    )
-  },
-  {
-    id: 2,
-    title: "Interactive Lessons",
-    description: "Learn through fun, engaging exercises",
-    icon: FaBook,
-    content: (
-      <div className="space-y-4">
-        <div className="flex items-center space-x-3">
-          <div className="text-2xl">📚</div>
-          <div>
-            <h4 className="font-semibold">79 Comprehensive Lessons</h4>
-            <p className="text-sm text-gray-600">From basic greetings to advanced conversations</p>
-          </div>
-        </div>
-        <div className="flex items-center space-x-3">
-          <div className="text-2xl">🎯</div>
-          <div>
-            <h4 className="font-semibold">Multiple Exercise Types</h4>
-            <p className="text-sm text-gray-600">Practice vocabulary, pronunciation, and cultural context</p>
-          </div>
-        </div>
-        <div className="flex items-center space-x-3">
-          <div className="text-2xl">🌍</div>
-          <div>
-            <h4 className="font-semibold">Cultural Integration</h4>
-            <p className="text-sm text-gray-600">Learn the language within its cultural context</p>
-          </div>
-        </div>
-      </div>
-    )
-  },
-  {
-    id: 3,
-    title: "Voice Practice",
-    description: "Perfect your pronunciation with AI feedback",
-    icon: FaMicrophone,
-    content: (
-      <div className="space-y-4">
-        <div className="bg-blue-50 p-4 rounded-lg">
-          <div className="flex items-center space-x-3 mb-2">
-            <FaMicrophone className="text-blue-600 text-xl" />
-            <h4 className="font-semibold">Speech Recognition</h4>
-          </div>
-          <p className="text-sm text-gray-700">Get instant feedback on your pronunciation</p>
-        </div>
-        <div className="bg-green-50 p-4 rounded-lg">
-          <div className="flex items-center space-x-3 mb-2">
-            <div className="text-xl">🔊</div>
-            <h4 className="font-semibold">Native Audio</h4>
-          </div>
-          <p className="text-sm text-gray-700">Listen to authentic Shona pronunciation</p>
-        </div>
-      </div>
-    )
-  },
-  {
-    id: 4,
-    title: "Track Your Progress",
-    description: "Earn XP, unlock achievements, and level up",
-    icon: FaTrophy,
-    content: (
-      <div className="space-y-4">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="bg-yellow-50 p-4 rounded-lg text-center">
-            <div className="text-3xl mb-2">🏆</div>
-            <h4 className="font-semibold">Achievements</h4>
-            <p className="text-xs text-gray-600">Unlock rewards as you learn</p>
-          </div>
-          <div className="bg-purple-50 p-4 rounded-lg text-center">
-            <div className="text-3xl mb-2">⚡</div>
-            <h4 className="font-semibold">Streaks</h4>
-            <p className="text-xs text-gray-600">Learn daily to build streaks</p>
-          </div>
-          <div className="bg-green-50 p-4 rounded-lg text-center">
-            <div className="text-3xl mb-2">📈</div>
-            <h4 className="font-semibold">Progress</h4>
-            <p className="text-xs text-gray-600">Track your improvement</p>
-          </div>
-          <div className="bg-red-50 p-4 rounded-lg text-center">
-            <div className="text-3xl mb-2">❤️</div>
-            <h4 className="font-semibold">Hearts</h4>
-            <p className="text-xs text-gray-600">Learn without pressure</p>
-          </div>
-        </div>
-      </div>
-    )
-  },
-  {
-    id: 5,
-    title: "Learn Together",
-    description: "Join study groups and find learning partners",
-    icon: FaUsers,
-    content: (
-      <div className="space-y-4">
-        <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg text-center">
-          <FaUsers className="text-4xl text-green-600 mx-auto mb-3" />
-          <h4 className="font-semibold mb-2">Community Features</h4>
-          <p className="text-sm text-gray-700">
-            Connect with fellow learners, join study groups, and practice together
-          </p>
-        </div>
-        <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
-          <FaCheck className="text-green-500" />
-          <span>Safe and supportive environment</span>
-        </div>
-      </div>
-    )
-  }
-]
-
 export default function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
   const [currentStep, setCurrentStep] = useState(0)
   const [isCompleting, setIsCompleting] = useState(false)
+  const [lessonCount, setLessonCount] = useState<number | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      try {
+        const res = await fetch('/api/lessons/public?limit=100')
+        if (!res.ok) return
+        const data = await res.json()
+        const total = typeof data?.totalLessons === 'number'
+          ? data.totalLessons
+          : Array.isArray(data?.lessons)
+            ? data.lessons.length
+            : null
+        if (!cancelled && total) setLessonCount(total)
+      } catch {
+        /* ignore — we'll show a generic copy */
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  const lessonsLabel = lessonCount ? `${lessonCount} Lessons` : 'Comprehensive Lessons'
+
+  const steps = [
+    {
+      id: 1,
+      title: 'Welcome to Learn Shona! 🇿🇼',
+      description: "Start your journey to mastering Zimbabwe's beautiful language",
+      icon: FaBook,
+      content: (
+        <div className="text-center">
+          <div className="text-6xl mb-4">🎉</div>
+          <p className="text-lg text-gray-700">
+            Join fellow learners discovering the rich culture and language of Zimbabwe.
+          </p>
+        </div>
+      ),
+    },
+    {
+      id: 2,
+      title: 'Interactive Lessons',
+      description: 'Learn through fun, engaging exercises',
+      icon: FaBook,
+      content: (
+        <div className="space-y-4">
+          <div className="flex items-center space-x-3">
+            <div className="text-2xl">📚</div>
+            <div>
+              <h4 className="font-semibold">{lessonsLabel}</h4>
+              <p className="text-sm text-gray-600">From basic greetings to advanced conversations</p>
+            </div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="text-2xl">🎯</div>
+            <div>
+              <h4 className="font-semibold">Multiple Exercise Types</h4>
+              <p className="text-sm text-gray-600">Practice vocabulary, grammar, and cultural context</p>
+            </div>
+          </div>
+          <div className="flex items-center space-x-3">
+            <div className="text-2xl">🌍</div>
+            <div>
+              <h4 className="font-semibold">Cultural Integration</h4>
+              <p className="text-sm text-gray-600">Learn the language within its cultural context</p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 3,
+      title: 'Track Your Progress',
+      description: 'Earn XP, unlock achievements, and level up',
+      icon: FaTrophy,
+      content: (
+        <div className="space-y-4">
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-yellow-50 p-4 rounded-lg text-center">
+              <div className="text-3xl mb-2">🏆</div>
+              <h4 className="font-semibold">Achievements</h4>
+              <p className="text-xs text-gray-600">Unlock rewards as you learn</p>
+            </div>
+            <div className="bg-purple-50 p-4 rounded-lg text-center">
+              <div className="text-3xl mb-2">⚡</div>
+              <h4 className="font-semibold">Streaks</h4>
+              <p className="text-xs text-gray-600">Learn daily to build streaks</p>
+            </div>
+            <div className="bg-green-50 p-4 rounded-lg text-center">
+              <div className="text-3xl mb-2">📈</div>
+              <h4 className="font-semibold">Progress</h4>
+              <p className="text-xs text-gray-600">Track your improvement</p>
+            </div>
+            <div className="bg-blue-50 p-4 rounded-lg text-center">
+              <div className="text-3xl mb-2">🎯</div>
+              <h4 className="font-semibold">Quests</h4>
+              <p className="text-xs text-gray-600">Themed unit journeys</p>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 4,
+      title: 'Learn at Your Pace',
+      description: 'No pressure — just steady progress',
+      icon: FaUsers,
+      content: (
+        <div className="space-y-4">
+          <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg text-center">
+            <FaUsers className="text-4xl text-green-600 mx-auto mb-3" />
+            <h4 className="font-semibold mb-2">Built for Beta Learners</h4>
+            <p className="text-sm text-gray-700">
+              Lessons resume where you left off. Flashcards reinforce what you study.
+            </p>
+          </div>
+          <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
+            <FaCheck className="text-green-500" />
+            <span>Safe, supportive, no scary timers</span>
+          </div>
+        </div>
+      ),
+    },
+  ]
+
+  const handleComplete = () => {
+    setIsCompleting(true)
+    setTimeout(() => {
+      onComplete()
+    }, 200)
+  }
 
   const handleNext = () => {
     if (currentStep < steps.length - 1) {
@@ -142,17 +150,6 @@ export default function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
     } else {
       handleComplete()
     }
-  }
-
-  const handleComplete = () => {
-    setIsCompleting(true)
-    // Save onboarding completion to localStorage
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('onboardingCompleted', 'true')
-    }
-    setTimeout(() => {
-      onComplete()
-    }, 500)
   }
 
   const handleSkip = () => {
@@ -212,9 +209,7 @@ export default function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
               <p className="text-gray-600 text-center mb-6">{step.description}</p>
 
               {/* Content */}
-              <div className="mb-8">
-                {step.content}
-              </div>
+              <div className="mb-8">{step.content}</div>
             </motion.div>
           </AnimatePresence>
 
@@ -233,7 +228,7 @@ export default function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
               disabled={isCompleting}
               className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center space-x-2"
             >
-              <span>{currentStep === steps.length - 1 ? "Get Started" : "Next"}</span>
+              <span>{currentStep === steps.length - 1 ? 'Get Started' : 'Next'}</span>
               <FaArrowRight className="text-sm" />
             </button>
           </div>
@@ -241,4 +236,4 @@ export default function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
       </motion.div>
     </div>
   )
-} 
+}

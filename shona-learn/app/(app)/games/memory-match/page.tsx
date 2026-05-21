@@ -3,8 +3,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import CelebrationModal from '../../../components/CelebrationModal'
-import { FaArrowLeft, FaHeart, FaClock, FaStar, FaRedo } from 'react-icons/fa'
-import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
+import { FaArrowLeft, FaClock, FaStar, FaRedo } from 'react-icons/fa'
 import { apiAuthHeaders } from '@/lib/api-auth-headers'
 
 interface Card {
@@ -28,7 +27,6 @@ export default function MemoryMatchGame() {
   const [gameEnded, setGameEnded] = useState(false)
   const [showCelebration, setShowCelebration] = useState(false)
   const [mistakes, setMistakes] = useState(0)
-  const [hearts, setHearts] = useState(5)
 
   // Sample vocabulary pairs from the existing content
   const vocabularyPairs = [
@@ -47,15 +45,15 @@ export default function MemoryMatchGame() {
   ]
 
   useEffect(() => {
-    const userData = localStorage.getItem('user')
+    const userData = typeof window !== 'undefined' ? localStorage.getItem('user') : null
     if (!userData) {
-      if (!BETA_OPEN_ACCESS) {
-        router.push('/login')
-        return
-      }
       setUser({ name: 'Beta tester', xp: 0 })
     } else {
-      setUser(JSON.parse(userData))
+      try {
+        setUser(JSON.parse(userData))
+      } catch {
+        setUser({ name: 'Beta tester', xp: 0 })
+      }
     }
     initializeGame()
   }, [])
@@ -154,9 +152,6 @@ export default function MemoryMatchGame() {
           ))
           setFlippedCards([])
           setMistakes(prev => prev + 1)
-          if (hearts > 1) {
-            setHearts(prev => prev - 1)
-          }
         }, 1500)
       }
     }
@@ -211,7 +206,6 @@ export default function MemoryMatchGame() {
     setGameStarted(true)
     setTimeLeft(120)
     setMistakes(0)
-    setHearts(5)
     setMatchedPairs([])
     setFlippedCards([])
     setGameEnded(false)
@@ -228,7 +222,7 @@ export default function MemoryMatchGame() {
   if (!user) return null
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-green-50">
+    <div className="min-h-screen bg-[#fffdf7]">
       <div className="container mx-auto px-4 py-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
@@ -248,8 +242,8 @@ export default function MemoryMatchGame() {
         </div>
 
         {/* Game Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-white/20">
+        <div className="grid grid-cols-3 gap-4 mb-8">
+          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-amber-100/40">
             <div className="flex items-center space-x-2">
               <FaClock className="text-blue-600" />
               <div>
@@ -258,8 +252,8 @@ export default function MemoryMatchGame() {
               </div>
             </div>
           </div>
-          
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-white/20">
+
+          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-amber-100/40">
             <div className="flex items-center space-x-2">
               <FaStar className="text-yellow-500" />
               <div>
@@ -268,18 +262,8 @@ export default function MemoryMatchGame() {
               </div>
             </div>
           </div>
-          
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-white/20">
-            <div className="flex items-center space-x-2">
-              <FaHeart className="text-red-500" />
-              <div>
-                <p className="text-sm text-gray-600">Hearts</p>
-                <p className="text-xl font-bold text-gray-800">{hearts}</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-white/20">
+
+          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-amber-100/40">
             <div className="flex items-center space-x-2">
               <FaStar className="text-green-500" />
               <div>

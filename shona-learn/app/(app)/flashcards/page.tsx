@@ -58,27 +58,21 @@ function FlashcardsInner() {
   }, [searchParams])
 
   useEffect(() => {
-    const checkAuth = () => {
-      if (typeof window !== 'undefined') {
-        const userData = localStorage.getItem('user')
-        if (userData) {
-          try {
-            setUser(JSON.parse(userData))
-          } catch (error) {
-            console.error('Error parsing user data:', error)
-            router.push('/login')
-          }
-        } else if (!BETA_OPEN_ACCESS) {
-          router.push('/login')
-        } else {
+    if (typeof window !== 'undefined') {
+      const userData = localStorage.getItem('user')
+      if (userData) {
+        try {
+          setUser(JSON.parse(userData))
+        } catch (error) {
+          console.error('Error parsing user data:', error)
           setUser({ name: 'Beta tester', xp: 0 })
         }
+      } else {
+        setUser({ name: 'Beta tester', xp: 0 })
       }
-      setIsLoading(false)
     }
-
-    checkAuth()
-  }, [router])
+    setIsLoading(false)
+  }, [])
 
   useEffect(() => {
     const loadMeta = async () => {
@@ -165,9 +159,6 @@ function FlashcardsInner() {
   if (isLoading) {
     return <LoadingSpinner fullScreen message="Loading flashcards..." />
   }
-  if (!user) {
-    return <div className="text-center text-red-600 py-8">Failed to load user data. Please try again.</div>
-  }
 
   const renderCategoryCard = (category: (typeof categories)[0]) => {
     const unlocked = isCategoryUnlocked(category.id)
@@ -230,7 +221,7 @@ function FlashcardsInner() {
 
   return (
     <ErrorBoundary>
-      <div className="min-h-screen bg-app-surface">
+      <div className="min-h-screen bg-[#fffdf7]">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-gray-800 mb-4">Shona Flashcards</h1>
