@@ -5,13 +5,14 @@ import { prisma } from '@/lib/prisma'
 import { BETA_OPEN_ACCESS, BETA_COOKIE_NAME, SESSION_COOKIE_NAME } from '@/lib/beta-access'
 
 // Server-side auth utilities.
-// JWT_SECRET is mandatory in every environment — no insecure fallback.
-const JWT_SECRET = process.env.JWT_SECRET
-if (!JWT_SECRET) {
-  throw new Error('JWT_SECRET environment variable is required')
+// JWT_SECRET is mandatory at runtime — no insecure fallback. The check is
+// deferred (not at module import) so that `next build`'s page-data collection
+// pass doesn't crash when the env var is absent in the build environment.
+function getSecret(): string {
+  const s = process.env.JWT_SECRET
+  if (!s) throw new Error('JWT_SECRET environment variable is required')
+  return s
 }
-// Local non-null alias so TS narrows for the rest of the module.
-const SECRET: string = JWT_SECRET
 
 function parseExpiresIn(): SignOptions['expiresIn'] {
   const raw = process.env.JWT_EXPIRES_IN?.trim()
@@ -24,7 +25,7 @@ function parseExpiresIn(): SignOptions['expiresIn'] {
 }
 
 export function generateToken(userId: string): string {
-  return jwt.sign({ userId }, SECRET, {
+  return jwt.sign({ userId }, getSecret(), {
     algorithm: 'HS256',
     expiresIn: parseExpiresIn(),
   })
@@ -85,7 +86,7 @@ export async function verifyAuth(request: Request | NextRequest): Promise<string
   const token = bearerToken || cookieToken
   if (token) {
     try {
-      const decoded = jwt.verify(token, SECRET, { algorithms: ['HS256'] }) as { userId?: unknown }
+      const decoded = jwt.verify(token, getSecret(), { algorithms: ['HS256'] }) as { userId?: unknown }
       if (decoded && typeof decoded.userId === 'string') return decoded.userId
     } catch {
       // fall through — invalid/expired token
