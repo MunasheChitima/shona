@@ -5,7 +5,7 @@ import useSWR from 'swr'
 import FlashcardDeck from '../../components/FlashcardDeck'
 import ErrorBoundary from '../../components/ErrorBoundary'
 import { FaArrowLeft, FaLock } from 'react-icons/fa'
-import LoadingSpinner from '../../components/LoadingSpinner'
+import FlashcardsLoading from './loading'
 import { BETA_OPEN_ACCESS } from '@/lib/beta-access'
 
 // SWR keys — kept identical to /learn /quests /profile so cross-page
@@ -144,7 +144,7 @@ function FlashcardsInner() {
   void practiceRev
 
   if (user === null) {
-    return <LoadingSpinner fullScreen message="loading flashcards..." />
+    return <FlashcardsLoading />
   }
 
   const renderCategoryCard = (category: (typeof categories)[0]) => {
@@ -200,11 +200,13 @@ function FlashcardsInner() {
   return (
     <ErrorBoundary>
       <div className="min-h-screen bg-[#fffdf7]">
-        <div className="container mx-auto px-6 py-12 max-w-5xl">
-          <div className="mb-12">
-            <h1 className="text-3xl md:text-4xl font-medium tracking-tight text-stone-900 lowercase">flashcards</h1>
-            <p className="mt-2 text-stone-500 text-sm">tap to flip. tap a deck to start.</p>
-          </div>
+        <div className="container mx-auto px-6 py-8 md:py-10 max-w-5xl">
+          {!selectedCategory ? (
+            <div className="mb-10">
+              <h1 className="text-3xl md:text-4xl font-medium tracking-tight text-stone-900 lowercase">flashcards</h1>
+              <p className="mt-2 text-stone-500 text-sm">tap to flip. tap a deck to start.</p>
+            </div>
+          ) : null}
 
           {!selectedCategory ? (
             <div className="space-y-12">
@@ -229,25 +231,23 @@ function FlashcardsInner() {
             </div>
           ) : (
             <div>
-              <div className="flex items-center justify-between mb-8">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setSelectedCategory(null)
-                    router.push('/flashcards', { scroll: false })
-                  }}
-                  className="inline-flex items-center gap-2 px-4 py-2 text-stone-700 hover:text-stone-900 transition-colors lowercase"
-                >
-                  <FaArrowLeft className="w-3 h-3" />
-                  <span>back to categories</span>
-                </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setSelectedCategory(null)
+                  router.push('/flashcards', { scroll: false })
+                }}
+                className="inline-flex items-center gap-2 -ml-2 px-2 py-1 text-sm text-stone-500 hover:text-stone-900 transition-colors lowercase mb-3"
+              >
+                <FaArrowLeft className="w-3 h-3" />
+                <span>back to categories</span>
+              </button>
 
-                <h2 className="text-xl md:text-2xl font-medium tracking-tight text-stone-900 lowercase">
-                  {categories.find((c) => c.id === selectedCategory)?.name}
-                </h2>
-              </div>
+              <h2 className="text-2xl font-medium tracking-tight text-stone-900 lowercase mb-6">
+                {categories.find((c) => c.id === selectedCategory)?.name}
+              </h2>
 
-              <FlashcardDeck category={selectedCategory} limit={20} />
+              <FlashcardDeck category={selectedCategory} />
             </div>
           )}
         </div>
@@ -258,7 +258,7 @@ function FlashcardsInner() {
 
 export default function Flashcards() {
   return (
-    <Suspense fallback={<LoadingSpinner fullScreen message="loading flashcards..." />}>
+    <Suspense fallback={<FlashcardsLoading />}>
       <FlashcardsInner />
     </Suspense>
   )

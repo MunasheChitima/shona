@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { FaLock, FaCheck } from 'react-icons/fa'
+import { displayLessonTitle } from './learning-path/LessonRow'
 
 interface LessonCardProps {
   lesson: any
@@ -70,7 +71,7 @@ export default function LessonCard({ lesson, progress, onClick, locked }: Lesson
 
       {/* title */}
       <h3 className="mb-1.5 text-lg font-medium tracking-tight lowercase text-stone-900">
-        {lesson.title}
+        {displayLessonTitle(lesson)}
       </h3>
 
       {/* skill outcome */}

@@ -12,8 +12,18 @@ export type PathUnit = {
   orderIndex: number
   status: string
   completed?: boolean
+  /** Lesson-level rollup from the API for partial-progress display. */
+  lessonsTotal?: number
+  lessonsCompleted?: number
   missingPrerequisites?: string[]
   checkpointId?: string | null
+  /**
+   * `full` (default) renders the standard lesson sequence.
+   * `review` is sent by the API for heritage learners on units whose lessons
+   * they likely know passively; the UI will eventually render a shorter recall
+   * here. Threaded through but not yet consumed for rendering.
+   */
+  displayMode?: 'full' | 'review'
 }
 
 type ProgressMap = Record<string, { completed?: boolean; score?: number }>
@@ -48,6 +58,14 @@ export default function UnitSection({
     unit.unitType === 'checkpoint'
       ? !!unit.completed
       : unitLessonsComplete(lessons, progress) || !!unit.completed
+
+  // Lesson-level progress for a small "N/M" count beside the unit (bug #6).
+  const lessonsTotal =
+    typeof unit.lessonsTotal === 'number' && unit.lessonsTotal > 0 ? unit.lessonsTotal : lessons.length
+  const lessonsDone =
+    typeof unit.lessonsCompleted === 'number'
+      ? unit.lessonsCompleted
+      : lessons.filter((l) => progress[l.id]?.completed).length
 
   if (unit.unitType === 'checkpoint') {
     return (
@@ -97,6 +115,9 @@ export default function UnitSection({
       >
         {locked ? <FaLock className="text-gray-400 flex-shrink-0" /> : open ? <FaChevronDown /> : <FaChevronRight />}
         <span className="flex-1">{unit.title}</span>
+        {!locked && !complete && lessonsTotal > 0 ? (
+          <span className="text-xs text-gray-500 tabular-nums">{lessonsDone}/{lessonsTotal}</span>
+        ) : null}
         {complete ? <span className="text-green-600 text-sm">✅</span> : null}
         {!locked && unit.status === 'current' ? <span className="text-xs font-bold text-blue-600">Current</span> : null}
         {locked ? <span className="text-xs text-gray-400">Locked</span> : null}
@@ -121,6 +142,7 @@ export default function UnitSection({
                 score={p?.score}
                 isLocked={lessonLocked}
                 isNext={isNext}
+                displayMode={unit.displayMode}
                 onClick={() => onLessonClick(lesson)}
               />
             )

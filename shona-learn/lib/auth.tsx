@@ -77,28 +77,33 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let cancelled = false
 
-    const init = async () => {
-      try {
-        if (typeof window === 'undefined') return
+    const init = () => {
+      if (typeof window === 'undefined') return
 
-        // For open beta, make sure the visitor has a stable UUID cookie so
-        // the server can hydrate them to a per-visitor user row.
-        ensureBetaCookie()
+      // For open beta, make sure the visitor has a stable UUID cookie so
+      // the server can hydrate them to a per-visitor user row.
+      ensureBetaCookie()
 
-        // Hydrate UI immediately from cached profile (NOT auth-of-record).
-        const cached = localStorage.getItem(USER_STORAGE_KEY)
-        if (cached) {
-          try {
-            const parsed = JSON.parse(cached) as User
-            if (!cancelled) setUser(parsed)
-          } catch {
-            localStorage.removeItem(USER_STORAGE_KEY)
-          }
+      // Hydrate UI immediately from cached profile (NOT auth-of-record).
+      const cached = localStorage.getItem(USER_STORAGE_KEY)
+      if (cached) {
+        try {
+          const parsed = JSON.parse(cached) as User
+          if (!cancelled) setUser(parsed)
+        } catch {
+          localStorage.removeItem(USER_STORAGE_KEY)
         }
+      }
 
-        // Validate against the server using the cookie. If we have no user
-        // yet and the server accepts us, take the userId at face value but
-        // keep using cached profile for UI fields we don't get back here.
+      // First paint must not wait on the network. The moment we've read the
+      // cached user (present or not), stop gating render on isLoading. The
+      // server validation below runs in the background and reconciles.
+      if (!cancelled) setIsLoading(false)
+
+      // Validate against the server using the cookie in the background. If we
+      // have no user yet and the server accepts us, take the userId at face
+      // value but keep using cached profile for UI fields we don't get back.
+      void (async () => {
         try {
           const res = await fetch('/api/auth/validate', {
             credentials: 'include',
@@ -113,9 +118,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         } catch {
           // Network error — keep cached user, don't log out.
         }
-      } finally {
-        if (!cancelled) setIsLoading(false)
-      }
+      })()
     }
 
     init()
@@ -235,12 +238,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   const updateUser = (updates: Partial<User>) => {
-    if (user) {
-      const updatedUser = { ...user, ...updates }
-      setUser(updatedUser)
-      if (typeof window !== 'undefined') {
-        localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(updatedUser))
-      }
+    // In open beta the visitor is cookie-only and `user` is null, so the old
+    // `if (user)` guard made name edits silently no-op. Merge onto whatever we
+    // have (possibly nothing) so a beta visitor can still set their name and
+    // have it persist + update the greeting immediately.
+    const updatedUser = { ...((user ?? {}) as User), ...updates }
+    setUser(updatedUser)
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(updatedUser))
     }
   }
 

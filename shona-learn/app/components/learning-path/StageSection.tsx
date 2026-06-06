@@ -41,6 +41,20 @@ export default function StageSection({
   const unitsComplete = stage.units.filter((u) => u.completed).length
   const unitsTotal = stage.units.length
 
+  // Lesson-level rollup so the header advances the moment a single lesson is
+  // completed, instead of sitting at "0/4 units" until an entire unit is done
+  // (bug #6). Falls back to the live progress map when the API count is absent.
+  const lessonUnits = stage.units.filter((u) => u.unitType !== 'checkpoint')
+  const lessonsTotal = lessonUnits.reduce((sum, u) => {
+    if (typeof u.lessonsTotal === 'number') return sum + u.lessonsTotal
+    return sum + (u.lessonId ? (lessonsByCategory[u.lessonId]?.length ?? 0) : 0)
+  }, 0)
+  const lessonsComplete = lessonUnits.reduce((sum, u) => {
+    if (typeof u.lessonsCompleted === 'number') return sum + u.lessonsCompleted
+    const list = u.lessonId ? lessonsByCategory[u.lessonId] ?? [] : []
+    return sum + list.filter((l) => progress[l.id]?.completed).length
+  }, 0)
+
   return (
     <div
       className={`rounded-2xl border-2 overflow-hidden mb-4 ${stageLocked ? 'border-gray-200 bg-gray-50/80' : 'border-gray-200 bg-white shadow-sm'}`}
@@ -67,7 +81,12 @@ export default function StageSection({
           {stage.description ? <div className="text-sm text-gray-500 mt-0.5">{stage.description}</div> : null}
         </div>
         <div className="text-sm text-gray-600 whitespace-nowrap">
-          {unitsTotal > 0 ? (
+          {lessonsTotal > 0 ? (
+            <span>
+              {lessonsComplete}/{lessonsTotal} lessons
+              {unitsTotal > 0 && unitsComplete >= unitsTotal ? ' ✅' : ''}
+            </span>
+          ) : unitsTotal > 0 ? (
             <span>
               {unitsComplete}/{unitsTotal} units
               {unitsComplete >= unitsTotal ? ' ✅' : ''}

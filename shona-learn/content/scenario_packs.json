@@ -1,0 +1,119 @@
+{
+  "packs": [
+    {
+      "id": "call-gogo",
+      "title": "calling your gogo",
+      "subtitle": "a 3-minute phone call with grandma",
+      "emoji": "📞",
+      "whenToUse": "saturday afternoon catch-up call, asking how she's doing",
+      "estimatedMinutes": 8,
+      "difficulty": "beginner",
+      "phrases": [
+        {
+          "shona": "mhoroi ambuya",
+          "english": "hello, grandmother (respectful)",
+          "pronunciation": "mho-ro-i am-bu-ya",
+          "audioUrl": null,
+          "usageNote": "use mhoroi (with -i) when greeting elders. always greet before saying anything else.",
+          "needs_verification": false
+        },
+        {
+          "shona": "ndinonzi [your name]",
+          "english": "my name is [your name]",
+          "pronunciation": "ndi-no-nzi",
+          "audioUrl": null,
+          "usageNote": "introduce yourself even on the phone — gogo may not recognise the number.",
+          "needs_verification": false
+        },
+        {
+          "shona": "makadii ambuya?",
+          "english": "how are you, grandmother?",
+          "pronunciation": "ma-ka-dii am-bu-ya",
+          "audioUrl": null,
+          "usageNote": "always ask after their wellbeing right after greeting. cutting straight to business is rude.",
+          "needs_verification": false
+        },
+        {
+          "shona": "ndiripo, ndatenda",
+          "english": "i am well, thank you",
+          "pronunciation": "ndi-ri-po nda-ten-da",
+          "audioUrl": null,
+          "usageNote": "the standard polite reply when someone asks how you are.",
+          "needs_verification": false
+        },
+        {
+          "shona": "muri kuitei ambuya?",
+          "english": "what are you doing, grandmother?",
+          "pronunciation": "mu-ri ku-i-tei am-bu-ya",
+          "audioUrl": null,
+          "usageNote": "a warm small-talk opener — gives gogo room to share about her day.",
+          "needs_verification": false
+        },
+        {
+          "shona": "munhu wese ari sei?",
+          "english": "how is everyone?",
+          "pronunciation": "mu-nhu we-se a-ri sei",
+          "audioUrl": null,
+          "usageNote": "asks after the whole household — important in collective culture.",
+          "needs_verification": false
+        },
+        {
+          "shona": "fambai zvakanaka ambuya",
+          "english": "go well, grandmother (goodbye)",
+          "pronunciation": "fam-bai zva-ka-na-ka am-bu-ya",
+          "audioUrl": null,
+          "usageNote": "the standard farewell — wishes them a safe journey through the rest of the day.",
+          "needs_verification": false
+        }
+      ],
+      "dialogue": {
+        "context": "you call ambuya on saturday afternoon. she picks up.",
+        "turns": [
+          { "speaker": "gogo", "shona": "halo?", "english": "hello?", "audioUrl": null },
+          { "speaker": "learner", "shona": "mhoroi ambuya, ndinonzi [your name]", "english": "hello grandmother, my name is [your name]", "expected": true, "audioUrl": null },
+          { "speaker": "gogo", "shona": "ah, mwana wangu! makadii?", "english": "ah, my child! how are you?", "audioUrl": null },
+          { "speaker": "learner", "shona": "ndiripo ambuya, ndatenda. makadii imi?", "english": "i am well grandmother, thank you. and you?", "expected": true, "audioUrl": null },
+          { "speaker": "gogo", "shona": "ndiripo, zvakanaka", "english": "i am well, it is good", "audioUrl": null },
+          { "speaker": "learner", "shona": "muri kuitei ambuya?", "english": "what are you doing, grandmother?", "expected": true, "audioUrl": null },
+          { "speaker": "gogo", "shona": "ndiri kubika sadza", "english": "i am cooking sadza", "audioUrl": null },
+          { "speaker": "learner", "shona": "munhu wese ari sei?", "english": "how is everyone?", "expected": true, "audioUrl": null },
+          { "speaker": "gogo", "shona": "vose vari kunaka", "english": "they are all well", "audioUrl": null }
+        ]
+      },
+      "exercises": [
+        {
+          "id": "call-gogo-ex-1",
+          "type": "multiple_choice",
+          "question": "how do you respectfully greet your grandmother?",
+          "correctAnswer": "mhoroi ambuya",
+          "options": ["mhoroi ambuya", "mhoro shamwari", "fambai zvakanaka", "ndinonzi"],
+          "points": 10
+        },
+        {
+          "id": "call-gogo-ex-2",
+          "type": "translation",
+          "question": "translate: how are you, grandmother?",
+          "correctAnswer": "makadii ambuya",
+          "points": 10
+        },
+        {
+          "id": "call-gogo-ex-3",
+          "type": "multiple_choice",
+          "question": "ambuya says 'makadii?' — what do you reply?",
+          "correctAnswer": "ndiripo, ndatenda",
+          "options": ["kwete", "ndiripo, ndatenda", "ndinonzi", "hongu"],
+          "points": 10
+        },
+        {
+          "id": "call-gogo-ex-5",
+          "type": "translation",
+          "question": "translate: go well, grandmother",
+          "correctAnswer": "fambai zvakanaka ambuya",
+          "points": 10
+        }
+      ],
+      "culturalNote": "in shona culture, you always greet and ask after wellbeing before getting to the topic of the call. cutting straight to business reads as rude. using mhoroi (plural form) with elders shows respect even when you're talking to one person. ambuya is the verified word for grandmother — gogo is also widely used informally across zimbabwe.",
+      "needs_verification": false
+    }
+  ]
+}

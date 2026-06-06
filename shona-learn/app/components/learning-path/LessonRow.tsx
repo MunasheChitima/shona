@@ -14,7 +14,22 @@ type LessonRowProps = {
   score?: number
   isLocked: boolean
   isNext: boolean
+  /**
+   * Heritage learners get a condensed "quick review" version of certain units.
+   * When set to `'review'` we surface a small badge next to the title so the
+   * shorter interaction is anticipated.
+   */
+  displayMode?: 'full' | 'review'
   onClick: () => void
+}
+
+// Never surface a raw lesson id (e.g. "lesson-49") as a title. If a title is
+// missing/looks like an id we humanise it as a last resort (bug #5).
+export function displayLessonTitle(lesson: { id?: string; title?: string }): string {
+  const title = (lesson?.title ?? '').trim()
+  const looksLikeId = /^lesson[\s-]*\d+$/i.test(title)
+  if (title && !looksLikeId) return title
+  return 'untitled lesson'
 }
 
 function hasSavedProgress(lessonId: string): boolean {
@@ -35,6 +50,7 @@ export default function LessonRow({
   score = 0,
   isLocked,
   isNext,
+  displayMode = 'full',
   onClick,
 }: LessonRowProps) {
   const [resumable, setResumable] = useState(false)
@@ -60,10 +76,18 @@ export default function LessonRow({
         {!isLocked && !completed && isNext ? <span className="text-emerald-600">●</span> : null}
       </span>
       <span className={`flex-1 font-medium lowercase ${completed ? 'text-stone-500' : 'text-stone-900'}`}>
-        {lesson.title}
+        {displayLessonTitle(lesson)}
+        {displayMode === 'review' ? (
+          <span className="ml-2 align-middle rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-medium text-emerald-700 ring-1 ring-emerald-200 lowercase">
+            quick review
+          </span>
+        ) : null}
       </span>
       {completed && !isLocked ? (
-        <span className="text-sm text-emerald-700 font-medium tabular-nums">{score}%</span>
+        <span className="flex items-center gap-1.5 text-sm text-emerald-700 font-medium lowercase">
+          completed
+          {score > 0 ? <span className="text-stone-400 tabular-nums">· {score}%</span> : null}
+        </span>
       ) : null}
       {!completed && isNext && !isLocked ? (
         <span className="text-xs font-medium text-white bg-stone-900 px-3 py-1.5 rounded-full lowercase">

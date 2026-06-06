@@ -1,10 +1,13 @@
 'use client'
-import { useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import CelebrationModal from '../../../components/CelebrationModal'
-import { FaArrowLeft, FaCheck, FaTimes, FaQuestionCircle, FaRedo, FaClock, FaStar, FaGlobe, FaLightbulb } from 'react-icons/fa'
-import { apiAuthHeaders } from '@/lib/api-auth-headers'
+import { CountdownCircleTimer } from 'react-countdown-circle-timer'
+import { FaCheck, FaTimes, FaGlobeAfrica, FaQuestionCircle, FaLightbulb, FaFire, FaArrowRight } from 'react-icons/fa'
+import GameChrome from '../../../components/games/GameChrome'
+import StartScreen from '../../../components/games/StartScreen'
+import ResultsScreen from '../../../components/games/ResultsScreen'
+import StatPill from '../../../components/games/StatPill'
+import { shuffle, submitGameResult } from '../../../components/games/gameProgress'
 
 interface Question {
   id: string
@@ -13,527 +16,295 @@ interface Question {
   correctAnswer: string
   explanation: string
   category: string
-  difficulty: 'Easy' | 'Medium' | 'Hard'
   culturalContext: string
 }
 
-interface QuizState {
-  currentQuestionIndex: number
-  score: number
-  lives: number
-  streak: number
-  timeLeft: number
-  questionsAnswered: number
-  correctAnswers: number
-  gameStarted: boolean
-  gameEnded: boolean
-  showExplanation: boolean
-  selectedAnswer: string | null
-  isAnswerCorrect: boolean
-}
+const QUESTIONS: Question[] = [
+  { id: 'q1', question: 'What is the traditional Shona thumb piano called?', options: ['Mbira', 'Marimba', 'Hosho', 'Ngoma'], correctAnswer: 'Mbira', explanation: 'The mbira is a wooden board fitted with metal tines, played with the thumbs and fingers.', category: 'Music & Arts', culturalContext: 'The mbira is central to Shona spiritual life, often played in ceremonies to commune with ancestors.' },
+  { id: 'q2', question: 'What does "Mwari" refer to in Shona belief?', options: ['Ancestor spirit', 'Supreme God', 'Traditional healer', 'Tribal chief'], correctAnswer: 'Supreme God', explanation: 'Mwari is the Shona name for the Supreme Being, creator of all things.', category: 'Spirituality', culturalContext: 'Mwari is approached through ancestral spirits and is central to traditional Shona religion.' },
+  { id: 'q3', question: 'What is a "dare" in traditional Shona society?', options: ['A cooking pot', 'A meeting place for men', 'A type of dance', 'A farming tool'], correctAnswer: 'A meeting place for men', explanation: 'A dare is where Shona men gather to discuss community matters and make decisions.', category: 'Social Structure', culturalContext: 'The dare reflects the consultative nature of traditional Shona governance.' },
+  { id: 'q4', question: 'Which ancient city is the heart of Shona civilization?', options: ['Great Zimbabwe', 'Mapungubwe', 'Thulamela', 'Khami'], correctAnswer: 'Great Zimbabwe', explanation: 'Great Zimbabwe was the capital of the Kingdom of Zimbabwe and the largest ancient structure south of the Sahara.', category: 'History', culturalContext: 'It gave the modern country its name and showcases Shona stone-building mastery.' },
+  { id: 'q5', question: 'What is "kurova guva" in Shona tradition?', options: ['A wedding', 'A harvest festival', 'A burial', 'An ancestral ceremony'], correctAnswer: 'An ancestral ceremony', explanation: 'Kurova guva brings a deceased person’s spirit home to become a protective ancestor.', category: 'Spirituality', culturalContext: 'It keeps the bond between the living and the ancestors intact.' },
+  { id: 'q6', question: 'What does "ukama" mean in Shona culture?', options: ['Friendship', 'Kinship', 'Respect', 'Hospitality'], correctAnswer: 'Kinship', explanation: 'Ukama is the web of kinship relationships at the foundation of Shona society.', category: 'Social Structure', culturalContext: 'Ukama reaches beyond blood to spiritual and social bonds.' },
+  { id: 'q7', question: 'What is the traditional Shona shaker called?', options: ['Mbira', 'Hosho', 'Ngoma', 'Mukwa'], correctAnswer: 'Hosho', explanation: 'Hosho are gourd rattles filled with seeds, used to keep rhythm alongside the mbira.', category: 'Music & Arts', culturalContext: 'Hosho lay the rhythmic foundation of ceremonial Shona music.' },
+  { id: 'q8', question: 'What is "chimurenga" in Shona history?', options: ['A dance', 'A liberation struggle', 'A pottery style', 'A farming method'], correctAnswer: 'A liberation struggle', explanation: 'Chimurenga refers to the Shona uprisings against colonial rule.', category: 'History', culturalContext: 'The chimurenga wars were inspired by spirit mediums resisting foreign domination.' },
+  { id: 'q9', question: 'What is the Shona term for a traditional healer?', options: ["N'anga", 'Mukoma', 'Sabhuku', 'Mambo'], correctAnswer: "N'anga", explanation: "An n'anga uses herbal medicine and spiritual practice to heal and guide.", category: 'Spirituality', culturalContext: "N'anga mediate between the physical and spiritual worlds." },
+  { id: 'q10', question: 'What is "roora" in Shona culture?', options: ['Bride price', 'A rain ceremony', 'A hunting ritual', 'A coming-of-age rite'], correctAnswer: 'Bride price', explanation: 'Roora is given by the groom’s family to the bride’s family in marriage.', category: 'Social Structure', culturalContext: 'Roora formally unites two families and affirms the wife’s status.' },
+  { id: 'q11', question: 'Which sacred bird appears on Zimbabwe’s flag?', options: ['Eagle', 'Fish Eagle', 'Falcon', 'Zimbabwe Bird (Hungwe)'], correctAnswer: 'Zimbabwe Bird (Hungwe)', explanation: 'The Zimbabwe Bird, carved at Great Zimbabwe, is a national and spiritual symbol.', category: 'Symbols', culturalContext: 'It is seen as a messenger between the ancestors and the living.' },
+  { id: 'q12', question: 'What is "hunhu" in Shona philosophy?', options: ['Traditional medicine', 'Moral philosophy (Ubuntu)', 'A farming practice', 'A musical rhythm'], correctAnswer: 'Moral philosophy (Ubuntu)', explanation: 'Hunhu is the Shona idea of humanness — compassion, respect and communal duty.', category: 'Values', culturalContext: 'Hunhu guides ethical behaviour and harmony, akin to Ubuntu elsewhere in Africa.' },
+]
+
+const ROUND_SIZE = 8
+const SECONDS_PER_Q = 25
+
+type Phase = 'start' | 'playing' | 'finished'
 
 export default function CulturalQuizGame() {
-  const router = useRouter()
-  const [user, setUser] = useState<any>(null)
-  const [quizState, setQuizState] = useState<QuizState>({
-    currentQuestionIndex: 0,
-    score: 0,
-    lives: 3,
-    streak: 0,
-    timeLeft: 20,
-    questionsAnswered: 0,
-    correctAnswers: 0,
-    gameStarted: false,
-    gameEnded: false,
-    showExplanation: false,
-    selectedAnswer: null,
-    isAnswerCorrect: false
-  })
-  const [currentQuestions, setCurrentQuestions] = useState<Question[]>([])
-  const [showCelebration, setShowCelebration] = useState(false)
-
-  // Cultural quiz questions about Shona culture
-  const culturalQuestions: Question[] = [
-    {
-      id: 'q1',
-      question: 'What is the traditional Shona thumb piano called?',
-      options: ['Mbira', 'Marimba', 'Hosho', 'Ngoma'],
-      correctAnswer: 'Mbira',
-      explanation: 'The mbira is a traditional Shona musical instrument consisting of metal tines mounted on a wooden board, played with thumbs and fingers.',
-      category: 'Music & Arts',
-      difficulty: 'Easy',
-      culturalContext: 'The mbira is central to Shona spiritual and cultural life, often used in ceremonies to communicate with ancestors.'
-    },
-    {
-      id: 'q2',
-      question: 'What does "Mwari" refer to in Shona culture?',
-      options: ['Ancestor spirit', 'Supreme God', 'Traditional healer', 'Tribal chief'],
-      correctAnswer: 'Supreme God',
-      explanation: 'Mwari is the Shona name for the Supreme Being or God, who is considered the creator of all things.',
-      category: 'Religion & Spirituality',
-      difficulty: 'Medium',
-      culturalContext: 'Mwari is believed to be accessible through ancestral spirits and is central to traditional Shona religious practices.'
-    },
-    {
-      id: 'q3',
-      question: 'What is a "dare" in traditional Shona society?',
-      options: ['A cooking pot', 'A meeting place for men', 'A type of dance', 'A farming tool'],
-      correctAnswer: 'A meeting place for men',
-      explanation: 'A dare is a traditional meeting place where Shona men gather to discuss community matters, make decisions, and socialize.',
-      category: 'Social Structure',
-      difficulty: 'Medium',
-      culturalContext: 'The dare represents the democratic nature of traditional Shona governance, where community decisions were made collectively.'
-    },
-    {
-      id: 'q4',
-      question: 'Which ancient city is considered the heart of the Shona civilization?',
-      options: ['Great Zimbabwe', 'Mapungubwe', 'Thulamela', 'Khami'],
-      correctAnswer: 'Great Zimbabwe',
-      explanation: 'Great Zimbabwe was the capital of the Kingdom of Zimbabwe and is the largest ancient structure south of the Sahara Desert.',
-      category: 'History',
-      difficulty: 'Easy',
-      culturalContext: 'Great Zimbabwe gave its name to the modern country and represents the pinnacle of Shona architectural achievement.'
-    },
-    {
-      id: 'q5',
-      question: 'What is "kurova guva" in Shona tradition?',
-      options: ['A wedding ceremony', 'A harvest festival', 'A burial ritual', 'An ancestral ceremony'],
-      correctAnswer: 'An ancestral ceremony',
-      explanation: 'Kurova guva is a ceremony performed to bring the spirit of a deceased person back home to become a protective ancestor.',
-      category: 'Religion & Spirituality',
-      difficulty: 'Hard',
-      culturalContext: 'This ceremony is crucial for maintaining the connection between the living and the ancestors in Shona spirituality.'
-    },
-    {
-      id: 'q6',
-      question: 'What does "ukama" mean in Shona culture?',
-      options: ['Friendship', 'Kinship/Family relations', 'Respect', 'Hospitality'],
-      correctAnswer: 'Kinship/Family relations',
-      explanation: 'Ukama refers to the complex system of kinship relationships that form the foundation of Shona social organization.',
-      category: 'Social Structure',
-      difficulty: 'Medium',
-      culturalContext: 'Ukama extends beyond blood relations to include spiritual and social bonds that unite the Shona community.'
-    },
-    {
-      id: 'q7',
-      question: 'What is the traditional Shona shaker instrument called?',
-      options: ['Mbira', 'Hosho', 'Ngoma', 'Mukwa'],
-      correctAnswer: 'Hosho',
-      explanation: 'Hosho are traditional Shona rattles made from gourds filled with seeds, used to accompany mbira music.',
-      category: 'Music & Arts',
-      difficulty: 'Easy',
-      culturalContext: 'Hosho provide the rhythmic foundation for Shona music and are essential in ceremonial performances.'
-    },
-    {
-      id: 'q8',
-      question: 'What is "chimurenga" in Shona history?',
-      options: ['A traditional dance', 'A resistance/liberation struggle', 'A type of pottery', 'A farming technique'],
-      correctAnswer: 'A resistance/liberation struggle',
-      explanation: 'Chimurenga refers to the Shona uprisings against colonial rule, particularly the wars of 1896-1897 and 1966-1979.',
-      category: 'History',
-      difficulty: 'Hard',
-      culturalContext: 'The chimurenga wars were inspired by spirit mediums and represent the Shona peoples resistance to foreign domination.'
-    },
-    {
-      id: 'q9',
-      question: 'What is the Shona term for a traditional healer?',
-      options: ['N\'anga', 'Mukoma', 'Sabhuku', 'Mambo'],
-      correctAnswer: 'N\'anga',
-      explanation: 'N\'anga is a traditional healer who uses herbal medicine and spiritual practices to treat illness and provide guidance.',
-      category: 'Religion & Spirituality',
-      difficulty: 'Medium',
-      culturalContext: 'N\'anga serve as intermediaries between the physical and spiritual worlds in Shona society.'
-    },
-    {
-      id: 'q10',
-      question: 'What is "roora" in Shona culture?',
-      options: ['Bride price', 'A rain ceremony', 'A hunting ritual', 'A coming-of-age ceremony'],
-      correctAnswer: 'Bride price',
-      explanation: 'Roora is the bride price paid by the groom\'s family to the bride\'s family as part of the marriage process.',
-      category: 'Social Structure',
-      difficulty: 'Medium',
-      culturalContext: 'Roora establishes a formal relationship between families and ensures the wife\'s security and status.'
-    },
-    {
-      id: 'q11',
-      question: 'Which bird is sacred in Shona culture and appears on Zimbabwe\'s flag?',
-      options: ['Eagle', 'Fish Eagle', 'Falcon', 'Zimbabwe Bird (Hungwe)'],
-      correctAnswer: 'Zimbabwe Bird (Hungwe)',
-      explanation: 'The Zimbabwe Bird, found at Great Zimbabwe ruins, is a sacred symbol representing the connection between earthly and spiritual realms.',
-      category: 'Symbols & Identity',
-      difficulty: 'Easy',
-      culturalContext: 'The bird is believed to be a messenger between the ancestors and the living, making it deeply significant in Shona spirituality.'
-    },
-    {
-      id: 'q12',
-      question: 'What is "hunhu" in Shona philosophy?',
-      options: ['Traditional medicine', 'Moral philosophy/Ubuntu', 'Farming practice', 'Musical rhythm'],
-      correctAnswer: 'Moral philosophy/Ubuntu',
-      explanation: 'Hunhu is the Shona concept of humanness, emphasizing compassion, respect, and communal responsibility.',
-      category: 'Philosophy & Values',
-      difficulty: 'Hard',
-      culturalContext: 'Hunhu guides ethical behavior and community harmony, similar to Ubuntu in other African cultures.'
-    }
-  ]
+  const [phase, setPhase] = useState<Phase>('start')
+  const [questions, setQuestions] = useState<Question[]>([])
+  const [index, setIndex] = useState(0)
+  const [selected, setSelected] = useState<string | null>(null)
+  const [locked, setLocked] = useState(false) // answer revealed
+  const [timedOut, setTimedOut] = useState(false) // answer revealed by the timer, not a pick
+  const [correctCount, setCorrectCount] = useState(0)
+  const [streak, setStreak] = useState(0)
+  const [bestStreak, setBestStreak] = useState(0)
+  const [score, setScore] = useState(0)
+  const [timerKey, setTimerKey] = useState(0)
+  const [xpGained, setXpGained] = useState(0)
+  const [bestScore, setBestScore] = useState(0)
 
   useEffect(() => {
-    const userData = typeof window !== 'undefined' ? localStorage.getItem('user') : null
-    if (!userData) {
-      setUser({ name: 'Beta tester', xp: 0 })
-    } else {
-      try {
-        setUser(JSON.parse(userData))
-      } catch {
-        setUser({ name: 'Beta tester', xp: 0 })
-      }
+    try {
+      const p = JSON.parse(localStorage.getItem('gameProgress') || '{}')
+      setBestScore(p['cultural-quiz']?.highScore || 0)
+    } catch {
+      /* ignore */
     }
   }, [])
 
-  // Timer effect
-  useEffect(() => {
-    let interval: NodeJS.Timeout
-    if (quizState.gameStarted && !quizState.gameEnded && !quizState.showExplanation && quizState.timeLeft > 0) {
-      interval = setInterval(() => {
-        setQuizState(prev => {
-          if (prev.timeLeft <= 1) {
-            // Time's up - treat as wrong answer
-            return {
-              ...prev,
-              timeLeft: 0,
-              lives: prev.lives - 1,
-              streak: 0,
-              showExplanation: true,
-              selectedAnswer: null,
-              isAnswerCorrect: false
-            }
-          }
-          return { ...prev, timeLeft: prev.timeLeft - 1 }
+  const current = questions[index]
+  const accuracy = useMemo(
+    () => (questions.length ? Math.round((correctCount / questions.length) * 100) : 0),
+    [correctCount, questions.length],
+  )
+
+  const start = useCallback(() => {
+    setQuestions(shuffle(QUESTIONS).slice(0, ROUND_SIZE))
+    setIndex(0)
+    setSelected(null)
+    setLocked(false)
+    setTimedOut(false)
+    setCorrectCount(0)
+    setStreak(0)
+    setBestStreak(0)
+    setScore(0)
+    setXpGained(0)
+    setTimerKey((k) => k + 1)
+    setPhase('playing')
+  }, [])
+
+  const reveal = useCallback(
+    (answer: string | null, timeLeft: number) => {
+      if (locked || !current) return
+      const isCorrect = answer === current.correctAnswer
+      setSelected(answer)
+      setTimedOut(answer === null)
+      setLocked(true)
+      if (isCorrect) {
+        // forgiving: small time bonus, generous combo bonus
+        const gained = 100 + streak * 20 + Math.round(timeLeft * 3)
+        setScore((s) => s + gained)
+        setCorrectCount((c) => c + 1)
+        setStreak((st) => {
+          const next = st + 1
+          setBestStreak((b) => Math.max(b, next))
+          return next
         })
-      }, 1000)
-    }
-    return () => clearInterval(interval)
-  }, [quizState.gameStarted, quizState.gameEnded, quizState.showExplanation, quizState.timeLeft])
-
-  // Check if game should end
-  useEffect(() => {
-    if (quizState.lives <= 0 || (quizState.questionsAnswered >= 10 && quizState.gameStarted)) {
-      endGame()
-    }
-  }, [quizState.lives, quizState.questionsAnswered])
-
-  const startGame = () => {
-    // Shuffle questions and select 10
-    const shuffled = [...culturalQuestions].sort(() => Math.random() - 0.5).slice(0, 10)
-    setCurrentQuestions(shuffled)
-    
-    setQuizState({
-      currentQuestionIndex: 0,
-      score: 0,
-      lives: 3,
-      streak: 0,
-      timeLeft: 20,
-      questionsAnswered: 0,
-      correctAnswers: 0,
-      gameStarted: true,
-      gameEnded: false,
-      showExplanation: false,
-      selectedAnswer: null,
-      isAnswerCorrect: false
-    })
-    setShowCelebration(false)
-  }
-
-  const handleAnswerSelect = (selectedAnswer: string) => {
-    if (quizState.showExplanation || quizState.gameEnded) return
-
-    const currentQuestion = currentQuestions[quizState.currentQuestionIndex]
-    const isCorrect = selectedAnswer === currentQuestion.correctAnswer
-    
-    let scoreIncrease = 0
-    if (isCorrect) {
-      scoreIncrease = 100 + (quizState.streak * 25) + (quizState.timeLeft * 5)
-    }
-
-    setQuizState(prev => ({
-      ...prev,
-      selectedAnswer,
-      isAnswerCorrect: isCorrect,
-      showExplanation: true,
-      timeLeft: 20,
-      score: prev.score + scoreIncrease,
-      correctAnswers: prev.correctAnswers + (isCorrect ? 1 : 0),
-      streak: isCorrect ? prev.streak + 1 : 0,
-      lives: isCorrect ? prev.lives : prev.lives - 1
-    }))
-  }
-
-  const nextQuestion = () => {
-    if (quizState.currentQuestionIndex < currentQuestions.length - 1) {
-      setQuizState(prev => ({
-        ...prev,
-        currentQuestionIndex: prev.currentQuestionIndex + 1,
-        questionsAnswered: prev.questionsAnswered + 1,
-        showExplanation: false,
-        selectedAnswer: null,
-        timeLeft: 20
-      }))
-    } else {
-      setQuizState(prev => ({ ...prev, questionsAnswered: prev.questionsAnswered + 1 }))
-    }
-  }
-
-  const endGame = () => {
-    setQuizState(prev => ({ ...prev, gameEnded: true }))
-    setShowCelebration(true)
-    submitScore()
-  }
-
-  const submitScore = async () => {
-    const finalScore = Math.round((quizState.correctAnswers / Math.max(1, quizState.questionsAnswered)) * 100)
-
-    try {
-      const response = await fetch('/api/games', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          ...apiAuthHeaders(),
-        },
-        body: JSON.stringify({
-          gameId: 'cultural-quiz',
-          score: finalScore,
-          gameType: 'quiz',
-          difficulty: 'Hard'
-        })
-      })
-      
-      if (response.ok) {
-        const result = await response.json()
-        const updatedUser = { ...user, xp: result.totalXP }
-        setUser(updatedUser)
-        localStorage.setItem('user', JSON.stringify(updatedUser))
-        
-        const gameProgress = JSON.parse(localStorage.getItem('gameProgress') || '{}')
-        gameProgress['cultural-quiz'] = {
-          ...gameProgress['cultural-quiz'],
-          highScore: Math.max(gameProgress['cultural-quiz']?.highScore || 0, finalScore),
-          plays: (gameProgress['cultural-quiz']?.plays || 0) + 1,
-          totalXP: (gameProgress['cultural-quiz']?.totalXP || 0) + result.xpGained
-        }
-        localStorage.setItem('gameProgress', JSON.stringify(gameProgress))
+      } else {
+        setStreak(0)
       }
-    } catch (error) {
-      console.error('Failed to submit score:', error)
+    },
+    [locked, current, streak],
+  )
+
+  const finish = useCallback(async () => {
+    setPhase('finished')
+    const acc = questions.length ? Math.round((correctCount / questions.length) * 100) : 0
+    const { xpGained } = await submitGameResult({ gameId: 'cultural-quiz', accuracy: acc, difficulty: 'Hard' })
+    setXpGained(xpGained)
+  }, [questions.length, correctCount])
+
+  const next = useCallback(() => {
+    if (index < questions.length - 1) {
+      setIndex((i) => i + 1)
+      setSelected(null)
+      setLocked(false)
+      setTimedOut(false)
+      setTimerKey((k) => k + 1)
+    } else {
+      void finish()
     }
-  }
-
-  const currentQuestion = currentQuestions[quizState.currentQuestionIndex]
-
-  if (!user) return null
+  }, [index, questions.length, finish])
 
   return (
-    <div className="min-h-screen bg-[#fffdf7]">
-      <div className="container mx-auto px-4 py-8">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-8">
-          <button
-            onClick={() => router.push('/games')}
-            className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-xl px-4 py-2 shadow-soft border border-white/20 hover:bg-white/90 transition-colors"
-          >
-            <FaArrowLeft className="text-gray-600" />
-            <span className="text-gray-700 font-medium">Back to Games</span>
-          </button>
-          
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">
-            Cultural Quiz
-          </h1>
-          
-          <div className="w-32" /> {/* Spacer */}
-        </div>
+    <GameChrome title="cultural quiz">
+      {phase === 'start' && (
+        <StartScreen
+          icon={FaGlobeAfrica}
+          title="cultural quiz"
+          blurb="Eight questions on Shona heritage, history and values. Answer quickly for combo bonuses — but it’s learning, not a race. A short explanation follows every question."
+          highlights={[
+            { icon: FaQuestionCircle, label: `${ROUND_SIZE} questions` },
+            { icon: FaFire, label: 'combo bonuses' },
+            { icon: FaLightbulb, label: 'learn as you go' },
+          ]}
+          bestScore={bestScore}
+          onStart={start}
+          accent={{ tile: 'bg-rose-50 text-rose-500', chipIcon: 'text-rose-500' }}
+        />
+      )}
 
-        {/* Game Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-soft border border-white/20">
-            <div className="text-center">
-              <p className="text-sm text-gray-600">Score</p>
-              <p className="text-xl font-bold text-yellow-600">{quizState.score}</p>
+      {phase === 'playing' && current && (
+        <div className="space-y-5">
+          {/* HUD */}
+          <div className="flex items-center justify-between gap-3">
+            <div className="grid flex-1 grid-cols-3 gap-2">
+              <StatPill label="question" value={`${index + 1}/${questions.length}`} pulseKey={index} />
+              <StatPill label="score" value={score} pulseKey={score} accent />
+              <StatPill
+                label="streak"
+                value={
+                  <span className="inline-flex items-center gap-1">
+                    {streak > 1 && <FaFire className="text-amber-500 text-sm" aria-hidden />}
+                    {streak}
+                  </span>
+                }
+                pulseKey={streak}
+              />
             </div>
-          </div>
-          
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-soft border border-white/20">
-            <div className="text-center">
-              <p className="text-sm text-gray-600">Lives</p>
-              <p className="text-xl font-bold text-red-600">{'❤️'.repeat(quizState.lives)}</p>
-            </div>
-          </div>
-          
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-soft border border-white/20">
-            <div className="text-center">
-              <p className="text-sm text-gray-600">Streak</p>
-              <p className="text-xl font-bold text-orange-600">{quizState.streak}</p>
-            </div>
-          </div>
-          
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-soft border border-white/20">
-            <div className="text-center">
-              <p className="text-sm text-gray-600">Time</p>
-              <p className="text-xl font-bold text-blue-600">{quizState.timeLeft}s</p>
-            </div>
-          </div>
-          
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-3 shadow-soft border border-white/20">
-            <div className="text-center">
-              <p className="text-sm text-gray-600">Progress</p>
-              <p className="text-xl font-bold text-purple-600">
-                {quizState.questionsAnswered}/10
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Game Area */}
-        <div className="max-w-4xl mx-auto">
-          {!quizState.gameStarted ? (
-            <div className="text-center bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-soft border border-white/20">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Ready for the Cultural Quiz?</h2>
-              <p className="text-gray-600 mb-8">
-                Test your knowledge of Shona culture, history, and traditions. You have 3 lives and 20 seconds per question!
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-                <div className="bg-gradient-to-r from-yellow-100 to-orange-100 p-4 rounded-xl border border-yellow-300">
-                  <FaGlobe className="text-2xl text-yellow-600 mx-auto mb-2" />
-                  <h3 className="font-semibold text-gray-800">Culture & Traditions</h3>
-                </div>
-                <div className="bg-gradient-to-r from-blue-100 to-purple-100 p-4 rounded-xl border border-blue-300">
-                  <FaQuestionCircle className="text-2xl text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold text-gray-800">History & Heritage</h3>
-                </div>
-                <div className="bg-gradient-to-r from-green-100 to-teal-100 p-4 rounded-xl border border-green-300">
-                  <FaLightbulb className="text-2xl text-green-600 mx-auto mb-2" />
-                  <h3 className="font-semibold text-gray-800">Philosophy & Values</h3>
-                </div>
-              </div>
-              
-              <motion.button
-                onClick={startGame}
-                className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-yellow-600 hover:to-orange-600 transition-all duration-300"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+            <div className="shrink-0">
+              <CountdownCircleTimer
+                key={timerKey}
+                isPlaying={!locked}
+                duration={SECONDS_PER_Q}
+                size={44}
+                strokeWidth={4}
+                trailColor="#f5f5f4"
+                colors={['#10b981', '#f59e0b', '#ef4444']}
+                colorsTime={[SECONDS_PER_Q, SECONDS_PER_Q / 2, 0]}
+                onComplete={() => {
+                  if (!locked) reveal(null, 0)
+                  return { shouldRepeat: false }
+                }}
               >
-                Start Quiz
-              </motion.button>
-            </div>
-          ) : currentQuestion ? (
-            <div className="space-y-8">
-              {/* Question Display */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-soft border border-white/20">
-                <div className="flex items-center justify-between mb-6">
-                  <span className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-4 py-2 rounded-xl font-semibold">
-                    {currentQuestion.category}
-                  </span>
-                  <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                    currentQuestion.difficulty === 'Easy' ? 'bg-green-100 text-green-700' :
-                    currentQuestion.difficulty === 'Medium' ? 'bg-yellow-100 text-yellow-700' :
-                    'bg-red-100 text-red-700'
-                  }`}>
-                    {currentQuestion.difficulty}
-                  </span>
-                </div>
-                
-                <h2 className="text-2xl font-bold text-gray-800 mb-6">
-                  {currentQuestion.question}
-                </h2>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {currentQuestion.options.map((option, index) => (
-                    <motion.button
-                      key={index}
-                      onClick={() => handleAnswerSelect(option)}
-                      disabled={quizState.showExplanation}
-                      className={`p-4 rounded-xl border-2 text-left font-medium transition-all duration-300 ${
-                        quizState.showExplanation
-                          ? option === currentQuestion.correctAnswer
-                            ? 'bg-green-100 border-green-400 text-green-700'
-                            : option === quizState.selectedAnswer
-                              ? 'bg-red-100 border-red-400 text-red-700'
-                              : 'bg-gray-100 border-gray-300 text-gray-600'
-                          : 'bg-gradient-to-r from-yellow-50 to-orange-50 border-yellow-300 hover:from-yellow-100 hover:to-orange-100 hover:border-orange-400 text-gray-800'
-                      }`}
-                      whileHover={!quizState.showExplanation ? { scale: 1.02 } : {}}
-                      whileTap={!quizState.showExplanation ? { scale: 0.98 } : {}}
-                    >
-                      {option}
-                    </motion.button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Explanation */}
-              <AnimatePresence>
-                {quizState.showExplanation && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    className={`p-6 rounded-2xl ${
-                      quizState.isAnswerCorrect
-                        ? 'bg-gradient-to-r from-green-100 to-green-200 border border-green-300'
-                        : 'bg-gradient-to-r from-red-100 to-red-200 border border-red-300'
-                    }`}
-                  >
-                    <div className="flex items-center space-x-3 mb-4">
-                      <div className={`text-3xl ${quizState.isAnswerCorrect ? 'text-green-600' : 'text-red-600'}`}>
-                        {quizState.isAnswerCorrect ? <FaCheck /> : <FaTimes />}
-                      </div>
-                      <div>
-                        <p className={`font-bold text-lg ${quizState.isAnswerCorrect ? 'text-green-700' : 'text-red-700'}`}>
-                          {quizState.isAnswerCorrect ? 'Correct!' : 'Incorrect'}
-                        </p>
-                        <p className="text-gray-700">{currentQuestion.explanation}</p>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-white/50 rounded-xl p-4 mb-4">
-                      <h4 className="font-semibold text-gray-800 mb-2">Cultural Context:</h4>
-                      <p className="text-gray-700 text-sm">{currentQuestion.culturalContext}</p>
-                    </div>
-                    
-                    <motion.button
-                      onClick={nextQuestion}
-                      className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all duration-300"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      Next Question
-                    </motion.button>
-                  </motion.div>
+                {({ remainingTime }) => (
+                  <span className="text-sm font-semibold tabular-nums text-stone-600">{remainingTime}</span>
                 )}
-              </AnimatePresence>
+              </CountdownCircleTimer>
             </div>
-          ) : null}
-          
-          {quizState.gameEnded && (
-            <div className="text-center mt-8">
-              <motion.button
-                onClick={startGame}
-                className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all duration-300 flex items-center space-x-2 mx-auto"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+          </div>
+
+          {/* Progress bar */}
+          <div className="h-1 overflow-hidden rounded-full bg-stone-100">
+            <motion.div
+              className="h-full bg-emerald-500"
+              initial={false}
+              animate={{ width: `${((index + (locked ? 1 : 0)) / questions.length) * 100}%` }}
+              transition={{ duration: 0.4 }}
+            />
+          </div>
+
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={current.id}
+              initial={{ opacity: 0, x: 24 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -24 }}
+              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              className="rounded-2xl border border-stone-200 bg-white/80 p-6 backdrop-blur"
+            >
+              <span className="inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs lowercase text-emerald-700">
+                {current.category}
+              </span>
+              <h2 className="mb-5 mt-3 text-lg font-medium leading-snug text-stone-900">{current.question}</h2>
+
+              <div className="grid gap-2.5 sm:grid-cols-2">
+                {current.options.map((option) => {
+                  const isCorrect = option === current.correctAnswer
+                  const isPicked = option === selected
+                  let state = 'idle'
+                  if (locked) {
+                    if (isCorrect) state = 'correct'
+                    else if (isPicked) state = 'wrong'
+                    else state = 'muted'
+                  }
+                  return (
+                    <motion.button
+                      key={option}
+                      type="button"
+                      onClick={() => reveal(option, 0)}
+                      disabled={locked}
+                      animate={state === 'wrong' ? { x: [0, -6, 6, -4, 4, 0] } : { x: 0 }}
+                      transition={{ duration: 0.4 }}
+                      whileTap={!locked ? { scale: 0.98 } : undefined}
+                      className={`flex items-center justify-between rounded-xl border-2 px-4 py-3 text-left text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/40 ${
+                        state === 'correct'
+                          ? 'border-emerald-400 bg-emerald-50 text-emerald-800'
+                          : state === 'wrong'
+                            ? 'border-rose-300 bg-rose-50 text-rose-700'
+                            : state === 'muted'
+                              ? 'border-stone-200 bg-stone-50 text-stone-400'
+                              : 'border-stone-200 bg-white text-stone-800 hover:border-emerald-300 hover:bg-emerald-50/40'
+                      }`}
+                    >
+                      <span>{option}</span>
+                      {state === 'correct' && <FaCheck className="shrink-0 text-emerald-600" aria-hidden />}
+                      {state === 'wrong' && <FaTimes className="shrink-0 text-rose-500" aria-hidden />}
+                    </motion.button>
+                  )
+                })}
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+          <AnimatePresence>
+            {locked && (
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                className="sticky bottom-3 z-10 rounded-2xl border border-stone-200 bg-white/95 p-5 shadow-[0_-4px_24px_rgba(0,0,0,0.06)] backdrop-blur"
               >
-                <FaRedo />
-                <span>Play Again</span>
-              </motion.button>
-            </div>
-          )}
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                  <div className="min-w-0">
+                    <p
+                      className={`mb-1 text-sm font-medium ${
+                        timedOut
+                          ? 'text-amber-700'
+                          : selected === current.correctAnswer
+                            ? 'text-emerald-700'
+                            : 'text-rose-700'
+                      }`}
+                    >
+                      {timedOut
+                        ? `Time's up — the answer is ${current.correctAnswer}.`
+                        : selected === current.correctAnswer
+                          ? 'Correct.'
+                          : `Not quite — the answer is ${current.correctAnswer}.`}
+                    </p>
+                    <p className="text-sm leading-relaxed text-stone-600">{current.explanation}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-stone-500">{current.culturalContext}</p>
+                  </div>
+                  <motion.button
+                    type="button"
+                    onClick={next}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="inline-flex shrink-0 items-center justify-center gap-2 self-start rounded-full bg-stone-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-stone-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/40"
+                  >
+                    {index < questions.length - 1 ? 'next question' : 'see results'}
+                    <FaArrowRight className="text-xs" aria-hidden />
+                  </motion.button>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
-      </div>
-      
-      <CelebrationModal
-        isOpen={showCelebration}
-        score={Math.round((quizState.correctAnswers / Math.max(1, quizState.questionsAnswered)) * 100)}
-        lessonTitle="Cultural Quiz"
-        onClose={() => setShowCelebration(false)}
-      />
-    </div>
+      )}
+
+      {phase === 'finished' && (
+        <ResultsScreen
+          accuracy={accuracy}
+          xpGained={xpGained}
+          stats={[
+            { label: 'correct', value: `${correctCount}/${questions.length}` },
+            { label: 'best streak', value: bestStreak },
+            { label: 'points', value: score },
+          ]}
+          onPlayAgain={start}
+        />
+      )}
+    </GameChrome>
   )
 }

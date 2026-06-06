@@ -1,222 +1,161 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
-// Replaced framer-motion's `motion.div` + `whileHover/whileTap` micro
-// effects with CSS transitions. Same feel, no extra runtime.
-import { FaGamepad, FaMemory, FaBook, FaQuestion, FaFire, FaStar, FaCrown } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import type { IconType } from 'react-icons'
+import { FaBook, FaGlobeAfrica, FaArrowRight, FaRegStar, FaRegClock, FaLayerGroup } from 'react-icons/fa'
+import { readGameProgress, type GameProgressMap } from '../../components/games/gameProgress'
+
+interface GameDef {
+  id: 'memory-match' | 'story-complete' | 'cultural-quiz'
+  title: string
+  tagline: string
+  icon: IconType
+  difficulty: string
+  length: string
+  route: string
+  /** Per-game accent so each card reads distinct, not like a settings row. */
+  accent: { tile: string; icon: string; ring: string; best: string }
+}
+
+const GAMES: GameDef[] = [
+  {
+    id: 'memory-match',
+    title: 'memory match',
+    tagline: 'Flip and pair Shona words with their meaning. Beat the clock.',
+    icon: FaLayerGroup,
+    difficulty: 'easy',
+    length: '~2 min',
+    route: '/games/memory-match',
+    accent: {
+      tile: 'bg-emerald-50 group-hover:bg-emerald-100/70',
+      icon: 'text-emerald-600',
+      ring: 'hover:border-emerald-200',
+      best: 'text-emerald-600',
+    },
+  },
+  {
+    id: 'story-complete',
+    title: 'story complete',
+    tagline: 'Fill the blanks in a short Shona story using context clues.',
+    icon: FaBook,
+    difficulty: 'medium',
+    length: '~4 min',
+    route: '/games/story-complete',
+    accent: {
+      tile: 'bg-amber-50 group-hover:bg-amber-100/70',
+      icon: 'text-amber-600',
+      ring: 'hover:border-amber-200',
+      best: 'text-amber-600',
+    },
+  },
+  {
+    id: 'cultural-quiz',
+    title: 'cultural quiz',
+    tagline: 'Test your knowledge of Shona heritage, history and values.',
+    icon: FaGlobeAfrica,
+    difficulty: 'hard',
+    length: '~3 min',
+    route: '/games/cultural-quiz',
+    accent: {
+      tile: 'bg-rose-50 group-hover:bg-rose-100/70',
+      icon: 'text-rose-500',
+      ring: 'hover:border-rose-200',
+      best: 'text-rose-500',
+    },
+  },
+]
+
 export default function GamesPage() {
   const router = useRouter()
-  const [user, setUser] = useState<any>(null)
-  const [gameProgress, setGameProgress] = useState<any>({})
+  const [progress, setProgress] = useState<GameProgressMap>({})
 
   useEffect(() => {
-    const userData = typeof window !== 'undefined' ? localStorage.getItem('user') : null
-    if (!userData) {
-      setUser({ name: 'Beta tester', xp: 0 })
-    } else {
-      try {
-        setUser(JSON.parse(userData))
-      } catch {
-        setUser({ name: 'Beta tester', xp: 0 })
-      }
-    }
-
-    // Load game progress from localStorage
-    const savedProgress = typeof window !== 'undefined' ? localStorage.getItem('gameProgress') : null
-    if (savedProgress) {
-      try {
-        setGameProgress(JSON.parse(savedProgress))
-      } catch {
-        /* ignore */
-      }
-    }
+    setProgress(readGameProgress())
   }, [])
 
-  const games = [
-    {
-      id: 'memory-match',
-      title: 'Memory Match',
-      description: 'Match Shona words with their English translations',
-      icon: FaMemory,
-      color: 'from-purple-400 to-pink-500',
-      difficulty: 'Easy',
-      xpReward: 20,
-      route: '/games/memory-match',
-      category: 'Vocabulary',
-      comingSoon: false
-    },
-    {
-      id: 'story-complete',
-      title: 'Story Complete',
-      description: 'Complete stories using vocabulary from lessons',
-      icon: FaBook,
-      color: 'from-green-400 to-emerald-500',
-      difficulty: 'Medium',
-      xpReward: 25,
-      route: '/games/story-complete',
-      category: 'Comprehension',
-      comingSoon: false
-    },
-    {
-      id: 'cultural-quiz',
-      title: 'Cultural Quiz',
-      description: 'Test your knowledge of Shona culture',
-      icon: FaQuestion,
-      color: 'from-yellow-400 to-orange-500',
-      difficulty: 'Hard',
-      xpReward: 35,
-      route: '/games/cultural-quiz',
-      category: 'Culture',
-      comingSoon: false
-    }
-  ]
-
-  const getGameScore = (gameId: string) => {
-    return gameProgress[gameId]?.highScore || 0
-  }
-
-  const getGamePlays = (gameId: string) => {
-    return gameProgress[gameId]?.plays || 0
-  }
-
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty) {
-      case 'Easy': return 'text-green-600 bg-green-100'
-      case 'Medium': return 'text-yellow-600 bg-yellow-100'
-      case 'Hard': return 'text-red-600 bg-red-100'
-      default: return 'text-gray-600 bg-gray-100'
-    }
-  }
-
-  if (!user) return null
+  const totalPlays = Object.values(progress).reduce((sum, g) => sum + (g.plays || 0), 0)
+  const totalXP = Object.values(progress).reduce((sum, g) => sum + (g.totalXP || 0), 0)
 
   return (
     <div className="min-h-screen bg-[#fffdf7]">
-      <div className="container mx-auto px-4 py-8">
+      <div className="mx-auto w-full max-w-3xl px-4 py-8 sm:py-10">
         {/* Header */}
-        <div className="text-center mb-12">
-          <div
-            className="inline-flex items-center space-x-3 bg-white/80 backdrop-blur-sm rounded-2xl px-6 py-3 shadow-lg border border-white/20 mb-6 animate-slide-in-up"
-          >
-            <FaGamepad className="text-3xl text-purple-600" />
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Shona Learning Games
-            </h1>
-          </div>
-          
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Learn Shona through fun and engaging mini-games. Earn XP, unlock achievements, and master the language!
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="mb-8"
+        >
+          <h1 className="lowercase text-3xl font-medium tracking-tight text-stone-900">games</h1>
+          <p className="mt-1 max-w-lg text-sm leading-relaxed text-stone-500">
+            Short, replayable rounds to make your Shona stick. Earn XP and keep your streak warm
+            between lessons.
           </p>
-        </div>
 
-        {/* Stats Overview */}
-        <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-soft border border-white/20">
-            <div className="flex items-center space-x-3">
-              <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl">
-                <FaFire className="text-white text-xl" />
-              </div>
-              <div>
-                <p className="text-sm text-gray-600">Total Games XP</p>
-                <p className="text-2xl font-bold text-purple-600">
-                  {Object.values(gameProgress).reduce((sum: number, game: any) => sum + (game.totalXP || 0), 0)}
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-soft border border-white/20">
-            <div className="flex items-center space-x-3">
-              <div className="p-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl">
-                <FaStar className="text-white text-xl" />
-              </div>
-              <div>
-                <p className="text-sm text-gray-600">Games Played</p>
-                <p className="text-2xl font-bold text-blue-600">
-                  {Object.values(gameProgress).reduce((sum: number, game: any) => sum + (game.plays || 0), 0)}
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-soft border border-white/20">
-            <div className="flex items-center space-x-3">
-              <div className="p-3 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl">
-                <FaCrown className="text-white text-xl" />
-              </div>
-              <div>
-                <p className="text-sm text-gray-600">Best Score</p>
-                <p className="text-2xl font-bold text-yellow-600">
-                  {Math.max(...Object.values(gameProgress).map((game: any) => game.highScore || 0), 0)}%
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Games Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {games.map((game) => (
-            <div
-              key={game.id}
-              className={`bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-soft border border-white/20 transition-all duration-300 group animate-slide-in-up ${game.comingSoon ? 'opacity-60 cursor-not-allowed' : 'hover:shadow-xl cursor-pointer'}`}
-              onClick={() => !game.comingSoon && router.push(game.route)}
-            >
-              {/* Game Icon */}
-              <div className="relative mb-4">
-                <div className={`w-16 h-16 bg-gradient-to-r ${game.color} rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <game.icon className="text-white text-2xl" />
-                </div>
-                
-                {/* Difficulty Badge */}
-                <div className={`absolute top-0 right-0 px-2 py-1 rounded-full text-xs font-bold ${getDifficultyColor(game.difficulty)}`}>
-                  {game.difficulty}
-                </div>
-              </div>
-              
-              {/* Game Info */}
-              <div className="mb-4">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{game.title}</h3>
-                <p className="text-gray-600 text-sm mb-3">{game.description}</p>
-                
-                <div className="flex items-center justify-between text-sm">
-                  <span className="bg-gradient-to-r from-green-100 to-blue-100 text-green-700 px-2 py-1 rounded-full">
-                    {game.category}
-                  </span>
-                  <span className="text-purple-600 font-semibold">
-                    +{game.xpReward} XP
-                  </span>
-                </div>
-              </div>
-              
-              {/* Game Stats */}
-              <div className="border-t border-gray-200 pt-4">
-                <div className="flex justify-between items-center text-sm">
-                  <div>
-                    <p className="text-gray-500">High Score</p>
-                    <p className="font-bold text-gray-800">{getGameScore(game.id)}%</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-gray-500">Plays</p>
-                    <p className="font-bold text-gray-800">{getGamePlays(game.id)}</p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Play Button */}
-              {game.comingSoon ? (
-                <div className="w-full mt-4 py-3 bg-gray-200 text-gray-500 font-semibold rounded-xl text-center text-sm">
-                  Coming Soon
-                </div>
-              ) : (
-                <button
-                  className={`w-full mt-4 py-3 bg-gradient-to-r ${game.color} text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]`}
-                >
-                  Play Now
-                </button>
+          {totalPlays > 0 && (
+            <div className="mt-4 flex gap-2 text-xs lowercase text-stone-500">
+              <span className="rounded-full border border-stone-200 bg-white/70 px-3 py-1 backdrop-blur">
+                {totalPlays} {totalPlays === 1 ? 'round' : 'rounds'} played
+              </span>
+              {totalXP > 0 && (
+                <span className="rounded-full border border-stone-200 bg-white/70 px-3 py-1 backdrop-blur">
+                  {totalXP} xp from games
+                </span>
               )}
             </div>
-          ))}
+          )}
+        </motion.div>
+
+        {/* Game cards */}
+        <div className="flex flex-col gap-4">
+          {GAMES.map((game, i) => {
+            const best = progress[game.id]?.highScore || 0
+            const plays = progress[game.id]?.plays || 0
+            const Icon = game.icon
+            return (
+              <motion.button
+                key={game.id}
+                type="button"
+                onClick={() => router.push(game.route)}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.05 * i, duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ y: -2 }}
+                className={`group flex w-full items-center gap-4 rounded-2xl border border-stone-200 bg-white/80 p-5 text-left backdrop-blur transition-all ${game.accent.ring} hover:shadow-[0_4px_20px_rgba(0,0,0,0.05)] focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/40`}
+              >
+                <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl transition-all group-hover:scale-105 ${game.accent.tile} ${game.accent.icon}`}>
+                  <Icon className="text-xl" aria-hidden />
+                </div>
+
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-2">
+                    <h2 className="lowercase text-lg font-medium tracking-tight text-stone-900">
+                      {game.title}
+                    </h2>
+                  </div>
+                  <p className="mt-0.5 line-clamp-2 text-sm leading-snug text-stone-500">
+                    {game.tagline}
+                  </p>
+                  <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs lowercase text-stone-400">
+                    <span className="inline-flex items-center gap-1">
+                      <FaRegStar className="text-stone-300" aria-hidden /> {game.difficulty}
+                    </span>
+                    <span className="inline-flex items-center gap-1">
+                      <FaRegClock className="text-stone-300" aria-hidden /> {game.length}
+                    </span>
+                    {best > 0 && <span className={game.accent.best}>best {best}%</span>}
+                    {plays > 0 && <span>{plays} {plays === 1 ? 'play' : 'plays'}</span>}
+                  </div>
+                </div>
+
+                <FaArrowRight
+                  className="shrink-0 text-stone-300 transition-transform group-hover:translate-x-0.5 group-hover:text-stone-500"
+                  aria-hidden
+                />
+              </motion.button>
+            )
+          })}
         </div>
       </div>
     </div>

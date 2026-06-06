@@ -1,370 +1,306 @@
 'use client'
-import { useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
-import { motion, AnimatePresence } from 'framer-motion'
-import CelebrationModal from '../../../components/CelebrationModal'
-import { FaArrowLeft, FaClock, FaStar, FaRedo } from 'react-icons/fa'
-import { apiAuthHeaders } from '@/lib/api-auth-headers'
+import { useCallback, useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
+import { FaMemory, FaClock, FaBolt, FaLayerGroup } from 'react-icons/fa'
+import GameChrome from '../../../components/games/GameChrome'
+import StartScreen from '../../../components/games/StartScreen'
+import ResultsScreen from '../../../components/games/ResultsScreen'
+import StatPill from '../../../components/games/StatPill'
+import ShonaTerm from '../../../components/games/ShonaTerm'
+import { shuffle, submitGameResult } from '../../../components/games/gameProgress'
+
+interface VocabPair {
+  shona: string
+  english: string
+}
 
 interface Card {
   id: string
+  pairId: number
   type: 'shona' | 'english'
   word: string
-  matchId: string
-  isFlipped: boolean
-  isMatched: boolean
+  matched: boolean
+}
+
+const VOCAB: VocabPair[] = [
+  { shona: 'mangwanani', english: 'good morning' },
+  { shona: 'masikati', english: 'good afternoon' },
+  { shona: 'manheru', english: 'good evening' },
+  { shona: 'ndatenda', english: 'thank you' },
+  { shona: 'zvakanaka', english: 'fine / good' },
+  { shona: 'mvura', english: 'water' },
+  { shona: 'sadza', english: 'maize meal' },
+  { shona: 'mbira', english: 'thumb piano' },
+  { shona: 'ngoma', english: 'drum' },
+  { shona: 'amai', english: 'mother' },
+  { shona: 'baba', english: 'father' },
+  { shona: 'shamwari', english: 'friend' },
+]
+
+const PAIRS_PER_ROUND = 6
+const ROUND_SECONDS = 90
+
+type Phase = 'start' | 'playing' | 'finished'
+
+function buildDeck(): Card[] {
+  const chosen = shuffle(VOCAB).slice(0, PAIRS_PER_ROUND)
+  const cards: Card[] = []
+  chosen.forEach((pair, pairId) => {
+    cards.push({ id: `p${pairId}-s`, pairId, type: 'shona', word: pair.shona, matched: false })
+    cards.push({ id: `p${pairId}-e`, pairId, type: 'english', word: pair.english, matched: false })
+  })
+  return shuffle(cards)
 }
 
 export default function MemoryMatchGame() {
-  const router = useRouter()
-  const [user, setUser] = useState<any>(null)
+  const [phase, setPhase] = useState<Phase>('start')
   const [cards, setCards] = useState<Card[]>([])
-  const [flippedCards, setFlippedCards] = useState<string[]>([])
-  const [matchedPairs, setMatchedPairs] = useState<string[]>([])
-  const [score, setScore] = useState(0)
-  const [timeLeft, setTimeLeft] = useState(120) // 2 minutes
-  const [gameStarted, setGameStarted] = useState(false)
-  const [gameEnded, setGameEnded] = useState(false)
-  const [showCelebration, setShowCelebration] = useState(false)
-  const [mistakes, setMistakes] = useState(0)
-
-  // Sample vocabulary pairs from the existing content
-  const vocabularyPairs = [
-    { shona: 'mangwanani', english: 'good morning' },
-    { shona: 'masikati', english: 'good afternoon' },
-    { shona: 'manheru', english: 'good evening' },
-    { shona: 'ndatenda', english: 'thank you' },
-    { shona: 'zvakanaka', english: 'fine/good' },
-    { shona: 'bhazi', english: 'bus' },
-    { shona: 'svika', english: 'arrive' },
-    { shona: 'zvino', english: 'now' },
-    { shona: 'mbira', english: 'thumb piano' },
-    { shona: 'ngoma', english: 'drum' },
-    { shona: 'amai', english: 'mother' },
-    { shona: 'baba', english: 'father' }
-  ]
+  const [flipped, setFlipped] = useState<string[]>([]) // ids of currently face-up unmatched cards
+  const [busy, setBusy] = useState(false) // brief lock while a non-match is shown
+  const [matches, setMatches] = useState(0)
+  const [mismatches, setMismatches] = useState(0)
+  const [combo, setCombo] = useState(0)
+  const [bestCombo, setBestCombo] = useState(0)
+  const [timeLeft, setTimeLeft] = useState(ROUND_SECONDS)
+  const [xpGained, setXpGained] = useState(0)
+  const [bestScore, setBestScore] = useState(0)
+  // Snapshot of how the round actually ended, set once at finish so the results
+  // screen reflects reality (completion, not raw match/move ratio).
+  const [outcome, setOutcome] = useState<{
+    matched: number
+    mismatches: number
+    completed: boolean
+  } | null>(null)
 
   useEffect(() => {
-    const userData = typeof window !== 'undefined' ? localStorage.getItem('user') : null
-    if (!userData) {
-      setUser({ name: 'Beta tester', xp: 0 })
-    } else {
-      try {
-        setUser(JSON.parse(userData))
-      } catch {
-        setUser({ name: 'Beta tester', xp: 0 })
-      }
+    try {
+      const p = JSON.parse(localStorage.getItem('gameProgress') || '{}')
+      setBestScore(p['memory-match']?.highScore || 0)
+    } catch {
+      /* ignore */
     }
-    initializeGame()
   }, [])
 
-  // Timer effect
+  const start = useCallback(() => {
+    setCards(buildDeck())
+    setFlipped([])
+    setBusy(false)
+    setMatches(0)
+    setMismatches(0)
+    setCombo(0)
+    setBestCombo(0)
+    setTimeLeft(ROUND_SECONDS)
+    setXpGained(0)
+    setOutcome(null)
+    setPhase('playing')
+  }, [])
+
+  const finish = useCallback(
+    async (finalMatches: number, finalMismatches: number) => {
+      const completed = finalMatches === PAIRS_PER_ROUND
+      setOutcome({ matched: finalMatches, mismatches: finalMismatches, completed })
+      setPhase('finished')
+      // Submit completion rate (matched / total), never the match/move ratio,
+      // so the recorded score can't read 100% for an unfinished board.
+      const acc = Math.round((finalMatches / PAIRS_PER_ROUND) * 100)
+      const { xpGained } = await submitGameResult({ gameId: 'memory-match', accuracy: acc, difficulty: 'Easy' })
+      setXpGained(xpGained)
+    },
+    [],
+  )
+
+  // Countdown timer
   useEffect(() => {
-    let interval: NodeJS.Timeout
-    if (gameStarted && timeLeft > 0 && !gameEnded) {
-      interval = setInterval(() => {
-        setTimeLeft(prev => {
-          if (prev <= 1) {
-            setGameEnded(true)
-            return 0
-          }
-          return prev - 1
-        })
-      }, 1000)
+    if (phase !== 'playing') return
+    if (timeLeft <= 0) {
+      void finish(matches, mismatches)
+      return
     }
-    return () => clearInterval(interval)
-  }, [gameStarted, timeLeft, gameEnded])
+    const t = setTimeout(() => setTimeLeft((s) => s - 1), 1000)
+    return () => clearTimeout(t)
+  }, [phase, timeLeft, matches, mismatches, finish])
 
-  // Check for game completion
-  useEffect(() => {
-    if (matchedPairs.length === 6 && gameStarted) { // 6 pairs = 12 cards
-      setGameEnded(true)
-      const finalScore = calculateScore()
-      setScore(finalScore)
-      setShowCelebration(true)
-      submitScore(finalScore)
-    }
-  }, [matchedPairs, gameStarted])
+  const onFlip = useCallback(
+    (card: Card) => {
+      // Guard rapid double-taps and resolving pairs by reading the latest flipped
+      // state inside the updater, so two quick flips both register reliably.
+      if (busy || card.matched) return
+      setFlipped((prev) => {
+        if (prev.length === 2 || prev.includes(card.id)) return prev
+        const nextFlipped = [...prev, card.id]
+        if (nextFlipped.length < 2) return nextFlipped
 
-  const initializeGame = () => {
-    // Select 6 random pairs for the game
-    const selectedPairs = vocabularyPairs.slice(0, 6)
-    const gameCards: Card[] = []
-    
-    selectedPairs.forEach((pair, index) => {
-      const matchId = `pair-${index}`
-      gameCards.push({
-        id: `${matchId}-shona`,
-        type: 'shona',
-        word: pair.shona,
-        matchId,
-        isFlipped: false,
-        isMatched: false
-      })
-      gameCards.push({
-        id: `${matchId}-english`,
-        type: 'english',
-        word: pair.english,
-        matchId,
-        isFlipped: false,
-        isMatched: false
-      })
-    })
-    
-    // Shuffle the cards
-    const shuffledCards = gameCards.sort(() => Math.random() - 0.5)
-    setCards(shuffledCards)
-  }
+        // second card chosen — resolve this pair
+        const [aId, bId] = nextFlipped
+        const a = cards.find((c) => c.id === aId)!
+        const b = cards.find((c) => c.id === bId)!
+        setBusy(true)
 
-  const handleCardClick = (cardId: string) => {
-    if (flippedCards.length >= 2 || gameEnded) return
-    
-    const card = cards.find(c => c.id === cardId)
-    if (!card || card.isFlipped || card.isMatched) return
-
-    const newFlippedCards = [...flippedCards, cardId]
-    setFlippedCards(newFlippedCards)
-    
-    // Update card state
-    setCards(prev => prev.map(c => 
-      c.id === cardId ? { ...c, isFlipped: true } : c
-    ))
-
-    if (newFlippedCards.length === 2) {
-      const [firstId, secondId] = newFlippedCards
-      const firstCard = cards.find(c => c.id === firstId)
-      const secondCard = cards.find(c => c.id === secondId)
-      
-      if (firstCard && secondCard && firstCard.matchId === secondCard.matchId) {
-        // Match found!
-        setTimeout(() => {
-          setMatchedPairs(prev => [...prev, firstCard.matchId])
-          setCards(prev => prev.map(c => 
-            c.matchId === firstCard.matchId ? { ...c, isMatched: true } : c
-          ))
-          setFlippedCards([])
-        }, 1000)
-      } else {
-        // No match
-        setTimeout(() => {
-          setCards(prev => prev.map(c => 
-            newFlippedCards.includes(c.id) ? { ...c, isFlipped: false } : c
-          ))
-          setFlippedCards([])
-          setMistakes(prev => prev + 1)
-        }, 1500)
-      }
-    }
-  }
-
-  const calculateScore = () => {
-    const timeBonus = timeLeft * 0.5
-    const accuracyBonus = Math.max(0, (6 - mistakes) * 10)
-    const matchBonus = matchedPairs.length * 10
-    return Math.round(matchBonus + timeBonus + accuracyBonus)
-  }
-
-  const submitScore = async (finalScore: number) => {
-    try {
-      const response = await fetch('/api/games', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          ...apiAuthHeaders(),
-        },
-        body: JSON.stringify({
-          gameId: 'memory-match',
-          score: finalScore,
-          gameType: 'memory',
-          difficulty: 'Easy'
-        })
-      })
-      
-      if (response.ok) {
-        const result = await response.json()
-        // Update user XP
-        const updatedUser = { ...user, xp: result.totalXP }
-        setUser(updatedUser)
-        localStorage.setItem('user', JSON.stringify(updatedUser))
-        
-        // Update game progress
-        const gameProgress = JSON.parse(localStorage.getItem('gameProgress') || '{}')
-        gameProgress['memory-match'] = {
-          ...gameProgress['memory-match'],
-          highScore: Math.max(gameProgress['memory-match']?.highScore || 0, finalScore),
-          plays: (gameProgress['memory-match']?.plays || 0) + 1,
-          totalXP: (gameProgress['memory-match']?.totalXP || 0) + result.xpGained
+        if (a.pairId === b.pairId) {
+          // match
+          setTimeout(() => {
+            setCards((cur) => cur.map((c) => (c.pairId === a.pairId ? { ...c, matched: true } : c)))
+            setFlipped([])
+            setBusy(false)
+            setCombo((c) => {
+              const nc = c + 1
+              setBestCombo((bc) => Math.max(bc, nc))
+              return nc
+            })
+            setMatches((prevM) => {
+              const nm = prevM + 1
+              if (nm === PAIRS_PER_ROUND) {
+                // Board cleared — finish with the running mismatch count.
+                setMismatches((mm) => {
+                  void finish(nm, mm)
+                  return mm
+                })
+              }
+              return nm
+            })
+          }, 450)
+        } else {
+          // mismatch — show briefly then flip back
+          setCombo(0)
+          setMismatches((mm) => mm + 1)
+          setTimeout(() => {
+            setFlipped([])
+            setBusy(false)
+          }, 850)
         }
-        localStorage.setItem('gameProgress', JSON.stringify(gameProgress))
-      }
-    } catch (error) {
-      console.error('Failed to submit score:', error)
-    }
-  }
+        return nextFlipped
+      })
+    },
+    [busy, cards, finish],
+  )
 
-  const startGame = () => {
-    setGameStarted(true)
-    setTimeLeft(120)
-    setMistakes(0)
-    setMatchedPairs([])
-    setFlippedCards([])
-    setGameEnded(false)
-    setShowCelebration(false)
-    initializeGame()
-  }
-
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60)
-    const secs = seconds % 60
-    return `${mins}:${secs.toString().padStart(2, '0')}`
-  }
-
-  if (!user) return null
+  const mins = Math.floor(timeLeft / 60)
+  const secs = (timeLeft % 60).toString().padStart(2, '0')
 
   return (
-    <div className="min-h-screen bg-[#fffdf7]">
-      <div className="container mx-auto px-4 py-8">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-8">
-          <button
-            onClick={() => router.push('/games')}
-            className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm rounded-xl px-4 py-2 shadow-soft border border-white/20 hover:bg-white/90 transition-colors"
-          >
-            <FaArrowLeft className="text-gray-600" />
-            <span className="text-gray-700 font-medium">Back to Games</span>
-          </button>
-          
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            Memory Match
-          </h1>
-          
-          <div className="w-32" /> {/* Spacer */}
-        </div>
+    <GameChrome title="memory match">
+      {phase === 'start' && (
+        <StartScreen
+          icon={FaMemory}
+          title="memory match"
+          blurb="Flip the tiles and pair each Shona word with its English meaning. Chain matches without a miss to build a combo before the timer runs out."
+          highlights={[
+            { icon: FaLayerGroup, label: `${PAIRS_PER_ROUND} pairs` },
+            { icon: FaClock, label: '90 seconds' },
+            { icon: FaBolt, label: 'combo bonus' },
+          ]}
+          bestScore={bestScore}
+          onStart={start}
+          accent={{ tile: 'bg-emerald-50 text-emerald-600', chipIcon: 'text-emerald-500' }}
+        />
+      )}
 
-        {/* Game Stats */}
-        <div className="grid grid-cols-3 gap-4 mb-8">
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-amber-100/40">
-            <div className="flex items-center space-x-2">
-              <FaClock className="text-blue-600" />
-              <div>
-                <p className="text-sm text-gray-600">Time</p>
-                <p className="text-xl font-bold text-gray-800">{formatTime(timeLeft)}</p>
-              </div>
-            </div>
+      {phase === 'playing' && (
+        <div className="space-y-5">
+          <div className="grid grid-cols-3 gap-2">
+            <StatPill label="time" value={`${mins}:${secs}`} accent={timeLeft <= 15} pulseKey={timeLeft} />
+            <StatPill label="pairs" value={`${matches} / ${PAIRS_PER_ROUND}`} pulseKey={matches} />
+            <StatPill
+              label="combo"
+              value={
+                <span className="inline-flex items-center gap-1">
+                  {combo > 1 && <FaBolt className="text-amber-500 text-sm" aria-hidden />}
+                  {combo}
+                </span>
+              }
+              pulseKey={combo}
+            />
           </div>
 
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-amber-100/40">
-            <div className="flex items-center space-x-2">
-              <FaStar className="text-yellow-500" />
-              <div>
-                <p className="text-sm text-gray-600">Matches</p>
-                <p className="text-xl font-bold text-gray-800">{matchedPairs.length}/6</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-amber-100/40">
-            <div className="flex items-center space-x-2">
-              <FaStar className="text-green-500" />
-              <div>
-                <p className="text-sm text-gray-600">Score</p>
-                <p className="text-xl font-bold text-gray-800">{score}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Game Board */}
-        <div className="max-w-4xl mx-auto">
-          {!gameStarted ? (
-            <div className="text-center bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-soft border border-white/20">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Ready to Play?</h2>
-              <p className="text-gray-600 mb-8">
-                Match Shona words with their English translations. You have 2 minutes to find all 6 pairs!
-              </p>
-              <motion.button
-                onClick={startGame}
-                className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Start Game
-              </motion.button>
-            </div>
-          ) : (
-            <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
-              {cards.map((card) => (
-                <motion.div
-                  key={card.id}
-                  className={`aspect-square bg-white/80 backdrop-blur-sm rounded-xl shadow-soft border border-white/20 cursor-pointer transition-all duration-300 ${
-                    card.isFlipped || card.isMatched ? 'bg-gradient-to-br from-green-100 to-blue-100' : 'hover:shadow-lg'
-                  }`}
-                  onClick={() => handleCardClick(card.id)}
-                  whileHover={{ scale: card.isMatched ? 1 : 1.05 }}
-                  whileTap={{ scale: card.isMatched ? 1 : 0.95 }}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: cards.indexOf(card) * 0.05 }}
-                >
-                  <div className="h-full flex items-center justify-center p-4">
-                    <AnimatePresence mode="wait">
-                      {card.isFlipped || card.isMatched ? (
-                        <motion.div
-                          key="front"
-                          initial={{ rotateY: 90 }}
-                          animate={{ rotateY: 0 }}
-                          exit={{ rotateY: 90 }}
-                          transition={{ duration: 0.3 }}
-                          className="text-center"
-                        >
-                          <div className={`text-lg font-bold mb-1 ${card.type === 'shona' ? 'text-purple-600' : 'text-blue-600'}`}>
-                            {card.word}
-                          </div>
-                          <div className="text-xs text-gray-500">
-                            {card.type === 'shona' ? 'Shona' : 'English'}
-                          </div>
-                        </motion.div>
+          {/* Cap the board width so a 6-pair (12-card, 3-row) grid of square
+              tiles fits within ~700px tall without scrolling past the fold. */}
+          <div className="mx-auto grid max-w-[30rem] grid-cols-4 gap-2 sm:gap-2.5">
+            {cards.map((card) => {
+              const isUp = card.matched || flipped.includes(card.id)
+              return (
+                <div key={card.id} className="aspect-square" style={{ perspective: 900 }}>
+                  <motion.button
+                    type="button"
+                    onClick={() => onFlip(card)}
+                    disabled={card.matched}
+                    aria-label={isUp ? card.word : 'hidden card'}
+                    className="relative h-full w-full rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/40"
+                    style={{ transformStyle: 'preserve-3d' }}
+                    animate={{ rotateY: isUp ? 180 : 0 }}
+                    transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                    whileTap={!isUp ? { scale: 0.96 } : undefined}
+                  >
+                    {/* back — on-brand emerald monogram (Shona "S") */}
+                    <span
+                      className="absolute inset-0 flex items-center justify-center rounded-xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-emerald-100/60 backdrop-blur"
+                      style={{ backfaceVisibility: 'hidden' }}
+                    >
+                      <span className="select-none font-serif text-xl font-semibold text-emerald-500/80">s</span>
+                    </span>
+                    {/* front */}
+                    <span
+                      className={`absolute inset-0 flex flex-col items-center justify-center gap-0.5 rounded-xl border-2 p-1.5 text-center transition-colors ${
+                        card.matched
+                          ? 'border-emerald-300 bg-emerald-50'
+                          : 'border-stone-300 bg-white'
+                      }`}
+                      style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
+                    >
+                      {card.type === 'shona' ? (
+                        <span className="text-xs font-semibold leading-tight text-stone-900 sm:text-sm">
+                          {/* audio hook: Shona term exposed for a future audio button */}
+                          <ShonaTerm term={card.word} showAudio={false} />
+                        </span>
                       ) : (
-                        <motion.div
-                          key="back"
-                          initial={{ rotateY: 90 }}
-                          animate={{ rotateY: 0 }}
-                          exit={{ rotateY: 90 }}
-                          transition={{ duration: 0.3 }}
-                          className="text-4xl text-gray-400"
-                        >
-                          ?
-                        </motion.div>
+                        <span className="text-xs font-medium leading-tight text-stone-600 sm:text-sm">{card.word}</span>
                       )}
-                    </AnimatePresence>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          )}
-          
-          {gameEnded && (
-            <div className="text-center mt-8">
-              <motion.button
-                onClick={startGame}
-                className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-green-600 hover:to-blue-600 transition-all duration-300 flex items-center space-x-2 mx-auto"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <FaRedo />
-                <span>Play Again</span>
-              </motion.button>
-            </div>
-          )}
+                      <span className="text-[0.55rem] uppercase tracking-wide text-stone-400">
+                        {card.type === 'shona' ? 'shona' : 'english'}
+                      </span>
+                    </span>
+                  </motion.button>
+                </div>
+              )
+            })}
+          </div>
         </div>
-      </div>
-      
-      <CelebrationModal
-        isOpen={showCelebration}
-        score={score}
-        lessonTitle="Memory Match"
-        onClose={() => setShowCelebration(false)}
-      />
-    </div>
+      )}
+
+      {phase === 'finished' && (() => {
+        const matched = outcome?.matched ?? matches
+        const completed = outcome?.completed ?? matched === PAIRS_PER_ROUND
+        const flawless = completed && (outcome?.mismatches ?? mismatches) === 0
+        const finalAccuracy = Math.round((matched / PAIRS_PER_ROUND) * 100)
+
+        // Honest headline. Only a fully cleared, zero-mismatch board is flawless.
+        const headline = flawless
+          ? 'kwayedza! flawless.'
+          : completed
+            ? 'board cleared!'
+            : "time's up."
+        const subcopy = flawless
+          ? 'Every pair, no misses — you have these down cold.'
+          : completed
+            ? `You cleared all ${PAIRS_PER_ROUND} pairs. Go again for a clean, miss-free run.`
+            : `You matched ${matched} of ${PAIRS_PER_ROUND} pairs before the clock ran out. Play again and beat it.`
+
+        return (
+          <ResultsScreen
+            accuracy={finalAccuracy}
+            xpGained={xpGained}
+            headline={headline}
+            subcopy={subcopy}
+            // Celebrate (confetti + "perfect" tier) only on a flawless clear.
+            celebrate={flawless}
+            stats={[
+              { label: 'pairs', value: `${matched} / ${PAIRS_PER_ROUND}` },
+              { label: 'misses', value: outcome?.mismatches ?? mismatches },
+              { label: 'best combo', value: bestCombo },
+            ]}
+            onPlayAgain={start}
+          />
+        )
+      })()}
+    </GameChrome>
   )
 }

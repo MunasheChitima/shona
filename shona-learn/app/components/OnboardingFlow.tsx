@@ -1,235 +1,276 @@
 'use client'
-import { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { FaArrowRight, FaBook, FaTrophy, FaUsers, FaCheck } from 'react-icons/fa'
+import { useState } from 'react'
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
+import { mutate } from 'swr'
+import { useAuth } from '@/lib/auth'
 
 interface OnboardingFlowProps {
   onComplete: () => void
 }
 
+// SWR keys that drive the personalized surfaces (heritage banner on /learn,
+// the profile cards, the lesson list). Revalidating these after the variant
+// POST makes the payoff appear WITHOUT a manual reload.
+const LEARNING_PATH_KEY = '/api/learning-path?slug=core'
+const PATH_PROGRESS_KEY = '/api/learning-path/progress?slug=core'
+
+// Reason options map onto the existing learning-path variants
+// ('default' | 'heritage' | 'new_learner' | 'partner').
+type Variant = 'heritage' | 'new_learner' | 'partner'
+const REASONS: { value: Variant; label: string; sub: string; icon: string }[] = [
+  { value: 'heritage', label: 'reconnecting with heritage', sub: 'i grew up around shona and want to read & write it', icon: '🪘' },
+  { value: 'new_learner', label: 'learning from scratch', sub: 'shona is new to me and i want a solid start', icon: '🌱' },
+  { value: 'partner', label: 'learning with family', sub: 'i want to use shona at home with people i love', icon: '🌍' },
+]
+
+type Pace = 'casual' | 'regular' | 'serious'
+const PACES: { value: Pace; label: string; sub: string }[] = [
+  { value: 'casual', label: 'casual', sub: '1 lesson a day' },
+  { value: 'regular', label: 'regular', sub: '3 lessons a day' },
+  { value: 'serious', label: 'serious', sub: '5 lessons a day' },
+]
+
+const ONBOARDED_KEY = 'shona_onboarded'
+const DAILY_GOAL_KEY = 'shona_daily_goal'
+
+function todayStamp(d = new Date()): string {
+  const y = d.getFullYear()
+  const m = String(d.getMonth() + 1).padStart(2, '0')
+  const day = String(d.getDate()).padStart(2, '0')
+  return `${y}-${m}-${day}`
+}
+
 export default function OnboardingFlow({ onComplete }: OnboardingFlowProps) {
-  const [currentStep, setCurrentStep] = useState(0)
-  const [isCompleting, setIsCompleting] = useState(false)
-  const [lessonCount, setLessonCount] = useState<number | null>(null)
+  const reduceMotion = useReducedMotion()
+  const { updateUser } = useAuth()
+  const [step, setStep] = useState(0)
+  const [name, setName] = useState('')
+  const [variant, setVariant] = useState<Variant | null>(null)
+  const [pace, setPace] = useState<Pace | null>(null)
+  const [finishing, setFinishing] = useState(false)
 
-  useEffect(() => {
-    let cancelled = false
-    ;(async () => {
+  const totalSteps = 3
+
+  const persist = async () => {
+    // Always mark onboarded so it only shows once, even on skip.
+    try {
+      localStorage.setItem(ONBOARDED_KEY, '1')
+    } catch {
+      /* storage unavailable */
+    }
+
+    // Name -> push through the auth context so the greeting + avatar update
+    // LIVE everywhere (Navigation, /profile, /learn welcome) without a reload.
+    // updateUser also persists to the `user` localStorage key the auth layer
+    // hydrates from, so it survives refreshes too.
+    const trimmed = name.trim()
+    if (trimmed) {
+      updateUser({ name: trimmed })
+    }
+
+    // Pace -> daily goal. Don't clobber an existing chosen goal.
+    if (pace) {
       try {
-        const res = await fetch('/api/lessons/public?limit=100')
-        if (!res.ok) return
-        const data = await res.json()
-        const total = typeof data?.totalLessons === 'number'
-          ? data.totalLessons
-          : Array.isArray(data?.lessons)
-            ? data.lessons.length
-            : null
-        if (!cancelled && total) setLessonCount(total)
+        if (!localStorage.getItem(DAILY_GOAL_KEY)) {
+          localStorage.setItem(
+            DAILY_GOAL_KEY,
+            JSON.stringify({ size: pace, date: todayStamp(), progress: 0 }),
+          )
+        }
       } catch {
-        /* ignore — we'll show a generic copy */
+        /* ignore */
       }
-    })()
-    return () => {
-      cancelled = true
     }
-  }, [])
 
-  const lessonsLabel = lessonCount ? `${lessonCount} Lessons` : 'Comprehensive Lessons'
-
-  const steps = [
-    {
-      id: 1,
-      title: 'Welcome to Learn Shona! 🇿🇼',
-      description: "Start your journey to mastering Zimbabwe's beautiful language",
-      icon: FaBook,
-      content: (
-        <div className="text-center">
-          <div className="text-6xl mb-4">🎉</div>
-          <p className="text-lg text-gray-700">
-            Join fellow learners discovering the rich culture and language of Zimbabwe.
-          </p>
-        </div>
-      ),
-    },
-    {
-      id: 2,
-      title: 'Interactive Lessons',
-      description: 'Learn through fun, engaging exercises',
-      icon: FaBook,
-      content: (
-        <div className="space-y-4">
-          <div className="flex items-center space-x-3">
-            <div className="text-2xl">📚</div>
-            <div>
-              <h4 className="font-semibold">{lessonsLabel}</h4>
-              <p className="text-sm text-gray-600">From basic greetings to advanced conversations</p>
-            </div>
-          </div>
-          <div className="flex items-center space-x-3">
-            <div className="text-2xl">🎯</div>
-            <div>
-              <h4 className="font-semibold">Multiple Exercise Types</h4>
-              <p className="text-sm text-gray-600">Practice vocabulary, grammar, and cultural context</p>
-            </div>
-          </div>
-          <div className="flex items-center space-x-3">
-            <div className="text-2xl">🌍</div>
-            <div>
-              <h4 className="font-semibold">Cultural Integration</h4>
-              <p className="text-sm text-gray-600">Learn the language within its cultural context</p>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: 3,
-      title: 'Track Your Progress',
-      description: 'Earn XP, unlock achievements, and level up',
-      icon: FaTrophy,
-      content: (
-        <div className="space-y-4">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-yellow-50 p-4 rounded-lg text-center">
-              <div className="text-3xl mb-2">🏆</div>
-              <h4 className="font-semibold">Achievements</h4>
-              <p className="text-xs text-gray-600">Unlock rewards as you learn</p>
-            </div>
-            <div className="bg-purple-50 p-4 rounded-lg text-center">
-              <div className="text-3xl mb-2">⚡</div>
-              <h4 className="font-semibold">Streaks</h4>
-              <p className="text-xs text-gray-600">Learn daily to build streaks</p>
-            </div>
-            <div className="bg-green-50 p-4 rounded-lg text-center">
-              <div className="text-3xl mb-2">📈</div>
-              <h4 className="font-semibold">Progress</h4>
-              <p className="text-xs text-gray-600">Track your improvement</p>
-            </div>
-            <div className="bg-blue-50 p-4 rounded-lg text-center">
-              <div className="text-3xl mb-2">🎯</div>
-              <h4 className="font-semibold">Quests</h4>
-              <p className="text-xs text-gray-600">Themed unit journeys</p>
-            </div>
-          </div>
-        </div>
-      ),
-    },
-    {
-      id: 4,
-      title: 'Learn at Your Pace',
-      description: 'No pressure — just steady progress',
-      icon: FaUsers,
-      content: (
-        <div className="space-y-4">
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-lg text-center">
-            <FaUsers className="text-4xl text-green-600 mx-auto mb-3" />
-            <h4 className="font-semibold mb-2">Built for Beta Learners</h4>
-            <p className="text-sm text-gray-700">
-              Lessons resume where you left off. Flashcards reinforce what you study.
-            </p>
-          </div>
-          <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
-            <FaCheck className="text-green-500" />
-            <span>Safe, supportive, no scary timers</span>
-          </div>
-        </div>
-      ),
-    },
-  ]
-
-  const handleComplete = () => {
-    setIsCompleting(true)
-    setTimeout(() => {
-      onComplete()
-    }, 200)
-  }
-
-  const handleNext = () => {
-    if (currentStep < steps.length - 1) {
-      setCurrentStep(currentStep + 1)
-    } else {
-      handleComplete()
+    // Variant -> enrollment. Await the POST, then revalidate the SWR caches
+    // that feed the personalized surfaces (heritage banner / variant copy)
+    // so the payoff is visible immediately, no reload required.
+    if (variant) {
+      try {
+        await fetch('/api/learning-path/start', {
+          method: 'POST',
+          credentials: 'include',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ learningPathSlug: 'core', pathVariant: variant }),
+        })
+      } catch {
+        /* enrollment is best-effort; still revalidate below */
+      }
+      try {
+        await Promise.all([
+          mutate(LEARNING_PATH_KEY),
+          mutate(PATH_PROGRESS_KEY),
+          // The lessons list is requested with different limits across pages
+          // (/learn uses ?limit=200). Match every '/api/lessons' key so the
+          // variant-filtered list refreshes wherever it's mounted.
+          mutate(
+            (key) => typeof key === 'string' && key.startsWith('/api/lessons'),
+            undefined,
+            { revalidate: true },
+          ),
+        ])
+      } catch {
+        /* best-effort cache refresh */
+      }
     }
   }
 
-  const handleSkip = () => {
-    handleComplete()
+  const finish = () => {
+    if (finishing) return
+    setFinishing(true)
+    // Kick off persistence (incl. enrollment POST + SWR revalidation) but don't
+    // block the dismiss animation on the network. The name updates synchronously
+    // via updateUser; the heritage banner appears as soon as the POST resolves.
+    void persist()
+    setTimeout(onComplete, 180)
   }
 
-  const step = steps[currentStep]
+  const next = () => {
+    if (step < totalSteps - 1) setStep(step + 1)
+    else finish()
+  }
+
+  const canAdvance = step === 0 ? true : step === 1 ? variant !== null : pace !== null
+
+  const transition = reduceMotion ? { duration: 0 } : { duration: 0.25, ease: [0.4, 0, 0.2, 1] as const }
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/30 p-4 backdrop-blur-sm">
       <motion.div
-        initial={{ scale: 0.9, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        exit={{ scale: 0.9, opacity: 0 }}
-        className="bg-white rounded-3xl max-w-lg w-full shadow-2xl overflow-hidden"
+        initial={reduceMotion ? { opacity: 1 } : { opacity: 0, scale: 0.97, y: 8 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={transition}
+        className="w-full max-w-md overflow-hidden rounded-2xl border border-stone-200 bg-white/90 shadow-xl backdrop-blur"
+        role="dialog"
+        aria-modal="true"
+        aria-label="welcome to shona learn"
       >
-        {/* Progress bar */}
-        <div className="h-2 bg-gray-200">
+        {/* header */}
+        <div className="flex items-center justify-between border-b border-stone-200 px-6 py-4">
+          <div className="flex items-center gap-2">
+            <span className="text-base" aria-hidden>🇿🇼</span>
+            <span className="text-sm font-medium tracking-tight text-stone-900">shona learn</span>
+          </div>
+          <button
+            onClick={finish}
+            disabled={finishing}
+            className="text-xs font-medium text-stone-400 transition-colors hover:text-stone-700"
+          >
+            skip
+          </button>
+        </div>
+
+        {/* progress */}
+        <div className="h-1 bg-stone-100">
           <motion.div
-            className="h-full bg-gradient-to-r from-green-500 to-blue-500"
-            initial={{ width: 0 }}
-            animate={{ width: `${((currentStep + 1) / steps.length) * 100}%` }}
-            transition={{ duration: 0.3 }}
+            className="h-full bg-emerald-600"
+            initial={false}
+            animate={{ width: `${((step + 1) / totalSteps) * 100}%` }}
+            transition={transition}
           />
         </div>
 
-        <div className="p-8">
-          {/* Step indicator */}
-          <div className="flex justify-center mb-6">
-            {steps.map((_, index) => (
-              <div
-                key={index}
-                className={`w-2 h-2 rounded-full mx-1 transition-colors ${
-                  index <= currentStep ? 'bg-blue-600' : 'bg-gray-300'
-                }`}
-              />
-            ))}
-          </div>
-
+        <div className="px-6 py-7">
           <AnimatePresence mode="wait">
             <motion.div
-              key={step.id}
-              initial={{ opacity: 0, x: 20 }}
+              key={step}
+              initial={reduceMotion ? { opacity: 1 } : { opacity: 0, x: 16 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.3 }}
+              exit={reduceMotion ? { opacity: 0 } : { opacity: 0, x: -16 }}
+              transition={transition}
             >
-              {/* Icon */}
-              <div className="flex justify-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center">
-                  <step.icon className="text-white text-2xl" />
+              {step === 0 && (
+                <div>
+                  <h2 className="text-xl font-medium tracking-tight text-stone-900">mhoro 👋</h2>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-600">
+                    welcome to shona learn. let&apos;s set things up in a few seconds. what should we call you?
+                  </p>
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    onKeyDown={(e) => { if (e.key === 'Enter' && canAdvance) next() }}
+                    placeholder="your name"
+                    autoFocus
+                    className="mt-5 w-full rounded-xl border border-stone-200 bg-[#fffdf7] px-4 py-3 text-sm text-stone-900 placeholder:text-stone-400 focus:border-stone-400 focus:outline-none"
+                    aria-label="your name"
+                  />
+                  <p className="mt-2 text-xs text-stone-400">optional — you can change this later in your profile.</p>
                 </div>
-              </div>
+              )}
 
-              {/* Title and description */}
-              <h2 className="text-2xl font-bold text-center mb-2">{step.title}</h2>
-              <p className="text-gray-600 text-center mb-6">{step.description}</p>
+              {step === 1 && (
+                <div>
+                  <h2 className="text-xl font-medium tracking-tight text-stone-900">why shona?</h2>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-600">
+                    we&apos;ll tune your path to fit. pick what feels closest.
+                  </p>
+                  <div className="mt-5 space-y-2">
+                    {REASONS.map((r) => {
+                      const active = variant === r.value
+                      return (
+                        <button
+                          key={r.value}
+                          onClick={() => setVariant(r.value)}
+                          className={`flex w-full items-start gap-3 rounded-xl border px-4 py-3 text-left transition-colors ${
+                            active
+                              ? 'border-emerald-600 bg-emerald-50/60'
+                              : 'border-stone-200 bg-[#fffdf7] hover:border-stone-300'
+                          }`}
+                          aria-pressed={active}
+                        >
+                          <span className="text-xl" aria-hidden>{r.icon}</span>
+                          <span>
+                            <span className="block text-sm font-medium text-stone-900">{r.label}</span>
+                            <span className="mt-0.5 block text-xs text-stone-500">{r.sub}</span>
+                          </span>
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
 
-              {/* Content */}
-              <div className="mb-8">{step.content}</div>
+              {step === 2 && (
+                <div>
+                  <h2 className="text-xl font-medium tracking-tight text-stone-900">your daily pace</h2>
+                  <p className="mt-2 text-sm leading-relaxed text-stone-600">
+                    no pressure, no scary timers. you can change this anytime.
+                  </p>
+                  <div className="mt-5 grid grid-cols-3 gap-2">
+                    {PACES.map((p) => {
+                      const active = pace === p.value
+                      return (
+                        <button
+                          key={p.value}
+                          onClick={() => setPace(p.value)}
+                          className={`rounded-xl border px-3 py-4 text-center transition-colors ${
+                            active
+                              ? 'border-emerald-600 bg-emerald-50/60'
+                              : 'border-stone-200 bg-[#fffdf7] hover:border-stone-300'
+                          }`}
+                          aria-pressed={active}
+                        >
+                          <span className="block text-sm font-medium text-stone-900">{p.label}</span>
+                          <span className="mt-1 block text-xs text-stone-500">{p.sub}</span>
+                        </button>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
             </motion.div>
           </AnimatePresence>
 
-          {/* Actions */}
-          <div className="flex justify-between items-center">
+          {/* actions */}
+          <div className="mt-7 flex items-center justify-between">
+            <span className="text-xs text-stone-400">{step + 1} of {totalSteps}</span>
             <button
-              onClick={handleSkip}
-              className="text-gray-500 hover:text-gray-700 transition-colors"
-              disabled={isCompleting}
+              onClick={next}
+              disabled={!canAdvance || finishing}
+              className="inline-flex items-center justify-center rounded-full bg-stone-900 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-40"
             >
-              Skip
-            </button>
-
-            <button
-              onClick={handleNext}
-              disabled={isCompleting}
-              className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity flex items-center space-x-2"
-            >
-              <span>{currentStep === steps.length - 1 ? 'Get Started' : 'Next'}</span>
-              <FaArrowRight className="text-sm" />
+              {step === totalSteps - 1 ? 'start learning' : 'next'}
             </button>
           </div>
         </div>

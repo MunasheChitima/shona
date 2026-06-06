@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 import { verifyAuth } from '@/lib/auth-server'
+import { filterLessonsForVariant } from '@/lib/learning-path/heritage-track'
+import { prisma } from '@/lib/prisma'
 import { promises as fsp } from 'fs'
 import path from 'path'
 
@@ -30,6 +32,18 @@ export async function GET(request: Request) {
 
     const lessonsData = JSON.parse(raw)
     let lessons = lessonsData.lessons || []
+
+    // Heritage learners hide foundational lessons they already know passively.
+    // We look up the user's enrollment lazily so this stays a no-op for everyone else.
+    try {
+      const enrollment = await prisma.userLearningPath.findFirst({
+        where: { userId },
+        select: { pathVariant: true }
+      })
+      lessons = filterLessonsForVariant(lessons, enrollment?.pathVariant)
+    } catch (enrollmentError) {
+      console.error('Heritage filter lookup failed (returning unfiltered list):', enrollmentError)
+    }
 
     // Apply filters
     if (category) {

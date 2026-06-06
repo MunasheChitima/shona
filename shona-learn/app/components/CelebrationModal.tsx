@@ -1,20 +1,45 @@
+'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaTrophy, FaStar, FaFire, FaGem } from 'react-icons/fa'
+import { FaArrowRight, FaCheck } from 'react-icons/fa'
 import { useEffect, useState } from 'react'
 import Confetti from 'react-confetti'
+import { useCountUp } from './lesson/useCountUp'
+import { celebrationPhrase } from './lesson/feedback'
+import { displayLessonTitle } from './learning-path/LessonRow'
 
 interface CelebrationModalProps {
   isOpen: boolean
+  /** Honest accuracy percent for the lesson, 0..100 (per the scoring contract). */
   score: number
+  /** XP the lesson awards on completion — shown as "+N xp earned". */
+  xpEarned?: number
   lessonTitle: string
   onClose: () => void
   onNextLesson?: () => void
   nextLessonTitle?: string
 }
 
+/**
+ * `score` is the lesson's accuracy percent (0..100). We map it onto the existing
+ * tier thresholds for confetti/copy and present it clearly as an accuracy %.
+ */
+function tierFor(score: number): {
+  phrase: { shona: string; english: string }
+  celebratory: boolean
+  perfect: boolean
+} {
+  const accuracy = Math.max(0, Math.min(1, score / 100))
+  return {
+    phrase: celebrationPhrase(accuracy),
+    celebratory: score >= 70,
+    perfect: score >= 100,
+  }
+}
+
 export default function CelebrationModal({
   isOpen,
   score,
+  xpEarned,
   lessonTitle,
   onClose,
   onNextLesson,
@@ -23,12 +48,17 @@ export default function CelebrationModal({
   const [showConfetti, setShowConfetti] = useState(false)
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
 
+  const { phrase, celebratory, perfect } = tierFor(score)
+  const counted = useCountUp(score, isOpen, 1200)
+
   useEffect(() => {
-    if (isOpen) {
+    if (isOpen && celebratory) {
       setShowConfetti(true)
-      setTimeout(() => setShowConfetti(false), 5000)
+      const t = setTimeout(() => setShowConfetti(false), 4500)
+      return () => clearTimeout(t)
     }
-  }, [isOpen])
+    setShowConfetti(false)
+  }, [isOpen, celebratory])
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,207 +69,148 @@ export default function CelebrationModal({
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  const getScoreMessage = (score: number) => {
-    if (score >= 90) return { message: "Outstanding! You're a Shona master!", emoji: "🏆", color: "from-yellow-400 to-yellow-600" }
-    if (score >= 80) return { message: "Excellent work! You're doing amazing!", emoji: "⭐", color: "from-blue-400 to-blue-600" }
-    if (score >= 70) return { message: "Great job! Keep up the good work!", emoji: "🎉", color: "from-green-400 to-green-600" }
-    if (score >= 60) return { message: "Good effort! You're making progress!", emoji: "👍", color: "from-purple-400 to-purple-600" }
-    return { message: "Keep practicing! You'll get better!", emoji: "💪", color: "from-orange-400 to-orange-600" }
-  }
-
-  const scoreInfo = getScoreMessage(score)
-  const stars = Math.floor(score / 20)
-  const xpEarned = score
+  // Escape closes — keeps parity with the other lesson modals.
+  useEffect(() => {
+    if (!isOpen) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [isOpen, onClose])
 
   return (
     <AnimatePresence>
       {isOpen && (
         <>
-          {showConfetti && score >= 70 && (
+          {showConfetti && (
             <Confetti
               width={windowSize.width}
               height={windowSize.height}
-              numberOfPieces={200}
+              numberOfPieces={perfect ? 320 : 180}
               recycle={false}
-              colors={['#10b981', '#3b82f6', '#f59e0b', '#ec4899', '#8b5cf6']}
+              gravity={0.18}
+              colors={['#10b981', '#059669', '#a7f3d0', '#fcd34d', '#fffdf7']}
             />
           )}
-          
+
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50"
+            className="fixed inset-0 z-50 flex items-stretch justify-center bg-stone-900/40 backdrop-blur-sm sm:items-center sm:p-4"
             onClick={onClose}
           >
             <motion.div
-              initial={{ scale: 0, rotate: -180 }}
-              animate={{ scale: 1, rotate: 0 }}
-              exit={{ scale: 0, rotate: 180 }}
-              transition={{ type: "spring", stiffness: 200, damping: 20 }}
-              className="bg-white rounded-3xl max-w-md w-full shadow-2xl overflow-hidden"
+              role="dialog"
+              aria-modal="true"
+              initial={{ scale: 0.96, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.96, opacity: 0, y: 20 }}
+              transition={{ type: 'spring', stiffness: 320, damping: 30 }}
+              className="flex max-h-screen w-full max-w-md flex-col overflow-y-auto border-stone-200 bg-[#fffdf7] shadow-xl sm:max-h-[92vh] sm:rounded-3xl sm:border"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Header gradient */}
-              <div className={`bg-gradient-to-r ${scoreInfo.color} p-8 text-white text-center relative overflow-hidden`}>
+              <div className="px-7 pb-8 pt-10 text-center">
+                {/* earned check mark */}
                 <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-                  className="text-6xl mb-4"
+                  initial={{ scale: 0, rotate: -20 }}
+                  animate={{ scale: 1, rotate: 0 }}
+                  transition={{ delay: 0.1, type: 'spring', stiffness: 260, damping: 16 }}
+                  className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-600 text-white shadow-lg shadow-emerald-600/20"
                 >
-                  {scoreInfo.emoji}
+                  <FaCheck className="text-2xl" />
                 </motion.div>
-                
-                <motion.h2
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.3 }}
-                  className="text-2xl font-bold mb-2"
-                >
-                  {scoreInfo.message}
-                </motion.h2>
-                
+
                 <motion.p
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: 0.4 }}
-                  className="text-white/90"
-                >
-                  You completed: {lessonTitle}
-                </motion.p>
-
-                {/* Animated background elements */}
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                  className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full"
-                />
-                <motion.div
-                  animate={{ rotate: -360 }}
-                  transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                  className="absolute -bottom-10 -left-10 w-32 h-32 bg-white/10 rounded-full"
-                />
-              </div>
-
-              <div className="p-8">
-                {/* Score display */}
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
-                  className="text-center mb-6"
-                >
-                  <div className="text-5xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
-                    {score}%
-                  </div>
-                  <p className="text-gray-600 mt-1">Score</p>
-                </motion.div>
-
-                {/* Stars */}
-                <motion.div
-                  className="flex justify-center space-x-2 mb-6"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.6 }}
-                >
-                  {[...Array(5)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      initial={{ scale: 0, rotate: -180 }}
-                      animate={{ scale: 1, rotate: 0 }}
-                      transition={{ 
-                        delay: 0.7 + i * 0.1,
-                        type: "spring",
-                        stiffness: 200
-                      }}
-                    >
-                      <FaStar
-                        className={`text-3xl ${i < stars ? 'text-yellow-400' : 'text-gray-300'}`}
-                      />
-                    </motion.div>
-                  ))}
-                </motion.div>
-
-                {/* Rewards */}
-                <motion.div
-                  className="space-y-3 mb-6"
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.8 }}
+                  transition={{ delay: 0.2 }}
+                  className="lowercase text-sm text-stone-400"
                 >
-                  <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-4 border border-green-200">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-3">
-                        <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                          <FaFire className="text-white text-lg" />
-                        </div>
-                        <div>
-                          <p className="font-semibold text-gray-800">XP Earned</p>
-                          <p className="text-sm text-gray-600">Keep learning!</p>
-                        </div>
-                      </div>
-                      <motion.div
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        transition={{ delay: 1, type: "spring", stiffness: 200 }}
-                        className="text-2xl font-bold text-green-600"
-                      >
-                        +{xpEarned}
-                      </motion.div>
-                    </div>
-                  </div>
+                  lesson complete
+                </motion.p>
+                <motion.h2
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.25 }}
+                  className="mt-1 text-2xl font-medium tracking-tight lowercase text-stone-900"
+                >
+                  {displayLessonTitle({ title: lessonTitle })}
+                </motion.h2>
 
-                  {score >= 90 && (
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 1.2 }}
-                      className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-4 border border-purple-200"
+                {/* count-up accuracy + xp earned */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.35, type: 'spring', stiffness: 200, damping: 18 }}
+                  className="mt-8"
+                >
+                  <div className="flex items-baseline justify-center text-6xl font-semibold tabular-nums tracking-tight text-emerald-600">
+                    {counted}
+                    <span className="text-3xl">%</span>
+                  </div>
+                  <p className="mt-1 lowercase text-sm text-stone-500">
+                    {perfect ? 'perfect! no mistakes' : 'accuracy'}
+                  </p>
+                  {typeof xpEarned === 'number' && xpEarned > 0 && (
+                    <motion.p
+                      initial={{ opacity: 0, y: 6 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.55 }}
+                      className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-sm font-medium lowercase text-emerald-700 ring-1 ring-emerald-200"
                     >
-                      <div className="flex items-center space-x-3">
-                        <FaGem className="text-purple-600 text-xl" />
-                        <p className="text-sm">
-                          <span className="font-semibold">Perfect Score Bonus!</span> +10 XP
-                        </p>
-                      </div>
-                    </motion.div>
+                      +{xpEarned} xp earned
+                    </motion.p>
                   )}
                 </motion.div>
 
-                {/* Action buttons */}
-                {onNextLesson ? (
-                  <div className="space-y-3">
-                    <motion.button
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 1 }}
-                      onClick={onNextLesson}
-                      className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-4 rounded-xl hover:opacity-90 transition-opacity"
-                    >
-                      {nextLessonTitle ? `Next lesson: ${nextLessonTitle} →` : 'Next lesson →'}
-                    </motion.button>
-                    <motion.button
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 1.05 }}
+                {/* encouraging Shona phrase */}
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6 }}
+                  className="mt-7 rounded-2xl border border-emerald-100 bg-emerald-50/70 px-5 py-4"
+                >
+                  <p className="text-lg font-medium lowercase text-emerald-800">{phrase.shona}</p>
+                  <p className="mt-0.5 lowercase text-sm text-emerald-700">{phrase.english}</p>
+                </motion.div>
+
+                {/* actions */}
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.75 }}
+                  className="mt-8 space-y-3"
+                >
+                  {onNextLesson ? (
+                    <>
+                      <button
+                        type="button"
+                        onClick={onNextLesson}
+                        className="flex w-full items-center justify-center gap-2 rounded-full bg-stone-900 px-8 py-4 lowercase font-medium text-white transition-colors hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-stone-700 focus:ring-offset-2"
+                      >
+                        {nextLessonTitle ? `next: ${displayLessonTitle({ title: nextLessonTitle })}` : 'next lesson'}
+                        <FaArrowRight className="text-sm" />
+                      </button>
+                      <button
+                        type="button"
+                        onClick={onClose}
+                        className="w-full rounded-full px-8 py-3 lowercase font-medium text-stone-500 transition-colors hover:bg-stone-100 hover:text-stone-700 focus:outline-none focus:ring-2 focus:ring-stone-300"
+                      >
+                        back to lessons
+                      </button>
+                    </>
+                  ) : (
+                    <button
+                      type="button"
                       onClick={onClose}
-                      className="w-full bg-white border-2 border-gray-200 text-gray-700 font-semibold py-3 rounded-xl hover:bg-gray-50 transition-colors"
+                      className="flex w-full items-center justify-center gap-2 rounded-full bg-stone-900 px-8 py-4 lowercase font-medium text-white transition-colors hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-stone-700 focus:ring-offset-2"
                     >
-                      Back to lessons
-                    </motion.button>
-                  </div>
-                ) : (
-                  <motion.button
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1 }}
-                    onClick={onClose}
-                    className="w-full bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold py-4 rounded-xl hover:opacity-90 transition-opacity"
-                  >
-                    Continue Learning
-                  </motion.button>
-                )}
+                      back to lessons <FaArrowRight className="text-sm" />
+                    </button>
+                  )}
+                </motion.div>
               </div>
             </motion.div>
           </motion.div>
@@ -247,4 +218,4 @@ export default function CelebrationModal({
       )}
     </AnimatePresence>
   )
-} 
+}

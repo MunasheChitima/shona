@@ -250,11 +250,11 @@ async function main() {
   })
 
   const stageDefs = [
-    { title: 'Foundation', description: 'Sounds, greetings, first words, numbers (aligns with Stage 1 in learning architecture)', orderIndex: 1 },
-    { title: 'Connection', description: 'Family, describing things, time and environment (Stage 2)', orderIndex: 2 },
-    { title: 'Expression', description: 'Daily situations, markets, health-related language (Stage 3)', orderIndex: 3 },
-    { title: 'Conversation', description: 'Questions, past/future, full sentences (Stage 4)', orderIndex: 4 },
-    { title: 'Culture', description: 'Traditions, proverbs, heritage (Stage 5)', orderIndex: 5 },
+    { title: 'Foundation', description: 'Sounds, greetings, first words, numbers', orderIndex: 1 },
+    { title: 'Connection', description: 'Family, describing things, time and environment', orderIndex: 2 },
+    { title: 'Expression', description: 'Daily situations, markets, health-related language', orderIndex: 3 },
+    { title: 'Conversation', description: 'Questions, past/future, full sentences', orderIndex: 4 },
+    { title: 'Culture', description: 'Traditions, proverbs, heritage', orderIndex: 5 },
     { title: 'Mastery', description: 'Stories, formal speech, dialect exposure (Stage 6)', orderIndex: 6 }
   ]
 

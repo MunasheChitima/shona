@@ -2,10 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  experimental: {
-    optimizePackageImports: ['react-icons', 'framer-motion'],
-  },
-
   images: {
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -76,12 +72,10 @@ const nextConfig = {
     ]
   },
 
-  webpack: (config, { dev }) => {
+  webpack: (config) => {
     if (process.env.ANALYZE === 'true') {
       config.plugins.push(new (require('@next/bundle-analyzer')({ enabled: true }))())
     }
-
-    config.optimization.minimize = !dev
     return config
   },
 }

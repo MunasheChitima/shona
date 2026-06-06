@@ -36,7 +36,7 @@ const VALUE_PILLARS = [
     title: 'progress you can feel',
     shona: 'kufambira mberi',
     description:
-      'micro-lessons, quests, and cultural quiz games stack into real language ability even when you only have ten minutes.',
+      'micro-lessons and cultural quiz games stack into real language ability even when you only have ten minutes.',
     span: 'md:col-span-2',
     icon: '⚡',
   },
@@ -165,7 +165,7 @@ export default function Home() {
                     <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-stone-100">
                       <div className="h-full w-3/4 rounded-full bg-emerald-600" />
                     </div>
-                    <p className="mt-2 text-xs text-stone-500">bite-sized units, quests, and reviews keep you moving.</p>
+                    <p className="mt-2 text-xs text-stone-500">bite-sized units and reviews keep you moving.</p>
                   </div>
 
                   <div className="grid grid-cols-2 gap-3">
