@@ -89,8 +89,8 @@ export default function GamesPage() {
         >
           <h1 className="lowercase text-3xl font-medium tracking-tight text-stone-900">games</h1>
           <p className="mt-1 max-w-lg text-sm leading-relaxed text-stone-500">
-            Short, replayable rounds to make your Shona stick. Earn XP and keep your streak warm
-            between lessons.
+            Short, gentle rounds to reinforce what you are learning. Play a little between lessons —
+            no pressure, just practice that helps the words settle.
           </p>
 
           {totalPlays > 0 && (

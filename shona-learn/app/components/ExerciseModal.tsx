@@ -252,9 +252,15 @@ export default function ExerciseModal({ lesson, onClose, onComplete }: ExerciseM
             )}
           </div>
 
-          {typeof lesson.orderIndex === 'number' && (
-            <p className="mb-1 lowercase text-sm text-stone-400">lesson {lesson.orderIndex}</p>
-          )}
+          {/* Eyebrow: never leak a raw "lesson 49" for a heritage learner who
+              skipped ahead. Prefer the unit/category name (already human and
+              meaningful); otherwise fall back to a neutral label. The raw
+              orderIndex is intentionally not rendered. */}
+          <p className="mb-1 lowercase text-sm text-stone-400">
+            {(typeof lesson.category === 'string' && lesson.category.trim()
+              ? lesson.category.replace(/^unit\s*\d+:\s*/i, '').trim()
+              : 'lesson') || 'lesson'}
+          </p>
           <h2 className="text-2xl font-medium tracking-tight lowercase text-stone-900">
             {displayLessonTitle(lesson)}
           </h2>

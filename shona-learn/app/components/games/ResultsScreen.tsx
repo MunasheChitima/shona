@@ -86,7 +86,7 @@ export default function ResultsScreen({
   const autoSubcopy = perfect
     ? 'A perfect round — you have these down cold.'
     : great
-      ? 'You really know these. Keep that streak alive.'
+      ? 'You really know these. They are settling in nicely.'
       : good
         ? 'Solid round. A couple more plays and these will stick.'
         : fair
@@ -135,7 +135,7 @@ export default function ResultsScreen({
         {xpGained > 0 && (
           <div className="mx-auto mb-6 inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700">
             <FaPlus className="text-xs" aria-hidden />
-            {xpGained} XP earned
+            {xpGained} xp earned
           </div>
         )}
 
@@ -144,7 +144,7 @@ export default function ResultsScreen({
             {stats.map((s) => (
               <div key={s.label} className="rounded-xl border border-stone-200 bg-stone-50 px-2 py-3">
                 <div className="text-lg font-semibold tabular-nums text-stone-900">{s.value}</div>
-                <div className="text-[0.65rem] uppercase tracking-wide text-stone-400">{s.label}</div>
+                <div className="text-[0.65rem] lowercase tracking-wide text-stone-400">{s.label}</div>
               </div>
             ))}
           </div>
@@ -173,7 +173,7 @@ export default function ResultsScreen({
 
         {great && (
           <div className="mt-6 inline-flex items-center gap-1.5 text-xs lowercase text-amber-600">
-            <FaTrophy aria-hidden /> new personal best within reach
+            <FaTrophy aria-hidden /> a lovely round — these are sticking
           </div>
         )}
       </motion.div>

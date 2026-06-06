@@ -254,7 +254,7 @@ export default function MemoryMatchGame() {
                       ) : (
                         <span className="text-xs font-medium leading-tight text-stone-600 sm:text-sm">{card.word}</span>
                       )}
-                      <span className="text-[0.55rem] uppercase tracking-wide text-stone-400">
+                      <span className="text-[0.55rem] lowercase tracking-wide text-stone-400">
                         {card.type === 'shona' ? 'shona' : 'english'}
                       </span>
                     </span>

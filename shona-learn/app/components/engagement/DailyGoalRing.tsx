@@ -11,6 +11,8 @@ import {
   readDailyGoal,
   writeDailyGoal,
   todayStamp,
+  hasCelebratedToday,
+  markCelebratedToday,
 } from './dailyGoal'
 
 interface DailyGoalRingProps {
@@ -53,11 +55,17 @@ export default function DailyGoalRing({ lessonsCompletedToday = 0 }: DailyGoalRi
     writeDailyGoal({ size, date: todayStamp(), progress })
   }, [hydrated, size, progress])
 
-  // Confetti once per day-session when the goal is first reached.
+  // Confetti once per achievement-day. The in-mount ref alone wasn't enough:
+  // it resets on every page load, so reloading the profile with the goal
+  // already met re-fired the celebration. We additionally persist a per-day
+  // stamp so it only fires when the goal is *freshly* reached that day.
   useEffect(() => {
     if (!hydrated || reduceMotion) return
     if (reached && !celebratedRef.current) {
       celebratedRef.current = true
+      // Already celebrated earlier today (e.g. before this reload) — stay quiet.
+      if (hasCelebratedToday()) return
+      markCelebratedToday()
       setShowConfetti(true)
       const t = setTimeout(() => setShowConfetti(false), 4000)
       return () => clearTimeout(t)

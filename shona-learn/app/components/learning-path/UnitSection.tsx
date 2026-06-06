@@ -76,27 +76,27 @@ export default function UnitSection({
           <div className="flex items-start gap-2">
             {locked ? <FaLock className="text-gray-400 mt-1 flex-shrink-0" /> : null}
             <div>
-              <div className="font-semibold text-gray-900">{unit.title}</div>
+              <div className="font-semibold text-gray-900 lowercase">{unit.title}</div>
               {unit.description ? <p className="text-sm text-gray-600 mt-0.5">{unit.description}</p> : null}
               {locked && unit.missingPrerequisites && unit.missingPrerequisites.length > 0 ? (
-                <p className="text-xs text-amber-800 mt-2">
-                  Complete first: {unit.missingPrerequisites.join(', ')}
+                <p className="text-xs text-amber-800 mt-2 lowercase">
+                  complete first: {unit.missingPrerequisites.join(', ')}
                 </p>
               ) : null}
             </div>
           </div>
           <div className="flex items-center gap-2 flex-shrink-0">
-            {complete ? <span className="text-green-600 text-sm font-medium">Passed ✅</span> : null}
+            {complete ? <span className="text-green-600 text-sm font-medium lowercase">passed ✅</span> : null}
             {!locked && !complete && onCheckpointOpen ? (
               <button
                 type="button"
                 onClick={() => onCheckpointOpen(unit)}
-                className="rounded-xl bg-amber-600 text-white text-sm font-bold px-4 py-2 hover:bg-amber-700"
+                className="rounded-xl bg-amber-600 text-white text-sm font-bold px-4 py-2 hover:bg-amber-700 lowercase"
               >
-                Take checkpoint
+                take checkpoint
               </button>
             ) : null}
-            {locked ? <span className="text-xs text-gray-400">Locked</span> : null}
+            {locked ? <span className="text-xs text-gray-400 lowercase">locked</span> : null}
           </div>
         </div>
       </div>
@@ -114,17 +114,17 @@ export default function UnitSection({
         `}
       >
         {locked ? <FaLock className="text-gray-400 flex-shrink-0" /> : open ? <FaChevronDown /> : <FaChevronRight />}
-        <span className="flex-1">{unit.title}</span>
+        <span className="flex-1 lowercase">{unit.title}</span>
         {!locked && !complete && lessonsTotal > 0 ? (
           <span className="text-xs text-gray-500 tabular-nums">{lessonsDone}/{lessonsTotal}</span>
         ) : null}
         {complete ? <span className="text-green-600 text-sm">✅</span> : null}
-        {!locked && unit.status === 'current' ? <span className="text-xs font-bold text-blue-600">Current</span> : null}
-        {locked ? <span className="text-xs text-gray-400">Locked</span> : null}
+        {!locked && unit.status === 'current' ? <span className="text-xs font-bold text-blue-600 lowercase">current</span> : null}
+        {locked ? <span className="text-xs text-gray-400 lowercase">locked</span> : null}
       </button>
       {locked && unit.missingPrerequisites && unit.missingPrerequisites.length > 0 ? (
-        <div className="px-4 pb-2 text-xs text-amber-800">
-          Complete first: {unit.missingPrerequisites.join(', ')}
+        <div className="px-4 pb-2 text-xs text-amber-800 lowercase">
+          complete first: {unit.missingPrerequisites.join(', ')}
         </div>
       ) : null}
       {open && !locked && lessons.length > 0 ? (

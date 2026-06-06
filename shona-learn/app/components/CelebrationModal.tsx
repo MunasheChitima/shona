@@ -14,6 +14,15 @@ interface CelebrationModalProps {
   /** XP the lesson awards on completion — shown as "+N xp earned". */
   xpEarned?: number
   lessonTitle: string
+  /**
+   * Lessons completed in the learner's ACTIVE path AFTER this lesson, and the
+   * total lessons in that path. Both come from the learn page's single
+   * source-of-truth count (the exact set the stages render), so the number
+   * shown here always matches the header and the stage rollups. Passing
+   * undefined hides the progress line (e.g. quest-filtered views).
+   */
+  completedCount?: number
+  lessonTotal?: number
   onClose: () => void
   onNextLesson?: () => void
   nextLessonTitle?: string
@@ -41,6 +50,8 @@ export default function CelebrationModal({
   score,
   xpEarned,
   lessonTitle,
+  completedCount,
+  lessonTotal,
   onClose,
   onNextLesson,
   nextLessonTitle,
@@ -175,6 +186,30 @@ export default function CelebrationModal({
                   <p className="text-lg font-medium lowercase text-emerald-800">{phrase.shona}</p>
                   <p className="mt-0.5 lowercase text-sm text-emerald-700">{phrase.english}</p>
                 </motion.div>
+
+                {/* path progress — uses the SAME single source-of-truth N as the
+                    learn-page header and stage rollups, so the learner never sees
+                    a conflicting total here. */}
+                {typeof completedCount === 'number' && typeof lessonTotal === 'number' && lessonTotal > 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.65 }}
+                    className="mt-5"
+                  >
+                    <p className="lowercase text-sm font-medium text-stone-600">
+                      {completedCount} of {lessonTotal} lessons completed
+                    </p>
+                    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-stone-200">
+                      <motion.div
+                        className="h-full rounded-full bg-emerald-600"
+                        initial={{ width: 0 }}
+                        animate={{ width: `${Math.min(100, (completedCount / lessonTotal) * 100)}%` }}
+                        transition={{ delay: 0.7, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+                      />
+                    </div>
+                  </motion.div>
+                )}
 
                 {/* actions */}
                 <motion.div

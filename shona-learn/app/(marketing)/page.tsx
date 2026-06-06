@@ -14,7 +14,7 @@ const VALUE_PILLARS = [
     description:
       'every phrase is taught with history, social context, and the respect patterns that make shona feel truly alive.',
     span: 'md:col-span-2',
-    icon: '🪘',
+    icon: '🌳',
   },
   {
     title: 'diaspora confidence',
@@ -273,7 +273,7 @@ export default function Home() {
               <span className="text-emerald-700">language is where hearts meet and recognize each other.</span>
             </blockquote>
             <p className="mt-6 text-stone-600">
-              shona learn is built for presence, pride, and true connection, not empty streaks or shallow memorization.
+              shona learn is built around real conversation and cultural depth — gentle progress that respects your pace.
             </p>
           </div>
         </section>

@@ -18,7 +18,7 @@ const PATH_PROGRESS_KEY = '/api/learning-path/progress?slug=core'
 // ('default' | 'heritage' | 'new_learner' | 'partner').
 type Variant = 'heritage' | 'new_learner' | 'partner'
 const REASONS: { value: Variant; label: string; sub: string; icon: string }[] = [
-  { value: 'heritage', label: 'reconnecting with heritage', sub: 'i grew up around shona and want to read & write it', icon: '🪘' },
+  { value: 'heritage', label: 'reconnecting with heritage', sub: 'i grew up around shona and want to read & write it', icon: '🌳' },
   { value: 'new_learner', label: 'learning from scratch', sub: 'shona is new to me and i want a solid start', icon: '🌱' },
   { value: 'partner', label: 'learning with family', sub: 'i want to use shona at home with people i love', icon: '🌍' },
 ]

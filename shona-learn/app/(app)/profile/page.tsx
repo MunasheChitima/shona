@@ -11,7 +11,7 @@ import DailyGoalRing from '../../components/engagement/DailyGoalRing'
 import StatsOverview from '../../components/engagement/StatsOverview'
 import Milestones from '../../components/engagement/Milestones'
 import ContinueLearning from '../../components/engagement/ContinueLearning'
-import { todayStamp } from '../../components/engagement/dailyGoal'
+import { todayStamp, DAILY_GOAL_KEY } from '../../components/engagement/dailyGoal'
 import { deriveStats, XP_PER_LESSON } from '../../components/engagement/deriveStats'
 
 const FLASHCARD_PRACTICE_KEY = 'flashcard_practice_v1'
@@ -39,17 +39,17 @@ type ProgressRow = { completed?: boolean; lessonId: string; completedAt?: string
 const PATH_VARIANT_OPTIONS: { id: Exclude<PathVariant, 'default'>; label: string; description: string }[] = [
   {
     id: 'heritage',
-    label: 'Heritage learner',
+    label: 'heritage learner',
     description: 'Grew up around Shona — skip foundational greetings and family vocab.',
   },
   {
     id: 'new_learner',
-    label: 'New learner',
+    label: 'new learner',
     description: 'Starting from scratch — extra repetition for sounds and basics.',
   },
   {
     id: 'partner',
-    label: 'Learning with partner / family',
+    label: 'learning with partner / family',
     description: 'Prioritize practical phrases for daily life with relatives.',
   },
 ]
@@ -90,6 +90,7 @@ export default function Profile() {
   const [variantSaving, setVariantSaving] = useState<PathVariant | null>(null)
   const [variantError, setVariantError] = useState<string | null>(null)
   const [flashcardWords, setFlashcardWords] = useState(0)
+  const [resetting, setResetting] = useState(false)
 
   useEffect(() => {
     setEditedName(authUser?.name ?? '')
@@ -206,17 +207,17 @@ export default function Profile() {
   // told to "continue", never to "begin". See deriveStats / completedLessons.
   const hasStarted = completedLessons > 0
   const currentStageLabel = (() => {
-    if (!pathProgress?.stages?.length) return 'Not started'
+    if (!pathProgress?.stages?.length) return 'not started'
     const totals = pathProgress.totals
     if (totals.completedUnits >= totals.totalUnits && totals.totalUnits > 0) {
-      return 'Path complete'
+      return 'path complete'
     }
     if (totals.completedUnits === 0) {
-      return `Stage 1: ${pathProgress.stages[0]?.title || 'Foundation'}`
+      return `stage 1: ${pathProgress.stages[0]?.title || 'Foundation'}`
     }
     const next = pathProgress.stages.find((s) => s.completedUnits < s.totalUnits)
     if (next) return `${next.title}`
-    return 'Not started'
+    return 'not started'
   })()
 
   if (isLoading) {
@@ -227,32 +228,55 @@ export default function Profile() {
   const firstName = displayName.split(' ')[0] || displayName
   const displayInitial = displayName[0]?.toUpperCase() || 'U'
 
-  const resetProgress = () => {
-    if (typeof window === 'undefined') return
+  const resetProgress = async () => {
+    if (typeof window === 'undefined' || resetting) return
     const ok = window.confirm(
-      'Reset local progress? This clears your onboarding state and any in-progress lesson saves on this device. Server progress is not affected yet.'
+      'reset your progress?\n\nthis clears your completed lessons, xp, streak, milestones, ' +
+        'flashcard practice and daily-goal pace — everything resets to zero. ' +
+        'your name stays, and you will not be sent back through onboarding. ' +
+        'this cannot be undone.'
     )
     if (!ok) return
+    setResetting(true)
     try {
-      const keys: string[] = []
-      for (let i = 0; i < localStorage.length; i++) {
-        const k = localStorage.key(i)
-        if (!k) continue
-        if (
-          k === 'shona_onboarded' ||
-          k === FLASHCARD_PRACTICE_KEY ||
-          k === 'gameProgress' ||
-          k === 'shona_daily_goal' ||
-          k.startsWith('lesson_')
-        ) {
-          keys.push(k)
-        }
+      // 1. Wipe server progress (the source of truth for derived stats).
+      const res = await fetch(PROGRESS_KEY, {
+        method: 'DELETE',
+        credentials: 'include',
+      })
+      if (!res.ok) {
+        window.alert('could not reset your progress — please try again.')
+        return
       }
-      keys.forEach((k) => localStorage.removeItem(k))
+
+      // 2. Clear local engagement state. Deliberately KEEP `shona_onboarded`
+      // (and the cached user name) so the learner stays coherent — no surprise
+      // onboarding replay.
+      try {
+        localStorage.removeItem(FLASHCARD_PRACTICE_KEY)
+        localStorage.removeItem(DAILY_GOAL_KEY)
+        localStorage.removeItem('shona_daily_goal_celebrated')
+      } catch {
+        /* ignore */
+      }
+      setFlashcardWords(0)
+
+      // 3. Revalidate the shared SWR caches so stats visibly drop to zero
+      // without a full page reload. Derived stats flow from /api/progress.
+      try {
+        const { mutate } = await import('swr')
+        await Promise.all([
+          mutate(PROGRESS_KEY),
+          mutate(PATH_PROGRESS_KEY),
+        ])
+      } catch {
+        /* best-effort cache refresh */
+      }
     } catch {
-      /* ignore */
+      window.alert('could not reset your progress — please try again.')
+    } finally {
+      setResetting(false)
     }
-    window.location.reload()
   }
 
   return (
@@ -375,7 +399,7 @@ export default function Profile() {
                   learning path
                 </h2>
                 <p className="mb-1 text-sm text-stone-600">
-                  <span className="font-medium text-stone-900">Current stage:</span> {currentStageLabel}
+                  <span className="font-medium lowercase text-stone-900">current stage:</span> {currentStageLabel}
                 </p>
                 {totalLessons !== null ? (
                   <p className="text-sm text-stone-500">
@@ -424,6 +448,19 @@ export default function Profile() {
                     <button
                       key={option.id}
                       type="button"
+                      // Switch on pointer-DOWN as the primary trigger: pointerdown
+                      // always dispatches on the element actually pressed, so it
+                      // fires even when the card sits below the fold (the earlier
+                      // click-only handler silently no-op'd off-screen because the
+                      // synthesized click landed outside the hit area).
+                      onPointerDown={(e) => {
+                        if (e.button !== 0) return
+                        handleSwitchVariant(option.id)
+                      }}
+                      // Redundant catch-all for keyboard activation and any
+                      // programmatic click that skips pointer events. The handler
+                      // is idempotent (it returns early if the variant is already
+                      // active or a save is in flight), so this never double-saves.
                       onClick={() => handleSwitchVariant(option.id)}
                       disabled={!!variantSaving || isActive}
                       aria-pressed={isActive}
@@ -434,11 +471,11 @@ export default function Profile() {
                       } ${variantSaving && !isActive ? 'opacity-60' : ''}`}
                     >
                       <div className="flex items-center justify-between gap-2">
-                        <span className="text-sm font-medium text-stone-900">{option.label}</span>
+                        <span className="text-sm font-medium lowercase text-stone-900">{option.label}</span>
                         {isActive ? (
-                          <span className="text-xs font-semibold text-emerald-700">Active</span>
+                          <span className="text-xs font-medium lowercase text-emerald-700">active</span>
                         ) : isSaving ? (
-                          <span className="text-xs text-stone-500">Saving…</span>
+                          <span className="text-xs lowercase text-stone-500">saving…</span>
                         ) : null}
                       </div>
                       <p className="mt-1 text-xs leading-snug text-stone-600">{option.description}</p>
@@ -446,16 +483,17 @@ export default function Profile() {
                   )
                 })}
               </div>
-              {variantError ? <p className="mt-3 text-xs text-red-600">{variantError}</p> : null}
+              {variantError ? <p className="mt-3 text-xs lowercase text-red-600">{variantError}</p> : null}
             </div>
 
             <div className="text-center">
               <button
                 type="button"
                 onClick={resetProgress}
-                className="text-xs text-stone-500 underline hover:text-stone-700"
+                disabled={resetting}
+                className="text-xs lowercase text-stone-500 underline hover:text-stone-700 disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Reset progress on this device
+                {resetting ? 'resetting…' : 'reset my progress'}
               </button>
             </div>
           </div>

@@ -82,3 +82,26 @@ export function writeDailyGoal(state: DailyGoalState): void {
     /* storage unavailable — ignore */
   }
 }
+
+// Separate stamp recording the last calendar day we celebrated reaching the
+// goal. Used to gate the confetti so it fires once per achievement-day rather
+// than on every profile mount/reload when the goal is already met.
+const DAILY_GOAL_CELEBRATED_KEY = 'shona_daily_goal_celebrated'
+
+export function hasCelebratedToday(): boolean {
+  if (typeof window === 'undefined') return true
+  try {
+    return localStorage.getItem(DAILY_GOAL_CELEBRATED_KEY) === todayStamp()
+  } catch {
+    return true
+  }
+}
+
+export function markCelebratedToday(): void {
+  if (typeof window === 'undefined') return
+  try {
+    localStorage.setItem(DAILY_GOAL_CELEBRATED_KEY, todayStamp())
+  } catch {
+    /* storage unavailable — ignore */
+  }
+}

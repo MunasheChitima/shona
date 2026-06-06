@@ -19,7 +19,7 @@ export default function StatPill({
 }) {
   return (
     <div className="flex flex-col items-center rounded-xl border border-stone-200 bg-white/80 px-2 py-1.5 backdrop-blur">
-      <span className="text-[0.6rem] uppercase tracking-wide text-stone-400">{label}</span>
+      <span className="text-[0.6rem] lowercase tracking-wide text-stone-400">{label}</span>
       <motion.span
         key={pulseKey}
         initial={pulseKey !== undefined ? { scale: 1.3 } : false}

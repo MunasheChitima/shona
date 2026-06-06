@@ -129,3 +129,37 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
+
+// Reset the current user's progress on this device/account. Uses the SAME
+// auth/user resolution as GET/POST (verifyAuth, which hydrates the cookie-only
+// beta visitor). This wipes the rows that drive the profile's derived stats
+// (lessons / xp / streak / milestones) so the page truthfully drops to zero.
+// We keep the User row itself (name, email, beta identity) intact.
+export async function DELETE(request: Request) {
+  try {
+    const userId = await verifyAuth(request)
+    if (!userId) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+    }
+
+    // Lesson progress is the source of truth for the profile's derived stats.
+    // Achievements and review schedules are reset alongside so the learner is
+    // left fully coherent (no stale "first lesson" badge with zero lessons).
+    const [deletedProgress] = await prisma.$transaction([
+      prisma.userProgress.deleteMany({ where: { userId } }),
+      prisma.userAchievement.deleteMany({ where: { userId } }),
+      prisma.reviewSchedule.deleteMany({ where: { userId } }),
+      // The User row also caches xp/streak/level for non-derived consumers;
+      // zero them so cross-page reads stay consistent with the reset profile.
+      prisma.user.update({
+        where: { id: userId },
+        data: { xp: 0, streak: 0, level: 1 },
+      }),
+    ])
+
+    return NextResponse.json({ reset: true, deletedProgress: deletedProgress.count })
+  } catch (error) {
+    console.error('progress DELETE error:', (error as Error)?.message)
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+  }
+}

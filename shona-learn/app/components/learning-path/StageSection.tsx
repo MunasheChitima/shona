@@ -75,12 +75,15 @@ export default function StageSection({
           <FaChevronRight className="text-gray-600" />
         )}
         <div className="flex-1">
-          <div className={`font-bold ${stageLocked ? 'text-gray-500' : 'text-gray-900'}`}>
-            Stage {stage.orderIndex}: {stage.title}
+          {/* lowercase to match the brand voice — DB titles are Title-Case but
+              all UI chrome renders lowercase. Descriptions (full sentences) keep
+              their own casing. */}
+          <div className={`font-bold lowercase ${stageLocked ? 'text-gray-500' : 'text-gray-900'}`}>
+            stage {stage.orderIndex}: {stage.title}
           </div>
           {stage.description ? <div className="text-sm text-gray-500 mt-0.5">{stage.description}</div> : null}
         </div>
-        <div className="text-sm text-gray-600 whitespace-nowrap">
+        <div className="text-sm text-gray-600 whitespace-nowrap lowercase">
           {lessonsTotal > 0 ? (
             <span>
               {lessonsComplete}/{lessonsTotal} lessons

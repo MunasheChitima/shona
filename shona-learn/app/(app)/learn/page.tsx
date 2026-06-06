@@ -280,7 +280,12 @@ function LearnContent() {
     )
   }
 
-  if (lessonsError) {
+  // Only ever show the error wall when the lessons fetch has ACTUALLY failed
+  // and we have no usable data to render. `lessonsLoading` is handled above
+  // (skeleton), so a fresh/slow load can never flash this wall, and a
+  // transiently-empty response is treated as "no lessons yet" further down —
+  // never as an error (bug: load-race error wall).
+  if (lessonsError && !(lessonsResp?.lessons && lessonsResp.lessons.length > 0)) {
     return (
       <div className="min-h-screen bg-[#fffdf7] flex items-center justify-center px-6">
         <div className="max-w-md text-center bg-white/80 backdrop-blur rounded-2xl p-8 border border-stone-200">
@@ -309,7 +314,44 @@ function LearnContent() {
   }
 
   const lessonsByCategory = groupLessonsByCategory(validLessons)
-  const completedCount = Object.values(progress).filter((p: any) => p?.completed).length
+
+  // ── single source of truth for the lesson count ──────────────────────────
+  // The header, the per-stage rollups, and the celebration screen must ALL
+  // agree. The honest total is the number of lessons in the learner's ACTIVE
+  // path — i.e. exactly the lessons the stages render. For a heritage learner
+  // who skips foundational units, those skipped lessons are NOT in the path, so
+  // they must not inflate the total. We therefore derive both the total and the
+  // completed count from the path's lesson units (preferring the API's
+  // per-unit rollup), and only fall back to the flat `validLessons` list when
+  // there is no progression path at all. This kills the old 50/63/78 mismatch:
+  // the header used `validLessons.length` (all loaded lessons) while the stages
+  // summed only the path's lessons.
+  const pathCounts = (() => {
+    if (!progressionMode || !pathStages) {
+      const completed = validLessons.filter((l) => progress[l.id]?.completed).length
+      return { total: validLessons.length, completed }
+    }
+    let total = 0
+    let completed = 0
+    for (const stage of pathStages) {
+      for (const unit of stage.units) {
+        if (unit.unitType === 'checkpoint') continue
+        if (typeof unit.lessonsTotal === 'number') {
+          total += unit.lessonsTotal
+          completed +=
+            typeof unit.lessonsCompleted === 'number' ? unit.lessonsCompleted : 0
+          continue
+        }
+        const list = unit.lessonId ? lessonsByCategory[unit.lessonId] ?? [] : []
+        total += list.length
+        completed += list.filter((l) => progress[l.id]?.completed).length
+      }
+    }
+    return { total, completed }
+  })()
+  const lessonTotal = pathCounts.total
+  const completedCount = pathCounts.completed
+
   const isFirstTimeUser =
     progressionMode && pathStages && !lessonsLoading && validLessons.length > 0 && completedCount === 0 && !questFilter
 
@@ -416,17 +458,17 @@ function LearnContent() {
               <div className="mb-8 bg-white/80 backdrop-blur rounded-2xl px-6 py-5 border border-stone-200">
                 <div className="flex justify-between text-sm text-stone-600 mb-2">
                   <span className="font-medium text-stone-900 lowercase">
-                    {completedCount} of {validLessons.length} lessons completed
+                    {completedCount} of {lessonTotal} lessons completed
                   </span>
                   <span className="tabular-nums">
-                    {validLessons.length ? Math.round((completedCount / validLessons.length) * 100) : 0}%
+                    {lessonTotal ? Math.round((completedCount / lessonTotal) * 100) : 0}%
                   </span>
                 </div>
                 <div className="w-full bg-stone-100 rounded-full h-1.5">
                   <div
                     className="bg-emerald-600 h-1.5 rounded-full transition-all duration-700"
                     style={{
-                      width: `${validLessons.length ? (completedCount / validLessons.length) * 100 : 0}%`,
+                      width: `${lessonTotal ? (completedCount / lessonTotal) * 100 : 0}%`,
                     }}
                   />
                 </div>
@@ -546,6 +588,8 @@ function LearnContent() {
             score={celebrate.score}
             xpEarned={celebrate.xpEarned}
             lessonTitle={celebrate.lessonTitle}
+            completedCount={questFilter ? undefined : completedCount}
+            lessonTotal={questFilter ? undefined : lessonTotal}
             onClose={() => setCelebrate(null)}
             onNextLesson={
               nextAfterCompletedLesson
