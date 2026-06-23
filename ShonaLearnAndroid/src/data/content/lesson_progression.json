@@ -1,0 +1,34 @@
+{
+  "beginner": [
+    "lesson-1",
+    "lesson-2",
+    "lesson-3",
+    "lesson-4"
+  ],
+  "intermediate": [
+    "lesson-5",
+    "lesson-6",
+    "lesson-7",
+    "lesson-8"
+  ],
+  "advanced": [],
+  "questProgression": {
+    "quest-1": [
+      "lesson-1",
+      "lesson-2"
+    ],
+    "quest-2": [
+      "lesson-3",
+      "lesson-4"
+    ],
+    "quest-3": [
+      "lesson-2",
+      "lesson-5"
+    ],
+    "quest-4": [
+      "lesson-6",
+      "lesson-7",
+      "lesson-8"
+    ]
+  }
+}

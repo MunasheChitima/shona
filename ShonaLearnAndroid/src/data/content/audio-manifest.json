@@ -1,0 +1,451 @@
+{
+  "audioManifest": {
+    "version": "1.0",
+    "totalFiles": 45,
+    "categories": {
+      "greetings": {
+        "files": [
+          {
+            "filename": "mhoro.mp3",
+            "transcript": "mhoro",
+            "translation": "hello (informal)",
+            "speaker": "native_female",
+            "duration": 1.2,
+            "tone": "friendly",
+            "usage": "casual greeting"
+          },
+          {
+            "filename": "mhoroi.mp3",
+            "transcript": "mhoroi",
+            "translation": "hello (formal)",
+            "speaker": "native_male",
+            "duration": 1.5,
+            "tone": "respectful",
+            "usage": "formal greeting"
+          },
+          {
+            "filename": "makadii.mp3",
+            "transcript": "makadii",
+            "translation": "how are you (formal)",
+            "speaker": "native_female",
+            "duration": 1.8,
+            "tone": "caring",
+            "usage": "respectful inquiry"
+          },
+          {
+            "filename": "wakadii.mp3",
+            "transcript": "wakadii",
+            "translation": "how are you (informal)",
+            "speaker": "native_male",
+            "duration": 1.6,
+            "tone": "casual",
+            "usage": "casual inquiry"
+          }
+        ]
+      },
+      "introductions": {
+        "files": [
+          {
+            "filename": "ini_ndinonzi.mp3",
+            "transcript": "ini ndinonzi",
+            "translation": "my name is",
+            "speaker": "native_female",
+            "duration": 2.0,
+            "tone": "introducing",
+            "usage": "self-introduction"
+          },
+          {
+            "filename": "munonzi_ani.mp3",
+            "transcript": "munonzi ani",
+            "translation": "what is your name",
+            "speaker": "native_male",
+            "duration": 2.2,
+            "tone": "polite",
+            "usage": "asking name"
+          },
+          {
+            "filename": "zita.mp3",
+            "transcript": "zita",
+            "translation": "name",
+            "speaker": "native_female",
+            "duration": 1.0,
+            "tone": "neutral",
+            "usage": "noun"
+          },
+          {
+            "filename": "shamwari.mp3",
+            "transcript": "shamwari",
+            "translation": "friend",
+            "speaker": "native_male",
+            "duration": 1.8,
+            "tone": "warm",
+            "usage": "relationship term"
+          }
+        ]
+      },
+      "numbers": {
+        "files": [
+          {
+            "filename": "motsi.mp3",
+            "transcript": "motsi",
+            "translation": "one",
+            "speaker": "native_female",
+            "duration": 1.2,
+            "tone": "clear",
+            "usage": "counting"
+          },
+          {
+            "filename": "piri.mp3",
+            "transcript": "piri",
+            "translation": "two",
+            "speaker": "native_female",
+            "duration": 1.0,
+            "tone": "clear",
+            "usage": "counting"
+          },
+          {
+            "filename": "tatu.mp3",
+            "transcript": "tatu",
+            "translation": "three",
+            "speaker": "native_female",
+            "duration": 1.1,
+            "tone": "clear",
+            "usage": "counting"
+          },
+          {
+            "filename": "ina.mp3",
+            "transcript": "ina",
+            "translation": "four",
+            "speaker": "native_female",
+            "duration": 1.0,
+            "tone": "clear",
+            "usage": "counting"
+          },
+          {
+            "filename": "shanu.mp3",
+            "transcript": "shanu",
+            "translation": "five",
+            "speaker": "native_female",
+            "duration": 1.2,
+            "tone": "clear",
+            "usage": "counting"
+          }
+        ]
+      },
+      "family": {
+        "files": [
+          {
+            "filename": "mhuri.mp3",
+            "transcript": "mhuri",
+            "translation": "family",
+            "speaker": "native_male",
+            "duration": 1.5,
+            "tone": "warm",
+            "usage": "family concept"
+          },
+          {
+            "filename": "baba.mp3",
+            "transcript": "baba",
+            "translation": "father",
+            "speaker": "native_female",
+            "duration": 1.2,
+            "tone": "respectful",
+            "usage": "family member"
+          },
+          {
+            "filename": "amai.mp3",
+            "transcript": "amai",
+            "translation": "mother",
+            "speaker": "native_male",
+            "duration": 1.3,
+            "tone": "respectful",
+            "usage": "family member"
+          },
+          {
+            "filename": "mwana.mp3",
+            "transcript": "mwana",
+            "translation": "child",
+            "speaker": "native_female",
+            "duration": 1.4,
+            "tone": "gentle",
+            "usage": "family member"
+          },
+          {
+            "filename": "sekuru.mp3",
+            "transcript": "sekuru",
+            "translation": "grandfather",
+            "speaker": "native_male",
+            "duration": 1.8,
+            "tone": "very respectful",
+            "usage": "elder family member"
+          },
+          {
+            "filename": "ambuya.mp3",
+            "transcript": "ambuya",
+            "translation": "grandmother",
+            "speaker": "native_female",
+            "duration": 1.9,
+            "tone": "very respectful",
+            "usage": "elder family member"
+          },
+          {
+            "filename": "mukoma.mp3",
+            "transcript": "mukoma",
+            "translation": "older brother",
+            "speaker": "native_male",
+            "duration": 1.6,
+            "tone": "respectful",
+            "usage": "sibling"
+          },
+          {
+            "filename": "hanzvadzi.mp3",
+            "transcript": "hanzvadzi",
+            "translation": "sister/brother",
+            "speaker": "native_female",
+            "duration": 2.0,
+            "tone": "warm",
+            "usage": "sibling"
+          },
+          {
+            "filename": "mwanakomana.mp3",
+            "transcript": "mwanakomana",
+            "translation": "son",
+            "speaker": "native_male",
+            "duration": 2.2,
+            "tone": "proud",
+            "usage": "family member"
+          },
+          {
+            "filename": "mwanasikana.mp3",
+            "transcript": "mwanasikana",
+            "translation": "daughter",
+            "speaker": "native_female",
+            "duration": 2.4,
+            "tone": "proud",
+            "usage": "family member"
+          }
+        ]
+      },
+      "market": {
+        "files": [
+          {
+            "filename": "musika.mp3",
+            "transcript": "musika",
+            "translation": "market",
+            "speaker": "native_male",
+            "duration": 1.8,
+            "tone": "descriptive",
+            "usage": "place"
+          },
+          {
+            "filename": "mari.mp3",
+            "transcript": "mari",
+            "translation": "money",
+            "speaker": "native_female",
+            "duration": 1.4,
+            "tone": "practical",
+            "usage": "transaction"
+          },
+          {
+            "filename": "imarii.mp3",
+            "transcript": "imarii",
+            "translation": "how much",
+            "speaker": "native_male",
+            "duration": 1.6,
+            "tone": "questioning",
+            "usage": "price inquiry"
+          },
+          {
+            "filename": "tsvuku.mp3",
+            "transcript": "tsvuku",
+            "translation": "red",
+            "speaker": "native_female",
+            "duration": 1.5,
+            "tone": "descriptive",
+            "usage": "color"
+          },
+          {
+            "filename": "chena.mp3",
+            "transcript": "chena",
+            "translation": "white",
+            "speaker": "native_male",
+            "duration": 1.3,
+            "tone": "descriptive",
+            "usage": "color"
+          },
+          {
+            "filename": "tamba.mp3",
+            "transcript": "tamba",
+            "translation": "yellow",
+            "speaker": "native_female",
+            "duration": 1.4,
+            "tone": "descriptive",
+            "usage": "color"
+          }
+        ]
+      },
+      "pronunciation": {
+        "files": [
+          {
+            "filename": "mazwi.mp3",
+            "transcript": "mazwi",
+            "translation": "words",
+            "speaker": "native_female",
+            "duration": 1.6,
+            "tone": "clear",
+            "usage": "language concept"
+          },
+          {
+            "filename": "mutauro.mp3",
+            "transcript": "mutauro",
+            "translation": "language",
+            "speaker": "native_male",
+            "duration": 2.0,
+            "tone": "clear",
+            "usage": "language concept"
+          },
+          {
+            "filename": "mbira.mp3",
+            "transcript": "mbira",
+            "translation": "traditional instrument",
+            "speaker": "native_female",
+            "duration": 1.8,
+            "tone": "cultural",
+            "usage": "cultural item"
+          },
+          {
+            "filename": "nzira.mp3",
+            "transcript": "nzira",
+            "translation": "path/way",
+            "speaker": "native_male",
+            "duration": 1.5,
+            "tone": "clear",
+            "usage": "noun"
+          },
+          {
+            "filename": "ngoma.mp3",
+            "transcript": "ngoma",
+            "translation": "drum",
+            "speaker": "native_female",
+            "duration": 1.4,
+            "tone": "cultural",
+            "usage": "cultural item"
+          },
+          {
+            "filename": "svika.mp3",
+            "transcript": "svika",
+            "translation": "arrive",
+            "speaker": "native_male",
+            "duration": 1.6,
+            "tone": "clear",
+            "usage": "verb"
+          },
+          {
+            "filename": "zvinonzi.mp3",
+            "transcript": "zvinonzi",
+            "translation": "they are called",
+            "speaker": "native_female",
+            "duration": 2.2,
+            "tone": "explanatory",
+            "usage": "phrase"
+          },
+          {
+            "filename": "tsvaira.mp3",
+            "transcript": "tsvaira",
+            "translation": "sweep",
+            "speaker": "native_male",
+            "duration": 1.7,
+            "tone": "clear",
+            "usage": "verb"
+          },
+          {
+            "filename": "dzvanya.mp3",
+            "transcript": "dzvanya",
+            "translation": "press",
+            "speaker": "native_female",
+            "duration": 1.8,
+            "tone": "clear",
+            "usage": "verb"
+          },
+          {
+            "filename": "vhara.mp3",
+            "transcript": "vhara",
+            "translation": "close",
+            "speaker": "native_male",
+            "duration": 1.5,
+            "tone": "clear",
+            "usage": "verb"
+          },
+          {
+            "filename": "rwiyo.mp3",
+            "transcript": "rwiyo",
+            "translation": "song",
+            "speaker": "native_female",
+            "duration": 1.6,
+            "tone": "musical",
+            "usage": "cultural concept"
+          },
+          {
+            "filename": "kurira.mp3",
+            "transcript": "kurira",
+            "translation": "to cry/sound",
+            "speaker": "native_male",
+            "duration": 1.9,
+            "tone": "emotional",
+            "usage": "verb"
+          },
+          {
+            "filename": "kunzwa.mp3",
+            "transcript": "kunzwa",
+            "translation": "to hear/feel",
+            "speaker": "native_female",
+            "duration": 1.8,
+            "tone": "sensing",
+            "usage": "verb"
+          },
+          {
+            "filename": "moyo.mp3",
+            "transcript": "moyo",
+            "translation": "heart",
+            "speaker": "native_male",
+            "duration": 1.4,
+            "tone": "emotional",
+            "usage": "body part/emotion"
+          },
+          {
+            "filename": "kufara.mp3",
+            "transcript": "kufara",
+            "translation": "to be happy",
+            "speaker": "native_female",
+            "duration": 1.9,
+            "tone": "joyful",
+            "usage": "emotional verb"
+          }
+        ]
+      }
+    },
+    "speakers": {
+      "native_male": {
+        "name": "Tawanda",
+        "region": "Harare",
+        "dialect": "Standard Shona",
+        "age": "35",
+        "description": "Native speaker with clear pronunciation"
+      },
+      "native_female": {
+        "name": "Chipo",
+        "region": "Mutare",
+        "dialect": "Standard Shona",
+        "age": "28",
+        "description": "Native speaker with warm, clear pronunciation"
+      }
+    },
+    "quality": {
+      "sampleRate": "44100Hz",
+      "bitRate": "320kbps",
+      "format": "MP3",
+      "recordingEnvironment": "Professional studio",
+      "noiseReduction": "Applied"
+    }
+  }
+}
